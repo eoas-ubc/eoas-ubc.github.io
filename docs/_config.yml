@@ -1,0 +1,26 @@
+#######################################################################################
+# Book settings
+title : EOSC TLEF
+author: everyone
+
+
+# Information about where the book exists on the web
+description: >-
+  draft book
+
+#######################################################################################
+# Execution settings
+execute:
+  execute_notebooks           : cache
+
+#######################################################################################
+# HTML-specific settings
+html:
+  home_page_in_navbar         : false
+
+# #######################################################################################
+# Interact link settings
+notebook_interface          : "notebook"
+
+
+
