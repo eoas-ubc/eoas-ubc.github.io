@@ -1,73 +1,35 @@
-# EOAS TLEF
+# EOAS TLEF -- DRAFT website
 
-This is the public-facing site for
-[ExecutableBookProject](https://github.com/executablebooks), an international
-collaboration to build open source tools that facilitate publishing
-computational narratives using the Jupyter ecosystem.
+This is the front page of an  ongoing project to transform teaching in the 
+[UBC Department of Earth, Ocean and Atmospheric Science](https://www.eoas.ubc.ca) 
+to use open source tools, particularly [Jupyter notebooks](https://www.jupyter.org) organized as [executable books](https://executablebooks.org/en/latest/)
 
-## The EBP's technical goals
+Project title: Embedding Open-source Computational Tools into the Quantitative Earth Science Specializations
 
-The goal of the EBP is to build tools that facilitate creating
-professional computational narratives (books, lecture series, articles, etc.) 
-using open source tools. We want users in the scientific, academic,
-and data science communities to be able to do the following:
+Project funding: [the UBC Teaching and Learning Enhancement Fund](https://tlef.ubc.ca/funded-proposals/entry/714/)
 
-* **Write their content in either markdown text files, or Jupyter Notebooks**.
-  These files include rich content - outputs from running code, references
-  and cross-references, equations, etc.
-* **Execute content and cache the results**. Intelligent caching means
-  that only modified code cells are re-run. 
-* **Combine cached outputs with content files with a document model**. Using
-  the excellent [Sphinx](https://www.sphinx-doc.org/en/master/) documentation
-  stack, documents can include many features for publishing, such as
-  equations, cross-references, and citations.
-* **Build interactive HTML or publication-quality PDF outputs**. Sometimes
-  users wish to create rich and interactive websites, other times they want to
-  send a high-quality PDF to a publisher. This system will treat both as
-  equal citizens.
-* **Control everything above with a simple command-line interface**. Most
-  users should not have to know anything about Sphinx, caching, etc. A simple
-  user interface will hide most of the complexity of this process.
 
-See the [tools section](tools) for a few examples of the tools we've created
-as a part of this project.
+## Project goals
 
-## Our principles and constraints
+Using open source, cloud-based computing we aim to integrate computational and quantitative skills more comprehensively into the EOAS curriculum, incorporating real world examples and datasets into existing courses. New Jupyter notebook based modules and activities will be threaded throughout core courses in Geophysics, Atmospheric Sciences, Oceanography and Geological Engineering bridging traditional disciplinary boundaries. This proposed curriculum transformation will happen alongside a re-evaluation of quantitative EOAS course offerings across disciplines. The end result will reposition the UBC Earth Science specializations as opportunities for quantitative and computational learning in a highly interdisciplinary domain.
 
-In running this project, we aim to adhere to several principles that we believe
-will result in higher-quality technology that aligns with the core principles
-of the open source community. Here are a few key components:
+## Project organization
 
-* **Give equal support to casual users and power users**. Complicating the feature
-  space to support a "power user feature" should be done with great care.
-* **Build modular components that are useful elsewhere**. Rather than building
-  a single vertical stack, find parts of the workflow that naturally separate.
-  Create modular tools for these parts so that they may benefit the community
-  outside of the context of building interactive books.
-* **Use pre-existing technology where possible**. Rather than re-inventing
-  the wheel, make every effort to utilize pre-existing open source tech.
-* **Use pre-existing standards where possible**. In the event that we must
-  create new patterns of content creation or tooling, utilize prior art in
-  the open source community as much as possible, especially when it comes to
-  markup languages.
-* **Contribute improvements upstream**. Where we utilize pre-existing tools,
-  contribute improvements to them as we build off of them for this project.
-* **Design for the future**. While we have a bit of funding now, it won't last
-  forever. This means the technology should be easy for potential developers
-  to read, understand, and modify/improve.
-* **Users should not need to know anything about the build system**. If they
-  want to dig into the guts of our infrastructure, they can, but knowledge
-  of Sphinx, Latex, and so on should not be a requirement. They should only need to
-  use a simple tool to control the process.
-* **Don't try to do everything**. Focus our tools on publishing
-  computational documents with reasonable choices made for the user.
+During the summer of 2020, we will be working to:
 
-Browse the rest of this site for more information about what we're working
-on and our plans for what's coming next.
+1. Develop a set of tools to make it easier to transition existing courses
+   to the new executable notebook format
 
-```{toctree}
-about.md
-tools.md
-updates/index.md
-examples.md
-```
+2. Develop and release introductory material on Jupyter notebooks, python
+   and working with git
+
+3. Transition our first courses into the new notebook/markdown framework
+
+Work underway is tracked on our [project board](https://github.com/eoas-ubc/eoas_tlef/projects/2)
+
+## Links to work in progress
+   
+* {ref}`course-materials`
+
+* {ref}`tools` 
+
