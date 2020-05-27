@@ -1,8 +1,3 @@
 file: index
-sections:
-- file: examples
-- file: about
-- file: tools
-- file: updates/index
-  sections:
-  - file: updates/02-25-2020
+
+
