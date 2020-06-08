@@ -13,6 +13,14 @@ Project funding: [the UBC Teaching and Learning Enhancement Fund](https://tlef.u
 
 Using open source, cloud-based computing we aim to integrate computational and quantitative skills more comprehensively into the EOAS curriculum, incorporating real world examples and datasets into existing courses. New Jupyter notebook based modules and activities will be threaded throughout core courses in Geophysics, Atmospheric Sciences, Oceanography and Geological Engineering bridging traditional disciplinary boundaries. This proposed curriculum transformation will happen alongside a re-evaluation of quantitative EOAS course offerings across disciplines. The end result will reposition the UBC Earth Science specializations as opportunities for quantitative and computational learning in a highly interdisciplinary domain.
 
+## Retreat links
+
+- [retreat slides](https://phaustin.github.io/eoas-ubc.github.io/retreat_slideshow.slides.html)
+
+- [3 year schedule](https://phaustin.github.io/eoas-ubc.github.io/pdffiles/project_timeline.pdf)
+
+- [project board](https://github.com/eoas-ubc/eoas_tlef/projects/2)
+
 ## Project organization
 
 During the summer of 2020, we will be working to:
