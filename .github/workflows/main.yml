@@ -49,6 +49,7 @@ jobs:
         jupyter nbconvert --to slides retreat_slides/retreat_slideshow.ipynb
         jupyter-book build docs
         cp -af retreat_slides/retreat_slideshow.slides.html docs/_build/html/.
+        cp -af pdffiles docs/_build/html/.
 
     # Push the book's HTML to github-pages
     - name: GitHub Pages action
@@ -57,4 +58,5 @@ jobs:
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_dir: ./docs/_build/html
+        publish_branch: master  # default: gh-pages
 
