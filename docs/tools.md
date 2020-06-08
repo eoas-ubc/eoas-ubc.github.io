@@ -1,3 +1,4 @@
+(tools)=
 # Tools for course developmeent
 
 * convert_docs:  move docx, pptx and latex files into markdown

@@ -29,8 +29,7 @@ Work underway is tracked on our [project board](https://github.com/eoas-ubc/eoas
 
 ## Links to work in progress
    
+* {ref}`course-materials`
 
-```{toctree}
-tools.md
-course_materials.md
-```
+* {ref}`tools` 
+

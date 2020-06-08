@@ -12,6 +12,7 @@ dependencies:
   - pydata-sphinx-theme
   - ghp-import
   - pip
+  - nbconvert
   - pip:
     - sphinx_rtd_theme
     - git+https://github.com/executablebooks/MyST-NB.git

@@ -1,3 +1,4 @@
+(course-materials)=
 # Course material
 
 ## Getting started
@@ -8,6 +9,7 @@
 
 * How to build an executable book
 
+* Working with jupyter and python
 
 ## Course transformations
 
@@ -16,6 +18,8 @@
 * ATSC 409
 
 * EOSC 211
+
+* EOSC 340
 
 
 ## Student examples
