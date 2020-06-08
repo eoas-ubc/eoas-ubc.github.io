@@ -41,21 +41,6 @@ jobs:
         python-version: 3.7
         auto-activate-base: false
    
-    # Install dependencies
-    - name: Set up Python 3.7
-      uses: actions/setup-python@v1
-      with:
-        python-version: 3.7
-
-    # Set up Miniconda with environment
-    - name: Setup Miniconda
-      uses: goanpeca/setup-miniconda@v1.1.2
-      with:
-        environment-file: environment.yml
-        activate-environment: buildit
-        python-version: 3.7
-        auto-activate-base: false
- 
     # Build the book
     - name: Build the book
       shell: bash -l {0}
