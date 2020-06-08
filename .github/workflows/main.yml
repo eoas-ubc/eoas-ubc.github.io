@@ -45,7 +45,10 @@ jobs:
     - name: Build the book
       shell: bash -l {0}
       run: |
+        jupytext --to notebook retreat_slides/retreat_slideshow.md
+        jupyter nbconvert --to slides retreat_slides/retreat_slideshow.ipynb
         jupyter-book build docs
+        cp -af retreat_slides/retreat_slideshow.slides.html docs/_build/html/.
 
     # Push the book's HTML to github-pages
     - name: GitHub Pages action
