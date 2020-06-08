@@ -15,9 +15,9 @@ Using open source, cloud-based computing we aim to integrate computational and q
 
 ## Retreat links
 
-- [retreat slides](reatreat_slideshow.slides.html)
+- [retreat slides](https://phaustin.github.io/eoas-ubc.github.io/retreat_slideshow.slides.html)
 
-- [3 year schedule](pdffiles/project_timeline.pdf)
+- [3 year schedule](https://phaustin.github.io/eoas-ubc.github.io/pdffiles/project_timeline.pdf)
 
 ## Project organization
 
