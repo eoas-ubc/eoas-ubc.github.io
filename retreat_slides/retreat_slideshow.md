@@ -79,11 +79,11 @@ Examples of transformed undergraduate courses:
 
 - [Helsinki Earth Sciences](https://github.com/introqg-2019)
 
-- [UBC DSCI 100](https://github.com/UBC-DSCI/introduction-to-datascience)
-
 - [UBC MATH 210](https://github.com/ubc-math210/2019)
 
 - [UBC PHYS crashcourse](https://github.com/christopherwaltham/UBC_PHYS_Python-crash-course)
+
+- [UBC DSCI 100](https://github.com/UBC-DSCI/introduction-to-datascience)
 
 - [UBC EOSC 350](https://github.com/geoscixyz/gpgLabs)
 
