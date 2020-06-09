@@ -36,7 +36,7 @@ toc:
 Susan Allen,  Roger Beckie, Michael Bostock, Eldad Haber, Mark Jellinek, 
 Catherine Johnson, Mark Johnson, Valentina Radic, Stephanie Waterman, Lindsey Heagy, Rachel White, Tereza Jarnikova, Michael Lipsen
 
-**Teaching fellows**: Sarah Bean Sherman
+**Science Education Specialist**: Sarah Bean Sherman
 
 **Summer 2020 Work-study students**: Andrew Loeppky, Harlan Colclough
 
