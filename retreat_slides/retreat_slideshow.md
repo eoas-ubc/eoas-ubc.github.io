@@ -89,6 +89,12 @@ Examples of transformed undergraduate courses:
 
 - [UBC ATSC 409](https://github.com/phaustin/numeric)
 
+Examples of major research projects
+
+- [Pangeo](https://github.com/pangeo-data)
+
+- [the CliMA GCM](https://github.com/CliMA/ClimateMachine.jl)
+
 +++ {"slideshow": {"slide_type": "slide"}}
 
 # Our website and 3-year schedule
