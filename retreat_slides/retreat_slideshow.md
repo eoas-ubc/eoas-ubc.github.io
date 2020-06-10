@@ -71,11 +71,11 @@ Some definitions:
 
 # Current status
 
-Examples of transformed undergraduate courses:
+Github repositories for transformed undergraduate courses:
 
   (open source license, community workflow, jupyter notebooks)
 
-- [Berkely data 8](https://github.com/data-8/textbook)
+- [Berkeley data 8](https://github.com/data-8/textbook)
 
 - [Helsinki Earth Sciences](https://github.com/introqg-2019)
 

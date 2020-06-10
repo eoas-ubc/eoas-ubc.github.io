@@ -47,6 +47,7 @@ jobs:
       run: |
         jupytext --to notebook retreat_slides/retreat_slideshow.md
         jupyter nbconvert --config nbconvert_config.py --to slides retreat_slides/retreat_slideshow.ipynb
+        cd examples
         jupyter-book build docs
         cp -af retreat_slides/retreat_slideshow.slides.html docs/_build/html/.
         cp -af pdffiles docs/_build/html/.
