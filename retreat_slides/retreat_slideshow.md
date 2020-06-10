@@ -36,7 +36,7 @@ toc:
 Susan Allen,  Roger Beckie, Michael Bostock, Eldad Haber, Mark Jellinek, 
 Catherine Johnson, Mark Johnson, Valentina Radic, Stephanie Waterman, Lindsey Heagy, Rachel White, Tereza Jarnikova, Michael Lipsen
 
-**Science Education Specialist**: Sarah Bean Sherman
+**Teaching fellows**: Sarah Bean Sherman
 
 **Summer 2020 Work-study students**: Andrew Loeppky, Harlan Colclough
 
@@ -47,6 +47,26 @@ Catherine Johnson, Mark Johnson, Valentina Radic, Stephanie Waterman, Lindsey He
 **Cloud computing support:**  Charles Krzysik, Henryk Modzelewski
 
 **Data science minor TLEF/DSCI 100/Masters in Data Science:**  Tiffany Timbers, Firas Moosvi
+
++++ {"slideshow": {"slide_type": "slide"}}
+
+# Objectives
+
+1) Increase computational and numerical literacy among EOAS graduates and improve teaching
+in Earth Science disciplines by developing quantitative and computational skills in parallel
+using Jupyter notebooks and active pedagogies.
+
+2) Engage new and existing faculty in the development and dissemination of cutting-edge Earth
+Science curricula.
+
+3) Introduce students to current challenges in Earth Science through applied quantitative /
+computational capstone experiences.
+
+4) Contribute to a parallel Faculty of Science strategic initiative of creating a minor in Data
+Science through the development of appropriate upper-level, applied data science courses
+and Earth Science assignments, activities and assessments for DSCI 100.
+
+**Three year timeline:** [Timeline pdf](https://phaustin.github.io/eoas-ubc.github.io/pdffiles/project_timeline.pdf)
 
 +++ {"slideshow": {"slide_type": "slide"}}
 
@@ -71,32 +91,22 @@ Some definitions:
 
 # Current status
 
-Github repositories for transformed undergraduate courses:
+**Github repositories of transformed undergraduate courses:**
+(open source license, community workflow, jupyter notebooks)
+- [Berkeley data 8](https://github.com/data-8/textbook)  
+- [Helsinki Earth Sciences](https://github.com/introqg-2019)  
+- [UBC MATH 210](https://github.com/ubc-math210/2019)  
+- [UBC PHYS crashcourse](https://github.com/christopherwaltham/UBC_PHYS_Python-crash-course)  
+- [UBC DSCI 100](https://github.com/UBC-DSCI/introduction-to-datascience)  
+- [UBC EOSC 350](https://github.com/geoscixyz/gpgLabs)  
+- [UBC ATSC 409](https://github.com/phaustin/numeric)  
 
-  (open source license, community workflow, jupyter notebooks)
-
-- [Berkeley data 8](https://github.com/data-8/textbook)
-
-- [Helsinki Earth Sciences](https://github.com/introqg-2019)
-
-- [UBC MATH 210](https://github.com/ubc-math210/2019)
-
-- [UBC PHYS crashcourse](https://github.com/christopherwaltham/UBC_PHYS_Python-crash-course)
-
-- [UBC DSCI 100](https://github.com/UBC-DSCI/introduction-to-datascience)
-
-- [UBC EOSC 350](https://github.com/geoscixyz/gpgLabs)
-
-- [UBC ATSC 409](https://github.com/phaustin/numeric)
-
-Examples of major research projects
-
-- [Pangeo](https://github.com/pangeo-data)
-
+**Examples of repositories for community research projects**
+- [Pangeo](https://github.com/pangeo-data)  
 - [the CliMA GCM](https://github.com/CliMA/ClimateMachine.jl)
 
 +++ {"slideshow": {"slide_type": "slide"}}
 
-# Our website and 3-year schedule
+# Our website and detailed schedule
 
 - [EOAS TLEF](https://eoas-ubc.github.io/)
