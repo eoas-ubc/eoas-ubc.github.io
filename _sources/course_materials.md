@@ -13,13 +13,17 @@
 
 ## Course transformations
 
-**(The courses below are in early development as of June 10, 2020)**
+**(All the course material below is in early development as of June 10, 2020)**
+
+* [Allen Downey's "How to think like a computer scientist"](https://phaustin.github.io/think_jupyter/preface.html)
+
+* [David Pine's Scientific Python tutorial](http://phaustin.github.io/pyman/)
 
 * [EOSC 211](https://andrewloeppky.github.io/eosc211/title_211.html)
 
-* [ATSC 409](https://clouds.eos.ubc.ca/~phil/numeric/)
-
 * [ATSC 301](https://phaustin.github.io/a301_code/)
+
+* [ATSC 409](https://clouds.eos.ubc.ca/~phil/numeric/)
 
 * EOSC 340
 
