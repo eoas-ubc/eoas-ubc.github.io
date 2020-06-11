@@ -19,7 +19,7 @@
 
 * [ATSC 409](https://clouds.eos.ubc.ca/~phil/numeric/)
 
-* [ATSC 301](*https://phaustin.github.io/a301_code/)
+* [ATSC 301](https://phaustin.github.io/a301_code/)
 
 * EOSC 340
 
