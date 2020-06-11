@@ -39,7 +39,7 @@ Work underway is tracked on our [project board](https://github.com/eoas-ubc/eoas
 
 * [EOAS on github](https://github.com/eoas-ubc)
 
-* [the eoas_ubc conda channel](https://anaconda.org/eoas_ubc/dashboard)
+* [the eoas_ubc conda package channel](https://anaconda.org/eoas_ubc/dashboard)
 
 * {ref}`course-materials`
 
