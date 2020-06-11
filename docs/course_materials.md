@@ -30,5 +30,5 @@
 
 ## Student examples
 
-* Evan's directed studies
+* Evan William's Landsat directed studies project
 
