@@ -1,7 +1,7 @@
 # EOAS TLEF -- DRAFT website
 
 This is the front page of an  ongoing project to transform teaching in the 
-[UBC Department of Earth, Ocean and Atmospheric Science](https://www.eoas.ubc.ca) 
+[UBC Department of Earth, Ocean and Atmospheric Science](https://www.eoas.ubc.ca)  
 to use open source tools, particularly [Jupyter notebooks](https://www.jupyter.org) organized as [executable books](https://executablebooks.org/en/latest/)
 
 Project title: Embedding Open-source Computational Tools into the Quantitative Earth Science Specializations
@@ -36,7 +36,11 @@ During the summer of 2020, we will be working to:
 Work underway is tracked on our [project board](https://github.com/eoas-ubc/eoas_tlef/projects/2)
 
 ## Links to work in progress
-   
+
+* [EOAS on github](https://github.com/eoas-ubc)
+
+* [the eoas_ubc conda channel](https://anaconda.org/eoas_ubc/dashboard)
+
 * {ref}`course-materials`
 
 * {ref}`tools` 
