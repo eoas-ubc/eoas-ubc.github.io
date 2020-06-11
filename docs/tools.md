@@ -1,5 +1,5 @@
 (tools)=
-# Tools for course developmeent
+# Tools for course development
 
 * [paged_html_theme](https://github.com/eoas-ubc/paged_html_theme)
   A sphinx theme for pdf formatting of notebooks
