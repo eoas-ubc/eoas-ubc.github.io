@@ -13,11 +13,13 @@
 
 ## Course transformations
 
-* ATSC 301
+**(The courses below are in early development as of June 10, 2020)**
 
-* ATSC 409
+* [EOSC 211](https://andrewloeppky.github.io/eosc211/title_211.html)
 
-* EOSC 211
+* [ATSC 409](https://clouds.eos.ubc.ca/~phil/numeric/)
+
+* [ATSC 301](*https://phaustin.github.io/a301_code/)
 
 * EOSC 340
 
