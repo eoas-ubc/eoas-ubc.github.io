@@ -1,8 +1,6 @@
 # EOAS TLEF -- DRAFT website
 
-This is the front page of an  ongoing project to transform teaching in the 
-[UBC Department of Earth, Ocean and Atmospheric Science](https://www.eoas.ubc.ca)  
-to use open source tools, particularly [Jupyter notebooks](https://www.jupyter.org) organized as [executable books](https://executablebooks.org/en/latest/)
+This is the front page of an  ongoing project to transform teaching in the [UBC Department of Earth, Ocean and Atmospheric Science](https://www.eoas.ubc.ca) to use open source tools, particularly [Jupyter notebooks](https://www.jupyter.org) organized as [executable books](https://executablebooks.org/en/latest/)
 
 Project title: Embedding Open-source Computational Tools into the Quantitative Earth Science Specializations
 
