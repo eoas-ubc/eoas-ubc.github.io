@@ -37,6 +37,8 @@ Using open source, cloud-based computing we aim to integrate computational and q
 
 - [STAT 201 repository](https://github.com/UBC-DSCI/stat-201)
 
+- [strategic planning pdf](https://github.com/eoas-ubc/eoas-ubc.github.io/blob/docs/pdffiles/strategic_planning.pdf)
+
 ## Project organization
 
 During the summer of 2020, we will be working to:
