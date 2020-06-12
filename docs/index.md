@@ -33,6 +33,10 @@ Using open source, cloud-based computing we aim to integrate computational and q
 
 - [TLEF synergies](https://github.com/eoas-ubc/eoas-ubc.github.io/blob/docs/pdffiles/tlef_synergies.pdf)
 
+- [DSCI 100 repository](https://github.com/UBC-DSCI)
+
+- [STAT 201 repository](https://github.com/UBC-DSCI/stat-201)
+
 ## Project organization
 
 During the summer of 2020, we will be working to:
