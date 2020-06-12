@@ -19,6 +19,10 @@ Using open source, cloud-based computing we aim to integrate computational and q
 
 - [project board](https://github.com/eoas-ubc/eoas_tlef/projects/2)
 
+## Data science breakout
+
+- 
+
 ## Project organization
 
 During the summer of 2020, we will be working to:
