@@ -21,7 +21,15 @@ Using open source, cloud-based computing we aim to integrate computational and q
 
 ## Data science breakout
 
-- 
+- [Sep. 2019 Data Science Report](Data_Science_Report_Sept2019.pdf)
+
+- [Data Science Minor TLEF](dsci_minor.pdf)
+
+- [DSCI 100 report](https://ubc-dsci.github.io/dsci-100-a-report/dsci-100-a-report.html#1)
+
+- [Microbiology-bioinformatics TLEF](https://tlef.ubc.ca/funded-proposals/entry/15/)
+
+- [TLEF synergies](Data_Science_Report_Sept2019.pdf)
 
 ## Project organization
 
