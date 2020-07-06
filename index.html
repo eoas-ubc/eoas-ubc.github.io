@@ -25,12 +25,12 @@
     <script src="_static/copybutton.js"></script>
     <script src="_static/mystnb.js"></script>
     <script src="_static/sphinx-book-theme.js"></script>
-    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script >var togglebuttonSelector = '.toggle, .secondtoggle, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.18.0/dist/embed-amd.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Tools for course development" href="tools.html" />
+    <link rel="next" title="Tools for course developmeent" href="tools.html" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="docsearch:language" content="en">
@@ -64,7 +64,7 @@
   
   <ul class="nav sidenav_l1">
   <li class="">
-    <a href="tools.html">Tools for course development</a>
+    <a href="tools.html">Tools for course developmeent</a>
   </li>
   <li class="">
     <a href="course_materials.html">Course material</a>
@@ -73,6 +73,10 @@
 </nav>
 
  <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
 
 </div>
 
@@ -102,14 +106,14 @@
                 <!-- ipynb file if we had a myst markdown file -->
                 
                 <!-- Download raw file -->
-                <a class="dropdown-buttons" href="_sources/index.md"><button type="button" class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip" data-placement="left">.md</button></a>
+                <a class="dropdown-buttons" href="_sources/index.md.txt"><button type="button" class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip" data-placement="left">.md</button></a>
                 <!-- Download PDF via print -->
                 <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF" onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
             </div>
             
         </div>
 
-        <!-- Source interaction buttons -->
+        <!-- Edit this page -->
         
 
         <!-- Full screen (wrap in <a> to have style consistency -->
@@ -128,14 +132,6 @@
     
         <li class="nav-item toc-entry toc-h2">
             <a href="#project-goals" class="nav-link">Project goals</a>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h2">
-            <a href="#retreat-links" class="nav-link">Retreat links</a>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h2">
-            <a href="#data-science-breakout" class="nav-link">Data science breakout</a>
         </li>
     
         <li class="nav-item toc-entry toc-h2">
@@ -159,30 +155,14 @@
                 
   <div class="section" id="eoas-tlef-draft-website">
 <h1>EOAS TLEF – DRAFT website<a class="headerlink" href="#eoas-tlef-draft-website" title="Permalink to this headline">¶</a></h1>
-<p>This is the front page of an  ongoing project to transform teaching in the <a class="reference external" href="https://www.eoas.ubc.ca">UBC Department of Earth, Ocean and Atmospheric Science</a> to use open source tools, particularly <a class="reference external" href="https://www.jupyter.org">Jupyter notebooks</a> organized as <a class="reference external" href="https://executablebooks.org/en/latest/">executable books</a></p>
+<p>This is the front page of an  ongoing project to transform teaching in the
+<a class="reference external" href="https://www.eoas.ubc.ca">UBC Department of Earth, Ocean and Atmospheric Science</a>
+to use open source tools, particularly <a class="reference external" href="https://www.jupyter.org">Jupyter notebooks</a> organized as <a class="reference external" href="https://executablebooks.org/en/latest/">executable books</a></p>
 <p>Project title: Embedding Open-source Computational Tools into the Quantitative Earth Science Specializations</p>
 <p>Project funding: <a class="reference external" href="https://tlef.ubc.ca/funded-proposals/entry/714/">the UBC Teaching and Learning Enhancement Fund</a></p>
 <div class="section" id="project-goals">
 <h2>Project goals<a class="headerlink" href="#project-goals" title="Permalink to this headline">¶</a></h2>
 <p>Using open source, cloud-based computing we aim to integrate computational and quantitative skills more comprehensively into the EOAS curriculum, incorporating real world examples and datasets into existing courses. New Jupyter notebook based modules and activities will be threaded throughout core courses in Geophysics, Atmospheric Sciences, Oceanography and Geological Engineering bridging traditional disciplinary boundaries. This proposed curriculum transformation will happen alongside a re-evaluation of quantitative EOAS course offerings across disciplines. The end result will reposition the UBC Earth Science specializations as opportunities for quantitative and computational learning in a highly interdisciplinary domain.</p>
-</div>
-<div class="section" id="retreat-links">
-<h2>Retreat links<a class="headerlink" href="#retreat-links" title="Permalink to this headline">¶</a></h2>
-<ul class="simple">
-<li><p><a class="reference external" href="https://phaustin.github.io/eoas-ubc.github.io/retreat_slideshow.slides.html">retreat slides</a></p></li>
-<li><p><a class="reference external" href="https://phaustin.github.io/eoas-ubc.github.io/pdffiles/project_timeline.pdf">3 year schedule</a></p></li>
-<li><p><a class="reference external" href="https://github.com/eoas-ubc/eoas_tlef/projects/2">project board</a></p></li>
-</ul>
-</div>
-<div class="section" id="data-science-breakout">
-<h2>Data science breakout<a class="headerlink" href="#data-science-breakout" title="Permalink to this headline">¶</a></h2>
-<ul class="simple">
-<li><p><code class="xref any docutils literal notranslate"><span class="pre">Sep.</span> <span class="pre">2019</span> <span class="pre">Data</span> <span class="pre">Science</span> <span class="pre">Report</span></code></p></li>
-<li><p><code class="xref any docutils literal notranslate"><span class="pre">Data</span> <span class="pre">Science</span> <span class="pre">Minor</span> <span class="pre">TLEF</span></code></p></li>
-<li><p><a class="reference external" href="https://ubc-dsci.github.io/dsci-100-a-report/dsci-100-a-report.html#1">DSCI 100 report</a></p></li>
-<li><p><a class="reference external" href="https://tlef.ubc.ca/funded-proposals/entry/15/">Microbiology-bioinformatics TLEF</a></p></li>
-<li><p><code class="xref any docutils literal notranslate"><span class="pre">TLEF</span> <span class="pre">synergies</span></code></p></li>
-</ul>
 </div>
 <div class="section" id="project-organization">
 <h2>Project organization<a class="headerlink" href="#project-organization" title="Permalink to this headline">¶</a></h2>
@@ -199,10 +179,8 @@ and working with git</p></li>
 <div class="section" id="links-to-work-in-progress">
 <h2>Links to work in progress<a class="headerlink" href="#links-to-work-in-progress" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li><p><a class="reference external" href="https://github.com/eoas-ubc">EOAS on github</a></p></li>
-<li><p><a class="reference external" href="https://anaconda.org/eoas_ubc/dashboard">The eoas_ubc conda package channel</a></p></li>
 <li><p><a class="reference internal" href="course_materials.html#course-materials"><span class="std std-ref">Course material</span></a></p></li>
-<li><p><a class="reference internal" href="tools.html#tools"><span class="std std-ref">Tools for course development</span></a></p></li>
+<li><p><a class="reference internal" href="tools.html#tools"><span class="std std-ref">Tools for course developmeent</span></a></p></li>
 </ul>
 <div class="toctree-wrapper compound">
 </div>
@@ -218,7 +196,7 @@ and working with git</p></li>
     
     <div class='prev-next-bottom'>
         
-    <a class='right-next' id="next-link" href="tools.html" title="next page">Tools for course development</a>
+    <a class='right-next' id="next-link" href="tools.html" title="next page">Tools for course developmeent</a>
 
     </div>
     <footer class="footer mt-5 mt-md-0">

@@ -5,7 +5,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta charset="utf-8" />
-    <title>Tools for course development &#8212; EOSC TLEF</title>
+    <title>Tools for course developmeent &#8212; EOSC TLEF</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous">
     <link href="_static/css/index.css" rel="stylesheet">
     <link rel="stylesheet" href="_static/sphinx-book-theme.css" type="text/css" />
@@ -25,7 +25,7 @@
     <script src="_static/copybutton.js"></script>
     <script src="_static/mystnb.js"></script>
     <script src="_static/sphinx-book-theme.js"></script>
-    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script >var togglebuttonSelector = '.toggle, .secondtoggle, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.18.0/dist/embed-amd.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
@@ -65,7 +65,7 @@
   
   <ul class="nav sidenav_l1">
   <li class="active">
-    <a href="">Tools for course development</a>
+    <a href="">Tools for course developmeent</a>
   </li>
   <li class="">
     <a href="course_materials.html">Course material</a>
@@ -74,6 +74,10 @@
 </nav>
 
  <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
 
 </div>
 
@@ -103,14 +107,14 @@
                 <!-- ipynb file if we had a myst markdown file -->
                 
                 <!-- Download raw file -->
-                <a class="dropdown-buttons" href="_sources/tools.md"><button type="button" class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip" data-placement="left">.md</button></a>
+                <a class="dropdown-buttons" href="_sources/tools.md.txt"><button type="button" class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip" data-placement="left">.md</button></a>
                 <!-- Download PDF via print -->
                 <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF" onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
             </div>
             
         </div>
 
-        <!-- Source interaction buttons -->
+        <!-- Edit this page -->
         
 
         <!-- Full screen (wrap in <a> to have style consistency -->
@@ -135,17 +139,12 @@
         
               <div>
                 
-  <div class="section" id="tools-for-course-development">
-<span id="tools"></span><h1>Tools for course development<a class="headerlink" href="#tools-for-course-development" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="tools-for-course-developmeent">
+<span id="tools"></span><h1>Tools for course developmeent<a class="headerlink" href="#tools-for-course-developmeent" title="Permalink to this headline">¶</a></h1>
 <ul class="simple">
-<li><p><a class="reference external" href="https://github.com/eoas-ubc/paged_html_theme">paged_html_theme</a>
-A sphinx theme for pdf formatting of notebooks</p></li>
-<li><p><a class="reference external" href="https://github.com/eoas-ubc/jb_tools">jb_tools</a>:
-utiliities for using watchdog and subprocess builds with jupyter-book and myst_nb</p></li>
-<li><p><a class="reference external" href="https://github.com/eoas-ubc/jb_windows">jb_windows</a>
-utilities for setting the environment variable PYTHONUTF8=1 on windows</p></li>
-<li><p>trio_chrome:  A python driver for headless chrome printing</p></li>
 <li><p>convert_docs:  move docx, pptx and latex files into markdown</p></li>
+<li><p>paged_html_theme:  A sphinx theme for pdf formatting of notebooks</p></li>
+<li><p>trio_chrome:  A python driver for headless chrome printing</p></li>
 </ul>
 </div>
 
