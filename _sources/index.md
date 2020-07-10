@@ -13,9 +13,9 @@ Using open source, cloud-based computing we aim to integrate computational and q
 
 ## Scipy2020 BOF links
 
-- [Scipy slides](https://phaustin.github.io/eoas-ubc.github.io/pycon/pycon_bof_slides.slides.html)
+- [Scipy slides](https://eoas-ubc.github.io/pycon/pycon_bof_slides.slides.html)
 
-- [3 year schedule](https://phaustin.github.io/eoas-ubc.github.io/pdffiles/project_timeline.pdf)
+- [3 year schedule](https://eoas-ubc.github.io/pdffiles/project_timeline.pdf)
 
 - [project board](https://github.com/eoas-ubc/eoas_tlef/projects/2)
 
