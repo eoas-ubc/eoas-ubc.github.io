@@ -1,3 +1,4 @@
+
 # EOAS TLEF -- DRAFT website
 
 This is the front page of an  ongoing project to transform teaching in the [UBC Department of Earth, Ocean and Atmospheric Science](https://www.eoas.ubc.ca) to use open source tools, particularly [Jupyter notebooks](https://www.jupyter.org) organized as [executable books](https://executablebooks.org/en/latest/)
@@ -6,20 +7,21 @@ Project title: Embedding Open-source Computational Tools into the Quantitative E
 
 Project funding: [the UBC Teaching and Learning Enhancement Fund](https://tlef.ubc.ca/funded-proposals/entry/714/)
 
++++
 
 ## Project goals
 
 Using open source, cloud-based computing we aim to integrate computational and quantitative skills more comprehensively into the EOAS curriculum, incorporating real world examples and datasets into existing courses. New Jupyter notebook based modules and activities will be threaded throughout core courses in Geophysics, Atmospheric Sciences, Oceanography and Geological Engineering bridging traditional disciplinary boundaries. This proposed curriculum transformation will happen alongside a re-evaluation of quantitative EOAS course offerings across disciplines. The end result will reposition the UBC Earth Science specializations as opportunities for quantitative and computational learning in a highly interdisciplinary domain.
 
-## Retreat links
+## Scipy2020 BOF links
 
-- [retreat slides](https://phaustin.github.io/eoas-ubc.github.io/retreat_slideshow.slides.html)
+- [Scipy slides](https://eoas-ubc.github.io/scipy/scipy_bof_slides.slides.html)
 
-- [3 year schedule](https://phaustin.github.io/eoas-ubc.github.io/pdffiles/project_timeline.pdf)
+- [3 year schedule](https://eoas-ubc.github.io/pdffiles/project_timeline.pdf)
 
 - [project board](https://github.com/eoas-ubc/eoas_tlef/projects/2)
 
-## Data science breakout
+## Data science links
 
 - [Sep. 2019 Data Science Report](https://github.com/eoas-ubc/eoas-ubc.github.io/blob/docs/pdffiles/Data_Science_Report_Sept2019.pdf)
 
@@ -63,5 +65,4 @@ Work underway is tracked on our [project board](https://github.com/eoas-ubc/eoas
 
 * {ref}`course-materials`
 
-* {ref}`tools` 
-
+* {ref}`tools`
