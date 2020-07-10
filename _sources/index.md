@@ -1,3 +1,4 @@
+
 # EOAS TLEF -- DRAFT website
 
 This is the front page of an  ongoing project to transform teaching in the [UBC Department of Earth, Ocean and Atmospheric Science](https://www.eoas.ubc.ca) to use open source tools, particularly [Jupyter notebooks](https://www.jupyter.org) organized as [executable books](https://executablebooks.org/en/latest/)
@@ -6,6 +7,7 @@ Project title: Embedding Open-source Computational Tools into the Quantitative E
 
 Project funding: [the UBC Teaching and Learning Enhancement Fund](https://tlef.ubc.ca/funded-proposals/entry/714/)
 
++++
 
 ## Project goals
 
@@ -13,7 +15,7 @@ Using open source, cloud-based computing we aim to integrate computational and q
 
 ## Scipy2020 BOF links
 
-- [Scipy slides](https://eoas-ubc.github.io/pycon/pycon_bof_slides.slides.html)
+- [Scipy slides](https://eoas-ubc.github.io/scipy/scipy_bof_slides.slides.html)
 
 - [3 year schedule](https://eoas-ubc.github.io/pdffiles/project_timeline.pdf)
 
@@ -63,5 +65,4 @@ Work underway is tracked on our [project board](https://github.com/eoas-ubc/eoas
 
 * {ref}`course-materials`
 
-* {ref}`tools` 
-
+* {ref}`tools`
