@@ -5,10 +5,10 @@
   A sphinx theme for pdf formatting of notebooks
 
 * [jb_tools](https://github.com/eoas-ubc/jb_tools):
-  utiliities for using watchdog and subprocess builds with jupyter-book and myst_nb
+   utiliities for using watchdog to monitor notebooks and
+   and trigger subprocess builds with jupyter-book and myst_nb
 
-* [jb_windows](https://github.com/eoas-ubc/jb_windows)
-  utilities for setting the environment variable PYTHONUTF8=1 on windows
+## coming soon
 
 * trio_chrome:  A python driver for headless chrome printing
 
