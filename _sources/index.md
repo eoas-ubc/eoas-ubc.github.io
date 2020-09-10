@@ -15,6 +15,9 @@ Using open source, cloud-based computing we aim to integrate computational and q
 
 ## OCESE links
 
+- [AMS 2021 annual meeting abstract](https://ams.confex.com/ams/101ANNUAL/11python/papers/viewonly.cgi?password=582729&username=384767):  
+  Title: Building an open-source educational community around executable Jupyterbooks
+
 - [Scipy 2020 BOF slides](https://eoas-ubc.github.io/scipy/scipy_bof_slides.slides.html)
 
 - [OCESE proposal](https://github.com/eoas-ubc/eoas-ubc.github.io/blob/docs/pdffiles/ocese_proposal_2019.pdf)
