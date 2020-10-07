@@ -1,4 +1,5 @@
 #/bin/bash -v
+jb build docs
 mkdir -p docs/_build/html/scipy
 cp ~/repos/eoas_tlef/docs/scipy_bof_slides.slides.html ~/repos/eoas-ubc.github.io/docs/_build/html/scipy/.
 mkdir docs/_build/html/pdffiles
