@@ -15,10 +15,12 @@ Using open source, cloud-based computing we aim to integrate computational and q
 
 ## OCESE links
 
-- AMS 2021 conference presentation:
-  - Title: Building an open-source educational community around executable Jupyterbooks
-  - [AMS 2021 abstract](https://ams.confex.com/ams/101ANNUAL/11python/papers/viewonly.cgi?password=582729&username=384767)
-  - [AMS 2021 slides](https://drive.google.com/file/d/1kyK8OfIer7_1nVkX2Qy8q1ErX4ifDH0j/view?usp=sharing)
+- [Pangeo Showcase presentation slides](https://www.dropbox.com/s/ap325xvsncb25tg/austin_pangeo_may_2021.pdf?dl=0)
+
+- [AMS 2021 annual meeting abstract](https://ams.confex.com/ams/101ANNUAL/11python/papers/viewonly.cgi?password=582729&username=384767):  
+  Title: Building an open-source educational community around executable Jupyterbooks
+
+  - [AMS 2021 slides -- paper 13.4](https://drive.google.com/file/d/1YlvaGFQzzrKQAtOxlryp3aeoC3iPU5bX/view?usp=sharing)
 
 - [Scipy 2020 BOF slides](https://eoas-ubc.github.io/scipy/scipy_bof_slides.slides.html)
 
