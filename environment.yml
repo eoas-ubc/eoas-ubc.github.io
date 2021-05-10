@@ -6,11 +6,9 @@ channels:
 dependencies:
   - git
   - python=3.8
-  - jupyter
-  - sphinx>=3.1
   - pip
-  - jupyter
-  - jupytext
+  - jupyter-book
+  - ghp-import
   - conda-lock
-  
-
+  - mamba
+# conda-lock --file environment.yml -p linux-64
