@@ -1,0 +1,539 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Git Introduction &#8212; OCESE Outline and Docs</title>
+    
+  <link rel="stylesheet" href="_static/css/index.f658d18f9b420779cfdf24aa0a7e2d77.css">
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+  <link rel="stylesheet"
+    href="_static/vendor/open-sans_all/1.44.1/index.css">
+  <link rel="stylesheet"
+    href="_static/vendor/lato_latin-ext/1.44.1/index.css">
+
+    
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/sphinx-book-theme.c441f2ba0852f4cabcb80105e3a46ae6.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="_static/js/index.d3f166471bb80abb5163.js">
+
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/togglebutton.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="_static/sphinx-book-theme.7d483ff0a819d6edff12ce0b1ead3928.js"></script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="GitHub and Git Workflows" href="git-workflows.html" />
+    <link rel="prev" title="Conda &amp; environments" href="conda_environs.html" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+
+
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+<a class="navbar-brand text-wrap" href="index.html">
+  
+  <img src="_static/logo-04smsm.png" class="logo" alt="logo">
+  
+  
+  <h1 class="site-logo" id="site-title">OCESE Outline and Docs</h1>
+  
+</a>
+</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form>
+<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+    <p class="caption collapsible-parent">
+ <span class="caption-text">
+  Project components
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="project-outline.html">
+   Outline
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="presentations.html">
+   Presentations
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="progress-nov2020.html">
+   Progress
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="course_materials.html">
+   Course material
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="outcomes.html">
+   Project Outcomes
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="personnel.html">
+   Contributors
+  </a>
+ </li>
+</ul>
+<p class="caption collapsible-parent">
+ <span class="caption-text">
+  Documentation
+ </span>
+</p>
+<ul class="current nav sidenav_l1">
+ <li class="toctree-l1 current active collapsible-parent">
+  <a class="reference internal" href="basics.html">
+   Basic Skills &gt;&gt;
+  </a>
+  <ul class="current collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="gettingstarted.html">
+     Getting Started
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="commandline.html">
+     Command line and Shells
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="markdown.html">
+     Markdown
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="conda_environs.html">
+     Conda &amp; environments
+    </a>
+   </li>
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     Git Introduction
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="git-workflows.html">
+     GitHub and Git Workflows
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="bestpractices.html">
+     Recommended settings
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="troubleshooting.html">
+     Some challenges
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="tools.html">
+   Course development tools
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="dashboards.html">
+   Dashboards
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="jupyter-etc.html">
+   Jupyter and related
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="jupyterbooks.html">
+   Jupyter Books
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="python-etc.html">
+   Python guidelines
+  </a>
+ </li>
+</ul>
+
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="_sources/git-intro.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+            <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+                    data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+                    title="Fullscreen mode"><i
+                        class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+        <div class="tocsection onthispage pt-5 pb-3">
+            <i class="fas fa-list"></i>
+            Contents
+        </div>
+        <nav id="bd-toc-nav">
+            <ul class="nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#introductory-remarks">
+   Introductory remarks
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#an-aside">
+     An Aside
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#local-version-control-or-tracking-work-on-your-own-computer">
+   Local version control, or tracking work on your own computer
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#backing-up-files-on-github">
+   Backing Up Files On Github
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#alternative-learning-resources">
+   Alternative learning resources
+  </a>
+ </li>
+</ul>
+
+        </nav>
+        
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="git-introduction">
+<h1>Git Introduction<a class="headerlink" href="#git-introduction" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="introductory-remarks">
+<h2>Introductory remarks<a class="headerlink" href="#introductory-remarks" title="Permalink to this headline">¶</a></h2>
+<p>(Derived from a conversational “coding crash course” <a class="reference external" href="https://github.com/AndrewLoeppky/crash_course/blob/master/coding_crash_course.md">here</a>.)</p>
+<p>Writing and debugging code or documentation usually involves a lot of trial and error, so it makes sense to retain earlier versions of your project so you can revert to the old version to try again. Trying to manually keep track of versions is messy and prone to making mistakes. <a class="reference external" href="https://git-scm.com/book/en/v2/Getting-Started-What-is-Git%3F"><strong>Git</strong></a> was developed to address this challenge. It is a file management and version control system that allows you to periodically save your work (called making a <code class="docutils literal notranslate"><span class="pre">commit</span></code>) with notes and names, dates, etc.. Then it allows you to easily revert to previous versions, and also to join (or <code class="docutils literal notranslate"><span class="pre">merge</span></code>) work contributed by colleagues in an organized, reversible, secure and convenient manner.</p>
+<p>All professional programmers carry out these steps, and most use Git to keep track of their work and collaborate with others. There is a huge range of capabilities so it is best to start with the simplest possible workflow, then progress from there depending on your (or your team’s) specific needs.</p>
+<p>The instructions below will set up a <em>code repository</em> on your computer which backs up your work each time you make a change (<em>making commits</em>). Once you gain some familiarity with <em>committing</em> and <em>pushing</em> using Git, you will be ready to tackle the full <em>pull request workflow</em> (meant for collaborating on projects with larger groups).</p>
+<p>Installing Git software on your own computer can be done many ways. We recommend doing this <strong>after</strong> installing the Conda package management system using our instructions <span class="xref myst">eleswhere</span>. A succinct sequence of steps can be found in P. Austin’s <a class="reference external" href="https://phaustin.github.io/numeric/doc_notebooks/course_bootstrap/installing_jupytext.html">Numerical Methods course manual</a>.</p>
+<hr class="docutils" />
+<div class="section" id="an-aside">
+<h3>An Aside<a class="headerlink" href="#an-aside" title="Permalink to this headline">¶</a></h3>
+<p>It is also possible to install Git all by itself by following these <a class="reference external" href="https://git-scm.com/book/en/v2/Getting-Started-Installing-Git">instructions here</a>. If you do it this way you must associate a username and email address with your git installation by opening a shell and typing:</p>
+<div class="highlight-powershell notranslate"><div class="highlight"><pre><span></span><span class="p">$</span> <span class="n">git</span> <span class="n">config</span> <span class="p">-</span><span class="n">-global</span> <span class="n">user</span><span class="p">.</span><span class="n">name</span> <span class="s2">&quot;Max Planck&quot;</span>
+<span class="p">$</span> <span class="n">git</span> <span class="n">config</span> <span class="p">-</span><span class="n">-global</span> <span class="n">user</span><span class="p">.</span><span class="n">email</span> <span class="n">mplanck</span><span class="nv">@example</span><span class="p">.</span><span class="n">com</span>
+</pre></div>
+</div>
+<p>The name and email you enter will be attached to each commit you make to your projects or ones you collaborate on.</p>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="local-version-control-or-tracking-work-on-your-own-computer">
+<h2>Local version control, or tracking work on your own computer<a class="headerlink" href="#local-version-control-or-tracking-work-on-your-own-computer" title="Permalink to this headline">¶</a></h2>
+<p>To track work using Git you must first <em>initialize a repository</em> for our project. Open a shell and navigate (change directory using <code class="docutils literal notranslate"><span class="pre">cd</span></code>) to your working folder (called <code class="docutils literal notranslate"><span class="pre">my_folder</span></code> for now), or make a new folder and navigate to it. Then type <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">init</span></code> to create the repository. For example:</p>
+<div class="highlight-powershell notranslate"><div class="highlight"><pre><span></span><span class="p">$</span> <span class="nb">cd </span><span class="n">my_folder</span>
+<span class="p">$</span> <span class="n">git</span> <span class="n">init</span>
+</pre></div>
+</div>
+<p>Open a File Explorer (or Finder on a Mac) window and navigate to your new folder. You may see a folder called <code class="docutils literal notranslate"><span class="pre">.git</span></code>. This is a “hidden” folder, so if you cannot see it you must adjust your</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Never change anything in this hidden folder! This is where Git keeps all the complicated information needed to manage version control and sharing of collaborative work.</p>
+</div>
+<p>Now, to add some content to your folder create a file called <code class="docutils literal notranslate"><span class="pre">my_example.txt</span></code> using a text editor and save it in your folder.</p>
+<p>Currently <code class="docutils literal notranslate"><span class="pre">my_example.txt</span></code> is saved on our hard drive but it is <strong>not yet</strong> being tracked by git. However, you can check the <em>status</em> of the git repository by typing:</p>
+<div class="highlight-powershell notranslate"><div class="highlight"><pre><span></span><span class="p">$</span> <span class="n">git</span> <span class="n">status</span>
+</pre></div>
+</div>
+<p>You should see something similar to:</p>
+<div class="highlight-powershell notranslate"><div class="highlight"><pre><span></span><span class="p">$</span> <span class="n">git</span> <span class="n">status</span>
+<span class="n">On</span> <span class="n">branch</span> <span class="n">master</span>
+
+<span class="n">No</span> <span class="n">commits</span> <span class="n">yet</span>
+
+<span class="n">Untracked</span> <span class="n">files</span><span class="p">:</span>
+  <span class="p">(</span><span class="n">use</span> <span class="s2">&quot;git add &lt;file&gt;...&quot;</span> <span class="n">to</span> <span class="n">include</span> <span class="k">in</span> <span class="n">what</span> <span class="n">will</span> <span class="n">be</span> <span class="n">committed</span><span class="p">)</span>
+        <span class="n">my_example</span><span class="p">.</span><span class="n">txt</span>
+</pre></div>
+</div>
+<p><code class="docutils literal notranslate"><span class="pre">my_example.txt</span></code> is listed as an <em>untracked file,</em> which means we have not saved any changes using git. Incorporating files into a git repository happens in two steps. First files are <em>added</em> to a staging area, then <em>committed</em> to the repository and logged. This sounds complicated but it enables some powerful functionality that becomes evident as you gain experience.</p>
+<div class="highlight-powershell notranslate"><div class="highlight"><pre><span></span><span class="p">$</span> <span class="n">git</span> <span class="n">add</span> <span class="n">my_example</span><span class="p">.</span><span class="n">txt</span>
+</pre></div>
+</div>
+<p>or to stage all files in the working directory, (right now there is only one) type:</p>
+<div class="highlight-powershell notranslate"><div class="highlight"><pre><span></span><span class="p">$</span> <span class="n">git</span> <span class="n">add</span> <span class="p">.</span>
+</pre></div>
+</div>
+<p>If we wish to see the result of what we just did, type <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">status</span></code> again (not necessary, but a good idea). You should see:</p>
+<div class="highlight-powershell notranslate"><div class="highlight"><pre><span></span><span class="p">$</span> <span class="n">git</span> <span class="n">status</span>
+<span class="n">On</span> <span class="n">branch</span> <span class="n">master</span>
+
+<span class="n">No</span> <span class="n">commits</span> <span class="n">yet</span>
+
+<span class="n">Changes</span> <span class="n">to</span> <span class="n">be</span> <span class="n">committed</span><span class="p">:</span>
+  <span class="p">(</span><span class="n">use</span> <span class="s2">&quot;git rm --cached &lt;file&gt;...&quot;</span> <span class="n">to</span> <span class="n">unstage</span><span class="p">)</span>
+        <span class="n">new</span> <span class="n">file</span><span class="p">:</span>   <span class="n">my_example</span><span class="p">.</span><span class="n">txt</span>
+</pre></div>
+</div>
+<p>Notice that a helpful hint is given, reminding you that files can be removed from the staging area using <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">rm</span> <span class="pre">--cached</span> <span class="pre">&lt;file&gt;</span></code>.</p>
+<p>Once all new files are staged it’s time to <em>commit</em> them (only <code class="docutils literal notranslate"><span class="pre">my_example.txt</span></code> in this case) to our repository. You are required to include a short message with every commit, summarizing the changes you made in a few words. “initial commit” is a good commit message for the first commit to a repository. Type:</p>
+<div class="highlight-powershell notranslate"><div class="highlight"><pre><span></span><span class="p">$</span> <span class="n">git</span> <span class="n">commit</span> <span class="n">-m</span> <span class="s1">&#39;initial commit&#39;</span>
+</pre></div>
+</div>
+<p>Once you press <code class="docutils literal notranslate"><span class="pre">enter</span></code>, git saves everyting from the staging area to your repository, logs the author (you), time when the commit was made (now), and assigns a <em>commit hash,</em> a unique alphanumeric key used to identify this particular commit. To show the log for your most recent commit, type:</p>
+<div class="highlight-powershell notranslate"><div class="highlight"><pre><span></span><span class="p">$</span> <span class="n">git</span> <span class="n">log</span> <span class="p">-</span><span class="n">1</span>
+</pre></div>
+</div>
+<p>(To see the two most recent commits, replace the <code class="docutils literal notranslate"><span class="pre">-1</span></code> with <code class="docutils literal notranslate"><span class="pre">-2</span></code>) The output should look something like:</p>
+<div class="highlight-powershell notranslate"><div class="highlight"><pre><span></span><span class="n">commit</span> <span class="n">dda127f4fe6ac60bd8fbba18d15931ae5d182733</span> <span class="p">(</span><span class="n">HEAD</span> <span class="p">-&gt;</span> <span class="n">master</span><span class="p">)</span>
+<span class="n">Author</span><span class="p">:</span> <span class="n">Max</span> <span class="n">Planck</span> <span class="p">&lt;</span><span class="n">mplanck</span><span class="nv">@example</span><span class="p">.</span><span class="n">com</span><span class="p">&gt;</span>
+<span class="n">Date</span><span class="p">:</span>   <span class="n">Mon</span> <span class="n">Aug</span> <span class="n">31</span> <span class="n">15</span><span class="p">:</span><span class="n">37</span><span class="p">:</span><span class="n">36</span> <span class="n">2020</span> <span class="p">-</span><span class="n">0700</span>
+
+    <span class="n">initial</span> <span class="n">commit</span>
+</pre></div>
+</div>
+<p>We can also check <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">status</span></code> one more time to see that our file has been committed successfully.</p>
+<div class="highlight-powershell notranslate"><div class="highlight"><pre><span></span><span class="p">$</span> <span class="n">git</span> <span class="n">status</span>
+<span class="n">On</span> <span class="n">branch</span> <span class="n">master</span>
+<span class="n">nothing</span> <span class="n">to</span> <span class="n">commit</span><span class="p">,</span> <span class="n">working</span> <span class="n">tree</span> <span class="n">clean</span>
+</pre></div>
+</div>
+<hr class="docutils" />
+<p>That is all we’ll cover here. For more comprehensive introductions and tutorials see the table of recommendations below. For reference, here are all of the git commands used in this tutorial.</p>
+<p><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">config</span> <span class="pre">--global</span> <span class="pre">user.name</span> <span class="pre">&quot;Max</span> <span class="pre">Planck&quot;</span> </code> =  assign your name to your git repository (only do this once when you install git)</p>
+<p><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">config</span> <span class="pre">--global</span> <span class="pre">user.email</span> <span class="pre">mplanck&#64;example.com</span></code>  =  assign your email address to your git repository (only do this once when you install git)</p>
+<p><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">init</span></code>  =  create a new repository in the working directory</p>
+<p><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">status</span></code>  =  show the status of the repository, which files are tracked and which have uncommitted changes</p>
+<p><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">add</span> <span class="pre">&lt;file&gt;</span></code>  =  add <code class="docutils literal notranslate"><span class="pre">&lt;file&gt;</span></code> to the staging area</p>
+<p><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">add</span> <span class="pre">.</span></code>  =  add all files in the working directory to the staging area</p>
+<p><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">rm</span> <span class="pre">--cached</span> <span class="pre">&lt;file&gt;</span></code>  =  remove <code class="docutils literal notranslate"><span class="pre">&lt;file&gt;</span></code> from the staging area</p>
+<p><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">commit</span> <span class="pre">-m</span> <span class="pre">'my</span> <span class="pre">commit</span> <span class="pre">message'</span></code>  =  commit files in the staging area, and include a commit message</p>
+<p><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">log</span> <span class="pre">-1</span></code>  =  show the previous commit hash, author, and time</p>
+<hr class="docutils" />
+<p><strong>One last point:</strong> If you want, you can combine several repos into one big repo as git sub-repositories, perhaps for organizational purposes. See <a class="reference external" href="https://github.com/EmaroLab/docs/wiki/GitHub-Tutorial-to-Manage-Project-with-SubRepositories">the tutorial here</a>.</p>
+</div>
+<hr class="docutils" />
+<div class="section" id="backing-up-files-on-github">
+<h2>Backing Up Files On Github<a class="headerlink" href="#backing-up-files-on-github" title="Permalink to this headline">¶</a></h2>
+<p>Github is an online <em>repository</em> which is used for backing up and sharing code/documents with collaborators. Repositories are copies of your files saved in the cloud, and can be either <strong>public</strong> (visible/accessible by anyone with the URL) or <strong>private</strong> (only accessible to specific users but subject to a subscription fee).</p>
+<p>An introduction to using GitHub is provided <span class="xref myst">on a separate page</span>.</p>
+</div>
+<hr class="docutils" />
+<div class="section" id="alternative-learning-resources">
+<h2>Alternative learning resources<a class="headerlink" href="#alternative-learning-resources" title="Permalink to this headline">¶</a></h2>
+<p>There are a great many open-source and commercial tutorials, how-to’s and manuals including written pages, tutorials (with exercises, examples etc.), and videos. This table provides some recommendations.</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p></p></th>
+<th class="head"><p>Description</p></th>
+<th class="head"><p>Type</p></th>
+<th class="head"><p>Comments</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>1</p></td>
+<td><p><strong><a class="reference external" href="https://www.neonscience.org/version-control-git-series">7-part intro. to Git</a></strong> from NEON (National Ecological Observatory Network).</p></td>
+<td><p>written tutorial website</p></td>
+<td><p>Succinct, no extra words, includes objectives; very nice. Somewhat derived from Software Carpentry (next item). Includes updating repos via “remote”.</p></td>
+</tr>
+<tr class="row-odd"><td><p>2</p></td>
+<td><p><strong><a class="reference external" href="https://www.youtube.com/watch?v=WBg9mlpzEYU">Git 101 basics</a></strong></p></td>
+<td><p>Youtube video (33 mins but play at 1.75 time)</p></td>
+<td><p>I learned more from this than most other sources, and have watched it several times.</p></td>
+</tr>
+<tr class="row-even"><td><p>3</p></td>
+<td><p><strong><a class="reference external" href="https://swcarpentry.github.io/git-novice/">Software carpentry’s resources</a></strong> for their hands on workshops.</p></td>
+<td><p>Well organized website</p></td>
+<td><p>Includes a workshop schedule, pages for each section &amp; exercises. A bit more wordy than NEON’s introduction, but well designed and tested.</p></td>
+</tr>
+<tr class="row-odd"><td><p>4</p></td>
+<td><p><strong><a class="reference external" href="https://git-scm.com/doc">Git manual</a></strong> and others, from Git.</p></td>
+<td><p>Manual; book; videos</p></td>
+<td><p>Detailed documentation and the comprehensive Pro Git book. Four short videos are good introductions.</p></td>
+</tr>
+<tr class="row-even"><td><p>5</p></td>
+<td><p><strong><a class="reference external" href="https://www.jrebel.com/system/files/git-cheat-sheet.pdf">“Best practices” &amp; Git cheat sheet</a></strong></p></td>
+<td><p>PDF page</p></td>
+<td><p>From a nice (although oldish, 2016) summary by <em>Rebellabs</em> called <a class="reference external" href="https://www.jrebel.com/blog/git-cheat-sheet">Git Cheat Sheet: Commands and Best Practices</a>.</p></td>
+</tr>
+<tr class="row-odd"><td><p>6</p></td>
+<td><p><strong><a class="reference external" href="https://gist.github.com/Chaser324/ce0505fbed06b947d962">GitHub Forking</a></strong></p></td>
+<td><p>MD page</p></td>
+<td><p>“Fairly standard” procedure: Create a fork; Do your work; Issue a pull request; Merge back into the original project.</p></td>
+</tr>
+<tr class="row-even"><td><p>7</p></td>
+<td><p><strong><a class="reference external" href="https://www.atlassian.com/git/tutorials/merging-vs-rebasing">Merging vs. Rebasing</a></strong></p></td>
+<td><p>Git tutorial page</p></td>
+<td><p>One of many pages in a comprehensive <a class="reference external" href="https://www.atlassian.com/git/tutorials">Git tutorial</a> from <a class="reference external" href="http://Atlassian.com">Atlassian.com</a>. Their context is Bitbucket (not GitHub) but Git concepts are the same.</p></td>
+</tr>
+<tr class="row-odd"><td><p>8</p></td>
+<td><p><strong><a class="reference external" href="https://linkedinlearning.ubc.ca">LinkedIn Learning “courses”</a></strong> for UBC faculty and staff</p></td>
+<td><p>Video courses</p></td>
+<td><p>Log in using your CWL and search for Git, or GitHub, etc. There are many, but at least they are not quite as random as the unfiltered internet.</p></td>
+</tr>
+</tbody>
+</table>
+<hr class="docutils" />
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        
+        <div class='prev-next-bottom'>
+            
+    <a class='left-prev' id="prev-link" href="conda_environs.html" title="previous page">Conda &amp; environments</a>
+    <a class='right-next' id="next-link" href="git-workflows.html" title="next page">GitHub and Git Workflows</a>
+
+        </div>
+        
+        </div>
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By everyone<br/>
+        
+            &copy; Copyright 2020.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+
+    
+  <script src="_static/js/index.d3f166471bb80abb5163.js"></script>
+
+
+    
+  </body>
+</html>

@@ -1,0 +1,532 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard learning resources &#8212; OCESE Outline and Docs</title>
+    
+  <link rel="stylesheet" href="_static/css/index.f658d18f9b420779cfdf24aa0a7e2d77.css">
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+  <link rel="stylesheet"
+    href="_static/vendor/open-sans_all/1.44.1/index.css">
+  <link rel="stylesheet"
+    href="_static/vendor/lato_latin-ext/1.44.1/index.css">
+
+    
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/sphinx-book-theme.c441f2ba0852f4cabcb80105e3a46ae6.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="_static/js/index.d3f166471bb80abb5163.js">
+
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/togglebutton.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="_static/sphinx-book-theme.7d483ff0a819d6edff12ce0b1ead3928.js"></script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Jupyter and related" href="jupyter-etc.html" />
+    <link rel="prev" title="Course development tools" href="tools.html" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+
+
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+<a class="navbar-brand text-wrap" href="index.html">
+  
+  <img src="_static/logo-04smsm.png" class="logo" alt="logo">
+  
+  
+  <h1 class="site-logo" id="site-title">OCESE Outline and Docs</h1>
+  
+</a>
+</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form>
+<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+    <p class="caption collapsible-parent">
+ <span class="caption-text">
+  Project components
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="project-outline.html">
+   Outline
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="presentations.html">
+   Presentations
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="progress-nov2020.html">
+   Progress
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="course_materials.html">
+   Course material
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="outcomes.html">
+   Project Outcomes
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="personnel.html">
+   Contributors
+  </a>
+ </li>
+</ul>
+<p class="caption collapsible-parent">
+ <span class="caption-text">
+  Documentation
+ </span>
+</p>
+<ul class="current nav sidenav_l1">
+ <li class="toctree-l1 collapsible-parent">
+  <a class="reference internal" href="basics.html">
+   Basic Skills &gt;&gt;
+  </a>
+  <ul class="collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="gettingstarted.html">
+     Getting Started
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="commandline.html">
+     Command line and Shells
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="markdown.html">
+     Markdown
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="conda_environs.html">
+     Conda &amp; environments
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="git-intro.html">
+     Git Introduction
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="git-workflows.html">
+     GitHub and Git Workflows
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="bestpractices.html">
+     Recommended settings
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="troubleshooting.html">
+     Some challenges
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="tools.html">
+   Course development tools
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Dashboards
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="jupyter-etc.html">
+   Jupyter and related
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="jupyterbooks.html">
+   Jupyter Books
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="python-etc.html">
+   Python guidelines
+  </a>
+ </li>
+</ul>
+
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="_sources/dashboards.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+            <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+                    data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+                    title="Fullscreen mode"><i
+                        class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+        <div class="tocsection onthispage pt-5 pb-3">
+            <i class="fas fa-list"></i>
+            Contents
+        </div>
+        <nav id="bd-toc-nav">
+            <ul class="nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#building-and-deploying-dashboards">
+   Building and deploying dashboards
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#examples-will-be-shown-that-explore">
+   Examples will be shown that explore…
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#dashboard-development-progress-as-of-january-2021">
+   Dashboard development progress as of January, 2021
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#getting-started">
+   Getting started
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#environment-for-develpment">
+   Environment for develpment
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#python-libraries">
+   Python libraries
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#code">
+   Code
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#design-criteria">
+   Design criteria
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#deploying-dashboards">
+   Deploying dashboards
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#to-run-only-on-your-own-computer">
+     To run only on your own computer
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#deploy-as-a-dash-based-app">
+     Deploy as a Dash-based app.
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#references-and-resources">
+   References and resources
+  </a>
+ </li>
+</ul>
+
+        </nav>
+        
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="dashboard-learning-resources">
+<h1>Dashboard learning resources<a class="headerlink" href="#dashboard-learning-resources" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="building-and-deploying-dashboards">
+<h2>Building and deploying dashboards<a class="headerlink" href="#building-and-deploying-dashboards" title="Permalink to this headline">¶</a></h2>
+<p><strong>What are “dashboards”</strong>? These are interactive mathematical or data exploration applications hosted online and used in any standard browser. They are used by instructors and students or other learners to explore complex data sets or experiment with challenging concepts.</p>
+<p>This page will eventually provide guidelines and pointers to documentation for building and deploying dashboards for use in classes, student activities or assignments. But first some examples:</p>
+</div>
+<div class="section" id="examples-will-be-shown-that-explore">
+<h2>Examples will be shown that explore…<a class="headerlink" href="#examples-will-be-shown-that-explore" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>scientific natural concepts and processes</p></li>
+<li><p>data processing concepts</p></li>
+<li><p>complicated or extensive data sets</p></li>
+<li><p>mathematical or analysis techniques</p></li>
+</ul>
+</div>
+<div class="section" id="dashboard-development-progress-as-of-january-2021">
+<h2>Dashboard development progress as of January, 2021<a class="headerlink" href="#dashboard-development-progress-as-of-january-2021" title="Permalink to this headline">¶</a></h2>
+<p>The following dashboards were developed for <a class="reference external" href="https://www.eoas.ubc.ca/academics/courses/envr300">ENVR 300, Introduction to Research in Environmental Science</a>. Two have been tested in class with some student and instructor feedback gathered. Lessons learned will be incorporated into futur dashboards.</p>
+<ul class="simple">
+<li><p><strong>MaunaLoa CO2</strong></p>
+<ul>
+<li><p>Goals: Have students explore the capabilities and limitations of <strong>linear models based on measurements</strong> for explaining or predicting a time-varying physical phenomenon.</p></li>
+<li><p>Used as a classroom activity in ENVR 300, February 2021. Student feedback was obtained to inform further use, and potential upgrades.</p></li>
+<li><p>GitHub <a class="reference external" href="https://github.com/fhmjones/envr-300-monaloa">location</a>.</p></li>
+<li><p>Installed for use <a class="reference external" href="https://hub.envr300.portal.eoas.ubc.ca/services/external/envr-300/monaloa/">here</a>, although this is likely to change.</p></li>
+</ul>
+</li>
+<li><p><strong>Three Signals</strong></p>
+<ul>
+<li><p>Goals: Demonstrate to students how various components can contribute to a complete timeseries signal. Currently, the procedure involves a sine wave, linear trend, random noise and smoothing of the result using a 5-pt moving average. Each can be enabled or disabled. Length of the sinewave can be adjusted from 1 to 10 cycles, and noise level can be adjusted.</p></li>
+<li><p>Used as an optional at-home activity in ENVR 300, February 2021. Student feedback was obtained to inform further use, and potential upgrades.</p></li>
+<li><p>GitHub <a class="reference external" href="https://github.com/fhmjones/envr-300-3signals">location</a>.</p></li>
+<li><p>Installed for use <a class="reference external" href="https://hub.envr300.portal.eoas.ubc.ca/services/external/envr-300/three-signals/">here</a>, although this is likely to change.</p></li>
+</ul>
+</li>
+<li><p><strong>Vancouver Ozone</strong></p>
+<ul>
+<li><p>Goals:</p>
+<ul>
+<li><p>Have students practice working with “messy” data sets using a year of ozone measurements from two sensors in SW British Columbia.</p></li>
+<li><p>Compare one year of ozone measurements at two locations, one near the ocean and one inland. “Why might inland ozone differe from that measured near the coastline?”</p></li>
+<li><p>Compare raw, 7-day moving average and daily maximum 8-hr average. “Which makes what you want to learn most clearly visible?”</p></li>
+<li><p>Explore impacts of plotting options on interpretability (eg. dots, lines, both).</p></li>
+</ul>
+</li>
+<li><p>Not yet used by stduents, but represents an example of a “data exploration” app that can inspire other apps for other courses.</p></li>
+<li><p>GitHub <a class="reference external" href="https://github.com/fhmjones/envr-300-ozone">location</a>.</p></li>
+<li><p>Installed for use <a class="reference external" href="https://hub.envr300.portal.eoas.ubc.ca/services/external/envr-300/ozone/">here</a>, although this is likely to change.</p></li>
+</ul>
+</li>
+<li><p><strong>Oceanography</strong></p>
+<ul>
+<li><p>Goals: Plot depth profiles based on sounding location chosen from locations given on an accompanying map. Uses data from GEOTRACE GP15. Students can compare temperature, pressure and salinity along a line of soundings from Alaska to the equator.</p></li>
+<li><p>Not yet used. Created as demonstration of interactive maps and trace plotting.</p></li>
+<li><p>GitHub <a class="reference external" href="https://github.com/fhmjones/eosc-372">location</a>.</p></li>
+<li><p>This animiation gives a rough idea of functionality. <br> &gt;Mouse-over a sounding on the map; &gt;corresponding temperature, salinity &amp; oxygen vs depth are plotted. &gt;Adjust depth axes or map parameters; &gt;zoom/pan in each map or plot. &gt;Other behaviors could be programmed to suit educational needs.
+<img alt="ChessUrl" src="_images/ocgy-demo-02.gif" /></p></li>
+<li><p>Not yet installed for use.</p></li>
+</ul>
+</li>
+<li><p><strong>Interactive sketching app</strong></p>
+<ul>
+<li><p>Goals: Ask students to sketch features on a given image then save and submit for assessment. This simple version allows students to draw lines only on a geological timescale image, to indicate age spans of several species identified from fossils in a paleontology lab.</p></li>
+<li><p>Not yet used - generated for demonstration purposes only.</p></li>
+<li><p>GitHub <a class="reference external" href="https://github.com/fhmjones/dash_ImageAnnot01">location</a>.</p></li>
+<li><p>Not yet installed.</p></li>
+</ul>
+</li>
+<li><p>For <a class="reference external" href="https://www.eoas.ubc.ca/academics/courses/eosc340">EOSC 340, Global Climate Change</a>, existing web-based climate modelling codes are being adapted for dashboard deployment, and have been piloted during the winter term, 2021.</p></li>
+</ul>
+</div>
+<hr class="docutils" />
+<div class="section" id="getting-started">
+<h2>Getting started<a class="headerlink" href="#getting-started" title="Permalink to this headline">¶</a></h2>
+<p>First section will include these requirements:</p>
+<ul class="simple">
+<li><p>Environment for develpment</p></li>
+<li><p>Python libraries, some required, others optional</p></li>
+<li><p>Options: using <code class="docutils literal notranslate"><span class="pre">ipywidgets</span></code>, the <code class="docutils literal notranslate"><span class="pre">Dash</span> <span class="pre">framework</span></code>, or perhaps other options for user interactions. This doc should summarize how to make a decision.</p></li>
+<li><p>Buidling dashboard “apps” - code</p></li>
+<li><p>Building dashboard “apps” - design criteria for optimal learning</p></li>
+<li><p>Using apps - Voila and deployment to servers using containers.</p></li>
+</ul>
+</div>
+<div class="section" id="environment-for-develpment">
+<h2>Environment for develpment<a class="headerlink" href="#environment-for-develpment" title="Permalink to this headline">¶</a></h2>
+<p>yet to be written</p>
+</div>
+<div class="section" id="python-libraries">
+<h2>Python libraries<a class="headerlink" href="#python-libraries" title="Permalink to this headline">¶</a></h2>
+<p>yet to be written</p>
+</div>
+<div class="section" id="code">
+<h2>Code<a class="headerlink" href="#code" title="Permalink to this headline">¶</a></h2>
+<p>yet to be written</p>
+</div>
+<div class="section" id="design-criteria">
+<h2>Design criteria<a class="headerlink" href="#design-criteria" title="Permalink to this headline">¶</a></h2>
+<p>yet to be written</p>
+</div>
+<div class="section" id="deploying-dashboards">
+<h2>Deploying dashboards<a class="headerlink" href="#deploying-dashboards" title="Permalink to this headline">¶</a></h2>
+<p>Details yet to be written, but sections will likely include something like the following:</p>
+<div class="section" id="to-run-only-on-your-own-computer">
+<h3>To run only on your own computer<a class="headerlink" href="#to-run-only-on-your-own-computer" title="Permalink to this headline">¶</a></h3>
+<p>This choice makes sense when you are experimenting with the dashboard or planning (if only temporarily) on using it for presentations for a class or presentation.</p>
+</div>
+<div class="section" id="deploy-as-a-dash-based-app">
+<h3>Deploy as a Dash-based app.<a class="headerlink" href="#deploy-as-a-dash-based-app" title="Permalink to this headline">¶</a></h3>
+<p>The app is accessible via a URL on a publically visible server. Each user gets their own dashboard environment, but calls from individual users to the underlying python code are all run by the same python kernal, and specific results are returned just to the specific requesting user.</p>
+<p>There are other ways of deploying dashboards, but we are currently focusing on using Dash.</p>
+</div>
+</div>
+<div class="section" id="references-and-resources">
+<h2>References and resources<a class="headerlink" href="#references-and-resources" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference external" href="https://towardsdatascience.com/bring-your-jupyter-notebook-to-life-with-interactive-widgets-bc12e03f0916">Here is a</a> reasonably complete, succinct introduction to <code class="docutils literal notranslate"><span class="pre">ipywidgets</span></code> dated May 3, 2019. This article is at “<a class="reference external" href="http://towardsdatascience.com">towardsdatascience.com</a>” which is delivered as part of a subscription to the <a class="reference external" href="https://medium.com/">Medium</a> digital publishing group. (But you can see this using an incognito browser window as often as you like … )</p></li>
+<li><p>ipywidgets <a class="reference external" href="https://ipywidgets.readthedocs.io/en/latest/">documentation</a> although, like many docs, it is a technical reference, not a tutorial.</p>
+<ul>
+<li><p>See in particular the <a class="reference external" href="https://ipywidgets.readthedocs.io/en/latest/examples/Using%20Interact.html">using interact</a> page.</p></li>
+</ul>
+</li>
+<li><p>others?</p></li>
+</ul>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        
+        <div class='prev-next-bottom'>
+            
+    <a class='left-prev' id="prev-link" href="tools.html" title="previous page">Course development tools</a>
+    <a class='right-next' id="next-link" href="jupyter-etc.html" title="next page">Jupyter and related</a>
+
+        </div>
+        
+        </div>
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By everyone<br/>
+        
+            &copy; Copyright 2020.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+
+    
+  <script src="_static/js/index.d3f166471bb80abb5163.js"></script>
+
+
+    
+  </body>
+</html>
