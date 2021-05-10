@@ -5,17 +5,10 @@ channels:
   - defaults
 dependencies:
   - git
-  - python=3.7.*
-  - jupyter
-  - sphinx=2.4.4
+  - python=3.8
   - pip
-  - nbconvert
-  - rise
+  - jupyter-book
   - ghp-import
-  - pyutils
-  - pip:
-    - git+https://github.com/executablebooks/jupyter-book
-    - jupyter-cache[cli]
-    - git+https://github.com/mwouts/jupytext.git
-   
-    
+  - conda-lock
+  - mamba
+# conda-lock --file environment.yml -p linux-64

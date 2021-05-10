@@ -28,7 +28,7 @@ Progress as of November 2020 is summarized [here](progress-nov2020.md). Work und
 
 * [Sep. 2019 Data Science Report](https://github.com/eoas-ubc/eoas-ubc.github.io/blob/docs/pdffiles/Data_Science_Report_Sept2019.pdf)
 * [DSCI 100 report](https://ubc-dsci.github.io/dsci-100-a-report/dsci-100-a-report.html#1)
-* [Data Science Minor TLEF](https://github.com/eoas-ubc/eoas-ubc.github.io/blob/docs/pdffiles/dsci_minor.pdf)
+* [Data Science Minor](https://datascience.ubc.ca/minor)  
 * [Microbiology-bioinformatics TLEF](https://tlef.ubc.ca/funded-proposals/entry/15/)
 * [TLEF synergies](https://github.com/eoas-ubc/eoas-ubc.github.io/blob/docs/pdffiles/tlef_synergies.pdf)
 * [DSCI 100 repository](https://github.com/UBC-DSCI)
