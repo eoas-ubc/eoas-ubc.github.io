@@ -1,6 +1,31 @@
-file: index
-sections:
-  - file: tools
+- file: index
+
+- part: Project components
+  chapters:
+  - file: project-outline
+    title: Outline
+  - file: progress-nov2020
+    title: Progress
   - file: course_materials
+  - file: outcomes
+  - file: personnel
 
-
+- part: Documentation
+  chapters:
+  - file: basics
+    title: Basic Skills >>
+    sections:
+      - file: gettingstarted
+      - file: commandline
+      - file: markdown
+      - file: conda_environs
+      - file: git-intro
+      - file: git-workflows
+      - file: bestpractices
+      - file: troubleshooting
+  - file: tools
+  - file: dashboards
+    title: Dashboards
+  - file: jupyter-etc
+  - file: jupyterbooks
+  - file: python-etc
