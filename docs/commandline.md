@@ -30,9 +30,12 @@ Now let's make a new folder (i.e. directory) and start a new text file in that s
   * Note that `cd` is the "change directory" command. It was given the name of the directory you want to got to, but that assumes this folder is directly "below" your current place.
   * You can provide a complete path to change to some other directory. (What's a "path"? Google _what is a file's path_, or see wikipedia's article on [path_(computing)](https://en.wikipedia.org/wiki/Path_(computing)))
   * You can also give it the symbol `~` to return to your "home" directory, or `..` to change to the "parent" folder, that is one level up from where you are now.
-* to make a new text file, type `notepad newfile.txt`. You will likely be asked whether to create this new file - say yes, then type a few lines, save and close notepad.
+* to make a new text file, type `notepad newfile.txt`. You will likely be asked whether to create this new file - say yes, then type a few lines, save and close notepad. 
+  * <em><span style="color:green">For Mac, type `vim newfile.txt` to edit a text file in the terminal (but this requires knowledge of some vim commands). Or to edit in TextEdit (Mac's equivalent of Window's Notepad), type `touch newfile.txt` to create the file, then `open newfile.txt` to open the file in TextEdit.</span></em>
 * Is this new file there? Type `ls`. What's in it? Type `type newfile.txt`. 
+  * <em><span style="color:green">For Mac, type `cat newfile.txt`.</span></em>
 * To remove this file type `del newfile.txt` and check it's gone with `ls`.
+  * <em><span style="color:green">For Mac, type `rm newfile.txt` (not sure if this line is needed since the bash equivalent is in the table below). </span></em>
 
 ## Bash and powershell command reference
 
@@ -64,3 +67,8 @@ _In the following table, a `Cmdlet` is microsoft's term for a PowerShell command
  Remember the keyboard shortcuts of `tab` for auto-completion and the up and down arrows to scroll through recent commands. These shortcuts can save a lot of typing!
 
 [This link](https://www.comparitech.com/net-admin/powershell-cheat-sheet/) has one example of a fairly good single page (although fairly long) introduction to Power shell. It includes a PDF cheat sheet of commands and aliases, but that contains way more than you will need unless you start managing systems and implementing shell scripts (i.e. automating repetative sequences of complex commandline activity).
+  * <em><span style="color:green">[Mac terminal commands cheat sheet](https://github.com/0nn0/terminal-mac-cheatsheet)</span></em>
+
+```python
+
+```

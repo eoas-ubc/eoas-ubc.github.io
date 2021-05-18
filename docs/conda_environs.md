@@ -47,7 +47,11 @@ From a [short set of notes](https://vxuni.com/lectures/conda-environments/) with
 
 * Usually, a file called environment.yml is built by hand to specify packages needed for an environment. 
 * Alternatively, command "conda env export" will build a list with precise packages and their versions. This is very exact.
-* If there is an environment.yml  file in your pwd, then command `conda create` generates that environment.
+* If there is an environment.yml  file in your pwd <em><span style="color:green">I found the "in your pwd" a bit confusing since pwd is a command, but I understand that's it's trying to check if there's an environment.yml file in the project directory. Maybe it would be more clear to replace "pwd" with "directory" or "project"?</span></em>, then command `conda create` generates that environment <em><span style="color:green">I also had troubles understanding this because I interpreted it as being able to create a conda environment just be typing `conda create` by itself if there was an conda environment file called environment.yml in your project. However, typing `conda create` with an environment.yml file in the current directory returns a `CondaValueError: The target prefix is the base prefix. Aborting.` error</span></em>. 
   * The .yml file could have a different name, in which case these commands must specify that name using the `-f` parameter for "file". i.e.: `conda env create -f envname.yml`. 
-* After it is ready, `conda activate` will set the environment ready to use (or add the "name.yml" file's name if it is not environment.yml).
-* Alterantive to create: use `conda env update`. This automatically updates the environment specified in that file if one already exists, or creates it if it doesn't.
+* After it is ready, `conda activate` will set the environment ready to use (or add the "name.yml" file's name if it is not environment.yml). <em><span style="color:green">For me, `conda activate` only activates the base conda environment that was initialized when miniconda was installed for me. To activate the environment, I do one of three things. (1) I use the command specified in the installation log in the shell window from when conda was creating the environment. (2) Open the environment file, I find the environment name by looking for the the "name" key in the file. (3) Type `conda info --envs` in my shell to list out all my conda environments.</span></em>
+* Alterantive to create: use `conda env update`. This automatically updates the environment specified in that file if one already exists, or creates it if it doesn't. <em><span style="color:green">Precondition for this command is that the environment file name is "environment.yml". If the environment file name isn't "environment.yml", use `conda env update --file envname.yml.</span></em>
+
+```bash
+
+```
