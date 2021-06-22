@@ -5,9 +5,10 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Git Introduction &#8212; OCESE Outline and Docs</title>
+    <title>Git Introduction &#8212; OCESE Documenation</title>
     
-  <link rel="stylesheet" href="_static/css/index.f658d18f9b420779cfdf24aa0a7e2d77.css">
+  <link href="_static/css/theme.css" rel="stylesheet" />
+  <link href="_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
 
     
   <link rel="stylesheet"
@@ -19,14 +20,10 @@
 
     
       
-  <link rel="stylesheet"
-    href="_static/vendor/open-sans_all/1.44.1/index.css">
-  <link rel="stylesheet"
-    href="_static/vendor/lato_latin-ext/1.44.1/index.css">
 
     
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" href="_static/sphinx-book-theme.c441f2ba0852f4cabcb80105e3a46ae6.css" type="text/css" />
+    <link rel="stylesheet" href="_static/sphinx-book-theme.acff12b8f9c144ce68a297486a2fa670.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
@@ -34,7 +31,7 @@
     <link rel="stylesheet" type="text/css" href="_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
     <link rel="stylesheet" type="text/css" href="_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
     
-  <link rel="preload" as="script" href="_static/js/index.d3f166471bb80abb5163.js">
+  <link rel="preload" as="script" href="_static/js/index.1c5a1a01449ed65a7b51.js">
 
     <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
     <script src="_static/jquery.js"></script>
@@ -44,7 +41,7 @@
     <script src="_static/clipboard.min.js"></script>
     <script src="_static/copybutton.js"></script>
     <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
-    <script src="_static/sphinx-book-theme.7d483ff0a819d6edff12ce0b1ead3928.js"></script>
+    <script src="_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
     <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
     <script >
         const thebe_selector = ".thebe"
@@ -56,14 +53,14 @@
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="GitHub and Git Workflows" href="git-workflows.html" />
     <link rel="prev" title="Conda &amp; environments" href="conda_environs.html" />
-
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
-
-
-
+    
   </head>
   <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
     
 
     <div class="container-xl">
@@ -72,28 +69,33 @@
 <div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
     
         <div class="navbar-brand-box">
-<a class="navbar-brand text-wrap" href="index.html">
-  
-  <img src="_static/logo-04smsm.png" class="logo" alt="logo">
-  
-  
-  <h1 class="site-logo" id="site-title">OCESE Outline and Docs</h1>
-  
-</a>
+    <a class="navbar-brand text-wrap" href="index.html">
+      
+      <img src="_static/logo-04smsm.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">OCESE Documenation</h1>
+      
+    </a>
 </div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
   <i class="icon fas fa-search"></i>
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
-</form>
-<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
-    <p class="caption collapsible-parent">
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+    <div class="bd-toc-item active">
+        <p class="caption">
  <span class="caption-text">
   Project components
  </span>
 </p>
-<ul class="nav sidenav_l1">
+<ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="project-outline.html">
    Outline
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="personnel.html">
+   Contributors
   </a>
  </li>
  <li class="toctree-l1">
@@ -101,10 +103,22 @@
    Presentations
   </a>
  </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="progress-nov2020.html">
-   Progress
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="progress.html">
+   Progress Reports &gt;&gt;
   </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="progress-nov2020.html">
+     Progress Nov 2020
+    </a>
+   </li>
+  </ul>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="course_materials.html">
@@ -116,23 +130,23 @@
    Project Outcomes
   </a>
  </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="personnel.html">
-   Contributors
-  </a>
- </li>
 </ul>
-<p class="caption collapsible-parent">
+<p class="caption">
  <span class="caption-text">
   Documentation
  </span>
 </p>
-<ul class="current nav sidenav_l1">
- <li class="toctree-l1 current active collapsible-parent">
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 current active has-children">
   <a class="reference internal" href="basics.html">
    Basic Skills &gt;&gt;
   </a>
-  <ul class="current collapse-ul">
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="current">
    <li class="toctree-l2">
     <a class="reference internal" href="gettingstarted.html">
      Getting Started
@@ -174,8 +188,6 @@
     </a>
    </li>
   </ul>
-  <i class="fas fa-chevron-down">
-  </i>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="tools.html">
@@ -204,6 +216,7 @@
  </li>
 </ul>
 
+    </div>
 </nav> <!-- To handle the deprecated key -->
 
 <div class="navbar_extra_footer">
@@ -253,12 +266,12 @@
 
             <!-- Source interaction buttons -->
 
-
             <!-- Full screen (wrap in <a> to have style consistency -->
-            <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
-                    data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
-                    title="Fullscreen mode"><i
-                        class="fas fa-expand"></i></button></a>
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
 
             <!-- Launch buttons -->
 
@@ -267,12 +280,11 @@
         <!-- Table of contents -->
         <div class="d-none d-md-block col-md-2 bd-toc show">
             
-        <div class="tocsection onthispage pt-5 pb-3">
-            <i class="fas fa-list"></i>
-            Contents
-        </div>
-        <nav id="bd-toc-nav">
-            <ul class="nav section-nav flex-column">
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav">
+                <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#introductory-remarks">
    Introductory remarks
@@ -302,8 +314,7 @@
  </li>
 </ul>
 
-        </nav>
-        
+            </nav>
         </div>
     </div>
 </div>
@@ -351,14 +362,15 @@
 </pre></div>
 </div>
 <p>You should see something similar to:</p>
-<div class="highlight-powershell notranslate"><div class="highlight"><pre><span></span><span class="p">$</span> <span class="n">git</span> <span class="n">status</span>
-<span class="n">On</span> <span class="n">branch</span> <span class="n">master</span>
+<div class="highlight-powershell notranslate"><div class="highlight"><pre><span></span>$ git status
+On branch master
 
-<span class="n">No</span> <span class="n">commits</span> <span class="n">yet</span>
+No commits yet
 
-<span class="n">Untracked</span> <span class="n">files</span><span class="p">:</span>
-  <span class="p">(</span><span class="n">use</span> <span class="s2">&quot;git add &lt;file&gt;...&quot;</span> <span class="n">to</span> <span class="n">include</span> <span class="k">in</span> <span class="n">what</span> <span class="n">will</span> <span class="n">be</span> <span class="n">committed</span><span class="p">)</span>
-        <span class="n">my_example</span><span class="p">.</span><span class="n">txt</span>
+Untracked files:
+  (use &quot;git add &lt;file&gt;...&quot; to include in what will be committed)
+        my_example.txt
+
 </pre></div>
 </div>
 <p><code class="docutils literal notranslate"><span class="pre">my_example.txt</span></code> is listed as an <em>untracked file,</em> which means we have not saved any changes using git. Incorporating files into a git repository happens in two steps. First files are <em>added</em> to a staging area, then <em>committed</em> to the repository and logged. This sounds complicated but it enables some powerful functionality that becomes evident as you gain experience.</p>
@@ -370,14 +382,14 @@
 </pre></div>
 </div>
 <p>If we wish to see the result of what we just did, type <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">status</span></code> again (not necessary, but a good idea). You should see:</p>
-<div class="highlight-powershell notranslate"><div class="highlight"><pre><span></span><span class="p">$</span> <span class="n">git</span> <span class="n">status</span>
-<span class="n">On</span> <span class="n">branch</span> <span class="n">master</span>
+<div class="highlight-powershell notranslate"><div class="highlight"><pre><span></span>$ git status
+On branch master
 
-<span class="n">No</span> <span class="n">commits</span> <span class="n">yet</span>
+No commits yet
 
-<span class="n">Changes</span> <span class="n">to</span> <span class="n">be</span> <span class="n">committed</span><span class="p">:</span>
-  <span class="p">(</span><span class="n">use</span> <span class="s2">&quot;git rm --cached &lt;file&gt;...&quot;</span> <span class="n">to</span> <span class="n">unstage</span><span class="p">)</span>
-        <span class="n">new</span> <span class="n">file</span><span class="p">:</span>   <span class="n">my_example</span><span class="p">.</span><span class="n">txt</span>
+Changes to be committed:
+  (use &quot;git rm --cached &lt;file&gt;...&quot; to unstage)
+        new file:   my_example.txt
 </pre></div>
 </div>
 <p>Notice that a helpful hint is given, reminding you that files can be removed from the staging area using <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">rm</span> <span class="pre">--cached</span> <span class="pre">&lt;file&gt;</span></code>.</p>
@@ -390,11 +402,11 @@
 </pre></div>
 </div>
 <p>(To see the two most recent commits, replace the <code class="docutils literal notranslate"><span class="pre">-1</span></code> with <code class="docutils literal notranslate"><span class="pre">-2</span></code>) The output should look something like:</p>
-<div class="highlight-powershell notranslate"><div class="highlight"><pre><span></span><span class="n">commit</span> <span class="n">dda127f4fe6ac60bd8fbba18d15931ae5d182733</span> <span class="p">(</span><span class="n">HEAD</span> <span class="p">-&gt;</span> <span class="n">master</span><span class="p">)</span>
-<span class="n">Author</span><span class="p">:</span> <span class="n">Max</span> <span class="n">Planck</span> <span class="p">&lt;</span><span class="n">mplanck</span><span class="nv">@example</span><span class="p">.</span><span class="n">com</span><span class="p">&gt;</span>
-<span class="n">Date</span><span class="p">:</span>   <span class="n">Mon</span> <span class="n">Aug</span> <span class="n">31</span> <span class="n">15</span><span class="p">:</span><span class="n">37</span><span class="p">:</span><span class="n">36</span> <span class="n">2020</span> <span class="p">-</span><span class="n">0700</span>
+<div class="highlight-powershell notranslate"><div class="highlight"><pre><span></span>commit dda127f4fe6ac60bd8fbba18d15931ae5d182733 (HEAD -&gt; master)
+Author: Max Planck &lt;mplanck@example.com&gt;
+Date:   Mon Aug 31 15:37:36 2020 -0700
 
-    <span class="n">initial</span> <span class="n">commit</span>
+    initial commit
 </pre></div>
 </div>
 <p>We can also check <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">status</span></code> one more time to see that our file has been committed successfully.</p>
@@ -520,7 +532,7 @@
         
           By everyone<br/>
         
-            &copy; Copyright 2020.<br/>
+            &copy; Copyright 2021.<br/>
       </p>
     </div>
   </footer>
@@ -529,11 +541,9 @@
 
       </div>
     </div>
+  
+  <script src="_static/js/index.1c5a1a01449ed65a7b51.js"></script>
 
-    
-  <script src="_static/js/index.d3f166471bb80abb5163.js"></script>
-
-
-    
+  
   </body>
 </html>
