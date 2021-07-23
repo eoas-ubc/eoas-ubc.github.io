@@ -5,10 +5,9 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Powershell, Git and System Administration Crash Course &#8212; OCESE Documenation</title>
+    <title>Powershell, Git and System Administration Crash Course &#8212; OCESE Outline and Docs</title>
     
-  <link href="../_static/css/theme.css" rel="stylesheet" />
-  <link href="../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+  <link rel="stylesheet" href="../_static/css/index.f658d18f9b420779cfdf24aa0a7e2d77.css">
 
     
   <link rel="stylesheet"
@@ -20,10 +19,14 @@
 
     
       
+  <link rel="stylesheet"
+    href="../_static/vendor/open-sans_all/1.44.1/index.css">
+  <link rel="stylesheet"
+    href="../_static/vendor/lato_latin-ext/1.44.1/index.css">
 
     
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/sphinx-book-theme.acff12b8f9c144ce68a297486a2fa670.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/sphinx-book-theme.c441f2ba0852f4cabcb80105e3a46ae6.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
@@ -31,7 +34,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
     <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
     
-  <link rel="preload" as="script" href="../_static/js/index.1c5a1a01449ed65a7b51.js">
+  <link rel="preload" as="script" href="../_static/js/index.d3f166471bb80abb5163.js">
 
     <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
@@ -41,7 +44,7 @@
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
     <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
-    <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script src="../_static/sphinx-book-theme.7d483ff0a819d6edff12ce0b1ead3928.js"></script>
     <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
     <script >
         const thebe_selector = ".thebe"
@@ -53,14 +56,14 @@
     <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
+
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
-    
+
+
+
   </head>
   <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
-    
-    <div class="container-fluid" id="banner"></div>
-
     
 
     <div class="container-xl">
@@ -69,33 +72,28 @@
 <div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
     
         <div class="navbar-brand-box">
-    <a class="navbar-brand text-wrap" href="../index.html">
-      
-      <img src="../_static/logo-04smsm.png" class="logo" alt="logo">
-      
-      
-      <h1 class="site-logo" id="site-title">OCESE Documenation</h1>
-      
-    </a>
+<a class="navbar-brand text-wrap" href="../index.html">
+  
+  <img src="../_static/logo-04smsm.png" class="logo" alt="logo">
+  
+  
+  <h1 class="site-logo" id="site-title">OCESE Outline and Docs</h1>
+  
+</a>
 </div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
   <i class="icon fas fa-search"></i>
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
-</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
-    <div class="bd-toc-item active">
-        <p class="caption">
+</form>
+<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+    <p class="caption collapsible-parent">
  <span class="caption-text">
   Project components
  </span>
 </p>
-<ul class="nav bd-sidenav">
+<ul class="nav sidenav_l1">
  <li class="toctree-l1">
   <a class="reference internal" href="../project-outline.html">
    Outline
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../personnel.html">
-   Contributors
   </a>
  </li>
  <li class="toctree-l1">
@@ -103,22 +101,10 @@
    Presentations
   </a>
  </li>
- <li class="toctree-l1 has-children">
-  <a class="reference internal" href="../progress.html">
-   Progress Reports &gt;&gt;
+ <li class="toctree-l1">
+  <a class="reference internal" href="../progress-nov2020.html">
+   Progress
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
-  <label for="toctree-checkbox-1">
-   <i class="fas fa-chevron-down">
-   </i>
-  </label>
-  <ul>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../progress-nov2020.html">
-     Progress Nov 2020
-    </a>
-   </li>
-  </ul>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../course_materials.html">
@@ -130,23 +116,23 @@
    Project Outcomes
   </a>
  </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../personnel.html">
+   Contributors
+  </a>
+ </li>
 </ul>
-<p class="caption">
+<p class="caption collapsible-parent">
  <span class="caption-text">
   Documentation
  </span>
 </p>
-<ul class="nav bd-sidenav">
- <li class="toctree-l1 has-children">
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1 collapsible-parent">
   <a class="reference internal" href="../basics.html">
    Basic Skills &gt;&gt;
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
-  <label for="toctree-checkbox-2">
-   <i class="fas fa-chevron-down">
-   </i>
-  </label>
-  <ul>
+  <ul class="collapse-ul">
    <li class="toctree-l2">
     <a class="reference internal" href="../gettingstarted.html">
      Getting Started
@@ -188,6 +174,8 @@
     </a>
    </li>
   </ul>
+  <i class="fas fa-chevron-down">
+  </i>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../tools.html">
@@ -216,7 +204,6 @@
  </li>
 </ul>
 
-    </div>
 </nav> <!-- To handle the deprecated key -->
 
 <div class="navbar_extra_footer">
@@ -266,12 +253,12 @@
 
             <!-- Source interaction buttons -->
 
-            <!-- Full screen (wrap in <a> to have style consistency -->
 
-<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
-        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
-        title="Fullscreen mode"><i
-            class="fas fa-expand"></i></button></a>
+            <!-- Full screen (wrap in <a> to have style consistency -->
+            <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+                    data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+                    title="Fullscreen mode"><i
+                        class="fas fa-expand"></i></button></a>
 
             <!-- Launch buttons -->
 
@@ -280,11 +267,12 @@
         <!-- Table of contents -->
         <div class="d-none d-md-block col-md-2 bd-toc show">
             
-            <div class="tocsection onthispage pt-5 pb-3">
-                <i class="fas fa-list"></i> Contents
-            </div>
-            <nav id="bd-toc-nav">
-                <ul class="visible nav section-nav flex-column">
+        <div class="tocsection onthispage pt-5 pb-3">
+            <i class="fas fa-list"></i>
+            Contents
+        </div>
+        <nav id="bd-toc-nav">
+            <ul class="nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#intro">
    Intro
@@ -336,7 +324,8 @@
  </li>
 </ul>
 
-            </nav>
+        </nav>
+        
         </div>
     </div>
 </div>
@@ -371,7 +360,7 @@
 </pre></div>
 </div>
 <p>or</p>
-<div class="highlight-powershell notranslate"><div class="highlight"><pre><span></span>C:\folder1\folder2&gt;
+<div class="highlight-powershell notranslate"><div class="highlight"><pre><span></span><span class="n">C</span><span class="p">:\</span><span class="n">folder1</span><span class="p">\</span><span class="n">folder2</span><span class="p">&gt;</span>
 </pre></div>
 </div>
 <p>For the purposes of most tutorials and documentation involving shell commands, the <code class="docutils literal notranslate"><span class="pre">$</span></code> command prompt is assumed, regardless of what yours actually looks like. Do not type the “$” sign as part of your input.</p>
@@ -380,13 +369,13 @@
 </pre></div>
 </div>
 <p><code class="docutils literal notranslate"><span class="pre">pwd</span></code> stands for “print working directory,” which is the directory you are currently in. If you were to create or save a file right now, it would be saved in the working directory, unless otherwise specified. You should now see something like:</p>
-<div class="highlight-powershell notranslate"><div class="highlight"><pre><span></span>$ pwd
+<div class="highlight-powershell notranslate"><div class="highlight"><pre><span></span><span class="p">$</span> <span class="nb">pwd</span>
 
-Path
-----
-C:\Users\Owner\Shell_Tutorial
+<span class="n">Path</span>
+<span class="p">----</span>
+<span class="n">C</span><span class="p">:\</span><span class="n">Users</span><span class="p">\</span><span class="n">Owner</span><span class="p">\</span><span class="n">Shell_Tutorial</span>
 
-$
+<span class="p">$</span>
 </pre></div>
 </div>
 <p>Your working directory is printed to the screen and the prompt re-appears, ready for more input. You can move around your computer’s folder tree using <code class="docutils literal notranslate"><span class="pre">cd</span></code> (change directory) followed by:</p>
@@ -395,16 +384,16 @@ $
 <p><code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">cd</span> <span class="pre">~</span></code>  <span class="math notranslate nohighlight">\(\rightarrow\)</span> go to the home directory</p>
 <p><code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">mkdir</span> <span class="pre">my_folder</span></code> <span class="math notranslate nohighlight">\(\rightarrow\)</span> make a new directory called “my_folder” inside the current directory</p>
 <p>you can also use <code class="docutils literal notranslate"><span class="pre">ls</span></code> to list all files contained within the current working directory and print them to the screen. The results will look something like this:</p>
-<div class="highlight-powershell notranslate"><div class="highlight"><pre><span></span>$ ls
+<div class="highlight-powershell notranslate"><div class="highlight"><pre><span></span><span class="p">$</span> <span class="nb">ls</span>
 
-    Directory: C:\Users\Owner\my_folder
+    <span class="n">Directory</span><span class="p">:</span> <span class="n">C</span><span class="p">:\</span><span class="n">Users</span><span class="p">\</span><span class="n">Owner</span><span class="p">\</span><span class="n">my_folder</span>
 
 
-Mode                 LastWriteTime         Length Name
-----                 -------------         ------ ----
-d-----        2020-06-03   3:22 PM                file_1
-d-----        2020-06-11   9:26 AM                file_2
-d-----        2020-07-31  10:21 AM          sub_folder_1
+<span class="n">Mode</span>                 <span class="n">LastWriteTime</span>         <span class="n">Length</span> <span class="n">Name</span>
+<span class="p">----</span>                 <span class="p">-------------</span>         <span class="p">------</span> <span class="p">----</span>
+<span class="n">d</span><span class="p">-----</span>        <span class="n">2020</span><span class="p">-</span><span class="n">06</span><span class="p">-</span><span class="n">03</span>   <span class="n">3</span><span class="p">:</span><span class="n">22</span> <span class="n">PM</span>                <span class="n">file_1</span>
+<span class="n">d</span><span class="p">-----</span>        <span class="n">2020</span><span class="p">-</span><span class="n">06</span><span class="p">-</span><span class="n">11</span>   <span class="n">9</span><span class="p">:</span><span class="n">26</span> <span class="n">AM</span>                <span class="n">file_2</span>
+<span class="n">d</span><span class="p">-----</span>        <span class="n">2020</span><span class="p">-</span><span class="n">07</span><span class="p">-</span><span class="n">31</span>  <span class="n">10</span><span class="p">:</span><span class="n">21</span> <span class="n">AM</span>          <span class="n">sub_folder_1</span>
 </pre></div>
 </div>
 </div>
@@ -527,7 +516,7 @@ $ pwd
         
           By everyone<br/>
         
-            &copy; Copyright 2021.<br/>
+            &copy; Copyright 2020.<br/>
       </p>
     </div>
   </footer>
@@ -536,9 +525,11 @@ $ pwd
 
       </div>
     </div>
-  
-  <script src="../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
 
-  
+    
+  <script src="../_static/js/index.d3f166471bb80abb5163.js"></script>
+
+
+    
   </body>
 </html>
