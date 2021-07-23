@@ -9,9 +9,11 @@
 ### Current Students
 
 - Andrew Loeppky ([AL on GitHub](https://github.com/AndrewLoeppky))
-- Benjamin Chang ([BC on GitHub](https://github.com/bkchang-97))
+- Jamie Byer ([JB on GitHub](https://github.com/jamiebyer/))
+- Carol Zhang ([CZ on GitHub](https://github.com/carolz19))
+- Jacob McFarlane ([JM on GitHub](https://github.com/JacobMcFarlane))
+- Yiki Su ([YS on GitHub](https://github.com/YikiSu))
 - Hariharan Umashankar ([HU on GitHub](https://github.com/hari-ushankar) or [researchgate](https://www.researchgate.net/profile/Hariharan_Umashankar))
-- Chris Rodell ([CR on GitHub](https://github.com/cerodell))
 
 ### Project team members
 
@@ -31,4 +33,6 @@ The following are, or will be involved in various capacities.
 ### Project alumni
 
 - Mara Colclough ([MC on GitHub](https://github.com/maracieco))
-- Danil Platonov ([DP on GitHub](https://github.com/slemonide)) 
+- Danil Platonov ([DP on GitHub](https://github.com/slemonide))
+- Benjamin Chang ([BC on GitHub](https://github.com/bkchang-97))
+- Chris Rodell ([CR on GitHub](https://github.com/cerodell))
