@@ -7,8 +7,9 @@ dependencies:
   - git
   - python=3.8
   - pip
-  - jupyter-book
   - ghp-import
+  - jupytext
+  - jupyter-book
   - conda-lock
   - mamba
 # conda-lock --file environment.yml -p linux-64
