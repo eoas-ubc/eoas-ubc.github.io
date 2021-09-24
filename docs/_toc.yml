@@ -31,6 +31,9 @@ parts:
   - file: tools
   - file: dashboards
     title: Dashboards
+    sections:
+    - file: heroku
+      title: Deploy to Heroku
   - file: jupyter-etc
   - file: jupyterbooks
   - file: python-etc

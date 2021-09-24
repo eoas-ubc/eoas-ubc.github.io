@@ -1,4 +1,4 @@
-name: mainsite
+name: jupyterbook
 channels:
   - eoas_ubc
   - conda-forge
