@@ -12,7 +12,7 @@ This proposed curriculum transformation will happen alongside a re-evaluation of
 
 ## Progress
 
-Progress as of November 2020 is summarized [here](progress-nov2020.md). Work underway is tracked on our [project board](https://github.com/eoas-ubc/eoas_tlef/projects/2)
+See the Progress Reports section.
 
 ## Project links
 

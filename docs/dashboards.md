@@ -43,7 +43,7 @@ The following dashboards were developed for [ENVR 300, Introduction to Research 
   * Not yet used. Created as demonstration of interactive maps and trace plotting.
   * GitHub [location](https://github.com/fhmjones/eosc-372).
   * This animiation gives a rough idea of functionality. <br> >Mouse-over a sounding on the map; >corresponding temperature, salinity & oxygen vs depth are plotted. >Adjust depth axes or map parameters; >zoom/pan in each map or plot. >Other behaviors could be programmed to suit educational needs.
-  ![ChessUrl](ocgy-demo-02.gif "chess")
+  ![ocgydemoUrl](./images/ocgy-demo-02.gif "oceanography dashboard demo")
   * Not yet installed for use.
 
 * **Interactive sketching app**
