@@ -6,82 +6,46 @@
 
 This page will eventually provide guidelines and pointers to documentation for building and deploying dashboards for use in classes, student activities or assignments. But first some examples:
 
-## Examples will be shown that explore...
+## Dashboards being developed as of November, 2021
 
-* scientific natural concepts and processes
-* data processing concepts
-* complicated or extensive data sets
-* mathematical or analysis techniques
+Climate science & oceanography:
+* **[ocgy-dataviewer](https://ocgy-dataviewer.herokuapp.com/)**, on github at [repo](https://github.com/jamiebyer/ocgy-dataviewer), observe and compare trace element and physical properties in the water column at selected locations in the Southern Ocean, the Atlantic and the North Pacific.
+* **[climate-change-graph](https://climate-change-graphs.herokuapp.com/)**, on github at [repo](https://github.com/jamiebyer/climate-change-graph), anticipated to be used in eosc112 and eosc116 in term 2021W1
+* **climate-mind-map**, on github at [repo](https://github.com/jamiebyer/climate-mind-map), instructors want to do a "paper" activity based on these ideas first.
+* **[climate-maunaloa](https://climate-maunaloa.herokuapp.com/)**, on github at [repo](https://github.com/fhmjones/envr-maunaloa), used Jan. 2021 in envr300.
+* **climate-maunaloa-jnb**, on github at [repo](https://github.com/fhmjones/envr-maunaloa-jnb), a Jupyter Notebook version of this. 
+* **[climate-ozone](https://climate-ozone.herokuapp.com/)**, on github at [repo](https://github.com/fhmjones/envr-ozone), made for envr300.
+* **cmip6** (climate): Explore the CMPI6 climate science data sets ... in progress
+* **modtran** or **Libradtran** atmospheric radiative transfer: in progress
 
-## Dashboard development progress as of January, 2021
+Geology and hydrogeology
+* **[Mohr's circles](https://mohrs.herokuapp.com/)**, on github at [repo](https://github.com/fhmjones/mohrs), for exploring geological structures
+* **[hydro-storativity](https://hydro-storativity.herokuapp.com/)**, on github at [repo](https://github.com/jamiebyer/hydro-storativity), anticipated use in eosc325, fall 2021.
+* **[hydro-unconfined-flow](https://hydro-unconfined-flow.herokuapp.com/)**, on github at [repo](https://github.com/jamiebyer/hydro-unconfined-flow), anticipated use in eosc325, fall 2021.
+* **[hydro-thiem-dupuit-frochheimer](https://hydro-thiem-dupuit-forchheimer.herokuapp.com/)**, on github at [repo](https://github.com/jamiebyer/hydro-thiem-dupuit-forchheimer), anticipated use in eosc325, fall 2021.
 
-The following dashboards were developed for [ENVR 300, Introduction to Research in Environmental Science](https://www.eoas.ubc.ca/academics/courses/envr300). Two have been tested in class with some student and instructor feedback gathered. Lessons learned will be incorporated into futur dashboards.
-* **MaunaLoa CO2**
-  * Goals: Have students explore the capabilities and limitations of **linear models based on measurements** for explaining or predicting a time-varying physical phenomenon.
-  * Used as a classroom activity in ENVR 300, February 2021. Student feedback was obtained to inform further use, and potential upgrades.
-  * GitHub [location](https://github.com/fhmjones/envr-300-monaloa).
-  * Installed for use [here](https://hub.envr300.portal.eoas.ubc.ca/services/external/envr-300/monaloa/), although this is likely to change.
-
-* **Three Signals**
-  * Goals: Demonstrate to students how various components can contribute to a complete timeseries signal. Currently, the procedure involves a sine wave, linear trend, random noise and smoothing of the result using a 5-pt moving average. Each can be enabled or disabled. Length of the sinewave can be adjusted from 1 to 10 cycles, and noise level can be adjusted.
-  * Used as an optional at-home activity in ENVR 300, February 2021. Student feedback was obtained to inform further use, and potential upgrades.
-  * GitHub [location](https://github.com/fhmjones/envr-300-3signals).
-  * Installed for use [here](https://hub.envr300.portal.eoas.ubc.ca/services/external/envr-300/three-signals/), although this is likely to change.
-
-* **Vancouver Ozone**
-  * Goals:
-    - Have students practice working with "messy" data sets using a year of ozone measurements from two sensors in SW British Columbia.
-    - Compare one year of ozone measurements at two locations, one near the ocean and one inland. "Why might inland ozone differe from that measured near the coastline?"
-    - Compare raw, 7-day moving average and daily maximum 8-hr average. "Which makes what you want to learn most clearly visible?"
-    - Explore impacts of plotting options on interpretability (eg. dots, lines, both).
-  * Not yet used by stduents, but represents an example of a "data exploration" app that can inspire other apps for other courses.
-  * GitHub [location](https://github.com/fhmjones/envr-300-ozone).
-  * Installed for use [here](https://hub.envr300.portal.eoas.ubc.ca/services/external/envr-300/ozone/), although this is likely to change.
-
-* **Oceanography**
-  * Goals: Plot depth profiles based on sounding location chosen from locations given on an accompanying map. Uses data from GEOTRACE GP15. Students can compare temperature, pressure and salinity along a line of soundings from Alaska to the equator.
-  * Not yet used. Created as demonstration of interactive maps and trace plotting.
-  * GitHub [location](https://github.com/fhmjones/eosc-372).
-  * This animiation gives a rough idea of functionality. <br> >Mouse-over a sounding on the map; >corresponding temperature, salinity & oxygen vs depth are plotted. >Adjust depth axes or map parameters; >zoom/pan in each map or plot. >Other behaviors could be programmed to suit educational needs.
-  ![ocgydemoUrl](./images/ocgy-demo-02.gif "oceanography dashboard demo")
-  * Not yet installed for use.
-
-* **Interactive sketching app**
-  * Goals: Ask students to sketch features on a given image then save and submit for assessment. This simple version allows students to draw lines only on a geological timescale image, to indicate age spans of several species identified from fossils in a paleontology lab.
-  * Not yet used - generated for demonstration purposes only.
-  * GitHub [location](https://github.com/fhmjones/dash_ImageAnnot01).
-  * Not yet installed.
-  
-* For [EOSC 340, Global Climate Change](https://www.eoas.ubc.ca/academics/courses/eosc340), existing web-based climate modelling codes are being adapted for dashboard deployment, and have been piloted during the winter term, 2021.
+Geophysics or "signals"
+* **[timeseries-3signals](https://timeseries-3signals.herokuapp.com/)**, on github at [repo](https://github.com/fhmjones/envr-3signals), used Jan. 2021 in envr300.
+* **[timeseries-FFT](none)**, on github at [repo](https://github.com/fhmjones/timeseries-fft), works, but incomplete.
+* **[interactive images](https://clickimage.herokuapp.com/)**, on github at [repo](https://github.com/fhmjones/ClickImage), simply to illustrate interactivity with figures.
+* **[gpglabs (many)](https://e350hub.eoastest5.xyz)**, on github at [repo](https://github.com/geoscixyz/gpgLabs), applied geophysics. Fwd & inverse modeling and physics. Secured for course use.
 
 ---
 
-## Getting started
-
-First section will include these requirements:
-
-* Environment for develpment
-* Python libraries, some required, others optional
-* Options: using `ipywidgets`, the `Dash framework`, or perhaps other options for user interactions. This doc should summarize how to make a decision.
-* Buidling dashboard "apps" - code
-* Building dashboard "apps" - design criteria for optimal learning
-* Using apps - Voila and deployment to servers using containers.
-
 ## Environment for develpment
 
-yet to be written
+Any python development environment, using the [Dash Plotly](https://dash.plotly.com/) environment and [Plotly graphing](https://plotly.com/python/) libraries. Alternatively design using Jupyter Notebooks with the [ipywidgets library](https://ipywidgets.readthedocs.io/en/latest/) for interactivity.
 
-## Python libraries
-
-yet to be written
-
-## Code
-
-yet to be written
+These two options are not always easily translated one into the other. So choose the preferred deployment environment thoughtfully.
 
 ## Design criteria
 
-yet to be written
+Key criteria are:
+ 1. Keep apps simple and focused on one concept or dataset. Making tools too versatile or complex increases the learning curve which reduces the likelihood of the resource being readily incorporated into teaching or learning.
+ 2. Do not include teaching or learning "tasks" like specific questions or assignments. Deliver those to students separately. This will ensure that apps do not have to be re-built for different courses, assignments or use-cases.
+ 3. If using Jupyter Notebooks, the ipywidgets library is used instead of Plotly graphics.
+ 4. To hide code when writing for Jupyter Notebooks, write the interactive app as a *.py file and call it in the Notebook.
+ 5. More details and guidelines to come ...
 
 ## Deploying dashboards
 
@@ -91,11 +55,9 @@ Details yet to be written, but sections will likely include something like the f
 
 This choice makes sense when you are experimenting with the dashboard or planning (if only temporarily) on using it for presentations for a class or presentation.
 
-### Deploy as a Dash-based app.
+### Deploy to Heroku.
 
-The app is accessible via a URL on a publically visible server. Each user gets their own dashboard environment, but calls from individual users to the underlying python code are all run by the same python kernal, and specific results are returned just to the specific requesting user.
-
-There are other ways of deploying dashboards, but we are currently focusing on using Dash.
+See the [Heroku](https://fhmjones.github.io/heroku.html) page.
 
 ## References and resources
 
