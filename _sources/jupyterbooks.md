@@ -1,69 +1,40 @@
 # Jupyter Books
 
-This page summarizes one approach to making Jupyter books using Jupyter Book 2.0 in Windows. Content is created in `Markdown` or `*.ipnb` files, and the book will be displayed online as HTML. The result will be a GitHub-based website looking like https://fhmjones.github.io/index.html. 
+This page summarizes one approach to making [Jupyter books](https://jupyterbook.org/intro.html) in Windows. Content is created in `Markdown` or `*.ipynb` files, and the book will be displayed online as HTML. The result will be a GitHub-based website looking like [the website you are looking at now](https://eoas-ubc.github.io/).
 
-**Note** that the "normal approach" to displaying websites in your GitHub account works fine (see [https://pages.github.com/](https://pages.github.com/)) but requires correct and complete HTML and related files (i.e. you would have to write in HTML). Furthermore, it does NOT work to simply generate a Jupyter book from your markdown, then transfer the resulting HTML to your `username.github.io/` repo.
+**Note:** the "normal approach" to displaying websites in your GitHub account works fine (see [https://pages.github.com/](https://pages.github.com/)) but requires correct and complete HTML and related files (i.e. you would have to write in HTML). Furthermore, it does NOT work to simply generate a Jupyter book from your markdown, then transfer the resulting HTML to your `username.github.io/` repo.
 
-**Basic references**
+**Jupyter Books documentation** starts at [jupyterbook.org](https://jupyterbook.org/intro.html).
 
-- Jupyter books documentation starts at [jupyterbook.org](https://jupyterbook.org/intro.html).
-- Jupytext documentation starts at ["Jupytext readthedocs"](https://jupytext.readthedocs.io/en/latest/index.html).
-- Installation boils down to running `conda install -c conda-forge jupytext`, then starting up Jupyter, opening a .ipynb file and checking that **Jupytext** option appears in the **File** menu. See [installation](https://jupytext.readthedocs.io/en/latest/install.html).
+## 1. Getting started
 
-## 1. Setting up environments and working spaces
+Instructions for installing the book-making package are in the **Install Jupyter Book** section of the [introduction page](https://jupyterbook.org/intro.html).
 
-### 1.1 The Environment
+Instructions for installing the `ghp-import` package for pushing your finished book to a GitHub-based website are [here](https://jupyterbook.org/start/publish.html#publish-your-book-online-with-github-pages).
 
-The necessary conda environment file must be in the root directory, eg. `mywindocs.yml`:
+### Content
 
-```bash
-name: win-docs
-channels:
-  - default
-  - conda-forge
-  - eoas_ubc
-dependencies:
-  - python=3.7.*
-  - sphinx=2.4.4
-  - pip
-  - runjb
-  - git
-  - pandas
-  - matplotlib
-  - pip:
-    - jupyter-book>=0.7.0b
-```
+The book's content is built using MarkDown files (`.md`) or Jupyter notebook files (`.ipynb`), one for each page. Some special text files are also needed specifying layout, the table of contents and references. Mathematics (including numbering for equations) can be inline or in blocks and is written using [LaTeX-style mathematics](https://jupyterbook.org/content/math.html) in your Markdown files.
 
-NOTE: I am not at all sure this is the best environment for these purposes, but it is working for me in September 2020.
+### Images
 
-Set up this environment:
+A choice of syntaxes is available for [including images](https://jupyterbook.org/content/figures.html). Some syntax options explained there are more versatile that others, so use trial and error to ensure your images appear as expected. For example, this inline HTML approach below doesn't seem to keep track of image locations properly:
 
 ```bash
-conda env create -f mywindocs.yml
-conda activate windocs
+<img src="./images/logo-04sm.png" alt="logo" width="100px">
 ```
 
-This should only need to be done once.
+Images can be included as numbered figures; the following does seem to track images locations during the build.
 
-### 1.2 Install [ghp-import](https://pypi.org/project/ghp-import/)
-
-```bash
-pip install ghp-import
+```{figure} ./images/logo-04sm.png
+---
+height: 100px
+name: directive-fig
+---
+Here is a numbered figure with a caption!
 ```
 
-### 1.3 Where to put working and resulting files
-
-Build documentation in a repo OTHER than your `username.github.io/` repo. Continuing the example above: eg. https://github.com/fhmjones/FJ-ocesedocs. Working in the master branch may not be "best practice" but is OK for now.
-
-This documentation repo is where documentation files will be edited, where JupyterBooks will be run to convert to HTML, and where results can be tested. There should be `README.md` and `LICENSE` files. A `.gitignore` file is recommended to prevent all the HTML and related files being sent when you `push` to GitHub. When satisfied, and local/remote repos are synchronized, [ghp-import](https://pypi.org/project/ghp-import/) is used to send. To summarize:
-
-1. Write documentation locally using Markdown (possibly including code in `.ipnb` files) in a repo dedicated to the purpose. Manage GitHub version control normally.
-1. Use Jupyterbooks to generate the HTML and book structure within that repo.
-1. Copy resulting web materials to your local clone of your repo `username.github.io`.
-1. Use `ghp-import` from the root of that local repo to ship web display files to your GitHub `username.github.io` repo.
-1. The website is then found using a URL like https://fhmjones.github.io/index.html.
-
-Details for steps 2-4 are below. 
+Keep other files that your book refers to, such as PDFs, in a separate folder. These will be copied to the right place as one of the steps in the publishing workflow.
 
 ## 2. Building a Jupyter Book
 
@@ -87,33 +58,24 @@ Make the book by running the following command in your terminal:
 jb build docs/
 ```
 
-The  resulting contents of the `docs/_build` folder will be copied to GitHub `username.github.io` repo (next section), but test it locally first by opening the local `index.html` file that should be in the `docs/_build/html` folder.
+Test the result locally by opening the local `index.html` file that should be in the `docs/_build/html` folder.
 
-## Publishing the Jupyter Book online
+## 3. Publishing the Jupyter Book online
 
-Publish to your own `username.github.io` repo so it can be checked by you or others. 
+To publish to your GitHub repository for public viewing, follow instructions [here](https://jupyterbook.org/start/publish.html#publish-your-book-online-with-github-pages), the `ghp-import` utility should have been installed (above).
 
-1. The `ghp-import` utility should have been installed (above).
-2. Temporarily set the remote `upstream` location as
+HOWEVER, to publish to an Organization's repository (such as `eoas-tlef`) the steps are slightly different.
 
-   ```bash
-   git remote add upstream https://github.com/username/username.github.io
-   ```
+1. Complete the `jb build` step so there is a folder under your `\docs` folder with all the HTML.
 
-3. Send the folder with all HTML and associated materials (images, CSS, etc.) that was generated using `jb build` to the `master` branch at `username.github.io` using the following. Do this on the command line from the folder in which the `docs` folder resides.
+2. Make the necessary folder under that `\docs` folder to take the "other" files, like PDFs. For example, we put PDFs in the folder `docs\pdffiles`.
+
+3. Copy all necessary files to that folder. This is necessary because the `jb build` command doesn't know how to find and correctly place these files.
+
+4. Make sure your local git repo knows where `upstream` is. If you are using a fork / rebase workflow, this should be clear. Then use `ghp-import` as follows.
 
    ```bash
    ghp-import -f --no-jekyll -p -b master docs/_build/html -r upstream
    ```
 
-4. Stop using that location as this repo's `upstream` by finishing with
-
-    ```bash
-    git remote remove upstream
-    ```
-
-## Parts not yet written
-
-- Writing, and the parts needed for including navigation
-- Working with **[jb_tools](https://github.com/eoas-ubc/jb_tools/blob/master/tools_demo/Readme_conda.md)**.
-- Markdown for Jupyter books
+(This is all because the `master` branch at `upstream` is where the website is rendered, and the "main" branch for un-rendered files (markdown, etc.) is the `docs` branch. Yes, it is a  little confusing.)
