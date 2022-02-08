@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Andrew’s Workflow Guide for Programming Environments &#8212; OCESE Documenation</title>
+    <title>Heroku &#8212; OCESE Documenation</title>
     
   <link href="_static/css/theme.css" rel="stylesheet" />
   <link href="_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
@@ -51,6 +51,8 @@
     <script async="async" src="_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Jupyter and related" href="jupyter-etc.html" />
+    <link rel="prev" title="Dashboard learning resources" href="dashboards.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
     
@@ -134,7 +136,7 @@
   Documentation
  </span>
 </p>
-<ul class="nav bd-sidenav">
+<ul class="current nav bd-sidenav">
  <li class="toctree-l1 has-children">
   <a class="reference internal" href="basics.html">
    Basic Skills &gt;&gt;
@@ -192,18 +194,18 @@
    Course development tools
   </a>
  </li>
- <li class="toctree-l1 has-children">
+ <li class="toctree-l1 current active has-children">
   <a class="reference internal" href="dashboards.html">
    Dashboards
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
   <label for="toctree-checkbox-3">
    <i class="fas fa-chevron-down">
    </i>
   </label>
-  <ul>
-   <li class="toctree-l2">
-    <a class="reference internal" href="heroku.html">
+  <ul class="current">
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
      Deploy to Heroku
     </a>
    </li>
@@ -265,7 +267,7 @@
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="_sources/conda-tutorial.md"><button type="button"
+        <a class="dropdown-buttons" href="_sources/heroku.md"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
                 data-placement="left">.md</button></a>
         <!-- Download PDF via print -->
@@ -296,40 +298,13 @@
             <nav id="bd-toc-nav" aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#prior-assumptions">
-   Prior Assumptions
+  <a class="reference internal nav-link" href="#list-of-steps">
+   List of Steps
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#core-principles">
-   Core Principles
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#case-study">
-   Case Study
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#i-starting-a-project">
-     I. Starting a Project
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#ii-export-your-environment">
-     II. Export Your Environment
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#more-commands-to-manage-environments">
-   More Commands to Manage Environments
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#helpful-tips">
-   Helpful Tips
+  <a class="reference internal nav-link" href="#summary-of-costs">
+   Summary of Costs
   </a>
  </li>
 </ul>
@@ -343,134 +318,49 @@
         
               <div>
                 
-  <div class="section" id="andrew-s-workflow-guide-for-programming-environments">
-<h1>Andrew’s Workflow Guide for Programming Environments<a class="headerlink" href="#andrew-s-workflow-guide-for-programming-environments" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="prior-assumptions">
-<h2>Prior Assumptions<a class="headerlink" href="#prior-assumptions" title="Permalink to this headline">¶</a></h2>
+  <div class="section" id="heroku">
+<h1>Heroku<a class="headerlink" href="#heroku" title="Permalink to this headline">¶</a></h1>
+<p>This is an initial outline of how to deploy Dash app to the Heroku servers for public online access.</p>
+<p>Eventually OCESSE apps will be housed either on local (EOAS) servers or in “managed” cloud-space. However, although serving from Heroku has limitations and/or costs, it is one approach to making apps accessible to the whole design team (eg. instructors, TAs etc.) without requiring them to have a personal Python installation.</p>
+<hr class="docutils" />
+<div class="section" id="list-of-steps">
+<h2>List of Steps<a class="headerlink" href="#list-of-steps" title="Permalink to this headline">¶</a></h2>
+<p>I followed the tutorial <a class="reference external" href="https://austinlasseter.medium.com/deploy-a-plotly-dash-app-on-heroku-4d2c3224230">here</a> to deploy my dashboards to heroku. This is a summary of steps from the tutorial.</p>
 <ul class="simple">
-<li><p>you are using a conda distribution of Python (mine is miniconda 3.9 for reference)</p></li>
-<li><p>you are moderately comfortable managing files with a shell (im using powershell)</p></li>
+<li><p>Make a heroku account <a class="reference external" href="https://www.heroku.com/">here</a></p></li>
+<li><p>Download and install <a class="reference external" href="https://devcenter.heroku.com/articles/heroku-cli">the heroku CLI</a>. If using Mac, you need to install <a class="reference external" href="https://brew.sh/">brew</a> first. (I used Windows)</p></li>
+<li><p>In terminal type <code class="docutils literal notranslate"><span class="pre">heroku</span> <span class="pre">login</span></code> and follow the instructions to log in to your account.</p></li>
+<li><p>Your project should already be set up on github. It should have the following files:</p>
+<ul>
+<li><p><a class="reference external" href="http://app.py">app.py</a> (should have already to run Dash locally)</p></li>
+<li><p>requirements.txt (needs to have gunicorn)</p></li>
+<li><p>runtime.txt (I’ve been using a file which just contains “python-3.7.12”)</p></li>
+<li><p>Procfile (I’ve been using a file which just contains “web: gunicorn app:server”)</p></li>
+</ul>
+</li>
+<li><p>Navigate to your project’s root folder. In terminal type <code class="docutils literal notranslate"><span class="pre">heroku</span> <span class="pre">create</span> <span class="pre">project-name</span></code>, where “project-name” will be in the url.</p></li>
+<li><p>Make sure your project is up to date and everything is pushed to github</p></li>
+<li><p>In the terminal <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">push</span> <span class="pre">heroku</span> <span class="pre">main</span></code></p></li>
+<li><p>The terminal will tell you the url of your project but it will have the format “<a class="reference external" href="https://project-name.herokuapp.com/">https://project-name.herokuapp.com/</a>”</p></li>
 </ul>
 </div>
-<div class="section" id="core-principles">
-<h2>Core Principles<a class="headerlink" href="#core-principles" title="Permalink to this headline">¶</a></h2>
+<hr class="docutils" />
+<div class="section" id="summary-of-costs">
+<h2>Summary of Costs<a class="headerlink" href="#summary-of-costs" title="Permalink to this headline">¶</a></h2>
+<p>From the <a class="reference external" href="https://devcenter.heroku.com/articles/limits">heroku limits page</a> and the <a class="reference external" href="https://www.heroku.com/pricing">pricing page</a>:</p>
 <ul class="simple">
-<li><p>keep things as simple as possible but not simpler; your code will run faster and be less confusing to debug</p></li>
-<li><p>make your project/dependencies exactly reproducible, so any machine can run your code with the same results</p></li>
+<li><p>Free accounts can create at most 5 apps. Paid accounts can create no more than 100 apps</p></li>
+<li><p>A single app can have up to 1000 custom domains assigned to it (??)</p></li>
+<li><p>Maximum RAM for different Dynos</p>
+<ul>
+<li><p>free, hobby, and standard-1x have 512 MB</p></li>
+<li><p>standard-2x has 1024 MB</p></li>
+<li><p>performance-m has 2.5 GB</p></li>
+<li><p>performance-l has 14 GB</p></li>
 </ul>
-</div>
-<div class="section" id="case-study">
-<h2>Case Study<a class="headerlink" href="#case-study" title="Permalink to this headline">¶</a></h2>
-<p>You are a researcher recently assigned to a project studying permafrost. It is evident that it is necessary to write some code to process some field data; you volunteer, having just completed a course in python programming using jupyter notebooks in the cloud. You downloaded your own python distribution on your machine with jupyter notebooks (<span class="xref myst">insert link to another tutorial</span>) and are ready to get started with your project.</p>
-<div class="section" id="i-starting-a-project">
-<h3>I. Starting a Project<a class="headerlink" href="#i-starting-a-project" title="Permalink to this headline">¶</a></h3>
-<ol>
-<li><p>Create a project folder</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ mkdir permafrost_proj
-</pre></div>
-</div>
 </li>
-<li><p>activate your base environment (probably already active by default)</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ conda activate base
-</pre></div>
-</div>
-</li>
-<li><p>Create a new environment for your project that will inherit all the dependencies installed in <code class="docutils literal notranslate"><span class="pre">base</span></code>.</p>
-<ul class="simple">
-<li><p>Notes: the <code class="docutils literal notranslate"><span class="pre">-n</span></code> is a tag meaning “name”. Call your environment something sensible and not too long to type</p></li>
-</ul>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ conda create -n permafrost
-</pre></div>
-</div>
-</li>
-<li><p>Activate your new environment</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ conda activate permafrost
-</pre></div>
-</div>
-</li>
-<li><p>install <code class="docutils literal notranslate"><span class="pre">jupyter</span></code> in your new environment</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ conda install jupyter
-</pre></div>
-</div>
-</li>
-<li><p>Open a notebook and do some data processing</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ jupyter notebook
-</pre></div>
-</div>
-</li>
-<li><p>Soon, you will run into an error like this when you try to import a package from inside the notebook:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="o">---------------------------------------------------------------------------</span>
-<span class="ne">ModuleNotFoundError</span>                       <span class="n">Traceback</span> <span class="p">(</span><span class="n">most</span> <span class="n">recent</span> <span class="n">call</span> <span class="n">last</span><span class="p">)</span>
-<span class="o">&lt;</span><span class="n">ipython</span><span class="o">-</span><span class="nb">input</span><span class="o">-</span><span class="mi">1</span><span class="o">-</span><span class="mi">0</span><span class="n">aa0b027fcb6</span><span class="o">&gt;</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
-<span class="o">----&gt;</span> <span class="mi">1</span> <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-
-<span class="ne">ModuleNotFoundError</span><span class="p">:</span> <span class="n">No</span> <span class="n">module</span> <span class="n">named</span> <span class="s1">&#39;numpy&#39;</span>
-</pre></div>
-</div>
-<p>To resolve it, open another shell (dont use the one that is busy running your notebook) and do:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ conda install numpy
-</pre></div>
-</div>
-<p>Or replace <code class="docutils literal notranslate"><span class="pre">numpy</span></code> with whichever package is missing. Repeat for new packages as you need them. They will be permanently added to your environment so you only have to do this once.</p>
-</li>
-</ol>
-</div>
-<div class="section" id="ii-export-your-environment">
-<h3>II. Export Your Environment<a class="headerlink" href="#ii-export-your-environment" title="Permalink to this headline">¶</a></h3>
-<p>Now we want to save the environment with the rest of the project files/code. This is a good idea if you want to i) access your project from multiple computers ii) use version control software like <code class="docutils literal notranslate"><span class="pre">git</span></code> iii) send your code to someone for debugging help (they will need your environment to replicate your bug)</p>
-<ol>
-<li><p>Make sure you are in your project directory</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ cd permafrost_proj
-</pre></div>
-</div>
-</li>
-<li><p>Export your environment</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ conda env export &gt; environment.yml
-
-</pre></div>
-</div>
-</li>
-<li><p>Your project folder should now look something like:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">project_abstract</span><span class="o">.</span><span class="n">docx</span>
-<span class="n">data_processing</span><span class="o">.</span><span class="n">ipynb</span>
-<span class="n">make_plots</span><span class="o">.</span><span class="n">ipynb</span>
-<span class="n">environment</span><span class="o">.</span><span class="n">yml</span>
-</pre></div>
-</div>
-</li>
-<li><p>Save/back up your project folder somewhere. To re-create your environment/project on another machine, download the folder and do:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ cd permafrost_proj
-$ conda env create environment.yml
-$ conda activate permafrost
-</pre></div>
-</div>
-<p>Now you can continue working, knowing your code will perform exactly the same as on your original machine.</p>
-</li>
-</ol>
-</div>
-</div>
-<div class="section" id="more-commands-to-manage-environments">
-<h2>More Commands to Manage Environments<a class="headerlink" href="#more-commands-to-manage-environments" title="Permalink to this headline">¶</a></h2>
-<p>List all available environments</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ conda env list
-</pre></div>
-</div>
-<p>List all dependencies in the active environment</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ conda list
-</pre></div>
-</div>
-<p>Remove an environment (be careful)</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ conda env remove -n permafrost
-</pre></div>
-</div>
-</div>
-<div class="section" id="helpful-tips">
-<h2>Helpful Tips<a class="headerlink" href="#helpful-tips" title="Permalink to this headline">¶</a></h2>
-<ul class="simple">
-<li><p>Make a new environment for every “project,” whatever that means to you… I usually create one per course or research topic, sometimes start a fresh one for a complicated sub-project</p></li>
-<li><p>Don’t install anything on your <code class="docutils literal notranslate"><span class="pre">base</span></code> environment, and dont actually do any work from base (if you leave base totally clean, most code will immediately break and remind you to activate the proper environment for your project)</p></li>
-<li><p>Avoid using pip wherever possible (for this workflow). Pip and Conda don’t always play nicely together and this can create conflicts.</p></li>
-<li><p>Only download one python distribtion on your machine, unless you really know what you’re doing and have a good reason for wanting another one.</p></li>
+<li><p>Max concurrent users is 50 (for hobby, standard-1x, standard-2x)</p></li>
+<li><p>Free accounts: 550-1000 hours per month</p></li>
 </ul>
 </div>
 </div>
@@ -504,6 +394,24 @@ $ conda activate permafrost
 
 <div class='prev-next-bottom'>
     
+    <div id="prev">
+        <a class="left-prev" href="dashboards.html" title="previous page">
+            <i class="prevnext-label fas fa-angle-left"></i>
+            <div class="prevnext-info">
+                <p class="prevnext-label">previous</p>
+                <p class="prevnext-title">Dashboard learning resources</p>
+            </div>
+        </a>
+    </div>
+     <div id="next">
+        <a class="right-next" href="jupyter-etc.html" title="next page">
+            <div class="prevnext-info">
+                <p class="prevnext-label">next</p>
+                <p class="prevnext-title">Jupyter and related</p>
+            </div>
+            <i class="prevnext-label fas fa-angle-right"></i>
+        </a>
+     </div>
 
 </div>
         

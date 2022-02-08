@@ -23,7 +23,7 @@
 
     
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" href="_static/sphinx-book-theme.e8e5499552300ddf5d7adccae7cc3b70.css" type="text/css" />
+    <link rel="stylesheet" href="_static/sphinx-book-theme.e8f53015daec13862f6db5e763c41738.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
@@ -42,7 +42,7 @@
     <script src="_static/copybutton.js"></script>
     <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
-    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
     <script >
         const thebe_selector = ".thebe"
         const thebe_selector_input = "pre"
@@ -80,7 +80,7 @@
 </div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
   <i class="icon fas fa-search"></i>
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
-</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item active">
         <p class="caption">
  <span class="caption-text">
@@ -194,10 +194,22 @@
    Course development tools
   </a>
  </li>
- <li class="toctree-l1">
+ <li class="toctree-l1 has-children">
   <a class="reference internal" href="dashboards.html">
    Dashboards
   </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="heroku.html">
+     Deploy to Heroku
+    </a>
+   </li>
+  </ul>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="jupyter-etc.html">
@@ -283,26 +295,21 @@
             <div class="tocsection onthispage pt-5 pb-3">
                 <i class="fas fa-list"></i> Contents
             </div>
-            <nav id="bd-toc-nav">
+            <nav id="bd-toc-nav" aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#setting-up-environments-and-working-spaces">
-   1. Setting up environments and working spaces
+  <a class="reference internal nav-link" href="#getting-started">
+   1. Getting started
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#the-environment">
-     1.1 The Environment
+    <a class="reference internal nav-link" href="#content">
+     Content
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#install-ghp-import">
-     1.2 Install ghp-import
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#where-to-put-working-and-resulting-files">
-     1.3 Where to put working and resulting files
+    <a class="reference internal nav-link" href="#images">
+     Images
     </a>
    </li>
   </ul>
@@ -314,12 +321,7 @@
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#publishing-the-jupyter-book-online">
-   Publishing the Jupyter Book online
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#parts-not-yet-written">
-   Parts not yet written
+   3. Publishing the Jupyter Book online
   </a>
  </li>
 </ul>
@@ -335,62 +337,29 @@
                 
   <div class="section" id="jupyter-books">
 <h1>Jupyter Books<a class="headerlink" href="#jupyter-books" title="Permalink to this headline">¶</a></h1>
-<p>This page summarizes one approach to making Jupyter books using Jupyter Book 2.0 in Windows. Content is created in <code class="docutils literal notranslate"><span class="pre">Markdown</span></code> or <code class="docutils literal notranslate"><span class="pre">*.ipnb</span></code> files, and the book will be displayed online as HTML. The result will be a GitHub-based website looking like <a class="reference external" href="https://fhmjones.github.io/index.html">https://fhmjones.github.io/index.html</a>.</p>
-<p><strong>Note</strong> that the “normal approach” to displaying websites in your GitHub account works fine (see <a class="reference external" href="https://pages.github.com/">https://pages.github.com/</a>) but requires correct and complete HTML and related files (i.e. you would have to write in HTML). Furthermore, it does NOT work to simply generate a Jupyter book from your markdown, then transfer the resulting HTML to your <code class="docutils literal notranslate"><span class="pre">username.github.io/</span></code> repo.</p>
-<p><strong>Basic references</strong></p>
-<ul class="simple">
-<li><p>Jupyter books documentation starts at <a class="reference external" href="https://jupyterbook.org/intro.html">jupyterbook.org</a>.</p></li>
-<li><p>Jupytext documentation starts at <a class="reference external" href="https://jupytext.readthedocs.io/en/latest/index.html">“Jupytext readthedocs”</a>.</p></li>
-<li><p>Installation boils down to running <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">install</span> <span class="pre">-c</span> <span class="pre">conda-forge</span> <span class="pre">jupytext</span></code>, then starting up Jupyter, opening a .ipynb file and checking that <strong>Jupytext</strong> option appears in the <strong>File</strong> menu. See <a class="reference external" href="https://jupytext.readthedocs.io/en/latest/install.html">installation</a>.</p></li>
-</ul>
-<div class="section" id="setting-up-environments-and-working-spaces">
-<h2>1. Setting up environments and working spaces<a class="headerlink" href="#setting-up-environments-and-working-spaces" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="the-environment">
-<h3>1.1 The Environment<a class="headerlink" href="#the-environment" title="Permalink to this headline">¶</a></h3>
-<p>The necessary conda environment file must be in the root directory, eg. <code class="docutils literal notranslate"><span class="pre">mywindocs.yml</span></code>:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>name: win-docs
-channels:
-  - default
-  - conda-forge
-  - eoas_ubc
-dependencies:
-  - <span class="nv">python</span><span class="o">=</span><span class="m">3</span>.7.*
-  - <span class="nv">sphinx</span><span class="o">=</span><span class="m">2</span>.4.4
-  - pip
-  - runjb
-  - git
-  - pandas
-  - matplotlib
-  - pip:
-    - jupyter-book&gt;<span class="o">=</span><span class="m">0</span>.7.0b
+<p>This page summarizes one approach to making <a class="reference external" href="https://jupyterbook.org/intro.html">Jupyter books</a> in Windows. Content is created in <code class="docutils literal notranslate"><span class="pre">Markdown</span></code> or <code class="docutils literal notranslate"><span class="pre">*.ipynb</span></code> files, and the book will be displayed online as HTML. The result will be a GitHub-based website looking like <a class="reference external" href="https://eoas-ubc.github.io/">the website you are looking at now</a>.</p>
+<p><strong>Note:</strong> the “normal approach” to displaying websites in your GitHub account works fine (see <a class="reference external" href="https://pages.github.com/">https://pages.github.com/</a>) but requires correct and complete HTML and related files (i.e. you would have to write in HTML). Furthermore, it does NOT work to simply generate a Jupyter book from your markdown, then transfer the resulting HTML to your <code class="docutils literal notranslate"><span class="pre">username.github.io/</span></code> repo.</p>
+<p><strong>Jupyter Books documentation</strong> starts at <a class="reference external" href="https://jupyterbook.org/intro.html">jupyterbook.org</a>.</p>
+<div class="section" id="getting-started">
+<h2>1. Getting started<a class="headerlink" href="#getting-started" title="Permalink to this headline">¶</a></h2>
+<p>Instructions for installing the book-making package are in the <strong>Install Jupyter Book</strong> section of the <a class="reference external" href="https://jupyterbook.org/intro.html">introduction page</a>.</p>
+<p>Instructions for installing the <code class="docutils literal notranslate"><span class="pre">ghp-import</span></code> package for pushing your finished book to a GitHub-based website are <a class="reference external" href="https://jupyterbook.org/start/publish.html#publish-your-book-online-with-github-pages">here</a>.</p>
+<div class="section" id="content">
+<h3>Content<a class="headerlink" href="#content" title="Permalink to this headline">¶</a></h3>
+<p>The book’s content is built using MarkDown files (<code class="docutils literal notranslate"><span class="pre">.md</span></code>) or Jupyter notebook files (<code class="docutils literal notranslate"><span class="pre">.ipynb</span></code>), one for each page. Some special text files are also needed specifying layout, the table of contents and references. Mathematics (including numbering for equations) can be inline or in blocks and is written using <a class="reference external" href="https://jupyterbook.org/content/math.html">LaTeX-style mathematics</a> in your Markdown files.</p>
+</div>
+<div class="section" id="images">
+<h3>Images<a class="headerlink" href="#images" title="Permalink to this headline">¶</a></h3>
+<p>A choice of syntaxes is available for <a class="reference external" href="https://jupyterbook.org/content/figures.html">including images</a>. Some syntax options explained there are more versatile that others, so use trial and error to ensure your images appear as expected. For example, this inline HTML approach below doesn’t seem to keep track of image locations properly:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>&lt;img <span class="nv">src</span><span class="o">=</span><span class="s2">&quot;./images/logo-04sm.png&quot;</span> <span class="nv">alt</span><span class="o">=</span><span class="s2">&quot;logo&quot;</span> <span class="nv">width</span><span class="o">=</span><span class="s2">&quot;100px&quot;</span>&gt;
 </pre></div>
 </div>
-<p>NOTE: I am not at all sure this is the best environment for these purposes, but it is working for me in September 2020.</p>
-<p>Set up this environment:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>conda env create -f mywindocs.yml
-conda activate windocs
-</pre></div>
+<p>Images can be included as numbered figures; the following does seem to track images locations during the build.</p>
+<div class="figure align-default" id="directive-fig">
+<a class="reference internal image-reference" href="_images/logo-04sm.png"><img alt="_images/logo-04sm.png" src="_images/logo-04sm.png" style="height: 100px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 1 </span><span class="caption-text">Here is a numbered figure with a caption!</span><a class="headerlink" href="#directive-fig" title="Permalink to this image">¶</a></p>
 </div>
-<p>This should only need to be done once.</p>
-</div>
-<div class="section" id="install-ghp-import">
-<h3>1.2 Install <a class="reference external" href="https://pypi.org/project/ghp-import/">ghp-import</a><a class="headerlink" href="#install-ghp-import" title="Permalink to this headline">¶</a></h3>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pip install ghp-import
-</pre></div>
-</div>
-</div>
-<div class="section" id="where-to-put-working-and-resulting-files">
-<h3>1.3 Where to put working and resulting files<a class="headerlink" href="#where-to-put-working-and-resulting-files" title="Permalink to this headline">¶</a></h3>
-<p>Build documentation in a repo OTHER than your <code class="docutils literal notranslate"><span class="pre">username.github.io/</span></code> repo. Continuing the example above: eg. <a class="reference external" href="https://github.com/fhmjones/FJ-ocesedocs">https://github.com/fhmjones/FJ-ocesedocs</a>. Working in the master branch may not be “best practice” but is OK for now.</p>
-<p>This documentation repo is where documentation files will be edited, where JupyterBooks will be run to convert to HTML, and where results can be tested. There should be <code class="docutils literal notranslate"><span class="pre">README.md</span></code> and <code class="docutils literal notranslate"><span class="pre">LICENSE</span></code> files. A <code class="docutils literal notranslate"><span class="pre">.gitignore</span></code> file is recommended to prevent all the HTML and related files being sent when you <code class="docutils literal notranslate"><span class="pre">push</span></code> to GitHub. When satisfied, and local/remote repos are synchronized, <a class="reference external" href="https://pypi.org/project/ghp-import/">ghp-import</a> is used to send. To summarize:</p>
-<ol class="simple">
-<li><p>Write documentation locally using Markdown (possibly including code in <code class="docutils literal notranslate"><span class="pre">.ipnb</span></code> files) in a repo dedicated to the purpose. Manage GitHub version control normally.</p></li>
-<li><p>Use Jupyterbooks to generate the HTML and book structure within that repo.</p></li>
-<li><p>Copy resulting web materials to your local clone of your repo <code class="docutils literal notranslate"><span class="pre">username.github.io</span></code>.</p></li>
-<li><p>Use <code class="docutils literal notranslate"><span class="pre">ghp-import</span></code> from the root of that local repo to ship web display files to your GitHub <code class="docutils literal notranslate"><span class="pre">username.github.io</span></code> repo.</p></li>
-<li><p>The website is then found using a URL like <a class="reference external" href="https://fhmjones.github.io/index.html">https://fhmjones.github.io/index.html</a>.</p></li>
-</ol>
-<p>Details for steps 2-4 are below.</p>
+<p>Keep other files that your book refers to, such as PDFs, in a separate folder. These will be copied to the right place as one of the steps in the publishing workflow.</p>
 </div>
 </div>
 <div class="section" id="building-a-jupyter-book">
@@ -408,37 +377,23 @@ conda activate windocs
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>jb build docs/
 </pre></div>
 </div>
-<p>The  resulting contents of the <code class="docutils literal notranslate"><span class="pre">docs/_build</span></code> folder will be copied to GitHub <code class="docutils literal notranslate"><span class="pre">username.github.io</span></code> repo (next section), but test it locally first by opening the local <code class="docutils literal notranslate"><span class="pre">index.html</span></code> file that should be in the <code class="docutils literal notranslate"><span class="pre">docs/_build/html</span></code> folder.</p>
+<p>Test the result locally by opening the local <code class="docutils literal notranslate"><span class="pre">index.html</span></code> file that should be in the <code class="docutils literal notranslate"><span class="pre">docs/_build/html</span></code> folder.</p>
 </div>
 <div class="section" id="publishing-the-jupyter-book-online">
-<h2>Publishing the Jupyter Book online<a class="headerlink" href="#publishing-the-jupyter-book-online" title="Permalink to this headline">¶</a></h2>
-<p>Publish to your own <code class="docutils literal notranslate"><span class="pre">username.github.io</span></code> repo so it can be checked by you or others.</p>
+<h2>3. Publishing the Jupyter Book online<a class="headerlink" href="#publishing-the-jupyter-book-online" title="Permalink to this headline">¶</a></h2>
+<p>To publish to your GitHub repository for public viewing, follow instructions <a class="reference external" href="https://jupyterbook.org/start/publish.html#publish-your-book-online-with-github-pages">here</a>, the <code class="docutils literal notranslate"><span class="pre">ghp-import</span></code> utility should have been installed (above).</p>
+<p>HOWEVER, to publish to an Organization’s repository (such as <code class="docutils literal notranslate"><span class="pre">eoas-tlef</span></code>) the steps are slightly different.</p>
 <ol>
-<li><p>The <code class="docutils literal notranslate"><span class="pre">ghp-import</span></code> utility should have been installed (above).</p></li>
-<li><p>Temporarily set the remote <code class="docutils literal notranslate"><span class="pre">upstream</span></code> location as</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git remote add upstream https://github.com/username/username.github.io
-</pre></div>
-</div>
-</li>
-<li><p>Send the folder with all HTML and associated materials (images, CSS, etc.) that was generated using <code class="docutils literal notranslate"><span class="pre">jb</span> <span class="pre">build</span></code> to the <code class="docutils literal notranslate"><span class="pre">master</span></code> branch at <code class="docutils literal notranslate"><span class="pre">username.github.io</span></code> using the following. Do this on the command line from the folder in which the <code class="docutils literal notranslate"><span class="pre">docs</span></code> folder resides.</p>
+<li><p>Complete the <code class="docutils literal notranslate"><span class="pre">jb</span> <span class="pre">build</span></code> step so there is a folder under your <code class="docutils literal notranslate"><span class="pre">\docs</span></code> folder with all the HTML.</p></li>
+<li><p>Make the necessary folder under that <code class="docutils literal notranslate"><span class="pre">\docs</span></code> folder to take the “other” files, like PDFs. For example, we put PDFs in the folder <code class="docutils literal notranslate"><span class="pre">docs\pdffiles</span></code>.</p></li>
+<li><p>Copy all necessary files to that folder. This is necessary because the <code class="docutils literal notranslate"><span class="pre">jb</span> <span class="pre">build</span></code> command doesn’t know how to find and correctly place these files.</p></li>
+<li><p>Make sure your local git repo knows where <code class="docutils literal notranslate"><span class="pre">upstream</span></code> is. If you are using a fork / rebase workflow, this should be clear. Then use <code class="docutils literal notranslate"><span class="pre">ghp-import</span></code> as follows.</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ghp-import -f --no-jekyll -p -b master docs/_build/html -r upstream
 </pre></div>
 </div>
 </li>
-<li><p>Stop using that location as this repo’s <code class="docutils literal notranslate"><span class="pre">upstream</span></code> by finishing with</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git remote remove upstream
-</pre></div>
-</div>
-</li>
 </ol>
-</div>
-<div class="section" id="parts-not-yet-written">
-<h2>Parts not yet written<a class="headerlink" href="#parts-not-yet-written" title="Permalink to this headline">¶</a></h2>
-<ul class="simple">
-<li><p>Writing, and the parts needed for including navigation</p></li>
-<li><p>Working with <strong><a class="reference external" href="https://github.com/eoas-ubc/jb_tools/blob/master/tools_demo/Readme_conda.md">jb_tools</a></strong>.</p></li>
-<li><p>Markdown for Jupyter books</p></li>
-</ul>
+<p>(This is all because the <code class="docutils literal notranslate"><span class="pre">master</span></code> branch at <code class="docutils literal notranslate"><span class="pre">upstream</span></code> is where the website is rendered, and the “main” branch for un-rendered files (markdown, etc.) is the <code class="docutils literal notranslate"><span class="pre">docs</span></code> branch. Yes, it is a  little confusing.)</p>
 </div>
 </div>
 
@@ -465,12 +420,32 @@ conda activate windocs
               </div>
               
         
-        <div class='prev-next-bottom'>
             
-    <a class='left-prev' id="prev-link" href="jupyter-etc.html" title="previous page">Jupyter and related</a>
-    <a class='right-next' id="next-link" href="python-etc.html" title="next page">Python guidelines</a>
 
-        </div>
+
+
+<div class='prev-next-bottom'>
+    
+    <div id="prev">
+        <a class="left-prev" href="jupyter-etc.html" title="previous page">
+            <i class="prevnext-label fas fa-angle-left"></i>
+            <div class="prevnext-info">
+                <p class="prevnext-label">previous</p>
+                <p class="prevnext-title">Jupyter and related</p>
+            </div>
+        </a>
+    </div>
+     <div id="next">
+        <a class="right-next" href="python-etc.html" title="next page">
+            <div class="prevnext-info">
+                <p class="prevnext-label">next</p>
+                <p class="prevnext-title">Python guidelines</p>
+            </div>
+            <i class="prevnext-label fas fa-angle-right"></i>
+        </a>
+     </div>
+
+</div>
         
         </div>
     </div>
