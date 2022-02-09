@@ -120,7 +120,7 @@ Branch "master" is what's displayed as https://eoas-ubc.github.io/index.html
 2. Editing
    1. Edit  the "docs" branch. Ignore the "master" branch - it is the website and will be created using ghp-import.
    2. Build book using the  jb build docs/  command
-   3. Hand-copy (or with a script) any other files (like PDFs) into their required subfolders. NOTE: all references to these "other" files need to point to this subfolder.
+   3. Hand-copy (or with a script) any other files (like PDFs) into their required subfolders. (In our case, there is a "pdffiles" folder that should live under the html folder.) NOTE: all references to these "other" files need to point to this subfolder.
 
    4. Find the website in folder "docs/_build/html" - view this locally.
 3. Deliver and synchronize
