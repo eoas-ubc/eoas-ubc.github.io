@@ -1,6 +1,8 @@
 # Jupyter Books
 
 This page outlines one approach to building [Jupyter books](https://jupyterbook.org/intro.html). It involves:
+=======
+The approach to building [Jupyter books](https://jupyterbook.org/intro.html) described here involves: (a) creating pages in `Markdown` or JupyterNotebook `*.ipynb` files, (b) converting to HTML using the [Jupyterbook](https://jupyterbook.org/intro.html) library, then (c) delivering to a GitHub website repository using the [ghp-import package](https://pypi.org/project/ghp-import/), a lightweight Python package for pushing HTML content to a GitHub repository.
 
 1. creating pages in `Markdown` or JupyterNotebook `*.ipynb` files, 
 2. converting to HTML using the [Jupyterbook](https://jupyterbook.org/intro.html) library, then 
@@ -37,11 +39,21 @@ Your working environment should include:
 ### 1.2 Files, folders, repositories and branches
 
 Put Markdown files for each page, and the `_config.yml` and `_toc.yml` files in a folder called `docs` under the repository's root. Put images in an `images` subfolder under `docs`. Put other files (like PDFs) in a folder under the root ("parallel" with the `docs` folder) and then move these by hand as a last step (see below). 
+=======
+### 1.1 Installing packages
+
+Install the Jupyter Book package using instructions on the package documentation [Overview](https://jupyterbook.org/start/overview.html) page.
+
+Install the `ghp-import` package for pushing your finished book to a GitHub-based website using the Jupyter Book documentation's [Publish Your Book Online](https://jupyterbook.org/start/publish.html#publish-your-book-online-with-github-pages) page.
+
+### 1.2 Content
 
 ### 1.3 Branches for editing and publishing
 
 * If the website is for an individual GitHub repository then follow directions on the [Publish your book online](https://jupyterbook.org/start/publish.html#publish-your-book-online-with-github-pages) page of Jupyter Book documentation.
 * If the website is for a GitHub "organization" (like this one - eoas-tlef), then push resulting website content to the `master` branch of the organizations GitHub repository. Content can be edited in a separate branch (eg. `docs`), or a separate repository if you prefer. More details below.
+=======
+### 1.3 Images
 
 ## 2. Preparing content
 
@@ -65,9 +77,21 @@ name: directive-fig
 Here is a numbered figure with a caption!
 ```
 
+=======
+### 1.4 Files, folders, repositories and branches
+
+Put Markdown files for each page, and the `_config.yml` and `_toc.yml` files in a folder called `docs` under the repository's root. Put images in an `images` subfolder under `docs`. Put other files (like PDFs) in a folder under the root ("parallel" with the `docs` folder) and then move these by hand as a last step (see below).
+
+**Regarding branches for editing and publishing:**
+
+* If the website is for an individual GitHub repository then follow directions on the [Publish your book online](https://jupyterbook.org/start/publish.html#publish-your-book-online-with-github-pages) page of Jupyter Book documentation.
+* If the website is for a GitHub "organization" (like this one - eoas-tlef), then edit content in the `docs` branch and push resulting website content to the `master` branch of the organizations GitHub repository. Details for this scenario are below.
 
 ## 3. Building a Jupyter Book
 
+Work in the repository's `docs` branch. Edit Markdown, `_toc`, and/or Jupyter Notebook files in the repository's `docs` folder. Be SURE to commit finished edits to the `docs` branch and `push` to the GitHub repo's corresponding `docs` branch (or your fork of it). Then you can "build" the book.
+
+=======
 Work in the repository's `docs` branch. Edit Markdown, `_toc`, and/or Jupyter Notebook files in the repository's `docs` folder. Be SURE to commit finished edits to the `docs` branch and `push` to the GitHub repo's corresponding `docs` branch (or your fork of it). Then you can "build" the book.
 
 To work with a clean build, delete the `_build` folder's contents "by hand", or empty it by running:
