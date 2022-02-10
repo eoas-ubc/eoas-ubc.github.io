@@ -10,28 +10,43 @@ Using open source, cloud-based computing we aim to integrate computational and q
 
 This proposed curriculum transformation will happen alongside a re-evaluation of quantitative EOAS course offerings across disciplines. The end result will reposition the UBC Earth Science specializations as opportunities for quantitative and computational learning in a highly interdisciplinary domain.
 
-## Progress
+# Contributors
 
-See the Progress Reports section.
+### Principles
 
-## Project links
+- _Tara Ivanochko_: Project P.I. ([TI at EOAS](https://www.eoas.ubc.ca/people/taraivanochko)). Dr. Ivanochko has been Associate Head Undergraduate Affairs in EOAS; Director of the Environmental Science BSc Degree specialization, and is currently serving as Academic Director, UBC Sustainability Initiative (USI).
 
-* [Project repository](https://github.com/eoas-ubc/eoas_tlef)
-* [OCESE proposal](https://github.com/eoas-ubc/eoas-ubc.github.io/blob/docs/pdffiles/ocese_proposal_2019.pdf)
-* [3 year schedule](https://eoas-ubc.github.io/pdffiles/project_timeline.pdf) as of July 2020. (Priorities and deliverable scheduling will change as personnel, resources and COVID-19 evolve.)
-* [project board](https://github.com/eoas-ubc/eoas_tlef/projects/2)
-* [EOAS on github](https://github.com/eoas-ubc)
-* [The eoas_ubc conda package channel](https://anaconda.org/eoas_ubc/dashboard)
-* For presentations and other contributions see [Project Outcomes](outcomes.html).
+- _Phil Austin_: Project instigator and chief developer. ([PA at EOAS](https://www.eoas.ubc.ca/people/philaustin) and [on GitHub](https://github.com/phaustin)). Dr. Austin has transformed three courses to use python and Jupyter notebooks and is the liaison between this proposal and UBC's other related data science education projects. He is also engaged with the Faculty of Science initiative to provide student computation support on the cloud and chair of the Infrastructure Sub-committee for the Faculty of Science Data Science Committee.
 
-## Data science links
+- _Francis Jones_: Coordinator, admin and development. ([FJ at EOAS](https://www.eoas.ubc.ca/people/francisjones) and [on GitHub](https://github.com/fhmjones)). Mr. Jones has taught geophysics in UBC's Department of EOAS for 25 yrs and has worked in the department as a geoscience education specialist since 2007.
 
-* [Sep. 2019 Data Science Report](https://github.com/eoas-ubc/eoas-ubc.github.io/blob/docs/pdffiles/Data_Science_Report_Sept2019.pdf)
-* [DSCI 100 report](https://ubc-dsci.github.io/dsci-100-a-report/dsci-100-a-report.html#1)
-* [Data Science Minor](https://datascience.ubc.ca/minor)  
-* [Microbiology-bioinformatics TLEF](https://tlef.ubc.ca/funded-proposals/entry/15/)
-* [TLEF synergies](https://github.com/eoas-ubc/eoas-ubc.github.io/blob/docs/pdffiles/tlef_synergies.pdf)
-* [DSCI 100 repository](https://github.com/UBC-DSCI)
-* [STAT 201 repository](https://github.com/UBC-DSCI/stat-201)
-* [Pangeo education/training](https://discourse.pangeo.io/t/poets-core-pangeo-education-needs-you/355)
-* [strategic planning pdf](https://github.com/eoas-ubc/eoas-ubc.github.io/blob/docs/pdffiles/strategic_planning.pdf)
+### Current Students
+
+- Andrew Loeppky ([AL on GitHub](https://github.com/AndrewLoeppky))
+- Jamie Byer ([JB on GitHub](https://github.com/jamiebyer/))
+- Carol Zhang ([CZ on GitHub](https://github.com/carolz19))
+- Jacob McFarlane ([JM on GitHub](https://github.com/JacobMcFarlane))
+- Yiki Su ([YS on GitHub](https://github.com/YikiSu))
+- Hariharan Umashankar ([HU on GitHub](https://github.com/hari-ushankar) or [researchgate](https://www.researchgate.net/profile/Hariharan_Umashankar))
+
+### Project team members
+
+The following are, or will be involved in various capacities.
+- Susan Allen, Professor, EOAS, Faculty of Science.
+- Roger Beckie, Professor, EOAS, Faculty of Science.
+- Michael Bostock, Professor, EOAS, Faculty of Science.
+- Eldad Haber, Professor, EOAS, Faculty of Science.
+- Mark Jellinek, Professor, EOAS, Faculty of Science.
+- Catherine Johnson, Professor, EOAS, Faculty of Science.
+- Mark Johnson, Associate Professor, EOAS / IRES, Faculty of Science.
+- Valentina Radic, Associate Professor, EOAS, Faculty of Science.
+- Stephanie Waterman, Assistant Professor, EOAS, Faculty of Science.
+- Michael Lipsen, Lecturer, EOAS, Faculty of Science.
+- Sarah Bean Sherman, Science Education Specialist, EOAS, Faculty of Science.
+
+### Project alumni
+
+- Mara Colclough ([MC on GitHub](https://github.com/maracieco))
+- Danil Platonov ([DP on GitHub](https://github.com/slemonide))
+- Benjamin Chang ([BC on GitHub](https://github.com/bkchang-97))
+- Chris Rodell ([CR on GitHub](https://github.com/cerodell))

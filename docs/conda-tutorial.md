@@ -1,4 +1,4 @@
-# Andrew's Workflow Guide for Programming Environments
+# A Workflow Guide for Programming Environments
 
 ## Prior Assumptions
 
