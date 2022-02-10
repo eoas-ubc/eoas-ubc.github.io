@@ -1,8 +1,12 @@
 #######################################################################################
+# For settings see https://jupyterbook.org/customize/config.html
+#######################################################################################
+
 # Book settings
 title : OCESE Documenation
 author: everyone
 logo: images/logo-04smsm.png
+copyright: "2022"  # Copyright year to be placed in the footer
 
 # Information about where the book exists on the web
 description: >-

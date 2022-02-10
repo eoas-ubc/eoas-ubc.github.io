@@ -1,39 +1,38 @@
 format: jb-book
 root: index
 parts:
-- caption: Project components
+- caption: Project & Outcomes
   chapters:
   - file: project-outline
-    title: Outline
-  - file: personnel
-  - file: presentations
-    title: Presentations
+    title: Introduction
   - file: progress
     title: Progress Reports >>
     sections:
     - file: progress-nov2020
-      title: Progress Nov 2020
+    - file: progress-nov2021
   - file: course_materials
-  - file: outcomes
-- caption: Documentation
-  chapters:
-  - file: basics
-    title: Basic Skills >>
+    title: Course materials >>
     sections:
-    - file: gettingstarted
-    - file: commandline
-    - file: markdown
-    - file: conda_environs
-    - file: git-intro
-    - file: git-workflows
-    - file: bestpractices
-    - file: troubleshooting
+    - file: dsci100-datasets.md
   - file: dashboards
     title: Dashboards
-    sections:
-    - file: heroku
-      title: Deploy to Heroku
+  - file: presentations
+- caption: How-to Guides
+  chapters:
+  - file: git-workflows
+  - file: heroku
   - file: jupyterbooks
-  - file: jupyter-etc
   - file: tools
-  - file: python-etc
+  - file: troubleshooting
+- caption: Tutorials
+  chapters:
+  - file: gettingstarted
+  - file: commandline
+  - file: conda_environs
+  - file: conda-tutorial
+    title: Conda Tutorial
+  - file: git-intro
+- caption: References
+  chapters:
+  - file: links-pointers
+  - file: ocese_year1_report
