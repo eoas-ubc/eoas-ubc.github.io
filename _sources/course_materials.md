@@ -1,4 +1,4 @@
-# Course material
+# Course materials
 
 ## Getting started
 

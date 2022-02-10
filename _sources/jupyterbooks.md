@@ -114,15 +114,23 @@ Branch "docs" contains markdown files where editing is done.
 Branch "master" is what's displayed as https://eoas-ubc.github.io/index.html 
 
 1. Before edits
-   1. Initially - fork & clone your own copy of the docs branch
-   2. Always - before starting, check that the "docs" branch of your github fork is up to date. Implement a "fetch upstream" if needed. 
+
+   1. Initially - fork & clone your own copy of the docs branch.
+
+   2. Always - before starting, check that the "docs" branch of your github fork is up to date. Implement a "fetch upstream" if needed.
+
    3. On your local clone's "docs" branch, carry out a fetch and merge to ensure you are editing an up to date version.
+
 2. Editing
-   1. Edit  the "docs" branch. Ignore the "master" branch - it is the website and will be created using ghp-import.
+
+   1. Edit  the "docs" branch. Ignore the "master" branch - it is the website and will be created using `ghp-import`.
+
    2. Build book using the  jb build docs/  command
+
    3. Hand-copy (or with a script) any other files (like PDFs) into their required subfolders. (In our case, there is a "pdffiles" folder that should live under the html folder.) NOTE: all references to these "other" files need to point to this subfolder.
 
    4. Find the website in folder "docs/_build/html" - view this locally.
+
 3. Deliver and synchronize
    1. When ready, push result to your fork using the following:
 
@@ -134,7 +142,7 @@ Branch "master" is what's displayed as https://eoas-ubc.github.io/index.html
 
 	2. Then your fork's "master" branch should be ready to send a pull request.
 
-	3. If that works, also send pull request on "docs" branch. 
+   3. If that works, also send pull request on "docs" branch.
 
 4. Finally, make sure original, forked and local cloned versions are up to date.
 
@@ -154,3 +162,15 @@ Branch "master" is what's displayed as https://eoas-ubc.github.io/index.html
 	3. Your own fork will now be out of sync and needs fixing online.
 
 	4. TO BYPASS YOUR OWN FORK COMPLETELY requires a rebase workflow, which I'm not yet comfortable with (Feb 8, 2022). However, the sequence listed [here](https://medium.com/@topspinj/how-to-git-rebase-into-a-forked-repo-c9f05e821c8a) seems to work. It does leave your own forked repository out of sync, but maybe that fork isn't really needed? To be discussed.  
+
+---
+
+## Editing Sequence
+
+1. At your online fork of the site: Check the `docs` and `master` branches are both up to date with `eoas-ubc:docs` and `eoas-ubc:master`. If not, make them so.
+
+2. On your local clone (where editing will be done) ensure jupyterbooks is in your environmnet, go to the clone's home directory and run `git branch -v` to ensure you are working on the docs branch. Then check that `git status` says you are up to date.
+
+3. Edit pages.
+
+4. Before publishing, git-commit your edits changes. Push this `docs` branch to your fork.

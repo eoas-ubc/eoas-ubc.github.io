@@ -1,4 +1,6 @@
-# OCESE year 1 progress report
+# OCESE year 1 progress
+
+Listing materials used or developed or in progress, as well as presentations and collaborators.
 
 * Link to [OCESE website](https://eoas-ubc.github.io/)  
 * Link to [github markdown source](https://github.com/phaustin/eoas_tlef/blob/pha_work/docs/progress_2020/draft_summary.md)
