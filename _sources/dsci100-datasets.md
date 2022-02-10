@@ -1,4 +1,4 @@
-# UBC course DSCI 100
+# DSCI 100
 An outline of **Data Science 100: Introduction to Data Science**, based on materials at their [GitHub DSCI-100 repo](https://github.com/UBC-DSCI/dsci-100).
 
 ## Description

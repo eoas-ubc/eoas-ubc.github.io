@@ -11,3 +11,6 @@
   * Start [here](https://github.com/eoas-ubc/convert_docs/blob/master/Readme_convert.md) for converting docx, tex and pptx to Markdown.
 * generate quizzes for the Canvas Learning Management System
 * Docker containers
+* nbgrader
+* PrairieLearn
+* fdsa
