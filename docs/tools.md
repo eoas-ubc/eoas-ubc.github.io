@@ -10,7 +10,7 @@
 * convert_docs:  move docx, pptx and latex files into markdown
   * Start [here](https://github.com/eoas-ubc/convert_docs/blob/master/Readme_convert.md) for converting docx, tex and pptx to Markdown.
 * generate quizzes for the Canvas Learning Management System
+* Jupyter Hubs
 * Docker containers
 * nbgrader
 * PrairieLearn
-* fdsa

@@ -13,16 +13,19 @@ parts:
   - file: course_materials
     title: Course materials >>
     sections:
-    - file: dsci100-datasets.md
+    - file: crs-dsci100
+    - file: crs-eosc211
   - file: dashboards
     title: Dashboards
   - file: presentations
 - caption: How-to Guides
   chapters:
   - file: git-workflows
+  - file: dashboard-howto
   - file: heroku
   - file: jupyterbooks
   - file: tools
+    title: Software tools
   - file: troubleshooting
 - caption: Tutorials
   chapters:
@@ -35,4 +38,3 @@ parts:
 - caption: References
   chapters:
   - file: links-pointers
-  - file: ocese_year1_report

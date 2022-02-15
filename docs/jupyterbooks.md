@@ -36,7 +36,7 @@ Your working environment should include:
 ```
 ### 1.2 Files, folders, repositories and branches
 
-Put Markdown files for each page, and the `_config.yml` and `_toc.yml` files in a folder called `docs` under the repository's root. Put images in an `images` subfolder under `docs`. Put other files (like PDFs) in a folder under the root ("parallel" with the `docs` folder) and then move these by hand as a last step (see below). 
+Put Markdown files for each page, and the `_config.yml` and `_toc.yml` files in a folder called `docs` under the repository's root. Put images in an `images` subfolder under `docs`. Put other files (like PDFs) in a folder under the root ("parallel" with the `docs` folder) and then move these by hand as a last step (see below). There should be `README.md` and `LICENSE` files. A `.gitignore` file is recommended to prevent all the HTML and related files being sent when you `push` to GitHub.
 
 ### 1.3 Branches for editing and publishing
 
@@ -68,7 +68,9 @@ Here is a numbered figure with a caption!
 
 ## 3. Building a Jupyter Book
 
-Work in the repository's `docs` branch. Edit Markdown, `_toc`, and/or Jupyter Notebook files in the repository's `docs` folder. Be SURE to commit finished edits to the `docs` branch and `push` to the GitHub repo's corresponding `docs` branch (or your fork of it). Then you can "build" the book.
+Work in the repository's `docs` branch. Edit Markdown, `_toc`, and/or Jupyter Notebook files in the repository's `docs` folder. 
+
+Be SURE to commit finished edits to the `docs` branch and `push` to the GitHub repo's corresponding `docs` branch (or your fork of it). Then you can "build" the book.
 
 To work with a clean build, delete the `_build` folder's contents "by hand", or empty it by running:
 
@@ -102,11 +104,25 @@ HOWEVER, to publish to an Organization's repository (such as `eoas-tlef`) the st
 
 3. Copy all necessary files to that folder. This is necessary because the `jb build` command doesn't know how to find and correctly place these files.
 
-4. Make sure your local git repo knows where `upstream` is. If you are using a fork / rebase workflow, this should be clear. Then use `ghp-import` as follows.
+4. Make sure your local git repo knows where `upstream` is. If you are using a fork / rebase workflow, this should be clear. If needed, temporarily set a remote `upstream` location as
 
    ```bash
-   ghp-import -f --no-jekyll -p -b master docs/_build/html -r upstream
+   git remote add upstream https://github.com/username/username.github.io
    ```
+
+5. Then use `ghp-import` as follows.
+
+   ```bash
+   ghp-import -f --no-jekyll -p -b master docs/_build/html -r upstream   
+   ```
+6. ( If desired stop using that location as this repo's `upstream` using:)
+
+    ```
+    git remote remove upstream
+    ```
+
+7. Test results by pointing your browser to `username.github.io`. It may take a short time to update. 
+
 ## 5. Workflow involving a fork of the original
 
 Project docs are at https://github.com/eoas-ubc/eoas-ubc.github.io 
