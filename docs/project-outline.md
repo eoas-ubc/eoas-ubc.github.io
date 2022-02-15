@@ -25,9 +25,6 @@ This proposed curriculum transformation will happen alongside a re-evaluation of
 - Andrew Loeppky ([AL on GitHub](https://github.com/AndrewLoeppky))
 - Jamie Byer ([JB on GitHub](https://github.com/jamiebyer/))
 - Carol Zhang ([CZ on GitHub](https://github.com/carolz19))
-- Jacob McFarlane ([JM on GitHub](https://github.com/JacobMcFarlane))
-- Yiki Su ([YS on GitHub](https://github.com/YikiSu))
-- Hariharan Umashankar ([HU on GitHub](https://github.com/hari-ushankar) or [researchgate](https://www.researchgate.net/profile/Hariharan_Umashankar))
 
 ### Project team members
 
@@ -46,7 +43,10 @@ The following are, or will be involved in various capacities.
 
 ### Project alumni
 
-- Mara Colclough ([MC on GitHub](https://github.com/maracieco))
-- Danil Platonov ([DP on GitHub](https://github.com/slemonide))
-- Benjamin Chang ([BC on GitHub](https://github.com/bkchang-97))
-- Chris Rodell ([CR on GitHub](https://github.com/cerodell))
+- Mara Colclough ([MC on GitHub](https://github.com/maracieco)) (summer 2020)
+- Danil Platonov ([DP on GitHub](https://github.com/slemonide)) (summer & fall, 2020)
+- Benjamin Chang ([BC on GitHub](https://github.com/bkchang-97)) (fall/winter 2020/21)
+- Chris Rodell ([CR on GitHub](https://github.com/cerodell)) (volunteer, Fall 2021)
+- Jacob McFarlane ([JM on GitHub](https://github.com/JacobMcFarlane)) (winter/spring 2021)
+- Yiki Su ([YS on GitHub](https://github.com/YikiSu)) (winter/spring 2021)
+- Hariharan Umashankar ([HU on GitHub](https://github.com/hari-ushankar) or [researchgate](https://www.researchgate.net/profile/Hariharan_Umashankar)) (summer 2020 through fall 2021)
