@@ -1,11 +1,11 @@
 # DSCI 100
-An outline of **Data Science 100: Introduction to Data Science**, based on materials at their [GitHub DSCI-100 repo](https://github.com/UBC-DSCI/dsci-100).
+An outline of **Data Science 100: Introduction to Data Science**, based on materials at the public [GitHub DSCI-100 repository](https://github.com/ubc-dsci/dsci-100-student).
 
 ## Description
 
-Officially, "*Use of data science tools to summarize, visualize, and analyze data. Sensible workflows and clear interpretations are emphasized*". 
+Use of data science tools to summarize, visualize, and analyze data. Sensible workflows and clear interpretations are emphasized. 
 
-**Prerequisites**: At least first year standing in Science at UBC. No previous programming skills necessary; beginners are welcome!
+**Prerequisites**: At least first year standing in Science at UBC. No previous programming skills necessary.
 
 ## Official learning outcomes:
 
@@ -14,16 +14,17 @@ Officially, "*Use of data science tools to summarize, visualize, and analyze dat
    3. Identify the most **common types of research/statistical questions** and map them to the appropriate type of data analysis.
    4. Create, and interpret, meaningful **tables** from wrangled data.
    5. Create, and interpret, impactful **figures** from wrangled data.
-   6. Apply, and interpret the output of simple **classifier and regression models**.
-   7. Make and evaluate **predictions** using a simple classifier and a regression model.
-   8. Apply, and interpret the output of, a simple **clustering algorithm**.
-   9. Distinguish between in-sample **prediction**, out-of-sample prediction, and **cross-validation**.
-   10. Calculate a **point estimate** in the context of statistical inference and explain how that relates to the population quantity being estimated.
-   11. Accomplish all of the above using **workflows and communication strategies** that are sensible, clear, reproducible, and shareable.
+   6. **Collaborate** with othres using version control.
+   7. Apply, and interpret the output of simple **classifier and regression models**.
+   8. Make and evaluate **predictions** using a simple classifier and a regression model.
+   9. Apply, and interpret the output of, a simple **clustering algorithm**.
+   10. Distinguish between in-sample **prediction**, out-of-sample prediction, and **cross-validation**.
+   11. Calculate a **point estimate** in the context of statistical inference and explain how that relates to the population quantity being estimated.
+   12. Accomplish all of the above using **workflows and communication strategies** that are sensible, clear, reproducible, and shareable.
 
 ## Course Outline
 
-An succinct weekly outline is given under the "**Schedule**" heading in the course's GitHub repository [readme file](https://github.com/UBC-DSCI/dsci-100).
+An succinct weekly outline is given under the "**Schedule**" heading in the course's public GitHub repository [readme file](https://github.com/ubc-dsci/dsci-100-student).
 
 ## Weekly topic coverage and corresponding data sets
 
