@@ -13,16 +13,15 @@ parts:
   - file: course_materials
     title: Course materials >>
     sections:
-    - file: crs-dsci100.md
-    - file: crs-atsc303.md
-    - file: crs-eosc211.md
+    - file: crs-dsci100
+    - file: crs-eosc211
   - file: dashboards
     title: Dashboards
   - file: presentations
 - caption: How-to Guides
   chapters:
   - file: git-workflows
-  - file: dashboard-howtos
+  - file: dashboard-howto
   - file: heroku
   - file: jupyterbooks
   - file: tools
