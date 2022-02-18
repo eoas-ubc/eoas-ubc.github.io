@@ -2,13 +2,16 @@
 
 ## Presentations
 
-* UBC TLEF Showcase (May 2021): [Opensource Computing for Earth Sciences Education: Lessons learned in year 1 of 3](https://tlef2.sites.olt.ubc.ca/files/2021/05/2021-TLEF-Showcase-SCI-Tara-Ivanochko.pdf).
-* Pangeo Showcase (May 2021)
+* Dec 2021: [AGU](https://www.agu.org/Fall-Meeting) poster, 
+  *  On a [single HTML page](https://www.eoas.ubc.ca/~quest/agu2021-build-211215.htm). 
+  * The [original at AGU](https://agu2021fallmeeting-agu.ipostersessions.com/default.aspx?s=2A-C2-3D-E0-3B-DD-9A-5E-A3-C9-44-74-4B-06-45-A9) (may not be permanently available).
+* May 2021: UBC TLEF Showcase, [Opensource Computing for Earth Sciences Education: Lessons learned in year 1 of 3](https://tlef2.sites.olt.ubc.ca/files/2021/05/2021-TLEF-Showcase-SCI-Tara-Ivanochko.pdf).
+* May 2021: Pangeo Showcase.
   * [Slides -- ΟCESE: Open source computing for earch sciences education](https://www.dropbox.com/s/ap325xvsncb25tg/austin_pangeo_may_2021.pdf?dl=0)
   * [Video](https://discourse.pangeo.io/t/may-5-2021-ocese-open-source-computing-for-earth-science-education/1443)
-* American Meteorolgical Society Annual Meeting (Sept. 2020): [Abstract: Building an open-source educational community around executable Jupyterbooks](https://ams.confex.com/ams/101ANNUAL/11python/papers/viewonly.cgi?password=582729&username=384767):  
-* Scipy 2020 "BoF" discussion session (July 2020).
-* UBC [Jupyter Days](https://ubc-dsci.github.io/jupyterdays/) August 2020: [Writing Canvas quizzes with Jupyter](https://github.com/UBC-DSCI/jupyterdays/blob/master/jupyterdays/sessions/austin-colclough/md2canvas.md)
+* Sept. 2020: American Meteorolgical Society Annual Meeting, [Abstract: Building an open-source educational community around executable Jupyterbooks](https://ams.confex.com/ams/101ANNUAL/11python/papers/viewonly.cgi?password=582729&username=384767):  
+* July 2020: Scipy 2020 "BoF" discussion session.
+* August 2020: UBC [Jupyter Days](https://ubc-dsci.github.io/jupyterdays/), [Writing Canvas quizzes with Jupyter](https://github.com/UBC-DSCI/jupyterdays/blob/master/jupyterdays/sessions/austin-colclough/md2canvas.md)
 
 ## EOAS or UBC meetings / workshops
 
