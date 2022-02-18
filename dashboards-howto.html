@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dashboard design techniques &#8212; OCESE Documenation</title>
+    <title>Dashboard development &#8212; OCESE Documenation</title>
     
   <link href="_static/css/theme.css" rel="stylesheet" />
   <link href="_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
@@ -51,6 +51,8 @@
     <script async="async" src="_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Deploying dashboards to Heroku" href="heroku.html" />
+    <link rel="prev" title="GitHub and Git Workflows" href="git-workflows.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
     
@@ -124,8 +126,13 @@
   </label>
   <ul>
    <li class="toctree-l2">
-    <a class="reference internal" href="dsci100-datasets.html">
+    <a class="reference internal" href="crs-dsci100.html">
      DSCI 100
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="crs-eosc211.html">
+     EOSC 211
     </a>
    </li>
   </ul>
@@ -146,10 +153,15 @@
   How-to Guides
  </span>
 </p>
-<ul class="nav bd-sidenav">
+<ul class="current nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="git-workflows.html">
    GitHub and Git Workflows
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Dashboard development
   </a>
  </li>
  <li class="toctree-l1">
@@ -164,7 +176,7 @@
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="tools.html">
-   Course development tools
+   Software tools
   </a>
  </li>
  <li class="toctree-l1">
@@ -214,11 +226,6 @@
  <li class="toctree-l1">
   <a class="reference internal" href="links-pointers.html">
    Links &amp; pointers
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="ocese_year1_report.html">
-   OCESE year 1 progress
   </a>
  </li>
 </ul>
@@ -317,6 +324,16 @@
      To run only on your own computer
     </a>
    </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#sharing-during-development">
+     Sharing during development
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#deploying-to-a-suitable-hub">
+     Deploying to a suitable Hub
+    </a>
+   </li>
   </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
@@ -335,12 +352,12 @@
         
               <div>
                 
-  <div class="section" id="dashboard-design-techniques">
-<h1>Dashboard design techniques<a class="headerlink" href="#dashboard-design-techniques" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="dashboard-development">
+<h1>Dashboard development<a class="headerlink" href="#dashboard-development" title="Permalink to this headline">¶</a></h1>
 <p><strong>What are “dashboards”</strong>? These are interactive mathematical or data exploration applications hosted online and used in any standard browser. They are used by instructors and students or other learners to explore complex data sets, address problems or assignments, or experiment with challenging concepts.</p>
 <div class="section" id="dashboards-developed-as-part-of-ocese">
 <h2>Dashboards developed as part of OCESE<a class="headerlink" href="#dashboards-developed-as-part-of-ocese" title="Permalink to this headline">¶</a></h2>
-<p>There is a separate <span class="xref myst">list of dashboards</span> generated during the OCESE project.</p>
+<p>There is a [separate <a class="reference internal" href="dashboards.html"><span class="doc std std-doc">list of dashboards</span></a> generated during the OCESE project.</p>
 </div>
 <div class="section" id="environment-for-develpment">
 <h2>Environment for develpment<a class="headerlink" href="#environment-for-develpment" title="Permalink to this headline">¶</a></h2>
@@ -349,23 +366,29 @@
 </div>
 <div class="section" id="design-criteria">
 <h2>Design criteria<a class="headerlink" href="#design-criteria" title="Permalink to this headline">¶</a></h2>
-<p>Key criteria are:</p>
+<p>Our key design criteria are based on keeping the focus on efficient, effective learning first, and clarity for sustainable maintainance second.</p>
 <ol class="simple">
 <li><p>Keep apps simple and focused on one concept or dataset. Making tools too versatile or complex increases the learning curve which reduces the likelihood of the resource being readily incorporated into teaching or learning.</p></li>
 <li><p>Do not include teaching or learning “tasks” like specific questions or assignments. Deliver those to students separately. This will ensure that apps do not have to be re-built for different courses, assignments or use-cases.</p></li>
 <li><p>If using Jupyter Notebooks, the ipywidgets library is used instead of Plotly graphics.</p></li>
 <li><p>To hide code when writing for Jupyter Notebooks, write the interactive app as a *.py file and call it in the Notebook.</p></li>
-<li><p>More details and guidelines to come …</p></li>
+<li><p>Ensure that graphs and controls can be seen on a single screen that is 1920 x 1080 pixels. If there are two interactive sections of the dashboard, that might mean putting instructions for both together above or below the interactive sections of the page.</p></li>
+<li><p>Ensure code is properly documented with pointers to sources of inspiration or coding techniques. Someone other than the original developer will very likely be the next person to update the dashboard app.</p></li>
 </ol>
 </div>
 <div class="section" id="deploying-dashboards">
 <h2>Deploying dashboards<a class="headerlink" href="#deploying-dashboards" title="Permalink to this headline">¶</a></h2>
-<p>Running on local development computer is straightforward, but requires certain Python libraries.</p>
-<p>To enable users and developers to share a working copy and discuss design and pedagogic aspects, deploying to a free Heroku account works well. Each such account can only house five apps. See separate <span class="xref myst">instructions for deploying to Heroku</span>.</p>
-<p>Further details have yet to be written, but sections will likely include something like the following:</p>
 <div class="section" id="to-run-only-on-your-own-computer">
 <h3>To run only on your own computer<a class="headerlink" href="#to-run-only-on-your-own-computer" title="Permalink to this headline">¶</a></h3>
 <p>This choice makes sense when you are experimenting with the dashboard or planning (if only temporarily) on using it for presentations for a class or presentation.</p>
+</div>
+<div class="section" id="sharing-during-development">
+<h3>Sharing during development<a class="headerlink" href="#sharing-during-development" title="Permalink to this headline">¶</a></h3>
+<p>To enable users and developers to share a working copy and discuss design and pedagogic aspects, deploying to a free Heroku account works well. Each such account can only house five apps. See separate <span class="xref myst">instructions for deploying to Heroku</span>.</p>
+</div>
+<div class="section" id="deploying-to-a-suitable-hub">
+<h3>Deploying to a suitable Hub<a class="headerlink" href="#deploying-to-a-suitable-hub" title="Permalink to this headline">¶</a></h3>
+<p>This will be required if more than 5-10 people might use the dashboard at once. This is non-trivial, and details will be documented later, hopefully during summer 2022. For now, if you need to see the repository used for deploying our collection, see scripts and Docker files at the <a class="reference external" href="https://github.com/phaustin/addon_containers">addon_containers</a> repo.</p>
 </div>
 </div>
 <div class="section" id="references-and-resources">
@@ -411,6 +434,24 @@
 
 <div class='prev-next-bottom'>
     
+    <div id="prev">
+        <a class="left-prev" href="git-workflows.html" title="previous page">
+            <i class="prevnext-label fas fa-angle-left"></i>
+            <div class="prevnext-info">
+                <p class="prevnext-label">previous</p>
+                <p class="prevnext-title">GitHub and Git Workflows</p>
+            </div>
+        </a>
+    </div>
+     <div id="next">
+        <a class="right-next" href="heroku.html" title="next page">
+            <div class="prevnext-info">
+                <p class="prevnext-label">next</p>
+                <p class="prevnext-title">Deploying dashboards to Heroku</p>
+            </div>
+            <i class="prevnext-label fas fa-angle-right"></i>
+        </a>
+     </div>
 
 </div>
         
