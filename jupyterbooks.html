@@ -126,8 +126,13 @@
   </label>
   <ul>
    <li class="toctree-l2">
-    <a class="reference internal" href="dsci100-datasets.html">
+    <a class="reference internal" href="crs-dsci100.html">
      DSCI 100
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="crs-eosc211.html">
+     EOSC 211
     </a>
    </li>
   </ul>
@@ -155,6 +160,11 @@
   </a>
  </li>
  <li class="toctree-l1">
+  <a class="reference internal" href="dashboards-howto.html">
+   Dashboard development
+  </a>
+ </li>
+ <li class="toctree-l1">
   <a class="reference internal" href="heroku.html">
    Deploying dashboards to Heroku
   </a>
@@ -166,7 +176,7 @@
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="tools.html">
-   Course development tools
+   Software tools
   </a>
  </li>
  <li class="toctree-l1">
@@ -216,11 +226,6 @@
  <li class="toctree-l1">
   <a class="reference internal" href="links-pointers.html">
    Links &amp; pointers
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="ocese_year1_report.html">
-   OCESE year 1 progress
   </a>
  </li>
 </ul>
@@ -295,55 +300,45 @@
             <nav id="bd-toc-nav" aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#basic-references">
-   Basic references
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#getting-started">
-   1. Getting started
+  <a class="reference internal nav-link" href="#workflow-involving-a-fork-of-the-original">
+   Workflow involving a fork of the original
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#installing-jupyter-book-and-ghp-import">
-     1.1 Installing Jupyter Book and ghp-import
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#files-folders-repositories-and-branches">
-     1.2 Files, folders, repositories and branches
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#branches-for-editing-and-publishing">
-     1.3 Branches for editing and publishing
+    <a class="reference internal nav-link" href="#a-shortcut-approach">
+     A shortcut approach
     </a>
    </li>
   </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#installing-jupyter-book-and-ghp-import">
+   1 Installing Jupyter Book and ghp-import
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#files-folders-repositories-and-branches">
+   2. Files, folders, repositories and branches
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#branches-for-editing-and-publishing">
+   3. Branches for editing and publishing
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#preparing-content">
-   2. Preparing content
+   4. Preparing content
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#building-a-jupyter-book">
-   3. Building a Jupyter Book
+  <a class="reference internal nav-link" href="#jupyterbook-publishing-comments">
+   5. JupyterBook Publishing Comments
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#publishing-the-jupyter-book-online">
-   4. Publishing the Jupyter Book online
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#workflow-involving-a-fork-of-the-original">
-   5. Workflow involving a fork of the original
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#editing-sequence">
-   Editing Sequence
+  <a class="reference internal nav-link" href="#finally-some-basic-references">
+   6. Finally some basic references
   </a>
  </li>
 </ul>
@@ -366,48 +361,98 @@
 <li><p>delivering to a GitHub website repository using the <a class="reference external" href="https://pypi.org/project/ghp-import/">ghp-import package</a>, a lightweight Python package for pushing HTML content to a GitHub repository.</p></li>
 </ol>
 <p>(The “normal approach” to displaying websites in your GitHub account works fine (see <a class="reference external" href="https://pages.github.com/">https://pages.github.com/</a>) but requires finished HTML and related files. It does NOT work to simply generate a Jupyter book from your Markdown, then transfer the resulting HTML to your <code class="docutils literal notranslate"><span class="pre">username.github.io/</span></code> repo.)</p>
-<div class="section" id="basic-references">
-<h2>Basic references<a class="headerlink" href="#basic-references" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="workflow-involving-a-fork-of-the-original">
+<h2>Workflow involving a fork of the original<a class="headerlink" href="#workflow-involving-a-fork-of-the-original" title="Permalink to this headline">¶</a></h2>
+<p>First, the outline of steps. Details about installing JupyterBooks and <code class="docutils literal notranslate"><span class="pre">ghp-import</span></code> library are below.</p>
+<p>In this project’s documentation <a class="reference external" href="https://github.com/eoas-ubc/eoas-ubc.github.io">repository</a>, the “docs” branch contains markdown files where editing is done. The completed website is on the “master” branch and is displayed <a class="reference external" href="https://eoas-ubc.github.io/index.html">here</a>.</p>
+<ol>
+<li><p>Before edits</p>
+<ol class="simple">
+<li><p><em>Initially</em> - fork then clone your own copy of the docs branch.</p></li>
+<li><p><em>Always</em> - before starting, check that the “docs” branch of your github fork is up to date. Implement a “fetch upstream” if needed.</p></li>
+<li><p>On your local clone (where editing will be done)</p>
 <ul class="simple">
-<li><p>Jupyter books documentation starts at <a class="reference external" href="https://jupyterbook.org/intro.html">jupyterbook.org</a>.</p></li>
-<li><p>Markdown 1: The “plainest” version of markdown that Jupyter Books understands is <a class="reference external" href="https://commonmark.org/">CommonMark</a>.</p></li>
-<li><p>Markdown 2: Jupyter Book supports any Markdown syntx that is upported by Jupyter Notebooks. See details <a class="reference external" href="https://jupyterbook.org/file-types/markdown.html">here</a>.</p></li>
-<li><p>Markdown 3: <a class="reference external" href="https://jupyterbook.org/content/myst.html">MyST Markdown</a> is also understood, which is derived from RMarkdown language used in RStudio.</p></li>
+<li><p>ensure jupyterbooks is in your environmnet,</p></li>
+<li><p>go to the clone’s home directory and run <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">branch</span> <span class="pre">-v</span></code> to ensure you are working on the docs branch.</p></li>
+<li><p>Check that <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">status</span></code> says you are up to date.</p></li>
 </ul>
+</li>
+</ol>
+</li>
+<li><p>Editing, building, and checking results before publishing</p>
+<ol class="simple">
+<li><p>Edit Markdown, <code class="docutils literal notranslate"><span class="pre">_toc</span></code>, and/or Jupyter Notebook files in the repository’s <code class="docutils literal notranslate"><span class="pre">docs</span></code> folder. Ignore the “master” branch - it is the website and will be created using <code class="docutils literal notranslate"><span class="pre">ghp-import</span></code>.</p></li>
+<li><p>Be SURE to commit finished edits to the <code class="docutils literal notranslate"><span class="pre">docs</span></code> branch and <code class="docutils literal notranslate"><span class="pre">push</span></code> to the GitHub repo’s corresponding <code class="docutils literal notranslate"><span class="pre">docs</span></code> branch (or your fork of it). Then you can “build” the book.</p></li>
+<li><p>To work with a clean build run <strong><code class="docutils literal notranslate"><span class="pre">jb</span> <span class="pre">clean</span> <span class="pre">docs/</span></code></strong>. If jupyter execution is cached, this command will not delete the cached folder. To remove the build folder <em>including</em> cached executables, run <strong><code class="docutils literal notranslate"><span class="pre">jb</span> <span class="pre">clean</span> <span class="pre">--all</span> <span class="pre">docs/</span></code></strong>.</p></li>
+<li><p>Make the book by running the following command from the repository’s root folder: <strong><code class="docutils literal notranslate"><span class="pre">jb</span> <span class="pre">build</span> <span class="pre">docs/</span></code></strong>.</p></li>
+<li><p>Test the result locally by opening the local <code class="docutils literal notranslate"><span class="pre">index.html</span></code> file that should be in the <code class="docutils literal notranslate"><span class="pre">docs/_build/html</span></code> folder.</p></li>
+<li><p>Hand-copy (or with a script) any other files (like PDFs) into their required subfolders. (In our case, there is a “pdffiles” folder that should live under the html folder.) NOTE: all references to these “other” files need to point to this subfolder.</p></li>
+<li><p>Find the website in folder “docs/_build/html” - view this locally.</p></li>
+</ol>
+</li>
+<li><p>Deliver and synchronize</p>
+<ol>
+<li><p>When ready, push the resulting prepared web pages to your fork using the following (which means: “<em>force (-f) with a no-jekyll file, push after commit (-p) to branch (-b) <code class="docutils literal notranslate"><span class="pre">master</span></code> your stuff at <code class="docutils literal notranslate"><span class="pre">docs/_build/html</span></code> to the (default) origin repository</em>”):</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ghp-import -f --no-jekyll -p -b master docs/_build/html
+</pre></div>
 </div>
-<div class="section" id="getting-started">
-<h2>1. Getting started<a class="headerlink" href="#getting-started" title="Permalink to this headline">¶</a></h2>
+</li>
+<li><p>Then your fork’s “master” branch should be ready to send a pull request.</p></li>
+<li><p>If that works, also send pull request on “docs” branch.</p></li>
+<li><p>Finally, make sure original, forked and local cloned versions are up to date.</p></li>
+</ol>
+</li>
+</ol>
+<div class="section" id="a-shortcut-approach">
+<h3>A shortcut approach<a class="headerlink" href="#a-shortcut-approach" title="Permalink to this headline">¶</a></h3>
+<ol>
+<li><p>Deliver directly to upstream by first defining the upstream remote:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git remote add upstream https://github.com/eoas-ubc/eoas-ubc.github.io
+</pre></div>
+</div>
+</li>
+<li><p>Then carry out the delivery by specifying upstream as the target:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ghp-import -f --no-jekyll -p -b master docs/_build/html -r upstream
+</pre></div>
+</div>
+</li>
+<li><p>Your own fork will now be out of sync and needs fixing online.</p></li>
+<li><p>TO BYPASS YOUR OWN FORK COMPLETELY requires a rebase workflow, which I’m not yet comfortable with (Feb 8, 2022). However, the sequence listed <a class="reference external" href="https://medium.com/&#64;topspinj/how-to-git-rebase-into-a-forked-repo-c9f05e821c8a">here</a> seems to work. It does leave your own forked repository out of sync, but maybe that fork isn’t really needed? To be discussed.</p></li>
+</ol>
+<hr class="docutils" />
+<p>Here are some details about preparing to build Jupyter Books.</p>
+</div>
+</div>
 <div class="section" id="installing-jupyter-book-and-ghp-import">
-<h3>1.1 Installing Jupyter Book and ghp-import<a class="headerlink" href="#installing-jupyter-book-and-ghp-import" title="Permalink to this headline">¶</a></h3>
+<h2>1 Installing Jupyter Book and ghp-import<a class="headerlink" href="#installing-jupyter-book-and-ghp-import" title="Permalink to this headline">¶</a></h2>
 <p>Install via pip (details <a class="reference external" href="https://jupyterbook.org/start/overview.html">here</a>):</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="o">-</span><span class="n">U</span> <span class="n">jupyter</span><span class="o">-</span><span class="n">book</span>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pip install -U jupyter-book
 </pre></div>
 </div>
 <p>After writing content, structuring the table of contents, etc. the <a class="reference external" href="https://pypi.org/project/ghp-import/">ghp-import</a> program delivers a prepared Jupyter Book to an individual’s, or organization’s repository. Install this utility as follows:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="n">ghp</span><span class="o">-</span><span class="kn">import</span>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pip install ghp-import
 </pre></div>
 </div>
 <p>Your working environment should include:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>  <span class="o">-</span> <span class="n">ghp</span><span class="o">-</span><span class="kn">import</span>
-  <span class="o">-</span> <span class="n">jupytext</span>
-  <span class="o">-</span> <span class="n">jupyter</span><span class="o">-</span><span class="n">book</span>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>  - ghp-import
+  - jupytext
+  - jupyter-book
 </pre></div>
 </div>
 </div>
 <div class="section" id="files-folders-repositories-and-branches">
-<h3>1.2 Files, folders, repositories and branches<a class="headerlink" href="#files-folders-repositories-and-branches" title="Permalink to this headline">¶</a></h3>
-<p>Put Markdown files for each page, and the <code class="docutils literal notranslate"><span class="pre">_config.yml</span></code> and <code class="docutils literal notranslate"><span class="pre">_toc.yml</span></code> files in a folder called <code class="docutils literal notranslate"><span class="pre">docs</span></code> under the repository’s root. Put images in an <code class="docutils literal notranslate"><span class="pre">images</span></code> subfolder under <code class="docutils literal notranslate"><span class="pre">docs</span></code>. Put other files (like PDFs) in a folder under the root (“parallel” with the <code class="docutils literal notranslate"><span class="pre">docs</span></code> folder) and then move these by hand as a last step (see below).</p>
+<h2>2. Files, folders, repositories and branches<a class="headerlink" href="#files-folders-repositories-and-branches" title="Permalink to this headline">¶</a></h2>
+<p>Put Markdown files for each page, and the <code class="docutils literal notranslate"><span class="pre">_config.yml</span></code> and <code class="docutils literal notranslate"><span class="pre">_toc.yml</span></code> files in a folder called <code class="docutils literal notranslate"><span class="pre">docs</span></code> under the repository’s root. Put images in an <code class="docutils literal notranslate"><span class="pre">images</span></code> subfolder under <code class="docutils literal notranslate"><span class="pre">docs</span></code>. Put other files (like PDFs) in a folder under the root (“parallel” with the <code class="docutils literal notranslate"><span class="pre">docs</span></code> folder) and then move these by hand as a last step (see below). There should be <code class="docutils literal notranslate"><span class="pre">README.md</span></code> and <code class="docutils literal notranslate"><span class="pre">LICENSE</span></code> files. A <code class="docutils literal notranslate"><span class="pre">.gitignore</span></code> file is recommended to prevent all the HTML and related files being sent when you <code class="docutils literal notranslate"><span class="pre">push</span></code> to GitHub.</p>
 </div>
 <div class="section" id="branches-for-editing-and-publishing">
-<h3>1.3 Branches for editing and publishing<a class="headerlink" href="#branches-for-editing-and-publishing" title="Permalink to this headline">¶</a></h3>
+<h2>3. Branches for editing and publishing<a class="headerlink" href="#branches-for-editing-and-publishing" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li><p>If the website is for an individual GitHub repository then follow directions on the <a class="reference external" href="https://jupyterbook.org/start/publish.html#publish-your-book-online-with-github-pages">Publish your book online</a> page of Jupyter Book documentation.</p></li>
 <li><p>If the website is for a GitHub “organization” (like this one - eoas-tlef), then push resulting website content to the <code class="docutils literal notranslate"><span class="pre">master</span></code> branch of the organizations GitHub repository. Content can be edited in a separate branch (eg. <code class="docutils literal notranslate"><span class="pre">docs</span></code>), or a separate repository if you prefer. More details below.</p></li>
 </ul>
 </div>
-</div>
 <div class="section" id="preparing-content">
-<h2>2. Preparing content<a class="headerlink" href="#preparing-content" title="Permalink to this headline">¶</a></h2>
+<h2>4. Preparing content<a class="headerlink" href="#preparing-content" title="Permalink to this headline">¶</a></h2>
 <p><strong>Individual pages</strong> are written in individual Markdown files. Tables of contents are defined, “code” for including figures, math, references, and other features are described in documentation, first in the <a class="reference external" href="https://jupyterbook.org/start/your-first-book.html">Creat your first book</a> tutorial, and in more detail under the <a class="reference external" href="https://jupyterbook.org/basics/organize.html">Topic Guides</a> sections of that documentation.</p>
 <p><strong>Non-Markdown content</strong> like PDF files, images, etc. need to be managed by keeping them in suitable folders (eg. <code class="docutils literal notranslate"><span class="pre">\assets</span></code>). They will be copied into corresponding locations after building the HTML.</p>
 <p>For <strong>images</strong>, a choice of syntaxes is available for <a class="reference external" href="https://jupyterbook.org/content/figures.html">including images</a>. Some syntax options explained there are more versatile that others, so use trial and error to ensure your images appear as expected. For example, this inline HTML approach below doesn’t seem to keep track of image locations properly:</p>
@@ -420,102 +465,36 @@
 <p class="caption"><span class="caption-number">Fig. 1 </span><span class="caption-text">Here is a numbered figure with a caption!</span><a class="headerlink" href="#directive-fig" title="Permalink to this image">¶</a></p>
 </div>
 </div>
-<div class="section" id="building-a-jupyter-book">
-<h2>3. Building a Jupyter Book<a class="headerlink" href="#building-a-jupyter-book" title="Permalink to this headline">¶</a></h2>
-<p>Work in the repository’s <code class="docutils literal notranslate"><span class="pre">docs</span></code> branch. Edit Markdown, <code class="docutils literal notranslate"><span class="pre">_toc</span></code>, and/or Jupyter Notebook files in the repository’s <code class="docutils literal notranslate"><span class="pre">docs</span></code> folder. Be SURE to commit finished edits to the <code class="docutils literal notranslate"><span class="pre">docs</span></code> branch and <code class="docutils literal notranslate"><span class="pre">push</span></code> to the GitHub repo’s corresponding <code class="docutils literal notranslate"><span class="pre">docs</span></code> branch (or your fork of it). Then you can “build” the book.</p>
-<p>To work with a clean build, delete the <code class="docutils literal notranslate"><span class="pre">_build</span></code> folder’s contents “by hand”, or empty it by running:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>jb clean docs/
-</pre></div>
-</div>
-<p>If jupyter execution is cached, this command will not delete the cached folder. To remove the build folder <em>including</em> <code class="docutils literal notranslate"><span class="pre">cached</span></code> executables, run:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>jb clean --all docs/
-</pre></div>
-</div>
-<p>Make the book by running the following command from the repository’s root folder:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>jb build docs/
-</pre></div>
-</div>
-<p>Test the result locally by opening the local <code class="docutils literal notranslate"><span class="pre">index.html</span></code> file that should be in the <code class="docutils literal notranslate"><span class="pre">docs/_build/html</span></code> folder.</p>
-</div>
-<div class="section" id="publishing-the-jupyter-book-online">
-<h2>4. Publishing the Jupyter Book online<a class="headerlink" href="#publishing-the-jupyter-book-online" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="jupyterbook-publishing-comments">
+<h2>5. JupyterBook Publishing Comments<a class="headerlink" href="#jupyterbook-publishing-comments" title="Permalink to this headline">¶</a></h2>
 <p>To publish to your GitHub repository for public viewing, follow instructions <a class="reference external" href="https://jupyterbook.org/start/publish.html#publish-your-book-online-with-github-pages">here</a>, the <code class="docutils literal notranslate"><span class="pre">ghp-import</span></code> utility should have been installed (above).</p>
 <p>HOWEVER, to publish to an Organization’s repository (such as <code class="docutils literal notranslate"><span class="pre">eoas-tlef</span></code>) the steps are slightly different because the <code class="docutils literal notranslate"><span class="pre">master</span></code> branch at <code class="docutils literal notranslate"><span class="pre">upstream</span></code> is where the website is rendered, and the “main” branch for un-rendered files (markdown, etc.) is the <code class="docutils literal notranslate"><span class="pre">docs</span></code> branch. (Yes, it is a  little confusing.)</p>
 <ol>
 <li><p>Complete the <code class="docutils literal notranslate"><span class="pre">jb</span> <span class="pre">build</span></code> step so there is a folder under your <code class="docutils literal notranslate"><span class="pre">\docs</span></code> folder with all the HTML.</p></li>
-<li><p>Make the necessary folder under that <code class="docutils literal notranslate"><span class="pre">\docs</span></code> folder to take the “other” files, like PDFs. For example, we put PDFs in the folder <code class="docutils literal notranslate"><span class="pre">docs\pdffiles</span></code>.</p></li>
-<li><p>Copy all necessary files to that folder. This is necessary because the <code class="docutils literal notranslate"><span class="pre">jb</span> <span class="pre">build</span></code> command doesn’t know how to find and correctly place these files.</p></li>
-<li><p>Make sure your local git repo knows where <code class="docutils literal notranslate"><span class="pre">upstream</span></code> is. If you are using a fork / rebase workflow, this should be clear. Then use <code class="docutils literal notranslate"><span class="pre">ghp-import</span></code> as follows.</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ghp-import -f --no-jekyll -p -b master docs/_build/html -r upstream
+<li><p>Make the necessary folder under that <code class="docutils literal notranslate"><span class="pre">\docs</span></code> folder to take the “other” files, like PDFs and copy all necessary files to that folder. This is necessary because the <code class="docutils literal notranslate"><span class="pre">jb</span> <span class="pre">build</span></code> command doesn’t know how to find and correctly place these files.</p></li>
+<li><p>Make sure your local git repo knows where <code class="docutils literal notranslate"><span class="pre">upstream</span></code> is. If you are using a fork / rebase workflow, this should be clear. If needed, temporarily set a remote <code class="docutils literal notranslate"><span class="pre">upstream</span></code> location as</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git remote add upstream https://github.com/username/username.github.io
 </pre></div>
 </div>
 </li>
-</ol>
-</div>
-<div class="section" id="workflow-involving-a-fork-of-the-original">
-<h2>5. Workflow involving a fork of the original<a class="headerlink" href="#workflow-involving-a-fork-of-the-original" title="Permalink to this headline">¶</a></h2>
-<p>Project docs are at <a class="reference external" href="https://github.com/eoas-ubc/eoas-ubc.github.io">https://github.com/eoas-ubc/eoas-ubc.github.io</a>
-Branch “docs” contains markdown files where editing is done.
-Branch “master” is what’s displayed as <a class="reference external" href="https://eoas-ubc.github.io/index.html">https://eoas-ubc.github.io/index.html</a></p>
-<ol>
-<li><p>Before edits</p>
-<ol class="simple">
-<li><p>Initially - fork &amp; clone your own copy of the docs branch.</p></li>
-<li><p>Always - before starting, check that the “docs” branch of your github fork is up to date. Implement a “fetch upstream” if needed.</p></li>
-<li><p>On your local clone’s “docs” branch, carry out a fetch and merge to ensure you are editing an up to date version.</p></li>
-</ol>
-</li>
-<li><p>Editing</p>
-<ol class="simple">
-<li><p>Edit  the “docs” branch. Ignore the “master” branch - it is the website and will be created using <code class="docutils literal notranslate"><span class="pre">ghp-import</span></code>.</p></li>
-<li><p>Build book using the  jb build docs/  command</p></li>
-<li><p>Hand-copy (or with a script) any other files (like PDFs) into their required subfolders. (In our case, there is a “pdffiles” folder that should live under the html folder.) NOTE: all references to these “other” files need to point to this subfolder.</p></li>
-<li><p>Find the website in folder “docs/_build/html” - view this locally.</p></li>
-</ol>
-</li>
-<li><p>Deliver and synchronize</p>
-<ol class="simple">
-<li><p>When ready, push result to your fork using the following:</p></li>
-</ol>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ghp-import -f --no-jekyll -p -b master docs/_build/html
+<li><p>Then use <code class="docutils literal notranslate"><span class="pre">ghp-import</span></code> as follows.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ghp-import -f --no-jekyll -p -b master docs/_build/html -r upstream   
 </pre></div>
 </div>
-<p>This means: “<em>force (-f) with a no-jekyll file, push after commit (-p) to branch (-b) <code class="docutils literal notranslate"><span class="pre">master</span></code> your stuff at <code class="docutils literal notranslate"><span class="pre">docs/_build/html</span></code> to the (default) origin repository</em>”.</p>
-<ol class="simple">
-<li><p>Then your fork’s “master” branch should be ready to send a pull request.</p></li>
-<li><p>If that works, also send pull request on “docs” branch.</p></li>
-</ol>
 </li>
-<li><p>Finally, make sure original, forked and local cloned versions are up to date.</p></li>
-<li><p>The shortcut approach</p>
-<ol class="simple">
-<li><p>Deliver directly to upstream by first defining the upstream remote:</p></li>
-</ol>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git remote add upstream https://github.com/eoas-ubc/eoas-ubc.github.io
-</pre></div>
-</div>
-<ol class="simple">
-<li><p>Then carry out the delivery by specifying upstream as the target:</p></li>
-</ol>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ghp-import -f --no-jekyll -p -b master docs/_build/html -r upstream
-</pre></div>
-</div>
-<ol class="simple">
-<li><p>Your own fork will now be out of sync and needs fixing online.</p></li>
-<li><p>TO BYPASS YOUR OWN FORK COMPLETELY requires a rebase workflow, which I’m not yet comfortable with (Feb 8, 2022). However, the sequence listed <a class="reference external" href="https://medium.com/&#64;topspinj/how-to-git-rebase-into-a-forked-repo-c9f05e821c8a">here</a> seems to work. It does leave your own forked repository out of sync, but maybe that fork isn’t really needed? To be discussed.</p></li>
-</ol>
-</li>
+<li><p>If desired stop using that location as this repo’s <code class="docutils literal notranslate"><span class="pre">upstream</span></code> using: <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">remote</span> <span class="pre">remove</span> <span class="pre">upstream</span></code>.</p></li>
+<li><p>Test results by pointing your browser to <code class="docutils literal notranslate"><span class="pre">username.github.io</span></code>. It may take a short time to update.</p></li>
 </ol>
 </div>
-<hr class="docutils" />
-<div class="section" id="editing-sequence">
-<h2>Editing Sequence<a class="headerlink" href="#editing-sequence" title="Permalink to this headline">¶</a></h2>
-<ol class="simple">
-<li><p>At your online fork of the site: Check the <code class="docutils literal notranslate"><span class="pre">docs</span></code> and <code class="docutils literal notranslate"><span class="pre">master</span></code> branches are both up to date with <code class="docutils literal notranslate"><span class="pre">eoas-ubc:docs</span></code> and <code class="docutils literal notranslate"><span class="pre">eoas-ubc:master</span></code>. If not, make them so.</p></li>
-<li><p>On your local clone (where editing will be done) ensure jupyterbooks is in your environmnet, go to the clone’s home directory and run <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">branch</span> <span class="pre">-v</span></code> to ensure you are working on the docs branch. Then check that <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">status</span></code> says you are up to date.</p></li>
-<li><p>Edit pages.</p></li>
-<li><p>Before publishing, git-commit your edits changes. Push this <code class="docutils literal notranslate"><span class="pre">docs</span></code> branch to your fork.</p></li>
-</ol>
+<div class="section" id="finally-some-basic-references">
+<h2>6. Finally some basic references<a class="headerlink" href="#finally-some-basic-references" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Jupyter Books documentation starts at <a class="reference external" href="https://jupyterbook.org/intro.html">jupyterbook.org</a>.</p></li>
+<li><p>ghp-import documentation starts at <a class="reference external" href="https://github.com/c-w/ghp-import">ghp-import</a>.</p></li>
+<li><p>Markdown 1: The “plainest” version of markdown that Jupyter Books understands is <a class="reference external" href="https://commonmark.org/">CommonMark</a>.</p></li>
+<li><p>Markdown 2: Jupyter Book supports any Markdown syntx that is upported by Jupyter Notebooks. See details <a class="reference external" href="https://jupyterbook.org/file-types/markdown.html">here</a>.</p></li>
+<li><p>Markdown 3: <a class="reference external" href="https://jupyterbook.org/content/myst.html">MyST Markdown</a> is also understood, which is derived from RMarkdown language used in RStudio.</p></li>
+</ul>
 </div>
 </div>
 
