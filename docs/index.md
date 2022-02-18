@@ -9,7 +9,7 @@ TThe OCESE project (2020 through 2023) aims to transform teaching in the [UBC De
 
 **Project GitHub repository**: The main project repository is [here](https://github.com/eoas-ubc/eoas_tlef).
 
-**Source:** This website's [repository](https://github.com/eoas-ubc/eoas-ubc.github.io) contains Markdown content that is converted to HTML by [Jupyter Books](https://jupyterbook.org/intro.html) and pushed for online display using [ghp-import](https://pypi.org/project/ghp-import/). Most recent update is 2022/02/10.
+**Source:** This website's [repository](https://github.com/eoas-ubc/eoas-ubc.github.io) contains Markdown content that is converted to HTML by [Jupyter Books](https://jupyterbook.org/intro.html) and pushed for online display using [ghp-import](https://pypi.org/project/ghp-import/). Most recent update is 2022/02/17.
 
 **Website Organization:** Sections are somewhat inspired by a [documentation framework](https://documentation.divio.com/) described at Divio.
 

@@ -21,7 +21,7 @@ parts:
 - caption: How-to Guides
   chapters:
   - file: git-workflows
-  - file: dashboard-howto
+  - file: dashboards-howto
   - file: heroku
   - file: jupyterbooks
   - file: tools
