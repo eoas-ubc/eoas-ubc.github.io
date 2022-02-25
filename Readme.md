@@ -1,10 +1,12 @@
-# eoas tlef website
+# OCESE documentation website
 
-## local development on your own fork
+Goal is to accumulate in on eplace, all project outcomes and guidelines for instructors and students who use these outcomes.
 
-* Example -- working on the phav3 branch of the fork https://github.com/phaustin/eoas-ubc.github.io.git
+## Website Organization:
 
-* To see a rendered version:
+Sections are inspired by a [documentation framework](https://documentation.divio.com/) described at Divio.
 
-  - run this bash script:  [doit.sh](https://github.com/phaustin/eoas-ubc.github.io/blob/phav3/doit.sh)  
-  - view the rendered website at:  https://phaustin.github.io/eoas-ubc.github.io/
+* “PROJECT & OUTCOMES” will contain explanations of project **goals** and summaries of **outcomes** and **deliverables**.
+* “HOW-TO GUIDES” will include **succinct summaries** of tools and techniques to help contributors, instructors and students.
+* “TUTORIALS” contain **more thorough learning resources** for students or instructors.
+* “REFERENCES” will be lists of pointers, links and key sources, including **cheatsheets** we have found useful. 

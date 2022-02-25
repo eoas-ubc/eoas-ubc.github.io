@@ -11,10 +11,13 @@ parts:
     - file: progress-nov2020
     - file: progress-nov2021
   - file: course_materials
-    title: Course materials >>
+    title: Course enhancements >>
     sections:
     - file: crs-dsci100
     - file: crs-eosc211
+    - file: crs-eosc325
+    - file: crs-eosc340
+    - file: crs-envr300
   - file: dashboards
     title: Dashboards
   - file: presentations

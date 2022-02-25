@@ -2,17 +2,7 @@
 
 ## Official description
 
-**Data Science 100: Introduction to Data Science**
-
-Use of data science tools to summarize, visualize, and analyze data. Sensible workflows and clear interpretations are emphasized.
-
-Prerequisites: At least first year standing in Science at UBC. No previous programming skills necessary.
-
-Course [github repository](https://github.com/ubc-dsci/dsci-100-student).
-
-## Role in EOAS curriculum
-
-Not required but likely to become an acceptible first exposure to programming and statistics.
+**Data Science 100: Introduction to Data Science**: Use of data science tools to summarize, visualize, and analyze data. Sensible workflows and clear interpretations are emphasized. See the course's [home page for students on GitHub](https://github.com/ubc-dsci/dsci-100-student) and [UBC Calendar](https://courses.students.ubc.ca/cs/courseschedule?pname=subjarea&tname=subj-course&dept=DSCI&course=100) for details.
 
 ## OCESE project objectives
 
@@ -29,3 +19,7 @@ Basically to generate a Python-based version of the course with an Earth, Ocean 
 
 * Student-facing [GitHub repository](https://github.com/ubc-dsci/dsci-100-student) for the existing "R" version of the course.
 * Summary of [selected details](crs-dsci100-details.md) about the Course's Learning Outcomes (CLO's), topics and tools.
+
+## Role in EOAS curriculum
+
+Not required but likely to become an acceptible first exposure to programming and statistics.
