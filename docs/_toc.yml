@@ -11,29 +11,34 @@ parts:
     - file: progress-nov2020
     - file: progress-nov2021
   - file: course_materials
-    title: Course materials >>
+    title: Course enhancements >>
     sections:
     - file: crs-dsci100
     - file: crs-eosc211
+    - file: crs-eosc325
+    - file: crs-eosc340
+    - file: crs-envr300
   - file: dashboards
     title: Dashboards
   - file: presentations
 - caption: How-to Guides
   chapters:
   - file: git-workflows
-  - file: dashboards-howto
+  - file: dashboards-howto  
   - file: heroku
   - file: jupyterbooks
   - file: tools
-    title: Software tools
+    title: Other software tools
   - file: troubleshooting
 - caption: Tutorials
   chapters:
-  - file: gettingstarted
   - file: commandline
   - file: conda_environs
   - file: conda-tutorial
     title: Conda Tutorial
+  - file: jnotebook-startup
+    title: Installing JNB locally
+  - file: jupyter-notebooks  
   - file: git-intro
 - caption: References
   chapters:
