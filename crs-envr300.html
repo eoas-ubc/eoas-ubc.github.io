@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Some challenges &#8212; OCESE Documenation</title>
+    <title>ENVR 300 &#8212; OCESE Documenation</title>
     
   <link href="_static/css/theme.css" rel="stylesheet" />
   <link href="_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
@@ -51,8 +51,8 @@
     <script async="async" src="_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Command line &amp; Shells" href="commandline.html" />
-    <link rel="prev" title="Course development tools" href="tools.html" />
+    <link rel="next" title="Dashboards developed or in progress" href="dashboards.html" />
+    <link rel="prev" title="EOSC 340" href="crs-eosc340.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
     
@@ -87,7 +87,7 @@
   Project &amp; Outcomes
  </span>
 </p>
-<ul class="nav bd-sidenav">
+<ul class="current nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="project-outline.html">
    OCESE Project Outline
@@ -115,16 +115,16 @@
    </li>
   </ul>
  </li>
- <li class="toctree-l1 has-children">
+ <li class="toctree-l1 current active has-children">
   <a class="reference internal" href="course_materials.html">
    Course enhancements &gt;&gt;
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
   <label for="toctree-checkbox-2">
    <i class="fas fa-chevron-down">
    </i>
   </label>
-  <ul>
+  <ul class="current">
    <li class="toctree-l2">
     <a class="reference internal" href="crs-dsci100.html">
      DSCI 100
@@ -145,8 +145,8 @@
      EOSC 340
     </a>
    </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="crs-envr300.html">
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
      ENVR 300
     </a>
    </li>
@@ -168,7 +168,7 @@
   How-to Guides
  </span>
 </p>
-<ul class="current nav bd-sidenav">
+<ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="git-workflows.html">
    GitHub and Git Workflows
@@ -194,8 +194,8 @@
    Other software tools
   </a>
  </li>
- <li class="toctree-l1 current active">
-  <a class="current reference internal" href="#">
+ <li class="toctree-l1">
+  <a class="reference internal" href="troubleshooting.html">
    Some challenges
   </a>
  </li>
@@ -289,7 +289,7 @@
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="_sources/troubleshooting.md"><button type="button"
+        <a class="dropdown-buttons" href="_sources/crs-envr300.md"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
                 data-placement="left">.md</button></a>
         <!-- Download PDF via print -->
@@ -314,6 +314,34 @@
         <!-- Table of contents -->
         <div class="d-none d-md-block col-md-2 bd-toc show">
             
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#official-description">
+   Official description
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#ocese-project-objectives">
+   OCESE project objectives
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#open-resources">
+   Open resources
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#role-in-eoas-curriculum">
+   Role in EOAS curriculum
+  </a>
+ </li>
+</ul>
+
+            </nav>
         </div>
     </div>
 </div>
@@ -322,16 +350,38 @@
         
               <div>
                 
-  <div class="section" id="some-challenges">
-<h1>Some challenges<a class="headerlink" href="#some-challenges" title="Permalink to this headline">¶</a></h1>
-<p>This is not meant to be an exhaustive troubleshooting guide. The advise is simply based on difficulties we have encountered, or challenges that are common or expected to be common.</p>
-<p>Currently the items are in random order - we might gather them into sections later.</p>
-<ol class="simple">
-<li><p>Here is the main <strong><a class="reference external" href="https://git-scm.com/docs">git reference</a></strong>. They also have a succinct git cheat sheet in <a class="reference external" href="https://training.github.com/downloads/github-git-cheat-sheet/">online</a> and <a class="reference external" href="https://training.github.com/downloads/github-git-cheat-sheet.pdf">PDF</a> formats.</p></li>
-<li><p><strong>The <code class="docutils literal notranslate"><span class="pre">.gitignore</span></code> file not working:</strong> The ability of Git to ignore (when committing) files specified in the <code class="docutils literal notranslate"><span class="pre">.gitignore</span></code> file does not work on files that were already part of the repository when the .gitignore file was created, or the repo was cloned. If some files that should be ignored somehow get into the repo. you can untrack them using the short instructions here: <a class="reference external" href="http://www.codeblocq.com/2016/01/Untrack-files-already-added-to-git-repository-based-on-gitignore/">Untrack-files-already-added-to-git-repository-based-on-gitignore</a>.</p></li>
-<li><p>I’m unclear about how to set up a shell to recognize the environment needed to run Conda, Git, Python etc. The shell established by miniconda install (called Anaconda Powershell Prompt (miniconda3)) is fine, but what needs to be done if you change to a different shell? <strong>ANSWER</strong>: not resolved yet.</p></li>
-<li><p>Making Powershell CML prompt more informative while using git: a suggestion in a <a class="reference external" href="https://www.hanselman.com/blog/HowToMakeAPrettyPromptInWindowsTerminalWithPowerlineNerdFontsCascadiaCodeWSLAndOhmyposh.aspx">blog</a> and <a class="reference external" href="https://www.youtube.com/watch?v=lu__oGZVT98">video</a> (video refers to blog). To back out of these changes simply removing the <code class="docutils literal notranslate"><span class="pre">posh-git</span></code> lines from $profile and (optionally) reset prompt fonts in shell settings (“settings” from dropdown menu in Windows terminal, or via “fonts” in “Properties” using right click on the Shell title bar).</p></li>
-</ol>
+  <div class="section" id="envr-300">
+<h1>ENVR 300<a class="headerlink" href="#envr-300" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="official-description">
+<h2>Official description<a class="headerlink" href="#official-description" title="Permalink to this headline">¶</a></h2>
+<p><strong>Introduction to Research in Environmental Science</strong>: Students investigate research methodologies and reporting in a range of scientific disciplines and fields. See the <a class="reference external" href="https://www.eoas.ubc.ca/academics/courses/envr300">EOAS course page</a> and <a class="reference external" href="https://courses.students.ubc.ca/cs/courseschedule?pname=subjarea&amp;tname=subj-course&amp;dept=ENVR&amp;course=300">UBC Calendar</a> for details.</p>
+</div>
+<div class="section" id="ocese-project-objectives">
+<h2>OCESE project objectives<a class="headerlink" href="#ocese-project-objectives" title="Permalink to this headline">¶</a></h2>
+<p>Introduce interactive dashboard apps to classroom and assignment activities to explore concepts and data sets.</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://dashboard.eoastest.xyz/co2mlo">Atmospheric CO_2 at Mauna Loa and South Pole</a> (monthly averages), with user-defined straight line model for crude predictions. See the <a class="reference internal" href="dashboards.html"><span class="doc std std-doc">Dashboards page</span></a> for links to repositories.</p></li>
+<li><p><a class="reference external" href="https://dashboard.eoastest.xyz/timeseries">Three signals</a>: adjustable parameters illustrating noise and trend on a sinewave, with smoothing. Signals, trends, noise and smoothing: a simple interactive dashboard app. to gain familiarity with interactions of these components of signals.</p></li>
+</ul>
+</div>
+<div class="section" id="open-resources">
+<h2>Open resources<a class="headerlink" href="#open-resources" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Dashboard code repositories above.</p></li>
+</ul>
+</div>
+<div class="section" id="role-in-eoas-curriculum">
+<h2>Role in EOAS curriculum<a class="headerlink" href="#role-in-eoas-curriculum" title="Permalink to this headline">¶</a></h2>
+<p>An acceptible (or required) prerequisite for:</p>
+<ul class="simple">
+<li><p>APBI 319: Aquaculture and the Environment</p></li>
+<li><p>ENVR 449: Environmental Science HonoursThesis</p></li>
+<li><p>ENVR 400: Community Project in Environmental Science</p></li>
+<li><p>EOSC 410: Geoscientific Data Analysis and Empirical Modelling</p></li>
+<li><p>SCIE 420: Sustainability for Community and the World</p></li>
+<li><p>ENVR 430: Ecological Dimensions of Sustainability</p></li>
+</ul>
+</div>
 </div>
 
     <script type="text/x-thebe-config">
@@ -364,19 +414,19 @@
 <div class='prev-next-bottom'>
     
     <div id="prev">
-        <a class="left-prev" href="tools.html" title="previous page">
+        <a class="left-prev" href="crs-eosc340.html" title="previous page">
             <i class="prevnext-label fas fa-angle-left"></i>
             <div class="prevnext-info">
                 <p class="prevnext-label">previous</p>
-                <p class="prevnext-title">Course development tools</p>
+                <p class="prevnext-title">EOSC 340</p>
             </div>
         </a>
     </div>
      <div id="next">
-        <a class="right-next" href="commandline.html" title="next page">
+        <a class="right-next" href="dashboards.html" title="next page">
             <div class="prevnext-info">
                 <p class="prevnext-label">next</p>
-                <p class="prevnext-title">Command line &amp; Shells</p>
+                <p class="prevnext-title">Dashboards developed or in progress</p>
             </div>
             <i class="prevnext-label fas fa-angle-right"></i>
         </a>

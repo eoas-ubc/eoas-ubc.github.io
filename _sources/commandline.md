@@ -1,4 +1,4 @@
-# Command line and Shells
+# Command line & Shells
 
 ## Introduction
 
