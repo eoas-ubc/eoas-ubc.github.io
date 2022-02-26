@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Some challenges &#8212; OCESE Documenation</title>
+    <title>Setting up Jupyter Notebooks &#8212; OCESE Documenation</title>
     
   <link href="_static/css/theme.css" rel="stylesheet" />
   <link href="_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
@@ -51,8 +51,8 @@
     <script async="async" src="_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Command line &amp; Shells" href="commandline.html" />
-    <link rel="prev" title="Course development tools" href="tools.html" />
+    <link rel="next" title="JNBs for teaching and learning" href="jupyter-notebooks.html" />
+    <link rel="prev" title="A Workflow Guide for Programming Environments" href="conda-tutorial.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
     
@@ -168,7 +168,7 @@
   How-to Guides
  </span>
 </p>
-<ul class="current nav bd-sidenav">
+<ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="git-workflows.html">
    GitHub and Git Workflows
@@ -194,8 +194,8 @@
    Other software tools
   </a>
  </li>
- <li class="toctree-l1 current active">
-  <a class="current reference internal" href="#">
+ <li class="toctree-l1">
+  <a class="reference internal" href="troubleshooting.html">
    Some challenges
   </a>
  </li>
@@ -205,7 +205,7 @@
   Tutorials
  </span>
 </p>
-<ul class="nav bd-sidenav">
+<ul class="current nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="commandline.html">
    Command line &amp; Shells
@@ -221,8 +221,8 @@
    Conda Tutorial
   </a>
  </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="jnotebook-startup.html">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
    Installing JNB locally
   </a>
  </li>
@@ -289,7 +289,7 @@
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="_sources/troubleshooting.md"><button type="button"
+        <a class="dropdown-buttons" href="_sources/jnotebook-startup.md"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
                 data-placement="left">.md</button></a>
         <!-- Download PDF via print -->
@@ -314,6 +314,44 @@
         <!-- Table of contents -->
         <div class="d-none d-md-block col-md-2 bd-toc show">
             
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#the-goal">
+   The Goal
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#the-sequence-of-steps">
+   The sequence of steps
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#your-command-shell">
+   1. Your command shell
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#installing-miniconda">
+   2. Installing miniconda
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#getting-started-with-jupyter-notebook">
+   3. Getting started with Jupyter Notebook
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#using-jupyter-notebook-for-the-first-time">
+   4. Using Jupyter Notebook for the first time
+  </a>
+ </li>
+</ul>
+
+            </nav>
         </div>
     </div>
 </div>
@@ -322,16 +360,46 @@
         
               <div>
                 
-  <div class="section" id="some-challenges">
-<h1>Some challenges<a class="headerlink" href="#some-challenges" title="Permalink to this headline">¶</a></h1>
-<p>This is not meant to be an exhaustive troubleshooting guide. The advise is simply based on difficulties we have encountered, or challenges that are common or expected to be common.</p>
-<p>Currently the items are in random order - we might gather them into sections later.</p>
+  <div class="section" id="setting-up-jupyter-notebooks">
+<h1>Setting up Jupyter Notebooks<a class="headerlink" href="#setting-up-jupyter-notebooks" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="the-goal">
+<h2>The Goal<a class="headerlink" href="#the-goal" title="Permalink to this headline">¶</a></h2>
+<p>These guidelines will help you to set up your local computer from scratch, so that you can start the <strong>Jupyter Notebook</strong> facility from the command line, then run or edit code or comments in any <code class="docutils literal notranslate"><span class="pre">*.ipynb</span></code> file. Working with othe file types such as Python(<code class="docutils literal notranslate"><span class="pre">*.py</span></code> files), markdown (<code class="docutils literal notranslate"><span class="pre">*.md</span></code> files), or others will be discussed elsewhere.</p>
+</div>
+<div class="section" id="the-sequence-of-steps">
+<h2>The sequence of steps<a class="headerlink" href="#the-sequence-of-steps" title="Permalink to this headline">¶</a></h2>
 <ol class="simple">
-<li><p>Here is the main <strong><a class="reference external" href="https://git-scm.com/docs">git reference</a></strong>. They also have a succinct git cheat sheet in <a class="reference external" href="https://training.github.com/downloads/github-git-cheat-sheet/">online</a> and <a class="reference external" href="https://training.github.com/downloads/github-git-cheat-sheet.pdf">PDF</a> formats.</p></li>
-<li><p><strong>The <code class="docutils literal notranslate"><span class="pre">.gitignore</span></code> file not working:</strong> The ability of Git to ignore (when committing) files specified in the <code class="docutils literal notranslate"><span class="pre">.gitignore</span></code> file does not work on files that were already part of the repository when the .gitignore file was created, or the repo was cloned. If some files that should be ignored somehow get into the repo. you can untrack them using the short instructions here: <a class="reference external" href="http://www.codeblocq.com/2016/01/Untrack-files-already-added-to-git-repository-based-on-gitignore/">Untrack-files-already-added-to-git-repository-based-on-gitignore</a>.</p></li>
-<li><p>I’m unclear about how to set up a shell to recognize the environment needed to run Conda, Git, Python etc. The shell established by miniconda install (called Anaconda Powershell Prompt (miniconda3)) is fine, but what needs to be done if you change to a different shell? <strong>ANSWER</strong>: not resolved yet.</p></li>
-<li><p>Making Powershell CML prompt more informative while using git: a suggestion in a <a class="reference external" href="https://www.hanselman.com/blog/HowToMakeAPrettyPromptInWindowsTerminalWithPowerlineNerdFontsCascadiaCodeWSLAndOhmyposh.aspx">blog</a> and <a class="reference external" href="https://www.youtube.com/watch?v=lu__oGZVT98">video</a> (video refers to blog). To back out of these changes simply removing the <code class="docutils literal notranslate"><span class="pre">posh-git</span></code> lines from $profile and (optionally) reset prompt fonts in shell settings (“settings” from dropdown menu in Windows terminal, or via “fonts” in “Properties” using right click on the Shell title bar).</p></li>
+<li><p>Be sure you can navigate your computer’s folders using PowerShell (on windows) or Bash (on Mac).</p></li>
+<li><p>Install the open-source package-management system and environment-management system called <code class="docutils literal notranslate"><span class="pre">miniconda</span></code>.</p></li>
+<li><p>Install the Jupyter software.</p></li>
+<li><p>Run the Jupyter Notebook program to edit and execute “Jupter Notebooks” in your default browser.</p></li>
 </ol>
+<p>Details follow.</p>
+</div>
+<div class="section" id="your-command-shell">
+<h2>1. Your command shell<a class="headerlink" href="#your-command-shell" title="Permalink to this headline">¶</a></h2>
+<p>If you are not familiar with using a shell or command-line interface, a good place to start is <a class="reference internal" href="commandline.html"><span class="doc std std-doc">here</span></a>. Or - a more conversational introduction is in our “crash course” page called <span class="xref myst">Shells, Systems and Git</span>.</p>
+</div>
+<div class="section" id="installing-miniconda">
+<h2>2. Installing miniconda<a class="headerlink" href="#installing-miniconda" title="Permalink to this headline">¶</a></h2>
+<p>The open-source package-management system and environment-management system we use is <code class="docutils literal notranslate"><span class="pre">miniconda</span></code>. Its purpose is outlined at the conda documentation site <a class="reference external" href="https://conda.io/projects/conda/en/latest/index.html">here</a>. <code class="docutils literal notranslate"><span class="pre">Miniconda</span></code> is a minimal version of this package management tool that includes only the components necessary for running <code class="docutils literal notranslate"><span class="pre">conda</span></code> and <code class="docutils literal notranslate"><span class="pre">Python</span></code>.</p>
+<p>It would be good to start with a fresh install of the necessary tools and packages using <a class="reference external" href="https://docs.conda.io/en/latest/miniconda.html">miniconda</a>.
+If you’re new to the conda “environment manager”, these links are helpful:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://towardsdatascience.com/a-guide-to-conda-environments-bc6180fc533">Conda environments guide</a></p></li>
+<li><p>Conda forge <a class="reference external" href="https://conda-forge.org/docs/user/introduction.html">user introduction</a></p></li>
+<li><p>Using <a class="reference external" href="https://pypi.org/project/conda-lock/">Conda Lock, from pypy.org</a></p></li>
+</ul>
+</div>
+<div class="section" id="getting-started-with-jupyter-notebook">
+<h2>3. Getting started with Jupyter Notebook<a class="headerlink" href="#getting-started-with-jupyter-notebook" title="Permalink to this headline">¶</a></h2>
+<p>Jupyter software is easily installed following directions under the heading <strong>Getting Started with Classic Jupyter Notebook</strong> on the <a class="reference external" href="https://jupyter.org/install.html">Jupyter installation</a> page. Do NOT bother installing JupyterLab at this stage.</p>
+</div>
+<div class="section" id="using-jupyter-notebook-for-the-first-time">
+<h2>4. Using Jupyter Notebook for the first time<a class="headerlink" href="#using-jupyter-notebook-for-the-first-time" title="Permalink to this headline">¶</a></h2>
+<p>A well-paced tutorial from August 2020 is <a class="reference external" href="https://www.dataquest.io/blog/jupyter-notebook-tutorial/">How to Use Jupyter Notebook in 2020: A Beginner’s Tutorial</a>. The introduction to using Jupyter notebooks starts at the top and goes to the section “<strong>Example Analysis</strong>”.</p>
+<p>After that, the tutorial becomes more of a “python” tutorial. It is quite good and worthwhile if you are new to Python. The third section called “<strong>Sharing Your Notebooks</strong>” introduces you to GitHub - again, it is well done, and worthwhile if you are new to using GitHub. <em>(Note: this tutorial is online, but apparently not “opensource”. We may want to find one that has a Creative Commons license, so we can clone it and take charge of it for future maintenance purposes.)</em></p>
+</div>
 </div>
 
     <script type="text/x-thebe-config">
@@ -364,19 +432,19 @@
 <div class='prev-next-bottom'>
     
     <div id="prev">
-        <a class="left-prev" href="tools.html" title="previous page">
+        <a class="left-prev" href="conda-tutorial.html" title="previous page">
             <i class="prevnext-label fas fa-angle-left"></i>
             <div class="prevnext-info">
                 <p class="prevnext-label">previous</p>
-                <p class="prevnext-title">Course development tools</p>
+                <p class="prevnext-title">A Workflow Guide for Programming Environments</p>
             </div>
         </a>
     </div>
      <div id="next">
-        <a class="right-next" href="commandline.html" title="next page">
+        <a class="right-next" href="jupyter-notebooks.html" title="next page">
             <div class="prevnext-info">
                 <p class="prevnext-label">next</p>
-                <p class="prevnext-title">Command line &amp; Shells</p>
+                <p class="prevnext-title">JNBs for teaching and learning</p>
             </div>
             <i class="prevnext-label fas fa-angle-right"></i>
         </a>

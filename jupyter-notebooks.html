@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Getting Started &#8212; OCESE Documenation</title>
+    <title>JNBs for teaching and learning &#8212; OCESE Documenation</title>
     
   <link href="_static/css/theme.css" rel="stylesheet" />
   <link href="_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
@@ -51,8 +51,8 @@
     <script async="async" src="_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Command line and Shells" href="commandline.html" />
-    <link rel="prev" title="Some challenges" href="troubleshooting.html" />
+    <link rel="next" title="Git Introduction" href="git-intro.html" />
+    <link rel="prev" title="Setting up Jupyter Notebooks" href="jnotebook-startup.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
     
@@ -117,7 +117,7 @@
  </li>
  <li class="toctree-l1 has-children">
   <a class="reference internal" href="course_materials.html">
-   Course materials &gt;&gt;
+   Course enhancements &gt;&gt;
   </a>
   <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
   <label for="toctree-checkbox-2">
@@ -133,6 +133,21 @@
    <li class="toctree-l2">
     <a class="reference internal" href="crs-eosc211.html">
      EOSC 211
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="crs-eosc325.html">
+     EOSC 325
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="crs-eosc340.html">
+     EOSC 340
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="crs-envr300.html">
+     ENVR 300
     </a>
    </li>
   </ul>
@@ -176,7 +191,7 @@
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="tools.html">
-   Software tools
+   Other software tools
   </a>
  </li>
  <li class="toctree-l1">
@@ -191,14 +206,9 @@
  </span>
 </p>
 <ul class="current nav bd-sidenav">
- <li class="toctree-l1 current active">
-  <a class="current reference internal" href="#">
-   Getting Started
-  </a>
- </li>
  <li class="toctree-l1">
   <a class="reference internal" href="commandline.html">
-   Command line and Shells
+   Command line &amp; Shells
   </a>
  </li>
  <li class="toctree-l1">
@@ -209,6 +219,16 @@
  <li class="toctree-l1">
   <a class="reference internal" href="conda-tutorial.html">
    Conda Tutorial
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="jnotebook-startup.html">
+   Installing JNB locally
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   JNBs for teaching and learning
   </a>
  </li>
  <li class="toctree-l1">
@@ -269,7 +289,7 @@
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="_sources/gettingstarted.md"><button type="button"
+        <a class="dropdown-buttons" href="_sources/jupyter-notebooks.md"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
                 data-placement="left">.md</button></a>
         <!-- Download PDF via print -->
@@ -300,33 +320,38 @@
             <nav id="bd-toc-nav" aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#the-goal">
-   The Goal
+  <a class="reference internal nav-link" href="#introduction">
+   Introduction
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#the-sequence-of-steps">
-   The sequence of steps
+  <a class="reference internal nav-link" href="#developing-programming-skills-with-j-notebooks">
+   Developing programming skills with J-Notebooks
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#your-command-shell">
-   1. Your command shell
+  <a class="reference internal nav-link" href="#demonstrating-concepts-without-programming">
+   Demonstrating concepts without programming
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#installing-miniconda">
-   2. Installing miniconda
+  <a class="reference internal nav-link" href="#delivering-jupyter-notebooks-to-students">
+   Delivering Jupyter notebooks to students
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#getting-started-with-jupyter-notebook">
-   3. Getting started with Jupyter Notebook
+  <a class="reference internal nav-link" href="#building-question-sets-for-canvas">
+   Building question sets for Canvas
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#using-jupyter-notebook-for-the-first-time">
-   4. Using Jupyter Notebook for the first time.
+  <a class="reference internal nav-link" href="#building-question-sets-for-prairielearn">
+   Building question sets for PrairieLearn
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#third-party-references">
+   Third party references
   </a>
  </li>
 </ul>
@@ -340,45 +365,50 @@
         
               <div>
                 
-  <div class="section" id="getting-started">
-<h1>Getting Started<a class="headerlink" href="#getting-started" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="the-goal">
-<h2>The Goal<a class="headerlink" href="#the-goal" title="Permalink to this headline">¶</a></h2>
-<p>These guidelines will help you to set up your local computer from scratch, so that you can start “<code class="docutils literal notranslate"><span class="pre">The</span> <span class="pre">Jupyter</span> <span class="pre">Notebook</span></code>” facility from the command line, then run or edit code or comments in any <code class="docutils literal notranslate"><span class="pre">*.ipynb</span></code> file. Working with othe file types such as Python(<code class="docutils literal notranslate"><span class="pre">*.py</span></code> files), markdown (<code class="docutils literal notranslate"><span class="pre">*.md</span></code> files), or others will be discussed elsewhere.</p>
+  <div class="section" id="jnbs-for-teaching-and-learning">
+<h1>JNBs for teaching and learning<a class="headerlink" href="#jnbs-for-teaching-and-learning" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="introduction">
+<h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h2>
+<p>This page summarizes ways that Jupyter notebooks have been introduced to EOAS faculty and students for teaching and learning purposes. Detailed guidelines, and examples of uses from various courses, will be provided in separate pages.</p>
+<p><strong>Getting started:</strong> Guidelines for setting up you local computer to run Jupyter Notebooks are in our <a class="reference internal" href="jnotebook-startup.html"><span class="doc std std-doc">Jupyter Notebooks startup</span></a> page.</p>
 </div>
-<div class="section" id="the-sequence-of-steps">
-<h2>The sequence of steps<a class="headerlink" href="#the-sequence-of-steps" title="Permalink to this headline">¶</a></h2>
-<ol class="simple">
-<li><p>Be sure you can navigate your computer’s folders using PowerShell (on windows) or Bash (on Mac).</p></li>
-<li><p>Install the open-source package-management system and environment-management system called <code class="docutils literal notranslate"><span class="pre">miniconda</span></code>.</p></li>
-<li><p>Install the Jupyter software.</p></li>
-<li><p>Run the Jupyter Notebook program to edit and execute “Jupter Notebooks” in your default browser.</p></li>
-</ol>
-<p>Details follow.</p>
-</div>
-<div class="section" id="your-command-shell">
-<h2>1. Your command shell<a class="headerlink" href="#your-command-shell" title="Permalink to this headline">¶</a></h2>
-<p>If you are not familiar with using a shell or command-line interface, a good place to start is <a class="reference external" href="https://fhmjones.github.io/commandline.html">here</a>. Or - a more conversational introduction is in our “crash course” page called <span class="xref myst">Shells, Systems and Git</span>.</p>
-</div>
-<div class="section" id="installing-miniconda">
-<h2>2. Installing miniconda<a class="headerlink" href="#installing-miniconda" title="Permalink to this headline">¶</a></h2>
-<p>The open-source package-management system and environment-management system we use is <code class="docutils literal notranslate"><span class="pre">miniconda</span></code>. Its purpose is outlined at the conda documentation site <a class="reference external" href="https://conda.io/projects/conda/en/latest/index.html">here</a>. <code class="docutils literal notranslate"><span class="pre">Miniconda</span></code> is a minimal version of this package management tool that includes only the components necessary for running <code class="docutils literal notranslate"><span class="pre">conda</span></code> and <code class="docutils literal notranslate"><span class="pre">Python</span></code>.</p>
-<p>It would be good to start with a fresh install of the necessary tools and packages using <a class="reference external" href="https://docs.conda.io/en/latest/miniconda.html">miniconda</a>.
-If you’re new to the conda “environment manager”, these links are helpful:</p>
+<div class="section" id="developing-programming-skills-with-j-notebooks">
+<h2>Developing programming skills with J-Notebooks<a class="headerlink" href="#developing-programming-skills-with-j-notebooks" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li><p><a class="reference external" href="https://towardsdatascience.com/a-guide-to-conda-environments-bc6180fc533">https://towardsdatascience.com/a-guide-to-conda-environments-bc6180fc533</a></p></li>
-<li><p><a class="reference external" href="https://conda-forge.org/docs/user/introduction.html">https://conda-forge.org/docs/user/introduction.html</a></p></li>
-<li><p><a class="reference external" href="https://pypi.org/project/conda-lock/">https://pypi.org/project/conda-lock/</a></p></li>
+<li><p>DSCI 100</p></li>
+<li><p>EOSC 211</p></li>
+<li><p>EOSC 354</p></li>
+<li><p>ATSC 303</p></li>
 </ul>
 </div>
-<div class="section" id="getting-started-with-jupyter-notebook">
-<h2>3. Getting started with Jupyter Notebook<a class="headerlink" href="#getting-started-with-jupyter-notebook" title="Permalink to this headline">¶</a></h2>
-<p>Jupyter software is easily installed following directions under the heading <strong>Getting Started with Classic Jupyter Notebook</strong> on the <a class="reference external" href="https://jupyter.org/install.html">Jupyter installation</a> page. Do NOT bother installing JupyterLab at this stage.</p>
+<div class="section" id="demonstrating-concepts-without-programming">
+<h2>Demonstrating concepts without programming<a class="headerlink" href="#demonstrating-concepts-without-programming" title="Permalink to this headline">¶</a></h2>
+<p>Applications of Jupyter notebooks in which students use the notebooks but will not be doing any actual programming.</p>
+<ul class="simple">
+<li><p>EOSC 350</p></li>
+</ul>
 </div>
-<div class="section" id="using-jupyter-notebook-for-the-first-time">
-<h2>4. Using Jupyter Notebook for the first time.<a class="headerlink" href="#using-jupyter-notebook-for-the-first-time" title="Permalink to this headline">¶</a></h2>
-<p>A well-paced tutorial from August 2020 is <a class="reference external" href="https://www.dataquest.io/blog/jupyter-notebook-tutorial/">How to Use Jupyter Notebook in 2020: A Beginner’s Tutorial</a>. The introduction to using Jupyter notebooks starts at the top and goes to the section “<strong>Example Analysis</strong>”.</p>
-<p>After that, the tutorial becomes more of a “python” tutorial. It is quite good and worthwhile if you are new to Python. The third section called “<strong>Sharing Your Notebooks</strong>” introduces you to GitHub - again, it is well done, and worthwhile if you are new to using GitHub. <em>(Note: this tutorial is online, but apparently not “opensource”. We may want to find one that has a Creative Commons license, so we can clone it and take charge of it for future maintenance purposes.)</em></p>
+<div class="section" id="delivering-jupyter-notebooks-to-students">
+<h2>Delivering Jupyter notebooks to students<a class="headerlink" href="#delivering-jupyter-notebooks-to-students" title="Permalink to this headline">¶</a></h2>
+<p>See <a class="reference external" href="https://simpeg.discourse.group/t/best-practice-of-delivering-jupyter-notebooks-to-students/78">this post</a> from Dikun Yan with answer by Lindsey the simpeg discourse group. (To be superceded.)</p>
+</div>
+<div class="section" id="building-question-sets-for-canvas">
+<h2>Building question sets for Canvas<a class="headerlink" href="#building-question-sets-for-canvas" title="Permalink to this headline">¶</a></h2>
+<p><em>For instructors not students</em>. Guidelines to be written based on work in progress during May 2020 - Apr 2022.</p>
+</div>
+<div class="section" id="building-question-sets-for-prairielearn">
+<h2>Building question sets for PrairieLearn<a class="headerlink" href="#building-question-sets-for-prairielearn" title="Permalink to this headline">¶</a></h2>
+<p><em>For instructors not students</em>. Guidelines to be written based on work in progress during Jan-Apr 2022.</p>
+</div>
+<div class="section" id="third-party-references">
+<h2>Third party references<a class="headerlink" href="#third-party-references" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>An open-source <a class="reference external" href="https://jupyter4edu.github.io/jupyter-edu-book/">handbook for teaching and learning with Jupyter</a>, dated December 2019. This guidebook’s home page includes licensing information (CC-BY 4.0) and a link to the book’s GitHub repository.</p></li>
+</ul>
+<p>There is an ever-increasing plethora of specific notebooks or notebook collections for teaching and learning specific subjects. Examples include:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://www.icos-cp.eu/science-and-impact/education/icos-jupyter-notebooks-for-education">Jupyter Notebooks for education</a> by the Integrated Carbon Observation System. Purposes, contexts and details via their home page.</p></li>
+</ul>
 </div>
 </div>
 
@@ -412,19 +442,19 @@ If you’re new to the conda “environment manager”, these links are helpful:
 <div class='prev-next-bottom'>
     
     <div id="prev">
-        <a class="left-prev" href="troubleshooting.html" title="previous page">
+        <a class="left-prev" href="jnotebook-startup.html" title="previous page">
             <i class="prevnext-label fas fa-angle-left"></i>
             <div class="prevnext-info">
                 <p class="prevnext-label">previous</p>
-                <p class="prevnext-title">Some challenges</p>
+                <p class="prevnext-title">Setting up Jupyter Notebooks</p>
             </div>
         </a>
     </div>
      <div id="next">
-        <a class="right-next" href="commandline.html" title="next page">
+        <a class="right-next" href="git-intro.html" title="next page">
             <div class="prevnext-info">
                 <p class="prevnext-label">next</p>
-                <p class="prevnext-title">Command line and Shells</p>
+                <p class="prevnext-title">Git Introduction</p>
             </div>
             <i class="prevnext-label fas fa-angle-right"></i>
         </a>
