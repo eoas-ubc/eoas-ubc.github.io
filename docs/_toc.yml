@@ -24,19 +24,21 @@ parts:
 - caption: How-to Guides
   chapters:
   - file: git-workflows
-  - file: dashboards-howto
+  - file: dashboards-howto  
   - file: heroku
   - file: jupyterbooks
   - file: tools
-    title: Software tools
+    title: Other software tools
   - file: troubleshooting
 - caption: Tutorials
   chapters:
-  - file: gettingstarted
   - file: commandline
   - file: conda_environs
   - file: conda-tutorial
     title: Conda Tutorial
+  - file: jnotebook-startup
+    title: Installing JNB locally
+  - file: jupyter-notebooks  
   - file: git-intro
 - caption: References
   chapters:

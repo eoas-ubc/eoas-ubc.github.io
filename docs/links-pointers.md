@@ -2,22 +2,22 @@
 
 ## OCESE Project links
 
-* Original [OCESE proposal](./pdffiles/ocese_proposal_2019.pdf)
-* [3 year schedule](./pdffiles/timeline.pdf) as of Jan 2022. (Priorities and deliverable scheduling have been changing as personnel, resources and COVID-19 evolve.)
+* Original [OCESE proposal](https://github.com/eoas-ubc/eoas-ubc.github.io/blob/docs/pdffiles/ocese_proposal_2019.pdf)
+* [3 year schedule](https://github.com/eoas-ubc/eoas-ubc.github.io/blob/docs/pdffiles/timeline.pdf) as of Jan 2022. (Priorities and deliverable scheduling have been changing as personnel, resources and COVID-19 evolve.)
 * [Project repository](https://github.com/eoas-ubc/eoas_tlef)
 * [EOAS on github](https://github.com/eoas-ubc)
 * [The eoas_ubc conda package channel](https://anaconda.org/eoas_ubc/dashboard)
 
 ## Related projects & programs at UBC
 
-* UBC Faculty of Science's [Data Science Report](./pdffiles/Data_Science_Report_Sept2019.pdf), Sep. 2019.
+* UBC Faculty of Science's [Data Science Report](https://github.com/eoas-ubc/eoas-ubc.github.io/blob/docs/pdffiles/Data_Science_Report_Sept2019.pdf), Sep. 2019.
 * DSCI 100 [initial implementation report](https://ubc-dsci.github.io/dsci-100-a-report/dsci-100-a-report.html#1), Nov. 2019.
 * UBC's [Data Science Minor](https://datascience.ubc.ca/minor); description and how to apply.
 * [Microbiology-bioinformatics](https://tlef.ubc.ca/funded-proposals/entry/15/) 2017/2018 TLEF project description.
-* [Synergies](./pdffiles/tlef_synergies.pdf); three related Teaching and Learnign Enhancement Fund (TLEF) projects 
+* [Synergies](https://github.com/eoas-ubc/eoas-ubc.github.io/blob/docs/pdffiles/tlef_synergies.pdf); three related Teaching and Learnign Enhancement Fund (TLEF) projects 
 * [DSCI 100 repository](https://github.com/UBC-DSCI)
 * [STAT 201 repository](https://github.com/UBC-DSCI/stat-201)
-* A [strategic planning](./pdffiles/strategic_planning.pdf) "how to" info-graphic.
+* A [strategic planning](https://github.com/eoas-ubc/eoas-ubc.github.io/blob/docs/pdffiles/strategic_planning.pdf) "how to" info-graphic.
 
 ## Data Science programs at UBC-Vancouver and UBC-Okanagan
 
