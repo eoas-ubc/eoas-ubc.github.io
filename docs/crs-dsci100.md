@@ -2,7 +2,13 @@
 
 ## Official description
 
-**Data Science 100: Introduction to Data Science**: Use of data science tools to summarize, visualize, and analyze data. Sensible workflows and clear interpretations are emphasized. See the course's [home page for students on GitHub](https://github.com/ubc-dsci/dsci-100-student) and [UBC Calendar](https://courses.students.ubc.ca/cs/courseschedule?pname=subjarea&tname=subj-course&dept=DSCI&course=100) for details.
+**Data Science 100: Introduction to Data Science**: Use of data science tools to summarize, visualize, and analyze data. Sensible workflows and clear interpretations are emphasized.
+
+**Links:**
+* [UBC Calendar](https://courses.students.ubc.ca/cs/courseschedule?pname=subjarea&tname=subj-course&dept=DSCI&course=100),
+* [ubcexplore](https://ubcexplorer.io/course/DSCI/100),
+* Student-facing [GitHub repository](https://github.com/ubc-dsci/dsci-100-student) for the existing "R" version of the course.
+* Summary of [selected details](crs-dsci100-details.md) about the Course's Learning Outcomes (CLO's), topics and tools.
 
 ## OCESE project objectives
 
@@ -15,11 +21,22 @@ Basically to generate a Python-based version of the course with an Earth, Ocean 
 * Adapt existing text book for the Python context.
 * Ensure there are stable, sustainable Jupyter Hub facilities at UBC for with reliable tech-support for instructors and teaching assistants.
 
-## Open resources
+## Resources produced
 
-* Student-facing [GitHub repository](https://github.com/ubc-dsci/dsci-100-student) for the existing "R" version of the course.
-* Summary of [selected details](crs-dsci100-details.md) about the Course's Learning Outcomes (CLO's), topics and tools.
+Resources are open education resources (OER) unless indicated otherwise.
 
-## Role in EOAS curriculum
+<span style="color:red">To be completed.</span>
 
-Not required but likely to become an acceptible first exposure to programming and statistics.
+## Pedagogy
+
+<span style="color:red">To be completed.</span>
+
+## Project evaluation
+
+<span style="color:red">To be completed.</span>
+
+Questions, data, results, risks and recommendations.
+
+Benefits: projected and observed. Focus on students and learning.
+
+Costs: to instructors, departments & institutions.
