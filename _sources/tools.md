@@ -8,9 +8,10 @@
   utilities for setting the environment variable PYTHONUTF8=1 on windows
 * trio_chrome:  A python driver for headless chrome printing
 * convert_docs:  move docx, pptx and latex files into markdown
-  * Start [here](https://github.com/eoas-ubc/convert_docs/blob/master/Readme_convert.md) for converting docx, tex and pptx to Markdown.
+  * Start [here](https://github.com/eoas-ubc/convert_docs/blob/master/Readme_convert.md) for converting docx, tex and pptx to Markdown.  
 * generate quizzes for the Canvas Learning Management System
 * Jupyter Hubs
 * Docker containers
 * nbgrader
 * PrairieLearn
+* [text2qti](https://github.com/gpoore/text2qti). Their readme is good but we have a few tips for success.

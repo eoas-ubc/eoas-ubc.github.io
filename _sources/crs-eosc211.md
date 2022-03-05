@@ -2,7 +2,13 @@
 
 ## Official description
 
-**Computer Methods in Earth, Ocean and Atmospheric Sciences**: Mathematical computer-based problem solving in the physical, chemical, and biological sciences. Problems drawn from studies of the earth, the oceans and the atmosphere. See the [EOAS course page](https://www.eoas.ubc.ca/academics/courses/eosc211) and [UBC Calendar](https://courses.students.ubc.ca/cs/courseschedule?pname=subjarea&tname=subj-course&dept=EOSC&course=211) for details.
+**Computer Methods in Earth, Ocean and Atmospheric Sciences**: Mathematical computer-based problem solving in the physical, chemical, and biological sciences. Problems drawn from studies of the earth, the oceans and the atmosphere. 
+
+**Links:**
+\>[Home](https://www.eoas.ubc.ca/academics/courses/eosc211),
+\>[UBC Calendar](https://courses.students.ubc.ca/cs/courseschedule?pname=subjarea&tname=subj-course&dept=EOSC&course=211),
+\>[ubcexplore](https://ubcexplorer.io/course/EOSC/211),
+\>[EOAS curriculum map](https://www.eoas.ubc.ca/~quest/eoas-only.html).
 
 ## OCESE project objectives
 
@@ -13,23 +19,23 @@
 * Adapt open source materials to make a suitable text book for programming (and Python) beginners.
 * Establish stable, sustainable Jupyter Hub facilities at UBC for with reliable tech-support for instructors and teaching assistants.
 
-## Open resources
+## Resources produced
 
 * [EOSC211 course website](https://phaustin.github.io/eosc211/announcements.html), a **Jupyter Book** including calendar of topics, links into relevant sections of the text book, and assignments & labs provided as **Jupyter Notebooks**.
 * [Text book](https://phaustin.github.io/Problem-Solving-with-Python/), mainly python programming for beginners. Adapted from [Problem Solving with Python-37](https://github.com/professorkazarinoff/Problem-Solving-with-Python-37-Edition) by Dr. Peter Kazarinof.
 * Jupyter Notebooks with Python code exercises and activities for classwork.
 * Getting-started instructions for students to install Python and Jupyter Notebooks on Windows or Mac laptops. This was done with 90 students in one  1.5-hour lecture session.
 
-## Role in EOAS curriculum
+## Pedagogy
 
-* Required prerequisite for ATSC 303;
-* One of 5 accetable prerequisites for ATSC 313;
-* One of 4 accetable prerequisites for EOSC 213;
-* Required prerequisite for EOSC 410, 471;
-* One of 6 accetable prerequisites for EOSC 442.
+<span style="color:red">To be completed.</span>
 
-Also one of several acceptible prerequisites for:
+## Project evaluation
 
-* ASTR 205, 300, 407;
-* CPSC 303, 203, 302;
-* PHYS 410.
+<span style="color:red">To be completed.</span>
+
+Questions, data, results, risks and recommendations.
+
+Benefits: projected and observed. Focus on students and learning.
+
+Costs: to instructors, departments & institutions.
