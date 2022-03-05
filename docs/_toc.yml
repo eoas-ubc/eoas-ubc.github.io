@@ -4,29 +4,60 @@ parts:
 - caption: Project & Outcomes
   chapters:
   - file: project-outline
-    title: Introduction
   - file: progress
     title: Progress Reports >>
     sections:
     - file: progress-nov2020
     - file: progress-nov2021
+    - file: progress-may2022
+    - file: progress-may2023
   - file: course_materials
     title: Course enhancements >>
     sections:
+    - file: crs-atsc301
     - file: crs-dsci100
-    - file: crs-eosc211
-    - file: crs-eosc325
-    - file: crs-eosc340
     - file: crs-envr300
+    - file: crs-envr420
+    - file: crs-eosc112
+    - file: crs-eosc116
+    - file: crs-eosc211
+    - file: crs-eosc310
+    - file: crs-eosc325
+    - file: crs-eosc329
+    - file: crs-eosc340
+    - file: crs-eosc350
+    - file: crs-eosc354
+    - file: crs-eosc372
+    - file: crs-eosc373
+    - file: crs-eosc410
+    - file: crs-eosc429
+    - file: crs-eosc442
+    - file: crs-eosc471
   - file: dashboards
     title: Dashboards
+  - file: facultydev
+  - file: openassessment
+    title: Assessment practices
+  - file: evaluation
   - file: presentations
+    title: Scholarly contributions
 - caption: How-to Guides
   chapters:
   - file: git-workflows
   - file: dashboards-howto  
-  - file: heroku
-  - file: jupyterbooks
+  - file: dashboards-deploy    
+    sections:
+    - file: dashboards-local
+      title: Deploying locally
+    - file: dashboards-heroku
+      title: Deploying to Heroku
+    - file: dashboards-server
+      title: Deploying to a scalable server
+  - file: jnotebooks-startup
+    title: Jupyter NB startup
+  - file: python-startup
+    title: Python startup
+  - file: jupyterbooks  
   - file: tools
     title: Other software tools
   - file: troubleshooting
@@ -34,12 +65,11 @@ parts:
   chapters:
   - file: commandline
   - file: conda_environs
-  - file: conda-tutorial
-    title: Conda Tutorial
-  - file: jnotebook-startup
-    title: Installing JNB locally
-  - file: jupyter-notebooks  
+  - file: programming-environs
+    title: Programming environments  
   - file: git-intro
+  - file: jnotebooks-teachlearn
+    title: Teaching with Jupyter NBs
 - caption: References
   chapters:
-  - file: links-pointers
+  - file: refs
