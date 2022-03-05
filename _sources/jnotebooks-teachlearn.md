@@ -1,4 +1,4 @@
-# JNBs for teaching and learning
+# Teaching and learning with Jupyter Notebooks
 
 ## Introduction
 

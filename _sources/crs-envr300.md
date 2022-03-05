@@ -2,7 +2,13 @@
 
 ## Official description
 
-**Introduction to Research in Environmental Science**: Students investigate research methodologies and reporting in a range of scientific disciplines and fields. See the [EOAS course page](https://www.eoas.ubc.ca/academics/courses/envr300) and [UBC Calendar](https://courses.students.ubc.ca/cs/courseschedule?pname=subjarea&tname=subj-course&dept=ENVR&course=300) for details.
+**Introduction to Research in Environmental Science**: Environmental research. Students investigate research methodologies and reporting in a range of scientific disciplines and fields.
+
+**Links:**
+\>[Home](https://www.eoas.ubc.ca/academics/courses/envr300),
+\>[UBC Calendar](https://courses.students.ubc.ca/cs/courseschedule?pname=subjarea&tname=subj-course&dept=ENVR&course=300),
+\>[ubcexplore](https://ubcexplorer.io/course/ENVR/300),
+\>[EOAS curriculum map](https://www.eoas.ubc.ca/~quest/eoas-only.html).
 
 ## OCESE project objectives
 

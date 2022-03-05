@@ -1,4 +1,4 @@
-# A Workflow Guide for Programming Environments
+# A Guide for Programming Environments
 
 ## Prior Assumptions
 

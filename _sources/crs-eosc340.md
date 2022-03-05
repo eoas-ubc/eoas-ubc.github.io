@@ -2,20 +2,34 @@
 
 ## Official description
 
-**Global Climate Change**: Mechanisms and processes of past and future global environmental and climate change. See the [EOAS course page](https://www.eoas.ubc.ca/academics/courses/eosc340) and [UBC Calendar](https://courses.students.ubc.ca/cs/courseschedule?pname=subjarea&tname=subj-course&dept=EOSC&course=340) for details.
+**Global Climate Change**: Mechanisms and processes of past and future global environmental and climate change. This is a popular elective for several B.Sc. specializations.
+
+**Links:**
+\>[Home](https://www.eoas.ubc.ca/academics/courses/eosc340),
+\>[UBC Calendar](https://courses.students.ubc.ca/cs/courseschedule?pname=subjarea&tname=subj-course&dept=EOSC&course=340),
+\>[ubcexplore](https://ubcexplorer.io/course/EOSC/340),
+\>[EOAS curriculum map](https://www.eoas.ubc.ca/~quest/eoas-only.html).
 
 ## OCESE project objectives
 
 Introduce interactive dashboard apps to classroom and assignment activities to explore specific climate science concepts, models, modelling and data sets.
 
-## Open resources
+## Resources produced
 
-* Dashboard code repositories above.
+These are open education resources (OER) unless indicated otherwise.
 
-## Role in EOAS curriculum
+<span style="color:red">To be completed.</span>
 
-A popular elective for several B.Sc. specializationsd. Also an acceptible (or required) prerequisite for:
+## Pedagogy
 
-* GEOS 302 Paleoecology: Lessons for the Anthropocene
-* EOSC 442 Climate Measurement and Analysis
-* SCIE 420 Sustainability for Community and the World
+<span style="color:red">To be completed.</span>
+
+## Project evaluation
+
+<span style="color:red">To be completed.</span>
+
+Questions, data, results, risks and recommendations.
+
+Benefits: projected and observed. Focus on students and learning.
+
+Costs: to instructors, departments & institutions.

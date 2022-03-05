@@ -1,4 +1,4 @@
-# Dashboard development
+# Developing dashboards
 
 **What are "dashboards"**? These are interactive mathematical or data exploration applications hosted online and used in any standard browser. They are used by instructors and students or other learners to explore complex data sets, address problems or assignments, or experiment with challenging concepts.
 
