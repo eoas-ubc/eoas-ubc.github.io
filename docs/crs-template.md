@@ -18,18 +18,38 @@
 
 These are open education resources (OER) unless indicated otherwise.
 
-<span style="color:red">To be completed.</span>
+* JNBs – programming or other purposes
+* JNBs for instructor course management
+* Dashboards
+* Jupyter books produced (or used)
+* questions or question sets 
+* worksheets for in-class activities
+* and others.
 
 ## Pedagogy
 
-<span style="color:red">To be completed.</span>
+### a) Necessary instructor skills
+
+### b) Necessary teaching assistant capabilities
+
+### c) Workflow for preparing and delivering lessons
+
+### d) Workflow for preparing and delivering labs
+
+### e) Workflow for preparing and delivering assignments
+
+### f) Examination strategies
+
+* Question preparation
+* Question types
+* Grading
 
 ## Project evaluation
 
+### a) Questions, data, results
+
+<span style="color:red">Results need to be compiled</span>.
+
+### b) Costs, Risks, and Recommendations
+
 <span style="color:red">To be completed.</span>
-
-Questions, data, results, risks and recommendations.
-
-Benefits: projected and observed. Focus on students and learning.
-
-Costs: to instructors, departments & institutions.
