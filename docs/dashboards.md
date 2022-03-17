@@ -38,6 +38,6 @@
 
 * **[interactive images](https://clickimage.herokuapp.com/)** is an initial experiment exploring how to interact with figures for future dashboards planned for paleontology and other disciplines. Github repo [here](https://github.com/fhmjones/ClickImage).
 
-* **gpglabs** is an extensive collection of interactive Jupyter Notebooks illustrating concepts in applied geophysics including forward & inverse modeling and physics. See the [GPG applied geophysics textbook](https://gpg.geosci.xyz/) or the interactive NoteBooks collection [repository](https://github.com/geoscixyz/gpgLabs), both with links for running NoteBooks on Binder.
+* **[gpglabs](https://gpg.geosci.xyz/content/appendix/apps.html)** is an extensive collection of interactive Jupyter Notebooks illustrating concepts in applied geophysics including forward & inverse modeling and physics. See the [GPG applied geophysics textbook](https://gpg.geosci.xyz/) or the interactive NoteBooks collection [repository](https://github.com/geoscixyz/gpgLabs), both with links for running NoteBooks using Binder, Azure Notebooks, or locally on your own computer.
 
 ---

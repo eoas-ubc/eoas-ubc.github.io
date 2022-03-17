@@ -21,7 +21,9 @@ Our key design criteria are based on keeping the focus on efficient, effective l
   3. If using Jupyter Notebooks, the ipywidgets library is used instead of Plotly graphics.
   4. To hide code when writing for Jupyter Notebooks, write the interactive app as a *.py file and call it in the Notebook.
   5. Ensure that graphs and controls can be seen on a single screen that is 1920 x 1080 pixels. If there are two interactive sections of the dashboard, that might mean putting instructions for both together above or below the interactive sections of the page.
-  6. Ensure code is properly documented with pointers to sources of inspiration or coding techniques. Someone other than the original developer will very likely be the next person to update the dashboard app. 
+  6. Ensure code is properly documented with pointers to sources of inspiration or coding techniques. Someone other than the original developer will very likely be the next person to update the dashboard app.
+
+Ideally these kinds of learning resources should include "think aloud" sessions with student users to determine what aspects of the interface need improving, and whether there are misconceptions that are poorly addressed by the tool. However these are small-scale resources and time is rarely available for this step.
 
 ## Deploying dashboards
 
