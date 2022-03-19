@@ -12,22 +12,36 @@
 
 ## OCESE project objectives
 
-Introduce interactive dashboard apps to classroom and assignment activities to explore concepts and data sets. 
+Introduce interactive dashboard apps to classroom and assignment activities to explore concepts and data sets.
 
-* [Atmospheric CO_2 at Mauna Loa and South Pole](https://dashboard.eoastest.xyz/co2mlo) (monthly averages), with user-defined straight line model for crude predictions. See the [Dashboards page](./dashboards.md) for links to repositories.
+## Resources produced
+
+* [Atmospheric CO_2 at Mauna Loa and South Pole](https://dashboard.eoastest.xyz/co2mlo) (monthly averages), with user-defined straight line model for crude predictions. 
 * [Three signals](https://dashboard.eoastest.xyz/timeseries): adjustable parameters illustrating noise and trend on a sinewave, with smoothing. Signals, trends, noise and smoothing: a simple interactive dashboard app. to gain familiarity with interactions of these components of signals.
+* Links to repositories are on the project's [dashboards page](./dashboards.md).
 
-## Open resources
+## Pedagogy
 
-* Dashboard code repositories above.
+### a) Necessary instructor skills
 
-## Role in EOAS curriculum
+### b) Necessary teaching assistant capabilities
 
-An acceptible (or required) prerequisite for:
+### c) Workflow for preparing and delivering lessons
 
-* APBI 319: Aquaculture and the Environment
-* ENVR 449: Environmental Science HonoursThesis
-* ENVR 400: Community Project in Environmental Science
-* EOSC 410: Geoscientific Data Analysis and Empirical Modelling
-* SCIE 420: Sustainability for Community and the World
-* ENVR 430: Ecological Dimensions of Sustainability
+In January 2021 the CO_2 dashboard was used as a fully online, in-class group activity.
+
+
+
+### d) Workflow for preparing and delivering assignments
+
+### e) Assessment strategies
+
+## Project evaluation
+
+### a) Questions, data, results
+
+<span style="color:red">Results need to be compiled</span>.
+
+### b) Costs, Risks, and Recommendations
+
+<span style="color:red">To be completed.</span>

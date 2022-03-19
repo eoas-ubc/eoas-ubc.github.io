@@ -33,12 +33,13 @@ parts:
     - file: crs-eosc429
     - file: crs-eosc442
     - file: crs-eosc471
+  - file: openassessment
+    title: Automating assessments
   - file: dashboards
     title: Dashboards
   - file: facultydev
-  - file: openassessment
-    title: Assessment practices
-  - file: evaluation
+  - file: eval-wisdom  
+    title: OCESE Project evaluation
   - file: presentations
     title: Scholarly contributions
 - caption: How-to Guides
@@ -55,6 +56,7 @@ parts:
       title: Deploying to a scalable server
   - file: jnotebooks-startup
     title: Jupyter NB startup
+  - file: cloud-servers.md
   - file: python-startup
     title: Python startup
   - file: jupyterbooks  
@@ -68,6 +70,7 @@ parts:
   - file: programming-environs
     title: Programming environments  
   - file: git-intro
+  - file: jhub-tutorial
   - file: jnotebooks-teachlearn
     title: Teaching with Jupyter NBs
 - caption: References

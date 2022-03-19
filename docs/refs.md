@@ -39,6 +39,7 @@
 * Git commands
 * Git workflows
 * Conda & environments
-* Markdown (MyST and other flavours)
+* Markdown for Jupyter notebooks [cheatsheet](https://www.ibm.com/docs/en/db2-event-store/2.0.0?topic=notebooks-markdown-jupyter-cheatsheet).
+* [MyST syntax cheat sheet](https://jupyterbook.org/reference/cheatsheet.html).
 * Jupyter Notebooks
 * Docker containers and running dashboard servers
