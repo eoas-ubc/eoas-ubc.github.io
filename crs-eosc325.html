@@ -233,6 +233,11 @@
   </ul>
  </li>
  <li class="toctree-l1">
+  <a class="reference internal" href="openassessment.html">
+   Automating assessments
+  </a>
+ </li>
+ <li class="toctree-l1">
   <a class="reference internal" href="dashboards.html">
    Dashboards
   </a>
@@ -243,12 +248,7 @@
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="openassessment.html">
-   Assessment practices
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="evaluation.html">
+  <a class="reference internal" href="eval-wisdom.html">
    OCESE Project evaluation
   </a>
  </li>
@@ -307,6 +307,11 @@
   </a>
  </li>
  <li class="toctree-l1">
+  <a class="reference internal" href="cloud-servers.html">
+   Servers and hubs
+  </a>
+ </li>
+ <li class="toctree-l1">
   <a class="reference internal" href="python-startup.html">
    Python startup
   </a>
@@ -351,6 +356,11 @@
  <li class="toctree-l1">
   <a class="reference internal" href="git-intro.html">
    Git Introduction
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="jhub-tutorial.html">
+   Jupyterhub Tutorial
   </a>
  </li>
  <li class="toctree-l1">
@@ -466,6 +476,18 @@
    Project evaluation
   </a>
  </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#benefits-costs-and-recommendations">
+   Benefits, costs and recommendations
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#recommendations">
+     Recommendations
+    </a>
+   </li>
+  </ul>
+ </li>
 </ul>
 
             </nav>
@@ -490,31 +512,85 @@
 </div>
 <div class="section" id="ocese-project-objectives">
 <h2>OCESE project objectives<a class="headerlink" href="#ocese-project-objectives" title="Permalink to this headline">¶</a></h2>
-<p>Introduce interactive dashboard apps to classroom and assignment activities to explore specific hydrogeologic concepts, models, modelling and data sets.</p>
-<p>Convert question sets for efficient upload to the new course’s <a class="reference external" href="https://about.canvas.ubc.ca/">Canvas</a> website.</p>
-<p>Provide geoscience education feedback on lessons for this brand new course.</p>
+<ul class="simple">
+<li><p>Introduce interactive dashboard apps to classroom and assignment activities to explore specific hydrogeologic concepts, models, and data sets.</p></li>
+<li><p>Convert question sets for efficient upload to the new course’s <a class="reference external" href="https://about.canvas.ubc.ca/">Canvas</a> website.</p></li>
+<li><p>Provide geoscience education feedback on lessons for this brand new course.</p></li>
+</ul>
 </div>
 <div class="section" id="resources-produced">
 <h2>Resources produced<a class="headerlink" href="#resources-produced" title="Permalink to this headline">¶</a></h2>
 <p>These are open education resources (OER) unless indicated otherwise.</p>
 <ul class="simple">
-<li><p><a class="reference external" href="https://dashboard.eoastest.xyz/store">Storativity</a>: compares hydrological storativity of various geologic materials. Github repository is the “store” folder <a class="reference external" href="https://github.com/phaustin/addon_containers">here</a>.</p></li>
-<li><p><a class="reference external" href="https://dashboard.eoastest.xyz/hydro">Unconfined-flow</a>: an interactive model of linar (“1D”) groundwater flow in an unconfined acquifer between two sources, with surface recharge included. Github repository is the “hydro” folder <a class="reference external" href="https://github.com/phaustin/addon_containers">here</a>.</p></li>
-<li><p><a class="reference external" href="https://dashboard.eoastest.xyz/drawdown">Drawdown for confined and unconfined acquifers</a> plots 2D drawdown curves for a well in a uniform acquifer with adjustable properties. Github repository is the “drawdown” folder <a class="reference external" href="https://github.com/phaustin/addon_containers">here</a>.</p></li>
+<li><p><strong><a class="reference external" href="https://dashboard.eoastest.xyz/store">Storativity</a></strong>: compares hydrological storativity of various geologic materials. Github repository is the “store” folder <a class="reference external" href="https://github.com/phaustin/addon_containers">here</a>.</p></li>
+<li><p><strong><a class="reference external" href="https://dashboard.eoastest.xyz/hydro">Unconfined-flow</a></strong>: an interactive model of linar (“1D”) groundwater flow in an unconfined acquifer between two sources, with surface recharge included. Github repository is the “hydro” folder <a class="reference external" href="https://github.com/phaustin/addon_containers">here</a>.</p></li>
+</ul>
+<a class="reference internal image-reference" href="_images/flowapp.png"><img alt="\&quot;Linear\&quot; groundwater flow with recharge dashboard" class="align-center" src="_images/flowapp.png" style="width: 650px;" /></a>
+<ul class="simple">
+<li><p><strong><a class="reference external" href="https://dashboard.eoastest.xyz/drawdown">Drawdown for confined and unconfined acquifers</a></strong> plots 2D drawdown curves for a well in a uniform acquifer with adjustable properties. Github repository is the “drawdown” folder <a class="reference external" href="https://github.com/phaustin/addon_containers">here</a>.</p></li>
 </ul>
 </div>
 <div class="section" id="pedagogy">
 <h2>Pedagogy<a class="headerlink" href="#pedagogy" title="Permalink to this headline">¶</a></h2>
-<p>Dashboard use cases …</p>
-<p><span style="color:red">To be completed.</span></p>
-<p>Question sets were converted from various formats to Markdown text, then <a class="reference external" href="https://github.com/gpoore/text2qti">text2qti</a> was used to upload to the courses’s <a class="reference external" href="https://about.canvas.ubc.ca/">Canvas</a> site. See our <a class="reference internal" href="tools.html"><span class="doc std std-doc">tools page</span></a> for tips.</p>
+<p><strong>Storativity app</strong>: first used by posing three questions to be addressed using the interactive dashboard app (slide 56 of section 7).</p>
+<ol class="simple">
+<li><p>Which soil material does have the largest storativity in confined aquifer (use the max values)?</p></li>
+<li><p>Which soil material does have the largest storativity in unconfined aquifer?</p></li>
+<li><p>Which soil material does have the largest difference in storativity between unconfined and confined aquifer?</p></li>
+</ol>
+<p><strong>Unconfined flow app</strong> was first used by posing two group-discussion questions to be addressed using the interactive dashboard app (slide 48 of section 8).</p>
+<p>Set hydraulic conductivity: K = 10m/day (Silty Sand).</p>
+<ul class="simple">
+<li><p>First set hydraulic conductivity: K = 50 m/day (Clean Sand).</p></li>
+<li><p>Compare flow behaviour if you change hydraulic conductivity to K = 100 m/day (Gravel).</p></li>
+</ul>
+<p>By exploring visuals for these conditions consider these 2 questions:</p>
+<ol class="simple">
+<li><p>What happens to the water divide? Discuss your answer mathematically and conceptually.</p></li>
+<li><p>What happens to the ranges of Q values? Discuss your answer.</p></li>
+</ol>
+<p><strong>Drawdown app</strong>: The concepts are addressed in the course, the app is desired by the instructor, and it is ready for use (links above). Unfortunately, the pacing of this brand new course, and continued challenge of running a new course in a temporary online form (due to COVID) meant time ran out this term.</p>
+<p><strong>Transfering question sets from prior use</strong>: questions were first converted from various formats (PDF, MS-Word, text files, etc.) to Markdown text, then <a class="reference external" href="https://github.com/gpoore/text2qti">text2qti</a> was used to upload to the courses’s <a class="reference external" href="https://about.canvas.ubc.ca/">Canvas</a> site. See our <a class="reference internal" href="tools.html"><span class="doc std std-doc">tools page</span></a> for tips.</p>
 </div>
 <div class="section" id="project-evaluation">
 <h2>Project evaluation<a class="headerlink" href="#project-evaluation" title="Permalink to this headline">¶</a></h2>
 <p>Questions, data, results, risks and recommendations.</p>
 <p>Benefits: projected and observed. Focus on students and learning</p>
 <p>Costs: to instructors, departments &amp; institutions</p>
-<p><span style="color:red">To be completed.</span></p>
+</div>
+<div class="section" id="benefits-costs-and-recommendations">
+<h2>Benefits, costs and recommendations<a class="headerlink" href="#benefits-costs-and-recommendations" title="Permalink to this headline">¶</a></h2>
+<p><strong>Benefits</strong>: Students were observed to be fully engaged during an activity that involves exploring a concept or physical process by adjusting parameters with “instant” response in graphical form.</p>
+<p><strong>Costs</strong>:</p>
+<p><span style="color:red">These might be better placed in a page on general guidelines which can then be referenced here.</span></p>
+<ul class="simple">
+<li><p>The design cycle involved numerous iterations so working code can be developed then the instructor can explore how initial designs will work in their planned setting, adjust, revisit, and iterate until satisfied.</p></li>
+<li><p>There may also be a second round of adjustments after first deployment in a real course.</p></li>
+<li><p>Implementing as a class assignment requires the dashboard be hosted on a reasonably fast server that can handle multiple logins. Instructors also need to explore the dashboard to identify opportunities and limitations so that meaningful tasks can be set for students to apply concepts being learned in the class.</p></li>
+<li><p>The question of longer term maintenance, deployment and sustainability of these tools is still a question. Instructors can not be expected to handle all the coding and server technology as well as incorporate excellent, evidence-base, student-centric pedagogy.</p></li>
+</ul>
+<div class="section" id="recommendations">
+<h3>Recommendations<a class="headerlink" href="#recommendations" title="Permalink to this headline">¶</a></h3>
+<p>Quotes from feedback based on a 3rd party (online) class observation:</p>
+<p><strong>Re. Storativity app</strong>: “<em>The activity seemed a bit rushed. That can be mitigated by suggesting that students explore the dashboard before coming to class. Maybe give them the URL, say “play with this” and suggest they come to class with 1 question, and 1 observation. That second could be posed as a specific question such as “find out which material has the largest storativity under conditions of x, y, z</em>”.</p>
+<p><strong>Re. Unconfined flow app</strong>:</p>
+<ul class="simple">
+<li><p>“<em>Sequence of clicker questions about boundaries was great</em>”.</p></li>
+<li><p>“<em>I like how parameters discussed earlier in lecture were related to the dashboard. Making the connection between abstract (lecture) and practical (activity) is often challenging for students</em>”.</p></li>
+<li><p>“<em>The two-step activity that depends on the app seems well designed</em>”.</p></li>
+</ul>
+<p><strong>General feedback about using dashboards in lessons</strong>:</p>
+<p><span style="color:red">This might be better placed in a page on general guidelines. Perhaps a “Teaching and Learning with Dashboards” page.</span></p>
+<ul class="simple">
+<li><p>Students cannot solve problems with a new tool unless they have time to familiarize with the tool. There are 3 aspects they are wrestling with: 1) new concepts, 2) a new tool, and 3) a “problem” to solve (eg “<em>what happens to the water divide, both mathematically and conceptually</em>”). So - students either need time in class to “play” or “explore” with the tool, or they need to have seen the tool before.</p></li>
+<li><p>If possible, ask them to familiarize with the tool before coming to class, perhaps with a few pointers about what to look for. Then they will come to class more ready to use the tool productively.</p></li>
+<li><p>Or, have them explore a little in class at the end of one lesson, then pick up the “real” task in the following lesson.</p></li>
+<li><p>Perhaps the first questions they are given can be “trivial” (i.e. more about the tool than the concepts). Then the real problem you want them to solve comes after that.</p></li>
+<li><p>Activity instructions on lecture slides works fine, although it might be nice to have a worksheet with settings, questions, and spaces for answering. But you will know what works for this class.</p></li>
+<li><p>Questions to solve might be more “interesting” if they are in terms of the consequences to people or property. Such as - “which water body will receive the agricultural pollution when the divide migrates due to changing recharge?” Or - “under what conditions will water table become higher than ground thus contributing to flooding?” Or - if you ask “what happens to range of Q values?”, then follow up by asking something concrete about the consequences for influx of groundwater at the two sides of the scenario - eg. which waterway will have to handle the larger input of water? These are just ideas about connecting concepts to reality. It is fair to say that these ideas may not be compatible with an instructor’s priorities.</p></li>
+</ul>
+<p>In all the courses using new dashboards we are seeing the same importance of allowing students time to familiarize with the tool before asking them to make good use of it. There are various ways of doing this, and each course will use their own approach.</p>
+</div>
 </div>
 </div>
 

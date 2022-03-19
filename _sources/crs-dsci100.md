@@ -6,7 +6,7 @@
 
 **Links:**
 * [UBC Calendar](https://courses.students.ubc.ca/cs/courseschedule?pname=subjarea&tname=subj-course&dept=DSCI&course=100),
-* [ubcexplore](https://ubcexplorer.io/course/DSCI/100),
+and [ubcexplore](https://ubcexplorer.io/course/DSCI/100).
 * Student-facing [GitHub repository](https://github.com/ubc-dsci/dsci-100-student) for the existing "R" version of the course.
 * Summary of [selected details](crs-dsci100-details.md) about the Course's Learning Outcomes (CLO's), topics and tools.
 
@@ -23,20 +23,38 @@ Basically to generate a Python-based version of the course with an Earth, Ocean 
 
 ## Resources produced
 
-Resources are open education resources (OER) unless indicated otherwise.
+These open education resources HAVE YET TO BE PRODUCED but are in progress as of March 2022.
 
-<span style="color:red">To be completed.</span>
+* Python version of the textbook
+* Python versions of standard DSCI 100 class activities
+* Python versions of DSCI 100 assignments
+* (Eventually - Earth science versions of activities and assignments)
+* Python versions of questions for assessments.
 
 ## Pedagogy
 
-<span style="color:red">To be completed.</span>
+### a) Necessary instructor skills
+
+### b) Necessary teaching assistant capabilities
+
+### c) Workflow for preparing and delivering lessons
+
+### d) Workflow for preparing and delivering labs
+
+### e) Workflow for preparing and delivering assignments
+
+### f) Examination strategies
+
+* Question preparation
+* Question types
+* Grading
 
 ## Project evaluation
 
+### a) Questions, data, results
+
+<span style="color:red">Results need to be compiled</span>.
+
+### b) Costs, Risks, and Recommendations
+
 <span style="color:red">To be completed.</span>
-
-Questions, data, results, risks and recommendations.
-
-Benefits: projected and observed. Focus on students and learning.
-
-Costs: to instructors, departments & institutions.

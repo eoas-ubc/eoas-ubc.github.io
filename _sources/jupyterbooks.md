@@ -114,6 +114,11 @@ name: directive-fig
 ---
 Here is a numbered figure with a caption!
 ```
+Various alert box types can be included; details [here](https://jupyterbook.org/content/content-blocks.html).
+<div class="alert alert-block alert-info">
+<b>Tip:</b> Use blue boxes (alert-info) for tips and notes.
+</div>
+
 
 ## 5. JupyterBook Publishing Comments
 

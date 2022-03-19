@@ -233,6 +233,11 @@
   </ul>
  </li>
  <li class="toctree-l1">
+  <a class="reference internal" href="openassessment.html">
+   Automating assessments
+  </a>
+ </li>
+ <li class="toctree-l1">
   <a class="reference internal" href="dashboards.html">
    Dashboards
   </a>
@@ -243,12 +248,7 @@
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="openassessment.html">
-   Assessment practices
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="evaluation.html">
+  <a class="reference internal" href="eval-wisdom.html">
    OCESE Project evaluation
   </a>
  </li>
@@ -307,6 +307,11 @@
   </a>
  </li>
  <li class="toctree-l1">
+  <a class="reference internal" href="cloud-servers.html">
+   Servers and hubs
+  </a>
+ </li>
+ <li class="toctree-l1">
   <a class="reference internal" href="python-startup.html">
    Python startup
   </a>
@@ -351,6 +356,11 @@
  <li class="toctree-l1">
   <a class="reference internal" href="git-intro.html">
    Git Introduction
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="jhub-tutorial.html">
+   Jupyterhub Tutorial
   </a>
  </li>
  <li class="toctree-l1">
@@ -466,6 +476,11 @@
    Project evaluation
   </a>
  </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#benefits-costs-and-recommendations">
+   Benefits, costs and recommendations
+  </a>
+ </li>
 </ul>
 
             </nav>
@@ -490,23 +505,69 @@
 </div>
 <div class="section" id="ocese-project-objectives">
 <h2>OCESE project objectives<a class="headerlink" href="#ocese-project-objectives" title="Permalink to this headline">¶</a></h2>
-<p><span style="color:red">To be completed.</span></p>
+<ul class="simple">
+<li><p>Gain experience using Plotly Dash libraries for displaying selected data sets coupled to their locations on a map.</p></li>
+<li><p>Collaborate with instructors to find and deliver data sets that students can use efficiently to practice applying concepts in physical and chemical oceanography.</p></li>
+</ul>
 </div>
 <div class="section" id="resources-produced">
 <h2>Resources produced<a class="headerlink" href="#resources-produced" title="Permalink to this headline">¶</a></h2>
-<p>These are open education resources (OER) unless indicated otherwise.</p>
-<p><span style="color:red">To be completed.</span></p>
+<p>A dashboard for observing and comparing trace element and physical properties in the water column at selected locations in the Southern Ocean, the Atlantic and the North Pacific. See <strong><a class="reference external" href="https://dashboard.eoastest.xyz/ocgy">ocgy-dataviewer</a></strong> for the active dashboard, and the Github repository in the “ocgy-dataviewer” folder <a class="reference external" href="https://github.com/phaustin/addon_containers">here</a>. The dashboard’s interactive interface looks like this:</p>
+<a class="reference internal image-reference" href="_images/ocgy-eg.png"><img alt="oceanography dashboard" class="align-center" src="_images/ocgy-eg.png" style="width: 650px;" /></a>
 </div>
 <div class="section" id="pedagogy">
 <h2>Pedagogy<a class="headerlink" href="#pedagogy" title="Permalink to this headline">¶</a></h2>
-<p><span style="color:red">To be completed.</span></p>
+<p>When specific data sets are made easily accessible, students can focus on addressing important concepts rather than on mechanics of managing disparate data formats or new interfaces.</p>
+<p>These are examples of questions posed as part of a weekly assignment in a 3rd year course for science majors (links above). The <strong>132 students</strong> taking the course were required to address these questions, then complete an online multiple choice quiz with the same questions for submitting solutions.</p>
+<ol class="simple">
+<li><p>Compare the depth of the mixed layer along each of the three transects. What are deepest and shallowest depths and where are they with respect to continental margins?</p></li>
+<li><p>For each transect, at which station/s do you observe the highest nitrate concentrations in the mixed layer? And the lowest? Can you think of physical/chemical/biological processes explaining these high and low values?</p></li>
+<li><p>At which station/s do you observe the highest Fe concentrations in the mixed layer? And the lowest? Can you think of physical/chemical/biological processes explaining these high and low values?</p></li>
+<li><p>Nitrate to Fe concentration ratios in the upwelled water can be used to identify potential Fe limitation of phytoplankton. When this ratio is &gt; ~5 µmol nitrate per nmol Fe, the phytoplankton are experiencing Fe limitation, and the highest ratios identify regions severely Fe-limited. Knowing this, consider the nitrate / Fe ratios (i.e., µmol nitrate per nmol Fe) at depth, just below the mixed layer, plotted in the farthest plot to the right in the dataviewer. For each transect identify the stations where phytoplankton may be the most Fe-limited. Also the least Fe-limited. What are some of the sources of Fe in those regions?</p></li>
+</ol>
+<p>Many other questions about these data could be posed, addressing learning goals related to the physical and chemical processes in our oceans, and their controls on the distribution of plankton.</p>
 </div>
 <div class="section" id="project-evaluation">
 <h2>Project evaluation<a class="headerlink" href="#project-evaluation" title="Permalink to this headline">¶</a></h2>
-<p><span style="color:red">To be completed.</span></p>
-<p>Questions, data, results, risks and recommendations.</p>
-<p>Benefits: projected and observed. Focus on students and learning.</p>
-<p>Costs: to instructors, departments &amp; institutions.</p>
+<p>Did the dashboard serve as an effective and efficient learning resource? These questions were posed to evaluate the succecss of this project component.</p>
+<ol class="simple">
+<li><p>Was the exercise that was facilitated by the dashboard suitably challenging without being too difficult?</p></li>
+<li><p>Was it “doable” in a reasonable amount of time compared to posing the same questions without the dashboard? (students were asked: “<em>Approximately how much time did you spend on this Assignment and Quiz?</em>”)</p></li>
+<li><p>Student were asked: “<em>What did you like about learning with this dashboard?</em>”</p></li>
+<li><p>Student were asked: “<em>Have you any creative or constructive suggestions for improving this dashboard or the assignment?</em>”</p></li>
+</ol>
+<p><strong>Results</strong> from feedback questions posed as part of the assignment that used this dashboard are summarized in the figure below.</p>
+<a class="reference internal image-reference" href="_images/372studentresults-sm.png"><img alt="results" class="align-center" src="_images/372studentresults-sm.png" style="width: 650px;" /></a>
+<p><strong>Time to complete</strong> was entirely consistent with expectations this portion of an assignment that students had a week to complete.</p>
+<p><strong>Scores</strong> were perhaps a little low for a “synthesis” exercise. This suggests some iteration would be worthwhile to improve clarity or efficiency of questions. It is also possible the relationship between instructions and the final multiple choice questions could be clarified.</p>
+<p><strong>Quotes</strong> from the top two “<em>What did you like…</em>” categories:</p>
+<blockquote>
+<div><p>“<em>I like how integrated it is and how it connects all the topics dealt with in this course so far</em>”.</p>
+</div></blockquote>
+<blockquote>
+<div><p>“<em>It was interesting and challenging to use real-world data - I saw firsthand the difficulties that one can have in defining the two layers of a two-layer model. It is also really meaningful to see real data supporting trends and predictions learned in class. It was cool to see a profile for nitrate or Fe and not be surprised by it - and even able to explain it!</em>”.</p>
+</div></blockquote>
+<blockquote>
+<div><p>“<em>I liked how this dashboard was applying various concepts and using real data from the world oceans. It was quite easy to use and was very clear in instructions</em>”.</p>
+</div></blockquote>
+</div>
+<div class="section" id="benefits-costs-and-recommendations">
+<h2>Benefits, costs and recommendations<a class="headerlink" href="#benefits-costs-and-recommendations" title="Permalink to this headline">¶</a></h2>
+<p><strong>Benefits</strong>: Students evidently found this interactive dashboard resource to be a “good visualization”, appreciated the use of real world data, liked the opportunity it provided for synthesis of course concepts in their learning assignments, and generally found it easy to use. Students also offered some thoughtful and creative ideas for improvements.</p>
+<p>There was very little negative feedback, although with 132 students there are inevitably a few who had difficulties with some aspect or other. Timely teaching assistant support goes a long way to supporting those kinds of difficulties.</p>
+<p><strong>Costs</strong>:</p>
+<p><span style="color:red">These might be better placed in a page on general guidelines which can then be referenced here.</span></p>
+<ul class="simple">
+<li><p>The design cycle involved numerous iterations so working code can be developed then the instructor can explore how initial designs will work in their planned setting, adjust, revisit, and iterate until satisfied.</p></li>
+<li><p>There may also be a second round of adjustments after first deployment in a real course.</p></li>
+<li><p>For this oceanography dashboard, numerous iterations were needed to discover some of the ‘tricks’ necessary to successful deployment of the Python-based code that uses Plotly-Dash libraries. The styles of interactivity were found to be much more challenging than other dashboards. Code can be examined in the GitHub repository; see the “ocgy-dataviewer” folder <a class="reference external" href="https://github.com/phaustin/addon_containers">here</a>.</p></li>
+<li><p>Implementing as a class assignment requires the dashboard be hosted on a reasonably fast server that can handle multiple logins. Instructors also need to explore the dashboard to identify opportunities and limitations so that meaningful tasks can be set for students to apply concepts being learned in the class.</p></li>
+<li><p>The question of longer term maintenance, deployment and sustainability of these tools is still a question. Instructors can not be expected to handle all the coding and server technology as well as incorporate excellent, evidence-base, student-centric pedagogy.</p></li>
+</ul>
+<p><strong>Recommendations</strong> for improvement suggested by students include more functionality to compare data from different cruises, spending a bit of time in class to introduce the app and its capabilities &amp; limitations, and a few other thoughtful ideas.</p>
+<p>For instructors, we recommend reviewing questions carefully to fine tune for efficiency and clarity. The goal would be to bring the success rate for this kind of synthesis activity up to closer to 80%. Varying the questions is also recommended, perhaps changing the emphasis from year to year and building a pool of questions (or question sets) for subsequent use.</p>
+<p>For development purposes, this dashboard was challenging. It is also a bit slow, and it might benefit from having an someone with expertise in use of Plotly Dash libraries review and recommend adjustments to improve efficiency and code clarity.</p>
+<hr class="docutils" />
 </div>
 </div>
 
