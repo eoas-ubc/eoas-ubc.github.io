@@ -20,6 +20,8 @@ This proposed curriculum transformation will happen alongside a re-evaluation of
 
 - _Francis Jones_: Coordinator, admin and development. ([FJ at EOAS](https://www.eoas.ubc.ca/people/francisjones) and [on GitHub](https://github.com/fhmjones)). Mr. Jones has taught geophysics in UBC's Department of EOAS for 25 yrs and has worked in the department as a geoscience education specialist since 2007.
 
+- _Lindsey Heagy_: Geophysics / datascience professor with direct experience in tools and techniques, and with an ongoing stake as instructor for several courses we are working on. ([LH at EOAS](https://www.eoas.ubc.ca/people/lindseyheagy) and [on GitHub](https://github.com/lheagy)).
+
 ### Current Students
 
 - Andrew Loeppky ([AL on GitHub](https://github.com/AndrewLoeppky))
