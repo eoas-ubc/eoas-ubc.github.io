@@ -40,8 +40,6 @@ Many other questions about these data could be posed, addressing learning goals 
 
 ## Project evaluation
 
-Here are **questions** that drive evaluation of this OCESE project component:
-
 Did the dashboard serve as an effective and efficient learning resource? These questions were posed to evaluate the succecss of this project component.
 
 1. Was the exercise that was facilitated by the dashboard suitably challenging without being too difficult? 
@@ -60,6 +58,14 @@ Did the dashboard serve as an effective and efficient learning resource? These q
 
 **Scores** were perhaps a little low for a "synthesis" exercise. This suggests some iteration would be worthwhile to improve clarity or efficiency of questions. It is also possible the relationship between instructions and the final multiple choice questions could be clarified.
 
+**Quotes** from the top two "_What did you like..._" categories:
+
+> "_I like how integrated it is and how it connects all the topics dealt with in this course so far_".
+
+> "_It was interesting and challenging to use real-world data - I saw firsthand the difficulties that one can have in defining the two layers of a two-layer model. It is also really meaningful to see real data supporting trends and predictions learned in class. It was cool to see a profile for nitrate or Fe and not be surprised by it - and even able to explain it!_".
+
+> "_I liked how this dashboard was applying various concepts and using real data from the world oceans. It was quite easy to use and was very clear in instructions_".
+
 ## Benefits, costs and recommendations
 
 **Benefits**: Students evidently found this interactive dashboard resource to be a "good visualization", appreciated the use of real world data, liked the opportunity it provided for synthesis of course concepts in their learning assignments, and generally found it easy to use. Students also offered some thoughtful and creative ideas for improvements. 
@@ -68,9 +74,13 @@ There was very little negative feedback, although with 132 students there are in
 
 **Costs**:
 
-1. The design cycle involved numerous iterations to discover some of the 'tricks' necessary to successful deployment of the Python-based code that uses Plotly-Dash libraries. The styles of interactivity were found to be much more challenging than other dashboards. Code can be examined in the GitHub repository; see the "ocgy-dataviewer" folder [here](https://github.com/phaustin/addon_containers).
+<span style="color:red">These might be better placed in a page on general guidelines which can then be referenced here.</span>
 
-2. Implementing as a class assignment requires the dashboard be hosted on a reasonably fast server that can handle multiple logins. Instructors also need to explore the dashboard to identify opportunities and limitations so that meaningful tasks can be set for students to apply concepts being learned in the class.
+* The design cycle involved numerous iterations so working code can be developed then the instructor can explore how initial designs will work in their planned setting, adjust, revisit, and iterate until satisfied.
+* There may also be a second round of adjustments after first deployment in a real course.
+* For this oceanography dashboard, numerous iterations were needed to discover some of the 'tricks' necessary to successful deployment of the Python-based code that uses Plotly-Dash libraries. The styles of interactivity were found to be much more challenging than other dashboards. Code can be examined in the GitHub repository; see the "ocgy-dataviewer" folder [here](https://github.com/phaustin/addon_containers).
+* Implementing as a class assignment requires the dashboard be hosted on a reasonably fast server that can handle multiple logins. Instructors also need to explore the dashboard to identify opportunities and limitations so that meaningful tasks can be set for students to apply concepts being learned in the class.
+* The question of longer term maintenance, deployment and sustainability of these tools is still a question. Instructors can not be expected to handle all the coding and server technology as well as incorporate excellent, evidence-base, student-centric pedagogy. 
 
 **Recommendations** for improvement suggested by students include more functionality to compare data from different cruises, spending a bit of time in class to introduce the app and its capabilities & limitations, and a few other thoughtful ideas.
 
