@@ -43,7 +43,7 @@ These are listed in terms of goals from the original proposal.
 
 #### ENVR300 (54 students)
 
-1. Several Dashboards are under development based on discussions with instructors. For details see [the development repository](https://github.com/fhmjones/dashboards-envr300).
+1. Several Dashboards are under development based on discussions with instructors. These discussions resulted in two dashboards being generated and eventually piloted in the course in January 2021. See the [dashboards page](dashboards.md) for current state of the two dashboards: "Global temperature" and "timeseries-3signals". 
 2. We will deploy and evaluate their use and value with an instructor new to these techniques in term 2020W2.
 
 #### EOSC410/510 (35 students)
@@ -67,7 +67,7 @@ These are listed in terms of goals from the original proposal.
 
 #### Training for faculty & others
 
-1. Materials for Python and Jupyter notebook training sessions are being developed, targeting EOAS Faculty, Postdocs and Graduate students. This is our evolving [documentation site](https://fhmjones.github.io/).
+1. Materials for Python and Jupyter notebook training sessions are being developed, targeting EOAS Faculty, Postdocs and Graduate students. The website you are viewing contains current versions of all of these materials.
 
 #### Evaluation
 

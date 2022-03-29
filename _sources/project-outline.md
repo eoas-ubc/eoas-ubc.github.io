@@ -52,3 +52,13 @@ The following are, or will be involved in various capacities.
 - Jacob McFarlane ([JM on GitHub](https://github.com/JacobMcFarlane)) (winter/spring 2021)
 - Yiki Su ([YS on GitHub](https://github.com/YikiSu)) (winter/spring 2021)
 - Hariharan Umashankar ([HU on GitHub](https://github.com/hari-ushankar) or [researchgate](https://www.researchgate.net/profile/Hariharan_Umashankar)) (summer 2020 through fall 2021)
+
+### Students contributing to dashboard design and programming
+
+- Jamie Byer
+- Andrew Loeppky
+- Hariharan Umashankar
+- Jacob McFarlane
+- Francis Rossmann
+- Yulia Egorovo
+- Yuliya Kuzmenko

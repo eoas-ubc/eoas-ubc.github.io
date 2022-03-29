@@ -12,24 +12,27 @@
 
 ## OCESE project objectives
 
-<span style="color:red">To be completed.</span>
+* Support development, implementation and evaluation of new activities funded by UBC's climate science initiative.
 
 ## Resources produced
 
-These are open education resources (OER) unless indicated otherwise.
-
-<span style="color:red">To be completed.</span>
+* Grad students hired for this project develop ideas and OCESE considered options for implementation.
+* Completed the [Global Temperature Anomaly](dashboards.md) dashboard used in eosc112 and several other courses.
+* A second dashboard ([climate-mind-map](dashboards.md)) was concieved and prototyped, but implementation was put off for a later time.
+* Supported development, observed implementation, and coordianted evaulation of an activity based on the IPCC Climate Atlas for EOSC 112 (147 students).
 
 ## Pedagogy
 
-<span style="color:red">To be completed.</span>
+The IPCC Climate Atlas activity was worksheet-based. Begun in class, students could work in groups or alone. Getting-started instruction were provided by lecture and instructors & TAs then circulated to ensure students were making progress. The assignment was completed at home with responses delivered to the course's Canvas site for assessment as PDFs or scanned images.
 
 ## Project evaluation
 
-<span style="color:red">To be completed.</span>
+**Feedback questions posed**
 
-Questions, data, results, risks and recommendations.
+* What have you learned by working on this activity?
+* Were you surprised by anytyhing you observed?
+* What is one question you have that was inspired by this activity?
 
-Benefits: projected and observed. Focus on students and learning.
+Processing the results to generate a summary was non-trivial as questions were open ended.
 
-Costs: to instructors, departments & institutions.
+Results from student feedback about the IPCC Climate Atlas activity are summarized in a [**separate PDF file**](https://github.com/eoas-ubc/eoas-ubc.github.io/blob/docs/pdffiles/Data_Science_Report_Sept2019.pdf).

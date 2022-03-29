@@ -29,6 +29,7 @@ These are open education resources (OER) unless indicated otherwise.
 :width: 650
 :align: center
 ```
+<br>
 
 * **[Drawdown for confined and unconfined acquifers](https://dashboard.eoastest.xyz/drawdown)** plots 2D drawdown curves for a well in a uniform acquifer with adjustable properties. Github repository is the "drawdown" folder [here](https://github.com/phaustin/addon_containers).
 
@@ -36,9 +37,9 @@ These are open education resources (OER) unless indicated otherwise.
 
 **Storativity app**: first used by posing three questions to be addressed using the interactive dashboard app (slide 56 of section 7).
 
-1. Which soil material does have the largest storativity in confined aquifer (use the max values)?
-2. Which soil material does have the largest storativity in unconfined aquifer?
-3. Which soil material does have the largest difference in storativity between unconfined and confined aquifer?
+1. Which soil material has the largest storativity in a confined aquifer (use the max values)?
+2. Which soil material has the largest storativity in an unconfined aquifer?
+3. Which soil material has the largest _difference_ in storativity between unconfined and confined aquifers?
 
 **Unconfined flow app** was first used by posing two group-discussion questions to be addressed using the interactive dashboard app (slide 48 of section 8).
 
