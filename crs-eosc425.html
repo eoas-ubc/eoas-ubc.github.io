@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Progress at November 2021 &#8212; OCESE Documenation</title>
+    <title>EOSC 425 &#8212; OCESE Documenation</title>
     
   <link href="_static/css/theme.css" rel="stylesheet" />
   <link href="_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
@@ -51,8 +51,6 @@
     <script async="async" src="_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Progress at May 2022" href="progress-may2022.html" />
-    <link rel="prev" title="Progress at November 2020" href="progress-nov2020.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
     
@@ -87,29 +85,29 @@
   Project &amp; Outcomes
  </span>
 </p>
-<ul class="current nav bd-sidenav">
+<ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="project-outline.html">
    Goals and Contributors
   </a>
  </li>
- <li class="toctree-l1 current active has-children">
+ <li class="toctree-l1 has-children">
   <a class="reference internal" href="progress.html">
    Progress Reports &gt;&gt;
   </a>
-  <input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
   <label for="toctree-checkbox-1">
    <i class="fas fa-chevron-down">
    </i>
   </label>
-  <ul class="current">
+  <ul>
    <li class="toctree-l2">
     <a class="reference internal" href="progress-nov2020.html">
      Progress at November 2020
     </a>
    </li>
-   <li class="toctree-l2 current active">
-    <a class="current reference internal" href="#">
+   <li class="toctree-l2">
+    <a class="reference internal" href="progress-nov2021.html">
      Progress at November 2021
     </a>
    </li>
@@ -426,7 +424,7 @@
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="_sources/progress-nov2021.md"><button type="button"
+        <a class="dropdown-buttons" href="_sources/crs-eosc425.md"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
                 data-placement="left">.md</button></a>
         <!-- Download PDF via print -->
@@ -457,28 +455,28 @@
             <nav id="bd-toc-nav" aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#infrastructure-development">
-   1) Infrastructure development
+  <a class="reference internal nav-link" href="#official-course-description">
+   Official course description
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#complete-course-transformations">
-   2) Complete course transformations
+  <a class="reference internal nav-link" href="#ocese-project-objectives">
+   OCESE project objectives
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#development-of-specific-data-oriented-interactive-learning-resources">
-   3) Development of specific data-oriented interactive learning resources
+  <a class="reference internal nav-link" href="#resources-produced">
+   Resources produced
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#faculty-engagement">
-   4) Faculty engagement
+  <a class="reference internal nav-link" href="#pedagogy">
+   Pedagogy
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#dissemination">
-   5) Dissemination
+  <a class="reference internal nav-link" href="#project-evaluation">
+   Project evaluation
   </a>
  </li>
 </ul>
@@ -492,50 +490,36 @@
         
               <div>
                 
-  <div class="section" id="progress-at-november-2021">
-<h1>Progress at November 2021<a class="headerlink" href="#progress-at-november-2021" title="Permalink to this headline">¶</a></h1>
-<p>Year two focused upon establishing computing infrastructure but also made significant progress with course transformations, interactive data-oriented learning resources and engaging with faculty. This summary was prepared for funding renewal in October 2021. Links were added in February 2022.</p>
-<div class="section" id="infrastructure-development">
-<h2>1) Infrastructure development<a class="headerlink" href="#infrastructure-development" title="Permalink to this headline">¶</a></h2>
-<p>Development of three types of courseware servers is underway:</p>
-<ol class="simple">
-<li><p>Large Jupyterhubs deployed in Amazon data centers that can scale to many simultaneous users.  These are currently being used to teach EOSC211 (98 students) and EOSC350 (48 students).</p></li>
-<li><p>Smaller Jupyterhubs running on Department hardware for upper year courses (ATSC301, EOSC354), capstone projects, or graduate classes (~35 students).</p></li>
-<li><p>Lightweight Python data visualization courseware (web-based dashboards) for in-class or assignment exercises in EOSC112, 114, 116, 340, 325, 372, ENVR300. Many are being written by students for faculty who teach the courses.  We are currently designing a scalable cloud server to host computationally-intensive dashboards, based on our experience with the large hubs deployed for EOSC211 and EOSC350.</p></li>
-</ol>
-<p>Collaborations with Trevor Campbell and Tiffany Timbers (Statistics) include (a) upgrading the nbgrader software package used to autograde Jupyter notebooks in DSCI100, EOSC211 and other courses, (b) translating the DSCI100 textbook and worksheets from R to Python, in preparation for teaching in 2023, and (c) deliberations with the UBC community (including CTLT, Economics and others) regarding how best to deploy and maintain secure Jupyterhubs for courses ranging from small to large, and with lightweight to heavy computing requirements.</p>
-<p>We also added material to an opensource Python textbook adapted for EOSC211, and deployed EOSC211 worksheets and lecture notes as interactive Jupyter Notebooks on github under opensource licenses.</p>
+  <div class="section" id="eosc-425">
+<h1>EOSC 425<a class="headerlink" href="#eosc-425" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="official-course-description">
+<h2>Official course description<a class="headerlink" href="#official-course-description" title="Permalink to this headline">¶</a></h2>
+<p><strong>Palaeontology</strong>: Paleobiogeography in the context of plate tectonics. Mass extinction events. Fossilization and biases in the fossil record. Species concepts in paleontology. Biostratigraphy. Paleontological evidence for early life; the colonization of oceanic and terrestrial environments and; the evolution of the primates.</p>
+<p><strong>Links:</strong>
+&gt;<a class="reference external" href="https://www.eoas.ubc.ca/academics/courses/eosc425">Home</a>,
+&gt;<a class="reference external" href="https://courses.students.ubc.ca/cs/courseschedule?pname=subjarea&amp;tname=subj-course&amp;dept=EOSC&amp;course=425">UBC Calendar</a>,
+&gt;<a class="reference external" href="https://ubcexplorer.io/course/EOSC/425">ubcexplore</a>,
+&gt; <a class="reference external" href="https://www.eoas.ubc.ca/~quest/eoas-only.html">EOAS curriculum map</a>.</p>
 </div>
-<div class="section" id="complete-course-transformations">
-<h2>2) Complete course transformations<a class="headerlink" href="#complete-course-transformations" title="Permalink to this headline">¶</a></h2>
-<p><strong>EOSC211</strong> (~100 students): The complete course transformation from a MatLab to Python course using Jupyter Notebooks was completed and fully implemented. In fall 2021 we piloted use of autograding using nbgrader, an opensource textbook, in-class Jupyter notebook activities and necessary GitHub and Jupyter Hub infrastructure. Also, one of two instructors was supported in her transition to Python and the associated new teaching resources and techniques. See our <a class="reference internal" href="crs-eosc211.html"><span class="doc std std-doc">EOSC211 page</span></a> for more details.</p>
-<p><strong>EOSC354</strong> (~15): Eleven lab assignments were converted from MatLab to Python and deployed as Jupyter Notebooks. Corresponding adjustments to lab pedagogy were implemented, including the addition of procedures for preparing students’ personal computers and a prior-skills assessment to help students identify and mitigate necessary pre-requisite skills and knowledge. Also, an instructor new to teaching (although familiar with the course) was supported as he implemented these changes while the usual instructor was on sabbatical leave.</p>
-<p><strong>DSCI100</strong> (~50) Converting one section of this R-based course into a Python-based version will have been largely completed by end of yr2, including necessary autograding capabilities. Earth-science oriented content is being prepared for September 2022. See our <a class="reference internal" href="crs-dsci100.html"><span class="doc std std-doc">DSCI 100 page</span></a> for more details.</p>
-<p><strong>EOSC410/510</strong> (~50) was to be transformed but is on hold while the normal instructor is on maternity leave. However, a Jupyter Book version of content was prepared by a volunteer graduate student.</p>
+<div class="section" id="ocese-project-objectives">
+<h2>OCESE project objectives<a class="headerlink" href="#ocese-project-objectives" title="Permalink to this headline">¶</a></h2>
+<p><span style="color:red">To be completed.</span></p>
 </div>
-<div class="section" id="development-of-specific-data-oriented-interactive-learning-resources">
-<h2>3) Development of specific data-oriented interactive learning resources<a class="headerlink" href="#development-of-specific-data-oriented-interactive-learning-resources" title="Permalink to this headline">¶</a></h2>
-<p>NOTE: See our <a class="reference internal" href="dashboards.html"><span class="doc std std-doc">dashboards page</span></a> for dashboard apps that were developed and implemented in these courses during this project period.</p>
-<p><strong>EOSC112, 114, 116</strong> (~500 students): Climate change content is being developed for first year courses in EOAS. We have generated one dashboard app with accompanying pedagogic recommendations. A second app was prototyped and discussed, with the result that instructors will pilot the learning sequence on “paper” in classes during 2021W. Results will inform development of an online interactive dashboard to be completed in yr3.</p>
-<p><strong>EOSC325</strong> (~90): Five dashboard apps were developed for this new course, offered for the first time in 2021W1. Ten substantial question sets were converted from “paper” and uploaded as Canvas question banks. Educational support was also provided to help design lectures that involved active-learning, quantitative and data-centric pedagogies.</p>
-<p><strong>EOSC329</strong> (~70) may also use dashboards developed for EOSC325.</p>
-<p><strong>EOSC340</strong> (~200): Two sophisticated climate science apps were developed anew or adapted from existing opensource facilities to be piloted in 2021W2.</p>
-<p><strong>EOSC350</strong> (~40): This course has pioneered the use of Jupyter notebooks and our project has learned about cloud-based deployment of Jupyter Hubs by supporting it.</p>
-<p><strong>EOSC354</strong> (~15): In addition to transforming this course (see above), interactive dashboards illustrating concepts in time series analysis are being designed and built.</p>
-<p><strong>EOSC372</strong> (~140): In 2021W1, a new dashboard was built and piloted for exploring selected ocean physical and trace element measurements. This enables more sophisticated learning opportunities about ocean ecosystems. Challenges associated with building this app helped us learn about optimal software practices for building and deploying these kinds of resources.</p>
-<p><strong>EOAS373</strong> (~80): New dashboard-based activities about ocean system dynamics will be designed based on lessons learned in EOSC372. To be piloted in yr3.</p>
-<p><strong>ENVR300</strong> (~50): Several dashboards successfully piloted in yr1 are being refined for use in 2021W2 and others are being considered.</p>
-<p><strong>Open education resources:</strong> All Jupyter notebooks, Jupyter books, dashboard apps and other resources produced during the project are accessible to colleagues during and after development as GitHub repositories. The collection (including pedagogic recommendations for specific courses) will be documented at a single website that will grow as the project progresses.</p>
+<div class="section" id="resources-produced">
+<h2>Resources produced<a class="headerlink" href="#resources-produced" title="Permalink to this headline">¶</a></h2>
+<p>These are open education resources (OER) unless indicated otherwise.</p>
+<p><span style="color:red">To be completed.</span></p>
 </div>
-<div class="section" id="faculty-engagement">
-<h2>4) Faculty engagement<a class="headerlink" href="#faculty-engagement" title="Permalink to this headline">¶</a></h2>
-<p>Models for faculty support represent an important yr2 project outcome. By end of yr2, twenty-one EOAS instructors will have participated in development, delivery and piloting of Jupyter notebooks or dashboards in EOAS courses. These were all responsive and collaborative instances of learning and support. Examples: (1) supporting development of a new course (EOSC325) resulted in five new dashboards, also usable in a second course. (2) A graduate student working on EOSC211 is providing rapid, responsive support for an instructor joining the team late in the development cycle.</p>
-<p>This one-on-one approach is proving more effective than developing structured workshops because each course has different requirements and each instructor has unique capabilities, needs, priorities and timelines. Also, best practices for deploying and using cloud-based computing facilities for undergraduate learning are evolving rapidly here at UBC and beyond.</p>
+<div class="section" id="pedagogy">
+<h2>Pedagogy<a class="headerlink" href="#pedagogy" title="Permalink to this headline">¶</a></h2>
+<p><span style="color:red">To be completed.</span></p>
 </div>
-<div class="section" id="dissemination">
-<h2>5) Dissemination<a class="headerlink" href="#dissemination" title="Permalink to this headline">¶</a></h2>
-<p>A poster about this project was presented online at the annual American Geophysical Union convention in Dec2021. See our <a class="reference internal" href="presentations.html"><span class="doc std std-doc">communications page</span></a> for details.</p>
-<p>Project progress is publicly visible as all development is on github, enabling collaboration with the opensource community working on similar projects at peer institutions.</p>
+<div class="section" id="project-evaluation">
+<h2>Project evaluation<a class="headerlink" href="#project-evaluation" title="Permalink to this headline">¶</a></h2>
+<p><span style="color:red">To be completed.</span></p>
+<p>Questions, data, results, risks and recommendations.</p>
+<p>Benefits: projected and observed. Focus on students and learning.</p>
+<p>Costs: to instructors, departments &amp; institutions.</p>
 </div>
 </div>
 
@@ -568,24 +552,6 @@
 
 <div class='prev-next-bottom'>
     
-    <div id="prev">
-        <a class="left-prev" href="progress-nov2020.html" title="previous page">
-            <i class="prevnext-label fas fa-angle-left"></i>
-            <div class="prevnext-info">
-                <p class="prevnext-label">previous</p>
-                <p class="prevnext-title">Progress at November 2020</p>
-            </div>
-        </a>
-    </div>
-     <div id="next">
-        <a class="right-next" href="progress-may2022.html" title="next page">
-            <div class="prevnext-info">
-                <p class="prevnext-label">next</p>
-                <p class="prevnext-title">Progress at May 2022</p>
-            </div>
-            <i class="prevnext-label fas fa-angle-right"></i>
-        </a>
-     </div>
 
 </div>
         

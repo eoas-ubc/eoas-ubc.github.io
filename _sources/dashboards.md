@@ -6,11 +6,11 @@
 
 * **[ocgy-dataviewer](https://dashboard.eoastest.xyz/ocgy)**: observe and compare trace element and physical properties in the water column at selected locations in the Southern Ocean, the Atlantic and the North Pacific. Github repository is the "ocgy-dataviewer" folder [here](https://github.com/phaustin/addon_containers). Initially used as an assignment in [EOSC 372](https://www.eoas.ubc.ca/academics/courses/eosc372) in the Fall term, 2021.
 
-* **[Factors affecting global temperature](https://dashboard.eoastest.xyz/globaltemps)**: Contributions of several natural and anthropogenic factors to the global temperature anomaly are plotted for 1880-2005, with short explanations. Sketch interactivity is included. Github repository is the "globaltemp-factors" folder [here](https://github.com/phaustin/addon_containers). Initially used in [EOSC 112](https://www.eoas.ubc.ca/academics/courses/eosc11) and [EOSC 326](https://www.eoas.ubc.ca/academics/courses/eosc326) in the Fall term, 2021.
+* **[Global temperature](https://dashboard.eoastest.xyz/globaltemps)**: Contributions of several natural and anthropogenic factors to the global temperature anomaly are plotted for 1880-2005, with short explanations. Sketch interactivity is included. Github repository is the "globaltemp-factors" folder [here](https://github.com/phaustin/addon_containers). Initially used in [EOSC 112](https://www.eoas.ubc.ca/academics/courses/eosc11) and [EOSC 326](https://www.eoas.ubc.ca/academics/courses/eosc326) in the Fall term, 2021.
 
 * **climate-mind-map**, First draft HTML5 interactivity explored. Github [repo](https://github.com/jamiebyer/climate-mind-map). Instructors want to do a "paper" activity based on these ideas first.
 
-* **[CO2 at Mauna Loa and South Pole](https://dashboard.eoastest.xyz/co2mlo)** (monthly averages), with user-defined straight line model for crude predictions. Github repository is the "co2-mlo-spo" folder [here](https://github.com/phaustin/addon_containers). Initially used in [ENVR 300](https://www.eoas.ubc.ca/academics/courses/envr300) in Winter term 2021, then updated for Winter term 2022.
+* **[Atmospheric CO2](https://dashboard.eoastest.xyz/co2mlo)**: Monthly averages at Mauna Loa and the South Pole, with user-defined straight line model for crude predictions. Github repository is the "co2-mlo-spo" folder [here](https://github.com/phaustin/addon_containers). Initially used in [ENVR 300](https://www.eoas.ubc.ca/academics/courses/envr300) in Winter term 2021, then updated for Winter term 2022.
 
 * **climate-maunaloa-jnb**, on github at [repo](https://github.com/fhmjones/envr-maunaloa-jnb), a Jupyter Notebook version of CO2 at Mauna Loa with straightline modelling. Uses `ipywidget` library for interactivity instead of `PlotlyDash`.
 
@@ -26,7 +26,7 @@
 
 * **[Unconfined-flow](https://dashboard.eoastest.xyz/hydro)** interactive model of linar ("1D") groundwater flow in an unconfined acquifer between two sources, with surface recharge included. Github repository is the "hydro" folder [here](https://github.com/phaustin/addon_containers). Initially used in [EOSC 325](https://www.eoas.ubc.ca/academics/courses/eosc325) in Fall term, 2021.
 
-* **[Drawdown for confined and unconfined acquifers](https://dashboard.eoastest.xyz/drawdown)** plots 2D drawdown curves for a well in a uniform acquifer with adjustable properties. Github repository is the "drawdown" folder [here](https://github.com/phaustin/addon_containers). Initially used in [EOSC 325](https://www.eoas.ubc.ca/academics/courses/eosc325) in Fall term, 2021.
+* **[Drawdown](https://dashboard.eoastest.xyz/drawdown)** for confined and unconfined acquifers plots 2D drawdown curves for a well in a uniform acquifer with adjustable properties. Github repository is the "drawdown" folder [here](https://github.com/phaustin/addon_containers). Initially used in [EOSC 325](https://www.eoas.ubc.ca/academics/courses/eosc325) in Fall term, 2021.
 
 * **[Mohr's circles](https://mohrs.herokuapp.com/)**; plots Mohr's circles and failure envelopes by interactively adjusting stress. Github [repo](https://github.com/fhmjones/mohrs).
 
