@@ -68,7 +68,3 @@ _In the following table, a `Cmdlet` is microsoft's term for a PowerShell command
 
 [This link](https://www.comparitech.com/net-admin/powershell-cheat-sheet/) has one example of a fairly good single page (although fairly long) introduction to Power shell. It includes a PDF cheat sheet of commands and aliases, but that contains way more than you will need unless you start managing systems and implementing shell scripts (i.e. automating repetative sequences of complex commandline activity).
   * <em><span style="color:green">[Mac terminal commands cheat sheet](https://github.com/0nn0/terminal-mac-cheatsheet)</span></em>
-
-```python
-
-```
