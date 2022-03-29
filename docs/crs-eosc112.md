@@ -35,4 +35,4 @@ The IPCC Climate Atlas activity was worksheet-based. Begun in class, students co
 
 Processing the results to generate a summary was non-trivial as questions were open ended.
 
-[Results are summarized in a separate PDF file](ClimateAtlas-reflections-summary.pdf) for results and methods for evaluating student feedback about the IPCC Climate Atlas activity.
+Results from student feedback about the IPCC Climate Atlas activity are summarized in a [**separate PDF file**](https://github.com/eoas-ubc/eoas-ubc.github.io/blob/docs/pdffiles/Data_Science_Report_Sept2019.pdf).
