@@ -71,8 +71,10 @@ parts:
     title: Programming environments  
   - file: git-intro
   - file: jhub-tutorial
-  - file: jnotebooks-teachlearn
+  - file: teachwith-jnotebooks
     title: Teaching with Jupyter NBs
+  - file: teachwith-dashboards
+    title: Teaching with dashboards
 - caption: References
   chapters:
   - file: refs
