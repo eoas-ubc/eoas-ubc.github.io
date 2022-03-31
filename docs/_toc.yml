@@ -16,6 +16,9 @@ parts:
     sections:
     - file: crs-atsc301
     - file: crs-dsci100
+      title: DSCI 100 ocese progress
+    - file: crs-dsci100-details
+      title: DSCI 100 course outline
     - file: crs-envr300
     - file: crs-envr420
     - file: crs-eosc112
@@ -30,6 +33,7 @@ parts:
     - file: crs-eosc372
     - file: crs-eosc373
     - file: crs-eosc410
+    - file: crs-eosc425
     - file: crs-eosc429
     - file: crs-eosc442
     - file: crs-eosc471
