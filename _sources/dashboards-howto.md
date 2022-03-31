@@ -33,7 +33,7 @@ This choice makes sense when you are experimenting with the dashboard or plannin
 
 ### Sharing during development
 
-To enable users and developers to share a working copy and discuss design and pedagogic aspects, deploying to a free Heroku account works well. Each such account can only house five apps. See separate [instructions for deploying to Heroku](./heroku.html).
+To enable users and developers to share a working copy and discuss design and pedagogic aspects, deploying to a free Heroku account works well. Each such account can only house five apps. See separate [instructions for deploying to Heroku](dashboards-heroku.md).
 
 ### Deploying to a suitable Hub 
 

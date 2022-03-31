@@ -15,7 +15,7 @@ Details follow.
 
 ## 1. Your command shell
 
-If you are not familiar with using a shell or command-line interface, a good place to start is [here](commandline.md). Or - a more conversational introduction is in our "crash course" page called [Shells, Systems and Git](al's_crashcorse/shells_crash_course.html).
+If you are not familiar with using a shell or command-line interface, a good place to start is [here](commandline.md). Or - a more conversational introduction is in our "crash course" page called [Command line & Shells](commandline.md).
 
 ## 2. Installing miniconda
 

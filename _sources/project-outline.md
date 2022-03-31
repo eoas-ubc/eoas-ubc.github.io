@@ -10,7 +10,7 @@ Using open source, cloud-based computing we aim to integrate computational and q
 
 This proposed curriculum transformation will happen alongside a re-evaluation of quantitative EOAS course offerings across disciplines. The end result will reposition the UBC Earth Science specializations as opportunities for quantitative and computational learning in a highly interdisciplinary domain.
 
-# Contributors
+## Contributors
 
 ### Principles
 

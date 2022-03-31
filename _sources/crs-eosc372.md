@@ -87,5 +87,3 @@ There was very little negative feedback, although with 132 students there are in
 For instructors, we recommend reviewing questions carefully to fine tune for efficiency and clarity. The goal would be to bring the success rate for this kind of synthesis activity up to closer to 80%. Varying the questions is also recommended, perhaps changing the emphasis from year to year and building a pool of questions (or question sets) for subsequent use.
 
 For development purposes, this dashboard was challenging. It is also a bit slow, and it might benefit from having an someone with expertise in use of Plotly Dash libraries review and recommend adjustments to improve efficiency and code clarity.
-
----

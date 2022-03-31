@@ -106,5 +106,5 @@ Collaboration using a Fork from someone else's repository, develop in a branch, 
 
 ## Pointers & References
 
-See the end of the page [Git Intro](git-intro.html).
+See the end of the page [Git Intro](git-intro.md).
 

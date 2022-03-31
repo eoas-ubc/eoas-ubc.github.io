@@ -2,7 +2,7 @@
 
 **What are "dashboards"**? These are interactive mathematical or data exploration applications hosted online and used in any standard browser. They are used by instructors and students or other learners to explore complex data sets, address problems or assignments, or experiment with challenging concepts. Some design guidelines are provided on a [separate "dashboards how-to" page](dashboards-howto.md).
 
-### Climate science & oceanography:
+## Climate science & oceanography:
 
 * **[ocgy-dataviewer](https://dashboard.eoastest.xyz/ocgy)**: observe and compare trace element and physical properties in the water column at selected locations in the Southern Ocean, the Atlantic and the North Pacific. Github repository is the "ocgy-dataviewer" folder [here](https://github.com/phaustin/addon_containers). Initially used as an assignment in [EOSC 372](https://www.eoas.ubc.ca/academics/courses/eosc372) in the Fall term, 2021.
 
@@ -20,7 +20,7 @@
 
 * **cmip6** (climate): Explore the CMPI6 climate science data sets ... in progress
 
-### Geology and hydrogeology
+## Geology and hydrogeology
 
 * **[Storativity](https://dashboard.eoastest.xyz/store)** compares hydrological storativity of various geologic materials. Github repository is the "store" folder [here](https://github.com/phaustin/addon_containers). Initially used in [EOSC 325](https://www.eoas.ubc.ca/academics/courses/eosc325) in Fall term, 2021.
 
@@ -30,7 +30,7 @@
 
 * **[Mohr's circles](https://mohrs.herokuapp.com/)**; plots Mohr's circles and failure envelopes by interactively adjusting stress. Github [repo](https://github.com/fhmjones/mohrs).
 
-### Geophysics or "signals"
+## Geophysics or "signals"
 
 * **[timeseries-3signals](https://dashboard.eoastest.xyz/timeseries)** adjustable parameters illustrating noise and trend on a sinewave, with smoothing. Github repository is the "timeseries" folder [here](https://github.com/phaustin/addon_containers). Initially used in [ENVR 300](https://www.eoas.ubc.ca/academics/courses/envr300) in Winter term 2021, then updated for Winter term 2022.
 
@@ -39,5 +39,3 @@
 * **[interactive images](https://clickimage.herokuapp.com/)** is an initial experiment exploring how to interact with figures for future dashboards planned for paleontology and other disciplines. Github repo [here](https://github.com/fhmjones/ClickImage).
 
 * **[gpglabs](https://gpg.geosci.xyz/content/appendix/apps.html)** is an extensive collection of interactive Jupyter Notebooks illustrating concepts in applied geophysics including forward & inverse modeling and physics. See the [GPG applied geophysics textbook](https://gpg.geosci.xyz/) or the interactive NoteBooks collection [repository](https://github.com/geoscixyz/gpgLabs), both with links for running NoteBooks using Binder, Azure Notebooks, or locally on your own computer.
-
----

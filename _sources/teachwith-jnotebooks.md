@@ -4,7 +4,7 @@
 
 This page summarizes ways that Jupyter notebooks have been introduced to EOAS faculty and students for teaching and learning purposes. Detailed guidelines, and examples of uses from various courses, will be provided in separate pages.
 
-**Getting started:** Guidelines for setting up you local computer to run Jupyter Notebooks are in our [Jupyter Notebooks startup](jnotebook-startup.md) page.
+**Getting started:** Guidelines for setting up you local computer to run Jupyter Notebooks are in our [Jupyter Notebooks startup](jnotebooks-startup.md) page.
 
 ## Developing programming skills with J-Notebooks
 

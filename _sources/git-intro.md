@@ -10,7 +10,7 @@ All professional programmers carry out these steps, and most use Git to keep tra
 
 The instructions below will set up a *code repository* on your computer which backs up your work each time you make a change (*making commits*). Once you gain some familiarity with *committing* and *pushing* using Git, you will be ready to tackle the full *pull request workflow* (meant for collaborating on projects with larger groups).
 
-Installing Git software on your own computer can be done many ways. We recommend doing this **after** installing the Conda package management system using our instructions [eleswhere](conda_environs.html). A succinct sequence of steps can be found in P. Austin's [Numerical Methods course manual](https://phaustin.github.io/numeric/doc_notebooks/course_bootstrap/installing_jupytext.html).
+Installing Git software on your own computer can be done many ways. We recommend doing this **after** installing the Conda package management system using our instructions [eleswhere](conda_environs.md). A succinct sequence of steps can be found in P. Austin's [Numerical Methods course manual](https://phaustin.github.io/numeric/doc_notebooks/course_bootstrap/installing_jupytext.html).
 
 ----
 
@@ -150,9 +150,9 @@ That is all we'll cover here. For more comprehensive introductions and tutorials
 
 ## Backing Up Files On Github
 
-Github is an online *repository* which is used for backing up and sharing code/documents with collaborators. Repositories are copies of your files saved in the cloud, and can be either **public** (visible/accessible by anyone with the URL) or **private** (only accessible to specific users but subject to a subscription fee). 
+Github is an online *repository* which is used for backing up and sharing code/documents with collaborators. Repositories are copies of your files saved in the cloud, and can be either **public** (visible/accessible by anyone with the URL) or **private** (only accessible to specific users but subject to a subscription fee).
 
-An introduction to using GitHub is provided [on a separate page](git-workflows.html).
+An introduction to using GitHub is provided [on a separate page](git-workflows.md).
 
 ---
 
@@ -170,5 +170,3 @@ There are a great many open-source and commercial tutorials, how-to's and manual
 |6|**[GitHub Forking](https://gist.github.com/Chaser324/ce0505fbed06b947d962)**|MD page|"Fairly standard" procedure: Create a fork; Do your work; Issue a pull request; Merge back into the original project.|
 |7|**[Merging vs. Rebasing](https://www.atlassian.com/git/tutorials/merging-vs-rebasing)**|Git tutorial page|One of many pages in a comprehensive [Git tutorial](https://www.atlassian.com/git/tutorials) from Atlassian.com. Their context is Bitbucket (not GitHub) but Git concepts are the same.|
 |8|**[LinkedIn Learning "courses"](https://linkedinlearning.ubc.ca)** for UBC faculty and staff|Video courses|Log in using your CWL and search for Git, or GitHub, etc. There are many, but at least they are not quite as random as the unfiltered internet.|
-
----
