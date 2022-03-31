@@ -74,5 +74,3 @@
 | [open source geophysics software list](https://en.wikipedia.org/wiki/Comparison_of_free_geophysics_software) | geophysics | list of resources, not a resource |
 | [virtual earthquake](https://www.sciencecourseware.org/VirtualEarthquake/) | geophysics | didactic, 12-step interactive online activity.  |
 | [IRIS: set of 13 software-web-apps](https://www.iris.edu/hq/inclass/search#type[]=7&language[]=1) | geophysics | Part of extensive IRIS education resources |
-
----

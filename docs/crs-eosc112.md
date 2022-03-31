@@ -27,7 +27,7 @@ The IPCC Climate Atlas activity was worksheet-based. Begun in class, students co
 
 ## Project evaluation
 
-**Feedback questions posed**
+These **feedback questions** were posed to students as the last step in their assignment:
 
 * What have you learned by working on this activity?
 * Were you surprised by anytyhing you observed?

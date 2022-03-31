@@ -1,4 +1,4 @@
-# DSCI 100
+# DSCI 100 OCESE project progress
 
 ## Official description
 
@@ -32,18 +32,6 @@ These open education resources HAVE YET TO BE PRODUCED but are in progress as of
 * Python versions of questions for assessments.
 
 ## Pedagogy
-
-### a) Necessary instructor skills
-
-### b) Necessary teaching assistant capabilities
-
-### c) Workflow for preparing and delivering lessons
-
-### d) Workflow for preparing and delivering labs
-
-### e) Workflow for preparing and delivering assignments
-
-### f) Examination strategies
 
 * Question preparation
 * Question types

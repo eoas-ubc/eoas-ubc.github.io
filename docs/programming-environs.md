@@ -14,7 +14,7 @@
 
 ## Case Study
 
-You are a researcher recently assigned to a project studying permafrost. It is evident that it is necessary to write some code to process some field data; you volunteer, having just completed a course in python programming using jupyter notebooks in the cloud. You downloaded your own python distribution on your machine with jupyter notebooks ([insert link to another tutorial]()) and are ready to get started with your project.
+You are a researcher recently assigned to a project studying permafrost. It is evident that it is necessary to write some code to process some field data; you volunteer, having just completed a course in python programming using jupyter notebooks in the cloud. You downloaded your own python distribution on your machine with jupyter notebooks (*insert link to another tutorial*) and are ready to get started with your project.
 
 ### I. Starting a Project
 
