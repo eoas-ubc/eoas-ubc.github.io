@@ -33,6 +33,6 @@ These **feedback questions** were posed to students as the last step in their as
 * Were you surprised by anytyhing you observed?
 * What is one question you have that was inspired by this activity?
 
-Processing the results to generate a summary was non-trivial as questions were open ended.
+Open ended responses were analyzed to find commonalities and to identify particularly thoughtful or information statements from students. 
 
-Results from student feedback about the IPCC Climate Atlas activity are summarized in a [**separate PDF file**](https://github.com/eoas-ubc/eoas-ubc.github.io/blob/docs/pdffiles/Data_Science_Report_Sept2019.pdf).
+Results from student feedback about the IPCC Climate Atlas activity are summarized in a [**separate PDF file**](https://github.com/eoas-ubc/eoas-ubc.github.io/blob/docs/pdffiles/ClimateAtlas-reflections-summary.pdf).

@@ -31,19 +31,20 @@
 
 ## Pedagogy
 
-### a) Necessary instructor skills
+### a) Necessary instructor and TA skills
 
-### b) Necessary teaching assistant capabilities
+* Maintain the text (Jupyter book).
+* Maintain Jupyter notebooks used for class, lab and homework.
+* Manage assignment update, delivery, collection, grading & feedback cycle.
+* Run labs and promote paired-programming.
 
-### c) Workflow for preparing and delivering lessons
+### b) Workflow for preparing and delivering lessons
 
-### d) Workflow for preparing and delivering labs
+### c) Workflow for preparing and delivering labs & assignments
 
-### e) Workflow for preparing and delivering assignments
+### d) Assessment tactics
 
-### f) Examination strategies
-
-* Question preparation
+* Question preparation including delivery to Canvas.
 * Question types
 * Grading: nbgrader used in Sept 2021. Will that be replaced by PrairieLearn?
 

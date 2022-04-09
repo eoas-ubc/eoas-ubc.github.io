@@ -28,21 +28,24 @@ These are open education resources (OER) unless indicated otherwise.
 
 ## Pedagogy
 
-### a) Necessary instructor skills
+### a) Necessary instructor and TA skills
 
-### b) Necessary teaching assistant capabilities
+* Maintain the text (Jupyter book).
+* Maintain Jupyter notebooks used for class, lab and homework.
+* Manage assignment update, delivery, collection, grading & feedback cycle.
+* Run labs.
 
-### c) Workflow for preparing and delivering lessons
+### b) Workflow for preparing and delivering lessons
 
-### d) Workflow for preparing and delivering labs
+### c) Workflow for preparing and delivering labs & assignments
 
-### e) Workflow for preparing and delivering assignments
+### d) Assessment tactics
 
-### f) Examination strategies
-
-* Question preparation
+* Question preparation including delivery to Canvas.
 * Question types
-* Grading
+* Grading: nbgrader, PrairieLearn or neither?
+
+$\color{red}{\text{To be completed.}}$
 
 ## Project evaluation
 

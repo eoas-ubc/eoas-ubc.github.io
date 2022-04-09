@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Index &#8212; OCESE Documenation</title>
+    <title>Third-party Open Education Resources &#8212; OCESE Documenation</title>
     
   <link href="_static/css/theme.css" rel="stylesheet" />
   <link href="_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
@@ -42,8 +42,16 @@
     <script src="_static/copybutton.js"></script>
     <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
-    <link rel="index" title="Index" href="#" />
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Third-party dashboards or other interactive resources" href="refs-otherapps.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
     
@@ -380,7 +388,7 @@
   References
  </span>
 </p>
-<ul class="nav bd-sidenav">
+<ul class="current nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="refs.html">
    Links &amp; pointers
@@ -391,8 +399,8 @@
    Third-party dashboards
   </a>
  </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="refs-oer.html">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
    Open Education Resources
   </a>
  </li>
@@ -429,6 +437,23 @@
             </button>
             
             
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="_sources/refs-oer.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
             <!-- Source interaction buttons -->
 
             <!-- Full screen (wrap in <a> to have style consistency -->
@@ -453,13 +478,52 @@
         
               <div>
                 
-
-<h1 id="index">Index</h1>
-
-<div class="genindex-jumpbox">
- 
+  <div class="section" id="third-party-open-education-resources">
+<h1>Third-party Open Education Resources<a class="headerlink" href="#third-party-open-education-resources" title="Permalink to this headline">¶</a></h1>
+<p><span style="color:red">Check and update from UBC’s <a class="reference external" href="https://oer.open.ubc.ca/">OER group</a></span></p>
+<p>This is a representative list (not exaustive) of Open Ed. Resources at UBC for math, physics, compsci, EOAS, etc.</p>
+<ol class="simple">
+<li><p>Listing of open resources used at UBC is in the <a class="reference external" href="https://open.ubc.ca/2021-open-ubc-snapshot/">2021 snapshot</a> of all UBC OERs. Its Appendix A is a sample of open and freely available resources used at UBC, listed by course, and with links to each item. SEE ALSO file “opened-UBC.xlsx” in QuEST folder “curriculum development”.</p></li>
+<li><p>UBC OER <a class="reference external" href="https://open.ubc.ca/projects/">examples</a> here, but some pointers are out of date. However a list of “useful” or “inspirational” resources would be worth while. An example is the EOAS Phyto’pedia - The <a class="reference external" href="https://www.eoas.ubc.ca/research/phytoplankton/">Phytoplankton Encyclopaedia Project</a>.
+3. Several collections from UBC-GIF are examples of open resources used in EOAS but which are not clearly visible.</p>
+<ol class="simple">
+<li><p>GPG – Geophysics for practicing geoscientists (applied geophysics “text”)</p></li>
+<li><p>gpgLabs – Jupyter Notebook (Python) based interactive apps for all applied geophysics methods &amp; concepts</p></li>
+<li><p>IAG – Inversion for applied geophysics, an interactive open text akin to GPG.</p></li>
+<li><p>Others at <a class="reference external" href="https://geosci.xyz/">https://geosci.xyz/</a> - EM geophysics, ToolKit, SimPeg, all with GitHub repos. (Ref Lindsey Heagy. )</p></li>
+</ol>
+</li>
+<li><p>Open source texts &amp; problem sets for calculus I, II, III, IV from Math, UBC: the <a class="reference external" href="https://personal.math.ubc.ca/~CLP/">CLP Calculus Textbooks</a>. Source code for all texts and problem sets are available on GitHub.</p></li>
+<li><p>The BC based “<a class="reference external" href="https://open.bccampus.ca/browse-our-collection/find-open-textbooks/?uuid=5ec5dd3f-2da1-4603-807d-035d6a5cf9f0&amp;contributor=&amp;keyword=&amp;subject=">Physical Geology</a>”, via BCcampus.</p></li>
+<li><p>Computer science’s UBC <a class="reference external" href="https://www.edx.org/micromasters/ubcx-software-development">edX Software Development Program Materials</a>.</p>
+<ol class="simple">
+<li><p>These represent a complete certificate-based program of 6 courses at edX which can be taken for a fee. The fee results in graded work and success yields a “certificate” approach to accreditation. However materials appear to be freely available.</p></li>
+<li><p>This deserves investigating – can/should EOAS be making use of these for teaching, or generating these for revenue or reputation?</p></li>
+<li><p>Physics uses a range of <a class="reference external" href="https://openstax.org/">OpenStax textbooks</a>.</p></li>
+</ol>
+</li>
+</ol>
 </div>
 
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
 
               </div>
               
@@ -470,6 +534,15 @@
 
 <div class='prev-next-bottom'>
     
+    <div id="prev">
+        <a class="left-prev" href="refs-otherapps.html" title="previous page">
+            <i class="prevnext-label fas fa-angle-left"></i>
+            <div class="prevnext-info">
+                <p class="prevnext-label">previous</p>
+                <p class="prevnext-title">Third-party dashboards or other interactive resources</p>
+            </div>
+        </a>
+    </div>
 
 </div>
         
