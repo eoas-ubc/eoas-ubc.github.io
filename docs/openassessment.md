@@ -14,6 +14,8 @@ Three questions to be addressed:
 To be discussed: several pathways or workflows that enable constructing questions, randomizing them, deploying, assessing results, automating grading, and adding feedback for students.
 
 1. Sending questions built offline to Canvas
+   1. Benjamin Chang's 2020-2021 work as a work-learn student on projects called md2canvas, 340quizzes and canvas-api ([BC's repo](https://github.com/bkchang-97/eoas-wl)).
+   2. 
 2. nbgrader
 3. PrairieLearn
 4. gradscope

@@ -82,3 +82,7 @@ parts:
 - caption: References
   chapters:
   - file: refs
+  - file: refs-otherapps
+    title: Third-party dashboards
+  - file: refs-oer
+    title: Open Education Resources

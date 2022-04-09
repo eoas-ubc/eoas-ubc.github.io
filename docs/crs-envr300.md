@@ -22,25 +22,60 @@ Introduce interactive dashboard apps to classroom and assignment activities to e
 
 ## Pedagogy
 
-### a) Necessary instructor skills
+### a) Necessary instructor and TA skills
 
-### b) Necessary teaching assistant capabilities
+* Maintain dashboards and accompanying resources.
+* Manage assignment update, delivery, collection, grading & feedback cycle.
 
-### c) Workflow for preparing and delivering lessons
+### b) Workflow for preparing and delivering lessons
 
-In January 2021 the CO_2 dashboard was used as a fully online, in-class group activity.
+In January 2021 the CO_2 dashboard was used as a fully online, in-class group activity. A Google Sheets document was used by groups to submit their work for whole-class discussion. Each group used one slide/page to answer 4 questions and post images captured from the work they've done using a preliminary version of the [Atmospheric CO2 dashboard app](dashboards.md). Here is an example of group work submission onto a single slide.
 
+```{image} images/envr300-grpwork-eg.png
+:alt: In-class work from one group.
+:width: 700 px
+:align: center
+```
+<br>
 
+### c) Workflow for preparing and delivering labs & assignments
 
-### d) Workflow for preparing and delivering assignments
+### d) Assessment tactics
 
-### e) Assessment strategies
+This was an in-class group activity with group work discussed as followup within the same class timeslot as work was done. Hence no "assessment" of student work.
 
 ## Project evaluation
 
 ### a) Questions, data, results
 
-<span style="color:red">Results need to be compiled</span>.
+Some simple survey questions were included in the activity - student responses are efficient to summarize. These are results from two dashboards; the **Atmospheric CO2** and the **timeseris-3signals** dashboard apps. 
+
+```{image} images/envr300-c02app-studentfeedback.png
+:alt: In-class work from one group.
+:width: 500 px
+:align: center
+```
+<br>
+
+The clear positive implication from this small data set is that students found these resources effective and efficient and they want more.
+
+**What was the impact of using this facility on your instructing practice?**
+
+>"_The Google Sheets approach with a slide for each group worked so well that I might use it for normal in-person class work once we're back in classrooms_". (This activity was was first piloted during COVID pandemic in the 3rd week of a fully online, zoom-based class.)
+
+**What did you like about learning with this facility?**
+
+> "_I liked how interactive it is and how we can see how things change when we choose different trends_".
+
+> "_I like that these activities allow me to visualize concepts covered in class._"
+
+> "_I like how interactive the dashboards were and how we were able to learn both individually and in a group simultaneously._"
+
+**Was there anything you disliked about the app?**
+
+> "_It would be helpful to fiddle with the activity individually first (so there's not a lot of silence in the breakout rooms) and then discuss answers with other group members._"
+
+> "_A little time could have been spent introducing the app and the issues (questions) being addressed during the activity._" 
 
 ### b) Costs, Risks, and Recommendations
 
