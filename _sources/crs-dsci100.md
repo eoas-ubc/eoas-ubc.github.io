@@ -14,12 +14,12 @@ and [ubcexplore](https://ubcexplorer.io/course/DSCI/100).
 
 Basically to generate a Python-based version of the course with an Earth, Ocean and Atmospheric sciences context for all exercises.
 
-* Convert all "R" teaching materials to Python
-* Convert all "R" classroom and homework exercises to Python
-* Adapt the existing course website to suit the Python and EOAS contexts.
-* Adapt existing "R"-based [nbgrader](https://github.com/jupyter/nbgrader) grading tactics to work with the Python exercises.
-* Adapt existing text book for the Python context.
-* Ensure there are stable, sustainable Jupyter Hub facilities at UBC for with reliable tech-support for instructors and teaching assistants.
+1. Convert all "R" classroom and homework exercises and materials to Python
+   * Adapt the existing course website to suit the Python and EOAS contexts.
+   * Adapt existing "R"-based [nbgrader](https://github.com/jupyter/nbgrader)grading tactics to work with the Python exercises.
+   * Adapt existing text book for the Python context.
+2. Establish Earth science context so one section addresses the same learning objectives but using settings that relate to Earth sciences.
+3. Ensure there are stable, sustainable Jupyter Hub facilities at UBC for with reliable tech-support for instructors and teaching assistants.
 
 ## Resources produced
 
@@ -28,10 +28,12 @@ These open education resources HAVE YET TO BE PRODUCED but are in progress as of
 * Python version of the textbook
 * Python versions of standard DSCI 100 class activities
 * Python versions of DSCI 100 assignments
-* (Eventually - Earth science versions of activities and assignments)
+* Earth science versions of activities and assignments
 * Python versions of questions for assessments.
 
 ## Pedagogy
+
+Anticipated to be essentially identical to the "R" version developed for the original version of the course.
 
 * Question preparation
 * Question types
@@ -39,10 +41,4 @@ These open education resources HAVE YET TO BE PRODUCED but are in progress as of
 
 ## Project evaluation
 
-### a) Questions, data, results
-
-<span style="color:red">Results need to be compiled</span>.
-
-### b) Costs, Risks, and Recommendations
-
-<span style="color:red">To be completed.</span>
+Essentially "success" at project goal #1 will be achieved once a section of the course is taught in Python, and success at goal #2 will be achieved once there is a section of the course taught with Earth science contexts for the sections.

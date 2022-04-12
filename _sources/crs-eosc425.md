@@ -22,6 +22,8 @@ These are open education resources (OER) unless indicated otherwise.
 
 ## Pedagogy
 
+PDF _eosc425-Anthropocene-App.pdf_ shows the 5-slide clicker question sequence that was used in class.
+
 <span style="color:red">To be completed.</span>
 
 ## Project evaluation
