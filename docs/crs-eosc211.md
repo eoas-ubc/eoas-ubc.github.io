@@ -14,7 +14,8 @@
 
 * Convert all MatLab teaching and learning materials to Python
 * Convert all MatLab classroom and homework exercises to Python
-* Implement the course website using Jupyter Books. Include weekly instructions and labs/assignments as Jupyter Notebooks. (See resources below).
+* Implement the course website using Jupyter Books. 
+* Include weekly instructions and labs/assignments as Jupyter Notebooks. (See resources below).
 * Implement automatic grading practices using the Jupyter Notebook plugin [nbgrader](https://github.com/jupyter/nbgrader).
 * Adapt open source materials to make a suitable text book for programming (and Python) beginners.
 * Establish stable, sustainable Jupyter Hub facilities at UBC for with reliable tech-support for instructors and teaching assistants.
@@ -25,7 +26,7 @@
 * [Text book](https://phaustin.github.io/Problem-Solving-with-Python/), mainly python programming for beginners. Adapted from [Problem Solving with Python-37](https://github.com/professorkazarinoff/Problem-Solving-with-Python-37-Edition) by Dr. Peter Kazarinof.
 * Jupyter Notebooks with Python code exercises and activities for classwork.
 * Getting-started instructions for students to install Python and Jupyter Notebooks on Windows or Mac laptops. This was done with 90 students in one  1.5-hour lecture session.
-* A [Jupyter Hub tutorial](jhub-tutorial.md) for EOSC211 students, but easily generalized. This also serves as the first introduction to coding with Python.
+* A [Jupyter Hub tutorial](tut-jhubs.md) for EOSC211 students, but easily generalized. This also serves as the first introduction to coding with Python.
 * Grading is accomplished using nbgrader.
 * Restricted **Canvas** site for delivery and submission of assignments, assignment data sets, and other course content.
 

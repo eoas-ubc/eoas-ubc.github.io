@@ -50,7 +50,8 @@ parts:
   chapters:
   - file: git-workflows
   - file: dashboards-howto  
-  - file: dashboards-deploy    
+  - file: dashboards-deploy
+    title: Dashboard deployment >>
     sections:
     - file: dashboards-local
       title: Deploying locally
@@ -69,15 +70,17 @@ parts:
   - file: troubleshooting
 - caption: Tutorials
   chapters:
-  - file: commandline
-  - file: conda_environs
-  - file: programming-environs
+  - file: tut-commandline
+  - file: tut-conda_environs
+  - file: tut-programming-environs
     title: Programming environments  
-  - file: git-intro
-  - file: jhub-tutorial
-  - file: teachwith-jnotebooks
+  - file: tut-git-intro
+  - file: tut-pullrequest
+    title: Pull Request Workflow
+  - file: tut-jhubs
+  - file: tut-teachwith-jnbs
     title: Teaching with Jupyter NBs
-  - file: teachwith-dashboards
+  - file: tut-teachwith-dashboards
     title: Teaching with dashboards
 - caption: References
   chapters:
@@ -86,3 +89,4 @@ parts:
     title: Third-party dashboards
   - file: refs-oer
     title: Open Education Resources
+  - file: fix-list  
