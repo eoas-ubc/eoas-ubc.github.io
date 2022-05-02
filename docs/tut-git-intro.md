@@ -10,7 +10,7 @@ All professional programmers carry out these steps, and most use Git to keep tra
 
 The instructions below will set up a *code repository* on your computer which backs up your work each time you make a change (*making commits*). Once you gain some familiarity with *committing* and *pushing* using Git, you will be ready to tackle the full *pull request workflow* (meant for collaborating on projects with larger groups).
 
-Installing Git software on your own computer can be done many ways. We recommend doing this **after** installing the Conda package management system using our instructions [eleswhere](conda_environs.md). A succinct sequence of steps can be found in P. Austin's [Numerical Methods course manual](https://phaustin.github.io/numeric/doc_notebooks/course_bootstrap/installing_jupytext.html).
+Installing Git software on your own computer can be done many ways. We recommend doing this **after** installing the Conda package management system using our instructions [eleswhere](tut-conda_environs.md). A succinct sequence of steps can be found in P. Austin's [Numerical Methods course manual](https://phaustin.github.io/numeric/doc_notebooks/course_bootstrap/installing_jupytext.html).
 
 ----
 
