@@ -8,7 +8,7 @@ This page outlines one approach to building [Jupyter books](https://jupyterbook.
 
 (The "normal approach" to displaying websites in your GitHub account works fine (see [https://pages.github.com/](https://pages.github.com/)) but requires finished HTML and related files. It does NOT work to simply generate a Jupyter book from your Markdown, then transfer the resulting HTML to your `username.github.io/` repo.)
 
-## Workflow involving a fork of the original
+## 1. Workflow involving a fork of the original
 
 First, the outline of steps. Details about installing JupyterBooks and `ghp-import` library are below.
 
@@ -60,9 +60,9 @@ In this project's documentation [repository](https://github.com/eoas-ubc/eoas-ub
 4. TO BYPASS YOUR OWN FORK COMPLETELY requires a rebase workflow, which I'm not yet comfortable with (Feb 8, 2022). However, the sequence listed [here](https://medium.com/@topspinj/how-to-git-rebase-into-a-forked-repo-c9f05e821c8a) seems to work. It does leave your own forked repository out of sync, but maybe that fork isn't really needed? To be discussed.  
 
 ---
-Here are some details about preparing to build Jupyter Books.
+## 2. Preparing to build Jupyter Books - details
 
-## 1 Installing Jupyter Book and ghp-import
+### i. Installing Jupyter Book and ghp-import
 
 Install via pip (details [here](https://jupyterbook.org/start/overview.html)):
 
@@ -84,16 +84,16 @@ Your working environment should include:
   - jupyter-book
 ```
 
-## 2. Files, folders, repositories and branches
+### ii. Files, folders, repositories and branches
 
 Put Markdown files for each page, and the `_config.yml` and `_toc.yml` files in a folder called `docs` under the repository's root. Put images in an `images` subfolder under `docs`. Put other files (like PDFs) in a folder under the root ("parallel" with the `docs` folder) and then move these by hand as a last step (see below). There should be `README.md` and `LICENSE` files. A `.gitignore` file is recommended to prevent all the HTML and related files being sent when you `push` to GitHub.
 
-## 3. Branches for editing and publishing
+### iii. Branches for editing and publishing
 
 - If the website is for an individual GitHub repository then follow directions on the [Publish your book online](https://jupyterbook.org/start/publish.html#publish-your-book-online-with-github-pages) page of Jupyter Book documentation.
 - If the website is for a GitHub "organization" (like this one - eoas-tlef), then push resulting website content to the `master` branch of the organizations GitHub repository. Content can be edited in a separate branch (eg. `docs`), or a separate repository if you prefer. More details below.
 
-## 4. Preparing content
+### iv. Preparing content
 
 **Individual pages** are written in individual Markdown files. Tables of contents are defined, "code" for including figures, math, references, and other features are described in documentation, first in the [Creat your first book](https://jupyterbook.org/start/your-first-book.html) tutorial, and in more detail under the [Topic Guides](https://jupyterbook.org/basics/organize.html) sections of that documentation.
 
@@ -120,7 +120,7 @@ Various alert box types can be included; details [here](https://jupyterbook.org/
 </div>
 
 
-## 5. JupyterBook Publishing Comments
+### v. JupyterBook Publishing Comments
 
 To publish to your GitHub repository for public viewing, follow instructions [here](https://jupyterbook.org/start/publish.html#publish-your-book-online-with-github-pages), the `ghp-import` utility should have been installed (above).
 
@@ -146,7 +146,7 @@ HOWEVER, to publish to an Organization's repository (such as `eoas-tlef`) the st
 
 6. Test results by pointing your browser to `username.github.io`. It may take a short time to update.
 
-## 6. Finally some basic references
+### vi. Finally some basic references
 
 - Jupyter Books documentation starts at [jupyterbook.org](https://jupyterbook.org/intro.html).
 - ghp-import documentation starts at [ghp-import](https://github.com/c-w/ghp-import).

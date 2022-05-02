@@ -1,6 +1,6 @@
 # GitHub and Git Workflows
 
-For an introduction to Git and version control, see the page [Git Intro](./git-intro.md). This page outlines four levels of workflow complexity:
+For an introduction to Git and version control, see the page [Git Intro](./tut-git-intro.md). This page outlines four levels of workflow complexity:
 1. Solo no branching workflow; the simplest use of GitHub as a repository for your own work only.
 2. Solo with branch and merge to manage your own development of features.
 3. Sharing but with no branching (not ideal).
@@ -25,7 +25,7 @@ The simplest use of GitHub as a repository for your own work only, with local ed
 
    However, normally work will be done on your local computer so the next step is to clone this repo to your local computer.
 
-5. If not already done, install Git version control system on your own computer. See the [git intro page](./git-intro.md).
+5. If not already done, install Git version control system on your own computer. See the [git intro page](./tut-git-intro.md).
 6. There are GUIs for all platforms, but it is "safer" to start using the command line, and move to a graphical user interface once you are able to work from the command line. 
 
 ---
@@ -106,5 +106,5 @@ Collaboration using a Fork from someone else's repository, develop in a branch, 
 
 ## Pointers & References
 
-See the end of the page [Git Intro](git-intro.md).
+See the end of the page [Git Intro](tut-git-intro.md).
 
