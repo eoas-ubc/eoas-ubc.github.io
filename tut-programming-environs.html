@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Teaching and learning with Dashboards &#8212; OCESE Documenation</title>
+    <title>A Guide for Programming Environments &#8212; OCESE Documentation</title>
     
   <link href="_static/css/theme.css" rel="stylesheet" />
   <link href="_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
@@ -51,8 +51,8 @@
     <script async="async" src="_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Links &amp; pointers" href="refs.html" />
-    <link rel="prev" title="Teaching and learning with Jupyter Notebooks" href="teachwith-jnotebooks.html" />
+    <link rel="next" title="Git Introduction" href="tut-git-intro.html" />
+    <link rel="prev" title="Conda &amp; environments" href="tut-conda_environs.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
     
@@ -74,7 +74,7 @@
       <img src="_static/logo-04smsm.png" class="logo" alt="logo">
       
       
-      <h1 class="site-logo" id="site-title">OCESE Documenation</h1>
+      <h1 class="site-logo" id="site-title">OCESE Documentation</h1>
       
     </a>
 </div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
@@ -286,7 +286,7 @@
  </li>
  <li class="toctree-l1 has-children">
   <a class="reference internal" href="dashboards-deploy.html">
-   Dashboard deployment
+   Dashboard deployment &gt;&gt;
   </a>
   <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
   <label for="toctree-checkbox-3">
@@ -349,37 +349,42 @@
 </p>
 <ul class="current nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference internal" href="commandline.html">
+  <a class="reference internal" href="tut-commandline.html">
    Command line &amp; Shells
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="conda_environs.html">
+  <a class="reference internal" href="tut-conda_environs.html">
    Conda &amp; environments
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="programming-environs.html">
-   Programming environments
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="git-intro.html">
-   Git Introduction
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="jhub-tutorial.html">
-   Jupyterhub Tutorial
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="teachwith-jnotebooks.html">
-   Teaching with Jupyter NBs
   </a>
  </li>
  <li class="toctree-l1 current active">
   <a class="current reference internal" href="#">
+   Programming environments
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="tut-git-intro.html">
+   Git Introduction
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="tut-pullrequest.html">
+   Pull Request Workflow
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="tut-jhubs.html">
+   Jupyterhub Tutorial
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="tut-teachwith-jnbs.html">
+   Teaching with Jupyter NBs
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="tut-teachwith-dashboards.html">
    Teaching with dashboards
   </a>
  </li>
@@ -403,6 +408,11 @@
  <li class="toctree-l1">
   <a class="reference internal" href="refs-oer.html">
    Open Education Resources
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="fix-list.html">
+   Fixes needed
   </a>
  </li>
 </ul>
@@ -446,7 +456,7 @@
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="_sources/teachwith-dashboards.md"><button type="button"
+        <a class="dropdown-buttons" href="_sources/tut-programming-environs.md"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
                 data-placement="left">.md</button></a>
         <!-- Download PDF via print -->
@@ -477,13 +487,40 @@
             <nav id="bd-toc-nav" aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#introduction">
-   Introduction
+  <a class="reference internal nav-link" href="#prior-assumptions">
+   Prior Assumptions
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#third-party-references">
-   Third party references
+  <a class="reference internal nav-link" href="#core-principles">
+   Core Principles
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#case-study">
+   Case Study
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#i-starting-a-project">
+     I. Starting a Project
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#ii-export-your-environment">
+     II. Export Your Environment
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#more-commands-to-manage-environments">
+   More Commands to Manage Environments
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#helpful-tips">
+   Helpful Tips
   </a>
  </li>
 </ul>
@@ -497,19 +534,134 @@
         
               <div>
                 
-  <div class="section" id="teaching-and-learning-with-dashboards">
-<h1>Teaching and learning with Dashboards<a class="headerlink" href="#teaching-and-learning-with-dashboards" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="introduction">
-<h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h2>
-<p>This page summarizes ways that dashboards have been introduced to EOAS faculty and students for teaching and learning purposes. Design and deployment guidelines are provided on separate pages.</p>
-</div>
-<div class="section" id="third-party-references">
-<h2>Third party references<a class="headerlink" href="#third-party-references" title="Permalink to this headline">¶</a></h2>
+  <div class="section" id="a-guide-for-programming-environments">
+<h1>A Guide for Programming Environments<a class="headerlink" href="#a-guide-for-programming-environments" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="prior-assumptions">
+<h2>Prior Assumptions<a class="headerlink" href="#prior-assumptions" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li><p>How guidance affects student engagement with an interactive simulation, J. M. Chamberlain, K. Lancaster, R. Parson, &amp; K. K. Perkins. Chemistry Education Research and Practice. 15 p. 628-638, 2014.</p></li>
-<li><p>Tools for high-tech tool use: A framework and heuristics for using interactive simulations, Rehn, D. A., Moore, E. B., Podolefsky, N. S., &amp; Finkelstein, N., JoTLT. 2(1), p. 31-55, 2013.</p></li>
-<li><p>Teaching Physics using PhET Simulations, C. Wieman, W. Adams, P. Loeblein, and K. Perkins, The Physics Teacher, 2010.</p></li>
-<li><p>Many scholarly references at <a class="reference external" href="https://phet.colorado.edu/en/research">https://phet.colorado.edu/en/research</a>.</p></li>
+<li><p>you are using a conda distribution of Python (mine is miniconda 3.9 for reference)</p></li>
+<li><p>you are moderately comfortable managing files with a shell (im using powershell)</p></li>
+</ul>
+</div>
+<div class="section" id="core-principles">
+<h2>Core Principles<a class="headerlink" href="#core-principles" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>keep things as simple as possible but not simpler; your code will run faster and be less confusing to debug</p></li>
+<li><p>make your project/dependencies exactly reproducible, so any machine can run your code with the same results</p></li>
+</ul>
+</div>
+<div class="section" id="case-study">
+<h2>Case Study<a class="headerlink" href="#case-study" title="Permalink to this headline">¶</a></h2>
+<p>You are a researcher recently assigned to a project studying permafrost. It is evident that it is necessary to write some code to process some field data; you volunteer, having just completed a course in python programming using jupyter notebooks in the cloud. You downloaded your own python distribution on your machine with jupyter notebooks (<em>insert link to another tutorial</em>) and are ready to get started with your project.</p>
+<div class="section" id="i-starting-a-project">
+<h3>I. Starting a Project<a class="headerlink" href="#i-starting-a-project" title="Permalink to this headline">¶</a></h3>
+<ol>
+<li><p>Create a project folder</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ mkdir permafrost_proj
+</pre></div>
+</div>
+</li>
+<li><p>activate your base environment (probably already active by default)</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ conda activate base
+</pre></div>
+</div>
+</li>
+<li><p>Create a new environment for your project that will inherit all the dependencies installed in <code class="docutils literal notranslate"><span class="pre">base</span></code>.</p>
+<ul class="simple">
+<li><p>Notes: the <code class="docutils literal notranslate"><span class="pre">-n</span></code> is a tag meaning “name”. Call your environment something sensible and not too long to type</p></li>
+</ul>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ conda create -n permafrost
+</pre></div>
+</div>
+</li>
+<li><p>Activate your new environment</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ conda activate permafrost
+</pre></div>
+</div>
+</li>
+<li><p>install <code class="docutils literal notranslate"><span class="pre">jupyter</span></code> in your new environment</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ conda install jupyter
+</pre></div>
+</div>
+</li>
+<li><p>Open a notebook and do some data processing</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ jupyter notebook
+</pre></div>
+</div>
+</li>
+<li><p>Soon, you will run into an error like this when you try to import a package from inside the notebook:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="o">---------------------------------------------------------------------------</span>
+<span class="ne">ModuleNotFoundError</span>                       <span class="n">Traceback</span> <span class="p">(</span><span class="n">most</span> <span class="n">recent</span> <span class="n">call</span> <span class="n">last</span><span class="p">)</span>
+<span class="o">&lt;</span><span class="n">ipython</span><span class="o">-</span><span class="nb">input</span><span class="o">-</span><span class="mi">1</span><span class="o">-</span><span class="mi">0</span><span class="n">aa0b027fcb6</span><span class="o">&gt;</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="o">----&gt;</span> <span class="mi">1</span> <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+<span class="ne">ModuleNotFoundError</span><span class="p">:</span> <span class="n">No</span> <span class="n">module</span> <span class="n">named</span> <span class="s1">&#39;numpy&#39;</span>
+</pre></div>
+</div>
+<p>To resolve it, open another shell (dont use the one that is busy running your notebook) and do:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ conda install numpy
+</pre></div>
+</div>
+<p>Or replace <code class="docutils literal notranslate"><span class="pre">numpy</span></code> with whichever package is missing. Repeat for new packages as you need them. They will be permanently added to your environment so you only have to do this once.</p>
+</li>
+</ol>
+</div>
+<div class="section" id="ii-export-your-environment">
+<h3>II. Export Your Environment<a class="headerlink" href="#ii-export-your-environment" title="Permalink to this headline">¶</a></h3>
+<p>Now we want to save the environment with the rest of the project files/code. This is a good idea if you want to i) access your project from multiple computers ii) use version control software like <code class="docutils literal notranslate"><span class="pre">git</span></code> iii) send your code to someone for debugging help (they will need your environment to replicate your bug)</p>
+<ol>
+<li><p>Make sure you are in your project directory</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ cd permafrost_proj
+</pre></div>
+</div>
+</li>
+<li><p>Export your environment</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ conda env export &gt; environment.yml
+
+</pre></div>
+</div>
+</li>
+<li><p>Your project folder should now look something like:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">project_abstract</span><span class="o">.</span><span class="n">docx</span>
+<span class="n">data_processing</span><span class="o">.</span><span class="n">ipynb</span>
+<span class="n">make_plots</span><span class="o">.</span><span class="n">ipynb</span>
+<span class="n">environment</span><span class="o">.</span><span class="n">yml</span>
+</pre></div>
+</div>
+</li>
+<li><p>Save/back up your project folder somewhere. To re-create your environment/project on another machine, download the folder and do:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ cd permafrost_proj
+$ conda env create environment.yml
+$ conda activate permafrost
+</pre></div>
+</div>
+<p>Now you can continue working, knowing your code will perform exactly the same as on your original machine.</p>
+</li>
+</ol>
+</div>
+</div>
+<div class="section" id="more-commands-to-manage-environments">
+<h2>More Commands to Manage Environments<a class="headerlink" href="#more-commands-to-manage-environments" title="Permalink to this headline">¶</a></h2>
+<p>List all available environments</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ conda env list
+</pre></div>
+</div>
+<p>List all dependencies in the active environment</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ conda list
+</pre></div>
+</div>
+<p>Remove an environment (be careful)</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ conda env remove -n permafrost
+</pre></div>
+</div>
+</div>
+<div class="section" id="helpful-tips">
+<h2>Helpful Tips<a class="headerlink" href="#helpful-tips" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Make a new environment for every “project,” whatever that means to you… I usually create one per course or research topic, sometimes start a fresh one for a complicated sub-project</p></li>
+<li><p>Don’t install anything on your <code class="docutils literal notranslate"><span class="pre">base</span></code> environment, and dont actually do any work from base (if you leave base totally clean, most code will immediately break and remind you to activate the proper environment for your project)</p></li>
+<li><p>Avoid using pip wherever possible (for this workflow). Pip and Conda don’t always play nicely together and this can create conflicts.</p></li>
+<li><p>Only download one python distribtion on your machine, unless you really know what you’re doing and have a good reason for wanting another one.</p></li>
 </ul>
 </div>
 </div>
@@ -544,19 +696,19 @@
 <div class='prev-next-bottom'>
     
     <div id="prev">
-        <a class="left-prev" href="teachwith-jnotebooks.html" title="previous page">
+        <a class="left-prev" href="tut-conda_environs.html" title="previous page">
             <i class="prevnext-label fas fa-angle-left"></i>
             <div class="prevnext-info">
                 <p class="prevnext-label">previous</p>
-                <p class="prevnext-title">Teaching and learning with Jupyter Notebooks</p>
+                <p class="prevnext-title">Conda &amp; environments</p>
             </div>
         </a>
     </div>
      <div id="next">
-        <a class="right-next" href="refs.html" title="next page">
+        <a class="right-next" href="tut-git-intro.html" title="next page">
             <div class="prevnext-info">
                 <p class="prevnext-label">next</p>
-                <p class="prevnext-title">Links &amp; pointers</p>
+                <p class="prevnext-title">Git Introduction</p>
             </div>
             <i class="prevnext-label fas fa-angle-right"></i>
         </a>

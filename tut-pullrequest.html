@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Conda &amp; environments &#8212; OCESE Documenation</title>
+    <title>A Pull Request Workflow tutorial &#8212; OCESE Documentation</title>
     
   <link href="_static/css/theme.css" rel="stylesheet" />
   <link href="_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
@@ -51,8 +51,8 @@
     <script async="async" src="_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="A Guide for Programming Environments" href="programming-environs.html" />
-    <link rel="prev" title="Command line &amp; Shells" href="commandline.html" />
+    <link rel="next" title="Jupyterhub Tutorial" href="tut-jhubs.html" />
+    <link rel="prev" title="Git Introduction" href="tut-git-intro.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
     
@@ -74,7 +74,7 @@
       <img src="_static/logo-04smsm.png" class="logo" alt="logo">
       
       
-      <h1 class="site-logo" id="site-title">OCESE Documenation</h1>
+      <h1 class="site-logo" id="site-title">OCESE Documentation</h1>
       
     </a>
 </div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
@@ -286,7 +286,7 @@
  </li>
  <li class="toctree-l1 has-children">
   <a class="reference internal" href="dashboards-deploy.html">
-   Dashboard deployment
+   Dashboard deployment &gt;&gt;
   </a>
   <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
   <label for="toctree-checkbox-3">
@@ -349,37 +349,42 @@
 </p>
 <ul class="current nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference internal" href="commandline.html">
+  <a class="reference internal" href="tut-commandline.html">
    Command line &amp; Shells
   </a>
  </li>
- <li class="toctree-l1 current active">
-  <a class="current reference internal" href="#">
+ <li class="toctree-l1">
+  <a class="reference internal" href="tut-conda_environs.html">
    Conda &amp; environments
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="programming-environs.html">
+  <a class="reference internal" href="tut-programming-environs.html">
    Programming environments
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="git-intro.html">
+  <a class="reference internal" href="tut-git-intro.html">
    Git Introduction
   </a>
  </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Pull Request Workflow
+  </a>
+ </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="jhub-tutorial.html">
+  <a class="reference internal" href="tut-jhubs.html">
    Jupyterhub Tutorial
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="teachwith-jnotebooks.html">
+  <a class="reference internal" href="tut-teachwith-jnbs.html">
    Teaching with Jupyter NBs
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="teachwith-dashboards.html">
+  <a class="reference internal" href="tut-teachwith-dashboards.html">
    Teaching with dashboards
   </a>
  </li>
@@ -403,6 +408,11 @@
  <li class="toctree-l1">
   <a class="reference internal" href="refs-oer.html">
    Open Education Resources
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="fix-list.html">
+   Fixes needed
   </a>
  </li>
 </ul>
@@ -446,7 +456,7 @@
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="_sources/conda_environs.md"><button type="button"
+        <a class="dropdown-buttons" href="_sources/tut-pullrequest.md"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
                 data-placement="left">.md</button></a>
         <!-- Download PDF via print -->
@@ -477,42 +487,71 @@
             <nav id="bd-toc-nav" aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#what-are-environments-and-why-do-we-need-them">
-   What are environments and why do we need them?
+  <a class="reference internal nav-link" href="#creating-a-fork">
+   Creating a Fork
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#pip-vs-conda">
-   Pip vs Conda
+  <a class="reference internal nav-link" href="#keeping-your-fork-up-to-date">
+   Keeping Your Fork Up to Date
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#doing-your-work">
+   Doing Your Work
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#pip-comes-built-in-to-python">
-     Pip (comes built-in to Python)
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#conda">
-     Conda
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#installing-conda">
-     Installing Conda
+    <a class="reference internal nav-link" href="#create-a-branch">
+     Create a Branch
     </a>
    </li>
   </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#specifying-the-environment-the-yml-file">
-   Specifying the environment: the
-   <code class="docutils literal notranslate">
-    <span class="pre">
-     *.yml
-    </span>
-   </code>
-   file
+  <a class="reference internal nav-link" href="#submitting-a-pull-request">
+   Submitting a Pull Request
   </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#cleaning-up-your-work">
+     Cleaning Up Your Work
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#submitting">
+     Submitting
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#managing-upstream-repos-accepting-merging-pull-requests">
+   Managing upstream repos: accepting / merging pull requests
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#copyright">
+     <strong>
+      Copyright
+     </strong>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#additional-reading">
+     <strong>
+      Additional Reading
+     </strong>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#sources">
+     <strong>
+      Sources
+     </strong>
+    </a>
+   </li>
+  </ul>
  </li>
 </ul>
 
@@ -525,69 +564,123 @@
         
               <div>
                 
-  <div class="section" id="conda-environments">
-<h1>Conda &amp; environments<a class="headerlink" href="#conda-environments" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="what-are-environments-and-why-do-we-need-them">
-<h2>What are environments and why do we need them?<a class="headerlink" href="#what-are-environments-and-why-do-we-need-them" title="Permalink to this headline">¶</a></h2>
-<p>Scientific programming / data science profits greatly from the vast array of Python libraries. This complexity (or “the deep tree of dependencies”) requires management. Virtual environments, of which conda environments are one implementation, make this possible. In other words, (Conda) environments enable the easy definition of a complete software environment to run a certain project or application.</p>
-<p>In practice, we use “environments” to keep software development and applications reproducible and usable across platforms and between different engineering and client teams. Environments (i.e. environment specifications) define all the pieces or packages that are needed for a program or set of programs to function properly.</p>
-<p>(Adapted from a <a class="reference external" href="https://vxuni.com/lectures/conda-environments/">short video lecture</a>. Also, <a class="reference external" href="https://protostar.space/why-you-need-python-environments-and-how-to-manage-them-with-conda">here</a> is an easy-to-read reference about “why” environments.)</p>
-</div>
-<div class="section" id="pip-vs-conda">
-<h2>Pip vs Conda<a class="headerlink" href="#pip-vs-conda" title="Permalink to this headline">¶</a></h2>
-<p>Adapted from a short article at <a class="reference external" href="https://medium.com/analytics-vidhya/understand-conda-and-pip-9e5c67da47cc">Medium</a>.</p>
-<div class="section" id="pip-comes-built-in-to-python">
-<h3>Pip (comes built-in to Python)<a class="headerlink" href="#pip-comes-built-in-to-python" title="Permalink to this headline">¶</a></h3>
-<p>Pip is the Python Packaging Authority’s recommended tool for installing packages from the Python Package Index (PyPI). Pip installs packages like numpy, pandas, matplotlib etc. , along with their dependencies.</p>
-</div>
-<div class="section" id="conda">
-<h3>Conda<a class="headerlink" href="#conda" title="Permalink to this headline">¶</a></h3>
-<p>Conda is an open source package management system and environment management system. It quickly installs, runs and updates packages and their dependencies. It was created for Python programs, but it can package and distribute software for any language. The Conda package and environment manager is included in all versions of Anaconda, Miniconda, and Anaconda Repository.</p>
-<p><a class="reference external" href="https://conda.io/projects/conda/en/latest/user-guide/getting-started.html">The Getting Started</a> page for Conda is great, however it is not necessarily a good first step. It assumes you are clear about what an environment is - why it exists, what is needed to manage it.</p>
-<ul class="simple">
-<li><p><a class="reference external" href="https://docs.conda.io/projects/conda/en/4.6.1/index.html">Conda documentation</a> version 4.6.1 (Oct 2020).</p></li>
-<li><p><a class="reference external" href="https://docs.conda.io/projects/conda/en/4.6.0/_downloads/52a95608c49671267e40c689e0bc00ca/conda-cheatsheet.pdf">Conda Cheat sheet</a> (PDF).</p></li>
-</ul>
-</div>
-<div class="section" id="installing-conda">
-<h3>Installing Conda<a class="headerlink" href="#installing-conda" title="Permalink to this headline">¶</a></h3>
-<ul class="simple">
-<li><p>Anaconda is large and very “complete”. Miniconda is small and usually adequate.</p>
-<ul>
-<li><p>Install <a class="reference external" href="https://docs.conda.io/projects/conda/en/latest/user-guide/install/index.html">miniconda via conda installation docs</a>.</p></li>
-<li><p>Alsterantive installation instructions from P. Austin’s <a class="reference external" href="https://phaustin.github.io/numeric/doc_notebooks/course_bootstrap/installing_jupytext.html">Numerical methods course</a>.</p></li>
-</ul>
-</li>
-<li><p>For the environment, a reasonable starting point is <code class="docutils literal notranslate"><span class="pre">numeric.yml</span></code> from P. Austin’s course.</p>
-<ul>
-<li><p>Here is a <a class="reference external" href="https://github.com/phaustin/numeric_students/blob/downloads/utils/numeric.yml">direct link to the yml file</a>.</p></li>
-<li><p>Put it somewhere (eg. A repos folder), cd to that folder then run:</p></li>
-</ul>
-</li>
-</ul>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>    conda env create -f numeric.yml
-    conda activate numeric
+  <div class="section" id="a-pull-request-workflow-tutorial">
+<h1>A Pull Request Workflow tutorial<a class="headerlink" href="#a-pull-request-workflow-tutorial" title="Permalink to this headline">¶</a></h1>
+<p>Knowing how to properly fork and generate pull requests is essential for working on open source projects or collaborating with peers. Unfortunately, it is easy to make mistakes or not know what you should do when you’re initially learning the process.</p>
+<p>This short tutorial, adapted from Chase Pettit’s <a class="reference external" href="https://gist.github.com/Chaser324/ce0505fbed06b947d962">original</a>, covers a fairly standard procedure for creating a fork, doing your work locally, and issuing a pull request. The workflow assumes you are NOT the “owner” of the original repository, although how the owner will accept and merge a pull request is discussed last.</p>
+<p>Some questions we would eventually like addressed in this document:</p>
+<ol class="simple">
+<li><p>Why we don’t recommend that you use the default git pull</p></li>
+<li><p>If we don’t recommend you use it, why is it the default?</p></li>
+<li><p>What should you do instead?</p></li>
+<li><p>What problems does that avoid?</p></li>
+</ol>
+<div class="section" id="creating-a-fork">
+<h2>Creating a Fork<a class="headerlink" href="#creating-a-fork" title="Permalink to this headline">¶</a></h2>
+<p>Just head over to the GitHub page and click the “Fork” button. It’s just that simple. Once you’ve done that, you can use your favorite git client to clone your repo or just head straight to the command line:</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span><span class="c1"># Clone your fork to your local machine</span>
+git clone git@github.com:USERNAME/FORKED-PROJECT.git
 </pre></div>
 </div>
-<p>Verify successful installation by typeing <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">info</span></code> at the prompt.</p>
 </div>
-</div>
-<div class="section" id="specifying-the-environment-the-yml-file">
-<h2>Specifying the environment: the <code class="docutils literal notranslate"><span class="pre">*.yml</span></code> file<a class="headerlink" href="#specifying-the-environment-the-yml-file" title="Permalink to this headline">¶</a></h2>
-<p>From a <a class="reference external" href="https://vxuni.com/lectures/conda-environments/">short set of notes</a> with accompanying video (which is a bit “quick”, but is cmd line focused and explains where environments are built).</p>
-<ul class="simple">
-<li><p>Usually, a file called environment.yml is built by hand to specify packages needed for an environment.</p></li>
-<li><p>Alternatively, command “conda env export” will build a list with precise packages and their versions. This is very exact.</p></li>
-<li><p>If there is an environment.yml  file in your pwd <em><span style="color:green">I found the “in your pwd” a bit confusing since pwd is a command, but I understand that’s it’s trying to check if there’s an environment.yml file in the project directory. Maybe it would be more clear to replace “pwd” with “directory” or “project”?</span></em>, then command <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">create</span></code> generates that environment <em><span style="color:green">I also had troubles understanding this because I interpreted it as being able to create a conda environment just be typing <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">create</span></code> by itself if there was an conda environment file called environment.yml in your project. However, typing <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">create</span></code> with an environment.yml file in the current directory returns a <code class="docutils literal notranslate"><span class="pre">CondaValueError:</span> <span class="pre">The</span> <span class="pre">target</span> <span class="pre">prefix</span> <span class="pre">is</span> <span class="pre">the</span> <span class="pre">base</span> <span class="pre">prefix.</span> <span class="pre">Aborting.</span></code> error</span></em>.</p>
-<ul>
-<li><p>The .yml file could have a different name, in which case these commands must specify that name using the <code class="docutils literal notranslate"><span class="pre">-f</span></code> parameter for “file”. i.e.: <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">env</span> <span class="pre">create</span> <span class="pre">-f</span> <span class="pre">envname.yml</span></code>.</p></li>
-</ul>
-</li>
-<li><p>After it is ready, <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">activate</span></code> will set the environment ready to use (or add the “name.yml” file’s name if it is not environment.yml). <em><span style="color:green">For me, <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">activate</span></code> only activates the base conda environment that was initialized when miniconda was installed for me. To activate the environment, I do one of three things. (1) I use the command specified in the installation log in the shell window from when conda was creating the environment. (2) Open the environment file, I find the environment name by looking for the the “name” key in the file. (3) Type <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">info</span> <span class="pre">--envs</span></code> in my shell to list out all my conda environments.</span></em></p></li>
-<li><p>Alterantive to create: use <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">env</span> <span class="pre">update</span></code>. This automatically updates the environment specified in that file if one already exists, or creates it if it doesn’t. <em><span style="color:green">Precondition for this command is that the environment file name is “environment.yml”. If the environment file name isn’t “environment.yml”, use `conda env update –file envname.yml.</span></em></p></li>
-</ul>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>
+<div class="section" id="keeping-your-fork-up-to-date">
+<h2>Keeping Your Fork Up to Date<a class="headerlink" href="#keeping-your-fork-up-to-date" title="Permalink to this headline">¶</a></h2>
+<p>Make sure you keep your fork up to date by tracking the original “upstream” repo that you forked. To do this, you’ll need to add a remote:</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span><span class="c1"># Add &#39;upstream&#39; repo to list of remotes</span>
+git remote add upstream https://github.com/UPSTREAM-USER/ORIGINAL-PROJECT.git
+
+<span class="c1"># Verify the new remote named &#39;upstream&#39;</span>
+git remote -v
 </pre></div>
+</div>
+<p>Whenever you want to update your fork with the latest upstream changes, you’ll need to first fetch the upstream repo’s branches and latest commits to bring them into your repository:</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span><span class="c1"># Fetch from upstream remote</span>
+git fetch upstream
+
+<span class="c1"># View all branches, including those from upstream</span>
+git branch -va
+</pre></div>
+</div>
+<p>Now, checkout your own master branch and merge the upstream repo’s master branch:</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span><span class="c1"># Checkout your master branch and merge upstream</span>
+git checkout master
+git merge upstream/master
+</pre></div>
+</div>
+<p>If there are no unique commits on the local master branch, git will simply perform a fast-forward. However, if you have been making changes on master (in the vast majority of cases you probably shouldn’t be - <a class="reference external" href="#doing-your-work">see the next section</a>, you may have to deal with conflicts. When doing so, be careful to respect the changes made upstream.</p>
+<p>Now, your local master branch is up-to-date with everything modified upstream.</p>
+</div>
+<div class="section" id="doing-your-work">
+<h2>Doing Your Work<a class="headerlink" href="#doing-your-work" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="create-a-branch">
+<h3>Create a Branch<a class="headerlink" href="#create-a-branch" title="Permalink to this headline">¶</a></h3>
+<p>Whenever you begin work on a new feature or bugfix, it’s important that you create a new branch. Not only is it proper git workflow, but it also keeps your changes organized and separated from the master branch so that you can easily submit and manage multiple pull requests for every task you complete.</p>
+<p>To create a new branch and start working on it:</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span><span class="c1"># Checkout the master branch - you want your new branch to come from master</span>
+git checkout master
+
+<span class="c1"># Create a new branch named newfeature (give your branch its own simple informative name)</span>
+git branch newfeature
+
+<span class="c1"># Switch to your new branch</span>
+git checkout newfeature
+</pre></div>
+</div>
+<p>Now, go to town hacking away and making whatever changes you want to.</p>
+</div>
+</div>
+<div class="section" id="submitting-a-pull-request">
+<h2>Submitting a Pull Request<a class="headerlink" href="#submitting-a-pull-request" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="cleaning-up-your-work">
+<h3>Cleaning Up Your Work<a class="headerlink" href="#cleaning-up-your-work" title="Permalink to this headline">¶</a></h3>
+<p>Prior to submitting your pull request, you might want to do a few things to clean up your branch and make it as simple as possible for the original repo’s maintainer to test, accept, and merge your work.</p>
+<p>If any commits have been made to the upstream master branch, you should rebase your development branch so that merging it will be a simple fast-forward that won’t require any conflict resolution work.</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span><span class="c1"># Fetch upstream master and merge with your repo&#39;s master branch</span>
+git fetch upstream
+git checkout master
+git merge upstream/master
+
+<span class="c1"># If there were any new commits, rebase your development branch</span>
+git checkout newfeature
+git rebase master
+</pre></div>
+</div>
+<p>Now, it may be desirable to squash some of your smaller commits down into a small number of larger more cohesive commits. You can do this with an interactive rebase:</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span><span class="c1"># Rebase all commits on your development branch</span>
+git checkout 
+git rebase -i master
+</pre></div>
+</div>
+<p>This will open up a text editor where you can specify which commits to squash.</p>
+</div>
+<div class="section" id="submitting">
+<h3>Submitting<a class="headerlink" href="#submitting" title="Permalink to this headline">¶</a></h3>
+<p>Once you’ve committed and pushed all of your changes to GitHub, go to the page for your fork on GitHub, select your development branch, and click the pull request button. If you need to make any adjustments to your pull request, just push the updates to GitHub. Your pull request will automatically track the changes on your development branch and update.</p>
+</div>
+</div>
+<div class="section" id="managing-upstream-repos-accepting-merging-pull-requests">
+<h2>Managing upstream repos: accepting / merging pull requests<a class="headerlink" href="#managing-upstream-repos-accepting-merging-pull-requests" title="Permalink to this headline">¶</a></h2>
+<p><strong>Note that</strong> sections above were written from the perspective of someone that created a fork and generated a pull request. This section is written from the perspective of the <strong>original</strong> repository owner who handles incoming pull requests.</p>
+<p>Thus, where the “forker” was referring to the original repository as <code class="docutils literal notranslate"><span class="pre">upstream</span></code>, we’re now looking at it as the owner of that original repository and the standard <code class="docutils literal notranslate"><span class="pre">origin</span></code> remote.</p>
+<p>If you are interested in details please see Chase Pettit’s <a class="reference external" href="https://gist.github.com/Chaser324/ce0505fbed06b947d962">original</a> tutorial.</p>
+<div class="section" id="copyright">
+<h3><strong>Copyright</strong><a class="headerlink" href="#copyright" title="Permalink to this headline">¶</a></h3>
+<p>Copyright 2017, Chase Pettit</p>
+<p>MIT License, <a class="reference external" href="http://www.opensource.org/licenses/mit-license.php">http://www.opensource.org/licenses/mit-license.php</a></p>
+</div>
+<div class="section" id="additional-reading">
+<h3><strong>Additional Reading</strong><a class="headerlink" href="#additional-reading" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><a class="reference external" href="https://www.atlassian.com/git/tutorials/merging-vs-rebasing">Atlassian - Merging vs. Rebasing</a></p></li>
+</ul>
+</div>
+<div class="section" id="sources">
+<h3><strong>Sources</strong><a class="headerlink" href="#sources" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><a class="reference external" href="https://help.github.com/articles/fork-a-repo">GitHub - Fork a Repo</a></p></li>
+<li><p><a class="reference external" href="https://help.github.com/articles/syncing-a-fork">GitHub - Syncing a Fork</a></p></li>
+<li><p><a class="reference external" href="https://help.github.com/articles/checking-out-pull-requests-locally">GitHub - Checking Out a Pull Request</a></p></li>
+</ul>
 </div>
 </div>
 </div>
@@ -622,19 +715,19 @@
 <div class='prev-next-bottom'>
     
     <div id="prev">
-        <a class="left-prev" href="commandline.html" title="previous page">
+        <a class="left-prev" href="tut-git-intro.html" title="previous page">
             <i class="prevnext-label fas fa-angle-left"></i>
             <div class="prevnext-info">
                 <p class="prevnext-label">previous</p>
-                <p class="prevnext-title">Command line &amp; Shells</p>
+                <p class="prevnext-title">Git Introduction</p>
             </div>
         </a>
     </div>
      <div id="next">
-        <a class="right-next" href="programming-environs.html" title="next page">
+        <a class="right-next" href="tut-jhubs.html" title="next page">
             <div class="prevnext-info">
                 <p class="prevnext-label">next</p>
-                <p class="prevnext-title">A Guide for Programming Environments</p>
+                <p class="prevnext-title">Jupyterhub Tutorial</p>
             </div>
             <i class="prevnext-label fas fa-angle-right"></i>
         </a>

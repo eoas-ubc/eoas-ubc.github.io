@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Git Introduction &#8212; OCESE Documenation</title>
+    <title>Git Introduction &#8212; OCESE Documentation</title>
     
   <link href="_static/css/theme.css" rel="stylesheet" />
   <link href="_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
@@ -51,8 +51,8 @@
     <script async="async" src="_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Jupyterhub Tutorial" href="jhub-tutorial.html" />
-    <link rel="prev" title="A Guide for Programming Environments" href="programming-environs.html" />
+    <link rel="next" title="A Pull Request Workflow tutorial" href="tut-pullrequest.html" />
+    <link rel="prev" title="A Guide for Programming Environments" href="tut-programming-environs.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
     
@@ -74,7 +74,7 @@
       <img src="_static/logo-04smsm.png" class="logo" alt="logo">
       
       
-      <h1 class="site-logo" id="site-title">OCESE Documenation</h1>
+      <h1 class="site-logo" id="site-title">OCESE Documentation</h1>
       
     </a>
 </div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
@@ -286,7 +286,7 @@
  </li>
  <li class="toctree-l1 has-children">
   <a class="reference internal" href="dashboards-deploy.html">
-   Dashboard deployment
+   Dashboard deployment &gt;&gt;
   </a>
   <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
   <label for="toctree-checkbox-3">
@@ -349,17 +349,17 @@
 </p>
 <ul class="current nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference internal" href="commandline.html">
+  <a class="reference internal" href="tut-commandline.html">
    Command line &amp; Shells
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="conda_environs.html">
+  <a class="reference internal" href="tut-conda_environs.html">
    Conda &amp; environments
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="programming-environs.html">
+  <a class="reference internal" href="tut-programming-environs.html">
    Programming environments
   </a>
  </li>
@@ -369,17 +369,22 @@
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="jhub-tutorial.html">
+  <a class="reference internal" href="tut-pullrequest.html">
+   Pull Request Workflow
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="tut-jhubs.html">
    Jupyterhub Tutorial
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="teachwith-jnotebooks.html">
+  <a class="reference internal" href="tut-teachwith-jnbs.html">
    Teaching with Jupyter NBs
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="teachwith-dashboards.html">
+  <a class="reference internal" href="tut-teachwith-dashboards.html">
    Teaching with dashboards
   </a>
  </li>
@@ -403,6 +408,11 @@
  <li class="toctree-l1">
   <a class="reference internal" href="refs-oer.html">
    Open Education Resources
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="fix-list.html">
+   Fixes needed
   </a>
  </li>
 </ul>
@@ -446,7 +456,7 @@
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="_sources/git-intro.md"><button type="button"
+        <a class="dropdown-buttons" href="_sources/tut-git-intro.md"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
                 data-placement="left">.md</button></a>
         <!-- Download PDF via print -->
@@ -522,7 +532,7 @@
 <p>Writing and debugging code or documentation usually involves a lot of trial and error, so it makes sense to retain earlier versions of your project so you can revert to the old version to try again. Trying to manually keep track of versions is messy and prone to making mistakes. <a class="reference external" href="https://git-scm.com/book/en/v2/Getting-Started-What-is-Git%3F"><strong>Git</strong></a> was developed to address this challenge. It is a file management and version control system that allows you to periodically save your work (called making a <code class="docutils literal notranslate"><span class="pre">commit</span></code>) with notes and names, dates, etc.. Then it allows you to easily revert to previous versions, and also to join (or <code class="docutils literal notranslate"><span class="pre">merge</span></code>) work contributed by colleagues in an organized, reversible, secure and convenient manner.</p>
 <p>All professional programmers carry out these steps, and most use Git to keep track of their work and collaborate with others. There is a huge range of capabilities so it is best to start with the simplest possible workflow, then progress from there depending on your (or your team’s) specific needs.</p>
 <p>The instructions below will set up a <em>code repository</em> on your computer which backs up your work each time you make a change (<em>making commits</em>). Once you gain some familiarity with <em>committing</em> and <em>pushing</em> using Git, you will be ready to tackle the full <em>pull request workflow</em> (meant for collaborating on projects with larger groups).</p>
-<p>Installing Git software on your own computer can be done many ways. We recommend doing this <strong>after</strong> installing the Conda package management system using our instructions <a class="reference internal" href="conda_environs.html"><span class="doc std std-doc">eleswhere</span></a>. A succinct sequence of steps can be found in P. Austin’s <a class="reference external" href="https://phaustin.github.io/numeric/doc_notebooks/course_bootstrap/installing_jupytext.html">Numerical Methods course manual</a>.</p>
+<p>Installing Git software on your own computer can be done many ways. We recommend doing this <strong>after</strong> installing the Conda package management system using our instructions <a class="reference internal" href="tut-conda_environs.html"><span class="doc std std-doc">eleswhere</span></a>. A succinct sequence of steps can be found in P. Austin’s <a class="reference external" href="https://phaustin.github.io/numeric/doc_notebooks/course_bootstrap/installing_jupytext.html">Numerical Methods course manual</a>.</p>
 <hr class="docutils" />
 <div class="section" id="an-aside">
 <h3>An Aside<a class="headerlink" href="#an-aside" title="Permalink to this headline">¶</a></h3>
@@ -713,7 +723,7 @@
 <div class='prev-next-bottom'>
     
     <div id="prev">
-        <a class="left-prev" href="programming-environs.html" title="previous page">
+        <a class="left-prev" href="tut-programming-environs.html" title="previous page">
             <i class="prevnext-label fas fa-angle-left"></i>
             <div class="prevnext-info">
                 <p class="prevnext-label">previous</p>
@@ -722,10 +732,10 @@
         </a>
     </div>
      <div id="next">
-        <a class="right-next" href="jhub-tutorial.html" title="next page">
+        <a class="right-next" href="tut-pullrequest.html" title="next page">
             <div class="prevnext-info">
                 <p class="prevnext-label">next</p>
-                <p class="prevnext-title">Jupyterhub Tutorial</p>
+                <p class="prevnext-title">A Pull Request Workflow tutorial</p>
             </div>
             <i class="prevnext-label fas fa-angle-right"></i>
         </a>
