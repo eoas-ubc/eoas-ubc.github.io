@@ -39,6 +39,13 @@ To enable users and developers to share a working copy and discuss design and pe
 
 This will be required if more than 5-10 people might use the dashboard at once. This is non-trivial, and details will be documented later, hopefully during summer 2022. For now, if you need to see the repository used for deploying our collection, see scripts and Docker files at the [addon_containers](https://github.com/phaustin/addon_containers) repo. 
 
+## Some "costs" of developing dashboard for teaching/learning
+
+* The design cycle involved numerous iterations so working code can be developed then the instructor can explore how initial designs will work in their planned setting, adjust, revisit, and iterate until satisfied.
+* There may also be a second round of adjustments after first deployment in a real course.
+* Implementing as a class assignment requires the dashboard be hosted on a reasonably fast server that can handle multiple logins. Instructors also need to explore the dashboard to identify opportunities and limitations so that meaningful tasks can be set for students to apply concepts being learned in the class.
+* The question of longer term maintenance, deployment and sustainability of these tools is still a question. Instructors can not be expected to handle all the coding and server technology as well as incorporate excellent, evidence-base, student-centric pedagogy.
+
 ## References and resources
 
 * [Here is a](https://towardsdatascience.com/bring-your-jupyter-notebook-to-life-with-interactive-widgets-bc12e03f0916) reasonably complete, succinct introduction to `ipywidgets` dated May 3, 2019. This article is at "towardsdatascience.com" which is delivered as part of a subscription to the [Medium](https://medium.com/) digital publishing group. (But you can see this using an incognito browser window as often as you like ... )
