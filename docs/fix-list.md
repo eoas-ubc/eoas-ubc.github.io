@@ -6,3 +6,4 @@ No particular order.
 * Move "General feedback about using dashboards in lessons:" section in "crs-eosc325.html" to a new page called "teaching and learning with dashboards" (or something like that).
 * Add txt2qti guidelines in "Other software tools", from ...\01-OCESE-tlef\courses\eosc325\questions\text2qti-guidelines.docx
 * Add pandoc to "other tools" list.
+* add pointer to EOAS Website [Spotlight item about interactive resources](https://www.eoas.ubc.ca/news-events/news/16485372001).

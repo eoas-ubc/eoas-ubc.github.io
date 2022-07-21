@@ -39,7 +39,15 @@ The app looks like this:
 
 ## Pedagogy
 
-<span style="color:red">Ask Kirsten.</span>
+<span style="color:red">Ask Kirsten for instructor's perspective.</span>
+
+**Student comments**
+
+"I enjoyed having the ability to directly customize different settings and parameters for the planet, allowing us to visualize the effects different amounts of sunlight can have on its albedo and habitation."
+
+"As a hands-on learner, it helped me understand the concepts more, as opposed to just reading about the different effects of sunlight on habitability in a textbook or paper."
+
+"If it’s possible to implement, it would be great to have a visualization of the planet with the various percentages of daisy coverages for the future, besides having just the graph lines.”
 
 ## Project evaluation
 
