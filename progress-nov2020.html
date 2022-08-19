@@ -4,7 +4,8 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
     <title>Progress at November 2020 &#8212; OCESE Documentation</title>
     
   <!-- Loaded before other Sphinx assets -->
@@ -20,7 +21,7 @@
     href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
 
     <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
-    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=62ba249389abaaa9ffc34bf36a076bdc1d65ee18" type="text/css" />
+    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
     <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
@@ -34,10 +35,13 @@
     <script src="_static/jquery.js"></script>
     <script src="_static/underscore.js"></script>
     <script src="_static/doctools.js"></script>
-    <script src="_static/togglebutton.js"></script>
     <script src="_static/clipboard.min.js"></script>
     <script src="_static/copybutton.js"></script>
-    <script src="_static/scripts/sphinx-book-theme.js?digest=f31d14ad54b65d19161ba51d4ffff3a77ae00456"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="_static/design-tabs.js"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
@@ -276,10 +280,22 @@ const thebe_selector_output = ".output, .cell_output"
    Faculty Pro-D
   </a>
  </li>
- <li class="toctree-l1">
+ <li class="toctree-l1 has-children">
   <a class="reference internal" href="eval-wisdom.html">
-   OCESE Project evaluation
+   Project evaluation &gt;&gt;
   </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="project-data.html">
+     Project Data
+    </a>
+   </li>
+  </ul>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="presentations.html">
@@ -307,8 +323,8 @@ const thebe_selector_output = ".output, .cell_output"
   <a class="reference internal" href="dashboards-deploy.html">
    Dashboard deployment &gt;&gt;
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
-  <label for="toctree-checkbox-3">
+  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+  <label for="toctree-checkbox-4">
    <i class="fas fa-chevron-down">
    </i>
   </label>
@@ -431,7 +447,12 @@ const thebe_selector_output = ".output, .cell_output"
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="fix-list.html">
-   Fixes needed
+   Documentation ToDo's
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="requirements.html">
+   Tasks to be done by due date
   </a>
  </li>
 </ul>
@@ -739,10 +760,10 @@ title="Print to PDF"
                 
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="progress-at-november-2020">
+  <section class="tex2jax_ignore mathjax_ignore" id="progress-at-november-2020">
 <h1>Progress at November 2020<a class="headerlink" href="#progress-at-november-2020" title="Permalink to this headline">#</a></h1>
 <p>Year one priorities include infrastructure and tools development because these are prerequisite to implementing educational initiatives in courses and professional development activities for instructors. Track progress at the project’s <a class="reference external" href="https://github.com/eoas-ubc/eoas_tlef/projects/2">github repo project board</a>.</p>
-<div class="section" id="accomplishments-as-of-2020-10-31">
+<section id="accomplishments-as-of-2020-10-31">
 <h2>Accomplishments as of 2020/10/31<a class="headerlink" href="#accomplishments-as-of-2020-10-31" title="Permalink to this headline">#</a></h2>
 <ol class="simple">
 <li><p>We are implementing <a class="reference external" href="https://jupyter.org/hub">jupyterhubs</a> so that many students can write and run programs in preconfigured cloud computing environments without configuring their own systems. This critical capability is also being implemented by statistics, economics and other UBC units for large courses. Piloting is now underway in <a class="reference external" href="https://jupyterhub.eoas.ubc.ca/">EOSC350</a>, <a class="reference external" href="https://a301_hub.eoas.ubc.ca/">ATSC301</a>, and for our adaptation of the opensource book by Kazarinoff: <a class="reference external" href="https://atsc_web.eoas.ubc.ca/">“Problem Solving With Python”</a>. This will be a key resource for introducing Python-based scientific programing to students and faculty.</p></li>
@@ -762,19 +783,19 @@ title="Print to PDF"
 <li><p>Impacts of COVID-19 have mainly been limited to a reduction in planned faculty development activities. However, many tools and tactics are being developed and faculty training will in fact be best delivered when all these strategies have been established as (approximately) routine.</p></li>
 <li><p>Opensource software and course resources are being developed using standard GitHub-based management techniques. Progress can be monitored on our <a class="reference external" href="https://github.com/eoas-ubc/eoas_tlef/projects/2">GitHhub project board</a>.</p></li>
 </ol>
-</div>
-<div class="section" id="progress-on-year-1-milestones">
+</section>
+<section id="progress-on-year-1-milestones">
 <h2>Progress on year 1 Milestones<a class="headerlink" href="#progress-on-year-1-milestones" title="Permalink to this headline">#</a></h2>
 <p>These are listed in terms of goals from the original proposal.</p>
-<div class="section" id="literature-review">
+<section id="literature-review">
 <h3>Literature review<a class="headerlink" href="#literature-review" title="Permalink to this headline">#</a></h3>
 <ol class="simple">
 <li><p>There is a growing Zotero reference list of sources about teaching and learning computing, programming, datascience and quantitative Earth sciences.</p></li>
 <li><p>We learn much by working in the GitHub community because many academics and institutions are conducting parallel opensource projects.</p></li>
 <li><p>Project progress and links to local and opensource contributions and collaborations are being summarized <a class="reference external" href="https://hackmd.io/iKHYFs8-QK22jW-iybvrrQ">here</a>.</p></li>
 </ol>
-</div>
-<div class="section" id="eosc211-97-students-this-year">
+</section>
+<section id="eosc211-97-students-this-year">
 <h3>EOSC211 (97 students this year)<a class="headerlink" href="#eosc211-97-students-this-year" title="Permalink to this headline">#</a></h3>
 <ol class="simple">
 <li><p>Converting materials to markdown is nearly complete. These resources are being used in term 2020W1.</p></li>
@@ -782,33 +803,33 @@ title="Print to PDF"
 <li><p>Converting from MatLab to Python will be largely completed by spring 2021.</p></li>
 <li><p>Instructors are starting to use GitHub, eg for <a class="reference external" href="https://phaustin.github.io/eosc211/info_and_announcements.html">EOSC 211</a>.</p></li>
 </ol>
-</div>
-<div class="section" id="envr300-54-students">
+</section>
+<section id="envr300-54-students">
 <h3>ENVR300 (54 students)<a class="headerlink" href="#envr300-54-students" title="Permalink to this headline">#</a></h3>
 <ol class="simple">
 <li><p>Several Dashboards are under development based on discussions with instructors. These discussions resulted in two dashboards being generated and eventually piloted in the course in January 2021. See the <a class="reference internal" href="dashboards.html"><span class="doc std std-doc">dashboards page</span></a> for current state of the two dashboards: “Global temperature” and “timeseries-3signals”.</p></li>
 <li><p>We will deploy and evaluate their use and value with an instructor new to these techniques in term 2020W2.</p></li>
 </ol>
-</div>
-<div class="section" id="eosc410-510-35-students">
+</section>
+<section id="eosc410-510-35-students">
 <h3>EOSC410/510 (35 students)<a class="headerlink" href="#eosc410-510-35-students" title="Permalink to this headline">#</a></h3>
 <ol class="simple">
 <li><p>Materials for EOSC510 are being adapted to Jupyter-book format by a graduate student volunteer. This represents a pilot within EOAS for efficient generation and maintenance of course content.</p></li>
 </ol>
-</div>
-<div class="section" id="atsc301-13-students">
+</section>
+<section id="atsc301-13-students">
 <h3>ATSC301 (13 students)<a class="headerlink" href="#atsc301-13-students" title="Permalink to this headline">#</a></h3>
 <ol class="simple">
 <li><p>This course is prototyping Jupyter book-making techniques and Jupyterhub strategies in term 2020W1.</p></li>
 </ol>
-</div>
-<div class="section" id="quantitative-core-courses">
+</section>
+<section id="quantitative-core-courses">
 <h3>Quantitative core courses<a class="headerlink" href="#quantitative-core-courses" title="Permalink to this headline">#</a></h3>
 <ol class="simple">
 <li><p>Curriculum level work is proceeding as an internal EOAS project headed by Christian Schoof. Details available upon request.</p></li>
 </ol>
-</div>
-<div class="section" id="community-of-practice">
+</section>
+<section id="community-of-practice">
 <h3>Community of practice<a class="headerlink" href="#community-of-practice" title="Permalink to this headline">#</a></h3>
 <ol class="simple">
 <li><p>First CoP meeting will be mid-November with a second in mid-February.</p></li>
@@ -816,22 +837,22 @@ title="Print to PDF"
 <li><p>The EOSC350 instructor, M. Bostock, is receiving support to pilot the delivery of labs using a Jupyterhub.</p></li>
 <li><p>Initial meetings with EOSC410 instructor, V. Radic, have outlined plans for both EOSC410 and ENVR300. We are establishing priorities for adapting the course to use Jupyter notebooks, incorporate Python, and align the course as an elective for the emerging Data Science program.</p></li>
 </ol>
-</div>
-<div class="section" id="training-for-faculty-others">
+</section>
+<section id="training-for-faculty-others">
 <h3>Training for faculty &amp; others<a class="headerlink" href="#training-for-faculty-others" title="Permalink to this headline">#</a></h3>
 <ol class="simple">
 <li><p>Materials for Python and Jupyter notebook training sessions are being developed, targeting EOAS Faculty, Postdocs and Graduate students. The website you are viewing contains current versions of all of these materials.</p></li>
 </ol>
-</div>
-<div class="section" id="evaluation">
+</section>
+<section id="evaluation">
 <h3>Evaluation<a class="headerlink" href="#evaluation" title="Permalink to this headline">#</a></h3>
 <ol class="simple">
 <li><p>All deliverables and faculty interactions constitute input for evaluation purposes. This progress summary is one result, halfway into our first year.</p></li>
 <li><p>A computing-oriented attitudes and expectations pre-post survey is being implemented in EOSC211, 301, 410.</p></li>
 <li><p>Students will be asked for feedback about EOSC300 dashboards, EOSC350 dashboards, and about perceptions of learning, experiences and workloads.</p></li>
 </ol>
-</div>
-<div class="section" id="students-in-courses-concrete-impacts">
+</section>
+<section id="students-in-courses-concrete-impacts">
 <h3>Students in courses: concrete impacts<a class="headerlink" href="#students-in-courses-concrete-impacts" title="Permalink to this headline">#</a></h3>
 <ol class="simple">
 <li><p>EOSC211: students are gaining exposure to GitHub as the source of information.</p></li>
@@ -839,14 +860,14 @@ title="Print to PDF"
 <li><p>ATSC301: students will be using updated GitHub, Jupyter Notebooks and Python programming.</p></li>
 <li><p>EOSC350: students are running all labs (Jupyter notebooks developed in EOAS) in a Jupyterhub.</p></li>
 </ol>
-</div>
-<div class="section" id="student-contributions">
+</section>
+<section id="student-contributions">
 <h3>Student contributions<a class="headerlink" href="#student-contributions" title="Permalink to this headline">#</a></h3>
 <ol class="simple">
 <li><p>By May 2021, five Work Learn students and one volunteer will have gained education-oriented collaboration and software skills, especially in use of GitHub. They are currently making significant contributions to our objectives, which will reflect well on their CV’s.</p></li>
 </ol>
-</div>
-<div class="section" id="additional-progress-beyond-original-plans">
+</section>
+<section id="additional-progress-beyond-original-plans">
 <h3>Additional progress beyond original plans<a class="headerlink" href="#additional-progress-beyond-original-plans" title="Permalink to this headline">#</a></h3>
 <p>Eosc350</p>
 <ol class="simple">
@@ -864,9 +885,9 @@ title="Print to PDF"
 <li><p>Aug: Presentation at UBC Jupyter Days by P. Austin and student M. Colclough; <a class="reference external" href="https://ubc-dsci.github.io/jupyterdays/schedule/day3.html">“Writing Canvas quizzes with Jupyter”</a>.</p></li>
 <li><p>Aug: <a class="reference external" href="https://ams.confex.com/ams/101ANNUAL/11python/papers/viewonly.cgi?password=582729&amp;username=384767">Abstract</a> submitted for AMS.</p></li>
 </ol>
-</div>
-</div>
-</div>
+</section>
+</section>
+</section>
 
     <script type="text/x-thebe-config">
     {

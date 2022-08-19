@@ -4,7 +4,8 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
     <title>Command line &amp; Shells &#8212; OCESE Documentation</title>
     
   <!-- Loaded before other Sphinx assets -->
@@ -20,7 +21,7 @@
     href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
 
     <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
-    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=62ba249389abaaa9ffc34bf36a076bdc1d65ee18" type="text/css" />
+    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
     <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
@@ -34,10 +35,13 @@
     <script src="_static/jquery.js"></script>
     <script src="_static/underscore.js"></script>
     <script src="_static/doctools.js"></script>
-    <script src="_static/togglebutton.js"></script>
     <script src="_static/clipboard.min.js"></script>
     <script src="_static/copybutton.js"></script>
-    <script src="_static/scripts/sphinx-book-theme.js?digest=f31d14ad54b65d19161ba51d4ffff3a77ae00456"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="_static/design-tabs.js"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
@@ -276,10 +280,22 @@ const thebe_selector_output = ".output, .cell_output"
    Faculty Pro-D
   </a>
  </li>
- <li class="toctree-l1">
+ <li class="toctree-l1 has-children">
   <a class="reference internal" href="eval-wisdom.html">
-   OCESE Project evaluation
+   Project evaluation &gt;&gt;
   </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="project-data.html">
+     Project Data
+    </a>
+   </li>
+  </ul>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="presentations.html">
@@ -307,8 +323,8 @@ const thebe_selector_output = ".output, .cell_output"
   <a class="reference internal" href="dashboards-deploy.html">
    Dashboard deployment &gt;&gt;
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
-  <label for="toctree-checkbox-3">
+  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+  <label for="toctree-checkbox-4">
    <i class="fas fa-chevron-down">
    </i>
   </label>
@@ -431,7 +447,12 @@ const thebe_selector_output = ".output, .cell_output"
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="fix-list.html">
-   Fixes needed
+   Documentation ToDo's
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="requirements.html">
+   Tasks to be done by due date
   </a>
  </li>
 </ul>
@@ -645,23 +666,23 @@ title="Print to PDF"
                 
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="command-line-shells">
+  <section class="tex2jax_ignore mathjax_ignore" id="command-line-shells">
 <h1>Command line &amp; Shells<a class="headerlink" href="#command-line-shells" title="Permalink to this headline">#</a></h1>
-<div class="section" id="introduction">
+<section id="introduction">
 <h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">#</a></h2>
 <p>This is an introduction to navigating your computer via a command line interface like Windows <strong>Powershell</strong> or <strong>Bash</strong>. While useful for all programmers, it is essential for installing and using many computational tools including Git, Python and their management facilities like.</p>
 <p>A useful 35-min. video tutorial (dated Oct 2020) on terminals, shells, and the command line is: <a class="reference external" href="https://www.youtube.com/watch?v=QKBcHuA3VJE">How do you use the Command line? PowerShell, cmd, bash?</a> This simultaneously demonstrates commands and behaviors using <code class="docutils literal notranslate"><span class="pre">Windows</span> <span class="pre">command</span> <span class="pre">line</span></code>, <code class="docutils literal notranslate"><span class="pre">Powershell</span></code> and <code class="docutils literal notranslate"><span class="pre">Bash</span></code>. Concepts addressed include: &gt;”<em>shells vs terminals</em>”; &gt;”<em>commands &amp; command aliases</em>”; &gt;command “<em>switches</em>” or “<em>parameters</em>” (and use of “<em>help</em>” or “<em>man</em>”); &gt;using “<em>tab</em>” and “<em>history</em>”; &gt;”<em>home directory</em>”, “<em>prompts</em>”, “<em>redirects, appends &amp; pipes</em>”; &gt;the concept of “*administrator””, and more - including differences / similarities in these three shells.</p>
-</div>
-<div class="section" id="shells">
+</section>
+<section id="shells">
 <h2>Shells<a class="headerlink" href="#shells" title="Permalink to this headline">#</a></h2>
 <p>A “shell” is just a program that has access to your computer’s operating system. Shells can run other programs, open and save files, or install programs on your machine. The start menu/file explorer (windows) or dashboard/finder (mac) may be more familiar, but as a programmer or data analyst you will discover that using a shell will be more efficient for many tasks.</p>
 <p>Mac and Linux computers typically use <strong>BASH</strong> as the default shell, and Windows computers typically use <strong>Windows Powershell</strong>, however many alternative shell programs exist for those interested in exploring options. Windows recently introduced the <strong>Windows Terminal</strong> which is not in fact a shell, but a versatile tool for managing one or more shells. See <a class="reference external" href="https://docs.microsoft.com/en-us/windows/terminal/">Microsoft’s Windows Terminal introduction</a> for more details.</p>
-</div>
-<div class="section" id="the-command-line">
+</section>
+<section id="the-command-line">
 <h2>The command line<a class="headerlink" href="#the-command-line" title="Permalink to this headline">#</a></h2>
 <p>Start your preferred shell and you will see a very sparse window - likely black, with just a few characters, and a Prompt such as <code class="docutils literal notranslate"><span class="pre">$</span></code> or <code class="docutils literal notranslate"><span class="pre">&gt;</span></code> or <code class="docutils literal notranslate"><span class="pre">C:\folder1\yourfolder</span></code>. Commands are typed at the cursor that probably blinks just after this prompt. There are useful key strokes (such as the up-arrow which recalls previous commands) and many (many!) commands, but listing all these capabilities for specific shells is beyond the scope of this page.</p>
-</div>
-<div class="section" id="basic-navigation">
+</section>
+<section id="basic-navigation">
 <h2>Basic navigation<a class="headerlink" href="#basic-navigation" title="Permalink to this headline">#</a></h2>
 <p>Most computer users can use their graphical user interface to find files, navigate to the folders where files can be found, make a text file, open it for editing, save it, move it from one folder to the next and so on. MacOS users do this using the “Finder” program and Windows users do this using “File Explorer”. All this can also be done from the command line. Here is is a <a class="reference external" href="https://github.com/AndrewLoeppky/crash_course/blob/master/coding_crash_course.md">conversational introduction</a>, including comparison between the cmdl and gui approach on Windows. The following is a summary of this concept:</p>
 <p>If your shell has just started, it likely assumes you are “at” your “home” directory (or folder). Find out by typing <code class="docutils literal notranslate"><span class="pre">pwd</span></code> to determine your “present working directory”.</p>
@@ -692,8 +713,8 @@ title="Print to PDF"
 </ul>
 </li>
 </ul>
-</div>
-<div class="section" id="bash-and-powershell-command-reference">
+</section>
+<section id="bash-and-powershell-command-reference">
 <h2>Bash and powershell command reference<a class="headerlink" href="#bash-and-powershell-command-reference" title="Permalink to this headline">#</a></h2>
 <p>Here is a short list of common command-line commands, from the <a class="reference external" href="https://phaustin.github.io/numeric/doc_notebooks/course_bootstrap/python.html">Numerical Methods course page</a>. Any command in the first three columns should work. Other “short lists”, or documentation for each task, can easily be Googled.</p>
 <p><em>In the following table, a <code class="docutils literal notranslate"><span class="pre">Cmdlet</span></code> is microsoft’s term for a PowerShell command, the <code class="docutils literal notranslate"><span class="pre">Alias</span></code> is an alterative spelling, and the <code class="docutils literal notranslate"><span class="pre">Bash</span> <span class="pre">equiv</span></code> is the equivalent action in Bash (Mac and Linux) and <strong>also</strong> an alternative alias in PowerShell.</em></p>
@@ -803,8 +824,8 @@ title="Print to PDF"
 <ul class="simple">
 <li><p><em><span style="color:green"><a class="reference external" href="https://github.com/0nn0/terminal-mac-cheatsheet">Mac terminal commands cheat sheet</a></span></em></p></li>
 </ul>
-</div>
-</div>
+</section>
+</section>
 
     <script type="text/x-thebe-config">
     {

@@ -4,7 +4,8 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
     <title>Teaching and learning with Dashboards &#8212; OCESE Documentation</title>
     
   <!-- Loaded before other Sphinx assets -->
@@ -20,7 +21,7 @@
     href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
 
     <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
-    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=62ba249389abaaa9ffc34bf36a076bdc1d65ee18" type="text/css" />
+    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
     <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
@@ -34,10 +35,13 @@
     <script src="_static/jquery.js"></script>
     <script src="_static/underscore.js"></script>
     <script src="_static/doctools.js"></script>
-    <script src="_static/togglebutton.js"></script>
     <script src="_static/clipboard.min.js"></script>
     <script src="_static/copybutton.js"></script>
-    <script src="_static/scripts/sphinx-book-theme.js?digest=f31d14ad54b65d19161ba51d4ffff3a77ae00456"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="_static/design-tabs.js"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
@@ -276,10 +280,22 @@ const thebe_selector_output = ".output, .cell_output"
    Faculty Pro-D
   </a>
  </li>
- <li class="toctree-l1">
+ <li class="toctree-l1 has-children">
   <a class="reference internal" href="eval-wisdom.html">
-   OCESE Project evaluation
+   Project evaluation &gt;&gt;
   </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="project-data.html">
+     Project Data
+    </a>
+   </li>
+  </ul>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="presentations.html">
@@ -307,8 +323,8 @@ const thebe_selector_output = ".output, .cell_output"
   <a class="reference internal" href="dashboards-deploy.html">
    Dashboard deployment &gt;&gt;
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
-  <label for="toctree-checkbox-3">
+  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+  <label for="toctree-checkbox-4">
    <i class="fas fa-chevron-down">
    </i>
   </label>
@@ -431,7 +447,12 @@ const thebe_selector_output = ".output, .cell_output"
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="fix-list.html">
-   Fixes needed
+   Documentation ToDo's
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="requirements.html">
+   Tasks to be done by due date
   </a>
  </li>
 </ul>
@@ -625,13 +646,13 @@ title="Print to PDF"
                 
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="teaching-and-learning-with-dashboards">
+  <section class="tex2jax_ignore mathjax_ignore" id="teaching-and-learning-with-dashboards">
 <h1>Teaching and learning with Dashboards<a class="headerlink" href="#teaching-and-learning-with-dashboards" title="Permalink to this headline">#</a></h1>
-<div class="section" id="introduction">
+<section id="introduction">
 <h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">#</a></h2>
 <p>This page summarizes ways that dashboards have been introduced to EOAS faculty and students for teaching and learning purposes. Design and deployment guidelines are provided on separate pages.</p>
-</div>
-<div class="section" id="general-feedback-about-using-dashboards-in-lessons">
+</section>
+<section id="general-feedback-about-using-dashboards-in-lessons">
 <h2>General feedback about using dashboards in lessons:<a class="headerlink" href="#general-feedback-about-using-dashboards-in-lessons" title="Permalink to this headline">#</a></h2>
 <ul class="simple">
 <li><p>In all the courses using new dashboards we are seeing the same importance of allowing students time to familiarize with the tool before asking them to make good use of it. Students cannot solve problems with a new tool unless they have time to familiarize with the tool. There are 3 aspects they are wrestling with: 1) new concepts, 2) a new tool, and 3) a “problem” to solve (eg “<em>what happens to the water divide, both mathematically and conceptually</em>”).</p></li>
@@ -641,8 +662,8 @@ title="Print to PDF"
 <li><p>Activity instructions on lecture slides can work for inclass work. However, it is more effective to have a worksheet with settings, questions, and spaces for answering.</p></li>
 <li><p>Questions to solve can be more “interesting” to students (i.e. more motivational) if they are in terms of the consequences to people, property, ecosystems, or whatever, rather than simply abstract or theoretical questions. This is about connecting concepts to reality.</p></li>
 </ul>
-</div>
-<div class="section" id="third-party-references">
+</section>
+<section id="third-party-references">
 <h2>Third party references<a class="headerlink" href="#third-party-references" title="Permalink to this headline">#</a></h2>
 <ul class="simple">
 <li><p>How guidance affects student engagement with an interactive simulation, J. M. Chamberlain, K. Lancaster, R. Parson, &amp; K. K. Perkins. Chemistry Education Research and Practice. 15 p. 628-638, 2014.</p></li>
@@ -650,8 +671,8 @@ title="Print to PDF"
 <li><p>Teaching Physics using PhET Simulations, C. Wieman, W. Adams, P. Loeblein, and K. Perkins, The Physics Teacher, 2010.</p></li>
 <li><p>Many scholarly references at <a class="reference external" href="https://phet.colorado.edu/en/research">https://phet.colorado.edu/en/research</a>.</p></li>
 </ul>
-</div>
-</div>
+</section>
+</section>
 
     <script type="text/x-thebe-config">
     {

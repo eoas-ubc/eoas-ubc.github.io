@@ -4,7 +4,8 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
     <title>Jupyter Books &#8212; OCESE Documentation</title>
     
   <!-- Loaded before other Sphinx assets -->
@@ -20,7 +21,7 @@
     href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
 
     <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
-    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=62ba249389abaaa9ffc34bf36a076bdc1d65ee18" type="text/css" />
+    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
     <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
@@ -34,10 +35,13 @@
     <script src="_static/jquery.js"></script>
     <script src="_static/underscore.js"></script>
     <script src="_static/doctools.js"></script>
-    <script src="_static/togglebutton.js"></script>
     <script src="_static/clipboard.min.js"></script>
     <script src="_static/copybutton.js"></script>
-    <script src="_static/scripts/sphinx-book-theme.js?digest=f31d14ad54b65d19161ba51d4ffff3a77ae00456"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="_static/design-tabs.js"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
@@ -276,10 +280,22 @@ const thebe_selector_output = ".output, .cell_output"
    Faculty Pro-D
   </a>
  </li>
- <li class="toctree-l1">
+ <li class="toctree-l1 has-children">
   <a class="reference internal" href="eval-wisdom.html">
-   OCESE Project evaluation
+   Project evaluation &gt;&gt;
   </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="project-data.html">
+     Project Data
+    </a>
+   </li>
+  </ul>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="presentations.html">
@@ -307,8 +323,8 @@ const thebe_selector_output = ".output, .cell_output"
   <a class="reference internal" href="dashboards-deploy.html">
    Dashboard deployment &gt;&gt;
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
-  <label for="toctree-checkbox-3">
+  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+  <label for="toctree-checkbox-4">
    <i class="fas fa-chevron-down">
    </i>
   </label>
@@ -431,7 +447,12 @@ const thebe_selector_output = ".output, .cell_output"
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="fix-list.html">
-   Fixes needed
+   Documentation ToDo's
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="requirements.html">
+   Tasks to be done by due date
   </a>
  </li>
 </ul>
@@ -693,7 +714,7 @@ title="Print to PDF"
                 
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="jupyter-books">
+  <section class="tex2jax_ignore mathjax_ignore" id="jupyter-books">
 <h1>Jupyter Books<a class="headerlink" href="#jupyter-books" title="Permalink to this headline">#</a></h1>
 <p>This page outlines one approach to building <a class="reference external" href="https://jupyterbook.org/intro.html">Jupyter books</a>. It involves:</p>
 <ol class="simple">
@@ -702,7 +723,7 @@ title="Print to PDF"
 <li><p>delivering to a GitHub website repository using the <a class="reference external" href="https://pypi.org/project/ghp-import/">ghp-import package</a>, a lightweight Python package for pushing HTML content to a GitHub repository.</p></li>
 </ol>
 <p>(The “normal approach” to displaying websites in your GitHub account works fine (see <a class="reference external" href="https://pages.github.com/">https://pages.github.com/</a>) but requires finished HTML and related files. It does NOT work to simply generate a Jupyter book from your Markdown, then transfer the resulting HTML to your <code class="docutils literal notranslate"><span class="pre">username.github.io/</span></code> repo.)</p>
-<div class="section" id="workflow-involving-a-fork-of-the-original">
+<section id="workflow-involving-a-fork-of-the-original">
 <h2>1. Workflow involving a fork of the original<a class="headerlink" href="#workflow-involving-a-fork-of-the-original" title="Permalink to this headline">#</a></h2>
 <p>First, the outline of steps. Details about installing JupyterBooks and <code class="docutils literal notranslate"><span class="pre">ghp-import</span></code> library are below.</p>
 <p>In this project’s documentation <a class="reference external" href="https://github.com/eoas-ubc/eoas-ubc.github.io">repository</a>, the “docs” branch contains markdown files where editing is done. The completed website is on the “master” branch and is displayed <a class="reference external" href="https://eoas-ubc.github.io/index.html">here</a>.</p>
@@ -744,7 +765,7 @@ title="Print to PDF"
 </ol>
 </li>
 </ol>
-<div class="section" id="a-shortcut-approach">
+<section id="a-shortcut-approach">
 <h3>A shortcut approach<a class="headerlink" href="#a-shortcut-approach" title="Permalink to this headline">#</a></h3>
 <ol>
 <li><p>Deliver directly to upstream by first defining the upstream remote:</p>
@@ -760,12 +781,12 @@ title="Print to PDF"
 <li><p>Your own fork will now be out of sync and needs fixing online.</p></li>
 <li><p>TO BYPASS YOUR OWN FORK COMPLETELY requires a rebase workflow, which I’m not yet comfortable with (Feb 8, 2022). However, the sequence listed <a class="reference external" href="https://medium.com/&#64;topspinj/how-to-git-rebase-into-a-forked-repo-c9f05e821c8a">here</a> seems to work. It does leave your own forked repository out of sync, but maybe that fork isn’t really needed? To be discussed.</p></li>
 </ol>
-</div>
-</div>
+</section>
+</section>
 <hr class="docutils" />
-<div class="section" id="preparing-to-build-jupyter-books-details">
+<section id="preparing-to-build-jupyter-books-details">
 <h2>2. Preparing to build Jupyter Books - details<a class="headerlink" href="#preparing-to-build-jupyter-books-details" title="Permalink to this headline">#</a></h2>
-<div class="section" id="i-installing-jupyter-book-and-ghp-import">
+<section id="i-installing-jupyter-book-and-ghp-import">
 <h3>i. Installing Jupyter Book and ghp-import<a class="headerlink" href="#i-installing-jupyter-book-and-ghp-import" title="Permalink to this headline">#</a></h3>
 <p>Install via pip (details <a class="reference external" href="https://jupyterbook.org/start/overview.html">here</a>):</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pip install -U jupyter-book
@@ -781,19 +802,19 @@ title="Print to PDF"
   - jupyter-book
 </pre></div>
 </div>
-</div>
-<div class="section" id="ii-files-folders-repositories-and-branches">
+</section>
+<section id="ii-files-folders-repositories-and-branches">
 <h3>ii. Files, folders, repositories and branches<a class="headerlink" href="#ii-files-folders-repositories-and-branches" title="Permalink to this headline">#</a></h3>
 <p>Put Markdown files for each page, and the <code class="docutils literal notranslate"><span class="pre">_config.yml</span></code> and <code class="docutils literal notranslate"><span class="pre">_toc.yml</span></code> files in a folder called <code class="docutils literal notranslate"><span class="pre">docs</span></code> under the repository’s root. Put images in an <code class="docutils literal notranslate"><span class="pre">images</span></code> subfolder under <code class="docutils literal notranslate"><span class="pre">docs</span></code>. Put other files (like PDFs) in a folder under the root (“parallel” with the <code class="docutils literal notranslate"><span class="pre">docs</span></code> folder) and then move these by hand as a last step (see below). There should be <code class="docutils literal notranslate"><span class="pre">README.md</span></code> and <code class="docutils literal notranslate"><span class="pre">LICENSE</span></code> files. A <code class="docutils literal notranslate"><span class="pre">.gitignore</span></code> file is recommended to prevent all the HTML and related files being sent when you <code class="docutils literal notranslate"><span class="pre">push</span></code> to GitHub.</p>
-</div>
-<div class="section" id="iii-branches-for-editing-and-publishing">
+</section>
+<section id="iii-branches-for-editing-and-publishing">
 <h3>iii. Branches for editing and publishing<a class="headerlink" href="#iii-branches-for-editing-and-publishing" title="Permalink to this headline">#</a></h3>
 <ul class="simple">
 <li><p>If the website is for an individual GitHub repository then follow directions on the <a class="reference external" href="https://jupyterbook.org/start/publish.html#publish-your-book-online-with-github-pages">Publish your book online</a> page of Jupyter Book documentation.</p></li>
 <li><p>If the website is for a GitHub “organization” (like this one - eoas-tlef), then push resulting website content to the <code class="docutils literal notranslate"><span class="pre">master</span></code> branch of the organizations GitHub repository. Content can be edited in a separate branch (eg. <code class="docutils literal notranslate"><span class="pre">docs</span></code>), or a separate repository if you prefer. More details below.</p></li>
 </ul>
-</div>
-<div class="section" id="iv-preparing-content">
+</section>
+<section id="iv-preparing-content">
 <h3>iv. Preparing content<a class="headerlink" href="#iv-preparing-content" title="Permalink to this headline">#</a></h3>
 <p><strong>Individual pages</strong> are written in individual Markdown files. Tables of contents are defined, “code” for including figures, math, references, and other features are described in documentation, first in the <a class="reference external" href="https://jupyterbook.org/start/your-first-book.html">Creat your first book</a> tutorial, and in more detail under the <a class="reference external" href="https://jupyterbook.org/basics/organize.html">Topic Guides</a> sections of that documentation.</p>
 <p><strong>Non-Markdown content</strong> like PDF files, images, etc. need to be managed by keeping them in suitable folders (eg. <code class="docutils literal notranslate"><span class="pre">\assets</span></code>). They will be copied into corresponding locations after building the HTML.</p>
@@ -802,16 +823,18 @@ title="Print to PDF"
 </pre></div>
 </div>
 <p>Images can be included as numbered figures; the following does seem to track images locations during the build.</p>
-<div class="figure align-default" id="directive-fig">
+<figure class="align-default" id="directive-fig">
 <a class="reference internal image-reference" href="_images/logo-04sm.png"><img alt="_images/logo-04sm.png" src="_images/logo-04sm.png" style="height: 100px;" /></a>
-<p class="caption"><span class="caption-number">Fig. 1 </span><span class="caption-text">Here is a numbered figure with a caption!</span><a class="headerlink" href="#directive-fig" title="Permalink to this image">#</a></p>
-</div>
+<figcaption>
+<p><span class="caption-number">Fig. 1 </span><span class="caption-text">Here is a numbered figure with a caption!</span><a class="headerlink" href="#directive-fig" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
 <p>Various alert box types can be included; details <a class="reference external" href="https://jupyterbook.org/content/content-blocks.html">here</a>.</p>
 <div class="alert alert-block alert-info">
 <b>Tip:</b> Use blue boxes (alert-info) for tips and notes.
 </div>
-</div>
-<div class="section" id="v-jupyterbook-publishing-comments">
+</section>
+<section id="v-jupyterbook-publishing-comments">
 <h3>v. JupyterBook Publishing Comments<a class="headerlink" href="#v-jupyterbook-publishing-comments" title="Permalink to this headline">#</a></h3>
 <p>To publish to your GitHub repository for public viewing, follow instructions <a class="reference external" href="https://jupyterbook.org/start/publish.html#publish-your-book-online-with-github-pages">here</a>, the <code class="docutils literal notranslate"><span class="pre">ghp-import</span></code> utility should have been installed (above).</p>
 <p>HOWEVER, to publish to an Organization’s repository (such as <code class="docutils literal notranslate"><span class="pre">eoas-tlef</span></code>) the steps are slightly different because the <code class="docutils literal notranslate"><span class="pre">master</span></code> branch at <code class="docutils literal notranslate"><span class="pre">upstream</span></code> is where the website is rendered, and the “main” branch for un-rendered files (markdown, etc.) is the <code class="docutils literal notranslate"><span class="pre">docs</span></code> branch. (Yes, it is a  little confusing.)</p>
@@ -831,8 +854,8 @@ title="Print to PDF"
 <li><p>If desired stop using that location as this repo’s <code class="docutils literal notranslate"><span class="pre">upstream</span></code> using: <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">remote</span> <span class="pre">remove</span> <span class="pre">upstream</span></code>.</p></li>
 <li><p>Test results by pointing your browser to <code class="docutils literal notranslate"><span class="pre">username.github.io</span></code>. It may take a short time to update.</p></li>
 </ol>
-</div>
-<div class="section" id="vi-finally-some-basic-references">
+</section>
+<section id="vi-finally-some-basic-references">
 <h3>vi. Finally some basic references<a class="headerlink" href="#vi-finally-some-basic-references" title="Permalink to this headline">#</a></h3>
 <ul class="simple">
 <li><p>Jupyter Books documentation starts at <a class="reference external" href="https://jupyterbook.org/intro.html">jupyterbook.org</a>.</p></li>
@@ -841,9 +864,9 @@ title="Print to PDF"
 <li><p>Markdown 2: Jupyter Book supports any Markdown syntx that is upported by Jupyter Notebooks. See details <a class="reference external" href="https://jupyterbook.org/file-types/markdown.html">here</a>.</p></li>
 <li><p>Markdown 3: <a class="reference external" href="https://jupyterbook.org/content/myst.html">MyST Markdown</a> is also understood, which is derived from RMarkdown language used in RStudio.</p></li>
 </ul>
-</div>
-</div>
-</div>
+</section>
+</section>
+</section>
 
     <script type="text/x-thebe-config">
     {

@@ -4,7 +4,8 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
     <title>A Pull Request Workflow tutorial &#8212; OCESE Documentation</title>
     
   <!-- Loaded before other Sphinx assets -->
@@ -20,7 +21,7 @@
     href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
 
     <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
-    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=62ba249389abaaa9ffc34bf36a076bdc1d65ee18" type="text/css" />
+    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
     <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
@@ -34,10 +35,13 @@
     <script src="_static/jquery.js"></script>
     <script src="_static/underscore.js"></script>
     <script src="_static/doctools.js"></script>
-    <script src="_static/togglebutton.js"></script>
     <script src="_static/clipboard.min.js"></script>
     <script src="_static/copybutton.js"></script>
-    <script src="_static/scripts/sphinx-book-theme.js?digest=f31d14ad54b65d19161ba51d4ffff3a77ae00456"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="_static/design-tabs.js"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
@@ -276,10 +280,22 @@ const thebe_selector_output = ".output, .cell_output"
    Faculty Pro-D
   </a>
  </li>
- <li class="toctree-l1">
+ <li class="toctree-l1 has-children">
   <a class="reference internal" href="eval-wisdom.html">
-   OCESE Project evaluation
+   Project evaluation &gt;&gt;
   </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="project-data.html">
+     Project Data
+    </a>
+   </li>
+  </ul>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="presentations.html">
@@ -307,8 +323,8 @@ const thebe_selector_output = ".output, .cell_output"
   <a class="reference internal" href="dashboards-deploy.html">
    Dashboard deployment &gt;&gt;
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
-  <label for="toctree-checkbox-3">
+  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+  <label for="toctree-checkbox-4">
    <i class="fas fa-chevron-down">
    </i>
   </label>
@@ -431,7 +447,12 @@ const thebe_selector_output = ".output, .cell_output"
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="fix-list.html">
-   Fixes needed
+   Documentation ToDo's
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="requirements.html">
+   Tasks to be done by due date
   </a>
  </li>
 </ul>
@@ -729,7 +750,7 @@ title="Print to PDF"
                 
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="a-pull-request-workflow-tutorial">
+  <section class="tex2jax_ignore mathjax_ignore" id="a-pull-request-workflow-tutorial">
 <h1>A Pull Request Workflow tutorial<a class="headerlink" href="#a-pull-request-workflow-tutorial" title="Permalink to this headline">#</a></h1>
 <p>Knowing how to properly fork and generate pull requests is essential for working on open source projects or collaborating with peers. Unfortunately, it is easy to make mistakes or not know what you should do when you’re initially learning the process.</p>
 <p>This short tutorial, adapted from Chase Pettit’s <a class="reference external" href="https://gist.github.com/Chaser324/ce0505fbed06b947d962">original</a>, covers a fairly standard procedure for creating a fork, doing your work locally, and issuing a pull request. The workflow assumes you are NOT the “owner” of the original repository, although how the owner will accept and merge a pull request is discussed last.</p>
@@ -740,15 +761,15 @@ title="Print to PDF"
 <li><p>What should you do instead?</p></li>
 <li><p>What problems does that avoid?</p></li>
 </ol>
-<div class="section" id="creating-a-fork">
+<section id="creating-a-fork">
 <h2>Creating a Fork<a class="headerlink" href="#creating-a-fork" title="Permalink to this headline">#</a></h2>
 <p>Just head over to the GitHub page and click the “Fork” button. It’s just that simple. Once you’ve done that, you can use your favorite git client to clone your repo or just head straight to the command line:</p>
 <div class="highlight-shell notranslate"><div class="highlight"><pre><span></span><span class="c1"># Clone your fork to your local machine</span>
 git clone git@github.com:USERNAME/FORKED-PROJECT.git
 </pre></div>
 </div>
-</div>
-<div class="section" id="keeping-your-fork-up-to-date">
+</section>
+<section id="keeping-your-fork-up-to-date">
 <h2>Keeping Your Fork Up to Date<a class="headerlink" href="#keeping-your-fork-up-to-date" title="Permalink to this headline">#</a></h2>
 <p>Make sure you keep your fork up to date by tracking the original “upstream” repo that you forked. To do this, you’ll need to add a remote:</p>
 <div class="highlight-shell notranslate"><div class="highlight"><pre><span></span><span class="c1"># Add &#39;upstream&#39; repo to list of remotes</span>
@@ -774,10 +795,10 @@ git merge upstream/master
 </div>
 <p>If there are no unique commits on the local master branch, git will simply perform a fast-forward. However, if you have been making changes on master (in the vast majority of cases you probably shouldn’t be - <a class="reference external" href="#doing-your-work">see the next section</a>, you may have to deal with conflicts. When doing so, be careful to respect the changes made upstream.</p>
 <p>Now, your local master branch is up-to-date with everything modified upstream.</p>
-</div>
-<div class="section" id="doing-your-work">
+</section>
+<section id="doing-your-work">
 <h2>Doing Your Work<a class="headerlink" href="#doing-your-work" title="Permalink to this headline">#</a></h2>
-<div class="section" id="create-a-branch">
+<section id="create-a-branch">
 <h3>Create a Branch<a class="headerlink" href="#create-a-branch" title="Permalink to this headline">#</a></h3>
 <p>Whenever you begin work on a new feature or bugfix, it’s important that you create a new branch. Not only is it proper git workflow, but it also keeps your changes organized and separated from the master branch so that you can easily submit and manage multiple pull requests for every task you complete.</p>
 <p>To create a new branch and start working on it:</p>
@@ -792,11 +813,11 @@ git checkout newfeature
 </pre></div>
 </div>
 <p>Now, go to town hacking away and making whatever changes you want to.</p>
-</div>
-</div>
-<div class="section" id="submitting-a-pull-request">
+</section>
+</section>
+<section id="submitting-a-pull-request">
 <h2>Submitting a Pull Request<a class="headerlink" href="#submitting-a-pull-request" title="Permalink to this headline">#</a></h2>
-<div class="section" id="cleaning-up-your-work">
+<section id="cleaning-up-your-work">
 <h3>Cleaning Up Your Work<a class="headerlink" href="#cleaning-up-your-work" title="Permalink to this headline">#</a></h3>
 <p>Prior to submitting your pull request, you might want to do a few things to clean up your branch and make it as simple as possible for the original repo’s maintainer to test, accept, and merge your work.</p>
 <p>If any commits have been made to the upstream master branch, you should rebase your development branch so that merging it will be a simple fast-forward that won’t require any conflict resolution work.</p>
@@ -817,38 +838,38 @@ git rebase -i master
 </pre></div>
 </div>
 <p>This will open up a text editor where you can specify which commits to squash.</p>
-</div>
-<div class="section" id="submitting">
+</section>
+<section id="submitting">
 <h3>Submitting<a class="headerlink" href="#submitting" title="Permalink to this headline">#</a></h3>
 <p>Once you’ve committed and pushed all of your changes to GitHub, go to the page for your fork on GitHub, select your development branch, and click the pull request button. If you need to make any adjustments to your pull request, just push the updates to GitHub. Your pull request will automatically track the changes on your development branch and update.</p>
-</div>
-</div>
-<div class="section" id="managing-upstream-repos-accepting-merging-pull-requests">
+</section>
+</section>
+<section id="managing-upstream-repos-accepting-merging-pull-requests">
 <h2>Managing upstream repos: accepting / merging pull requests<a class="headerlink" href="#managing-upstream-repos-accepting-merging-pull-requests" title="Permalink to this headline">#</a></h2>
 <p><strong>Note that</strong> sections above were written from the perspective of someone that created a fork and generated a pull request. This section is written from the perspective of the <strong>original</strong> repository owner who handles incoming pull requests.</p>
 <p>Thus, where the “forker” was referring to the original repository as <code class="docutils literal notranslate"><span class="pre">upstream</span></code>, we’re now looking at it as the owner of that original repository and the standard <code class="docutils literal notranslate"><span class="pre">origin</span></code> remote.</p>
 <p>If you are interested in details please see Chase Pettit’s <a class="reference external" href="https://gist.github.com/Chaser324/ce0505fbed06b947d962">original</a> tutorial.</p>
-<div class="section" id="copyright">
+<section id="copyright">
 <h3><strong>Copyright</strong><a class="headerlink" href="#copyright" title="Permalink to this headline">#</a></h3>
 <p>Copyright 2017, Chase Pettit</p>
 <p>MIT License, <a class="reference external" href="http://www.opensource.org/licenses/mit-license.php">http://www.opensource.org/licenses/mit-license.php</a></p>
-</div>
-<div class="section" id="additional-reading">
+</section>
+<section id="additional-reading">
 <h3><strong>Additional Reading</strong><a class="headerlink" href="#additional-reading" title="Permalink to this headline">#</a></h3>
 <ul class="simple">
 <li><p><a class="reference external" href="https://www.atlassian.com/git/tutorials/merging-vs-rebasing">Atlassian - Merging vs. Rebasing</a></p></li>
 </ul>
-</div>
-<div class="section" id="sources">
+</section>
+<section id="sources">
 <h3><strong>Sources</strong><a class="headerlink" href="#sources" title="Permalink to this headline">#</a></h3>
 <ul class="simple">
 <li><p><a class="reference external" href="https://help.github.com/articles/fork-a-repo">GitHub - Fork a Repo</a></p></li>
 <li><p><a class="reference external" href="https://help.github.com/articles/syncing-a-fork">GitHub - Syncing a Fork</a></p></li>
 <li><p><a class="reference external" href="https://help.github.com/articles/checking-out-pull-requests-locally">GitHub - Checking Out a Pull Request</a></p></li>
 </ul>
-</div>
-</div>
-</div>
+</section>
+</section>
+</section>
 
     <script type="text/x-thebe-config">
     {

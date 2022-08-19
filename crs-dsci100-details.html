@@ -4,7 +4,8 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
     <title>DSCI 100 course outline &#8212; OCESE Documentation</title>
     
   <!-- Loaded before other Sphinx assets -->
@@ -20,7 +21,7 @@
     href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
 
     <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
-    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=62ba249389abaaa9ffc34bf36a076bdc1d65ee18" type="text/css" />
+    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
     <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
@@ -34,10 +35,13 @@
     <script src="_static/jquery.js"></script>
     <script src="_static/underscore.js"></script>
     <script src="_static/doctools.js"></script>
-    <script src="_static/togglebutton.js"></script>
     <script src="_static/clipboard.min.js"></script>
     <script src="_static/copybutton.js"></script>
-    <script src="_static/scripts/sphinx-book-theme.js?digest=f31d14ad54b65d19161ba51d4ffff3a77ae00456"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="_static/design-tabs.js"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
@@ -276,10 +280,22 @@ const thebe_selector_output = ".output, .cell_output"
    Faculty Pro-D
   </a>
  </li>
- <li class="toctree-l1">
+ <li class="toctree-l1 has-children">
   <a class="reference internal" href="eval-wisdom.html">
-   OCESE Project evaluation
+   Project evaluation &gt;&gt;
   </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="project-data.html">
+     Project Data
+    </a>
+   </li>
+  </ul>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="presentations.html">
@@ -307,8 +323,8 @@ const thebe_selector_output = ".output, .cell_output"
   <a class="reference internal" href="dashboards-deploy.html">
    Dashboard deployment &gt;&gt;
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
-  <label for="toctree-checkbox-3">
+  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+  <label for="toctree-checkbox-4">
    <i class="fas fa-chevron-down">
    </i>
   </label>
@@ -431,7 +447,12 @@ const thebe_selector_output = ".output, .cell_output"
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="fix-list.html">
-   Fixes needed
+   Documentation ToDo's
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="requirements.html">
+   Tasks to be done by due date
   </a>
  </li>
 </ul>
@@ -665,15 +686,15 @@ title="Print to PDF"
                 
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="dsci-100-course-outline">
+  <section class="tex2jax_ignore mathjax_ignore" id="dsci-100-course-outline">
 <h1>DSCI 100 course outline<a class="headerlink" href="#dsci-100-course-outline" title="Permalink to this headline">#</a></h1>
 <p>An outline of <strong>Data Science 100: Introduction to Data Science</strong>, based on materials at their <a class="reference external" href="https://github.com/UBC-DSCI/dsci-100">GitHub DSCI-100 repo</a>.</p>
-<div class="section" id="description">
+<section id="description">
 <h2>Description<a class="headerlink" href="#description" title="Permalink to this headline">#</a></h2>
 <p>Officially, “<em>Use of data science tools to summarize, visualize, and analyze data. Sensible workflows and clear interpretations are emphasized</em>”.</p>
 <p><strong>Prerequisites</strong>: At least first year standing in Science at UBC. No previous programming skills necessary; beginners are welcome!</p>
-</div>
-<div class="section" id="official-learning-outcomes">
+</section>
+<section id="official-learning-outcomes">
 <h2>Official learning outcomes:<a class="headerlink" href="#official-learning-outcomes" title="Permalink to this headline">#</a></h2>
 <ol class="simple">
 <li><p><strong>Read data</strong> using computation from various sources (local and remote plain text files, spreadsheets and databases)</p></li>
@@ -688,12 +709,12 @@ title="Print to PDF"
 <li><p>Calculate a <strong>point estimate</strong> in the context of statistical inference and explain how that relates to the population quantity being estimated.</p></li>
 <li><p>Accomplish all of the above using <strong>workflows and communication strategies</strong> that are sensible, clear, reproducible, and shareable.</p></li>
 </ol>
-</div>
-<div class="section" id="course-outline">
+</section>
+<section id="course-outline">
 <h2>Course Outline<a class="headerlink" href="#course-outline" title="Permalink to this headline">#</a></h2>
 <p>An succinct weekly outline is given under the “<strong>Schedule</strong>” heading in the course’s GitHub repository <a class="reference external" href="https://github.com/UBC-DSCI/dsci-100">readme file</a>.</p>
-</div>
-<div class="section" id="weekly-topic-coverage-and-corresponding-data-sets">
+</section>
+<section id="weekly-topic-coverage-and-corresponding-data-sets">
 <h2>Weekly topic coverage and corresponding data sets<a class="headerlink" href="#weekly-topic-coverage-and-corresponding-data-sets" title="Permalink to this headline">#</a></h2>
 <p>These datasets were found by browsing repository folders and examining files named: “<em>tutorial_n, tutorial_activity_n, worksheet_n</em> and <em>worksheet_activity_n</em>”. Tutorials have numbered headings and subheadings and a new heading sometimes involves a new data set. It seems helpful to explore these folders by considering “<em>worksheet_activity_0n</em>” first, then “<em>worksheet_n</em>”, then “<em>tutorial_activity_n</em>”, then “<em>tutorial_n</em>”.</p>
 <table class="colwidths-auto table">
@@ -710,7 +731,7 @@ title="Print to PDF"
 <td><p>-<a class="reference external" href="https://www.kaggle.com/unsdsn/world-happiness">Happiness Report, Kaggle, 2017</a>; <br>-a filtered version of <a class="reference external" href="https://www.kaggle.com/usdot/flight-delays">Airline On-Time Performance Dataset</a>; <br>-scraped data from the <a class="reference external" href="https://en.wikipedia.org/wiki/Gross_world_product">Wikipedia Gross world product page</a>; <br>-<strong>Environment Canada weather (snow) for Whistler</strong>; <br>-<a class="reference external" href="http://books.toscrape.com/">books to scrape</a>.</p></td>
 </tr>
 <tr class="row-even"><td><p>3. tools for <strong>cleaning and wrangling</strong> data - another complete realworld case.</p></td>
-<td><p>-Avocado prices, <br>-<strong>Sea Surface Temperatures</strong> &amp; <strong>salinity</strong> in Departure Bay, <br>-<strong>Pollution in Madrid</strong>, <br>-“<em>mtcars</em>” (built into R)</p></td>
+<td><p>-Avocado prices, <br>-<strong>Sea Surface Temperatures</strong> &amp; <strong>salinity</strong> in Departure Bay, <br>-<strong>Pollution in Madrid</strong>, <br>-”<em>mtcars</em>” (built into R)</p></td>
 </tr>
 <tr class="row-odd"><td><p>4. <strong>plotting</strong>: beyond scatter plots</p></td>
 <td><p>-World Vaccination Trends (from WHO); <br>-Fast-Food Chains in the USA; <br>-diamond prices; <br>-Personal Medical Costs (from <a class="reference external" href="https://github.com/stedy/Machine-Learning-with-R-datasets">curated data sets for machine learning</a>).</p></td>
@@ -745,8 +766,8 @@ title="Print to PDF"
 </tbody>
 </table>
 <hr> &nbsp;
-</div>
-<div class="section" id="tools-and-learning-environment">
+</section>
+<section id="tools-and-learning-environment">
 <h2>Tools and learning environment<a class="headerlink" href="#tools-and-learning-environment" title="Permalink to this headline">#</a></h2>
 <ul class="simple">
 <li><p>Open-source textbook: <a class="reference external" href="https://ubc-dsci.github.io/introduction-to-datascience/">Introduction to Data Science</a>, or see also the <a class="reference external" href="https://github.com/UBC-DSCI/introduction-to-datascience">corresponding GitHub repository</a>.</p></li>
@@ -756,8 +777,8 @@ title="Print to PDF"
 <li><p>Note that the <a class="reference external" href="https://www.kaggle.com/">kaggle.com</a> site contains many data sets for learning, and includes notebooks to support various data science functions.</p></li>
 <li><p>Students are told how to take Jupyter notebook work outside of the course’s Canvas environment at the end of the course. See instructions in file <em>worksheet_12.ipynb</em>.</p></li>
 </ul>
-</div>
-<div class="section" id="course-grading-breakdown">
+</section>
+<section id="course-grading-breakdown">
 <h2>Course grading breakdown<a class="headerlink" href="#course-grading-breakdown" title="Permalink to this headline">#</a></h2>
 <table class="colwidths-auto table">
 <thead>
@@ -783,8 +804,8 @@ title="Print to PDF"
 </tr>
 </tbody>
 </table>
-</div>
-<div class="section" id="course-materials">
+</section>
+<section id="course-materials">
 <h2>Course materials<a class="headerlink" href="#course-materials" title="Permalink to this headline">#</a></h2>
 <p>Materials that can be found in folders at the <a class="reference external" href="https://github.com/UBC-DSCI/dsci-100-assets">“course assets” repository</a> include:</p>
 <ul class="simple">
@@ -794,8 +815,8 @@ title="Print to PDF"
 <li><p>7 worksheet activities.</p></li>
 </ul>
 <p>Folders include some data sets and *.ipynb files which expect an R-kernal if you want to run them as active Jupyter notebooks. (Without the R-kernal, you can see them by running in Jupyter notebooks, but you will not be able to run them.)</p>
-</div>
-</div>
+</section>
+</section>
 
     <script type="text/x-thebe-config">
     {

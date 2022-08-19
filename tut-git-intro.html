@@ -4,7 +4,8 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
     <title>Git Introduction &#8212; OCESE Documentation</title>
     
   <!-- Loaded before other Sphinx assets -->
@@ -20,7 +21,7 @@
     href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
 
     <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
-    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=62ba249389abaaa9ffc34bf36a076bdc1d65ee18" type="text/css" />
+    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
     <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
@@ -34,10 +35,13 @@
     <script src="_static/jquery.js"></script>
     <script src="_static/underscore.js"></script>
     <script src="_static/doctools.js"></script>
-    <script src="_static/togglebutton.js"></script>
     <script src="_static/clipboard.min.js"></script>
     <script src="_static/copybutton.js"></script>
-    <script src="_static/scripts/sphinx-book-theme.js?digest=f31d14ad54b65d19161ba51d4ffff3a77ae00456"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="_static/design-tabs.js"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
@@ -276,10 +280,22 @@ const thebe_selector_output = ".output, .cell_output"
    Faculty Pro-D
   </a>
  </li>
- <li class="toctree-l1">
+ <li class="toctree-l1 has-children">
   <a class="reference internal" href="eval-wisdom.html">
-   OCESE Project evaluation
+   Project evaluation &gt;&gt;
   </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="project-data.html">
+     Project Data
+    </a>
+   </li>
+  </ul>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="presentations.html">
@@ -307,8 +323,8 @@ const thebe_selector_output = ".output, .cell_output"
   <a class="reference internal" href="dashboards-deploy.html">
    Dashboard deployment &gt;&gt;
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
-  <label for="toctree-checkbox-3">
+  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+  <label for="toctree-checkbox-4">
    <i class="fas fa-chevron-down">
    </i>
   </label>
@@ -431,7 +447,12 @@ const thebe_selector_output = ".output, .cell_output"
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="fix-list.html">
-   Fixes needed
+   Documentation ToDo's
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="requirements.html">
+   Tasks to be done by due date
   </a>
  </li>
 </ul>
@@ -649,9 +670,9 @@ title="Print to PDF"
                 
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="git-introduction">
+  <section class="tex2jax_ignore mathjax_ignore" id="git-introduction">
 <h1>Git Introduction<a class="headerlink" href="#git-introduction" title="Permalink to this headline">#</a></h1>
-<div class="section" id="introductory-remarks">
+<section id="introductory-remarks">
 <h2>Introductory remarks<a class="headerlink" href="#introductory-remarks" title="Permalink to this headline">#</a></h2>
 <p>(Derived from a conversational “coding crash course” <a class="reference external" href="https://github.com/AndrewLoeppky/crash_course/blob/master/coding_crash_course.md">here</a>.)</p>
 <p>Writing and debugging code or documentation usually involves a lot of trial and error, so it makes sense to retain earlier versions of your project so you can revert to the old version to try again. Trying to manually keep track of versions is messy and prone to making mistakes. <a class="reference external" href="https://git-scm.com/book/en/v2/Getting-Started-What-is-Git%3F"><strong>Git</strong></a> was developed to address this challenge. It is a file management and version control system that allows you to periodically save your work (called making a <code class="docutils literal notranslate"><span class="pre">commit</span></code>) with notes and names, dates, etc.. Then it allows you to easily revert to previous versions, and also to join (or <code class="docutils literal notranslate"><span class="pre">merge</span></code>) work contributed by colleagues in an organized, reversible, secure and convenient manner.</p>
@@ -659,7 +680,7 @@ title="Print to PDF"
 <p>The instructions below will set up a <em>code repository</em> on your computer which backs up your work each time you make a change (<em>making commits</em>). Once you gain some familiarity with <em>committing</em> and <em>pushing</em> using Git, you will be ready to tackle the full <em>pull request workflow</em> (meant for collaborating on projects with larger groups).</p>
 <p>Installing Git software on your own computer can be done many ways. We recommend doing this <strong>after</strong> installing the Conda package management system using our instructions <a class="reference internal" href="tut-conda_environs.html"><span class="doc std std-doc">eleswhere</span></a>. A succinct sequence of steps can be found in P. Austin’s <a class="reference external" href="https://phaustin.github.io/numeric/doc_notebooks/course_bootstrap/installing_jupytext.html">Numerical Methods course manual</a>.</p>
 <hr class="docutils" />
-<div class="section" id="an-aside">
+<section id="an-aside">
 <h3>An Aside<a class="headerlink" href="#an-aside" title="Permalink to this headline">#</a></h3>
 <p>It is also possible to install Git all by itself by following these <a class="reference external" href="https://git-scm.com/book/en/v2/Getting-Started-Installing-Git">instructions here</a>. If you do it this way you must associate a username and email address with your git installation by opening a shell and typing:</p>
 <div class="highlight-powershell notranslate"><div class="highlight"><pre><span></span><span class="p">$</span> <span class="n">git</span> <span class="n">config</span> <span class="p">-</span><span class="n">-global</span> <span class="n">user</span><span class="p">.</span><span class="n">name</span> <span class="s2">&quot;Max Planck&quot;</span>
@@ -667,10 +688,10 @@ title="Print to PDF"
 </pre></div>
 </div>
 <p>The name and email you enter will be attached to each commit you make to your projects or ones you collaborate on.</p>
-</div>
-</div>
+</section>
+</section>
 <hr class="docutils" />
-<div class="section" id="local-version-control-or-tracking-work-on-your-own-computer">
+<section id="local-version-control-or-tracking-work-on-your-own-computer">
 <h2>Local version control, or tracking work on your own computer<a class="headerlink" href="#local-version-control-or-tracking-work-on-your-own-computer" title="Permalink to this headline">#</a></h2>
 <p>To track work using Git you must first <em>initialize a repository</em> for our project. Open a shell and navigate (change directory using <code class="docutils literal notranslate"><span class="pre">cd</span></code>) to your working folder (called <code class="docutils literal notranslate"><span class="pre">my_folder</span></code> for now), or make a new folder and navigate to it. Then type <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">init</span></code> to create the repository. For example:</p>
 <div class="highlight-powershell notranslate"><div class="highlight"><pre><span></span><span class="p">$</span> <span class="nb">cd </span><span class="n">my_folder</span>
@@ -753,15 +774,15 @@ title="Print to PDF"
 <p><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">log</span> <span class="pre">-1</span></code>  =  show the previous commit hash, author, and time</p>
 <hr class="docutils" />
 <p><strong>One last point:</strong> If you want, you can combine several repos into one big repo as git sub-repositories, perhaps for organizational purposes. See <a class="reference external" href="https://github.com/EmaroLab/docs/wiki/GitHub-Tutorial-to-Manage-Project-with-SubRepositories">the tutorial here</a>.</p>
-</div>
+</section>
 <hr class="docutils" />
-<div class="section" id="backing-up-files-on-github">
+<section id="backing-up-files-on-github">
 <h2>Backing Up Files On Github<a class="headerlink" href="#backing-up-files-on-github" title="Permalink to this headline">#</a></h2>
 <p>Github is an online <em>repository</em> which is used for backing up and sharing code/documents with collaborators. Repositories are copies of your files saved in the cloud, and can be either <strong>public</strong> (visible/accessible by anyone with the URL) or <strong>private</strong> (only accessible to specific users but subject to a subscription fee).</p>
 <p>An introduction to using GitHub is provided <a class="reference internal" href="git-workflows.html"><span class="doc std std-doc">on a separate page</span></a>.</p>
-</div>
+</section>
 <hr class="docutils" />
-<div class="section" id="alternative-learning-resources">
+<section id="alternative-learning-resources">
 <h2>Alternative learning resources<a class="headerlink" href="#alternative-learning-resources" title="Permalink to this headline">#</a></h2>
 <p>There are a great many open-source and commercial tutorials, how-to’s and manuals including written pages, tutorials (with exercises, examples etc.), and videos. This table provides some recommendations.</p>
 <table class="colwidths-auto table">
@@ -815,8 +836,8 @@ title="Print to PDF"
 </tr>
 </tbody>
 </table>
-</div>
-</div>
+</section>
+</section>
 
     <script type="text/x-thebe-config">
     {

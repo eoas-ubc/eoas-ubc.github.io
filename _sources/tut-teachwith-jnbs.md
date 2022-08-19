@@ -11,6 +11,7 @@ This page summarizes ways that Jupyter notebooks have been introduced to EOAS fa
 * DSCI 100
 * EOSC 211
 * EOSC 354
+* EOSC 442
 * ATSC 303
 
 ## Demonstrating concepts without programming
@@ -21,16 +22,16 @@ Applications of Jupyter notebooks in which students use the notebooks but will n
 
 ## Delivering Jupyter notebooks to students
 
-See [this post](https://simpeg.discourse.group/t/best-practice-of-delivering-jupyter-notebooks-to-students/78) from Dikun Yan with answer by Lindsey the simpeg discourse group. (To be superceded.)
-
+* When nbgrader is NOT being used.
+* when nbgrader IS being used.
 
 ## Building question sets for Canvas
 
-_For instructors not students_. Guidelines to be written based on work in progress during May 2020 - Apr 2022.
+_For instructors not students_. Guidelines to be written based on work in progress.
 
 ## Building question sets for PrairieLearn
 
-_For instructors not students_. Guidelines to be written based on work in progress during Jan-Apr 2022.
+_For instructors not students_. Guidelines to be written based on work in progress.
 
 ## Third party references
 

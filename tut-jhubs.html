@@ -4,7 +4,8 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
     <title>Jupyterhub Tutorial &#8212; OCESE Documentation</title>
     
   <!-- Loaded before other Sphinx assets -->
@@ -20,7 +21,7 @@
     href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
 
     <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
-    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=62ba249389abaaa9ffc34bf36a076bdc1d65ee18" type="text/css" />
+    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
     <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
@@ -34,10 +35,13 @@
     <script src="_static/jquery.js"></script>
     <script src="_static/underscore.js"></script>
     <script src="_static/doctools.js"></script>
-    <script src="_static/togglebutton.js"></script>
     <script src="_static/clipboard.min.js"></script>
     <script src="_static/copybutton.js"></script>
-    <script src="_static/scripts/sphinx-book-theme.js?digest=f31d14ad54b65d19161ba51d4ffff3a77ae00456"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="_static/design-tabs.js"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
@@ -278,10 +282,22 @@ const thebe_selector_output = ".output, .cell_output"
    Faculty Pro-D
   </a>
  </li>
- <li class="toctree-l1">
+ <li class="toctree-l1 has-children">
   <a class="reference internal" href="eval-wisdom.html">
-   OCESE Project evaluation
+   Project evaluation &gt;&gt;
   </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="project-data.html">
+     Project Data
+    </a>
+   </li>
+  </ul>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="presentations.html">
@@ -309,8 +325,8 @@ const thebe_selector_output = ".output, .cell_output"
   <a class="reference internal" href="dashboards-deploy.html">
    Dashboard deployment &gt;&gt;
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
-  <label for="toctree-checkbox-3">
+  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+  <label for="toctree-checkbox-4">
    <i class="fas fa-chevron-down">
    </i>
   </label>
@@ -433,7 +449,12 @@ const thebe_selector_output = ".output, .cell_output"
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="fix-list.html">
-   Fixes needed
+   Documentation ToDo's
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="requirements.html">
+   Tasks to be done by due date
   </a>
  </li>
 </ul>
@@ -809,9 +830,9 @@ title="Print to PDF"
                 
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="jupyterhub-tutorial">
+  <section class="tex2jax_ignore mathjax_ignore" id="jupyterhub-tutorial">
 <h1>Jupyterhub Tutorial<a class="headerlink" href="#jupyterhub-tutorial" title="Permalink to this headline">#</a></h1>
-<div class="section" id="learning-objectives">
+<section id="learning-objectives">
 <h2>Learning Objectives<a class="headerlink" href="#learning-objectives" title="Permalink to this headline">#</a></h2>
 <ul class="simple">
 <li><p>Connect to Jupyterhub via the course website</p></li>
@@ -821,27 +842,27 @@ title="Print to PDF"
 <li><p>Use comments and/or <em>markdown</em> cells to add annotations to your code</p></li>
 <li><p>Save your work and submit an assignment via Canvas</p></li>
 </ul>
-<div class="section" id="intro">
+<section id="intro">
 <h3>Intro<a class="headerlink" href="#intro" title="Permalink to this headline">#</a></h3>
 <p>This tutorial is from the first lab exercise in the course <a class="reference external" href="https://www.eoas.ubc.ca/academics/courses/eosc211">EOSC 211</a>. It includes cells in which students write their first bits of <em>Python</em> code, explore some of the features of <em>Jupyter Notebooks</em>, and learn how to save and submit your work for grading.</p>
 <p>If you are on a website that has a “rocketship icon” in the top right hand corner of the screen, clicking it will launch <em><strong>JuptyerHub</strong></em> - if such functionality is enabled. After signing in, Jupyterhub will open an interactive copy of the notebook which you can edit, download, and submit for grading if that’s relevant.</p>
 <a class="reference internal image-reference" href="_images/open_jhub.png"><img alt="menu2" src="_images/open_jhub.png" style="width: 150px;" /></a>
-<div class="section" id="why-python-jupyterhub">
+<section id="why-python-jupyterhub">
 <h4>Why Python/Jupyterhub?<a class="headerlink" href="#why-python-jupyterhub" title="Permalink to this headline">#</a></h4>
 <p><strong>Python</strong> is a <em>high level programming language,</em> meaning it is comparatively easy for humans to read. Python programs are executed by a <em>python interpreter,</em> which takes python code, reads it into a processor (the CPU on your computer, or in our case, a Jupyterhub server) and returns a result. This process is repeated over and over for each line of code, often taking the result of one line and feeding it into the next.</p>
 <p>Python is also <em>open source</em>, meaning there are no fees to download/use python, and anyone is free to add to the Python code base. This is a major reason for Python’s growing popularity in the scientific community, there are many add ons (called <em>packages</em>) developed by other scientists specifically for the type of programming we want to do in this course, with more being added every day!</p>
 <p><strong>Jupyter Notebooks</strong> are an IDE, or <em>integrated development environment</em> which have gained popularity amoung the science community for processing data, creating scientific figures, solving numerical equations, and sharing code. IDE’s are essentially advanced text editors containing features helpful for writing code (if you really wanted to, you could write all your code in Notepad or Microsoft Word then copy/paste it into a python interpreter somewhere, but we strongly recommend <em>not</em> doing this).</p>
 <p><strong>JupyterHub</strong> is a <em>computational environment</em> for running jupyter notebooks in the cloud, designed specifically for applications like teaching or collaborative research. The EOSC211 course hub is available online and requires no installation on your own machine. Later in the course, we will talk about installing python yourself, creating your own <em>environments</em>, and developing your own individual workflow.</p>
-</div>
-</div>
-<div class="section" id="code-cells-and-markdown-cells">
+</section>
+</section>
+<section id="code-cells-and-markdown-cells">
 <h3>Code Cells and Markdown Cells<a class="headerlink" href="#code-cells-and-markdown-cells" title="Permalink to this headline">#</a></h3>
 <p>Jupyter notebooks are divided into <em>cells,</em> which can be individually edited and run. To create a new cell, click <code class="docutils literal notranslate"><span class="pre">Insert</span></code> <span class="math notranslate nohighlight">\(\rightarrow\)</span> <code class="docutils literal notranslate"><span class="pre">Insert</span> <span class="pre">Cell</span> <span class="pre">Below</span></code>, or press <code class="docutils literal notranslate"><span class="pre">[Alt]</span></code> + <code class="docutils literal notranslate"><span class="pre">[Enter]</span></code> to run the current cell and create a new one below. After you create a cell, you can choose either <em>Code</em> (keyboard shortcut <code class="docutils literal notranslate"><span class="pre">[Esc]</span></code> + <code class="docutils literal notranslate"><span class="pre">[y]</span></code>) or <em>Markdown</em> (<code class="docutils literal notranslate"><span class="pre">[Esc]</span></code> + <code class="docutils literal notranslate"><span class="pre">[m]</span></code>) as the cell type. You can delete cells with <code class="docutils literal notranslate"><span class="pre">Edit</span></code> <span class="math notranslate nohighlight">\(\rightarrow\)</span> <code class="docutils literal notranslate"><span class="pre">Delete</span> <span class="pre">Cells</span></code></p>
 <a class="reference internal image-reference" href="_images/insert_new_cell.png"><img alt="menu1" src="_images/insert_new_cell.png" style="width: 180px;" /></a>
 <a class="reference internal image-reference" href="_images/cell_type.png"><img alt="menu2" src="_images/cell_type.png" style="width: 150px;" /></a>
 <a class="reference internal image-reference" href="_images/delete_cells.png"><img alt="menu3" src="_images/delete_cells.png" style="width: 180px;" /></a>
-</div>
-<div class="section" id="code-cells">
+</section>
+<section id="code-cells">
 <h3>Code Cells<a class="headerlink" href="#code-cells" title="Permalink to this headline">#</a></h3>
 <p>Code cells are where you can write, edit, and run <em>Python Code.</em> Text entered into code cells will be shown with <em>syntax highlighting,</em> with python <em>reserved words</em> shown in green, <em>strings</em> shown in red, and <em>comments</em> in blue. You can execute code cells by pressing [<span class="math notranslate nohighlight">\(\blacktriangleright\)</span> Run], or <code class="docutils literal notranslate"><span class="pre">[Ctrl]</span></code> + <code class="docutils literal notranslate"><span class="pre">[Enter]</span></code> (execute current cell), <code class="docutils literal notranslate"><span class="pre">[Shift]</span></code> + <code class="docutils literal notranslate"><span class="pre">[Enter]</span></code> (run current cell and select the next one), or <code class="docutils literal notranslate"><span class="pre">[Alt]</span></code> + <code class="docutils literal notranslate"><span class="pre">[Enter]</span></code> (execute current cell and create a new one below).</p>
 <p>Try it yourself! Edit the cell below, replacing the comment (lines of code beginning with “#” are ignored by the python interpreter and not executed) with:</p>
@@ -891,7 +912,7 @@ Hello Atmosphere
 </div>
 </div>
 <p>If there is something wrong with a code cell, the python interpreter stops execution and produces a <em>traceback message.</em> Traceback messages appear below a code cell and usually give you a helpful hint as to what is wrong and how to fix it. Some messages can be a bit cryptic; if this is the case, try searching <a class="reference external" href="https://stackoverflow.com/">stack overflow</a> or another helpful coding site (many exist). After searching 3 different sites without success, ask the nearest classmate, professor, or TA for help.</p>
-<div class="section" id="variables">
+<section id="variables">
 <h4>Variables<a class="headerlink" href="#variables" title="Permalink to this headline">#</a></h4>
 <p>Instead of just outputting things to the screen, we can also save data as a <em>variable</em>, and reference it throughout your code, like so:</p>
 <div class="cell docutils container">
@@ -918,8 +939,8 @@ Earth  will shortly be destroyed to make space for the new interstellar Vogon hi
 </div>
 </div>
 </div>
-</div>
-<div class="section" id="cell-execution-order-and-restarting-the-kernel">
+</section>
+<section id="cell-execution-order-and-restarting-the-kernel">
 <h4>Cell Execution Order and Restarting the Kernel<a class="headerlink" href="#cell-execution-order-and-restarting-the-kernel" title="Permalink to this headline">#</a></h4>
 <p>Within a cell, lines of code are executed in the order they are written. Code cells will execute in any order you decide. The order in which cells are executed appears to the left e.g. <code class="docutils literal notranslate"><span class="pre">In</span> <span class="pre">[7]:</span></code> indicates that a particular cell is the seventh cell to be run in the notebook. Try executing the cells below in order:</p>
 <ul class="simple">
@@ -965,8 +986,8 @@ Earth  will shortly be destroyed to make space for the new interstellar Vogon hi
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>atmospheric science is awesome!
 </pre></div>
 </div>
-</div>
-<div class="section" id="math-in-python">
+</section>
+<section id="math-in-python">
 <h4>Math in Python<a class="headerlink" href="#math-in-python" title="Permalink to this headline">#</a></h4>
 <p>The Python core contains functionality for doing basic math. Later in the course, we will learn how to <em>import</em> further functionality for doing not-so-basic math. The syntax for math in Python is summarized below:</p>
 <table class="colwidths-auto table">
@@ -1023,8 +1044,8 @@ Earth  will shortly be destroyed to make space for the new interstellar Vogon hi
 </div>
 </div>
 </div>
-</div>
-<div class="section" id="math-with-variables">
+</section>
+<section id="math-with-variables">
 <h4>Math With Variables<a class="headerlink" href="#math-with-variables" title="Permalink to this headline">#</a></h4>
 <p>Just like we could print <em>variables</em> to the screen, we can assign and reference variables within calculations. For example, the circumference <span class="math notranslate nohighlight">\(C\)</span> of a circle is:</p>
 <div class="math notranslate nohighlight">
@@ -1047,9 +1068,9 @@ C = 2\pi r
 </div>
 </div>
 </div>
-</div>
-</div>
-<div class="section" id="markdown-cells">
+</section>
+</section>
+<section id="markdown-cells">
 <h3>Markdown Cells<a class="headerlink" href="#markdown-cells" title="Permalink to this headline">#</a></h3>
 <p>One of the big learning goals in this course is writing code that is <em>well documented</em>. It should be easy for another programmer (or your future self) to look at your code and understand what is happening in each code cell and why. A major reason we have elected to teach this course with Jupyter Notebooks is their ability to show nicely formatted commentary between snippets of executable computer code.</p>
 <p>Unlike code cells, <em>markdown cells</em> don’t execute or produce outputs, they simply <em>render</em> plain text into nicely formatted paragraphs. The cell you are reading right now is written in markdown; double click on it to see the plain text before rendering. Press <code class="docutils literal notranslate"><span class="pre">[Shift]</span></code> + <code class="docutils literal notranslate"><span class="pre">[Enter]</span></code> to re-render the cell.</p>
@@ -1057,23 +1078,23 @@ C = 2\pi r
 <p><strong>What is your favorite color?</strong></p>
 <p>your answer here</p>
 <p>red</p>
-</div>
-<div class="section" id="saving-and-submitting-assignments">
+</section>
+<section id="saving-and-submitting-assignments">
 <h3>Saving and Submitting Assignments<a class="headerlink" href="#saving-and-submitting-assignments" title="Permalink to this headline">#</a></h3>
 <p>As you create or edit a Jupyter Notebook, you can save your work by clicking <code class="docutils literal notranslate"><span class="pre">File</span></code> <span class="math notranslate nohighlight">\(\rightarrow\)</span> <code class="docutils literal notranslate"><span class="pre">Save</span> <span class="pre">and</span> <span class="pre">Checkpoint</span></code> (or <code class="docutils literal notranslate"><span class="pre">[Ctrl]</span></code> + <code class="docutils literal notranslate"><span class="pre">[s]</span></code>). This will save your notebook on the Jupyterhub server in the cloud. To download a notebook to your own computer, select <code class="docutils literal notranslate"><span class="pre">File</span></code> <span class="math notranslate nohighlight">\(\rightarrow\)</span> <code class="docutils literal notranslate"><span class="pre">Download</span> <span class="pre">as</span></code> <span class="math notranslate nohighlight">\(\rightarrow\)</span> <code class="docutils literal notranslate"><span class="pre">Notebook</span> <span class="pre">(.ipynb)</span></code>.</p>
 <p>It is <em><strong>very good programming practice</strong></em> to keep at least 2 copies of each notebook in at least 2 locations (e.g. on the jupyterhub server and on your laptop) and we highly recommend doing this to prevent losing work.</p>
 <p>To hand in an assignment, download your final copy as a .ipynb and upload it via the link to that assignment on canvas</p>
-</div>
-</div>
-<div class="section" id="exercises-for-practice">
+</section>
+</section>
+<section id="exercises-for-practice">
 <h2>Exercises for practice<a class="headerlink" href="#exercises-for-practice" title="Permalink to this headline">#</a></h2>
-<div class="section" id="question-1">
+<section id="question-1">
 <h3>Question 1<a class="headerlink" href="#question-1" title="Permalink to this headline">#</a></h3>
 <p><strong>What motivated you to sign up for this course?  Are you most interested in Earth, Ocean, or Atmospheric Science? (or something else?)</strong></p>
 <p><strong>(Double click to edit the markdown cell below, <code class="docutils literal notranslate"><span class="pre">[Ctrl]</span></code> + <code class="docutils literal notranslate"><span class="pre">[Enter]</span></code> to render)</strong></p>
 <p>your answer here</p>
-</div>
-<div class="section" id="question-2-3-points">
+</section>
+<section id="question-2-3-points">
 <h3>Question 2  (3 points)<a class="headerlink" href="#question-2-3-points" title="Permalink to this headline">#</a></h3>
 <p><strong>We can calculate travel time <span class="math notranslate nohighlight">\(t\)</span> given distance <span class="math notranslate nohighlight">\(d\)</span> and speed <span class="math notranslate nohighlight">\(v\)</span> with</strong></p>
 <div class="math notranslate nohighlight">
@@ -1112,15 +1133,15 @@ an average speed of <code class="docutils literal notranslate"><span class="pre"
 </div>
 </div>
 </div>
-</div>
-</div>
-<div class="section" id="helpful-terminology">
+</section>
+</section>
+<section id="helpful-terminology">
 <h2>Helpful Terminology<a class="headerlink" href="#helpful-terminology" title="Permalink to this headline">#</a></h2>
 <p><strong>Python:</strong> a high level programming language popular among scientists. Python code is saved with the extension <code class="docutils literal notranslate"><span class="pre">.py</span></code> and can be run on any computer with a python interpreter installed on it. We are using version the <em>miniconda distribution, version 3.7</em> for this course.</p>
 <p><strong>Jupyter Notebooks:</strong> an <em>Integrated Development Environment</em> for writing python code that runs in a web browser (i.e. Chrome, Firefox). Notebooks are comprised of cells, which are either executable python code or rendered markdown text. Notebooks contain and execute python code, but are saved with the extension <code class="docutils literal notranslate"><span class="pre">.ipynb</span></code></p>
 <p><strong>Jupyterhub:</strong> a <em>computational environment</em> for running jupyter notebooks in the cloud, designed specifically for applications like teaching or collaborative research. The EOSC211 course hub is available online and requires no installation on your own machine. Later in the course, we will talk about installing python yourself and developing your own individual workflow.</p>
-</div>
-</div>
+</section>
+</section>
 
     <script type="text/x-thebe-config">
     {

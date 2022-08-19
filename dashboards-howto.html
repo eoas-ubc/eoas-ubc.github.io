@@ -4,7 +4,8 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
     <title>Developing dashboards &#8212; OCESE Documentation</title>
     
   <!-- Loaded before other Sphinx assets -->
@@ -20,7 +21,7 @@
     href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
 
     <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
-    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=62ba249389abaaa9ffc34bf36a076bdc1d65ee18" type="text/css" />
+    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
     <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
@@ -34,10 +35,13 @@
     <script src="_static/jquery.js"></script>
     <script src="_static/underscore.js"></script>
     <script src="_static/doctools.js"></script>
-    <script src="_static/togglebutton.js"></script>
     <script src="_static/clipboard.min.js"></script>
     <script src="_static/copybutton.js"></script>
-    <script src="_static/scripts/sphinx-book-theme.js?digest=f31d14ad54b65d19161ba51d4ffff3a77ae00456"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="_static/design-tabs.js"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
@@ -276,10 +280,22 @@ const thebe_selector_output = ".output, .cell_output"
    Faculty Pro-D
   </a>
  </li>
- <li class="toctree-l1">
+ <li class="toctree-l1 has-children">
   <a class="reference internal" href="eval-wisdom.html">
-   OCESE Project evaluation
+   Project evaluation &gt;&gt;
   </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="project-data.html">
+     Project Data
+    </a>
+   </li>
+  </ul>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="presentations.html">
@@ -307,8 +323,8 @@ const thebe_selector_output = ".output, .cell_output"
   <a class="reference internal" href="dashboards-deploy.html">
    Dashboard deployment &gt;&gt;
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
-  <label for="toctree-checkbox-3">
+  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+  <label for="toctree-checkbox-4">
    <i class="fas fa-chevron-down">
    </i>
   </label>
@@ -431,7 +447,12 @@ const thebe_selector_output = ".output, .cell_output"
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="fix-list.html">
-   Fixes needed
+   Documentation ToDo's
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="requirements.html">
+   Tasks to be done by due date
   </a>
  </li>
 </ul>
@@ -689,19 +710,19 @@ title="Print to PDF"
                 
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="developing-dashboards">
+  <section class="tex2jax_ignore mathjax_ignore" id="developing-dashboards">
 <h1>Developing dashboards<a class="headerlink" href="#developing-dashboards" title="Permalink to this headline">#</a></h1>
 <p><strong>What are “dashboards”</strong>? These are interactive mathematical or data exploration applications hosted online and used in any standard browser. They are used by instructors and students or other learners to explore complex data sets, address problems or assignments, or experiment with challenging concepts.</p>
-<div class="section" id="dashboards-developed-as-part-of-ocese">
+<section id="dashboards-developed-as-part-of-ocese">
 <h2>Dashboards developed as part of OCESE<a class="headerlink" href="#dashboards-developed-as-part-of-ocese" title="Permalink to this headline">#</a></h2>
 <p>There is a [separate <a class="reference internal" href="dashboards.html"><span class="doc std std-doc">list of dashboards</span></a> generated during the OCESE project.</p>
-</div>
-<div class="section" id="environment-for-develpment">
+</section>
+<section id="environment-for-develpment">
 <h2>Environment for develpment<a class="headerlink" href="#environment-for-develpment" title="Permalink to this headline">#</a></h2>
 <p>Any python development environment, using the <a class="reference external" href="https://dash.plotly.com/">Dash Plotly</a> environment and <a class="reference external" href="https://plotly.com/python/">Plotly graphing</a> libraries. Alternatively design using Jupyter Notebooks with the <a class="reference external" href="https://ipywidgets.readthedocs.io/en/latest/">ipywidgets library</a> for interactivity.</p>
 <p>These two options are not always easily translated one into the other. So choose the preferred deployment environment thoughtfully.</p>
-</div>
-<div class="section" id="design-criteria">
+</section>
+<section id="design-criteria">
 <h2>Design criteria<a class="headerlink" href="#design-criteria" title="Permalink to this headline">#</a></h2>
 <p>Our key design criteria are based on keeping the focus on efficient, effective learning first, and clarity for sustainable maintainance second.</p>
 <ol class="simple">
@@ -713,23 +734,23 @@ title="Print to PDF"
 <li><p>Ensure code is properly documented with pointers to sources of inspiration or coding techniques. Someone other than the original developer will very likely be the next person to update the dashboard app.</p></li>
 </ol>
 <p>Ideally these kinds of learning resources should include “think aloud” sessions with student users to determine what aspects of the interface need improving, and whether there are misconceptions that are poorly addressed by the tool. However these are small-scale resources and time is rarely available for this step.</p>
-</div>
-<div class="section" id="deploying-dashboards">
+</section>
+<section id="deploying-dashboards">
 <h2>Deploying dashboards<a class="headerlink" href="#deploying-dashboards" title="Permalink to this headline">#</a></h2>
-<div class="section" id="to-run-only-on-your-own-computer">
+<section id="to-run-only-on-your-own-computer">
 <h3>To run only on your own computer<a class="headerlink" href="#to-run-only-on-your-own-computer" title="Permalink to this headline">#</a></h3>
 <p>This choice makes sense when you are experimenting with the dashboard or planning (if only temporarily) on using it for presentations for a class or presentation.</p>
-</div>
-<div class="section" id="sharing-during-development">
+</section>
+<section id="sharing-during-development">
 <h3>Sharing during development<a class="headerlink" href="#sharing-during-development" title="Permalink to this headline">#</a></h3>
 <p>To enable users and developers to share a working copy and discuss design and pedagogic aspects, deploying to a free Heroku account works well. Each such account can only house five apps. See separate <a class="reference internal" href="dashboards-heroku.html"><span class="doc std std-doc">instructions for deploying to Heroku</span></a>.</p>
-</div>
-<div class="section" id="deploying-to-a-suitable-hub">
+</section>
+<section id="deploying-to-a-suitable-hub">
 <h3>Deploying to a suitable Hub<a class="headerlink" href="#deploying-to-a-suitable-hub" title="Permalink to this headline">#</a></h3>
 <p>This will be required if more than 5-10 people might use the dashboard at once. This is non-trivial, and details will be documented later, hopefully during summer 2022. For now, if you need to see the repository used for deploying our collection, see scripts and Docker files at the <a class="reference external" href="https://github.com/phaustin/addon_containers">addon_containers</a> repo.</p>
-</div>
-</div>
-<div class="section" id="some-costs-of-developing-dashboard-for-teaching-learning">
+</section>
+</section>
+<section id="some-costs-of-developing-dashboard-for-teaching-learning">
 <h2>Some “costs” of developing dashboard for teaching/learning<a class="headerlink" href="#some-costs-of-developing-dashboard-for-teaching-learning" title="Permalink to this headline">#</a></h2>
 <ul class="simple">
 <li><p>The design cycle involved numerous iterations so working code can be developed then the instructor can explore how initial designs will work in their planned setting, adjust, revisit, and iterate until satisfied.</p></li>
@@ -737,8 +758,8 @@ title="Print to PDF"
 <li><p>Implementing as a class assignment requires the dashboard be hosted on a reasonably fast server that can handle multiple logins. Instructors also need to explore the dashboard to identify opportunities and limitations so that meaningful tasks can be set for students to apply concepts being learned in the class.</p></li>
 <li><p>The question of longer term maintenance, deployment and sustainability of these tools is still a question. Instructors can not be expected to handle all the coding and server technology as well as incorporate excellent, evidence-base, student-centric pedagogy.</p></li>
 </ul>
-</div>
-<div class="section" id="references-and-resources">
+</section>
+<section id="references-and-resources">
 <h2>References and resources<a class="headerlink" href="#references-and-resources" title="Permalink to this headline">#</a></h2>
 <ul class="simple">
 <li><p><a class="reference external" href="https://towardsdatascience.com/bring-your-jupyter-notebook-to-life-with-interactive-widgets-bc12e03f0916">Here is a</a> reasonably complete, succinct introduction to <code class="docutils literal notranslate"><span class="pre">ipywidgets</span></code> dated May 3, 2019. This article is at “<a class="reference external" href="http://towardsdatascience.com">towardsdatascience.com</a>” which is delivered as part of a subscription to the <a class="reference external" href="https://medium.com/">Medium</a> digital publishing group. (But you can see this using an incognito browser window as often as you like … )</p></li>
@@ -749,8 +770,8 @@ title="Print to PDF"
 </li>
 <li><p>others?</p></li>
 </ul>
-</div>
-</div>
+</section>
+</section>
 
     <script type="text/x-thebe-config">
     {

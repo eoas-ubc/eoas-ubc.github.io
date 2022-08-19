@@ -4,7 +4,8 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
     <title>Course development tools &#8212; OCESE Documentation</title>
     
   <!-- Loaded before other Sphinx assets -->
@@ -20,7 +21,7 @@
     href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
 
     <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
-    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=62ba249389abaaa9ffc34bf36a076bdc1d65ee18" type="text/css" />
+    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
     <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
@@ -34,10 +35,13 @@
     <script src="_static/jquery.js"></script>
     <script src="_static/underscore.js"></script>
     <script src="_static/doctools.js"></script>
-    <script src="_static/togglebutton.js"></script>
     <script src="_static/clipboard.min.js"></script>
     <script src="_static/copybutton.js"></script>
-    <script src="_static/scripts/sphinx-book-theme.js?digest=f31d14ad54b65d19161ba51d4ffff3a77ae00456"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="_static/design-tabs.js"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
@@ -276,10 +280,22 @@ const thebe_selector_output = ".output, .cell_output"
    Faculty Pro-D
   </a>
  </li>
- <li class="toctree-l1">
+ <li class="toctree-l1 has-children">
   <a class="reference internal" href="eval-wisdom.html">
-   OCESE Project evaluation
+   Project evaluation &gt;&gt;
   </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="project-data.html">
+     Project Data
+    </a>
+   </li>
+  </ul>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="presentations.html">
@@ -307,8 +323,8 @@ const thebe_selector_output = ".output, .cell_output"
   <a class="reference internal" href="dashboards-deploy.html">
    Dashboard deployment &gt;&gt;
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
-  <label for="toctree-checkbox-3">
+  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+  <label for="toctree-checkbox-4">
    <i class="fas fa-chevron-down">
    </i>
   </label>
@@ -431,7 +447,12 @@ const thebe_selector_output = ".output, .cell_output"
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="fix-list.html">
-   Fixes needed
+   Documentation ToDo's
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="requirements.html">
+   Tasks to be done by due date
   </a>
  </li>
 </ul>
@@ -615,7 +636,7 @@ title="Print to PDF"
                 
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="course-development-tools">
+  <section class="tex2jax_ignore mathjax_ignore" id="course-development-tools">
 <h1>Course development tools<a class="headerlink" href="#course-development-tools" title="Permalink to this headline">#</a></h1>
 <ul class="simple">
 <li><p><a class="reference external" href="https://github.com/eoas-ubc/paged_html_theme">paged_html_theme</a>
@@ -637,12 +658,12 @@ utilities for setting the environment variable PYTHONUTF8=1 on windows</p></li>
 <li><p><a class="reference external" href="https://prairielearn.readthedocs.io/en/latest/">PrairieLearn</a></p></li>
 <li><p><a class="reference external" href="https://pandoc.org/">PanDoc</a> for converting between a wide range of formats (eg MS-Word to Markdown, etc.)</p></li>
 </ul>
-<div class="section" id="text-to-qti">
+<section id="text-to-qti">
 <h2>Text to QTI<a class="headerlink" href="#text-to-qti" title="Permalink to this headline">#</a></h2>
 <p>The text2qti command line tool converts questions written in a modified markdown format into the QTI format recognized by Canvas’s API. The repository of this tool is <a class="reference external" href="https://github.com/gpoore/text2qti">text2qti</a>.</p>
 <p>Their instructions are good but the following are a few further tips for success based on preparing questions for EOSC 325 during summer 2021 with worklearn student Owen Perfect doing the work and F. Jones helping interface with Owen and EOSC 325 instructor <a class="reference external" href="https://www.eoas.ubc.ca/people/aliameli">Ali Ameli</a>.</p>
-</div>
-<div class="section" id="some-text2qti-guidelines">
+</section>
+<section id="some-text2qti-guidelines">
 <h2>Some text2qti guidelines<a class="headerlink" href="#some-text2qti-guidelines" title="Permalink to this headline">#</a></h2>
 <p>Text2qti project site is here: <a class="reference external" href="https://pypi.org/project/text2qti/">https://pypi.org/project/text2qti/</a></p>
 <ol class="simple">
@@ -658,8 +679,8 @@ utilities for setting the environment variable PYTHONUTF8=1 on windows</p></li>
 <li><p>The text2qti program that builds the QTI upload file tells you at which row it fails so debugging a failed build is not too hard.</p></li>
 <li><p>Equations: It is probably worth writing these as equations in Canvas after uploading. This is worthwhile because “flat character equations” are really not easy to parse, especially if thinking with equations is not something you do alot - i.e. for these students!</p></li>
 </ol>
-</div>
-</div>
+</section>
+</section>
 
     <script type="text/x-thebe-config">
     {
