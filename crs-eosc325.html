@@ -4,7 +4,8 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
     <title>EOSC 325 &#8212; OCESE Documentation</title>
     
   <!-- Loaded before other Sphinx assets -->
@@ -20,7 +21,7 @@
     href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
 
     <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
-    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=62ba249389abaaa9ffc34bf36a076bdc1d65ee18" type="text/css" />
+    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
     <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
@@ -34,10 +35,13 @@
     <script src="_static/jquery.js"></script>
     <script src="_static/underscore.js"></script>
     <script src="_static/doctools.js"></script>
-    <script src="_static/togglebutton.js"></script>
     <script src="_static/clipboard.min.js"></script>
     <script src="_static/copybutton.js"></script>
-    <script src="_static/scripts/sphinx-book-theme.js?digest=f31d14ad54b65d19161ba51d4ffff3a77ae00456"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="_static/design-tabs.js"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
@@ -276,10 +280,22 @@ const thebe_selector_output = ".output, .cell_output"
    Faculty Pro-D
   </a>
  </li>
- <li class="toctree-l1">
+ <li class="toctree-l1 has-children">
   <a class="reference internal" href="eval-wisdom.html">
-   OCESE Project evaluation
+   Project evaluation &gt;&gt;
   </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="project-data.html">
+     Project Data
+    </a>
+   </li>
+  </ul>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="presentations.html">
@@ -307,8 +323,8 @@ const thebe_selector_output = ".output, .cell_output"
   <a class="reference internal" href="dashboards-deploy.html">
    Dashboard deployment &gt;&gt;
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
-  <label for="toctree-checkbox-3">
+  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+  <label for="toctree-checkbox-4">
    <i class="fas fa-chevron-down">
    </i>
   </label>
@@ -431,7 +447,12 @@ const thebe_selector_output = ".output, .cell_output"
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="fix-list.html">
-   Fixes needed
+   Documentation ToDo's
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="requirements.html">
+   Tasks to be done by due date
   </a>
  </li>
 </ul>
@@ -669,9 +690,9 @@ title="Print to PDF"
                 
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="eosc-325">
+  <section class="tex2jax_ignore mathjax_ignore" id="eosc-325">
 <h1>EOSC 325<a class="headerlink" href="#eosc-325" title="Permalink to this headline">#</a></h1>
-<div class="section" id="official-course-description">
+<section id="official-course-description">
 <h2>Official course description<a class="headerlink" href="#official-course-description" title="Permalink to this headline">#</a></h2>
 <p><strong>Principles of Physical Hydrogeology</strong>: Theories of storage and movement of water within groundwater systems; Groundwater-surface water interaction; Role of groundwater systems in watershed management and regulating the environmental impacts of global change; Groundwater sustainability; Impacts of climate &amp; land use changes on groundwater resources.</p>
 <p><strong>Links:</strong>
@@ -679,16 +700,16 @@ title="Print to PDF"
 &gt;<a class="reference external" href="https://courses.students.ubc.ca/cs/courseschedule?pname=subjarea&amp;tname=subj-course&amp;dept=EOSC&amp;course=325">UBC Calendar</a>,
 &gt;<a class="reference external" href="https://ubcexplorer.io/course/EOSC/325">ubcexplore</a>,
 &gt; <a class="reference external" href="https://www.eoas.ubc.ca/~quest/eoas-only.html">EOAS curriculum map</a>.</p>
-</div>
-<div class="section" id="ocese-project-objectives">
+</section>
+<section id="ocese-project-objectives">
 <h2>OCESE project objectives<a class="headerlink" href="#ocese-project-objectives" title="Permalink to this headline">#</a></h2>
 <ul class="simple">
 <li><p>Introduce interactive dashboard apps to classroom and assignment activities to explore specific hydrogeologic concepts, models, and data sets.</p></li>
 <li><p>Convert question sets for efficient upload to the new course’s <a class="reference external" href="https://about.canvas.ubc.ca/">Canvas</a> website.</p></li>
 <li><p>Provide geoscience education feedback on lessons for this brand new course.</p></li>
 </ul>
-</div>
-<div class="section" id="resources-produced">
+</section>
+<section id="resources-produced">
 <h2>Resources produced<a class="headerlink" href="#resources-produced" title="Permalink to this headline">#</a></h2>
 <p>These are open education resources (OER) unless indicated otherwise.</p>
 <ul class="simple">
@@ -700,8 +721,8 @@ title="Print to PDF"
 <ul class="simple">
 <li><p><strong><a class="reference external" href="https://dashboard.eoastest.xyz/drawdown">Drawdown for confined and unconfined acquifers</a></strong> plots 2D drawdown curves for a well in a uniform acquifer with adjustable properties. Github repository is the “drawdown” folder <a class="reference external" href="https://github.com/phaustin/addon_containers">here</a>.</p></li>
 </ul>
-</div>
-<div class="section" id="pedagogy">
+</section>
+<section id="pedagogy">
 <h2>Pedagogy<a class="headerlink" href="#pedagogy" title="Permalink to this headline">#</a></h2>
 <p><strong>Storativity app</strong>: first used by posing three questions to be addressed using the interactive dashboard app (slide 56 of section 7).</p>
 <ol class="simple">
@@ -722,19 +743,19 @@ title="Print to PDF"
 </ol>
 <p><strong>Drawdown app</strong>: The concepts are addressed in the course, the app is desired by the instructor, and it is ready for use (links above). Unfortunately, the pacing of this brand new course, and continued challenge of running a new course in a temporary online form (due to COVID) meant time ran out this term.</p>
 <p><strong>Transfering question sets from prior use</strong>: questions were first converted from various formats (PDF, MS-Word, text files, etc.) to Markdown text, then <a class="reference external" href="https://github.com/gpoore/text2qti">text2qti</a> was used to upload to the courses’s <a class="reference external" href="https://about.canvas.ubc.ca/">Canvas</a> site. See our <a class="reference internal" href="tools.html"><span class="doc std std-doc">tools page</span></a> for tips.</p>
-</div>
-<div class="section" id="project-evaluation">
+</section>
+<section id="project-evaluation">
 <h2>Project evaluation<a class="headerlink" href="#project-evaluation" title="Permalink to this headline">#</a></h2>
 <p>Questions, data, results, risks and recommendations.</p>
 <p>Benefits: projected and observed. Focus on students and learning</p>
 <p>Costs: to instructors, departments &amp; institutions</p>
-</div>
-<div class="section" id="benefits-costs-and-recommendations">
+</section>
+<section id="benefits-costs-and-recommendations">
 <h2>Benefits, costs and recommendations<a class="headerlink" href="#benefits-costs-and-recommendations" title="Permalink to this headline">#</a></h2>
 <p><strong>Benefits</strong>: Students were observed to be fully engaged during an activity that involves exploring a concept or physical process by adjusting parameters with “instant” response in graphical form.</p>
 <p><strong>Costs</strong>:</p>
 <p>See comments on costs of development in our <a class="reference internal" href="dashboards-howto.html"><span class="doc std std-doc">Developing Dashboards</span></a> page.</p>
-<div class="section" id="recommendations">
+<section id="recommendations">
 <h3>Recommendations<a class="headerlink" href="#recommendations" title="Permalink to this headline">#</a></h3>
 <p>Quotes from feedback based on a 3rd party (online) class observation:</p>
 <p><strong>Re. Storativity app</strong>: “<em>The activity seemed a bit rushed. That can be mitigated by suggesting that students explore the dashboard before coming to class. Maybe give them the URL, say “play with this” and suggest they come to class with 1 question, and 1 observation. That second could be posed as a specific question such as “find out which material has the largest storativity under conditions of x, y, z</em>”.</p>
@@ -756,9 +777,9 @@ title="Print to PDF"
 <li><p>Then follow up by asking something concrete about the consequences for influx of groundwater at the two sides of the scenario - eg. which waterway will have to handle the larger input of water?</p></li>
 <li><p>These are just ideas about connecting concepts to reality. It is fair to say that these ideas may not be compatible with an instructor’s priorities.</p></li>
 </ul>
-</div>
-</div>
-</div>
+</section>
+</section>
+</section>
 
     <script type="text/x-thebe-config">
     {

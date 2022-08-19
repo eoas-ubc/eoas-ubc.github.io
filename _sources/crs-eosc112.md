@@ -7,8 +7,7 @@
 **Links:**
 \>[Home](https://www.eoas.ubc.ca/academics/courses/eosc112),
 \>[UBC Calendar](https://courses.students.ubc.ca/cs/courseschedule?pname=subjarea&tname=subj-course&dept=EOSC&course=112),
-\>[ubcexplore](https://ubcexplorer.io/course/EOSC/112),
-\>[EOAS curriculum map](https://www.eoas.ubc.ca/~quest/eoas-only.html).
+\>[ubcexplore](https://ubcexplorer.io/course/EOSC/112).
 
 ## OCESE project objectives
 

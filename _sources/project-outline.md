@@ -18,40 +18,42 @@ This proposed curriculum transformation will happen alongside a re-evaluation of
 
 - _Phil Austin_: Project instigator and chief developer. ([PA at EOAS](https://www.eoas.ubc.ca/people/philaustin) and [on GitHub](https://github.com/phaustin)). Dr. Austin has transformed three courses to use python and Jupyter notebooks and is the liaison between this proposal and UBC's other related data science education projects. He is also engaged with the Faculty of Science initiative to provide student computation support on the cloud and chair of the Infrastructure Sub-committee for the Faculty of Science Data Science Committee.
 
-- _Francis Jones_: Coordinator, admin and development. ([FJ at EOAS](https://www.eoas.ubc.ca/people/francisjones) and [on GitHub](https://github.com/fhmjones)). Mr. Jones has taught geophysics in UBC's Department of EOAS for 25 yrs and has worked in the department as a geoscience education specialist since 2007.
+- _Francis Jones_: Coordinator, admin and development. ([FJ at EOAS](https://www.eoas.ubc.ca/people/francisjones) and [on GitHub](https://github.com/fhmjones)). Mr. Jones has industry experience in glaciology, geophysical instrumentation development, oil/gas well-logging, mineral exploration and geotechnical geophysics, taught applied geophysics in UBC's Department of EOAS for 25 yrs, and has worked in the department as a geoscience education specialist since 2007.
 
 - _Lindsey Heagy_: Geophysics / datascience professor with direct experience in tools and techniques, and with an ongoing stake as instructor for several courses we are working on. ([LH at EOAS](https://www.eoas.ubc.ca/people/lindseyheagy) and [on GitHub](https://github.com/lheagy)).
 
-### Current Students
+### Current student contributors
+Summer, 2022:
+- Iddo Sadeh ([IS on GitHub](https://github.com/IddoSadeh))
+- Navya Dahiya
+- Wanying Ye
+- Ben O'Connor
 
-- Andrew Loeppky ([AL on GitHub](https://github.com/AndrewLoeppky))
-- Jamie Byer ([JB on GitHub](https://github.com/jamiebyer/))
-- Carol Zhang ([CZ on GitHub](https://github.com/carolz19))
+### EOAS Department contributors
 
-### Project team members
-
-The following are, or will be involved in various capacities.
-- Susan Allen, Professor, EOAS, Faculty of Science.
-- Roger Beckie, Professor, EOAS, Faculty of Science.
-- Michael Bostock, Professor, EOAS, Faculty of Science.
-- Eldad Haber, Professor, EOAS, Faculty of Science.
-- Mark Jellinek, Professor, EOAS, Faculty of Science.
-- Catherine Johnson, Professor, EOAS, Faculty of Science.
-- Mark Johnson, Associate Professor, EOAS / IRES, Faculty of Science.
-- Valentina Radic, Associate Professor, EOAS, Faculty of Science.
-- Stephanie Waterman, Assistant Professor, EOAS, Faculty of Science.
-- Michael Lipsen, Lecturer, EOAS, Faculty of Science.
-- Sarah Bean Sherman, Science Education Specialist, EOAS, Faculty of Science.
+The following are, or will be involved in various capacities. All are faculty in the Department of EOAS, Faculty of Science, UBC
+- Susan Allen
+- Maite Maldonado
+- Kristen Orians
+- Roger Beckie
+- Michael Bostock
+- Catherine Johnson
+- Valentina Radic
+- Stephanie Waterman
+- Michael Lipsen
 
 ### Project alumni
 
-- Mara Colclough ([MC on GitHub](https://github.com/maracieco)) (summer 2020)
+- Carol Zhang ([CZ on GitHub](https://github.com/carolz19))
+- Andrew Loeppky ([AL on GitHub](https://github.com/AndrewLoeppky))
+- Jamie Byer ([JB on GitHub](https://github.com/jamiebyer/))
+- Hariharan Umashankar ([HU on GitHub](https://github.com/hari-ushankar) or [researchgate](https://www.researchgate.net/profile/Hariharan_Umashankar)) (summer 2020 through fall 2021)
+- Jacob McFarlane ([JM on GitHub](https://github.com/JacobMcFarlane)) (winter/spring 2021)
+- Yiki Su ([YS on GitHub](https://github.com/YikiSu)) (winter/spring 2021)
 - Danil Platonov ([DP on GitHub](https://github.com/slemonide)) (summer & fall, 2020)
 - Benjamin Chang ([BC on GitHub](https://github.com/bkchang-97)) (fall/winter 2020/21)
 - Chris Rodell ([CR on GitHub](https://github.com/cerodell)) (volunteer, Fall 2021)
-- Jacob McFarlane ([JM on GitHub](https://github.com/JacobMcFarlane)) (winter/spring 2021)
-- Yiki Su ([YS on GitHub](https://github.com/YikiSu)) (winter/spring 2021)
-- Hariharan Umashankar ([HU on GitHub](https://github.com/hari-ushankar) or [researchgate](https://www.researchgate.net/profile/Hariharan_Umashankar)) (summer 2020 through fall 2021)
+- Mara Colclough ([MC on GitHub](https://github.com/maracieco)) (summer 2020)
 
 ### Students contributing to dashboard design and programming
 

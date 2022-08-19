@@ -9,8 +9,7 @@ Exploration of biogeochemical processes related to water quality, and human impa
 **Links:**
 \>[Home](https://www.eoas.ubc.ca/academics/courses/envr420),
 \>[UBC Calendar](https://courses.students.ubc.ca/cs/courseschedule?pname=subjarea&tname=subj-course&dept=ENVR&course=420),
-\>[ubcexplore](https://ubcexplorer.io/course/ENVR/420),
-\>[EOAS curriculum map](https://www.eoas.ubc.ca/~quest/eoas-only.html).
+\>[ubcexplore](https://ubcexplorer.io/course/ENVR/420).
 
 ## OCESE project objectives
 

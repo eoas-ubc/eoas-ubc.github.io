@@ -4,7 +4,8 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
     <title>Conda &amp; environments &#8212; OCESE Documentation</title>
     
   <!-- Loaded before other Sphinx assets -->
@@ -20,7 +21,7 @@
     href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
 
     <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
-    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=62ba249389abaaa9ffc34bf36a076bdc1d65ee18" type="text/css" />
+    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
     <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
@@ -34,10 +35,13 @@
     <script src="_static/jquery.js"></script>
     <script src="_static/underscore.js"></script>
     <script src="_static/doctools.js"></script>
-    <script src="_static/togglebutton.js"></script>
     <script src="_static/clipboard.min.js"></script>
     <script src="_static/copybutton.js"></script>
-    <script src="_static/scripts/sphinx-book-theme.js?digest=f31d14ad54b65d19161ba51d4ffff3a77ae00456"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="_static/design-tabs.js"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
@@ -276,10 +280,22 @@ const thebe_selector_output = ".output, .cell_output"
    Faculty Pro-D
   </a>
  </li>
- <li class="toctree-l1">
+ <li class="toctree-l1 has-children">
   <a class="reference internal" href="eval-wisdom.html">
-   OCESE Project evaluation
+   Project evaluation &gt;&gt;
   </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="project-data.html">
+     Project Data
+    </a>
+   </li>
+  </ul>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="presentations.html">
@@ -307,8 +323,8 @@ const thebe_selector_output = ".output, .cell_output"
   <a class="reference internal" href="dashboards-deploy.html">
    Dashboard deployment &gt;&gt;
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
-  <label for="toctree-checkbox-3">
+  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+  <label for="toctree-checkbox-4">
    <i class="fas fa-chevron-down">
    </i>
   </label>
@@ -431,7 +447,12 @@ const thebe_selector_output = ".output, .cell_output"
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="fix-list.html">
-   Fixes needed
+   Documentation ToDo's
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="requirements.html">
+   Tasks to be done by due date
   </a>
  </li>
 </ul>
@@ -671,22 +692,22 @@ title="Print to PDF"
                 
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="conda-environments">
+  <section class="tex2jax_ignore mathjax_ignore" id="conda-environments">
 <h1>Conda &amp; environments<a class="headerlink" href="#conda-environments" title="Permalink to this headline">#</a></h1>
-<div class="section" id="what-are-environments-and-why-do-we-need-them">
+<section id="what-are-environments-and-why-do-we-need-them">
 <h2>What are environments and why do we need them?<a class="headerlink" href="#what-are-environments-and-why-do-we-need-them" title="Permalink to this headline">#</a></h2>
 <p>Scientific programming / data science profits greatly from the vast array of Python libraries. This complexity (or “the deep tree of dependencies”) requires management. Virtual environments, of which conda environments are one implementation, make this possible. In other words, (Conda) environments enable the easy definition of a complete software environment to run a certain project or application.</p>
 <p>In practice, we use “environments” to keep software development and applications reproducible and usable across platforms and between different engineering and client teams. Environments (i.e. environment specifications) define all the pieces or packages that are needed for a program or set of programs to function properly.</p>
 <p>(Adapted from a <a class="reference external" href="https://vxuni.com/lectures/conda-environments/">short video lecture</a>. Also, <a class="reference external" href="https://protostar.space/why-you-need-python-environments-and-how-to-manage-them-with-conda">here</a> is an easy-to-read reference about “why” environments.)</p>
-</div>
-<div class="section" id="pip-vs-conda">
+</section>
+<section id="pip-vs-conda">
 <h2>Pip vs Conda<a class="headerlink" href="#pip-vs-conda" title="Permalink to this headline">#</a></h2>
 <p>Adapted from a short article at <a class="reference external" href="https://medium.com/analytics-vidhya/understand-conda-and-pip-9e5c67da47cc">Medium</a>.</p>
-<div class="section" id="pip-comes-built-in-to-python">
+<section id="pip-comes-built-in-to-python">
 <h3>Pip (comes built-in to Python)<a class="headerlink" href="#pip-comes-built-in-to-python" title="Permalink to this headline">#</a></h3>
 <p>Pip is the Python Packaging Authority’s recommended tool for installing packages from the Python Package Index (PyPI). Pip installs packages like numpy, pandas, matplotlib etc. , along with their dependencies.</p>
-</div>
-<div class="section" id="conda">
+</section>
+<section id="conda">
 <h3>Conda<a class="headerlink" href="#conda" title="Permalink to this headline">#</a></h3>
 <p>Conda is an open source package management system and environment management system. It quickly installs, runs and updates packages and their dependencies. It was created for Python programs, but it can package and distribute software for any language. The Conda package and environment manager is included in all versions of Anaconda, Miniconda, and Anaconda Repository.</p>
 <p><a class="reference external" href="https://conda.io/projects/conda/en/latest/user-guide/getting-started.html">The Getting Started</a> page for Conda is great, however it is not necessarily a good first step. It assumes you are clear about what an environment is - why it exists, what is needed to manage it.</p>
@@ -694,8 +715,8 @@ title="Print to PDF"
 <li><p><a class="reference external" href="https://docs.conda.io/projects/conda/en/4.6.1/index.html">Conda documentation</a> version 4.6.1 (Oct 2020).</p></li>
 <li><p><a class="reference external" href="https://docs.conda.io/projects/conda/en/4.6.0/_downloads/52a95608c49671267e40c689e0bc00ca/conda-cheatsheet.pdf">Conda Cheat sheet</a> (PDF).</p></li>
 </ul>
-</div>
-<div class="section" id="installing-conda">
+</section>
+<section id="installing-conda">
 <h3>Installing Conda<a class="headerlink" href="#installing-conda" title="Permalink to this headline">#</a></h3>
 <ul class="simple">
 <li><p>Anaconda is large and very “complete”. Miniconda is small and usually adequate.</p>
@@ -716,9 +737,9 @@ title="Print to PDF"
 </pre></div>
 </div>
 <p>Verify successful installation by typeing <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">info</span></code> at the prompt.</p>
-</div>
-</div>
-<div class="section" id="specifying-the-environment-the-yml-file">
+</section>
+</section>
+<section id="specifying-the-environment-the-yml-file">
 <h2>Specifying the environment: the <code class="docutils literal notranslate"><span class="pre">*.yml</span></code> file<a class="headerlink" href="#specifying-the-environment-the-yml-file" title="Permalink to this headline">#</a></h2>
 <p>From a <a class="reference external" href="https://vxuni.com/lectures/conda-environments/">short set of notes</a> with accompanying video (which is a bit “quick”, but is cmd line focused and explains where environments are built).</p>
 <ul class="simple">
@@ -735,8 +756,8 @@ title="Print to PDF"
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>
 </pre></div>
 </div>
-</div>
-</div>
+</section>
+</section>
 
     <script type="text/x-thebe-config">
     {

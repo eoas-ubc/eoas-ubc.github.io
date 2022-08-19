@@ -1,6 +1,10 @@
 # Dashboards developed or in progress
 
-**What are "dashboards"**? These are interactive mathematical or data exploration applications hosted online and used in any standard browser. They are used by instructors and students or other learners to explore complex data sets, address problems or assignments, or experiment with challenging concepts. Some design guidelines are provided on a [separate "dashboards how-to" page](dashboards-howto.md).
+**What are "dashboards"**? These are interactive mathematical or data exploration applications hosted online and used in any standard browser. They are used to explore complex data sets, experiment with challenging concepts, or gain inspiration & insight from simulations. 
+
+* Some design guidelines are on our ["dashboards how-to" page](dashboards-howto.md).
+* Guidelines for teaching with dashboards are in our ["Teaching and learning with Dashboards"](tut-teachwith-dashboards.md) tutorial.
+* See a short EOAS Dep't news item [about dashboards](https://www.eoas.ubc.ca/news-events/news/16485372001).
 
 ## Climate science & oceanography:
 

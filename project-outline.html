@@ -4,7 +4,8 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
     <title>Goals and Contributors &#8212; OCESE Documentation</title>
     
   <!-- Loaded before other Sphinx assets -->
@@ -20,7 +21,7 @@
     href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
 
     <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
-    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=62ba249389abaaa9ffc34bf36a076bdc1d65ee18" type="text/css" />
+    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
     <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
@@ -34,10 +35,13 @@
     <script src="_static/jquery.js"></script>
     <script src="_static/underscore.js"></script>
     <script src="_static/doctools.js"></script>
-    <script src="_static/togglebutton.js"></script>
     <script src="_static/clipboard.min.js"></script>
     <script src="_static/copybutton.js"></script>
-    <script src="_static/scripts/sphinx-book-theme.js?digest=f31d14ad54b65d19161ba51d4ffff3a77ae00456"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="_static/design-tabs.js"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
@@ -276,10 +280,22 @@ const thebe_selector_output = ".output, .cell_output"
    Faculty Pro-D
   </a>
  </li>
- <li class="toctree-l1">
+ <li class="toctree-l1 has-children">
   <a class="reference internal" href="eval-wisdom.html">
-   OCESE Project evaluation
+   Project evaluation &gt;&gt;
   </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="project-data.html">
+     Project Data
+    </a>
+   </li>
+  </ul>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="presentations.html">
@@ -307,8 +323,8 @@ const thebe_selector_output = ".output, .cell_output"
   <a class="reference internal" href="dashboards-deploy.html">
    Dashboard deployment &gt;&gt;
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
-  <label for="toctree-checkbox-3">
+  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+  <label for="toctree-checkbox-4">
    <i class="fas fa-chevron-down">
    </i>
   </label>
@@ -431,7 +447,12 @@ const thebe_selector_output = ".output, .cell_output"
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="fix-list.html">
-   Fixes needed
+   Documentation ToDo's
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="requirements.html">
+   Tasks to be done by due date
   </a>
  </li>
 </ul>
@@ -582,13 +603,13 @@ title="Print to PDF"
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#current-students">
-     Current Students
+    <a class="reference internal nav-link" href="#current-student-contributors">
+     Current student contributors
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#project-team-members">
-     Project team members
+    <a class="reference internal nav-link" href="#eoas-department-contributors">
+     EOAS Department contributors
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
@@ -638,13 +659,13 @@ title="Print to PDF"
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#current-students">
-     Current Students
+    <a class="reference internal nav-link" href="#current-student-contributors">
+     Current student contributors
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#project-team-members">
-     Project team members
+    <a class="reference internal nav-link" href="#eoas-department-contributors">
+     EOAS Department contributors
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
@@ -669,64 +690,67 @@ title="Print to PDF"
                 
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="goals-and-contributors">
+  <section class="tex2jax_ignore mathjax_ignore" id="goals-and-contributors">
 <h1>Goals and Contributors<a class="headerlink" href="#goals-and-contributors" title="Permalink to this headline">#</a></h1>
 <p>This is the front page of an ongoing project to transform teaching in the <a class="reference external" href="https://www.eoas.ubc.ca/">UBC Department of Earth, Ocean and Atmospheric Science</a> (EOAS) to use open source tools, particularly <a class="reference external" href="https://www.jupyter.org/">Jupyter notebooks</a> organized as <a class="reference external" href="https://executablebooks.org/en/latest/">executable books</a>.</p>
 <p><strong>Formal title</strong>: Embedding Open-source Computational Tools into the Quantitative Earth Science Specializations</p>
-<div class="section" id="project-goals">
+<section id="project-goals">
 <h2>Project Goals<a class="headerlink" href="#project-goals" title="Permalink to this headline">#</a></h2>
 <p>Using open source, cloud-based computing we aim to integrate computational and quantitative skills more comprehensively and consitently across our Department’s curriculum, incorporating real world examples and datasets into existing courses. New Jupyter notebook based modules and activities will be threaded throughout core courses in Geophysics, Atmospheric Sciences, Oceanography and Geological Engineering bridging traditional disciplinary boundaries.</p>
 <p>This proposed curriculum transformation will happen alongside a re-evaluation of quantitative EOAS course offerings across disciplines. The end result will reposition the UBC Earth Science specializations as opportunities for quantitative and computational learning in a highly interdisciplinary domain.</p>
-</div>
-<div class="section" id="contributors">
+</section>
+<section id="contributors">
 <h2>Contributors<a class="headerlink" href="#contributors" title="Permalink to this headline">#</a></h2>
-<div class="section" id="principles">
+<section id="principles">
 <h3>Principles<a class="headerlink" href="#principles" title="Permalink to this headline">#</a></h3>
 <ul class="simple">
 <li><p><em>Tara Ivanochko</em>: Project P.I. (<a class="reference external" href="https://www.eoas.ubc.ca/people/taraivanochko">TI at EOAS</a>). Dr. Ivanochko has been Associate Head Undergraduate Affairs in EOAS; Director of the Environmental Science BSc Degree specialization, and is currently serving as Academic Director, UBC Sustainability Initiative (USI).</p></li>
 <li><p><em>Phil Austin</em>: Project instigator and chief developer. (<a class="reference external" href="https://www.eoas.ubc.ca/people/philaustin">PA at EOAS</a> and <a class="reference external" href="https://github.com/phaustin">on GitHub</a>). Dr. Austin has transformed three courses to use python and Jupyter notebooks and is the liaison between this proposal and UBC’s other related data science education projects. He is also engaged with the Faculty of Science initiative to provide student computation support on the cloud and chair of the Infrastructure Sub-committee for the Faculty of Science Data Science Committee.</p></li>
-<li><p><em>Francis Jones</em>: Coordinator, admin and development. (<a class="reference external" href="https://www.eoas.ubc.ca/people/francisjones">FJ at EOAS</a> and <a class="reference external" href="https://github.com/fhmjones">on GitHub</a>). Mr. Jones has taught geophysics in UBC’s Department of EOAS for 25 yrs and has worked in the department as a geoscience education specialist since 2007.</p></li>
+<li><p><em>Francis Jones</em>: Coordinator, admin and development. (<a class="reference external" href="https://www.eoas.ubc.ca/people/francisjones">FJ at EOAS</a> and <a class="reference external" href="https://github.com/fhmjones">on GitHub</a>). Mr. Jones has industry experience in glaciology, geophysical instrumentation development, oil/gas well-logging, mineral exploration and geotechnical geophysics, taught applied geophysics in UBC’s Department of EOAS for 25 yrs, and has worked in the department as a geoscience education specialist since 2007.</p></li>
 <li><p><em>Lindsey Heagy</em>: Geophysics / datascience professor with direct experience in tools and techniques, and with an ongoing stake as instructor for several courses we are working on. (<a class="reference external" href="https://www.eoas.ubc.ca/people/lindseyheagy">LH at EOAS</a> and <a class="reference external" href="https://github.com/lheagy">on GitHub</a>).</p></li>
 </ul>
-</div>
-<div class="section" id="current-students">
-<h3>Current Students<a class="headerlink" href="#current-students" title="Permalink to this headline">#</a></h3>
+</section>
+<section id="current-student-contributors">
+<h3>Current student contributors<a class="headerlink" href="#current-student-contributors" title="Permalink to this headline">#</a></h3>
+<p>Summer, 2022:</p>
 <ul class="simple">
-<li><p>Andrew Loeppky (<a class="reference external" href="https://github.com/AndrewLoeppky">AL on GitHub</a>)</p></li>
-<li><p>Jamie Byer (<a class="reference external" href="https://github.com/jamiebyer/">JB on GitHub</a>)</p></li>
-<li><p>Carol Zhang (<a class="reference external" href="https://github.com/carolz19">CZ on GitHub</a>)</p></li>
+<li><p>Iddo Sadeh (<a class="reference external" href="https://github.com/IddoSadeh">IS on GitHub</a>)</p></li>
+<li><p>Navya Dahiya</p></li>
+<li><p>Wanying Ye</p></li>
+<li><p>Ben O’Connor</p></li>
 </ul>
-</div>
-<div class="section" id="project-team-members">
-<h3>Project team members<a class="headerlink" href="#project-team-members" title="Permalink to this headline">#</a></h3>
-<p>The following are, or will be involved in various capacities.</p>
+</section>
+<section id="eoas-department-contributors">
+<h3>EOAS Department contributors<a class="headerlink" href="#eoas-department-contributors" title="Permalink to this headline">#</a></h3>
+<p>The following are, or will be involved in various capacities. All are faculty in the Department of EOAS, Faculty of Science, UBC</p>
 <ul class="simple">
-<li><p>Susan Allen, Professor, EOAS, Faculty of Science.</p></li>
-<li><p>Roger Beckie, Professor, EOAS, Faculty of Science.</p></li>
-<li><p>Michael Bostock, Professor, EOAS, Faculty of Science.</p></li>
-<li><p>Eldad Haber, Professor, EOAS, Faculty of Science.</p></li>
-<li><p>Mark Jellinek, Professor, EOAS, Faculty of Science.</p></li>
-<li><p>Catherine Johnson, Professor, EOAS, Faculty of Science.</p></li>
-<li><p>Mark Johnson, Associate Professor, EOAS / IRES, Faculty of Science.</p></li>
-<li><p>Valentina Radic, Associate Professor, EOAS, Faculty of Science.</p></li>
-<li><p>Stephanie Waterman, Assistant Professor, EOAS, Faculty of Science.</p></li>
-<li><p>Michael Lipsen, Lecturer, EOAS, Faculty of Science.</p></li>
-<li><p>Sarah Bean Sherman, Science Education Specialist, EOAS, Faculty of Science.</p></li>
+<li><p>Susan Allen</p></li>
+<li><p>Maite Maldonado</p></li>
+<li><p>Kristen Orians</p></li>
+<li><p>Roger Beckie</p></li>
+<li><p>Michael Bostock</p></li>
+<li><p>Catherine Johnson</p></li>
+<li><p>Valentina Radic</p></li>
+<li><p>Stephanie Waterman</p></li>
+<li><p>Michael Lipsen</p></li>
 </ul>
-</div>
-<div class="section" id="project-alumni">
+</section>
+<section id="project-alumni">
 <h3>Project alumni<a class="headerlink" href="#project-alumni" title="Permalink to this headline">#</a></h3>
 <ul class="simple">
-<li><p>Mara Colclough (<a class="reference external" href="https://github.com/maracieco">MC on GitHub</a>) (summer 2020)</p></li>
+<li><p>Carol Zhang (<a class="reference external" href="https://github.com/carolz19">CZ on GitHub</a>)</p></li>
+<li><p>Andrew Loeppky (<a class="reference external" href="https://github.com/AndrewLoeppky">AL on GitHub</a>)</p></li>
+<li><p>Jamie Byer (<a class="reference external" href="https://github.com/jamiebyer/">JB on GitHub</a>)</p></li>
+<li><p>Hariharan Umashankar (<a class="reference external" href="https://github.com/hari-ushankar">HU on GitHub</a> or <a class="reference external" href="https://www.researchgate.net/profile/Hariharan_Umashankar">researchgate</a>) (summer 2020 through fall 2021)</p></li>
+<li><p>Jacob McFarlane (<a class="reference external" href="https://github.com/JacobMcFarlane">JM on GitHub</a>) (winter/spring 2021)</p></li>
+<li><p>Yiki Su (<a class="reference external" href="https://github.com/YikiSu">YS on GitHub</a>) (winter/spring 2021)</p></li>
 <li><p>Danil Platonov (<a class="reference external" href="https://github.com/slemonide">DP on GitHub</a>) (summer &amp; fall, 2020)</p></li>
 <li><p>Benjamin Chang (<a class="reference external" href="https://github.com/bkchang-97">BC on GitHub</a>) (fall/winter 2020/21)</p></li>
 <li><p>Chris Rodell (<a class="reference external" href="https://github.com/cerodell">CR on GitHub</a>) (volunteer, Fall 2021)</p></li>
-<li><p>Jacob McFarlane (<a class="reference external" href="https://github.com/JacobMcFarlane">JM on GitHub</a>) (winter/spring 2021)</p></li>
-<li><p>Yiki Su (<a class="reference external" href="https://github.com/YikiSu">YS on GitHub</a>) (winter/spring 2021)</p></li>
-<li><p>Hariharan Umashankar (<a class="reference external" href="https://github.com/hari-ushankar">HU on GitHub</a> or <a class="reference external" href="https://www.researchgate.net/profile/Hariharan_Umashankar">researchgate</a>) (summer 2020 through fall 2021)</p></li>
+<li><p>Mara Colclough (<a class="reference external" href="https://github.com/maracieco">MC on GitHub</a>) (summer 2020)</p></li>
 </ul>
-</div>
-<div class="section" id="students-contributing-to-dashboard-design-and-programming">
+</section>
+<section id="students-contributing-to-dashboard-design-and-programming">
 <h3>Students contributing to dashboard design and programming<a class="headerlink" href="#students-contributing-to-dashboard-design-and-programming" title="Permalink to this headline">#</a></h3>
 <ul class="simple">
 <li><p>Jamie Byer</p></li>
@@ -737,9 +761,9 @@ title="Print to PDF"
 <li><p>Yulia Egorovo</p></li>
 <li><p>Yuliya Kuzmenko</p></li>
 </ul>
-</div>
-</div>
-</div>
+</section>
+</section>
+</section>
 
     <script type="text/x-thebe-config">
     {
