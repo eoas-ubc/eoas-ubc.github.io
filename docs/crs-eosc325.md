@@ -85,7 +85,7 @@ Quotes from feedback based on a 3rd party (online) class observation:
 
 **General feedback about using dashboards in lessons**:
 
-* See general guidelines for teaching with dashboards on our [Teaching with Dashboards](tut-teachingwith-dashboards.md) page.
+* See general guidelines for teaching with dashboards on our [Teaching with Dashboards](tut-teachwith-dashboards.md) page.
 * Questions to solve might be more "interesting" if they are in terms of the consequences to people or property. Examples:
   * "Which water body will receive the agricultural pollution when the divide migrates due to changing recharge?" 
   * "Under what conditions will water table become higher than ground thus contributing to flooding?" Or - if you ask "what happens to range of Q values?", 

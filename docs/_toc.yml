@@ -42,14 +42,17 @@ parts:
   - file: dashboards
     title: Dashboards
   - file: facultydev
-  - file: eval-wisdom  
-    title: OCESE Project evaluation
+  - file: eval-wisdom
+    title: Project evaluation >>
+    sections:
+    - file: project-data
+      title: Project Data
   - file: presentations
     title: Scholarly contributions
 - caption: How-to Guides
   chapters:
   - file: git-workflows
-  - file: dashboards-howto  
+  - file: dashboards-howto
   - file: dashboards-deploy
     title: Dashboard deployment >>
     sections:
@@ -64,7 +67,7 @@ parts:
   - file: cloud-servers.md
   - file: python-startup
     title: Python startup
-  - file: jupyterbooks  
+  - file: jupyterbooks
   - file: tools
     title: Other software tools
   - file: troubleshooting
@@ -73,7 +76,7 @@ parts:
   - file: tut-commandline
   - file: tut-conda_environs
   - file: tut-programming-environs
-    title: Programming environments  
+    title: Programming environments
   - file: tut-git-intro
   - file: tut-pullrequest
     title: Pull Request Workflow
@@ -89,4 +92,7 @@ parts:
     title: Third-party dashboards
   - file: refs-oer
     title: Open Education Resources
-  - file: fix-list  
+  - file: fix-list
+    title: Documentation ToDo's
+  - file: requirements
+    title: Tasks to be done by due date

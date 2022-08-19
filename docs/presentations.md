@@ -4,6 +4,7 @@
 
 * May 2022: [Creating Inclusion and Accessibility through Data Science: Challenges and Solutions](https://wiki.ubc.ca/images/6/6f/Celebrate_Learning_-_Data_Science_and_Inclusion.pdf); P. Austin contributed on this panel discussion as part of UBC's [Celebrate Learning](https://wiki.ubc.ca/Documentation:CTLT_programs/2022-Celebrate_Learning_Week) week. 
 * May 2022: Project progress report as a poster: [Future-ready computing & quantitative skills; opensource solutions in Earth Science courses](https://tlef2.sites.olt.ubc.ca/files/2022/05/2022-SCI-Tara-Ivanochko.pdf). 
+* March 2022: A short EOAS Dep't news item [about dashboards](https://www.eoas.ubc.ca/news-events/news/16485372001).
 * Dec 2021: [AGU](https://www.agu.org/Fall-Meeting) poster,
   *  On a [single HTML page](https://www.eoas.ubc.ca/~quest/agu2021-build-211215.htm). 
   * The [original at AGU](https://agu2021fallmeeting-agu.ipostersessions.com/default.aspx?s=2A-C2-3D-E0-3B-DD-9A-5E-A3-C9-44-74-4B-06-45-A9) (may not be permanently available).
