@@ -69,12 +69,7 @@ Costs: to instructors, departments & institutions
 
 **Costs**:
 
-<span style="color:red">These might be better placed in a page on general guidelines which can then be referenced here.</span>
-
-* The design cycle involved numerous iterations so working code can be developed then the instructor can explore how initial designs will work in their planned setting, adjust, revisit, and iterate until satisfied.
-* There may also be a second round of adjustments after first deployment in a real course.
-* Implementing as a class assignment requires the dashboard be hosted on a reasonably fast server that can handle multiple logins. Instructors also need to explore the dashboard to identify opportunities and limitations so that meaningful tasks can be set for students to apply concepts being learned in the class.
-* The question of longer term maintenance, deployment and sustainability of these tools is still a question. Instructors can not be expected to handle all the coding and server technology as well as incorporate excellent, evidence-base, student-centric pedagogy. 
+See comments on costs of development in our [Developing Dashboards](dashboards-howto.md) page. 
 
 ### Recommendations
 
@@ -90,13 +85,9 @@ Quotes from feedback based on a 3rd party (online) class observation:
 
 **General feedback about using dashboards in lessons**:
 
-<span style="color:red">This might be better placed in a page on general guidelines. Perhaps a "Teaching and Learning with Dashboards" page.</span> 
-
-* Students cannot solve problems with a new tool unless they have time to familiarize with the tool. There are 3 aspects they are wrestling with: 1) new concepts, 2) a new tool, and 3) a "problem" to solve (eg "_what happens to the water divide, both mathematically and conceptually_"). So - students either need time in class to "play" or "explore" with the tool, or they need to have seen the tool before.
-* If possible, ask them to familiarize with the tool before coming to class, perhaps with a few pointers about what to look for. Then they will come to class more ready to use the tool productively.
-* Or, have them explore a little in class at the end of one lesson, then pick up the "real" task in the following lesson.
-* Perhaps the first questions they are given can be "trivial" (i.e. more about the tool than the concepts). Then the real problem you want them to solve comes after that.
-* Activity instructions on lecture slides works fine, although it might be nice to have a worksheet with settings, questions, and spaces for answering. But you will know what works for this class.
-* Questions to solve might be more "interesting" if they are in terms of the consequences to people or property. Such as - "which water body will receive the agricultural pollution when the divide migrates due to changing recharge?" Or - "under what conditions will water table become higher than ground thus contributing to flooding?" Or - if you ask "what happens to range of Q values?", then follow up by asking something concrete about the consequences for influx of groundwater at the two sides of the scenario - eg. which waterway will have to handle the larger input of water? These are just ideas about connecting concepts to reality. It is fair to say that these ideas may not be compatible with an instructor's priorities. 
-
-In all the courses using new dashboards we are seeing the same importance of allowing students time to familiarize with the tool before asking them to make good use of it. There are various ways of doing this, and each course will use their own approach. 
+* See general guidelines for teaching with dashboards on our [Teaching with Dashboards](tut-teachwith-dashboards.md) page.
+* Questions to solve might be more "interesting" if they are in terms of the consequences to people or property. Examples:
+  * "Which water body will receive the agricultural pollution when the divide migrates due to changing recharge?" 
+  * "Under what conditions will water table become higher than ground thus contributing to flooding?" Or - if you ask "what happens to range of Q values?", 
+* Then follow up by asking something concrete about the consequences for influx of groundwater at the two sides of the scenario - eg. which waterway will have to handle the larger input of water? 
+* These are just ideas about connecting concepts to reality. It is fair to say that these ideas may not be compatible with an instructor's priorities. 

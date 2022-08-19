@@ -1,0 +1,25 @@
+  #| Goal| #| item| who
+  1| Eosc211| a| Course-specific hub |  PA
+  |  | b| Nbgrader workflow |  PA
+  2| Eosc350| a| Course-specific hub |  PA
+  3| Eosc442| a| Open Jupyter hub tested|  IS; BO; FJ
+  |  | b| All 4 labs reviewed & tested (Ben O'Connor & Iddo)|  BO; IS
+  |  | c| Project tactics and climate datasets; |  FJ; Becca
+  4| Eosc354| a| Guidelines / docs for instructor and TAs? Reid M. is available to help Bostock|  ?
+  5| Eosc325 | a| Contact Ali - ask about dates; updates & possible additions|  FJ
+  |  | b| Hub location; pedagogy guidelines & examples| FJ; PA
+  6| Eosc372 | a| Is updated ocgy app OK?| FJ 
+  |  | b| hub location; pedagogy guidelines & examples| As per #5b 
+  7| Eosc410| a| Ask Valentina what's desired; & when|  FJ
+  8| Dashboards | a| Permanent hub + update procedure not dependent upon Phil A. | As per #5b 
+  |  | b| Eosc112; others; hub location; pedagogy guidelines & examples | As per #5b 
+  |  | c| Eosc310: Daisyworld as is? Hub location? Talha Qadri  <talha.qadri@ubc.ca> new instructor.|  FJ
+  |  | d| Ask structures instructors about Mohr's app. |  FJ
+  9| Docs| a| What to show-and-tell in dep't meetings|  FJ
+  |  | b| List jnb users & docs/guidelines|  FJ
+  |  | c| List dasbd users & docs/guidelines|  FJ
+  |  | d| Summarize low; medium; high commitment entry points|  FJ
+  |  | e| "costs and ""benefits"""|  FJ
+  |  | f| "Jupyter notebook ""getting started"" (as per dsci100 & eosc442?). The current Jupyterhub tutorial at ocese docs is not ideal (was made for 211 pilot yr). Needs more graphics less ""chat"". Iddo has ideas for eosc442. "|  FJ; IS
+  |  | g| Review https://eoas-ubc.github.io/ and update as time permits.  |  FJ
+  |  | h| Rationalize GitHub (and other) content for posterity and easy access|  FJ; PA
