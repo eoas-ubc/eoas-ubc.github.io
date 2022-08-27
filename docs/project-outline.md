@@ -22,45 +22,55 @@ This proposed curriculum transformation will happen alongside a re-evaluation of
 
 - _Lindsey Heagy_: Geophysics / datascience professor with direct experience in tools and techniques, and with an ongoing stake as instructor for several courses we are working on. ([LH at EOAS](https://www.eoas.ubc.ca/people/lindseyheagy) and [on GitHub](https://github.com/lheagy)).
 
-### Current student contributors
-Summer, 2022:
-- Iddo Sadeh ([IS on GitHub](https://github.com/IddoSadeh))
-- Navya Dahiya
-- Wanying Ye
-- Ben O'Connor
-
 ### EOAS Department contributors
-
 The following are, or will be involved in various capacities. All are faculty in the Department of EOAS, Faculty of Science, UBC
+- Ali Ameli
+- Roger Beckie
 - Susan Allen
 - Maite Maldonado
 - Kristen Orians
-- Roger Beckie
+- Stephanie Waterman
+- Anais Orsi
+- Tara Ivanochko
 - Michael Bostock
+- Phil Austin
 - Catherine Johnson
 - Valentina Radic
-- Stephanie Waterman
+- Lindsey Heagey
+- Stuart Sutherland
+- Lucy Porritt
+- Kirsten Hodge
 - Michael Lipsen
+
+### Current student contributors
+Summer, 2022:
+- (UGrad) Iddo Sadeh ([IS on GitHub](https://github.com/IddoSadeh))
+- (Grad) Navya Dahiya
+- (Grad) Wanying Ye
+- (Grad) Ben O'Connor
+- (Grad) Francis Rossmann
+
 
 ### Project alumni
 
-- Carol Zhang ([CZ on GitHub](https://github.com/carolz19))
-- Andrew Loeppky ([AL on GitHub](https://github.com/AndrewLoeppky))
-- Jamie Byer ([JB on GitHub](https://github.com/jamiebyer/))
-- Hariharan Umashankar ([HU on GitHub](https://github.com/hari-ushankar) or [researchgate](https://www.researchgate.net/profile/Hariharan_Umashankar)) (summer 2020 through fall 2021)
-- Jacob McFarlane ([JM on GitHub](https://github.com/JacobMcFarlane)) (winter/spring 2021)
-- Yiki Su ([YS on GitHub](https://github.com/YikiSu)) (winter/spring 2021)
-- Danil Platonov ([DP on GitHub](https://github.com/slemonide)) (summer & fall, 2020)
-- Benjamin Chang ([BC on GitHub](https://github.com/bkchang-97)) (fall/winter 2020/21)
-- Chris Rodell ([CR on GitHub](https://github.com/cerodell)) (volunteer, Fall 2021)
-- Mara Colclough ([MC on GitHub](https://github.com/maracieco)) (summer 2020)
+- (UGrad) Carol Zhang ([CZ on GitHub](https://github.com/carolz19))
+- (Grad) Andrew Loeppky ([AL on GitHub](https://github.com/AndrewLoeppky))
+- (UGrad) Jamie Byer ([JB on GitHub](https://github.com/jamiebyer/))
+- (Grad) Hariharan Umashankar ([HU on GitHub](https://github.com/hari-ushankar) or [researchgate](https://www.researchgate.net/profile/Hariharan_Umashankar)) (summer 2020 through fall 2021)
+- (Grad) Jacob McFarlane ([JM on GitHub](https://github.com/JacobMcFarlane)) (winter/spring 2021)
+- (Grad) Yiki Su ([YS on GitHub](https://github.com/YikiSu)) (winter/spring 2021)
+- (UGrad) Danil Platonov ([DP on GitHub](https://github.com/slemonide)) (summer & fall, 2020)
+- (UGrad) Benjamin Chang ([BC on GitHub](https://github.com/bkchang-97)) (fall/winter 2020/21)
+- (Grad) Chris Rodell ([CR on GitHub](https://github.com/cerodell)) (volunteer, Fall 2021)
+- (UGrad) Mara Colclough ([MC on GitHub](https://github.com/maracieco)) (summer 2020)
 
 ### Students contributing to dashboard design and programming
 
-- Jamie Byer
-- Andrew Loeppky
-- Hariharan Umashankar
-- Jacob McFarlane
-- Francis Rossmann
-- Yulia Egorovo
-- Yuliya Kuzmenko
+- (UGrad) Iddo Sadeh
+- (UGrad) Jamie Byer
+- (Grad) Andrew Loeppky
+- (Grad) Hariharan Umashankar
+- (Grad) Jacob McFarlane
+- (Grad) Francis Rossmann
+- (Grad) Yulia Egorovo
+- (Grad) Yuliya Kuzmenko

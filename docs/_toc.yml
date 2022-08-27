@@ -76,7 +76,7 @@ parts:
   - file: tut-commandline
   - file: tut-conda_environs
   - file: tut-programming-environs
-    title: Programming environments
+    title: Using 'environments'
   - file: tut-git-intro
   - file: tut-pullrequest
     title: Pull Request Workflow

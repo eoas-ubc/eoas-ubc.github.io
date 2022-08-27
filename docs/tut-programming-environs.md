@@ -1,4 +1,4 @@
-# A Guide for Programming Environments
+# Working with environments for running code or programming
 
 ## Prior Assumptions
 
