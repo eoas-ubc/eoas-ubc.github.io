@@ -10,6 +10,9 @@ Using open source, cloud-based computing we aim to integrate computational and q
 
 This proposed curriculum transformation will happen alongside a re-evaluation of quantitative EOAS course offerings across disciplines. The end result will reposition the UBC Earth Science specializations as opportunities for quantitative and computational learning in a highly interdisciplinary domain.
 
+## Caveat
+This project's proposal was developed during 2018-19, and funded between May 2020 - April 2023. Therefore, we began work 2 months after the COVID pandemic dramatically changed the way teaching was delivered. Throughout the first 2 years, instructors and students were all working overtime to adapt their teaching and learning practices to the unexpected online learning environment. There was little time and energy to devote to transformative developments - UNLESS they directed supported online teaching and learning. Therefore, priorities changed and delivered outcomes reflect this shift in context from project concept to project execution.
+
 ## Contributors
 
 ### Principles
@@ -43,26 +46,25 @@ The following are, or will be involved in various capacities. All are faculty in
 - Michael Lipsen
 
 ### Current student contributors
-Summer, 2022:
+Fall, 2022:
 - (UGrad) Iddo Sadeh ([IS on GitHub](https://github.com/IddoSadeh))
-- (Grad) Navya Dahiya
-- (Grad) Wanying Ye
 - (Grad) Ben O'Connor
 - (Grad) Francis Rossmann
-
 
 ### Project alumni
 
 - (UGrad) Carol Zhang ([CZ on GitHub](https://github.com/carolz19))
-- (Grad) Andrew Loeppky ([AL on GitHub](https://github.com/AndrewLoeppky))
 - (UGrad) Jamie Byer ([JB on GitHub](https://github.com/jamiebyer/))
+- (UGrad) Danil Platonov ([DP on GitHub](https://github.com/slemonide)) (summer & fall, 2020)
+- (UGrad) Benjamin Chang ([BC on GitHub](https://github.com/bkchang-97)) (fall/winter 2020/21)
+- (UGrad) Mara Colclough ([MC on GitHub](https://github.com/maracieco)) (summer 2020)
+- (Grad) Navya Dahiya (summer 2022)
+- (Grad) Wanying Ye (summer 2022)
+- (Grad) Andrew Loeppky ([AL on GitHub](https://github.com/AndrewLoeppky))
 - (Grad) Hariharan Umashankar ([HU on GitHub](https://github.com/hari-ushankar) or [researchgate](https://www.researchgate.net/profile/Hariharan_Umashankar)) (summer 2020 through fall 2021)
 - (Grad) Jacob McFarlane ([JM on GitHub](https://github.com/JacobMcFarlane)) (winter/spring 2021)
 - (Grad) Yiki Su ([YS on GitHub](https://github.com/YikiSu)) (winter/spring 2021)
-- (UGrad) Danil Platonov ([DP on GitHub](https://github.com/slemonide)) (summer & fall, 2020)
-- (UGrad) Benjamin Chang ([BC on GitHub](https://github.com/bkchang-97)) (fall/winter 2020/21)
 - (Grad) Chris Rodell ([CR on GitHub](https://github.com/cerodell)) (volunteer, Fall 2021)
-- (UGrad) Mara Colclough ([MC on GitHub](https://github.com/maracieco)) (summer 2020)
 
 ### Students contributing to dashboard design and programming
 
