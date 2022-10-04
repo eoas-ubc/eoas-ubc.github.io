@@ -43,12 +43,16 @@ parts:
     title: Dashboards
   - file: facultydev
   - file: eval-wisdom
-    title: Project evaluation >>
+    title: Project evaluation
     sections:
+    - file: eval-coursetransforms
+      title: Course transformations
+    - file: eval-dashbds
+      title: Dashboards
     - file: project-data
       title: Project Data
   - file: presentations
-    title: Scholarly contributions
+    title: Presentations
 - caption: How-to Guides
   chapters:
   - file: git-workflows

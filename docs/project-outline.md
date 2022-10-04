@@ -26,7 +26,7 @@ This project's proposal was developed during 2018-19, and funded between May 202
 - _Lindsey Heagy_: Geophysics / datascience professor with direct experience in tools and techniques, and with an ongoing stake as instructor for several courses we are working on. ([LH at EOAS](https://www.eoas.ubc.ca/people/lindseyheagy) and [on GitHub](https://github.com/lheagy)).
 
 ### EOAS Department contributors
-The following are, or will be involved in various capacities. All are faculty in the Department of EOAS, Faculty of Science, UBC
+The following are, or will be involved in various capacities. All teach (or have taught) in the Department of EOAS, Faculty of Science, UBC.
 - Ali Ameli
 - Roger Beckie
 - Susan Allen
@@ -36,6 +36,7 @@ The following are, or will be involved in various capacities. All are faculty in
 - Anais Orsi
 - Tara Ivanochko
 - Michael Bostock
+- Reid Merrill
 - Phil Austin
 - Catherine Johnson
 - Valentina Radic
@@ -47,11 +48,11 @@ The following are, or will be involved in various capacities. All are faculty in
 
 ### Current student contributors
 Fall, 2022:
-- (UGrad) Iddo Sadeh ([IS on GitHub](https://github.com/IddoSadeh))
-- (Grad) Ben O'Connor
-- (Grad) Francis Rossmann
+- (UGrad) Iddo Sadeh ([IS on GitHub](https://github.com/IddoSadeh)) (Hired as programmer to support dashboard development and converting eosc442 & dsci100 to Python.)
+- (Grad) Ben O'Connor (TA - teaches computing labs in EOSC 442. Helped convert to Python.)
+- (Grad) Francis Rossmann (TA - Comprehensive support for logistics and assessment in eosc211; concieved and built a dashboard for eosc310.)
 
-### Project alumni
+### Past student contributors
 
 - (UGrad) Carol Zhang ([CZ on GitHub](https://github.com/carolz19))
 - (UGrad) Jamie Byer ([JB on GitHub](https://github.com/jamiebyer/))
