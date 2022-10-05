@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Faculty Pro-D &#8212; OCESE Documentation</title>
+    <title>Professional development &#8212; OCESE Documentation</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -52,7 +52,7 @@ const thebe_selector_output = ".output, .cell_output"
     <script async="async" src="_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Project Evaluation and Wisdom gained" href="eval-wisdom.html" />
+    <link rel="next" title="Project Evaluation and lessons learned" href="eval-wisdom.html" />
     <link rel="prev" title="Dashboards developed or in progress" href="dashboards.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
@@ -277,12 +277,12 @@ const thebe_selector_output = ".output, .cell_output"
  </li>
  <li class="toctree-l1 current active">
   <a class="current reference internal" href="#">
-   Faculty Pro-D
+   Professional development
   </a>
  </li>
  <li class="toctree-l1 has-children">
   <a class="reference internal" href="eval-wisdom.html">
-   Project evaluation &gt;&gt;
+   Project evaluation
   </a>
   <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
   <label for="toctree-checkbox-3">
@@ -290,6 +290,16 @@ const thebe_selector_output = ".output, .cell_output"
    </i>
   </label>
   <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="eval-coursetransforms.html">
+     Course transformations
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="eval-dashbds.html">
+     Dashboards
+    </a>
+   </li>
    <li class="toctree-l2">
     <a class="reference internal" href="project-data.html">
      Project Data
@@ -299,7 +309,7 @@ const thebe_selector_output = ".output, .cell_output"
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="presentations.html">
-   Scholarly contributions
+   Presentations
   </a>
  </li>
 </ul>
@@ -565,23 +575,252 @@ title="Print to PDF"
     </ul>
   </div>
 </div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
 
     </div>
 </div>
 
 <!-- Table of contents -->
 <div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#introduction">
+   1. Introduction
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#original-intentions">
+     1.1 Original intentions
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#timing-covid">
+     1.2 Timing &amp; COVID
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#who">
+   2. Who
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#who-has-received-support">
+     2.1 Who
+     <em>
+      has
+     </em>
+     received support?
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#who-could-receive-support">
+     2.2 Who
+     <em>
+      could
+     </em>
+     receive support?
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#lessons-to-be-conveyed">
+   3. Lessons to be conveyed
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#learning-python">
+     3.1 Learning Python
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#applying-python-to-course-concepts">
+     3.2 Applying Python to course concepts
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#ways-of-deploying-python">
+     3.3 Ways of deploying Python
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#assessment-workflows">
+     3.4 Assessment workflows
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#challenges">
+       3.4.1 Challenges
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#solutions">
+       3.4.2 Solutions
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#using-dashboards-for-teaching-learning">
+     3.5 Using Dashboards for teaching/learning
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#developing-open-education-practices-or-resources">
+     3.6 Developing open education practices or resources
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#finally-the-moving-target-problem">
+     3.7 Finally - the “moving target” problem
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#resources-to-reference-or-make">
+   4. Resources to reference or make
+  </a>
+ </li>
+</ul>
+
+    </nav>
 </div>
     </div>
     <div class="article row">
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Faculty Pro-D</h1>
+                <h1>Professional development</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
                         
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#introduction">
+   1. Introduction
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#original-intentions">
+     1.1 Original intentions
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#timing-covid">
+     1.2 Timing &amp; COVID
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#who">
+   2. Who
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#who-has-received-support">
+     2.1 Who
+     <em>
+      has
+     </em>
+     received support?
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#who-could-receive-support">
+     2.2 Who
+     <em>
+      could
+     </em>
+     receive support?
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#lessons-to-be-conveyed">
+   3. Lessons to be conveyed
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#learning-python">
+     3.1 Learning Python
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#applying-python-to-course-concepts">
+     3.2 Applying Python to course concepts
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#ways-of-deploying-python">
+     3.3 Ways of deploying Python
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#assessment-workflows">
+     3.4 Assessment workflows
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#challenges">
+       3.4.1 Challenges
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#solutions">
+       3.4.2 Solutions
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#using-dashboards-for-teaching-learning">
+     3.5 Using Dashboards for teaching/learning
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#developing-open-education-practices-or-resources">
+     3.6 Developing open education practices or resources
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#finally-the-moving-target-problem">
+     3.7 Finally - the “moving target” problem
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#resources-to-reference-or-make">
+   4. Resources to reference or make
+  </a>
+ </li>
+</ul>
+
+                        </nav>
                     </div>
                 </div>
             </div>
@@ -589,10 +828,124 @@ title="Print to PDF"
                 
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="faculty-pro-d">
-<h1>Faculty Pro-D<a class="headerlink" href="#faculty-pro-d" title="Permalink to this headline">#</a></h1>
-<p><span style="color:red">To be completed.</span></p>
-<p>To include isntances of direct support and training, including pointers to corresponding materials in the “How-to Guides” and “Tutorials” sections of this website.</p>
+  <section class="tex2jax_ignore mathjax_ignore" id="professional-development">
+<h1>Professional development<a class="headerlink" href="#professional-development" title="Permalink to this headline">#</a></h1>
+<p>NOTE: don’t discuss project outcomes here - focus on supporting professional development for teaching purposes, for faculty, students and staff.</p>
+<section id="introduction">
+<h2>1. Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">#</a></h2>
+<section id="original-intentions">
+<h3>1.1 Original intentions<a class="headerlink" href="#original-intentions" title="Permalink to this headline">#</a></h3>
+<p>From the proposal …</p>
+<p>Why were those expectations naive? Two reasons:</p>
+<ol class="simple">
+<li><p>All 3 years were needed to carry out development &amp; fine tuning of teaching practices and resources, and tutorials or workshops only make sense whith proven techniques and strategies.</p></li>
+<li><p>Development also requires participants to be involved and commit the necessary time and focus throughout their portion of the project. That is challenging when instructors come and go, and everyone is constantly managing “change” necessitated by the enforced pivoting to and from fully or partially online learning.</p></li>
+</ol>
+</section>
+<section id="timing-covid">
+<h3>1.2 Timing &amp; COVID<a class="headerlink" href="#timing-covid" title="Permalink to this headline">#</a></h3>
+<ul class="simple">
+<li><p>Project: May 2020 - May 2023</p></li>
+<li><p>COVID: March 2020 - ~August 2022, including the summer of 2022 as a time to “recover” from the constant pivotting in the 2020W and 2021W teachig sessions.</p></li>
+</ul>
+</section>
+</section>
+<section id="who">
+<h2>2. Who<a class="headerlink" href="#who" title="Permalink to this headline">#</a></h2>
+<section id="who-has-received-support">
+<h3>2.1 Who <em>has</em> received support?<a class="headerlink" href="#who-has-received-support" title="Permalink to this headline">#</a></h3>
+<p>OCESE project has supported development and/or implementation of methods, resources, tactics (eg pedagogy), infrastructure and associated procedures. Faculty partners provide the course as context, define specific needs for each lesson, assignment or assessment, including both resources and methods or procedures.</p>
+<p><em>Not sure what exactly needs to be included here. A table could be derived from the <a class="reference external" href="https://docs.google.com/spreadsheets/d/1BUk1_FHItUgzuyg2aJ-dX6XpMABmFSPe/edit#gid=979565415">OCESE Project Accomplishments spreadsheet</a>.</em></p>
+<ul class="simple">
+<li><p>List of faculty who were supported and/or contributed is on the <a class="reference internal" href="project-outline.html"><span class="doc std std-doc">project outline page</span></a>.</p></li>
+<li><p>Also listed are graduate and undergraduate students who learned by contributing to the project, either as formally hired workers or as teaching assistants with teahcing or support roles in a course.</p></li>
+</ul>
+</section>
+<section id="who-could-receive-support">
+<h3>2.2 Who <em>could</em> receive support?<a class="headerlink" href="#who-could-receive-support" title="Permalink to this headline">#</a></h3>
+<p>Which courses or instructors could benefit from professional development support? Twenty-four EOAS courses currently use computing or dashboard resources. See <a class="reference external" href="https://docs.google.com/spreadsheets/d/1Lg9wLZYwIHSVyXzFPO3096d8eLvL6oLn9lShOosBBok/edit#gid=0">this table</a> of computing in EOAS courses. Thirteen courses need to be asked if they do, or will, use computing (especially open) facilities of any kind.</p>
+</section>
+</section>
+<section id="lessons-to-be-conveyed">
+<h2>3. Lessons to be conveyed<a class="headerlink" href="#lessons-to-be-conveyed" title="Permalink to this headline">#</a></h2>
+<p>Faculty Pro-D in the form of docs, guidelines, tutorials are emerging from all project threads, including DSCI100, EOSC211, upper level courses (atsc301, eosc354, eosc410, &amp; others), and dashboard use in courses that do not have students writing code.</p>
+<p>Which lessons are appropriate for workshops? Which for one-on-one support?</p>
+<p>Who will carry out that kind of support? We have had TAs, WorkLearn students and “staff” helping individuals during preparation and delivery of specific courses. Teaching assistants have been instrumental in supporting development and piloting of new resources, lessons, activities, assignements, labs and assessments. They will likely continue to be invaluable in sustaining existing innovations or developing new ones.</p>
+<p>Are any courses “going further” because students are more up to speed with coding or other quantitative practices? EOSC 112 and 340 now access climate models via dashboards. If so, this is a justification for new tactics, not an aspect of “professional development”.</p>
+<section id="learning-python">
+<h3>3.1 Learning Python<a class="headerlink" href="#learning-python" title="Permalink to this headline">#</a></h3>
+</section>
+<section id="applying-python-to-course-concepts">
+<h3>3.2 Applying Python to course concepts<a class="headerlink" href="#applying-python-to-course-concepts" title="Permalink to this headline">#</a></h3>
+</section>
+<section id="ways-of-deploying-python">
+<h3>3.3 Ways of deploying Python<a class="headerlink" href="#ways-of-deploying-python" title="Permalink to this headline">#</a></h3>
+<ul class="simple">
+<li><p>Jupyter notebooks on UBC-supported hubs</p></li>
+<li><p>Jupyter notebooks on Department hubs</p></li>
+<li><p>Jupyter notebooks via CoLab</p></li>
+<li><p>Laptop installations for each student</p></li>
+</ul>
+</section>
+<section id="assessment-workflows">
+<h3>3.4 Assessment workflows<a class="headerlink" href="#assessment-workflows" title="Permalink to this headline">#</a></h3>
+<section id="challenges">
+<h4>3.4.1 Challenges<a class="headerlink" href="#challenges" title="Permalink to this headline">#</a></h4>
+<p>Outline the challenges of automatic and manual grading for small, medium or large classes</p>
+</section>
+<section id="solutions">
+<h4>3.4.2 Solutions<a class="headerlink" href="#solutions" title="Permalink to this headline">#</a></h4>
+<p>Present a the range of solutions in EOAS &amp; DSCI courses:</p>
+<ul class="simple">
+<li><p>Manual grading using deliver / submit via Canvas; used for smaller courses including EOSC 354,</p></li>
+<li><p><a class="reference external" href="https://nbgrader.readthedocs.io">nbgrader</a>; DSCI 100, EOSC 211 (to a lesser extent); what others at UBC? Ask PA, and/or slack</p></li>
+<li><p><a class="reference external" href="https://prairielearn.readthedocs.io">PrairieLearn</a> (used in EOSC 340)</p></li>
+<li><p><a class="reference external" href="https://lthub.ubc.ca/guides/gradescope-instructor-guide/">Gradecope</a>; not used in EOAS?</p></li>
+<li><p><a class="reference external" href="https://otter-grader.readthedocs.io/en/latest/">Otter-Grader</a>; not used at UBC?</p></li>
+<li><p>Hybrid solutions such as nbgrader + manual grading used in EOSC 211.</p></li>
+</ul>
+</section>
+</section>
+<section id="using-dashboards-for-teaching-learning">
+<h3>3.5 Using Dashboards for teaching/learning<a class="headerlink" href="#using-dashboards-for-teaching-learning" title="Permalink to this headline">#</a></h3>
+<ul class="simple">
+<li><p>Dashboard resources have two purposes (explore data or concepts).</p></li>
+<li><p>They are (or have been) used in at least 7 EOAS courses.</p></li>
+<li><p>In class for demonstrations or group work</p></li>
+<li><p>as enrichment for students</p></li>
+<li><p>as part of assignments - solo or group.</p></li>
+<li><p>refer to research on using simulations for teaching and learning, eg references involving <a class="reference external" href="https://phet.colorado.edu/en/research">PhETs</a>.</p></li>
+</ul>
+</section>
+<section id="developing-open-education-practices-or-resources">
+<h3>3.6 Developing open education practices or resources<a class="headerlink" href="#developing-open-education-practices-or-resources" title="Permalink to this headline">#</a></h3>
+<p>Skills considered “open source practices” include using GitHub to collaborate on code or documentation, building content as open resources (eg. as Jupyter Books), collaborating on development of code.</p>
+<p>Some instructors already use open source practices for their research or teaching: Heagey, White, Austin, Radic?, some of the grad &amp; ugrad students working on the project. We have benefited from their experience.</p>
+<p>Some have begun adopting open source practices for their teaching: C. Johnson, R. Merill, all ugrad and grad students who have participated.</p>
+</section>
+<section id="finally-the-moving-target-problem">
+<h3>3.7 Finally - the “moving target” problem<a class="headerlink" href="#finally-the-moving-target-problem" title="Permalink to this headline">#</a></h3>
+<p>Development for teaching of (a) tactics for providing students with resources (eg hubs) and (b) efficient assesment practices can not keep pace with changes in the computing community (opensource, or otherwise). Also, different sustainment models have different pros and cons. For example:</p>
+<ul class="simple">
+<li><p>Institutional (UBC) support means technical and support staff get to know the instructors and their courses and can be available “on demand”. Institution level support (eg CTLT) benefits more than Department level support from economies of scale. However, support teams still need to keep up with best practices in a very rapidly evolving “ecosystem” of technology. Keeping up to date is more than full time - something specialists can do better than instituitional groups who provide a variety of technical services across campus(es).</p></li>
+<li><p>In contrast, third party support for hubs and tech support (eg <a class="reference external" href="https://2i2c.org/">2i2c</a>) will provide more widely-tested strategies and likely more reliable facilities, but with “fees for service” rather than costs distributed across institutional service groups.</p></li>
+</ul>
+</section>
+</section>
+<section id="resources-to-reference-or-make">
+<h2>4. Resources to reference or make<a class="headerlink" href="#resources-to-reference-or-make" title="Permalink to this headline">#</a></h2>
+<ul class="simple">
+<li><p>Compare deployment options for Jupyter Notebooks. See <a class="reference external" href="https://www.techrepublic.com/article/google-colab-vs-jupyter-notebook/">for example</a> a May 2020 comparison of local and Google Colab options. Include…</p>
+<ul>
+<li><p>who to ask for advice and support.</p></li>
+<li><p>necessary resources and “start up” costs for students.</p></li>
+</ul>
+</li>
+<li><p>Compare code grading options (small class, medium, large, nbgrader, “by hand”, the Johnson/Rossman model for 211).</p></li>
+<li><p>Who are the movers and shakers in this space? Which universities? Which organizations? Which individuals?</p></li>
+<li><p>Why is it important to include capacity to “keep up to date”? Provide examples of “fails” that would not have happened if solutions and preventative techniques were known from the open community.</p></li>
+</ul>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -632,7 +985,7 @@ title="Print to PDF"
     <a class='right-next' id="next-link" href="eval-wisdom.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Project Evaluation and Wisdom gained</p>
+        <p class="prev-next-title">Project Evaluation and lessons learned</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>

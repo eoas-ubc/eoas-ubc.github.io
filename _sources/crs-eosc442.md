@@ -10,15 +10,16 @@
 \>[ubcexplore](https://ubcexplorer.io/course/EOSC/442),
 \> [EOAS curriculum map](https://www.eoas.ubc.ca/~quest/eoas-only.html).
 
+EOSC 442 is a 1-credit required lab course for [Combined Majors in Science](https://cms.science.ubc.ca/) students. While it is only 1 credit, the activities include collecting and analyzing time series data with an emphasis on climate series. 
+
 ## OCESE project objectives
 
-<span style="color:red">To be completed.</span>
+1. convert the 4 computing labs from MatLab activities to Jupyter Notebook-based Python, and 
+2. introduce new data sets for the course's final project.
 
 ## Resources produced
 
 These are open education resources (OER) unless indicated otherwise.
-
-<span style="color:red">To be completed.</span>
 
 ## Pedagogy
 
