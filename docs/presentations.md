@@ -21,15 +21,21 @@ Scholarly contributions are fewer than "normal" owing to constraints experienced
 ## EOAS or UBC meetings / workshops
 
 1. **December 2020: Dep't mini retreat**. "_OCESE components and progress_". See [PDF](https://github.com/eoas-ubc/eoas-ubc.github.io/blob/docs/pdffiles/ocese-demo-dec15.pdf) of presentation slides.
-**Or this link doesn't work: [PDF](pdffiles/ocese-demo-dec15.pdf)**.
+Or: [PDF](pdffiles/ocese-demo-dec15.pdf). (this link doesn't work)
+
    * OCESE project components - which are attractive to you?
    * Faculty feedback
    * OCESE is working on: Jupyter notebooks and books, dashboards (the "low threshold"), auto-grading & connecting with Canvas, Local Jupyter Hubs and corresponding systems & workflows.
    * students and instructors perspectives.
    * infrastructure.
+
 2. **February 2021: participant meeting.** "_Dashboards: Making Concepts interactive_". See [PDF](https://github.com/eoas-ubc/eoas-ubc.github.io/blob/docs/pdffiles/Fac-ProD-Feb-210215.pdf) of  presentation slides.
    * Interactive learnign resources - precedent. (Targeting the "low threshold" end of the quantitative learnign spectrum.)
    * Initial examples in EOAS - ENVR 300.
    * Associated pedagogy.
    * Brainstorm to discuss courses, topics, objectives, steps.
    * making dashboards: development steps.
+
+3. **June 2021: Teaching with Jupyter notebooks**
+   * Workshop mostly prepared for instructors considering introducing Jupyter notebooks.
+   * Not delivered due to reduced level of interest during the "covid summer" of 2021.

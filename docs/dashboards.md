@@ -18,11 +18,11 @@
 
 * **climate-maunaloa-jnb**, on github at [repo](https://github.com/fhmjones/envr-maunaloa-jnb), a Jupyter Notebook version of CO2 at Mauna Loa with straightline modelling. Uses `ipywidget` library for interactivity instead of `PlotlyDash`.
 
-* **[climate-ozone](https://climate-ozone.herokuapp.com/)** plots 1 year of hourly ozone measurements at Vancouver Airport and Abbotsford. Github repository [here](https://github.com/fhmjones/envr-ozone).
+* **climate-ozone** plots 1 year of hourly ozone measurements at Vancouver Airport and Abbotsford. Github repository [here](https://github.com/fhmjones/envr-ozone).
 
 * **[Daisyworld](https://dashboard.eoastest.xyz/daisy)** displays inhabited area as a function of time when daisyworld parameters are varied. Both constant and varying solar flux situations are modeled. Github repository is the "daisy" folder [here](https://github.com/phaustin/addon_containers). Initially used in [EOSC 310](https://www.eoas.ubc.ca/academics/courses/eosc310) in Fall term, 2021.
 
-* **cmip6** (climate): Explore the CMPI6 climate science data sets ... in progress
+* **cmip6** (climate): Explore the CMPI6 climate science data sets. Planned for first use in [EOSC 340](https://www.eoas.ubc.ca/academics/courses/eosc340), Jan. 2023.
 
 ## Geology and hydrogeology
 
@@ -32,7 +32,7 @@
 
 * **[Drawdown](https://dashboard.eoastest.xyz/drawdown)** for confined and unconfined acquifers plots 2D drawdown curves for a well in a uniform acquifer with adjustable properties. Github repository is the "drawdown" folder [here](https://github.com/phaustin/addon_containers). Initially used in [EOSC 325](https://www.eoas.ubc.ca/academics/courses/eosc325) in Fall term, 2021.
 
-* **[Mohr's circles](https://mohrs.herokuapp.com/)**; plots Mohr's circles and failure envelopes by interactively adjusting stress. Github [repo](https://github.com/fhmjones/mohrs).
+* **[Mohr's circles](https://dashboard.eoastest.xyz/mohrs)**; plots Mohr's circles and failure envelopes by interactively adjusting stress. Github [repo](https://github.com/fhmjones/mohrs). Initially used in [EOSC 323](https://www.eoas.ubc.ca/academics/courses/eosc323) in Fall term, 2022
 
 ## Geophysics or "signals"
 
@@ -40,6 +40,6 @@
 
 * **timeseries-FFT** (not online). On github at [repo](https://github.com/fhmjones/timeseries-fft); works, but incomplete.
 
-* **[interactive images](https://clickimage.herokuapp.com/)** is an initial experiment exploring how to interact with figures for future dashboards planned for paleontology and other disciplines. Github repo [here](https://github.com/fhmjones/ClickImage).
+* **interactive images** is an initial experiment exploring how to interact with figures for future dashboards planned for paleontology and other disciplines. Github repo and active app will be listed here when ready (~Dec, 2022).
 
-* **[gpglabs](https://gpg.geosci.xyz/content/appendix/apps.html)** is an extensive collection of interactive Jupyter Notebooks illustrating concepts in applied geophysics including forward & inverse modeling and physics. See the [GPG applied geophysics textbook](https://gpg.geosci.xyz/) or the interactive NoteBooks collection [repository](https://github.com/geoscixyz/gpgLabs), both with links for running NoteBooks using Binder, Azure Notebooks, or locally on your own computer.
+* **[gpglabs](https://gpg.geosci.xyz/content/appendix/apps.html)** is an extensive collection of interactive Jupyter Notebooks illustrating concepts in applied geophysics including forward & inverse modeling and physics. See the [GPG applied geophysics textbook](https://gpg.geosci.xyz/) or the interactive NoteBooks collection [repository](https://github.com/geoscixyz/gpgLabs), both with links for running NoteBooks using Binder, Azure Notebooks, or locally on your own computer. The hub for running is currently restricted to students registered in EOSC 350 and faculty/TAs involved in teaching the course. 

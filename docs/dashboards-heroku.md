@@ -1,15 +1,19 @@
 # Deploying dashboards to Heroku
 
+**NOTE: no longer relevant as Heroku's free service was removed Nov. 2022.** Although there is a "low-cost" option which we have not investigated
+
+---
+
 This is an outline of steps to deploy Dash app to a free account at the Heroku servers for public online access.
 
-Although serving from Heroku has limitations, it is one way  to make apps accessible to the whole design team (eg. instructors, TAs etc.) without requiring them to have a personal Python installation. 
+Although serving from Heroku has limitations, it is one way  to make apps accessible to the whole design team (eg. instructors, TAs etc.) without requiring them to have a personal Python installation.
 
-Eventually OCESE dashboard apps will be housed either on a local (EOAS) server or in "managed" cloud-space. 
+Eventually OCESE dashboard apps will be housed either on a local (EOAS) server or in "managed" cloud-space.
 
 ---
 
 ## List of Steps
-See the tutorial [here](https://austinlasseter.medium.com/deploy-a-plotly-dash-app-on-heroku-4d2c3224230) for deploying dashboards apps to heroku. This is a summary of steps from the tutorial. 
+See the tutorial [here](https://austinlasseter.medium.com/deploy-a-plotly-dash-app-on-heroku-4d2c3224230) for deploying dashboards apps to heroku. This is a summary of steps from the tutorial.
 
 - Make a heroku account [here](https://www.heroku.com/)
 - Download and install [the heroku CLI](https://devcenter.heroku.com/articles/heroku-cli). If using Mac, you need to install [brew](https://brew.sh/) first. (I used Windows)

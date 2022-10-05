@@ -15,7 +15,7 @@ To be discussed: several pathways or workflows that enable constructing question
 
 1. Sending questions built offline to Canvas
    1. Benjamin Chang's 2020-2021 work as a work-learn student on projects called md2canvas, 340quizzes and canvas-api ([BC's repo](https://github.com/bkchang-97/eoas-wl)).
-   2. 
+   2. Procedure for efficient use of the open source (third party) [text2QTI application](tools.md).
 2. nbgrader
 3. PrairieLearn
 4. gradscope
