@@ -4,6 +4,9 @@ No particular order.
 See also [issues](https://github.com/eoas-ubc/eoas-ubc.github.io/issues) at the host repository.
 
 * Project data: using the [Accomplishments G-sheet](https://docs.google.com/spreadsheets/d/1BUk1_FHItUgzuyg2aJ-dX6XpMABmFSPe/edit?usp=sharing&ouid=102730173326762252425), add relevant data or items to each J-Book course page.
+* incorporate pointers to [Project Pythia](https://projectpythia.org/) and [Pangeo](https://pangeo.io/) into guidelines & resources.
+* Add piazza data to eosc211
+* incorporate e211's startup docs and lock files into e211 page and how-tos or tutorials.
 * specific courses: update pages for
    * eosc442,
    * atsc301,
@@ -17,3 +20,4 @@ See also [issues](https://github.com/eoas-ubc/eoas-ubc.github.io/issues) at the 
 * Faculty Pro-D page needs more content.
 * Progress at Nov 2022 needs writing.
 * Tools page: clarify what's needed, maybe make sub-pages.
+* JNB deployment options - pros and cons. The [Servers and hubs](cloud-servers.md) page?

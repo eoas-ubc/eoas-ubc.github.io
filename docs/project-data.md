@@ -1,8 +1,10 @@
 # Data about project progress
 
-See the [project accomplishments spreadsheet](https://docs.google.com/spreadsheets/d/1BUk1_FHItUgzuyg2aJ-dX6XpMABmFSPe/edit#gid=979565415) for a listing of data, data types, the courses and people involved, and some notes on todos or comments.
+The [project accomplishments spreadsheet](https://docs.google.com/spreadsheets/d/1BUk1_FHItUgzuyg2aJ-dX6XpMABmFSPe/edit#gid=979565415) provides a listing of data, data types, the courses and people involved, and some notes on todos or comments. 
 
-From that listing, summaries of results (as of Fall 2022) are in Tables 1 and 2.
+Summaries from that listing (as of Fall 2022) are in Tables 1 and 2. Bare in mind the [notes below](#notes).
+
+----
 
 **Table 1**: Project "products" counted in terms of their "type":
 
@@ -10,9 +12,9 @@ From that listing, summaries of results (as of Fall 2022) are in Tables 1 and 2.
 |-----|:-----:|
 |Total no. students in courses directly impacted 2021-2023|~2300|
 |No. [courses](course_materials.md) directly impacted by Fall 2022|17|
-|No. [faculty](project-outline.md) directly involved or affected|17|
-|No. [grad students](project-outline.md) who learned by contributing|9|
-|No. [undergrad students](project-outline.md) who learned by contributing|6|
+|No. faculty directly involved or affected ([list of personnel](project-outline.md))|17|
+|No. grad students who learned by contributing ([list of personnel](project-outline.md))|9|
+|No. undergrad students who learned by contributing ([list of personnel](project-outline.md))|6|
 |Teaching / learning resources produced|17|
 |Instances of dashboards use in courses|13|
 |Consulting activities (i.e. help & support for instructors)|12|
@@ -22,20 +24,29 @@ From that listing, summaries of results (as of Fall 2022) are in Tables 1 and 2.
 |Faculty professional development events or items*|6|
 |other|0|
 
-\* NOTE that "Faculty professional development events or items" do NOT include all the one-on-one work that naturally accompanies development of new resources, pedagogies or logistics. These ongoing interactions are too numerous to count. See the spreadsheet mentioned above for details.
+_\* "Faculty professional development events or items" do NOT include all the 1-on-1 work that accompanies development of new resources, pedagogies or logistics. These ongoing interactions are too numerous to count. See the spreadsheet mentioned above for details._
 
-&nbsp;
+----
 
-**Table 2:** Numbers of "products" that targeted the original project goals:
+**Table 2:** Numbers of "products" targeting each of the original project goals:
 
-|OCESE project goals|Totals|
+|OCESE project goals|No. 'products'|
 |-----|:-----:|
 |Enhanced learning of quantitative Earth Science for students in any EOAS course|26|
-|Engage with new and existing faculty; Faculty proffsional development|23|
+|Engage with new and existing faculty; Faculty professional development|23|
 |Enhanced computational / numerical literacy for EOAS graduates|18|
 |Total items that could become *Open Ed Resources*, or OERs| 18|
 |Items of documentation|13|
 |Development / testing of affordable, sustainable cloud computing facilities|8|
 |Support the Faculty of Science Minor in Data Science|5|
 
-Keep in mind that individual "products" may be realitively small (such as a single midterm survey used as data) or relatively involved (such as establishing how to deploy and maintain a cloud computing hub for efficient management of dashboards) - or anywhere in between. See the spreadsheet mentioned above for details.
+----
+### <a name="notes"></a>Notes
+
+* Transformed courses (major changes): DSCI100, EOSC211, EOSC354, EOSC442
+* Courses implementing smaller-scale changes: ENVR300, EOSC112, EOSC116, EOSC310, EOSC325, EOSC326, EOSC340, EOSC372.
+* "Accomplishments" or "products" are loosely defined. Each "product" will have a wide range of scope.
+* For example, "Faculty directly involved" may have put in a huge amount of time and energy to upgrade their course or some aspect of infrastructure, while others may have incorporated a single resource into one lesson of their course.
+* Other examples: "products" may be small (e.g. a single midterm survey used as data) or relatively involved (e.g. establishing how to efficiently deploy and maintain a cloud computing hub) - or anywhere in between.
+* All accomplishments are valuable, but characterizing "significance" is impossible in single rows of a table.
+* Details of accomplishments are presented throughout this website. There is a page for each course affected, several pages related to dashboards (building, using, deploying, etc.) and numerous pages of guidelines, tutorials and other "products" generated during the project.
