@@ -41,6 +41,17 @@ _\* "Faculty professional development events or items" do NOT include all the 1-
 |Support the Faculty of Science Minor in Data Science|5|
 
 ----
+
+### Number of students impacted
+**Table3:** Courses, number of students and type of impact. 
+
+```{image} images/impact-table-221011.png
+:alt: Courses, number of students and type of impact.
+:width: 750 px
+:align: center
+```
+<br>
+
 ### <a name="notes"></a>Notes
 
 * Transformed courses (major changes): DSCI100, EOSC211, EOSC354, EOSC442
