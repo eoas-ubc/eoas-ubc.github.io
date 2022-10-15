@@ -1,12 +1,24 @@
 # Progress at November 2022
 
-preamble ... <span style="color:red">To be completed.</span>
+There is no formal rquirement for a progress report in November 2022 since the project is not applying for renewal of funding.
 
-See also progress reporst for earlier dates.
+A final project report is due May 2023, and this documentation website constitutes the complete package.
+
+This page summarize progress between roughly Dec 2021 and Nov 2022.
 
 ## 1) Infrastructure development
 
-one of two main sustainability issues. <span style="color:red">To be completed.</span>
+open.jupyter.ubc.ca/ was implemented for Sept 1st by UBC's Center for Teaching and Learning Technology (CTLT). Details of facilities provided are on the [Jupyter Open home page](https://open.jupyter.ubc.ca/).
+
+In the Department of EOAS, courses eosc211 and eosc442 piloted usage of the "standard" JupyterLab environment, with mixed success. Other groups at UBC also are using the facility. It seems mainly reliable for small (fewer than ~30 students) courses but there have been latency and "hanging" difficulties for larger courses. Some quotes derived from communications with colleagues?
+
+"*... we have a few issues with some node slowdowns ... Students are finding the kernels are being very, very slow or failing connection entirely. It seems to be fine when we have < 50 connecting, but above that number we start hitting issues.*"
+
+and
+
+"*quote to come*"
+
+Between Fall 2022 and summer 2023 we expect to increase communication among users (instructors of courses using the hub) and suppliers (CTLT). With attention to communications and discussions, it should be feasible to address concerns about the stability / accessibility of open source computing to support the various undergraduate courses across campus.  Many faculty, students and staff have collectively made significant investments of time and funding to develop new educational approaches, and it’s really important that we get this right.
 
 ## 2) Complete course transformations
 

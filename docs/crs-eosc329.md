@@ -12,24 +12,12 @@
 
 ## OCESE project objectives
 
-<span style="color:red">To be completed.</span>
+Original intentions were to introduce Jupyter notebooks and/or interactive dashboard apps. Both options would facilitate exploration of concepts and data sets.
 
-## Resources produced
+## Progress
 
-These are open education resources (OER) unless indicated otherwise.
+EOSC329 has not yet (as of end of May 2023) benefitted from the planned improvements. The main reason is that instructors have been either over-extended (during COVID years) or temporary sessional instructors filling in while EOAS faculty were on sabbatical leave.
 
-<span style="color:red">To be completed.</span>
+**Dashboards** built for [eoas325](crs-eosc325.md) could be incorporated into classroom work or assignments with very little effort on part of instructors. These dashboard apps (see the "Geology and hydrogeology section of our [Dashboards page](dashboards.md)) are designed for a beginner's course on hydrogeology.
 
-## Pedagogy
-
-<span style="color:red">To be completed.</span>
-
-## Project evaluation
-
-<span style="color:red">To be completed.</span>
-
-Questions, data, results, risks and recommendations.
-
-Benefits: projected and observed. Focus on students and learning.
-
-Costs: to instructors, departments & institutions.
+**Jupyter notebooks** are probably less than ideal for this course since there is no presumption of programming skills in required prerequisites, and the Course Learning Outcomes do not include any expectations of gaining programming skills or experiences.

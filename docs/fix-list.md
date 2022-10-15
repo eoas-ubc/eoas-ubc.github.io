@@ -1,4 +1,4 @@
-# Fixes needed to documentation
+# Fixes to documentation
 No particular order.
 
 See also [issues](https://github.com/eoas-ubc/eoas-ubc.github.io/issues) at the host repository.
@@ -10,9 +10,7 @@ See also [issues](https://github.com/eoas-ubc/eoas-ubc.github.io/issues) at the 
 * specific courses: update pages for
    * eosc442,
    * atsc301,
-   * 211,
-   * envr 420,
-   * eosc329,
+   * eosc211,
    * others?
 * github and workflows to be rewritten as summaries, perhaps based on (or simply pointing to?) the [Atlasian tutorials](https://www.atlassian.com/git/tutorials/comparing-workflows).
 * Jupyter NB startup needs updating to use material from eosc442 and dsci100 material. How does this compare to docs used in EOSC 211?
