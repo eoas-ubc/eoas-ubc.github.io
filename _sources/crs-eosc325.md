@@ -20,18 +20,19 @@
 
 These are open education resources (OER) unless indicated otherwise.
 
-* **[Storativity](https://dashboard.eoastest.xyz/store)**: compares hydrological storativity of various geologic materials. Github repository is the "store" folder [here](https://github.com/phaustin/addon_containers).
+* **[Storativity](https://dashboard.eoas.ubc.ca/store)**: compares hydrological storativity of various geologic materials. Github repository is the "store" folder [here](https://github.com/phaustin/addon_containers).
 
-* **[Unconfined-flow](https://dashboard.eoastest.xyz/hydro)**: an interactive model of linar ("1D") groundwater flow in an unconfined acquifer between two sources, with surface recharge included. Github repository is the "hydro" folder [here](https://github.com/phaustin/addon_containers).
+* **[Unconfined-flow](https://dashboard.eoas.ubc.ca/hydro)**: an interactive model of linar ("1D") groundwater flow in an unconfined acquifer between two sources, with surface recharge included. Github repository is the "hydro" folder [here](https://github.com/phaustin/addon_containers).
 
 ```{image} images/flowapp.png
 :alt: \"Linear\" groundwater flow with recharge dashboard
 :width: 650
 :align: center
 ```
+
 <br>
 
-* **[Drawdown for confined and unconfined acquifers](https://dashboard.eoastest.xyz/drawdown)** plots 2D drawdown curves for a well in a uniform acquifer with adjustable properties. Github repository is the "drawdown" folder [here](https://github.com/phaustin/addon_containers).
+* **[Drawdown for confined and unconfined acquifers](https://dashboard.eoas.ubc.ca/drawdown)** plots 2D drawdown curves for a well in a uniform acquifer with adjustable properties. Github repository is the "drawdown" folder [here](https://github.com/phaustin/addon_containers).
 
 ## Pedagogy
 
@@ -44,10 +45,12 @@ These are open education resources (OER) unless indicated otherwise.
 **Unconfined flow app** was first used by posing two group-discussion questions to be addressed using the interactive dashboard app (slide 48 of section 8).
 
 Set hydraulic conductivity: K = 10m/day (Silty Sand).
+
 * First set hydraulic conductivity: K = 50 m/day (Clean Sand).
 * Compare flow behaviour if you change hydraulic conductivity to K = 100 m/day (Gravel).
 
 By exploring visuals for these conditions consider these 2 questions:
+
 1. What happens to the water divide? Discuss your answer mathematically and conceptually.
 2. What happens to the ranges of Q values? Discuss your answer.
 
@@ -69,7 +72,7 @@ Costs: to instructors, departments & institutions
 
 **Costs**:
 
-See comments on costs of development in our [Developing Dashboards](dashboards-howto.md) page. 
+See comments on costs of development in our [Developing Dashboards](dashboards-howto.md) page.
 
 ### Recommendations
 
@@ -87,7 +90,7 @@ Quotes from feedback based on a 3rd party (online) class observation:
 
 * See general guidelines for teaching with dashboards on our [Teaching with Dashboards](tut-teachwith-dashboards.md) page.
 * Questions to solve might be more "interesting" if they are in terms of the consequences to people or property. Examples:
-  * "Which water body will receive the agricultural pollution when the divide migrates due to changing recharge?" 
-  * "Under what conditions will water table become higher than ground thus contributing to flooding?" Or - if you ask "what happens to range of Q values?", 
-* Then follow up by asking something concrete about the consequences for influx of groundwater at the two sides of the scenario - eg. which waterway will have to handle the larger input of water? 
-* These are just ideas about connecting concepts to reality. It is fair to say that these ideas may not be compatible with an instructor's priorities. 
+  * "Which water body will receive the agricultural pollution when the divide migrates due to changing recharge?"
+  * "Under what conditions will water table become higher than ground thus contributing to flooding?" Or - if you ask "what happens to range of Q values?",
+* Then follow up by asking something concrete about the consequences for influx of groundwater at the two sides of the scenario - eg. which waterway will have to handle the larger input of water?
+* These are just ideas about connecting concepts to reality. It is fair to say that these ideas may not be compatible with an instructor's priorities.

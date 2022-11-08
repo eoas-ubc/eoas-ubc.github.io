@@ -26,7 +26,7 @@ These are open education resources (OER) unless indicated otherwise.
 
 ## Project evaluation
 
-<span style="color:red">To be completed.</span>
+<span style="color:red">Check followup emails from Reid, and debrief with Michael in Dec.</span>
 
 Questions, data, results, risks and recommendations.
 

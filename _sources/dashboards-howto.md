@@ -31,13 +31,9 @@ Ideally these kinds of learning resources should include "think aloud" sessions 
 
 This choice makes sense when you are experimenting with the dashboard or planning (if only temporarily) on using it for presentations for a class or presentation.
 
-### Sharing during development
+### Deploying to a suitable Hub
 
-To enable users and developers to share a working copy and discuss design and pedagogic aspects, deploying to a free Heroku account works well. Each such account can only house five apps. See separate [instructions for deploying to Heroku](dashboards-heroku.md).
-
-### Deploying to a suitable Hub 
-
-This will be required if more than 5-10 people might use the dashboard at once. This is non-trivial, and details will be documented later, hopefully during summer 2022. For now, if you need to see the repository used for deploying our collection, see scripts and Docker files at the [addon_containers](https://github.com/phaustin/addon_containers) repo. 
+This will be required if more than 5-10 people might use the dashboard at once. This is non-trivial, and details will be documented later, hopefully during summer 2022. For now, if you need to see the repository used for deploying our collection, see scripts and Docker files at the [addon_containers](https://github.com/phaustin/addon_containers) repo.
 
 ## Some "costs" of developing dashboard for teaching/learning
 
@@ -49,6 +45,6 @@ This will be required if more than 5-10 people might use the dashboard at once. 
 ## References and resources
 
 * [Here is a](https://towardsdatascience.com/bring-your-jupyter-notebook-to-life-with-interactive-widgets-bc12e03f0916) reasonably complete, succinct introduction to `ipywidgets` dated May 3, 2019. This article is at "towardsdatascience.com" which is delivered as part of a subscription to the [Medium](https://medium.com/) digital publishing group. (But you can see this using an incognito browser window as often as you like ... )
-* ipywidgets [documentation](https://ipywidgets.readthedocs.io/en/latest/) although, like many docs, it is a technical reference, not a tutorial. 
+* ipywidgets [documentation](https://ipywidgets.readthedocs.io/en/latest/) although, like many docs, it is a technical reference, not a tutorial.
   * See in particular the [using interact](https://ipywidgets.readthedocs.io/en/latest/examples/Using%20Interact.html) page.
 * others?
