@@ -137,8 +137,8 @@ const thebe_selector_output = ".output, .cell_output"
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="progress-may2022.html">
-     Progress at May 2022
+    <a class="reference internal" href="progress-nov2022.html">
+     Progress at November 2022
     </a>
    </li>
    <li class="toctree-l2">
@@ -345,11 +345,6 @@ const thebe_selector_output = ".output, .cell_output"
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="dashboards-heroku.html">
-     Deploying to Heroku
-    </a>
-   </li>
-   <li class="toctree-l2">
     <a class="reference internal" href="dashboards-server.html">
      Deploying to a scalable server
     </a>
@@ -458,11 +453,6 @@ const thebe_selector_output = ".output, .cell_output"
  <li class="toctree-l1">
   <a class="reference internal" href="fix-list.html">
    Documentation ToDo's
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="requirements.html">
-   Tasks to be done by due date
   </a>
  </li>
 </ul>
@@ -575,12 +565,53 @@ title="Print to PDF"
     </ul>
   </div>
 </div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
 
     </div>
 </div>
 
 <!-- Table of contents -->
 <div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#options">
+   Options
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#colab">
+     1. CoLab
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#institutional-server">
+     2. Institutional server
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#i2c">
+     3. 2i2c
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+    </nav>
 </div>
     </div>
     <div class="article row">
@@ -592,6 +623,36 @@ title="Print to PDF"
                 <div id="print-main-content">
                     <div id="jb-print-toc">
                         
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#options">
+   Options
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#colab">
+     1. CoLab
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#institutional-server">
+     2. Institutional server
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#i2c">
+     3. 2i2c
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+                        </nav>
                     </div>
                 </div>
             </div>
@@ -603,6 +664,35 @@ title="Print to PDF"
 <h1>Servers and hubs<a class="headerlink" href="#servers-and-hubs" title="Permalink to this headline">#</a></h1>
 <p>This page to explain how to set up Jupyter hubs on local, institutional or cloud servers.</p>
 <p>For deploying dashboards, see the <a class="reference internal" href="dashboards-deploy.html"><span class="doc std std-doc">Dashboard deployment</span></a> pages.</p>
+<section id="options">
+<h2>Options<a class="headerlink" href="#options" title="Permalink to this headline">#</a></h2>
+<section id="colab">
+<h3>1. CoLab<a class="headerlink" href="#colab" title="Permalink to this headline">#</a></h3>
+<p>Used by EOSC 213.</p>
+<p><strong>Pros</strong> (google it)</p>
+<p><strong>Cons</strong></p>
+<p>Pertinent quote:  “if you’re not paying for the product, you are the product”</p>
+<ul class="simple">
+<li><p>Tied to Google account (notebooks are saved to GDrive).</p></li>
+<li><p>No warranties, no service, no support, no security.</p></li>
+<li><p>Not a Canadian server (also, the service is governed by US laws).</p></li>
+<li><p>No UBC course can <em>require</em> students to access accounts on US servers – it has to be <em>opt in</em> and students can decline.  So you have to be ready to supply a backup server for students.</p></li>
+<li><p>Similarly we (UBC) can not <em>require</em> that a student have a Google account.</p></li>
+<li><p>More constraints at <a class="reference external" href="https://colab.one/terms-of-use">https://colab.one/terms-of-use</a>.</p></li>
+<li><p>Google kills projects, and we don’t want to be left unable to run a course if they kill or curtail their facilities. See <a class="reference external" href="https://killedbygoogle.com/">https://killedbygoogle.com/</a>.</p></li>
+<li><p>Some courses need more speed or RAM or CPU’s or persistent storage in the cloud coupled to the code.</p></li>
+<li><p>Some courses need custom environments (i.e. libraries).</p></li>
+<li><p>Some UBC courses want Julia, R, or other kernels.</p></li>
+<li><p>Also, see for example some disadvantages <a class="reference external" href="https://www.quora.com/What-are-some-of-the-disadvantages-of-using-Google-Colab">here</a>)</p></li>
+</ul>
+</section>
+<section id="institutional-server">
+<h3>2. Institutional server<a class="headerlink" href="#institutional-server" title="Permalink to this headline">#</a></h3>
+</section>
+<section id="i2c">
+<h3>3. 2i2c<a class="headerlink" href="#i2c" title="Permalink to this headline">#</a></h3>
+</section>
+</section>
 </section>
 
     <script type="text/x-thebe-config">

@@ -5,6 +5,7 @@
 **Introduction to Research in Environmental Science**: Environmental research. Students investigate research methodologies and reporting in a range of scientific disciplines and fields.
 
 **Links:**
+
 \>[Home](https://www.eoas.ubc.ca/academics/courses/envr300),
 \>[UBC Calendar](https://courses.students.ubc.ca/cs/courseschedule?pname=subjarea&tname=subj-course&dept=ENVR&course=300),
 \>[ubcexplore](https://ubcexplorer.io/course/ENVR/300),
@@ -16,8 +17,8 @@ Introduce interactive dashboard apps to classroom and assignment activities to e
 
 ## Resources produced
 
-* [Atmospheric CO_2 at Mauna Loa and South Pole](https://dashboard.eoastest.xyz/co2mlo) (monthly averages), with user-defined straight line model for crude predictions. 
-* [Three signals](https://dashboard.eoastest.xyz/timeseries): adjustable parameters illustrating noise and trend on a sinewave, with smoothing. Signals, trends, noise and smoothing: a simple interactive dashboard app. to gain familiarity with interactions of these components of signals.
+* [Atmospheric CO_2 at Mauna Loa and South Pole](https://dashboard.eoas.ubc.ca/co2mlo) (monthly averages), with user-defined straight line model for crude predictions.
+* [Three signals](https://dashboard.eoas.ubc.ca/timeseries): adjustable parameters illustrating noise and trend on a sinewave, with smoothing. Signals, trends, noise and smoothing: a simple interactive dashboard app. to gain familiarity with interactions of these components of signals.
 * Links to repositories are on the project's [dashboards page](./dashboards.md).
 
 ## Pedagogy
@@ -36,6 +37,7 @@ In January 2021 the CO_2 dashboard was used as a fully online, in-class group ac
 :width: 700 px
 :align: center
 ```
+
 <br>
 
 ### c) Workflow for preparing and delivering labs & assignments
@@ -48,13 +50,14 @@ This was an in-class group activity with group work discussed as followup within
 
 ### a) Questions, data, results
 
-Some simple survey questions were included in the activity - student responses are efficient to summarize. These are results from two dashboards; the **Atmospheric CO2** and the **timeseris-3signals** dashboard apps. 
+Some simple survey questions were included in the activity - student responses are efficient to summarize. These are results from two dashboards; the **Atmospheric CO2** and the **timeseris-3signals** dashboard apps.
 
 ```{image} images/envr300-c02app-studentfeedback.png
 :alt: In-class work from one group.
 :width: 500 px
 :align: center
 ```
+
 <br>
 
 The clear positive implication from this small data set is that students found these resources effective and efficient and they want more.
@@ -75,7 +78,7 @@ The clear positive implication from this small data set is that students found t
 
 > "_It would be helpful to fiddle with the activity individually first (so there's not a lot of silence in the breakout rooms) and then discuss answers with other group members._"
 
-> "_A little time could have been spent introducing the app and the issues (questions) being addressed during the activity._" 
+> "_A little time could have been spent introducing the app and the issues (questions) being addressed during the activity._"
 
 ### b) Costs, Risks, and Recommendations
 

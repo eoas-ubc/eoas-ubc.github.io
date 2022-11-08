@@ -23,7 +23,7 @@ These are open education resources (OER) unless indicated otherwise.
 
 ## Pedagogy
 
-<span style="color:red">To be completed.</span>
+<span style="color:red">NOTE - refer to Ben's email, Oct 13. There should also be followup debriefing in Dec. to learn more details.</span>
 
 ## Project evaluation
 
