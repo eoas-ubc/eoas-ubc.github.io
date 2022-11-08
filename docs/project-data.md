@@ -35,21 +35,23 @@ _\* "Faculty professional development events or items" do NOT include all the 1-
 |Enhanced learning of quantitative Earth Science for students in any EOAS course|26|
 |Engage with new and existing faculty; Faculty professional development|23|
 |Enhanced computational / numerical literacy for EOAS graduates|18|
-|Total items that could become *Open Ed Resources*, or OERs| 18|
+|Total items that could become _Open Ed Resources_, or OERs| 18|
 |Items of documentation|13|
 |Development / testing of affordable, sustainable cloud computing facilities|8|
 |Support the Faculty of Science Minor in Data Science|5|
 
 ----
 
-### Number of students impacted
-**Table3:** Courses, number of students and type of impact. 
+## Number of students impacted
+
+**Table3:** Courses, number of students and type of impact.
 
 ```{image} images/impact-table-221011.png
 :alt: Courses, number of students and type of impact.
 :width: 750 px
 :align: center
 ```
+
 <br>
 
 ### <a name="notes"></a>Notes

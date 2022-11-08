@@ -96,5 +96,3 @@ parts:
     title: Open Education Resources
   - file: fix-list
     title: Documentation ToDo's
-  - file: requirements
-    title: Tasks to be done by due date
