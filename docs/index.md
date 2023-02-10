@@ -3,12 +3,13 @@
 
 The OCESE project (May 2020 through Apr 2023) aims to transform teaching in the [UBC Department of Earth, Ocean and Atmospheric Science](https://www.eoas.ubc.ca) (EOAS) to use open source tools including (but no limited to):
 
-* Python as the principal and persistant programing language for students; 
+* Python as the principal and persistant programing language for students;
 * [Jupyter notebooks](https://www.jupyter.org) for entry-level or advanced courses requiring coding;
 * use of [executable books](https://executablebooks.org/en/latest/) to deliver static content (textbooks) or dynamic materials in the form of Jupyter notebooks;
 * interactive dashboards for exploring concepts and data sets, programed using Python and a consistent interactive library (Plotly Dash);
 * use of emerging automatic assessment practices (nbgrader, a Jupyter Notebook plugin, Prairielearn, and others);
 * use of GitHub as a collaborative means of collaborating on development of Open Source content, tools and logistics.
+* [Timeline pdf](./files/timline.pdf).
 
 **Formal title:** Embedding Open-source Computational Tools into the Quantitative Earth Science Specializations
 
@@ -16,7 +17,7 @@ The OCESE project (May 2020 through Apr 2023) aims to transform teaching in the 
 
 **Project GitHub repository**: The main project repository is [here](https://github.com/eoas-ubc/eoas_tlef).
 
-**Source:** This website's [repository](https://github.com/eoas-ubc/eoas-ubc.github.io) contains Markdown content that is converted to HTML by [Jupyter Books](https://jupyterbook.org/intro.html) and pushed for online display using [ghp-import](https://pypi.org/project/ghp-import/). 
+**Source:** This website's [repository](https://github.com/eoas-ubc/eoas-ubc.github.io) contains Markdown content that is converted to HTML by [Jupyter Books](https://jupyterbook.org/intro.html) and pushed for online display using [ghp-import](https://pypi.org/project/ghp-import/).
 
 **Website Organization:** Sections are somewhat inspired by a [documentation framework](https://documentation.divio.com/) described at Divio.
 
