@@ -9,7 +9,7 @@ The OCESE project (May 2020 through Apr 2023) aims to transform teaching in the 
 * interactive dashboards for exploring concepts and data sets, programed using Python and a consistent interactive library (Plotly Dash);
 * use of emerging automatic assessment practices (nbgrader, a Jupyter Notebook plugin, Prairielearn, and others);
 * use of GitHub as a collaborative means of collaborating on development of Open Source content, tools and logistics.
-* [Timeline pdf](./files/timline.pdf).
+* <a href="files/timeline.pdf"> Timeline</a>.
 
 **Formal title:** Embedding Open-source Computational Tools into the Quantitative Earth Science Specializations
 
