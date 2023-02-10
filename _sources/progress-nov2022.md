@@ -49,3 +49,4 @@ Faculty who have been supported during course transformations or introduction of
 * Lucy Porrit (EOSC 323)
 * Phil Austing (EOSC 340, ATSC 301)
 * Roger Beckie (EOSC 429)
+* Talha Qadri (EOSC 310)

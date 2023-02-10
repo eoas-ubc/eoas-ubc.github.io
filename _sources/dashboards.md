@@ -35,7 +35,9 @@ Planned for first use in [EOSC 340](https://www.eoas.ubc.ca/academics/courses/eo
 
 * **[Drawdown](https://dashboard.eoas.ubc.ca/drawdown)** for confined and unconfined acquifers plots 2D drawdown curves for a well in a uniform acquifer with adjustable properties. Github repository is the "drawdown" folder [here](https://github.com/phaustin/addon_containers). Initially used in [EOSC 325](https://www.eoas.ubc.ca/academics/courses/eosc325) in Fall term, 2021.
 
-* **[Mohr's circles](https://dashboard.eoas.ubc.ca/mohrs)**; plots Mohr's circles and failure envelopes by interactively adjusting stress. Github [repo](https://github.com/fhmjones/mohrs). Initially used in [EOSC 323](https://www.eoas.ubc.ca/academics/courses/eosc323) in Fall term, 2022
+* **Ogata-Banks** This is a 1D solute transport visualization aid. The app plots concentration as a function to distance along a 1D column, or at a location on that column as a function of time. Users can adjust velocity and dispersion coefficient, and the contribution from each of 2 components can be compared. Under development as of February 2023.
+
+* **[Mohr's circles](https://dashboard.eoas.ubc.ca/mohrs)**; plots Mohr's circles and failure envelopes by interactively adjusting stress. Github [repo](https://github.com/fhmjones/mohrs). Initially used in [EOSC 323](https://www.eoas.ubc.ca/academics/courses/eosc323) in Fall term, 2022.
 
 ## Geophysics or "signals"
 
@@ -45,4 +47,4 @@ Planned for first use in [EOSC 340](https://www.eoas.ubc.ca/academics/courses/eo
 
 * **interactive images** is an initial experiment exploring how to interact with figures for future dashboards planned for paleontology and other disciplines. Github repo and active app will be listed here when ready (~Dec, 2022).
 
-* **[gpglabs](https://gpg.geosci.xyz/content/appendix/apps.html)** is an extensive collection of interactive Jupyter Notebooks illustrating concepts in applied geophysics including forward & inverse modeling and physics. See the [GPG applied geophysics textbook](https://gpg.geosci.xyz/) or the interactive NoteBooks collection [repository](https://github.com/geoscixyz/gpgLabs), both with links for running NoteBooks using Binder, Azure Notebooks, or locally on your own computer. The hub for running is currently restricted to students registered in EOSC 350 and faculty/TAs involved in teaching the course. 
+* **[gpglabs](https://gpg.geosci.xyz/content/appendix/apps.html)** Developed by the UBC Geophysical Inversion Facility ([UBC_GIF](https://gif.eos.ubc.ca/)) several years ago, this collection served as inspiration for OCESE dashboard devleopment. It is an extensive collection of interactive Jupyter Notebooks illustrating concepts in applied geophysics including forward & inverse modeling and physics. See the [GPG applied geophysics textbook](https://gpg.geosci.xyz/) or the interactive NoteBooks collection [repository](https://github.com/geoscixyz/gpgLabs), both with links for running NoteBooks using Binder, Azure Notebooks, or locally on your own computer. The hub for running is currently restricted to students registered in EOSC 350 and faculty/TAs involved in teaching the course. 
