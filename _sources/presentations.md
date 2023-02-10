@@ -12,7 +12,7 @@ Scholarly contributions are fewer than "normal" owing to constraints experienced
    2. The [original at AGU](https://agu2021fallmeeting-agu.ipostersessions.com/default.aspx?s=2A-C2-3D-E0-3B-DD-9A-5E-A3-C9-44-74-4B-06-45-A9) (may not be permanently available).
 5. May 2021: UBC TLEF Showcase, [Opensource Computing for Earth Sciences Education: Lessons learned in year 1 of 3](https://tlef2.sites.olt.ubc.ca/files/2021/05/2021-TLEF-Showcase-SCI-Tara-Ivanochko.pdf).
 6. May 2021: Pangeo Showcase.
-   1. [Slides -- ΟCESE: Open source computing for earch sciences education](https://www.dropbox.com/s/ap325xvsncb25tg/austin_pangeo_may_2021.pdf?dl=0)
+   1. <a href="files/austin_pangeo_may_2021.pdf">Slides -- ΟCESE: Open source computing for earch sciences education</a>
    2. [Video](https://discourse.pangeo.io/t/may-5-2021-ocese-open-source-computing-for-earth-science-education/1443)
 7. Sept. 2020: American Meteorolgical Society Annual Meeting, [Abstract: Building an open-source educational community around executable Jupyterbooks](https://ams.confex.com/ams/101ANNUAL/11python/papers/viewonly.cgi?password=582729&username=384767):
 8. August 2020: UBC [Jupyter Days](https://ubc-dsci.github.io/jupyterdays/), [Writing Canvas quizzes with Jupyter](https://github.com/UBC-DSCI/jupyterdays/blob/master/jupyterdays/sessions/austin-colclough/md2canvas.md)
@@ -20,8 +20,8 @@ Scholarly contributions are fewer than "normal" owing to constraints experienced
 
 ## EOAS or UBC meetings / workshops
 
-1. **December 2020: Dep't mini retreat**. "_OCESE components and progress_". See [PDF](https://github.com/eoas-ubc/eoas-ubc.github.io/blob/docs/pdffiles/ocese-demo-dec15.pdf) of presentation slides.
-Or: [PDF](pdffiles/ocese-demo-dec15.pdf). (this link doesn't work)
+1. **December 2020: Dep't mini retreat**. "_OCESE components and progress_". See <a href="files/ocese-demo-dec15.pdf">PDF</a> of presentation slides.
+Or: <a href="files/ocese-demo-dec15.pdf">PDF</a>. (this link doesn't work)
 
    * OCESE project components - which are attractive to you?
    * Faculty feedback
@@ -29,7 +29,7 @@ Or: [PDF](pdffiles/ocese-demo-dec15.pdf). (this link doesn't work)
    * students and instructors perspectives.
    * infrastructure.
 
-2. **February 2021: participant meeting.** "_Dashboards: Making Concepts interactive_". See [PDF](https://github.com/eoas-ubc/eoas-ubc.github.io/blob/docs/pdffiles/Fac-ProD-Feb-210215.pdf) of  presentation slides.
+2. **February 2021: participant meeting.** "_Dashboards: Making Concepts interactive_". See <a href="files/Fac-ProD-Feb-210215.pdf">PDF of  presentation slides</a>.
    * Interactive learnign resources - precedent. (Targeting the "low threshold" end of the quantitative learnign spectrum.)
    * Initial examples in EOAS - ENVR 300.
    * Associated pedagogy.
