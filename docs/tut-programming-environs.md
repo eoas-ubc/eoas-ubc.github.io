@@ -61,7 +61,7 @@ You are a researcher recently assigned to a project studying permafrost. It is e
     ---------------------------------------------------------------------------
     ModuleNotFoundError                       Traceback (most recent call last)
     <ipython-input-1-0aa0b027fcb6> in <module>
-    ----> 1 import numpy as np
+    ---to 1 import numpy as np
 
     ModuleNotFoundError: No module named 'numpy'
     ```

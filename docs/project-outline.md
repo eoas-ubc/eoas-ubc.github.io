@@ -11,7 +11,7 @@ Using open source, cloud-based computing we aim to integrate computational and q
 This proposed curriculum transformation will happen alongside a re-evaluation of quantitative EOAS course offerings across disciplines. The end result will reposition the UBC Earth Science specializations as opportunities for quantitative and computational learning in a highly interdisciplinary domain.
 
 ## Caveat
-This project's proposal was developed during 2018-19, and funded between May 2020 - April 2023. Therefore, we began work 2 months after the COVID pandemic dramatically changed the way teaching was delivered. Throughout the first 2 years, instructors and students were all working overtime to adapt their teaching and learning practices to the unexpected online learning environment. There was little time and energy to devote to transformative developments - UNLESS they directed supported online teaching and learning. Therefore, priorities changed and delivered outcomes reflect this shift in context from project concept to project execution.
+This project's proposal was developed during 2018-19, and funded between May 2020 - April 2023. That is a 5-year time span. We began work 2 months after the COVID pandemic dramatically changed the way teaching was delivered. Throughout the first 2 years, instructors and students were all working overtime to adapt their teaching and learning practices to the unexpected online learning environment. There was little time and energy to devote to transformative developments - UNLESS they directed supported online teaching and learning. Therefore, priorities changed and delivered outcomes reflect this shift in context from project concept to project execution.
 
 ## Contributors
 
@@ -36,7 +36,6 @@ The following are, or will be involved in various capacities. All teach (or have
 - Anais Orsi
 - Tara Ivanochko
 - Michael Bostock
-- Reid Merrill
 - Phil Austin
 - Catherine Johnson
 - Valentina Radic
@@ -45,27 +44,33 @@ The following are, or will be involved in various capacities. All teach (or have
 - Lucy Porritt
 - Kirsten Hodge
 - Michael Lipsen
+- Tiffany Timbers (Stats)
+- Trevor Campbell (Stats)
 
 ### Current student contributors
 Fall, 2022:
 - (UGrad) Iddo Sadeh ([IS on GitHub](https://github.com/IddoSadeh)) (Hired as programmer to support dashboard development and converting eosc442 & dsci100 to Python.)
-- (Grad) Ben O'Connor (TA - teaches computing labs in EOSC 442. Helped convert to Python.)
+- (Grad) Ben O'Connor (TA - teaches computing labs in EOSC 442. Helped convert labs from MatLab to Python.)
 - (Grad) Francis Rossmann (TA - Comprehensive support for logistics and assessment in eosc211; concieved and built a dashboard for eosc310.)
 
 ### Past student contributors
 
-- (UGrad) Carol Zhang ([CZ on GitHub](https://github.com/carolz19))
-- (UGrad) Jamie Byer ([JB on GitHub](https://github.com/jamiebyer/))
-- (UGrad) Danil Platonov ([DP on GitHub](https://github.com/slemonide)) (summer & fall, 2020)
-- (UGrad) Benjamin Chang ([BC on GitHub](https://github.com/bkchang-97)) (fall/winter 2020/21)
-- (UGrad) Mara Colclough ([MC on GitHub](https://github.com/maracieco)) (summer 2020)
-- (Grad) Navya Dahiya (summer 2022)
-- (Grad) Wanying Ye (summer 2022)
-- (Grad) Andrew Loeppky ([AL on GitHub](https://github.com/AndrewLoeppky))
-- (Grad) Hariharan Umashankar ([HU on GitHub](https://github.com/hari-ushankar) or [researchgate](https://www.researchgate.net/profile/Hariharan_Umashankar)) (summer 2020 through fall 2021)
-- (Grad) Jacob McFarlane ([JM on GitHub](https://github.com/JacobMcFarlane)) (winter/spring 2021)
-- (Grad) Yiki Su ([YS on GitHub](https://github.com/YikiSu)) (winter/spring 2021)
-- (Grad) Chris Rodell ([CR on GitHub](https://github.com/cerodell)) (volunteer, Fall 2021)
+*Undergraduate students*
+- Carol Zhang ([CZ on GitHub](https://github.com/carolz19))
+- Jamie Byer ([JB on GitHub](https://github.com/jamiebyer/))
+- Danil Platonov ([DP on GitHub](https://github.com/slemonide)) (summer & fall, 2020)
+- Benjamin Chang ([BC on GitHub](https://github.com/bkchang-97)) (fall/winter 2020/21)
+- Mara Colclough ([MC on GitHub](https://github.com/maracieco)) (summer 2020)
+
+*Graduate students*
+- Reid Merrill (Fall 2020, taught EOSC 354 using Python for the first time, and supported conversion of all labs & teaching materials from MatLab to Python.)
+- Navya Dahiya (summer 2022)
+- Wanying Ye (summer 2022)
+- Andrew Loeppky ([AL on GitHub](https://github.com/AndrewLoeppky))
+- Hariharan Umashankar ([HU on GitHub](https://github.com/hari-ushankar) or [researchgate](https://www.researchgate.net/profile/Hariharan_Umashankar)) (summer 2020 through fall 2021)
+- Jacob McFarlane ([JM on GitHub](https://github.com/JacobMcFarlane)) (winter/spring 2021)
+- Yiki Su ([YS on GitHub](https://github.com/YikiSu)) (winter/spring 2021)
+- Chris Rodell ([CR on GitHub](https://github.com/cerodell)) (volunteer, Fall 2021)
 
 ### Students contributing to dashboard design and programming
 

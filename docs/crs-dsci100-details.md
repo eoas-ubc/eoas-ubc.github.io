@@ -31,7 +31,7 @@ These datasets were found by browsing repository folders and examining files nam
 
 |Week no. and Topic|Data Sets. Those with a climate or EOAS flavour are *bold*.|
 |---|---|
-|1. **introduction** to R and Jupyter notebooks by doing some data preparation and scatter plotting.|-marathon runners, <br>-bike-share (**climate mitigation mentioned**), <br>-R's built-in "Iris" data, |
+|1. **introduction** to R and Jupyter notebooks by doing some data preparation and scatter plotting.<br><br>NOTE: A Python-based section of this course is available as of January 2023.|-marathon runners, <br>-bike-share (**climate mitigation mentioned**), <br>-R's built-in "Iris" data, |
 |2. one **complete sequence** of fetching, wrangling visualizing and interpreting various data sets.|-[Happiness Report, Kaggle, 2017](https://www.kaggle.com/unsdsn/world-happiness); <br>-a filtered version of [Airline On-Time Performance Dataset](https://www.kaggle.com/usdot/flight-delays); <br>-scraped data from the [Wikipedia Gross world product page](https://en.wikipedia.org/wiki/Gross_world_product); <br>-**Environment Canada weather (snow) for Whistler**; <br>-[books to scrape](http://books.toscrape.com/).|
 |3. tools for **cleaning and wrangling** data - another complete realworld case.|-Avocado prices, <br>-**Sea Surface Temperatures** & **salinity** in Departure Bay, <br>-**Pollution in Madrid**, <br>-"*mtcars*" (built into R)| 
 |4. **plotting**: beyond scatter plots|-World Vaccination Trends (from WHO); <br>-Fast-Food Chains in the USA; <br>-diamond prices; <br>-Personal Medical Costs (from [curated data sets for machine learning](https://github.com/stedy/Machine-Learning-with-R-datasets)).|

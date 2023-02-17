@@ -19,7 +19,7 @@ In this project's documentation [repository](https://github.com/eoas-ubc/eoas-ub
    2. _Always_ - before starting, check that the "docs" branch of your github fork is up to date. Implement a "fetch upstream" if needed.
    3. On your local clone (where editing will be done)
       - ensure jupyterbooks is in your environmnet,
-      - go to the clone's home directory and run `git branch -v` to ensure you are working on the docs branch. 
+      - go to the clone's home directory and run `git branch -v` to ensure you are working on the docs branch.
       - Check that `git status` says you are up to date.
 
 2. Editing, building, and checking results before publishing
@@ -28,8 +28,13 @@ In this project's documentation [repository](https://github.com/eoas-ubc/eoas-ub
    3. To work with a clean build run **`jb clean docs/`**. If jupyter execution is cached, this command will not delete the cached folder. To remove the build folder _including_ cached executables, run **`jb clean --all docs/`**.
    4. Make the book by running the following command from the repository's root folder: **`jb build docs/`**.
    5. Test the result locally by opening the local `index.html` file that should be in the `docs/_build/html` folder.
-   6. Hand-copy (or with a script) any other files (like PDFs) into their required subfolders. (In our case, there is a "pdffiles" folder that should live under the html folder.) NOTE: all references to these "other" files need to point to this subfolder.
-   7. Find the website in folder "docs/_build/html" - view this locally.
+   6. LOCAL FILES: to include local files such as PDFs, refer to them in your markdown code directly using HTML:
+      ```bash
+      <a href="folder/filename">link</a>
+      ```
+      Do not use the normal square-brackets_normal-brackets for line_URL that is used for external links.
+   7. Then hand-copy (or with a script) those files into their required subfolders AFTER running **jb build**.
+   8. Find the website in folder "docs/_build/html" - view this locally.
 
 3. Deliver and synchronize
    1. When ready, push the resulting prepared web pages to your fork using the following (which means: "_force (-f) with a no-jekyll file, push after commit (-p) to branch (-b) `master` your stuff at `docs/_build/html` to the (default) origin repository_"):
@@ -98,6 +103,13 @@ Put Markdown files for each page, and the `_config.yml` and `_toc.yml` files in 
 **Individual pages** are written in individual Markdown files. Tables of contents are defined, "code" for including figures, math, references, and other features are described in documentation, first in the [Creat your first book](https://jupyterbook.org/start/your-first-book.html) tutorial, and in more detail under the [Topic Guides](https://jupyterbook.org/basics/organize.html) sections of that documentation.
 
 **Non-Markdown content** like PDF files, images, etc. need to be managed by keeping them in suitable folders (eg. `\assets`). They will be copied into corresponding locations after building the HTML.
+
+Link to **local files** such as PDFs by refering to them in your markdown code directly using HTML:
+
+```bash
+<a href="folder/filename">link</a>
+```
+Do not use the normal square-brackets_normal-brackets for line_URL that is used for external links. These files need to be hand copied into the appropriate folder as explained in the section _Editing, building, and checking results before publishing_ above.
 
 For **images**, a choice of syntaxes is available for [including images](https://jupyterbook.org/content/figures.html). Some syntax options explained there are more versatile that others, so use trial and error to ensure your images appear as expected. For example, this inline HTML approach below doesn't seem to keep track of image locations properly:
 

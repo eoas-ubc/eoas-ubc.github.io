@@ -13,10 +13,10 @@ Exploration of biogeochemical processes related to water quality, and human impa
 
 ## OCESE project objectives
 
-Original expectation was that all computing to pivot from use of "R" to all Python, to be more consistent with Dep't expectation that students in our courses can build skills based on prior learning.
+Original expectation for OCESE work was to pivot computing from use of "R" to all Python. This will make the course more consistent with Dep't expectation that students in our courses can build skills based on prior learning.
 
 ## Project outcomes
 
-Course was adapted for accelerated summer delivery in 2022 by the instructor without OCESE support. Subsequently reverted to normal delivery in Spring 2023.
+Course was adapted for accelerated summer delivery in 2022 by the instructor without OCESE support. The course reverted to normal delivery in Spring 2023.
 
-No further plans for OCESE contributions, partly because the course may evolve as UBC's environmental sciences degree options evolve between 2022 - 2024 and beyond. 
+No further plans for OCESE contributions, partly because the course may evolve as UBC's environmental sciences degree options evolve between 2022 - 2024 and beyond.

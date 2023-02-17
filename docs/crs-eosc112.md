@@ -34,4 +34,4 @@ These **feedback questions** were posed to students as the last step in their as
 
 Open ended responses were analyzed to find commonalities and to identify particularly thoughtful or information statements from students. 
 
-Results from student feedback about the IPCC Climate Atlas activity are summarized in a [**separate PDF file**](https://github.com/eoas-ubc/eoas-ubc.github.io/blob/docs/pdffiles/ClimateAtlas-reflections-summary.pdf).
+Results from student feedback about the IPCC Climate Atlas activity are summarized in a <a href="files/ClimateAtlas-reflections-summary.pdf">**separate PDF file**</a>.

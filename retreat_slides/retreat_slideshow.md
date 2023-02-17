@@ -66,7 +66,7 @@ computational capstone experiences.
 Science through the development of appropriate upper-level, applied data science courses
 and Earth Science assignments, activities and assessments for DSCI 100.
 
-**Three year timeline:** [Timeline pdf](https://github.com/eoas-ubc/eoas-ubc.github.io/blob/docs/pdffiles/timeline_simple.pdf)
+**Three year timeline:** <a href="files/timeline_simple.pdf">Timeline pdf</a>
 
 +++ {"slideshow": {"slide_type": "slide"}}
 
