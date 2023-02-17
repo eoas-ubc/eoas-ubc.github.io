@@ -105,7 +105,7 @@ $ git log -1
 (To see the two most recent commits, replace the `-1` with `-2`) The output should look something like:
 
 ```powershell
-commit dda127f4fe6ac60bd8fbba18d15931ae5d182733 (HEAD -> master)
+commit dda127f4fe6ac60bd8fbba18d15931ae5d182733 (HEAD to master)
 Author: Max Planck <mplanck@example.com>
 Date:   Mon Aug 31 15:37:36 2020 -0700
 

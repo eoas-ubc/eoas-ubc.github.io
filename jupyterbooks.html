@@ -277,7 +277,7 @@ const thebe_selector_output = ".output, .cell_output"
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="facultydev.html">
-   Professional development
+   Training for Faculty
   </a>
  </li>
  <li class="toctree-l1 has-children">
@@ -310,6 +310,11 @@ const thebe_selector_output = ".output, .cell_output"
  <li class="toctree-l1">
   <a class="reference internal" href="presentations.html">
    Presentations
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="oer.html">
+   Open Ed. Resources
   </a>
  </li>
 </ul>
@@ -376,11 +381,6 @@ const thebe_selector_output = ".output, .cell_output"
    Other software tools
   </a>
  </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="troubleshooting.html">
-   Some challenges
-  </a>
- </li>
 </ul>
 <p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
@@ -435,6 +435,11 @@ const thebe_selector_output = ".output, .cell_output"
  </span>
 </p>
 <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="refs-citations.html">
+   Cited References
+  </a>
+ </li>
  <li class="toctree-l1">
   <a class="reference internal" href="refs.html">
    Links &amp; pointers
@@ -742,13 +747,19 @@ title="Print to PDF"
 </ol>
 </li>
 <li><p>Editing, building, and checking results before publishing</p>
-<ol class="simple">
+<ol>
 <li><p>Edit Markdown, <code class="docutils literal notranslate"><span class="pre">_toc</span></code>, and/or Jupyter Notebook files in the repository’s <code class="docutils literal notranslate"><span class="pre">docs</span></code> folder. Ignore the “master” branch - it is the website and will be created using <code class="docutils literal notranslate"><span class="pre">ghp-import</span></code>.</p></li>
 <li><p>Be SURE to commit finished edits to the <code class="docutils literal notranslate"><span class="pre">docs</span></code> branch and <code class="docutils literal notranslate"><span class="pre">push</span></code> to the GitHub repo’s corresponding <code class="docutils literal notranslate"><span class="pre">docs</span></code> branch (or your fork of it). Then you can “build” the book.</p></li>
 <li><p>To work with a clean build run <strong><code class="docutils literal notranslate"><span class="pre">jb</span> <span class="pre">clean</span> <span class="pre">docs/</span></code></strong>. If jupyter execution is cached, this command will not delete the cached folder. To remove the build folder <em>including</em> cached executables, run <strong><code class="docutils literal notranslate"><span class="pre">jb</span> <span class="pre">clean</span> <span class="pre">--all</span> <span class="pre">docs/</span></code></strong>.</p></li>
 <li><p>Make the book by running the following command from the repository’s root folder: <strong><code class="docutils literal notranslate"><span class="pre">jb</span> <span class="pre">build</span> <span class="pre">docs/</span></code></strong>.</p></li>
 <li><p>Test the result locally by opening the local <code class="docutils literal notranslate"><span class="pre">index.html</span></code> file that should be in the <code class="docutils literal notranslate"><span class="pre">docs/_build/html</span></code> folder.</p></li>
-<li><p>Hand-copy (or with a script) any other files (like PDFs) into their required subfolders. (In our case, there is a “pdffiles” folder that should live under the html folder.) NOTE: all references to these “other” files need to point to this subfolder.</p></li>
+<li><p>LOCAL FILES: to include local files such as PDFs, refer to them in your markdown code directly using HTML:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>&lt;a <span class="nv">href</span><span class="o">=</span><span class="s2">&quot;folder/filename&quot;</span>&gt;link&lt;/a&gt;
+</pre></div>
+</div>
+<p>Do not use the normal square-brackets_normal-brackets for line_URL that is used for external links.</p>
+</li>
+<li><p>Then hand-copy (or with a script) those files into their required subfolders AFTER running <strong>jb build</strong>.</p></li>
 <li><p>Find the website in folder “docs/_build/html” - view this locally.</p></li>
 </ol>
 </li>
@@ -818,6 +829,11 @@ title="Print to PDF"
 <h3>iv. Preparing content<a class="headerlink" href="#iv-preparing-content" title="Permalink to this headline">#</a></h3>
 <p><strong>Individual pages</strong> are written in individual Markdown files. Tables of contents are defined, “code” for including figures, math, references, and other features are described in documentation, first in the <a class="reference external" href="https://jupyterbook.org/start/your-first-book.html">Creat your first book</a> tutorial, and in more detail under the <a class="reference external" href="https://jupyterbook.org/basics/organize.html">Topic Guides</a> sections of that documentation.</p>
 <p><strong>Non-Markdown content</strong> like PDF files, images, etc. need to be managed by keeping them in suitable folders (eg. <code class="docutils literal notranslate"><span class="pre">\assets</span></code>). They will be copied into corresponding locations after building the HTML.</p>
+<p>Link to <strong>local files</strong> such as PDFs by refering to them in your markdown code directly using HTML:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>&lt;a <span class="nv">href</span><span class="o">=</span><span class="s2">&quot;folder/filename&quot;</span>&gt;link&lt;/a&gt;
+</pre></div>
+</div>
+<p>Do not use the normal square-brackets_normal-brackets for line_URL that is used for external links. These files need to be hand copied into the appropriate folder as explained in the section <em>Editing, building, and checking results before publishing</em> above.</p>
 <p>For <strong>images</strong>, a choice of syntaxes is available for <a class="reference external" href="https://jupyterbook.org/content/figures.html">including images</a>. Some syntax options explained there are more versatile that others, so use trial and error to ensure your images appear as expected. For example, this inline HTML approach below doesn’t seem to keep track of image locations properly:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>&lt;img <span class="nv">src</span><span class="o">=</span><span class="s2">&quot;./images/logo-04sm.png&quot;</span> <span class="nv">alt</span><span class="o">=</span><span class="s2">&quot;logo&quot;</span> <span class="nv">width</span><span class="o">=</span><span class="s2">&quot;100px&quot;</span>&gt;
 </pre></div>
