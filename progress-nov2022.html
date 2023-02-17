@@ -277,7 +277,7 @@ const thebe_selector_output = ".output, .cell_output"
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="facultydev.html">
-   Professional development
+   Training for Faculty
   </a>
  </li>
  <li class="toctree-l1 has-children">
@@ -310,6 +310,11 @@ const thebe_selector_output = ".output, .cell_output"
  <li class="toctree-l1">
   <a class="reference internal" href="presentations.html">
    Presentations
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="oer.html">
+   Open Ed. Resources
   </a>
  </li>
 </ul>
@@ -376,11 +381,6 @@ const thebe_selector_output = ".output, .cell_output"
    Other software tools
   </a>
  </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="troubleshooting.html">
-   Some challenges
-  </a>
- </li>
 </ul>
 <p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
@@ -435,6 +435,11 @@ const thebe_selector_output = ".output, .cell_output"
  </span>
 </p>
 <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="refs-citations.html">
+   Cited References
+  </a>
+ </li>
  <li class="toctree-l1">
   <a class="reference internal" href="refs.html">
    Links &amp; pointers
@@ -658,8 +663,8 @@ title="Print to PDF"
                 
   <section class="tex2jax_ignore mathjax_ignore" id="progress-at-november-2022">
 <h1>Progress at November 2022<a class="headerlink" href="#progress-at-november-2022" title="Permalink to this headline">#</a></h1>
-<p>There is no formal rquirement for a progress report in November 2022 since the project is not applying for renewal of funding.</p>
-<p>A final project report is due May 2023, and this documentation website constitutes the complete package.</p>
+<p>There is no formal rquirement for a progress report in November 2022 since the project is not applying for renewed funding.</p>
+<p>A final project report will be prepared for early summer 2023, and this Jupyter Book will constitutes the complete package.</p>
 <p>This page summarize progress between roughly Dec 2021 and Nov 2022.</p>
 <section id="infrastructure-development">
 <h2>1) Infrastructure development<a class="headerlink" href="#infrastructure-development" title="Permalink to this headline">#</a></h2>
@@ -672,29 +677,35 @@ title="Print to PDF"
 </section>
 <section id="complete-course-transformations">
 <h2>2) Complete course transformations<a class="headerlink" href="#complete-course-transformations" title="Permalink to this headline">#</a></h2>
-<p><strong>EOSC 211</strong> (~100 students): See our <a class="reference internal" href="crs-eosc211.html"><span class="doc std std-doc">EOSC211 page</span></a> for details. Componets include converting everything from MatLab to Python, incorporating autograding using nbGrader, establishing workflows suitable for managing ~120 students, maintaining content, assignments and labs using GitHub and Jupyter books, and piloting UBC’s new open Jupyter Hub (including workarounds when it fails to meet students’ needs).</p>
-<p><strong>DSCI 100</strong> (~70) See our <a class="reference internal" href="crs-dsci100.html"><span class="doc std std-doc">DSCI 100 page</span></a> for  details. This is a complete adaptation of this R-based course to Python, including adapting the custom textbook, all worksheets, assignments and their autograding capabilities, and lecture materials.</p>
-<p><strong>EOSC 442</strong> (~40) All four computing labs were converted from MatLab to Python and piloted by the teaching assistant who runs those labs - Ben O’Connor. See our <a class="reference internal" href="crs-eosc442.html"><span class="doc std std-doc">EOSC 442 page</span></a> for  details.</p>
+<p><strong>EOSC 211</strong> (~100 students): See our <a class="reference internal" href="crs-eosc211.html"><span class="doc std std-doc">EOSC211 page</span></a> for details. Project components have include converting everything from MatLab to Python (2020-2021), incorporating autograding using nbGrader, establishing workflows suitable for managing ~120 students, maintaining content, assignments and labs using GitHub, Jupyter books, or the course’s Canvas learning management system website, and piloting UBC’s new open Jupyter Hub (including workarounds when it fails to meet students’ needs).</p>
+<p>The hubs have been problematic, and it has been helpful to teach students to set up their own laptops so they can run Jupyter notebooks without the hubs. For much of the course, roughly a third of the enrolled students used their own computers for most of the time. More details our <a class="reference internal" href="crs-eosc211.html"><span class="doc std std-doc">EOSC211 page</span></a>.</p>
+<p><strong>DSCI 100</strong> (68 students) This is one of 5 sections of the course in term 2. Enrolment was restricted for this offering of the new Pyhon-based version.) See our <a class="reference internal" href="crs-dsci100.html"><span class="doc std std-doc">DSCI 100 page</span></a> for  details. This is a complete adaptation of this R-based course to Python, including adapting the custom textbook, all worksheets, assignments and their autograding capabilities, and lecture materials.</p>
+<p><strong>EOSC 442</strong> (up to 20 students) All computing labs were converted from MatLab to Python and piloted by the teaching assistant who runs those labs - Ben O’Connor. See our <a class="reference internal" href="crs-eosc442.html"><span class="doc std std-doc">EOSC 442 page</span></a> for  details.</p>
+<p><strong>EOSC 471</strong> (up to 40 students) Between January and April 2023, all computing labs will be converted from MatLab to Python. The extent to which this can be completed depends on how much these activities depend on sophisticated MatLab codes. See our <a class="reference internal" href="crs-eosc471.html"><span class="doc std std-doc">EOSC 471 page</span></a> for details.</p>
 </section>
 <section id="development-of-specific-data-oriented-interactive-learning-resources">
 <h2>3) Development of specific data-oriented interactive learning resources<a class="headerlink" href="#development-of-specific-data-oriented-interactive-learning-resources" title="Permalink to this headline">#</a></h2>
-<p>NOTE: See our <a class="reference internal" href="dashboards.html"><span class="doc std std-doc">dashboards page</span></a> for dashboard apps that were developed and implemented in these courses during this project period.</p>
-<p><strong>ENVR 300</strong> (~50): Several dashboards successfully piloted in yr1 are being refined for use in 2021W2 and others are being considered.</p>
-<p><strong>EOSC 340</strong> (~110): two new sophisticated <a class="reference internal" href="dashboards.html"><span class="doc std std-doc">dashboard apps</span></a> were completed and will be tested in the January-April term. These two apps draw upon the CMIP6 data sets to help students gain familiarity with the comparison of climate models. Question banks have been prepared in the last few terms using the <a class="reference external" href="https://www.prairielearn.org/">PrairieLearn</a> system.</p>
-<p><strong>EOSC 429</strong>: Dashboard apps, or possibly interactive Jupyter notebooks, are being prepared for students to explore specific concepts in groundwater contamination. To be piloted in January 2023.</p>
+<p>NOTE: See our <a class="reference internal" href="dashboards.html"><span class="doc std std-doc">dashboards page</span></a> for dashboard apps that were developed and implemented in the following courses during this project period.</p>
+<p><strong>ENVR 300</strong> (~50 students): Several dashboards successfully piloted in yr1 are being refined for use in winter of 2023, and others are being considered. See the <a class="reference internal" href="crs-envr300.html"><span class="doc std std-doc">ENVR 300 page</span></a> for details.</p>
+<p><strong>EOSC 340</strong> (~110 students): two new sophisticated <a class="reference internal" href="dashboards.html"><span class="doc std std-doc">dashboard apps</span></a> were completed and will be tested in the January-April term. These two apps draw upon the CMIP6 data sets to help students gain familiarity with the comparison of climate models. Question banks have been prepared in the last few terms using the <a class="reference external" href="https://www.prairielearn.org/">PrairieLearn</a> system. See the <a class="reference internal" href="crs-eosc340.html"><span class="doc std std-doc">EOSC 340 page</span></a> for details.</p>
+<p><strong>EOSC 429</strong>: Dashboard apps are being prepared for students to explore specific concepts in groundwater contamination. To be piloted between January and April 2023. See the <a class="reference internal" href="crs-eosc429.html"><span class="doc std std-doc">EOSC 429 page</span></a> for details.</p>
+<p><strong>EOSC 471</strong>: Discussions about whether to build dashboard apps resulted in running an existing activity with the option of using spreadsheets or Jupyter Notebooks provided by new professor Hal Bradbury. No further OCESE resources were used for this course. See the <a class="reference internal" href="crs-eosc471.html"><span class="doc std std-doc">EOSC 471 page</span></a> for details.</p>
 </section>
 <section id="faculty-pro-d">
 <h2>4) Faculty Pro-D<a class="headerlink" href="#faculty-pro-d" title="Permalink to this headline">#</a></h2>
-<p>Faculty who have been supported during course transformations or introduction of resources.</p>
+<p>Faculty who have engaged with the OCESE project during course transformations or introduction of resources.</p>
 <ul class="simple">
 <li><p>Lindsey Heagey (DSCI 100, EOSC 350, and project coordination)</p></li>
 <li><p>Catherine Johnson (EOSC 211)</p></li>
+<li><p>Michael Lipsen (EOAS 442)</p></li>
 <li><p>Ben O’Connor (TA for EOSC 442)</p></li>
 <li><p>Ali Ameli (EOSC 325)</p></li>
 <li><p>Lucy Porrit (EOSC 323)</p></li>
-<li><p>Phil Austing (EOSC 340, ATSC 301)</p></li>
+<li><p>Phil Austin (EOSC 340, ATSC 301)</p></li>
 <li><p>Roger Beckie (EOSC 429)</p></li>
-<li><p>Talha Qadri (EOSC 310)</p></li>
+<li><p>Tara Ivanochko (ENVR 300, project coordination)</p></li>
+<li><p>Kristin Orians (EOSC 372, EOSC 373)</p></li>
+<li><p>Susan Allen (EOSC 471)</p></li>
 </ul>
 </section>
 </section>

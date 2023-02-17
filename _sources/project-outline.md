@@ -11,7 +11,7 @@ Using open source, cloud-based computing we aim to integrate computational and q
 This proposed curriculum transformation will happen alongside a re-evaluation of quantitative EOAS course offerings across disciplines. The end result will reposition the UBC Earth Science specializations as opportunities for quantitative and computational learning in a highly interdisciplinary domain.
 
 ## Caveat
-This project's proposal was developed during 2018-19, and funded between May 2020 - April 2023. Therefore, we began work 2 months after the COVID pandemic dramatically changed the way teaching was delivered. Throughout the first 2 years, instructors and students were all working overtime to adapt their teaching and learning practices to the unexpected online learning environment. There was little time and energy to devote to transformative developments - UNLESS they directed supported online teaching and learning. Therefore, priorities changed and delivered outcomes reflect this shift in context from project concept to project execution.
+This project's proposal was developed during 2018-19, and funded between May 2020 - April 2023. That is a 5-year time span. We began work 2 months after the COVID pandemic dramatically changed the way teaching was delivered. Throughout the first 2 years, instructors and students were all working overtime to adapt their teaching and learning practices to the unexpected online learning environment. There was little time and energy to devote to transformative developments - UNLESS they directed supported online teaching and learning. Therefore, priorities changed and delivered outcomes reflect this shift in context from project concept to project execution.
 
 ## Contributors
 

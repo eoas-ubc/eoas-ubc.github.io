@@ -15,6 +15,7 @@
 * nbgrader
 * [PrairieLearn](https://prairielearn.readthedocs.io/en/latest/)
 * [PanDoc](https://pandoc.org/) for converting between a wide range of formats (eg MS-Word to Markdown, etc.)
+* Excel spreadsheet to markdown table: search online. [Tabletomarkdown.com](https://tabletomarkdown.com/convert-spreadsheet-to-markdown/) seems to work well.
 
 ## Text to QTI
 
