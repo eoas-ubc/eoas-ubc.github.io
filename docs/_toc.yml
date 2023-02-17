@@ -53,6 +53,8 @@ parts:
       title: Project Data
   - file: presentations
     title: Presentations
+  - file: oer
+    title: Open Ed. Resources
 - caption: How-to Guides
   chapters:
   - file: git-workflows
@@ -72,7 +74,6 @@ parts:
   - file: jupyterbooks
   - file: tools
     title: Other software tools
-  - file: troubleshooting
 - caption: Tutorials
   chapters:
   - file: tut-commandline
@@ -89,6 +90,7 @@ parts:
     title: Teaching with dashboards
 - caption: References
   chapters:
+  - file: refs-citations
   - file: refs
   - file: refs-otherapps
     title: Third-party dashboards

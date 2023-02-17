@@ -33,7 +33,7 @@
 * [2i2c](https://2i2c.org/): design, development and operation of JupyterHubs for research and education.
 * What's missing? Send suggestions for this spot to fjones@eoas.ubc.ca.
 
-## Summary style documentation that we have found useful
+## Summary-style documentation we have found useful
 
 * Working at the comand line
 * Git commands

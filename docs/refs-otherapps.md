@@ -32,3 +32,4 @@ Many organizations are producing excellent interactive resources for modeling, s
 | [open source geophysics software list](https://en.wikipedia.org/wiki/Comparison_of_free_geophysics_software) | geophysics | list of resources, not a resource |
 | [virtual earthquake](https://www.sciencecourseware.org/VirtualEarthquake/) | geophysics | didactic, 12-step interactive online activity.  |
 | [IRIS: set of 13 software-web-apps](https://www.iris.edu/hq/inclass/search#type[]=7&language[]=1) | geophysics | Part of extensive IRIS education resources |
+| [Polar ENgagement through GUIded INquiry](https://github.com/penguin-code/modules) | Climate | GitHub repository. Supported by, and extensively documented at, [SERC](https://serc.carleton.edu/penguin/index.html) and in [JGE](https://www.tandfonline.com/doi/full/10.1080/10899995.2020.1768004).|

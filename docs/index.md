@@ -26,4 +26,14 @@ The OCESE project (May 2020 through Apr 2023) aims to transform teaching in the 
 * "TUTORIALS" contain more thorough learning resources for students or instructors.
 * "REFERENCES" are lists of pointers, links and key sources.
 
-Website update 2023/03/10.
+---
+
+This book is powered by [JupyterBook](https://jupyterbook.org) and aims to be . . .
+
+* free and open (permissive license, sources and content available through github)
+* interactive where applicable (integration with JupyterHub and Binder will allow readers to run and modify code examples)
+* a living document during the OCESE project; i.e.content will continue to evolve, and collaboration is welcome.
+
+---
+
+Website update 2023/03/16.

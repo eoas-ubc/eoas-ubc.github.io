@@ -23,7 +23,7 @@
 * **[Daisyworld](https://dashboard.eoas.ubc.ca/daisy)** displays inhabited area as a function of time when daisyworld parameters are varied. Both constant and varying solar flux situations are modeled. Github repository is the "daisy" folder [here](https://github.com/phaustin/addon_containers). Initially used in [EOSC 310](https://www.eoas.ubc.ca/academics/courses/eosc310) in Fall term, 2021.
 
 ### In Development
-Planned for first use in [EOSC 340](https://www.eoas.ubc.ca/academics/courses/eosc340), Jan. 2023. 
+Planned for first use in [EOSC 340](https://www.eoas.ubc.ca/academics/courses/eosc340), Jan. 2023.
 * **[cmip6-lowcloud](https://dashboard.eoas.ubc.ca/cmip6-lowcloud)** compares the trend in fractional low cloud cover in the eastern Pacific for a range of CMIP6 models and scenarios. [Source: cmip6-lowcloud](https://github.com/phaustin/addon_containers/blob/pemfiles/cmip6_lowcloud)
 * **[cmip6-dash](https://dashboard.eoas.ubc.ca/cmip6dash)**. General tool for comparing regional changes between CMIP6 models and scenarios for different climae variables. [Source: cmip6dash](https://github.com/phaustin/cmip6_dash).
 
@@ -35,7 +35,7 @@ Planned for first use in [EOSC 340](https://www.eoas.ubc.ca/academics/courses/eo
 
 * **[Drawdown](https://dashboard.eoas.ubc.ca/drawdown)** for confined and unconfined acquifers plots 2D drawdown curves for a well in a uniform acquifer with adjustable properties. Github repository is the "drawdown" folder [here](https://github.com/phaustin/addon_containers). Initially used in [EOSC 325](https://www.eoas.ubc.ca/academics/courses/eosc325) in Fall term, 2021.
 
-* **Ogata-Banks** This is a 1D solute transport visualization aid. The app plots concentration as a function to distance along a 1D column, or at a location on that column as a function of time. Users can adjust velocity and dispersion coefficient, and the contribution from each of 2 components can be compared. Under development as of February 2023.
+* **Ogata-Banks** This is a 1D solute transport visualization aid. The app plots concentration as a function of distance along a 1D column, or at a location along that column as a function of time. Users can adjust velocity and dispersion coefficient, and the contribution from each of 2 components can be compared. Under development as of February 2023 ([prototype as of 23/02/15](https://contaminants-convection.onrender.com/) on "render.com" - slow startup, but a free service).
 
 * **[Mohr's circles](https://dashboard.eoas.ubc.ca/mohrs)**; plots Mohr's circles and failure envelopes by interactively adjusting stress. Github [repo](https://github.com/fhmjones/mohrs). Initially used in [EOSC 323](https://www.eoas.ubc.ca/academics/courses/eosc323) in Fall term, 2022.
 
