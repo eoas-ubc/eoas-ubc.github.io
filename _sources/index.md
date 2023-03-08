@@ -4,18 +4,17 @@
 The OCESE project (May 2020 through Apr 2023) aims to transform teaching in the [UBC Department of Earth, Ocean and Atmospheric Science](https://www.eoas.ubc.ca) (EOAS) to use open source tools including (but no limited to):
 
 * Python as the principal and persistant programing language for students;
-* [Jupyter notebooks](https://www.jupyter.org) for entry-level or advanced courses requiring coding;
+* [Jupyter notebooks](https://www.jupyter.org) for entry-level or advanced courses requiring writing or modifying code;
 * use of [executable books](https://executablebooks.org/en/latest/) to deliver static content (textbooks) or dynamic materials in the form of Jupyter notebooks;
 * interactive dashboards for exploring concepts and data sets, programed using Python and a consistent interactive library (Plotly Dash);
 * use of emerging automatic assessment practices (nbgrader, a Jupyter Notebook plugin, Prairielearn, and others);
 * use of GitHub as a collaborative means of collaborating on development of Open Source content, tools and logistics.
-* <a href="files/timeline.pdf"> Timeline</a>.
+
+**Project <a href="files/timeline.pdf"> Timeline</a>.**
 
 **Formal title:** Embedding Open-source Computational Tools into the Quantitative Earth Science Specializations
 
 **Project funding:** [The UBC Teaching and Learning Enhancement Fund](https://tlef.ubc.ca/funded-proposals/entry/714/), and internal support from the Department - EOAS.
-
-**Project GitHub repository**: The main project repository is [here](https://github.com/eoas-ubc/eoas_tlef).
 
 **Source:** This website's [repository](https://github.com/eoas-ubc/eoas-ubc.github.io) contains Markdown content that is converted to HTML by [Jupyter Books](https://jupyterbook.org/intro.html) and pushed for online display using [ghp-import](https://pypi.org/project/ghp-import/).
 
@@ -36,4 +35,4 @@ This book is powered by [JupyterBook](https://jupyterbook.org) and aims to be . 
 
 ---
 
-Website update 2023/03/21.
+Website update 2023/03/07.
