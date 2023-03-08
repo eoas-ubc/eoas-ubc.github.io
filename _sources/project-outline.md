@@ -6,9 +6,21 @@ This is the front page of an ongoing project to transform teaching in the [UBC D
 
 ## Project Goals
 
+### Specifically, this project aims to ...
+
+1. Enhance the exposure to, and learning of, quantitative Earth Science for all students taking EOAS courses.
+2. Increase the computational and numerical literacy of students pursuing EOAS degree specializations.
+3. Promote adoption of open source resources and teaching or learning practices.
+4. Develop & test affordable, sustainable cloud computing facilities
+5. Generate training materials and documentation based on lessons learned about taching and learning with the tools and tactics developed.
+6. Support the Faculty of Science minor in Data Science and especially the new first year Data Science course [DSCI 100](https://www.stat.ubc.ca/sites/default/files/course_outlines/dsci100_outline_2020st2_melissa.pdf) developed by the Department of Statistics.
+7. Engage with and support new and existing faculty to help meet the first three project goals.
+
+### More generally ...
+
 Using open source, cloud-based computing we aim to integrate computational and quantitative skills more comprehensively and consitently across our Department's curriculum, incorporating real world examples and datasets into existing courses. New Jupyter notebook based modules and activities will be threaded throughout core courses in Geophysics, Atmospheric Sciences, Oceanography and Geological Engineering bridging traditional disciplinary boundaries.
 
-This proposed curriculum transformation will happen alongside a re-evaluation of quantitative EOAS course offerings across disciplines. The end result will reposition the UBC Earth Science specializations as opportunities for quantitative and computational learning in a highly interdisciplinary domain.
+This proposed curriculum transformation will happen alongside the [QuEST project](https://blogs.ubc.ca/eoasquest/) which is re-evaluating quantitative EOAS course offerings across disciplines. The end result will reposition the UBC Earth Science specializations as opportunities for quantitative and computational learning in a highly interdisciplinary domain.
 
 ## Caveat
 This project's proposal was developed during 2018-19, and funded between May 2020 - April 2023. That is a 5-year time span. We began work 2 months after the COVID pandemic dramatically changed the way teaching was delivered. Throughout the first 2 years, instructors and students were all working overtime to adapt their teaching and learning practices to the unexpected online learning environment. There was little time and energy to devote to transformative developments - UNLESS they directed supported online teaching and learning. Therefore, priorities changed and delivered outcomes reflect this shift in context from project concept to project execution.

@@ -30,7 +30,7 @@ The OCESE project has supported development and/or implementation of methods, re
 
 * List of faculty who were supported and/or contributed is on the [project outline page](project-outline.md).
 * Also listed are graduate and undergraduate students who learned by contributing to the project, either as formally hired workers or as teaching assistants with teahcing or support roles in a course.
-* A [separate table](table-courses.md) is provided summarizing courses affected and number of students over 3 years.
+* A [separate table](execsum.md) is provided summarizing courses affected and number of students over 3 years.
 
 ### 2.2 Who *could* receive support?
 
