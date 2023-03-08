@@ -34,3 +34,17 @@ Questions, data, results, risks and recommendations.
 Benefits: projected and observed. Focus on students and learning.
 
 Costs: to instructors, departments & institutions.
+
+From Term 2 TA, Claire Parrott email, 23015:
+
+```
+Using Jupyter open is usually fine. During class time the server can be slow, and I would say ~3 students per lab have issues with kernels timing out. I've found the best way to trouble shoot is by closing the browser window and re-opening Jupyter open, however this only works when it's re-opened using the link on the canvas page (it seems to make a difference vs looking up browser history).
+
+Helping students is fine, I think some of the biggest things I've noticed is that often students won't read the whole text and will go directly to asking for help. I've been taking notes and adding the the beginning of class intro some of the key items within the lab, and I *think* that's helping the second group however it's hard to gauge how well it resonates with students.
+
+I don't think there are too many major changes that need to be done to the notebooks thus far, I have some notes on what small changes (i.e. typos and re-naming or re-wording) that might help but they don't greatly affect teaching.
+
+Grading requires a rubric/answer key I don't have, but I've been making one as I go through the lab pre-class.
+
+Student are doing generally well! Many are able to finish most of the work at the end of the session and the students who are really familiar can get the entire lab done. 
+```

@@ -31,8 +31,8 @@ Applications of Jupyter notebooks in which students use the notebooks but will n
 
 Compare deployment options for JNBs. See [for example](https://www.techrepublic.com/article/google-colab-vs-jupyter-notebook/) a May 2020 comparison of local and Google Colab options. Include...
 
-  * who to ask for advice and support.
-  * necessary resources and "start up" costs for students.
+* who to ask for advice and support.
+* necessary resources and "start up" costs for students.
 
 ## Third party references
 
@@ -41,14 +41,14 @@ Compare deployment options for JNBs. See [for example](https://www.techrepublic.
 There is an ever-increasing plethora of specific notebooks or notebook collections for teaching and learning specific subjects. Examples include:
 
 * [Jupyter Notebooks for education](https://www.icos-cp.eu/science-and-impact/education/icos-jupyter-notebooks-for-education) by the Integrated Carbon Observation System. Purposes, contexts and details via their home page.
-
 Some Pangeo sources:
-* pangeo [weekly meeting](https://docs.google.com/document/d/e/2PACX-1vRerhoxG-wOvh-wQTj7F8HPYve75l8pAtL-tgtzY_3YLqVUsaMSEgE4K70HgMt5S91FMwSu8EIizewy/pub)
+* pangeo [weekly meeting](https://docs.google.com/document/d/e/2PACX-1vRerhoxG-wOvh-wQTj7F8HPYve75l8pAtL-tgtzY_3YLqVUsaMSEgE4K70HgMt5S91FMwSu8EIizewy/pub).
 * The also have a [discourse site](https://discourse.pangeo.io/), but that’s probably overkill for us:
 * Also a [pangeo blog](https://medium.com/pangeo): and the [pangeo showcase archive](https://pangeo.io/pangeo-showcase.html)
 * [ARC](https://arc.ubc.ca/about-arc/arc-team)
 * [Project Pythia's foundations book](https://foundations.projectpythia.org/landing-page.html) and [Pangeo](https://pangeo.io/) into guidelines & resources.
 
 Compare deployment options for JNBs. See [for example](https://www.techrepublic.com/article/google-colab-vs-jupyter-notebook/) a May 2020 comparison of local and Google Colab options. Include...
-  * who to ask for advice and support.
-  * necessary resources and "start up" costs for students.
+
+* who to ask for advice and support.
+* necessary resources and "start up" costs for students.

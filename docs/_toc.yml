@@ -3,6 +3,8 @@ root: index
 parts:
 - caption: Project & Outcomes
   chapters:
+  - file: execsum
+    title: Project outcomes summary
   - file: project-outline
   - file: progress
     title: Progress Reports >>
