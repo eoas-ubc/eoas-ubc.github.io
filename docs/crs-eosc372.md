@@ -61,7 +61,7 @@ Did the dashboard serve as an effective and efficient learning resource? The fol
 
 ![image](images/372studentresults-sm.png)
 
-**Time to complete** was entirely consistent with expectations for this portion of an assignment that students had a week to complete.
+**Time to complete** was consistent with expectations for this portion of an assignment that students had a week to complete.
 
 **Scores** were perhaps a little low for a "low stakes" synthesis exercise. This suggests some iteration would be worthwhile to improve clarity or efficiency of questions. It is also possible the relationship between instructions and the final multiple choice questions could be clarified.
 
@@ -77,7 +77,7 @@ Did the dashboard serve as an effective and efficient learning resource? The fol
 
 There was little negative feedback, although with 132 students there are inevitably a few who had difficulties with some aspect. Timely teaching assistant support goes a long way to supporting those kinds of difficulties.
 
-## Lessons learned
+## Costs
 
 Regarding design and development:
 
@@ -88,6 +88,7 @@ Regarding design and development:
 * Longer term maintenance, deployment and sustainability of dashboard tools requires a server and staff who can maintain it. Instructors can not be expected to handle all the coding and server technology as well as incorporate excellent, evidence-base, student-centric pedagogy.
 * Graduate and undergraduate students who have Python coding experience are invaluatble project contributors. They enjoy applying their skills by contributing to resources that make a difference in student learning.
 
+## Lessons learned
 Some recommendations:
 
 * After the first use with students, it is helpful to review questions carefully to fine tune for efficiency and clarity. The goal is to bring the success rate for this kind of "low stakes" synthesis activity up to closer to 80%.

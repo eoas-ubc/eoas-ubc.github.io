@@ -41,7 +41,7 @@ Submitting work to a shared google document makes it easy to share work of all g
 
 Seven feedback questions were included as part of the activity. Students' answered these on the learning management system (Canvas) with the following results:
 
-<img src="images/envr300-c02app-studentfeedback.png" width="550">
+![image](images/envr300-c02app-studentfeedback.png "example groupwork")
 
 The clear positive implication from this small data set is that students found these resources effective and efficient and they want more. A few quotes from open ended questions follow.
 

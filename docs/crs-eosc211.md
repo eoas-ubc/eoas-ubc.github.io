@@ -10,7 +10,7 @@
 \>[ubcexplore](https://ubcexplorer.io/course/EOSC/211),
 \>[EOAS curriculum map](https://www.eoas.ubc.ca/~quest/eoas-only.html).
 
-## OCESE project objectives
+## OCESE project goals for EOSC 211
 
 * Convert all MatLab teaching and learning materials to Python
 * Convert all MatLab classroom and homework exercises to Python
@@ -20,7 +20,7 @@
 * Adapt open source materials to make a suitable text book for programming (and Python) beginners.
 * Establish stable, sustainable Jupyter Hub facilities at UBC for with reliable tech-support for instructors and teaching assistants.
 
-## Resources produced and experiences using them
+## Actions taken
 
 * [EOSC211 course website](https://phaustin.github.io/eosc211_students/announcements.html), a **Jupyter Book** including calendar of topics, links into relevant sections of the text book, and assignments & labs provided as **Jupyter Notebooks**.
 * [Text book](https://phaustin.github.io/Problem-Solving-with-Python/), mainly python programming for beginners. Adapted from [Problem Solving with Python-37](https://github.com/professorkazarinoff/Problem-Solving-with-Python-37-Edition) by Dr. Peter Kazarinof.
@@ -29,10 +29,10 @@
 * A [Jupyter Hub tutorial](tut-jhubs.md) for EOSC211 students, but easily generalized. This also serves as the first introduction to coding with Python.
 * Grading is accomplished using nbgrader.
 * Restricted **Canvas** site for delivery and submission of assignments, assignment data sets, and other course content.
- * UBC open Jupyter hub piloted (fall 2022). 
-   * <span style="color:red">Refer to hub feedback in file (221209-HubFeedback.xlsx)</span>.
+ * UBC open Jupyter hub piloted (fall 2022).
+   * _Refer to hub feedback in file (221209-HubFeedback.xlsx)_.
 
-## Pedagogy
+## Instructors' experiences
 
 ### a) Necessary instructor and TA skills
 
@@ -51,9 +51,7 @@
 * Question types
 * Grading: nbgrader used in Sept 2021. Will that be replaced by PrairieLearn?
 
-$\color{red}{\text{To be completed.}}$
-
-## Project evaluation
+## Students' experiences
 
 ### a) Questions, data, results
 
@@ -63,11 +61,11 @@ $\color{red}{\text{To be completed.}}$
 * TA interview: same questions as instructors.
 * What student feedback is available? What do they say?
   * midterm survey with ~100% response rate: MC and open questions. Summarized.
-  * Standard UBC end of term "Student Experience of Instruction" survey. <span style="color:red">Results need to be compiled</span>.
+  * Standard UBC end of term "Student Experience of Instruction" survey.
 
-### b) Costs, Risks, and Recommendations
+## Costs, Risks, and Recommendations
 
 * Auto-grading is essential. Prior to Python (i.e. before 2021) MatLab was the language and grading involved custom MatLab parsing code by R. Pawlowicz.
 * Two Jupyter books (course book and "text book") need a server and ability to maintain the markdown and the server.
 
-<span style="color:red">To be completed.</span>
+## Lessons learned
