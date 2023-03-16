@@ -38,10 +38,4 @@ Results from student feedback about the IPCC Climate Atlas activity are summariz
 
 Student feedback regarding dashboard use was limited as completing the short survey was optional. Results are in the figure below.
 
-```{image} images/eosc112-app-feedback-211221.png
-:alt: \"Linear\" groundwater flow with recharge dashboard
-:width: 600
-:align: center
-```
-
-<br>
+![image](images/eosc112-app-feedback-211221.png)

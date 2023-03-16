@@ -6,26 +6,17 @@
 
 The list of products or contributions generated during the OCESE project includes over 110 items, characterized into eight types of outcomes:
 
-```{image} images/outcomes-type.png
-:alt: \"Linear\" groundwater flow with recharge dashboard
-:align: center
-```
+![image](images/outcomes-type.png)
 
 ---
 Alternatively, outcomes can be listed to show how they contributed towards meeting the six principle project goals:
 
-```{image} images/outcomes-goals.png
-:alt: \"Linear\" groundwater flow with recharge dashboard
-:align: center
-```
+![image](images/outcomes-goals.png)
 
 ---
 Individual courses benefitted from products or contributions as follows:
 
-```{image} images/outcomes-type-courses.png
-:alt: \"Linear\" groundwater flow with recharge dashboard
-:align: center
-```
+![image](images/outcomes-type-courses.png)
 
 Key to column labels:
 
@@ -41,12 +32,9 @@ Key to column labels:
 ---
 Courses using dashboards or Jupyter Notebooks on local (own) computers or cloud-based hubs.
 
-```{image} images/outcomes-compute.png
-:alt: \"Linear\" groundwater flow with recharge dashboard
-:align: center
-```
+![image](images/outcomes-compute.png)
 
-----
+---
 
 ## Summarized outcomes by project goals
 
@@ -113,7 +101,7 @@ However, instructors teaching courses involved in the project received more or l
 
 Now, with the project tasks essentially completed, we anticipate that training for groups of faculty can be expected to occur between May and December 2023.
 
-------
+---
 
 ## Table of courses impacted by OCESE
 

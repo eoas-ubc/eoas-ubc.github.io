@@ -25,7 +25,7 @@ Two dashboards were built early during OCESE to learn how to design, build, test
 
 These were demonstrated to the ENVR 300 instructor and a decision was made to use the first during an inclass group-based learning activity and the second as a self-directed concept demo. Links to code repositories are on the OCESE project's [dashboards page](./dashboards.md).
 
-## Instructor's experiences
+## Instructors' experiences
 
 No work was required by instructors to build dashboards themselves, but in-class (online) teaching and learning workflow needed preparation. Results were considered efficient and effective; see below.
 
@@ -33,25 +33,15 @@ No work was required by instructors to build dashboards themselves, but in-class
 
 Submitting work to a shared google document makes it easy to share work of all groups, and follow up directly during the lesson. The same work flow works well for in person or online lessons.
 
-```{image} images/envr300-grpwork-eg.png
-:alt: In-class work from one group.
-:width: 700 px
-:align: center
-```
+[This is a non-printed comment]: #
 
-<br>
+![image](images/envr300-grpwork-eg.png "example groupwork")
 
-## Student's experiences
+## Students' experiences
 
 Seven feedback questions were included as part of the activity. Students' answered these on the learning management system (Canvas) with the following results:
 
-```{image} images/envr300-c02app-studentfeedback.png
-:alt: In-class work from one group.
-:width: 600 px
-:align: center
-```
-
-<br>
+<img src="images/envr300-c02app-studentfeedback.png" width="550">
 
 The clear positive implication from this small data set is that students found these resources effective and efficient and they want more. A few quotes from open ended questions follow.
 
