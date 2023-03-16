@@ -10,10 +10,14 @@
 \>[ubcexplore](https://ubcexplorer.io/course/EOSC/372),
 \> [EOAS curriculum map](https://www.eoas.ubc.ca/~quest/eoas-only.html).
 
-## OCESE project objectives
+## OCESE project goals for EOSC 372
 
-* Gain experience using Plotly Dash libraries for displaying selected data sets coupled to their locations on a map.
-* Collaborate with instructors to find and deliver data sets that students can use efficiently to practice applying concepts in physical and chemical oceanography.
+* Instructors wanted a tool to rapidly view and compare very specific, selected data sets so that students can concentrate on the oceanography concepts without having to fetch data from complex public repositories or interpret visualizations that include much more information than the minimum necessary to illustrate the concepts being studied.
+* The assignment requires students to observe & compare trace element & physical properties in the ocean water column from selected locations in 3 oceans.
+* The OCESE project team was keen to gain experience using Plotly Dash libraries for displaying selected data sets coupled to their locations on a map.
+* This was an early opportunity to collaborate with instructors and practice the workflow necessary for developing assignments and corresponding resources together. The resulting app is our first example of delivering carefully selected data sets for students to explore and apply Earth science concepts.
+
+
 
 ## Resources produced
 
@@ -21,7 +25,7 @@ A dashboard for observing and comparing trace element and physical properties in
 
 ```{image} images/ocgy-eg.png
 :alt: oceanography dashboard
-:width: 650
+:width: 700
 :align: center
 ```
 

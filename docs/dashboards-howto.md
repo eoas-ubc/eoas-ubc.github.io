@@ -22,6 +22,8 @@ Our key design criteria are based on keeping the focus on efficient, effective l
   4. To hide code when writing for Jupyter Notebooks, write the interactive app as a *.py file and call it in the Notebook.
   5. Ensure that graphs and controls can be seen on a single screen that is 1920 x 1080 pixels. If there are two interactive sections of the dashboard, that might mean putting instructions for both together above or below the interactive sections of the page.
   6. Ensure code is properly documented with pointers to sources of inspiration or coding techniques. Someone other than the original developer will very likely be the next person to update the dashboard app.
+  7. A second iteration following first real use by students can be expected because feedback from students often includes good suggestions, and instructors think of improvements only after seening students use the resource.
+  8. Deploying on a public “slow” server helps with the design cycle when there is no in-house sever, but this will hopefully not be necessary with an EOAS-managed dashboard server.
 
 Ideally these kinds of learning resources should include "think aloud" sessions with student users to determine what aspects of the interface need improving, and whether there are misconceptions that are poorly addressed by the tool. However these are small-scale resources and time is rarely available for this step.
 
