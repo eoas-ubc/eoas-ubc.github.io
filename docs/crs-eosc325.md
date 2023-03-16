@@ -24,7 +24,11 @@ These are open education resources (OER) unless indicated otherwise.
 
 * **[Unconfined-flow](https://dashboard.eoas.ubc.ca/hydro)**: an interactive model of linar ("1D") groundwater flow in an unconfined acquifer between two sources, with surface recharge included. Github repository is the "hydro" folder [here](https://github.com/phaustin/addon_containers).
 
-![image](images/flowapp.png)
+```{image} images/flowapp.png
+:alt: 1D unconfined flow dashboard
+:width: 650px
+:align: center
+```
 
 * **[Drawdown for confined and unconfined acquifers](https://dashboard.eoas.ubc.ca/drawdown)** plots 2D drawdown curves for a well in a uniform acquifer with adjustable properties. Github repository is the "drawdown" folder [here](https://github.com/phaustin/addon_containers).
 

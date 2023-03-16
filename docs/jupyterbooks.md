@@ -3,10 +3,16 @@
 This page outlines one approach to building [Jupyter books](https://jupyterbook.org/intro.html). It involves:
 
 1. creating pages in `Markdown` or JupyterNotebook `*.ipynb` files,
-2. converting to HTML using the [Jupyterbook](https://jupyterbook.org/intro.html) library, then
-3. delivering to a GitHub website repository using the [ghp-import package](https://pypi.org/project/ghp-import/), a lightweight Python package for pushing HTML content to a GitHub repository.
+2. converting to HTML using the [Jupyterbook](https://jupyterbook.org/intro.html) command-line program `jb build ...`, then
+3. delivering to a GitHub website repository using the [ghp-import package](https://pypi.org/project/ghp-import/), a Python package for pushing HTML content to a GitHub repository.
 
-(The "normal approach" to displaying websites in your GitHub account works fine (see [https://pages.github.com/](https://pages.github.com/)) but requires finished HTML and related files. It does NOT work to simply generate a Jupyter book from your Markdown, then transfer the resulting HTML to your `username.github.io/` repo.)
+>Note that Jupyter Books supports the [MyST Markdown](https://jupyterbook.org/en/stable/content/myst.html) 'flavour' of markdown. This is much more flexible that "Basic Markdown". Images in particular are handled more flexibily in MyST markdown.
+
+>If using VSCode for writing Jupyter Book markdown files, be sure to add a MyST-Markdown plugin so your pages are properly rendered in VSCod'es previews.
+
+```{note}
+The "normal approach" to displaying websites in your GitHub account works fine (see [https://pages.github.com/](https://pages.github.com/)) but requires finished HTML and related files. It does NOT work to simply generate a Jupyter book from your Markdown, then transfer the resulting HTML to your `username.github.io/` repo.
+```
 
 ## 1. Workflow involving a fork of the original
 
@@ -23,17 +29,19 @@ In this project's documentation [repository](https://github.com/eoas-ubc/eoas-ub
       - Check that `git status` says you are up to date.
 
 2. Editing, building, and checking results before publishing
-   1. Edit Markdown, `_toc`, and/or Jupyter Notebook files in the repository's `docs` folder. Ignore the "master" branch - it is the website and will be created using `ghp-import`.
+   1. Edit Markdown (using the MyST extensions to Markdown), `_toc`, and/or Jupyter Notebook files in the repository's `docs` folder. Ignore the "master" branch - it is the website and will be created using `ghp-import`.
    2. Be SURE to commit finished edits to the `docs` branch and `push` to the GitHub repo's corresponding `docs` branch (or your fork of it). Then you can "build" the book.
    3. To work with a clean build run **`jb clean docs/`**. If jupyter execution is cached, this command will not delete the cached folder. To remove the build folder _including_ cached executables, run **`jb clean --all docs/`**.
    4. Make the book by running the following command from the repository's root folder: **`jb build docs/`**.
    5. Test the result locally by opening the local `index.html` file that should be in the `docs/_build/html` folder.
    6. LOCAL FILES: to include local files such as PDFs, refer to them in your markdown code directly using HTML:
+
       ```bash
       <a href="folder/filename">link</a>
       ```
+
       Do not use the normal square-brackets_normal-brackets for line_URL that is used for external links.
-   7. Then hand-copy (or with a script) those files into their required subfolders AFTER running **jb build**.
+   7. Then hand-copy (or with a script) those files into their required subfolders AFTER running `jb build` and before viewing HTML or pushing to repositories.
    8. Find the website in folder "docs/_build/html" - view this locally.
 
 3. Deliver and synchronize
