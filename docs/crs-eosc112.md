@@ -35,3 +35,7 @@ These **feedback questions** were posed to students as the last step in their as
 Open ended responses were analyzed to find commonalities and to identify particularly thoughtful or information statements from students. 
 
 Results from student feedback about the IPCC Climate Atlas activity are summarized in a <a href="files/ClimateAtlas-reflections-summary.pdf">**separate PDF file**</a>.
+
+Student feedback regarding dashboard use was limited as completing the short survey was optional. Results are in the figure below.
+
+![image](images/eosc112-app-feedback-211221.png)

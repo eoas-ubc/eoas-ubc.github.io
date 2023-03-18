@@ -70,6 +70,11 @@ parts:
       title: Deploying to a scalable server
   - file: jnotebooks-startup
     title: Jupyter NB startup
+    sections:
+    - file: jnb-startup-win.md
+      title: Windows 10/11
+    - file: jnb-startup-macos.md
+      title: Mac OS
   - file: cloud-servers.md
   - file: python-startup
     title: Python startup
