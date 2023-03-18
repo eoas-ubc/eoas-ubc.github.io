@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Conda &amp; environments &#8212; OCESE Documentation</title>
+    <title>Environments: Conda, Mamba, and all that &#8212; OCESE Documentation</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -361,10 +361,27 @@ const thebe_selector_output = ".output, .cell_output"
    </li>
   </ul>
  </li>
- <li class="toctree-l1">
+ <li class="toctree-l1 has-children">
   <a class="reference internal" href="jnotebooks-startup.html">
    Jupyter NB startup
   </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
+  <label for="toctree-checkbox-5">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="jnb-startup-win.html">
+     Windows 10/11
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="jnb-startup-macos.html">
+     Mac OS
+    </a>
+   </li>
+  </ul>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="cloud-servers.html">
@@ -400,7 +417,7 @@ const thebe_selector_output = ".output, .cell_output"
  </li>
  <li class="toctree-l1 current active">
   <a class="current reference internal" href="#">
-   Conda &amp; environments
+   Environments: Conda, Mamba, and all that
   </a>
  </li>
  <li class="toctree-l1">
@@ -644,7 +661,7 @@ title="Print to PDF"
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Conda & environments</h1>
+                <h1>Environments: Conda, Mamba, and all that</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -702,8 +719,20 @@ title="Print to PDF"
                 
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="conda-environments">
-<h1>Conda &amp; environments<a class="headerlink" href="#conda-environments" title="Permalink to this headline">#</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="environments-conda-mamba-and-all-that">
+<h1>Environments: Conda, Mamba, and all that<a class="headerlink" href="#environments-conda-mamba-and-all-that" title="Permalink to this headline">#</a></h1>
+<p>Need to add:</p>
+<ul class="simple">
+<li><p>information about conda-lock files: why, when, how.</p></li>
+<li><p>mention other management tools - especially Mamba, including pros/cons/why</p></li>
+<li><p>Note from PA (23/03/07): re. mamba – the original mamba author (great name: Wolf Volprecht) is leading  a new startup that calculates conda-lock files and makes them available over the web.  So our workflow in the future might be something like (see <a class="reference external" href="https://prefix.dev">see https://prefix.dev</a>):</p>
+<ol class="simple">
+<li><p>install mamba from mambaforge</p></li>
+<li><p>create a new environment by typing “mamba env create windows_url”  or macos_url</p></li>
+</ol>
+</li>
+<li><p>combine this and the other <a class="reference internal" href="tut-programming-environs.html"><span class="doc std std-doc">environment page</span></a>.</p></li>
+</ul>
 <section id="what-are-environments-and-why-do-we-need-them">
 <h2>What are environments and why do we need them?<a class="headerlink" href="#what-are-environments-and-why-do-we-need-them" title="Permalink to this headline">#</a></h2>
 <p>Scientific programming / data science profits greatly from the vast array of Python libraries. This complexity (or “the deep tree of dependencies”) requires management. Virtual environments, of which conda environments are one implementation, make this possible. In other words, (Conda) environments enable the easy definition of a complete software environment to run a certain project or application.</p>

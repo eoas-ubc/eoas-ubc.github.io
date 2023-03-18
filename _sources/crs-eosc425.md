@@ -12,26 +12,16 @@
 
 ## OCESE project objectives
 
-<span style="color:red">To be completed.</span>
+Support the increased use of quantitative Earth science concepts and data, in this case climate modeling, to support discussion about paleoclimate in this senior paleontology course. 
 
-## Resources produced
+## Resources used
 
-These are open education resources (OER) unless indicated otherwise.
-
-<span style="color:red">To be completed.</span>
+Global Temperature factors dashboard in an in-class activity, with clicker questions. 
 
 ## Pedagogy
 
 <a href="files/eosc425-Anthropocene-App.pdf">This PDF</a> shows the 5-slide clicker question sequence that was used in class.
 
-<span style="color:red">To be completed.</span>
-
 ## Project evaluation
 
-<span style="color:red">To be completed.</span>
-
-Questions, data, results, risks and recommendations.
-
-Benefits: projected and observed. Focus on students and learning.
-
-Costs: to instructors, departments & institutions.
+<span style="color:red">Ask Stuart (a) if still used, and (b) for both student and instructor reactions. eg. will you continue to use it? Are there improvements? Any ideas for further dasboards? </span>

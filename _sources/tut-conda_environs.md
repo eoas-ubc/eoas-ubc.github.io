@@ -1,10 +1,19 @@
-# Conda & environments
+# Environments: Conda, Mamba, and all that
+
+Need to add:
+
+* information about conda-lock files: why, when, how.
+* mention other management tools - especially Mamba, including pros/cons/why
+* Note from PA (23/03/07): re. mamba -- the original mamba author (great name: Wolf Volprecht) is leading  a new startup that calculates conda-lock files and makes them available over the web.  So our workflow in the future might be something like (see [see https://prefix.dev](https://prefix.dev)):
+  1) install mamba from mambaforge
+  2) create a new environment by typing "mamba env create windows_url"  or macos_url
+* combine this and the other [environment page](tut-programming-environs.md).
 
 ## What are environments and why do we need them?
 
 Scientific programming / data science profits greatly from the vast array of Python libraries. This complexity (or "the deep tree of dependencies") requires management. Virtual environments, of which conda environments are one implementation, make this possible. In other words, (Conda) environments enable the easy definition of a complete software environment to run a certain project or application.
 
-In practice, we use "environments" to keep software development and applications reproducible and usable across platforms and between different engineering and client teams. Environments (i.e. environment specifications) define all the pieces or packages that are needed for a program or set of programs to function properly.  
+In practice, we use "environments" to keep software development and applications reproducible and usable across platforms and between different engineering and client teams. Environments (i.e. environment specifications) define all the pieces or packages that are needed for a program or set of programs to function properly.
 
 (Adapted from a [short video lecture](https://vxuni.com/lectures/conda-environments/). Also, [here](https://protostar.space/why-you-need-python-environments-and-how-to-manage-them-with-conda) is an easy-to-read reference about "why" environments.)
 

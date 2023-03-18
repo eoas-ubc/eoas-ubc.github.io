@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>EOSC 329 &#8212; OCESE Documentation</title>
+    <title>Jupyter Notebook setup: Windows 10/11 &#8212; OCESE Documentation</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -52,8 +52,8 @@ const thebe_selector_output = ".output, .cell_output"
     <script async="async" src="_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="EOSC 340" href="crs-eosc340.html" />
-    <link rel="prev" title="EOSC 325" href="crs-eosc325.html" />
+    <link rel="next" title="Jupyter Notebook setup: MacOS" href="jnb-startup-macos.html" />
+    <link rel="prev" title="Setting up Jupyter Notebooks" href="jnotebooks-startup.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -110,7 +110,7 @@ const thebe_selector_output = ".output, .cell_output"
   Project &amp; Outcomes
  </span>
 </p>
-<ul class="current nav bd-sidenav">
+<ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="execsum.html">
    Project outcomes summary
@@ -153,16 +153,16 @@ const thebe_selector_output = ".output, .cell_output"
    </li>
   </ul>
  </li>
- <li class="toctree-l1 current active has-children">
+ <li class="toctree-l1 has-children">
   <a class="reference internal" href="course_materials.html">
    Course enhancements &gt;&gt;
   </a>
-  <input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
   <label for="toctree-checkbox-2">
    <i class="fas fa-chevron-down">
    </i>
   </label>
-  <ul class="current">
+  <ul>
    <li class="toctree-l2">
     <a class="reference internal" href="crs-atsc301.html">
      ATSC 301
@@ -213,8 +213,8 @@ const thebe_selector_output = ".output, .cell_output"
      EOSC 325
     </a>
    </li>
-   <li class="toctree-l2 current active">
-    <a class="current reference internal" href="#">
+   <li class="toctree-l2">
+    <a class="reference internal" href="crs-eosc329.html">
      EOSC 329
     </a>
    </li>
@@ -328,7 +328,7 @@ const thebe_selector_output = ".output, .cell_output"
   How-to Guides
  </span>
 </p>
-<ul class="nav bd-sidenav">
+<ul class="current nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="git-workflows.html">
    GitHub and Git Workflows
@@ -361,18 +361,18 @@ const thebe_selector_output = ".output, .cell_output"
    </li>
   </ul>
  </li>
- <li class="toctree-l1 has-children">
+ <li class="toctree-l1 current active has-children">
   <a class="reference internal" href="jnotebooks-startup.html">
    Jupyter NB startup
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
   <label for="toctree-checkbox-5">
    <i class="fas fa-chevron-down">
    </i>
   </label>
-  <ul>
-   <li class="toctree-l2">
-    <a class="reference internal" href="jnb-startup-win.html">
+  <ul class="current">
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
      Windows 10/11
     </a>
    </li>
@@ -555,7 +555,7 @@ title="Fullscreen mode"
   <div class="menu-dropdown__content">
     <ul>
       <li>
-        <a href="_sources/crs-eosc329.md"
+        <a href="_sources/jnb-startup-win.md"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -615,18 +615,50 @@ title="Print to PDF"
     <nav id="bd-toc-nav" aria-label="Page">
         <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#official-course-description">
-   Official course description
+  <a class="reference internal nav-link" href="#one-time-6-step-setup-sequence">
+   One-time 6-step setup sequence
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#install-miniconda">
+     1. Install miniconda
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#run-anaconda-powershell-prompt-miniconda3">
+     2. Run “Anaconda Powershell prompt (miniconda3)”
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#a-few-basic-command-line-instructions">
+     3. A few basic command line instructions
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#download-the-specifications-for-your-conda-environment">
+     4. Download the specifications for your conda environment.
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#build-the-environment-for-running-python-and-jupyter-notebooks">
+     5. Build the “environment” for running Python and Jupyter Notebooks
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#set-your-environment-to-start-programming">
+     6. Set your environment to start programming
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#to-use-jupyter-notebook-any-time">
+   To use Jupyter Notebook any time
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#ocese-project-objectives">
-   OCESE project objectives
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#progress">
-   Progress
+  <a class="reference internal nav-link" href="#resources">
+   Resources
   </a>
  </li>
 </ul>
@@ -638,7 +670,7 @@ title="Print to PDF"
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>EOSC 329</h1>
+                <h1>Jupyter Notebook setup: Windows 10/11</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -649,18 +681,50 @@ title="Print to PDF"
                         <nav aria-label="Page">
                             <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#official-course-description">
-   Official course description
+  <a class="reference internal nav-link" href="#one-time-6-step-setup-sequence">
+   One-time 6-step setup sequence
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#install-miniconda">
+     1. Install miniconda
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#run-anaconda-powershell-prompt-miniconda3">
+     2. Run “Anaconda Powershell prompt (miniconda3)”
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#a-few-basic-command-line-instructions">
+     3. A few basic command line instructions
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#download-the-specifications-for-your-conda-environment">
+     4. Download the specifications for your conda environment.
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#build-the-environment-for-running-python-and-jupyter-notebooks">
+     5. Build the “environment” for running Python and Jupyter Notebooks
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#set-your-environment-to-start-programming">
+     6. Set your environment to start programming
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#to-use-jupyter-notebook-any-time">
+   To use Jupyter Notebook any time
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#ocese-project-objectives">
-   OCESE project objectives
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#progress">
-   Progress
+  <a class="reference internal nav-link" href="#resources">
+   Resources
   </a>
  </li>
 </ul>
@@ -673,26 +737,101 @@ title="Print to PDF"
                 
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="eosc-329">
-<h1>EOSC 329<a class="headerlink" href="#eosc-329" title="Permalink to this headline">#</a></h1>
-<section id="official-course-description">
-<h2>Official course description<a class="headerlink" href="#official-course-description" title="Permalink to this headline">#</a></h2>
-<p><strong>Quantitative Groundwater Hydrology</strong>: Introduction to theory of groundwater flow; flow nets; regional groundwater resource evaluation; well hydraulics; role of groundwater in geologic processes, case studies.</p>
-<p><strong>Links:</strong>
-&gt;<a class="reference external" href="https://www.eoas.ubc.ca/academics/courses/eosc329">Home</a>,
-&gt;<a class="reference external" href="https://courses.students.ubc.ca/cs/courseschedule?pname=subjarea&amp;tname=subj-course&amp;dept=EOSC&amp;course=329">UBC Calendar</a>,
-&gt;<a class="reference external" href="https://ubcexplorer.io/course/EOSC/329">ubcexplore</a>,
-&gt; <a class="reference external" href="https://www.eoas.ubc.ca/~quest/eoas-only.html">EOAS curriculum map</a>.</p>
+  <section class="tex2jax_ignore mathjax_ignore" id="jupyter-notebook-setup-windows-10-11">
+<h1>Jupyter Notebook setup: Windows 10/11<a class="headerlink" href="#jupyter-notebook-setup-windows-10-11" title="Permalink to this headline">#</a></h1>
+<p><em>(For MacOS users, follow <a class="reference internal" href="jnb-startup-macos.html"><span class="doc std std-doc">these alternatiove instructions for computers running MacOS</span></a>.)</em></p>
+<p>If you are not familiar with using a shell or command-line interface, a good place to start is <a class="reference internal" href="tut-commandline.html"><span class="doc std std-doc">here</span></a>. Or - a more conversational introduction is in our “crash course” page called <a class="reference internal" href="tut-commandline.html"><span class="doc std std-doc">Command line &amp; Shells</span></a>.</p>
+<p>The context for these instructions is UBC’s course <a class="reference external" href="https://www.eoas.ubc.ca/academics/courses/atsc301">ATSC301</a>. It should be easy enough to adapt these instructions for any other context.</p>
+<section id="one-time-6-step-setup-sequence">
+<h2>One-time 6-step setup sequence<a class="headerlink" href="#one-time-6-step-setup-sequence" title="Permalink to this headline">#</a></h2>
+<section id="install-miniconda">
+<h3>1. Install miniconda<a class="headerlink" href="#install-miniconda" title="Permalink to this headline">#</a></h3>
+<p>The miniconda software both manages packages you will fetch later, and includes basic components of Python.</p>
+<ul class="simple">
+<li><p>Download miniconda from <a class="reference external" href="https://docs.conda.io/en/latest/miniconda.html">https://docs.conda.io/en/latest/miniconda.html</a>; choose the Miniconda3 Windows 64-bit version.</p></li>
+<li><p>Run the downloaded executable file, agreeing to the licenses and accepting all defaults.</p></li>
+<li><p>You should install for “just me”.</p></li>
+</ul>
 </section>
-<section id="ocese-project-objectives">
-<h2>OCESE project objectives<a class="headerlink" href="#ocese-project-objectives" title="Permalink to this headline">#</a></h2>
-<p>Original intentions were to introduce Jupyter notebooks and/or interactive dashboard apps. Both options would facilitate exploration of concepts and data sets.</p>
+<section id="run-anaconda-powershell-prompt-miniconda3">
+<h3>2. Run “Anaconda Powershell prompt (miniconda3)”<a class="headerlink" href="#run-anaconda-powershell-prompt-miniconda3" title="Permalink to this headline">#</a></h3>
+<p>Tap the Windows key, type “Anaconda Powershell”, press Enter.
+You should get the command line window showing something like:</p>
+<p><code class="docutils literal notranslate"><span class="pre">(miniconda3)</span> <span class="pre">Users/your-name&gt;</span></code></p>
 </section>
-<section id="progress">
-<h2>Progress<a class="headerlink" href="#progress" title="Permalink to this headline">#</a></h2>
-<p>EOSC329 has not yet (as of end of May 2023) benefitted from the planned improvements. The main reason is that instructors have been either over-extended (during COVID years) or temporary sessional instructors filling in while EOAS faculty were on sabbatical leave.</p>
-<p><strong>Dashboards</strong> built for <a class="reference internal" href="crs-eosc325.html"><span class="doc std std-doc">eoas325</span></a> could be incorporated into classroom work or assignments with very little effort on part of instructors. These dashboard apps (see the “Geology and hydrogeology section of our <a class="reference internal" href="dashboards.html"><span class="doc std std-doc">Dashboards page</span></a>) are designed for a beginner’s course on hydrogeology.</p>
-<p><strong>Jupyter notebooks</strong> are probably less than ideal for this course since there is no presumption of programming skills in required prerequisites, and the Course Learning Outcomes do not include any expectations of gaining programming skills or experiences.</p>
+<section id="a-few-basic-command-line-instructions">
+<h3>3. A few basic command line instructions<a class="headerlink" href="#a-few-basic-command-line-instructions" title="Permalink to this headline">#</a></h3>
+<p>Use these few basic command line instructions to see where you are (which folder) and what’s there.</p>
+<p><code class="docutils literal notranslate"><span class="pre">mkdir</span> <span class="pre">-p</span> <span class="pre">~/repos/a301</span></code></p>
+<p>where “~” means “my home folder” and corresponds to the  path you see when you type</p>
+<p><code class="docutils literal notranslate"><span class="pre">echo</span> <span class="pre">$HOME</span></code></p>
+<p>At the prompt, change to this directory by typing</p>
+<p><code class="docutils literal notranslate"><span class="pre">cd</span> <span class="pre">~/repos/a301</span></code></p>
+<p>Then type <code class="docutils literal notranslate"><span class="pre">pwd</span></code></p>
+<p>This should show your a301  folder as your current working folder.</p>
+<p>This is called a “path”. Copy and paste it into whatever you use for keeping notes as you will use it anytime you want to use jupyter notebook in future.</p>
+</section>
+<section id="download-the-specifications-for-your-conda-environment">
+<h3>4. Download the specifications for your conda environment.<a class="headerlink" href="#download-the-specifications-for-your-conda-environment" title="Permalink to this headline">#</a></h3>
+<p>For more information see the explanation of “why environments” in Resources below.</p>
+<p>Download the file named “environment.yml” from the following Dropbox link:</p>
+<p><a class="reference external" href="https://www.dropbox.com/sh/uosacqkiw7f5rmk/AABKGhCMXXkI3Q21U49uFIEya?dl=0">https://www.dropbox.com/sh/uosacqkiw7f5rmk/AABKGhCMXXkI3Q21U49uFIEya?dl=0</a></p>
+<p>Start Explorer in this folder by typing <code class="docutils literal notranslate"><span class="pre">start</span> <span class="pre">.</span></code> (the word start followed by a period) at the prompt.</p>
+<p>Use Explorer to move your <code class="docutils literal notranslate"><span class="pre">environment.yml</span></code> file from your Downloads folder to your a301 folder. You should see the filename listed when you type <code class="docutils literal notranslate"><span class="pre">ls</span></code> at the command prompt.</p>
+</section>
+<section id="build-the-environment-for-running-python-and-jupyter-notebooks">
+<h3>5. Build the “environment” for running Python and Jupyter Notebooks<a class="headerlink" href="#build-the-environment-for-running-python-and-jupyter-notebooks" title="Permalink to this headline">#</a></h3>
+<p>In the folder <code class="docutils literal notranslate"><span class="pre">~/repos/a301</span></code> install the mamba installer by typing (no linebreak):</p>
+<p><code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">install</span> <span class="pre">-c</span> <span class="pre">conda-forage</span> <span class="pre">mamba</span></code></p>
+<p>When this completes create the a301 environment typing:</p>
+<p><code class="docutils literal notranslate"><span class="pre">mamba</span> <span class="pre">env</span> <span class="pre">create</span> <span class="pre">–-name</span> <span class="pre">a301</span> <span class="pre">–-file</span> <span class="pre">environment.yml</span></code></p>
+<p><strong>Note</strong> - there are two minus signs in front of name and file.</p>
+<p>Mamba will begin downloading and installing packages. When it’s done, type</p>
+<p><code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">env</span> <span class="pre">list</span></code></p>
+<p>You should see a list of two environments: <code class="docutils literal notranslate"><span class="pre">base</span></code> and <code class="docutils literal notranslate"><span class="pre">a301</span></code>.</p>
+</section>
+<section id="set-your-environment-to-start-programming">
+<h3>6. Set your environment to start programming<a class="headerlink" href="#set-your-environment-to-start-programming" title="Permalink to this headline">#</a></h3>
+<p>Activate the a301 environment by typing:</p>
+<p><code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">activate</span> <span class="pre">a301</span></code></p>
+</section>
+</section>
+<hr class="docutils" />
+<section id="to-use-jupyter-notebook-any-time">
+<h2>To use Jupyter Notebook any time<a class="headerlink" href="#to-use-jupyter-notebook-any-time" title="Permalink to this headline">#</a></h2>
+<ol>
+<li><p>Tap the Windows key, type <code class="docutils literal notranslate"><span class="pre">Anaconda</span> <span class="pre">Powershell</span></code>, press <code class="docutils literal notranslate"><span class="pre">Enter</span></code>. You should get the command line window showing something like:</p>
+<p><code class="docutils literal notranslate"><span class="pre">(miniconda3)</span> <span class="pre">Users/your-name&gt;</span></code></p>
+</li>
+<li><p>Change to your a301 folder by typing</p>
+<p><code class="docutils literal notranslate"><span class="pre">cd</span> <span class="pre">~/repos/a301</span></code></p>
+</li>
+<li><p>To make the packages specified by the “eosc211” environment available to Jupyter, type:</p>
+<p><code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">activate</span> <span class="pre">a301</span></code></p>
+</li>
+<li><p>To test Jupyter Notebooks, type</p>
+<p><code class="docutils literal notranslate"><span class="pre">jupyter</span> <span class="pre">notebook</span></code></p>
+<p>You should see your browser open a new window with the Jupyter Notebook interface. If not, get help from the instructor / TA.</p>
+</li>
+<li><p>You’re ready to begin working as you would on the jupyter hub.</p>
+<p>To download all the course notebooks, type (no linebreak)</p>
+<p><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">clone</span> <span class="pre">https://github.com/phaustin/a301_students_eoas.git</span></code></p>
+</li>
+</ol>
+</section>
+<hr class="docutils" />
+<section id="resources">
+<h2>Resources<a class="headerlink" href="#resources" title="Permalink to this headline">#</a></h2>
+<ul class="simple">
+<li><p>Using the command line and “shells”: <a class="reference external" href="https://eoas-ubc.github.io/tut-commandline.html">https://eoas-ubc.github.io/tut-commandline.html</a></p></li>
+<li><p>Explanation of “why environments”: <a class="reference external" href="https://www.freecodecamp.org/news/why-you-need-python-environments-and-how-to-manage-them-with-conda-85f155f4353c/">https://www.freecodecamp.org/news/why-you-need-python-environments-and-how-to-manage-them-with-conda-85f155f4353c/</a></p></li>
+<li><p>Jupyter Notebook documentation:</p>
+<ul>
+<li><p>Jupyter lab: <a class="reference external" href="https://jupyterlab.readthedocs.io/en/stable/">https://jupyterlab.readthedocs.io/en/stable/</a></p></li>
+<li><p>Jupyter notebook: <a class="reference external" href="https://realpython.com/jupyter-notebook-introduction/">https://realpython.com/jupyter-notebook-introduction/</a></p></li>
+</ul>
+</li>
+</ul>
 </section>
 </section>
 
@@ -723,17 +862,17 @@ title="Print to PDF"
                 
     <!-- Previous / next buttons -->
 <div class='prev-next-area'>
-    <a class='left-prev' id="prev-link" href="crs-eosc325.html" title="previous page">
+    <a class='left-prev' id="prev-link" href="jnotebooks-startup.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">EOSC 325</p>
+            <p class="prev-next-title">Setting up Jupyter Notebooks</p>
         </div>
     </a>
-    <a class='right-next' id="next-link" href="crs-eosc340.html" title="next page">
+    <a class='right-next' id="next-link" href="jnb-startup-macos.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">EOSC 340</p>
+        <p class="prev-next-title">Jupyter Notebook setup: MacOS</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>

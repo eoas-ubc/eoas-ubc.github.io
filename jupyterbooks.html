@@ -361,10 +361,27 @@ const thebe_selector_output = ".output, .cell_output"
    </li>
   </ul>
  </li>
- <li class="toctree-l1">
+ <li class="toctree-l1 has-children">
   <a class="reference internal" href="jnotebooks-startup.html">
    Jupyter NB startup
   </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
+  <label for="toctree-checkbox-5">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="jnb-startup-win.html">
+     Windows 10/11
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="jnb-startup-macos.html">
+     Mac OS
+    </a>
+   </li>
+  </ul>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="cloud-servers.html">
@@ -400,7 +417,7 @@ const thebe_selector_output = ".output, .cell_output"
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="tut-conda_environs.html">
-   Conda &amp; environments
+   Environments: Conda, Mamba, and all that
   </a>
  </li>
  <li class="toctree-l1">
@@ -729,10 +746,19 @@ title="Print to PDF"
 <p>This page outlines one approach to building <a class="reference external" href="https://jupyterbook.org/intro.html">Jupyter books</a>. It involves:</p>
 <ol class="simple">
 <li><p>creating pages in <code class="docutils literal notranslate"><span class="pre">Markdown</span></code> or JupyterNotebook <code class="docutils literal notranslate"><span class="pre">*.ipynb</span></code> files,</p></li>
-<li><p>converting to HTML using the <a class="reference external" href="https://jupyterbook.org/intro.html">Jupyterbook</a> library, then</p></li>
-<li><p>delivering to a GitHub website repository using the <a class="reference external" href="https://pypi.org/project/ghp-import/">ghp-import package</a>, a lightweight Python package for pushing HTML content to a GitHub repository.</p></li>
+<li><p>converting to HTML using the <a class="reference external" href="https://jupyterbook.org/intro.html">Jupyterbook</a> command-line program <code class="docutils literal notranslate"><span class="pre">jb</span> <span class="pre">build</span> <span class="pre">...</span></code>, then</p></li>
+<li><p>delivering to a GitHub website repository using the <a class="reference external" href="https://pypi.org/project/ghp-import/">ghp-import package</a>, a Python package for pushing HTML content to a GitHub repository.</p></li>
 </ol>
-<p>(The “normal approach” to displaying websites in your GitHub account works fine (see <a class="reference external" href="https://pages.github.com/">https://pages.github.com/</a>) but requires finished HTML and related files. It does NOT work to simply generate a Jupyter book from your Markdown, then transfer the resulting HTML to your <code class="docutils literal notranslate"><span class="pre">username.github.io/</span></code> repo.)</p>
+<blockquote>
+<div><p>Note that Jupyter Books supports the <a class="reference external" href="https://jupyterbook.org/en/stable/content/myst.html">MyST Markdown</a> ‘flavour’ of markdown. This is much more flexible that “Basic Markdown”. Images in particular are handled more flexibily in MyST markdown.</p>
+</div></blockquote>
+<blockquote>
+<div><p>If using VSCode for writing Jupyter Book markdown files, be sure to add a MyST-Markdown plugin so your pages are properly rendered in VSCod’es previews.</p>
+</div></blockquote>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The “normal approach” to displaying websites in your GitHub account works fine (see <a class="reference external" href="https://pages.github.com/">https://pages.github.com/</a>) but requires finished HTML and related files. It does NOT work to simply generate a Jupyter book from your Markdown, then transfer the resulting HTML to your <code class="docutils literal notranslate"><span class="pre">username.github.io/</span></code> repo.</p>
+</div>
 <section id="workflow-involving-a-fork-of-the-original">
 <h2>1. Workflow involving a fork of the original<a class="headerlink" href="#workflow-involving-a-fork-of-the-original" title="Permalink to this headline">#</a></h2>
 <p>First, the outline of steps. Details about installing JupyterBooks and <code class="docutils literal notranslate"><span class="pre">ghp-import</span></code> library are below.</p>
@@ -753,7 +779,7 @@ title="Print to PDF"
 </li>
 <li><p>Editing, building, and checking results before publishing</p>
 <ol>
-<li><p>Edit Markdown, <code class="docutils literal notranslate"><span class="pre">_toc</span></code>, and/or Jupyter Notebook files in the repository’s <code class="docutils literal notranslate"><span class="pre">docs</span></code> folder. Ignore the “master” branch - it is the website and will be created using <code class="docutils literal notranslate"><span class="pre">ghp-import</span></code>.</p></li>
+<li><p>Edit Markdown (using the MyST extensions to Markdown), <code class="docutils literal notranslate"><span class="pre">_toc</span></code>, and/or Jupyter Notebook files in the repository’s <code class="docutils literal notranslate"><span class="pre">docs</span></code> folder. Ignore the “master” branch - it is the website and will be created using <code class="docutils literal notranslate"><span class="pre">ghp-import</span></code>.</p></li>
 <li><p>Be SURE to commit finished edits to the <code class="docutils literal notranslate"><span class="pre">docs</span></code> branch and <code class="docutils literal notranslate"><span class="pre">push</span></code> to the GitHub repo’s corresponding <code class="docutils literal notranslate"><span class="pre">docs</span></code> branch (or your fork of it). Then you can “build” the book.</p></li>
 <li><p>To work with a clean build run <strong><code class="docutils literal notranslate"><span class="pre">jb</span> <span class="pre">clean</span> <span class="pre">docs/</span></code></strong>. If jupyter execution is cached, this command will not delete the cached folder. To remove the build folder <em>including</em> cached executables, run <strong><code class="docutils literal notranslate"><span class="pre">jb</span> <span class="pre">clean</span> <span class="pre">--all</span> <span class="pre">docs/</span></code></strong>.</p></li>
 <li><p>Make the book by running the following command from the repository’s root folder: <strong><code class="docutils literal notranslate"><span class="pre">jb</span> <span class="pre">build</span> <span class="pre">docs/</span></code></strong>.</p></li>
@@ -764,7 +790,7 @@ title="Print to PDF"
 </div>
 <p>Do not use the normal square-brackets_normal-brackets for line_URL that is used for external links.</p>
 </li>
-<li><p>Then hand-copy (or with a script) those files into their required subfolders AFTER running <strong>jb build</strong>.</p></li>
+<li><p>Then hand-copy (or with a script) those files into their required subfolders AFTER running <code class="docutils literal notranslate"><span class="pre">jb</span> <span class="pre">build</span></code> and before viewing HTML or pushing to repositories.</p></li>
 <li><p>Find the website in folder “docs/_build/html” - view this locally.</p></li>
 </ol>
 </li>
