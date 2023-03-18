@@ -12,9 +12,7 @@
 
 ## OCESE project objectives
 
-<span style="color:red">To be completed.</span>
-
-## Resources produced
+## Actions taken
 
 These are open education resources (OER) unless indicated otherwise.
 
@@ -22,37 +20,14 @@ These are open education resources (OER) unless indicated otherwise.
 * JNBs for instructor course management
 * Dashboards
 * Jupyter books produced (or used)
-* questions or question sets 
+* questions or question sets
 * worksheets for in-class activities
 * and others.
 
-## Pedagogy
+## Instructors' experiences
 
-### a) Necessary instructor and TA skills
+## Students' experiences
 
-* Maintain the text (Jupyter book).
-* Maintain Jupyter notebooks used for class, lab and homework.
-* Manage assignment update, delivery, collection, grading & feedback cycle.
-* Run labs.
+## Costs
 
-### b) Workflow for preparing and delivering lessons
-
-### c) Workflow for preparing and delivering labs & assignments
-
-### d) Assessment tactics
-
-* Question preparation including delivery to Canvas.
-* Question types
-* Grading: nbgrader, PrairieLearn or neither?
-
-$\color{red}{\text{To be completed.}}$
-
-## Project evaluation
-
-### a) Questions, data, results
-
-<span style="color:red">Results need to be compiled</span>.
-
-### b) Costs, Risks, and Recommendations
-
-<span style="color:red">To be completed.</span>
+## Lessons Learned
