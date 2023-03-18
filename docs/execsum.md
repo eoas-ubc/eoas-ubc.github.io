@@ -172,5 +172,3 @@ Courses that were supported by OCESE project components.
 | EOSC471 | Waves, Currents and Ocean Mixing                                | 18   | Convert MatLab assignments to Python with JNBs           | In progress 2023. |
 
 **Total numbers of students impacted over 3 years** = **3635**
-
----

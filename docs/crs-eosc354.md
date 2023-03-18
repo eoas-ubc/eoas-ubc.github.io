@@ -130,5 +130,3 @@ Running this low-enrollment course in it's new form takes no more effort than be
   * For each of months 1, 2, 3, how did the course feel in terms of balance of theoretical versus applied, relevance, and inspiration?
 
 We anticipate that the course will be able to tackle more advanced material when students taking the course have gained more programmig experience. This is anticipated to occure within the next year or two as all relevant first and second year courses begin to be taught using Python.
-
----
