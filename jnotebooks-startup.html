@@ -52,7 +52,7 @@ const thebe_selector_output = ".output, .cell_output"
     <script async="async" src="_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Servers and hubs" href="cloud-servers.html" />
+    <link rel="next" title="Jupyter Notebook setup: Windows 10/11" href="jnb-startup-win.html" />
     <link rel="prev" title="Deploying dashboards for scaleable delivery from a server" href="dashboards-server.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
@@ -361,10 +361,27 @@ const thebe_selector_output = ".output, .cell_output"
    </li>
   </ul>
  </li>
- <li class="toctree-l1 current active">
+ <li class="toctree-l1 current active has-children">
   <a class="current reference internal" href="#">
    Jupyter NB startup
   </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
+  <label for="toctree-checkbox-5">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="jnb-startup-win.html">
+     Windows 10/11
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="jnb-startup-macos.html">
+     Mac OS
+    </a>
+   </li>
+  </ul>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="cloud-servers.html">
@@ -400,7 +417,7 @@ const thebe_selector_output = ".output, .cell_output"
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="tut-conda_environs.html">
-   Conda &amp; environments
+   Environments: Conda, Mamba, and all that
   </a>
  </li>
  <li class="toctree-l1">
@@ -598,33 +615,8 @@ title="Print to PDF"
     <nav id="bd-toc-nav" aria-label="Page">
         <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#the-goal">
-   The Goal
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#the-sequence-of-steps">
    The sequence of steps
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#your-command-shell">
-   1. Your command shell
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#installing-miniconda">
-   2. Installing miniconda
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#getting-started-with-jupyter-notebook">
-   3. Getting started with Jupyter Notebook
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#using-jupyter-notebook-for-the-first-time">
-   4. Using Jupyter Notebook for the first time
   </a>
  </li>
 </ul>
@@ -647,33 +639,8 @@ title="Print to PDF"
                         <nav aria-label="Page">
                             <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#the-goal">
-   The Goal
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#the-sequence-of-steps">
    The sequence of steps
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#your-command-shell">
-   1. Your command shell
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#installing-miniconda">
-   2. Installing miniconda
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#getting-started-with-jupyter-notebook">
-   3. Getting started with Jupyter Notebook
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#using-jupyter-notebook-for-the-first-time">
-   4. Using Jupyter Notebook for the first time
   </a>
  </li>
 </ul>
@@ -688,44 +655,24 @@ title="Print to PDF"
                 
   <section class="tex2jax_ignore mathjax_ignore" id="setting-up-jupyter-notebooks">
 <h1>Setting up Jupyter Notebooks<a class="headerlink" href="#setting-up-jupyter-notebooks" title="Permalink to this headline">#</a></h1>
-<section id="the-goal">
-<h2>The Goal<a class="headerlink" href="#the-goal" title="Permalink to this headline">#</a></h2>
-<p>These guidelines will help you to set up your local computer from scratch, so that you can start the <strong>Jupyter Notebook</strong> facility from the command line, then run or edit code or comments in any <code class="docutils literal notranslate"><span class="pre">*.ipynb</span></code> file. Working with othe file types such as Python(<code class="docutils literal notranslate"><span class="pre">*.py</span></code> files), markdown (<code class="docutils literal notranslate"><span class="pre">*.md</span></code> files), or others will be discussed elsewhere.</p>
-</section>
+<p>Guidelines pointed to below will help you to set up your local computer from scratch, so that you can start the <strong>Jupyter Notebook</strong> facility from the command line, then run or edit code or comments in any <code class="docutils literal notranslate"><span class="pre">*.ipynb</span></code> file.</p>
 <section id="the-sequence-of-steps">
 <h2>The sequence of steps<a class="headerlink" href="#the-sequence-of-steps" title="Permalink to this headline">#</a></h2>
 <ol class="simple">
-<li><p>Be sure you can navigate your computer’s folders using PowerShell (on windows) or Bash (on Mac).</p></li>
+<li><p>Be sure you can navigate your computer’s folders using PowerShell (on Windows) or Bash (on Mac).</p></li>
 <li><p>Install the open-source package-management system and environment-management system called <code class="docutils literal notranslate"><span class="pre">miniconda</span></code>.</p></li>
 <li><p>Install the Jupyter software.</p></li>
 <li><p>Run the Jupyter Notebook program to edit and execute “Jupter Notebooks” in your default browser.</p></li>
 </ol>
-<p>Details follow.</p>
+<blockquote>
+<div><p>If you work on a Windows computer, use <a class="reference internal" href="jnb-startup-win.html"><span class="doc std std-doc">these instructions</span></a>.</p>
+</div></blockquote>
+<blockquote>
+<div><p>If you work on a Macintosh (Apple) computer, use <a class="reference internal" href="jnb-startup-macos.html"><span class="doc std std-doc">these instructions</span></a></p>
+</div></blockquote>
 </section>
-<section id="your-command-shell">
-<h2>1. Your command shell<a class="headerlink" href="#your-command-shell" title="Permalink to this headline">#</a></h2>
-<p>If you are not familiar with using a shell or command-line interface, a good place to start is <a class="reference internal" href="tut-commandline.html"><span class="doc std std-doc">here</span></a>. Or - a more conversational introduction is in our “crash course” page called <a class="reference internal" href="tut-commandline.html"><span class="doc std std-doc">Command line &amp; Shells</span></a>.</p>
-</section>
-<section id="installing-miniconda">
-<h2>2. Installing miniconda<a class="headerlink" href="#installing-miniconda" title="Permalink to this headline">#</a></h2>
-<p>The open-source package-management system and environment-management system we use is <code class="docutils literal notranslate"><span class="pre">miniconda</span></code>. Its purpose is outlined at the conda documentation site <a class="reference external" href="https://conda.io/projects/conda/en/latest/index.html">here</a>. <code class="docutils literal notranslate"><span class="pre">Miniconda</span></code> is a minimal version of this package management tool that includes only the components necessary for running <code class="docutils literal notranslate"><span class="pre">conda</span></code> and <code class="docutils literal notranslate"><span class="pre">Python</span></code>.</p>
-<p>It would be good to start with a fresh install of the necessary tools and packages using <a class="reference external" href="https://docs.conda.io/en/latest/miniconda.html">miniconda</a>.
-If you’re new to the conda “environment manager”, these links are helpful:</p>
-<ul class="simple">
-<li><p><a class="reference external" href="https://towardsdatascience.com/a-guide-to-conda-environments-bc6180fc533">Conda environments guide</a></p></li>
-<li><p>Conda forge <a class="reference external" href="https://conda-forge.org/docs/user/introduction.html">user introduction</a></p></li>
-<li><p>Using <a class="reference external" href="https://pypi.org/project/conda-lock/">Conda Lock, from pypy.org</a></p></li>
-</ul>
-</section>
-<section id="getting-started-with-jupyter-notebook">
-<h2>3. Getting started with Jupyter Notebook<a class="headerlink" href="#getting-started-with-jupyter-notebook" title="Permalink to this headline">#</a></h2>
-<p>Jupyter software is easily installed following directions under the heading <strong>Getting Started with Classic Jupyter Notebook</strong> on the <a class="reference external" href="https://jupyter.org/install.html">Jupyter installation</a> page. Do NOT bother installing JupyterLab at this stage.</p>
-</section>
-<section id="using-jupyter-notebook-for-the-first-time">
-<h2>4. Using Jupyter Notebook for the first time<a class="headerlink" href="#using-jupyter-notebook-for-the-first-time" title="Permalink to this headline">#</a></h2>
-<p>A well-paced tutorial from August 2020 is <a class="reference external" href="https://www.dataquest.io/blog/jupyter-notebook-tutorial/">How to Use Jupyter Notebook in 2020: A Beginner’s Tutorial</a>. The introduction to using Jupyter notebooks starts at the top and goes to the section “<strong>Example Analysis</strong>”.</p>
-<p>After that, the tutorial becomes more of a “python” tutorial. It is quite good and worthwhile if you are new to Python. The third section called “<strong>Sharing Your Notebooks</strong>” introduces you to GitHub - again, it is well done, and worthwhile if you are new to using GitHub. <em>(Note: this tutorial is online, but apparently not “opensource”. We may want to find one that has a Creative Commons license, so we can clone it and take charge of it for future maintenance purposes.)</em></p>
-</section>
+<div class="toctree-wrapper compound">
+</div>
 </section>
 
     <script type="text/x-thebe-config">
@@ -762,10 +709,10 @@ If you’re new to the conda “environment manager”, these links are helpful:
             <p class="prev-next-title">Deploying dashboards for scaleable delivery from a server</p>
         </div>
     </a>
-    <a class='right-next' id="next-link" href="cloud-servers.html" title="next page">
+    <a class='right-next' id="next-link" href="jnb-startup-win.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Servers and hubs</p>
+        <p class="prev-next-title">Jupyter Notebook setup: Windows 10/11</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>

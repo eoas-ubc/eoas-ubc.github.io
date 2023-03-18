@@ -361,10 +361,27 @@ const thebe_selector_output = ".output, .cell_output"
    </li>
   </ul>
  </li>
- <li class="toctree-l1">
+ <li class="toctree-l1 has-children">
   <a class="reference internal" href="jnotebooks-startup.html">
    Jupyter NB startup
   </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
+  <label for="toctree-checkbox-5">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="jnb-startup-win.html">
+     Windows 10/11
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="jnb-startup-macos.html">
+     Mac OS
+    </a>
+   </li>
+  </ul>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="cloud-servers.html">
@@ -400,7 +417,7 @@ const thebe_selector_output = ".output, .cell_output"
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="tut-conda_environs.html">
-   Conda &amp; environments
+   Environments: Conda, Mamba, and all that
   </a>
  </li>
  <li class="toctree-l1">
@@ -598,56 +615,37 @@ title="Print to PDF"
     <nav id="bd-toc-nav" aria-label="Page">
         <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#tables-summarizing-project-output">
-   Tables summarizing project output
+  <a class="reference internal nav-link" href="#ocese-project-goals">
+   OCESE PROJECT GOALS
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#table-of-courses-impacted-by-ocese">
-   Table of courses impacted by OCESE
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#summarized-outcomes-by-project-goals">
-   Summarized outcomes by project goals
+  <a class="reference internal nav-link" href="#tables-summarizing-project-output-by-type">
+   Tables summarizing project output by
+   <em>
+    type
+   </em>
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#quantitative-earth-science-for-all-eoas-students">
-     1. Quantitative Earth Science for all EOAS students
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#computating-for-students-pursuing-eoas-degrees">
-     2. Computating for students pursuing EOAS degrees
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#open-source-resources-oers-and-pedagogies">
-     3. Open Source Resources (OERs) and pedagogies
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#cloud-computing-facilities">
-     4. Cloud computing facilities
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#training-materials-and-documentation">
-     5. Training materials and documentation
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#support-development-of-a-python-version-of-dsci-100">
-     6. Support development of a python version of DSCI 100
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#faculty-development">
-     7. Faculty development
+    <a class="reference internal nav-link" href="#explaining-outcome-types">
+     Explaining “outcome types”
     </a>
    </li>
   </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#tables-summarizing-project-output-by-goals">
+   Tables summarizing project output by
+   <em>
+    goals
+   </em>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#summary-of-courses-impacted-by-ocese">
+   Summary of courses impacted by OCESE
+  </a>
  </li>
 </ul>
 
@@ -669,56 +667,37 @@ title="Print to PDF"
                         <nav aria-label="Page">
                             <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#tables-summarizing-project-output">
-   Tables summarizing project output
+  <a class="reference internal nav-link" href="#ocese-project-goals">
+   OCESE PROJECT GOALS
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#table-of-courses-impacted-by-ocese">
-   Table of courses impacted by OCESE
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#summarized-outcomes-by-project-goals">
-   Summarized outcomes by project goals
+  <a class="reference internal nav-link" href="#tables-summarizing-project-output-by-type">
+   Tables summarizing project output by
+   <em>
+    type
+   </em>
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#quantitative-earth-science-for-all-eoas-students">
-     1. Quantitative Earth Science for all EOAS students
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#computating-for-students-pursuing-eoas-degrees">
-     2. Computating for students pursuing EOAS degrees
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#open-source-resources-oers-and-pedagogies">
-     3. Open Source Resources (OERs) and pedagogies
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#cloud-computing-facilities">
-     4. Cloud computing facilities
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#training-materials-and-documentation">
-     5. Training materials and documentation
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#support-development-of-a-python-version-of-dsci-100">
-     6. Support development of a python version of DSCI 100
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#faculty-development">
-     7. Faculty development
+    <a class="reference internal nav-link" href="#explaining-outcome-types">
+     Explaining “outcome types”
     </a>
    </li>
   </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#tables-summarizing-project-output-by-goals">
+   Tables summarizing project output by
+   <em>
+    goals
+   </em>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#summary-of-courses-impacted-by-ocese">
+   Summary of courses impacted by OCESE
+  </a>
  </li>
 </ul>
 
@@ -732,16 +711,47 @@ title="Print to PDF"
                 
   <section class="tex2jax_ignore mathjax_ignore" id="ocese-project-outcomes-summary">
 <h1>OCESE project outcomes summary<a class="headerlink" href="#ocese-project-outcomes-summary" title="Permalink to this headline">#</a></h1>
-<section id="tables-summarizing-project-output">
-<h2>Tables summarizing project output<a class="headerlink" href="#tables-summarizing-project-output" title="Permalink to this headline">#</a></h2>
-<p>The list of products or contributions generated during the OCESE project includes over 110 items, characterized into eight types of outcomes:</p>
-<img alt="\&quot;Linear\&quot; groundwater flow with recharge dashboard" class="align-center" src="_images/outcomes-type.png" />
-<p><br />
-Alternatively, outcomes can be listed to show how they contributed towards meeting the six principle project goals:</p>
-<img alt="\&quot;Linear\&quot; groundwater flow with recharge dashboard" class="align-center" src="_images/outcomes-goals.png" />
-<p><br />
-Individual courses benefitted from products or contributions as follows:</p>
-<img alt="\&quot;Linear\&quot; groundwater flow with recharge dashboard" class="align-center" src="_images/outcomes-type-courses.png" />
+<section id="ocese-project-goals">
+<h2>OCESE PROJECT GOALS<a class="headerlink" href="#ocese-project-goals" title="Permalink to this headline">#</a></h2>
+<p><strong>Two primary goals</strong>: Develop open-source computational tools and techniques that will …</p>
+<ol class="simple">
+<li><p>…increase exposure to quantitative aspects of Earth Science in EOAS core and service courses,</p></li>
+<li><p>…enhance computational &amp; numerical capabilities of EOAS students in core EOAS courses.</p></li>
+</ol>
+<p><strong>Five goals in support of the top two:</strong></p>
+<ol class="simple">
+<li><p>Support / train new and existing faculty</p></li>
+<li><p>Document resources, guidelines, tutorials</p></li>
+<li><p>Develop &amp; test affordable, sustainable cloud computing facilities</p></li>
+<li><p>Support the FoS minor in Data Science and DSCI 100</p></li>
+<li><p>Introduce resulting materials and practices as Open Education Resources</p></li>
+</ol>
+</section>
+<section id="tables-summarizing-project-output-by-type">
+<h2>Tables summarizing project output by <em>type</em><a class="headerlink" href="#tables-summarizing-project-output-by-type" title="Permalink to this headline">#</a></h2>
+<p>Each <em>product or contribution</em> generated during the OCESE project can be classified as one of eight types of outcomes, with counts summarized as:</p>
+<a class="reference internal image-reference" href="_images/outcomes-type.png"><img alt="ocese outcomes by type" class="align-center" src="_images/outcomes-type.png" style="width: 500px;" /></a>
+<BR>
+<section id="explaining-outcome-types">
+<h3>Explaining “outcome types”<a class="headerlink" href="#explaining-outcome-types" title="Permalink to this headline">#</a></h3>
+<p>OCESE work has generated over 100 products to date. Of these, over 30 should become Open Education Resources, either individually or as collections. The main types of products or items are:</p>
+<ul class="simple">
+<li><p><strong>Data</strong> gathered from or about students in 6 courses for feedback on dashboards or JNBs. Other data include discussion threads (TAs, instructors &amp; developers), midterm course feedback, and surveys about prior knowledge &amp; needs during COVID.</p></li>
+<li><p><strong>Consulting</strong></p>
+<ul>
+<li><p>The work of improving all 25 courses included consulting with corresponding instructors and teaching assistants about content, activities, and/or assessments.</p></li>
+<li><p>Additional consulting on pedagogy, logistics, data gathering or tutorials &amp; guidelines was carried out with instructors or teaching assistants for 16 of these 25 courses.</p></li>
+</ul>
+</li>
+<li><p><strong>Resources</strong> produced for 8 courses include teaching materials adapted for Python, and instructions on use of JNBs, installing &amp; managing Python, GitHub, and use of dashboards &amp; JNBs for teaching. Although developed initially for specific courses, most are generally applicable.</p></li>
+<li><p><strong>Dashboards</strong> used (or planned) in 10 courses, 5 each core and service. Assignments rely on dashboards in 5 courses, others are used for demonstration, class activities or optional.</p></li>
+<li><p><strong>Scholarly contributions</strong>: progress reports and lessons learned have been shared at 5 UBC teaching and learning events, and at 4 conferences or workshops beyond UBC. More contributions are planned before end of 2023.</p></li>
+<li><p><strong>Python Jupyter Notebooks</strong> were introduced for 8 courses; 6 core EOAS courses plus EOSC442 and DSCI100.</p></li>
+<li><p><strong>Faculty professional development</strong> was originally intended to involve workshops and group training sessions. Owing to COVID, this aspect was carried out mostly 1-on-1 during the project. However, 3 events were run mostly to introduce OCESE activities, and further workshops and training events will be conducted during the 6 months following the official end of funding.</p></li>
+</ul>
+<hr class="docutils" />
+<p>Individual courses benefitted from products or contributions as follows:</p>
+<a class="reference internal image-reference" href="_images/outcomes-type-courses.png"><img alt="ocese outcomes by type" class="align-center" src="_images/outcomes-type-courses.png" style="width: 330px;" /></a>
 <p>Key to column labels:</p>
 <ul class="simple">
 <li><p>consult = Consulting regarding assignment design or pedagogy</p></li>
@@ -753,10 +763,67 @@ Individual courses benefitted from products or contributions as follows:</p>
 <li><p>pedag = Support for developing pedagogic initiatives</p></li>
 <li><p>resource = Resources for teaching or content for learning</p></li>
 </ul>
+<hr class="docutils" />
+<p>Courses using dashboards or Jupyter Notebooks on local (own) computers or cloud-based hubs (notebooks) or servers (dashboards).</p>
+<a class="reference internal image-reference" href="_images/outcomes-compute.png"><img alt="ocese outcomes by type" class="align-center" src="_images/outcomes-compute.png" style="width: 320px;" /></a>
+</section>
 </section>
 <hr class="docutils" />
-<section id="table-of-courses-impacted-by-ocese">
-<h2>Table of courses impacted by OCESE<a class="headerlink" href="#table-of-courses-impacted-by-ocese" title="Permalink to this headline">#</a></h2>
+<section id="tables-summarizing-project-output-by-goals">
+<h2>Tables summarizing project output by <em>goals</em><a class="headerlink" href="#tables-summarizing-project-output-by-goals" title="Permalink to this headline">#</a></h2>
+<p>Each <em>poduct or contribution</em> can also be classified as targeting one of the the seven principle project goals:</p>
+<a class="reference internal image-reference" href="_images/outcomes-goals.png"><img alt="ocese outcomes by goals" class="align-center" src="_images/outcomes-goals.png" style="width: 500px;" /></a>
+<BR>
+<p>Items produced for each course are summarized here by project goals. See more notes about this table below it.</p>
+<a class="reference internal image-reference" href="_images/outcomes-goals-courses.png"><img alt="ocese outcomes by type" class="align-center" src="_images/outcomes-goals-courses.png" style="width: 350px;" /></a>
+<BR>
+<p><strong>1. Quantitative Earth Science for all EOAS students</strong></p>
+<p>Courses aiming to enhance students’ engagement with <strong>quantitative concepts</strong> or <strong>datasets</strong> are mostly accessible to students from Departments other than EOAS.</p>
+<p><strong>2. Computing for students pursuing EOAS degrees</strong></p>
+<p>Courses aiming to increase computational and numerical capabilities of EOAS students are considered “core” courses. OCESE contributed towards these courses mostly by supporting introduction of <strong>Python</strong> and <strong>Jupyter Notebooks</strong> into student learning.</p>
+<ul>
+<li><p>Courses in which students install Python and Jupyter on their own computers:</p>
+<blockquote>
+<div><p>ATSC301, EOSC211 (optional), EOSC354, EOSC410/510.</p>
+</div></blockquote>
+</li>
+<li><p>Courses in which students run notebooks on cloud-based Jupyter hubs (either UBC or 2i2c hubs):</p>
+<blockquote>
+<div><p>DSCI100, EOSC211, EOSC213 (using CoLab), EOSC212 (OCESE not involved), EOSC350, EOSC442, EOSC471 (starting 2024).</p>
+</div></blockquote>
+</li>
+</ul>
+<p>Courses in which students use (or will likely use) <strong>coding</strong> as part of learning. Not all had OCESE support. (Based on the Dep’t computing needs <a class="reference external" href="https://docs.google.com/spreadsheets/d/1Lg9wLZYwIHSVyXzFPO3096d8eLvL6oLn9lShOosBBok/edit#gid=0">s</a>preadsheet as of March 2023.)</p>
+<blockquote>
+<div><p>ATSC301, ATSC409, ENVR420, EOSC211, EOSC212, EOSC213, EOSC353, EOSC354, EOSC410/510, EOSC450, EOSC453, EOSC471, EOSC4xx (climate physics, new 2023/4).</p>
+</div></blockquote>
+<p><strong>Aassessments or question management</strong>: the following courses have integrated some aspects of managing, automating or “semi-automating” assessments or develeopment / deployment of question sets.</p>
+<blockquote>
+<div><p>ATSC301, DSCI100, EOSC211, EOSC325, EOSC340</p>
+</div></blockquote>
+<p><strong>3. Faculty development</strong></p>
+<p>The original project proposal anticipated carrying out facultly professional development with workshops and tutorials. Instead, during COVID, the only information sessions were short online presentations at Department meetings.</p>
+<p>However, instructors teaching courses involved in the project received more or less extensive support from project team and teaching assistants while adjustments or resources were being developed.</p>
+<p>Now, with the project tasks essentially completed, we anticipate that training for groups of faculty can be expected to occur between May and December 2023.</p>
+<p><strong>4. Training materials and documentation</strong></p>
+<p>Some resources are targeted towards students, some for instructors or teaching assistants and some for all three. All are being accumulated at the website you are viewing now. See also Faculty Development below.</p>
+<p><strong>5. Cloud computing facilities</strong></p>
+<p>Project outcomes associated with implenting cloud computing facilities to host student learning activities are essentially “lessons learned” and documented procedures for deploying or using hubs for Jupyter notebooks or servers for dashboards.</p>
+<p><strong>6. Support development of a python version of DSCI 100</strong></p>
+<p>DSCI100 is taught in the UBC Department of Statistics, but this new Python section was first taught by Prof. L. Heagy of the Dep’t of EOAS in winter 2023. This major course adapation involved the following activities carried out between 2021 and 2023.</p>
+<ul class="simple">
+<li><p>Adapting the R-based textbook to Python.</p></li>
+<li><p>Adapting all learning worksheets from R to Python.</p></li>
+<li><p>Adapting teaching materials (slide decks, classroom materials, etc.) from R to Python.</p></li>
+<li><p>Teaching the first “Python cohort” of this course.</p></li>
+</ul>
+<p><strong>7. Open Source Resources (OERs) and pedagogies</strong></p>
+<p>All dashboards, course content (such as texts) and project tutorials or documentation emerging from the OCESE project are expected to be designated as OERs, assuming permission from stake holders is obtained.</p>
+<p>Resources that are NOT expected to be designated as OERs include those that have solutions to student work or activities.</p>
+</section>
+<hr class="docutils" />
+<section id="summary-of-courses-impacted-by-ocese">
+<h2>Summary of courses impacted by OCESE<a class="headerlink" href="#summary-of-courses-impacted-by-ocese" title="Permalink to this headline">#</a></h2>
 <p>Courses that were supported by OCESE project components.</p>
 <table class="colwidths-auto table">
 <thead>
@@ -870,57 +937,9 @@ Individual courses benefitted from products or contributions as follows:</p>
 <td class="text-align:left"><p>Convert MatLab assignments to Python with JNBs</p></td>
 <td class="text-align:left"><p>In progress 2023.</p></td>
 </tr>
-<tr class="row-odd"><td class="text-align:left"><p></p></td>
-<td class="text-align:left"><p>Total numbers of students impacted over 3 years</p></td>
-<td class="text-align:center"><p><strong>3635</strong></p></td>
-<td class="text-align:left"><p></p></td>
-<td class="text-align:left"><p></p></td>
-</tr>
 </tbody>
 </table>
-</section>
-<hr class="docutils" />
-<section id="summarized-outcomes-by-project-goals">
-<h2>Summarized outcomes by project goals<a class="headerlink" href="#summarized-outcomes-by-project-goals" title="Permalink to this headline">#</a></h2>
-<section id="quantitative-earth-science-for-all-eoas-students">
-<h3>1. Quantitative Earth Science for all EOAS students<a class="headerlink" href="#quantitative-earth-science-for-all-eoas-students" title="Permalink to this headline">#</a></h3>
-<p>Courses with enhanced engagement of quantitative concepts or datasets include: DSCI100, EOSC112, EOSC116, EOSC310, EOSC325, EOSC326, EOSC340, EOSC372, EOSC425, EOSC442.</p>
-<p>Courses that have intetgrated use of dashboards into classroom work or assignments are these: ENVR300, EOSC112, EOSC116, EOSC310, EOSC323, EOSC325, EOSC326, EOSC340, EOSC372, EOSC425, EOSC429.</p>
-</section>
-<section id="computating-for-students-pursuing-eoas-degrees">
-<h3>2. Computating for students pursuing EOAS degrees<a class="headerlink" href="#computating-for-students-pursuing-eoas-degrees" title="Permalink to this headline">#</a></h3>
-<p>As a result of OCESE work, students pursuing EOAS degrees are doing more (or more consistent) computing in the following courses: ATSC301, DSCI100, ENVR300, EOSC211, EOSC354, EOSC471.</p>
-</section>
-<section id="open-source-resources-oers-and-pedagogies">
-<h3>3. Open Source Resources (OERs) and pedagogies<a class="headerlink" href="#open-source-resources-oers-and-pedagogies" title="Permalink to this headline">#</a></h3>
-<p>All dashboards, course content (such as texts) and project tutorials or documentation emerging from the OCESE project are expected to be designated as OERs, assuming permission from stake holders is obtained.</p>
-<p>Resources that are NOT expected to be designated as OERs include those that have solutions to student work or activities.</p>
-<p>Regarding automating assessments, the following courses have integrated some aspects of managing or automating assessments: ATSC301, DSCI100, EOSC211, EOSC325, EOSC340</p>
-</section>
-<section id="cloud-computing-facilities">
-<h3>4. Cloud computing facilities<a class="headerlink" href="#cloud-computing-facilities" title="Permalink to this headline">#</a></h3>
-<p>Project outcomes associated with implenting cloud computing facilities to host student learning activities are essentially “lessons learned” and documented procedures for deploying or using hubs for Jupyter notebooks or servers for dashboards.</p>
-</section>
-<section id="training-materials-and-documentation">
-<h3>5. Training materials and documentation<a class="headerlink" href="#training-materials-and-documentation" title="Permalink to this headline">#</a></h3>
-<p>Some resources are targeted towards students, some for instructors or teaching assistants and some for all three. All are being accumulated at the website you are viewing now. See also Faculty Development below.</p>
-</section>
-<section id="support-development-of-a-python-version-of-dsci-100">
-<h3>6. Support development of a python version of DSCI 100<a class="headerlink" href="#support-development-of-a-python-version-of-dsci-100" title="Permalink to this headline">#</a></h3>
-<p>DSCI100 is taught in the UBC Department of Statistics, but this new Python section was first taught by Prof. L. Heagy of the Dep’t of EOAS in winter 2023. This major course adapation involved the following activities carried out between 2021 and 2023.</p>
-<ul class="simple">
-<li><p>Adapting the R-based textbook to Python.</p></li>
-<li><p>Adapting all learning worksheets from R to Python.</p></li>
-<li><p>Adapting teaching materials (slide decks, classroom materials, etc.) from R to Python.</p></li>
-<li><p>Teaching the first “Python cohort” of this course.</p></li>
-</ul>
-</section>
-<section id="faculty-development">
-<h3>7. Faculty development<a class="headerlink" href="#faculty-development" title="Permalink to this headline">#</a></h3>
-<p>The original project proposal anticipated carrying out facultly professional development with workshops and tutorials. Instead, during COVID, the only information sessions were short online presentations at Department meetings.</p>
-<p>However, instructors teaching courses involved in the project received more or less extensive support from project team and teaching assistants while adjustments or resources were being developed.</p>
-<p>Now, with the project tasks essentially completed, we anticipate that training for groups of faculty can be expected to occur between May and December 2023.</p>
-</section>
+<p><strong>Total numbers of students impacted over 3 years</strong> = <strong>3635</strong></p>
 </section>
 </section>
 

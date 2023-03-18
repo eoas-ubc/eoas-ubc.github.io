@@ -361,10 +361,27 @@ const thebe_selector_output = ".output, .cell_output"
    </li>
   </ul>
  </li>
- <li class="toctree-l1">
+ <li class="toctree-l1 has-children">
   <a class="reference internal" href="jnotebooks-startup.html">
    Jupyter NB startup
   </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
+  <label for="toctree-checkbox-5">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="jnb-startup-win.html">
+     Windows 10/11
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="jnb-startup-macos.html">
+     Mac OS
+    </a>
+   </li>
+  </ul>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="cloud-servers.html">
@@ -400,7 +417,7 @@ const thebe_selector_output = ".output, .cell_output"
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="tut-conda_environs.html">
-   Conda &amp; environments
+   Environments: Conda, Mamba, and all that
   </a>
  </li>
  <li class="toctree-l1">
@@ -603,58 +620,34 @@ title="Print to PDF"
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#ocese-project-objectives">
-   OCESE project objectives
+  <a class="reference internal nav-link" href="#ocese-project-goals-for-envr-300">
+   OCESE project goals for ENVR 300
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#resources-produced">
-   Resources produced
+  <a class="reference internal nav-link" href="#actions-taken">
+   Actions taken
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#pedagogy">
-   Pedagogy
+  <a class="reference internal nav-link" href="#instructors-experiences">
+   Instructors’ experiences
   </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#a-necessary-instructor-and-ta-skills">
-     a) Necessary instructor and TA skills
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#b-workflow-for-preparing-and-delivering-lessons">
-     b) Workflow for preparing and delivering lessons
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#c-workflow-for-preparing-and-delivering-labs-assignments">
-     c) Workflow for preparing and delivering labs &amp; assignments
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#d-assessment-tactics">
-     d) Assessment tactics
-    </a>
-   </li>
-  </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#project-evaluation">
-   Project evaluation
+  <a class="reference internal nav-link" href="#students-experiences">
+   Students’ experiences
   </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#a-questions-data-results">
-     a) Questions, data, results
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#b-costs-risks-and-recommendations">
-     b) Costs, Risks, and Recommendations
-    </a>
-   </li>
-  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#costs">
+   Costs
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#lessons-learned">
+   Lessons learned
+  </a>
  </li>
 </ul>
 
@@ -681,58 +674,34 @@ title="Print to PDF"
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#ocese-project-objectives">
-   OCESE project objectives
+  <a class="reference internal nav-link" href="#ocese-project-goals-for-envr-300">
+   OCESE project goals for ENVR 300
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#resources-produced">
-   Resources produced
+  <a class="reference internal nav-link" href="#actions-taken">
+   Actions taken
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#pedagogy">
-   Pedagogy
+  <a class="reference internal nav-link" href="#instructors-experiences">
+   Instructors’ experiences
   </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#a-necessary-instructor-and-ta-skills">
-     a) Necessary instructor and TA skills
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#b-workflow-for-preparing-and-delivering-lessons">
-     b) Workflow for preparing and delivering lessons
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#c-workflow-for-preparing-and-delivering-labs-assignments">
-     c) Workflow for preparing and delivering labs &amp; assignments
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#d-assessment-tactics">
-     d) Assessment tactics
-    </a>
-   </li>
-  </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#project-evaluation">
-   Project evaluation
+  <a class="reference internal nav-link" href="#students-experiences">
+   Students’ experiences
   </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#a-questions-data-results">
-     a) Questions, data, results
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#b-costs-risks-and-recommendations">
-     b) Costs, Risks, and Recommendations
-    </a>
-   </li>
-  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#costs">
+   Costs
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#lessons-learned">
+   Lessons learned
+  </a>
  </li>
 </ul>
 
@@ -755,49 +724,34 @@ title="Print to PDF"
 &gt;<a class="reference external" href="https://ubcexplorer.io/course/ENVR/300">ubcexplore</a>,
 &gt;<a class="reference external" href="https://www.eoas.ubc.ca/~quest/eoas-only.html">EOAS curriculum map</a>.</p>
 </section>
-<section id="ocese-project-objectives">
-<h2>OCESE project objectives<a class="headerlink" href="#ocese-project-objectives" title="Permalink to this headline">#</a></h2>
-<p>Introduce interactive dashboard apps to classroom and assignment activities to explore concepts and data sets.</p>
+<section id="ocese-project-goals-for-envr-300">
+<h2>OCESE project goals for ENVR 300<a class="headerlink" href="#ocese-project-goals-for-envr-300" title="Permalink to this headline">#</a></h2>
+<ol class="simple">
+<li><p>Make in-class exploration of the “modeling process” interactive.</p></li>
+<li><p>Provide a self-directed interactive resource to explore “signals, noise, trends &amp; smoothing”.</p></li>
+</ol>
 </section>
-<section id="resources-produced">
-<h2>Resources produced<a class="headerlink" href="#resources-produced" title="Permalink to this headline">#</a></h2>
-<ul class="simple">
-<li><p><a class="reference external" href="https://dashboard.eoas.ubc.ca/co2mlo">Atmospheric CO_2 at Mauna Loa and South Pole</a> (monthly averages), with user-defined straight line model for crude predictions.</p></li>
+<section id="actions-taken">
+<h2>Actions taken<a class="headerlink" href="#actions-taken" title="Permalink to this headline">#</a></h2>
+<p>Two dashboards were built early during OCESE to learn how to design, build, test, and deploy Python-based dashboard apps.</p>
+<ol class="simple">
+<li><p><a class="reference external" href="https://dashboard.eoas.ubc.ca/co2mlo">Atmospheric CO2 at Mauna Loa and South Pole</a> (monthly averages), with user-defined straight line model for crude predictions.</p></li>
 <li><p><a class="reference external" href="https://dashboard.eoas.ubc.ca/timeseries">Three signals</a>: adjustable parameters illustrating noise and trend on a sinewave, with smoothing. Signals, trends, noise and smoothing: a simple interactive dashboard app. to gain familiarity with interactions of these components of signals.</p></li>
-<li><p>Links to repositories are on the project’s <a class="reference internal" href="dashboards.html"><span class="doc std std-doc">dashboards page</span></a>.</p></li>
-</ul>
+</ol>
+<p>These were demonstrated to the ENVR 300 instructor and a decision was made to use the first during an inclass group-based learning activity and the second as a self-directed concept demo. Links to code repositories are on the OCESE project’s <a class="reference internal" href="dashboards.html"><span class="doc std std-doc">dashboards page</span></a>.</p>
 </section>
-<section id="pedagogy">
-<h2>Pedagogy<a class="headerlink" href="#pedagogy" title="Permalink to this headline">#</a></h2>
-<section id="a-necessary-instructor-and-ta-skills">
-<h3>a) Necessary instructor and TA skills<a class="headerlink" href="#a-necessary-instructor-and-ta-skills" title="Permalink to this headline">#</a></h3>
-<ul class="simple">
-<li><p>Maintain dashboards and accompanying resources.</p></li>
-<li><p>Manage assignment update, delivery, collection, grading &amp; feedback cycle.</p></li>
-</ul>
+<section id="instructors-experiences">
+<h2>Instructors’ experiences<a class="headerlink" href="#instructors-experiences" title="Permalink to this headline">#</a></h2>
+<p>No work was required by instructors to build dashboards themselves, but in-class (online) teaching and learning workflow needed preparation. Results were considered efficient and effective; see below.</p>
+<p><strong>Workflow for delivering lessons</strong>: The CO2 app was first used as a fully online, in-class group activity. A Google Sheets document was prepared with one slide containing questions for each in-class group. Students followed instructions to run the online dashboard app, discuss questions, and submit their work during the in-class discussion session. Each group’s slide included space for answering the 4 questions and posting images captured from the work done with the dashboard. An example of one group’s work is given below.</p>
+<p>Submitting work to a shared google document makes it easy to share work of all groups, and follow up directly during the lesson. The same work flow works well for in person or online lessons.</p>
+<p><img alt="image" src="_images/envr300-grpwork-eg.png" /></p>
 </section>
-<section id="b-workflow-for-preparing-and-delivering-lessons">
-<h3>b) Workflow for preparing and delivering lessons<a class="headerlink" href="#b-workflow-for-preparing-and-delivering-lessons" title="Permalink to this headline">#</a></h3>
-<p>In January 2021 the CO_2 dashboard was used as a fully online, in-class group activity. A Google Sheets document was used by groups to submit their work for whole-class discussion. Each group used one slide/page to answer 4 questions and post images captured from the work they’ve done using a preliminary version of the <a class="reference internal" href="dashboards.html"><span class="doc std std-doc">Atmospheric CO2 dashboard app</span></a>. Here is an example of group work submission onto a single slide.</p>
-<a class="reference internal image-reference" href="_images/envr300-grpwork-eg.png"><img alt="In-class work from one group." class="align-center" src="_images/envr300-grpwork-eg.png" style="width: 700px;" /></a>
-<br>
-</section>
-<section id="c-workflow-for-preparing-and-delivering-labs-assignments">
-<h3>c) Workflow for preparing and delivering labs &amp; assignments<a class="headerlink" href="#c-workflow-for-preparing-and-delivering-labs-assignments" title="Permalink to this headline">#</a></h3>
-</section>
-<section id="d-assessment-tactics">
-<h3>d) Assessment tactics<a class="headerlink" href="#d-assessment-tactics" title="Permalink to this headline">#</a></h3>
-<p>This was an in-class group activity with group work discussed as followup within the same class timeslot as work was done. Hence no “assessment” of student work.</p>
-</section>
-</section>
-<section id="project-evaluation">
-<h2>Project evaluation<a class="headerlink" href="#project-evaluation" title="Permalink to this headline">#</a></h2>
-<section id="a-questions-data-results">
-<h3>a) Questions, data, results<a class="headerlink" href="#a-questions-data-results" title="Permalink to this headline">#</a></h3>
-<p>Some simple survey questions were included in the activity - student responses are efficient to summarize. These are results from two dashboards; the <strong>Atmospheric CO2</strong> and the <strong>timeseris-3signals</strong> dashboard apps.</p>
-<a class="reference internal image-reference" href="_images/envr300-c02app-studentfeedback.png"><img alt="In-class work from one group." class="align-center" src="_images/envr300-c02app-studentfeedback.png" style="width: 500px;" /></a>
-<br>
-<p>The clear positive implication from this small data set is that students found these resources effective and efficient and they want more.</p>
+<section id="students-experiences">
+<h2>Students’ experiences<a class="headerlink" href="#students-experiences" title="Permalink to this headline">#</a></h2>
+<p>Seven feedback questions were included as part of the activity. Students’ answered these on the learning management system (Canvas) with the following results:</p>
+<p><img alt="image" src="_images/envr300-c02app-studentfeedback.png" /></p>
+<p>The clear positive implication from this small data set is that students found these resources effective and efficient and they want more. A few quotes from open ended questions follow.</p>
 <p><strong>What was the impact of using this facility on your instructing practice?</strong></p>
 <blockquote>
 <div><p>“<em>The Google Sheets approach with a slide for each group worked so well that I might use it for normal in-person class work once we’re back in classrooms</em>”. (This activity was was first piloted during COVID pandemic in the 3rd week of a fully online, zoom-based class.)</p>
@@ -820,10 +774,22 @@ title="Print to PDF"
 <div><p>“<em>A little time could have been spent introducing the app and the issues (questions) being addressed during the activity.</em>”</p>
 </div></blockquote>
 </section>
-<section id="b-costs-risks-and-recommendations">
-<h3>b) Costs, Risks, and Recommendations<a class="headerlink" href="#b-costs-risks-and-recommendations" title="Permalink to this headline">#</a></h3>
-<p><span style="color:red">To be completed.</span></p>
+<section id="costs">
+<h2>Costs<a class="headerlink" href="#costs" title="Permalink to this headline">#</a></h2>
+<ul class="simple">
+<li><p>An undergraduate worklearn student refined the code of the preliminary trial version. It should take roughly 10hrs for someone with a little experience with Python and the chosen libraries (<a class="reference external" href="https://dash.plotly.com/">Plotly</a> in this case).</p></li>
+<li><p>A second version was augmented a year later to address the ideas suggested by a second instructor. A second data set was added (South Pole CO_2), and minor adjustments were made to the way straight lines are adjusted. This update took roughly 16 hrs to update, test and redeploy.</p></li>
+</ul>
 </section>
+<section id="lessons-learned">
+<h2>Lessons learned<a class="headerlink" href="#lessons-learned" title="Permalink to this headline">#</a></h2>
+<ul class="simple">
+<li><p>Students like these and want more.</p></li>
+<li><p>Prompt interaction with the instructor is a key for building to suite the learning and teaching needs.</p></li>
+<li><p>As this was the second course to use OCESE dashboards, many of the guidelines in our <a class="reference external" href="https://eoas-ubc.github.io/dashboards-howto.html">dashboard development</a> page became apparent while this app was developed, used, then updated.</p></li>
+<li><p>The ability to instantly clip out a graphic result of working with the app, and pasting it quickly into a shared document, makes it easy to facilitate group work and “instant” discussion about results in class. Such rapid turn-around time is highly desirable for helping students learn without the delays imposed by submitting, grading, retreiving, and then not really reviewing results. Errors and misconceptions are addressed rapidly while the thinking is fresh.</p></li>
+<li><p>Incorporating engaging, interactive resources to help students explore and experiment with concepts or data sets is not complicated. So long as the resources is ready and deployed on a suiteable server, it takes an instructor about as much effort as the introduction of any new learning activity or assignment.</p></li>
+</ul>
 </section>
 </section>
 

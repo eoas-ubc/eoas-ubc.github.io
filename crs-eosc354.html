@@ -361,10 +361,27 @@ const thebe_selector_output = ".output, .cell_output"
    </li>
   </ul>
  </li>
- <li class="toctree-l1">
+ <li class="toctree-l1 has-children">
   <a class="reference internal" href="jnotebooks-startup.html">
    Jupyter NB startup
   </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
+  <label for="toctree-checkbox-5">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="jnb-startup-win.html">
+     Windows 10/11
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="jnb-startup-macos.html">
+     Mac OS
+    </a>
+   </li>
+  </ul>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="cloud-servers.html">
@@ -400,7 +417,7 @@ const thebe_selector_output = ".output, .cell_output"
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="tut-conda_environs.html">
-   Conda &amp; environments
+   Environments: Conda, Mamba, and all that
   </a>
  </li>
  <li class="toctree-l1">
@@ -608,18 +625,28 @@ title="Print to PDF"
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#resources-produced">
-   Resources produced
+  <a class="reference internal nav-link" href="#actions-taken">
+   Actions taken
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#pedagogy">
-   Pedagogy
+  <a class="reference internal nav-link" href="#instructors-experiences">
+   Instructors’ experiences
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#project-evaluation">
-   Project evaluation
+  <a class="reference internal nav-link" href="#students-experiences">
+   Students’ experiences
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#costs">
+   Costs
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#lessons-learned">
+   Lessons Learned
   </a>
  </li>
 </ul>
@@ -652,18 +679,28 @@ title="Print to PDF"
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#resources-produced">
-   Resources produced
+  <a class="reference internal nav-link" href="#actions-taken">
+   Actions taken
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#pedagogy">
-   Pedagogy
+  <a class="reference internal nav-link" href="#instructors-experiences">
+   Instructors’ experiences
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#project-evaluation">
-   Project evaluation
+  <a class="reference internal nav-link" href="#students-experiences">
+   Students’ experiences
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#costs">
+   Costs
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#lessons-learned">
+   Lessons Learned
   </a>
  </li>
 </ul>
@@ -686,26 +723,135 @@ title="Print to PDF"
 &gt;<a class="reference external" href="https://courses.students.ubc.ca/cs/courseschedule?pname=subjarea&amp;tname=subj-course&amp;dept=EOSC&amp;course=354">UBC Calendar</a>,
 &gt;<a class="reference external" href="https://ubcexplorer.io/course/EOSC/354">ubcexplore</a>,
 &gt; <a class="reference external" href="https://www.eoas.ubc.ca/~quest/eoas-only.html">EOAS curriculum map</a>.</p>
+<p>COURSE OUTLINE</p>
+<ol class="simple">
+<li><p>Introduction and review of complex numbers</p></li>
+<li><p>Discrete Fourier and z-transforms</p></li>
+<li><p>Spectral estimation</p></li>
+<li><p>Filtering, correlation and deconvolution</p></li>
+<li><p>Linear parameter estimation</p></li>
+<li><p>Underdetermined problems</p></li>
+</ol>
 </section>
 <section id="ocese-project-objectives">
 <h2>OCESE project objectives<a class="headerlink" href="#ocese-project-objectives" title="Permalink to this headline">#</a></h2>
-<p><span style="color:red">To be completed.</span></p>
+<ul class="simple">
+<li><p>Convert all 11 MatLab assignments to Python-based Jupyter Notebooks. Build two versions for each; one for students and one including solutions.</p></li>
+<li><p>Design and pilot a “skills check assignment” to help students identify the extent to which they are ready to begin solving assignment problems.</p></li>
+<li><p>Implement a students’ installation procedure so that all students can install Python and Jupyter Notebooks onto their own computers with as little difficulty as possible.</p></li>
+</ul>
 </section>
-<section id="resources-produced">
-<h2>Resources produced<a class="headerlink" href="#resources-produced" title="Permalink to this headline">#</a></h2>
-<p>These are open education resources (OER) unless indicated otherwise.</p>
-<p><span style="color:red">To be completed.</span></p>
+<section id="actions-taken">
+<h2>Actions taken<a class="headerlink" href="#actions-taken" title="Permalink to this headline">#</a></h2>
+<ul class="simple">
+<li><p><strong>Circumstances</strong></p>
+<ul>
+<li><p>The first core (not elective) upper level course that the OCESE project converted to Python. Two other courses in the Dep’t were already using Python (ATSC 301 and EOSC 213), and at least two were permitting students to use either MatLab or Python (EOSC 354 and EOSC 410).</p></li>
+<li><p>COVID: Fall 2021 was “in person” but with mandatory masks, and still “not normal”.</p></li>
+<li><p>This is a small class of 10-15 students each year. Also, students learn to install the necessary software on their own computers. Therefore, logistics of deliverying Python-based Jupyter Notebooks is not burdened by the need for Jupyter hubs that (a) need special environments or (b) need to scale resources up and down according to demand of large numbers of studetns.</p></li>
+</ul>
+</li>
+<li><p><strong>Assignments or “labs”</strong>: The first 8 were in place for start of course, while assignments 9-11 were completed in time for use in Oct-Nov.</p></li>
+<li><p><strong>Skills check assessment</strong> (Assignment 0): Nine specific skills are defined, tasks to check if the student can demonstrate these skills are posed, and pointers to documentation are provide for further details about each skill.</p></li>
+<li><p><strong>Installation guidelines</strong> were developed in parallel with those for EOSC 211, and based on experiences in ATSC 301.</p></li>
+<li><p><strong>Jupyter hubs</strong> are not needed for this course since one learning goal is for students to gain skills related to installing, managing and using Python on their own computers.</p></li>
+</ul>
 </section>
-<section id="pedagogy">
-<h2>Pedagogy<a class="headerlink" href="#pedagogy" title="Permalink to this headline">#</a></h2>
-<p><span style="color:red">To be completed.</span></p>
+<section id="instructors-experiences">
+<h2>Instructors’ experiences<a class="headerlink" href="#instructors-experiences" title="Permalink to this headline">#</a></h2>
+<p>The instructor was a first-time teacher (PhD student) filling in while the normal instructor was on leave. He had been teaching assistant for the course in pervious terms and new the content well.</p>
+<p>Some key comments from a debriefing interview with this instructor 2 months after the course was completed:</p>
+<ul class="simple">
+<li><p>It went quite smoothly - content and pacing was kept as close to prior terms as possible.</p></li>
+<li><p>The switch to Python was simple - no big issues.</p></li>
+<li><p>Lab time, and marking load, were much as before.</p></li>
+<li><p>Logistics worked well for this small course. Students fetch notebook files (*.ipynb) from the LMS (Canavas), work on their own laptops, and deliver completed work as a completed notebook file to the LMS. Teaching assistant fetches file, runs it and applies the marking rubric.</p></li>
+<li><p>Any particular difficulties? Assignment 4 seems very long. Not challenging but labour intensive. Other than that, difficulties were quite variable for different students. But with small class and experienced TA, these are managed during weekly lab sesions (2hrs each).</p></li>
+<li><p>Were resources adequate (text, labs, etc.)? Yes. Instructor did write a few short notebooks to illustrate specific concepts during lectures (eg. Fourier Transforms).</p></li>
+</ul>
 </section>
-<section id="project-evaluation">
-<h2>Project evaluation<a class="headerlink" href="#project-evaluation" title="Permalink to this headline">#</a></h2>
-<p><span style="color:red">Check followup emails from Reid, and debrief with Michael in Dec.</span></p>
-<p>Questions, data, results, risks and recommendations.</p>
-<p>Benefits: projected and observed. Focus on students and learning.</p>
-<p>Costs: to instructors, departments &amp; institutions.</p>
+<section id="students-experiences">
+<h2>Students’ experiences<a class="headerlink" href="#students-experiences" title="Permalink to this headline">#</a></h2>
+<p>A midterm feedback survey was used to gauge students’ experiences and perceptions in time to make adjustments. Results are summarized in figures below, with a few observations in blue text under each table. Number of students is small but results suggest there were few complaints or concerns.</p>
+<a class="reference internal image-reference" href="_images/eosc354feedback.png"><img alt="ocese outcomes by type" class="align-center" src="_images/eosc354feedback.png" style="width: 600px;" /></a>
+<BR>
+Five point Likert-sclae (agree/disagree) questions provide information about what seemed to work well, and what didn't. 
+<a class="reference internal image-reference" href="_images/eosc354-content.png"><img alt="ocese outcomes by type" class="align-center" src="_images/eosc354-content.png" style="width: 600px;" /></a>
+<BR>
+<a class="reference internal image-reference" href="_images/eosc354-teaching.png"><img alt="ocese outcomes by type" class="align-center" src="_images/eosc354-teaching.png" style="width: 600px;" /></a>
+<BR>
+<p><strong>Evidently</strong> …</p>
+<ul class="simple">
+<li><p>All students agreed that learning Python was beneficial and that Jupyter Notebooks worked well for deliverying and working on assignments.</p></li>
+<li><p>The early “skills check” Jupyter Notebook was definitly approved of.</p></li>
+<li><p>The text book seems to be NOT useful. This could be improved. The lecture material and assignment steps might need a new timeseries text book that uses a current programming context for discussing concepts and applications.</p></li>
+<li><p>The midterm exam may be too “theoretical” given that students spend most of their time practice the application of coding to address problems.</p></li>
+<li><p>The instructing and the learning experiences were all good.</p></li>
+</ul>
+<p><strong>Selected responses to open-ended feedback questions</strong>:</p>
+<p>Clearly a thoughtful and insightful set of students. Adjustments suggested seem mostly about supporting development the “maturity” associated with translating a problem into code. The theory is one thing, the coding skills are another, and bringing the two together is particularly challenging when both are being developed simultaneously. But the course was generally appreciated.</p>
+<ul class="simple">
+<li><p>What has been most helpful for your learning in this course so far?</p>
+<ul>
+<li><p><em>I really like how fast the instructor responds to his emails. He always answers my questions in detail and it helps a lot</em>.</p></li>
+<li><p><em>The 5 minute review before every class is very helpful</em>.</p></li>
+<li><p><em>Reiterating the most important points/concepts in class</em>.</p></li>
+<li><p><em>Assignments and practice problems, dicussion with peers after class</em>.</p></li>
+</ul>
+</li>
+<li><p>What has been most challenging for you in this course so far?</p>
+<ul>
+<li><p>“<em>A LOT of maths derivations and applications, which can be very confusing at times.</em>”</p></li>
+<li><p>“<em>Actually applying what we’ve learnt in class to solving problems.</em>”</p></li>
+</ul>
+</li>
+<li><p>What is one thing you are doing that is helping you succeed in this course?</p>
+<ul>
+<li><p><em>Regularly attending class + asking for help + completing all assignments</em>.</p></li>
+<li><p><em>Reading over past lab solutions</em>.</p></li>
+</ul>
+</li>
+<li><p>How can we better support you to enhance your learning experience or success in this course?</p>
+<ul>
+<li><p><em>I think more in-class examples would help + exams that are a bit more similar to the assignments</em>.</p></li>
+<li><p><em>I feel like if we had more of a direct line of communication (e.g. discord or slack), it would make learning/asking questions so much easier (especially with such a small cohort)</em>.</p></li>
+<li><p><em>Explain more of what our code should look like at the start of labs so we have a better idea of how to approach the problems</em>.</p></li>
+</ul>
+</li>
+<li><p>Finally, have you any further comments about the course and/or the questions in this survey?</p>
+<ul>
+<li><p><em>The assignments are way too long and I know that other students feel the same way. They can take up to 13 hours to complete. It would be nice if some of the questions could be taken out and turned into optional practice</em>.</p></li>
+<li><p><em>I guess I don’t find the coding useful for learning material</em>.</p></li>
+<li><p><em>Midterm was really challenging. Felt it was much more conceptual that I expected, and the conceptual problems were difficult to solve, ie could have used some more practice. Also, there were no problems similar to the assignments</em>.</p></li>
+<li><p><em>Insntructor and TA are great teachers :)</em>.</p></li>
+</ul>
+</li>
+</ul>
+<p>One insightful comment from the instructor (who had taken the course 5 years previousl) is: “<em>The comment about the assignments sometimes being long/arduous I think is shared among all these students. [But] I would have given similar feedback when I was taking the course in 2017.</em>”</p>
+</section>
+<section id="costs">
+<h2>Costs<a class="headerlink" href="#costs" title="Permalink to this headline">#</a></h2>
+<p>Resources used to accomplish this course transformation (from MatLab to Python, using Jupyter notebooks) included:</p>
+<ul class="simple">
+<li><p>One half-time undergraduate student with exceptional programming skills who had also taken the course only 7 mths prior to carrying out the conversion.</p></li>
+<li><p>Project coordinator who also had some experience with course content (perhaps ~10% f.t.e. on this component of the OCESE project) to supervise that student and liaise with project management and the faculty members involved in teaching the course.</p></li>
+<li><p>The first deployment of this well-established course in it’s new form required some attention to detail in the month prior to day1, including “test driving” the logistics of delivery, completing, submitting, grading and returning assignments with feedback.</p></li>
+</ul>
+<p>Running this low-enrollment course in it’s new form takes no more effort than before. As expected, it benefits from the fact that students are in their 3rd of 4th year and therefore “committed” to the discipline.</p>
+</section>
+<section id="lessons-learned">
+<h2>Lessons Learned<a class="headerlink" href="#lessons-learned" title="Permalink to this headline">#</a></h2>
+<ul class="simple">
+<li><p>The student hired to carry out conversions had taken the course the year previously and was particularly keen on signals, programming and geophysics. This was a significant bonus (not planned) because the student had experienced all the challenges that were specific to completing the assignments in Python.</p></li>
+<li><p>To focus on pros, cons, challenges and opportunities regarding use of Python for this course the student hired to carry out the conversions was asked to reflect on experiences by respond to the following questions:</p>
+<ul>
+<li><p>Which portions of the course were most inspiring, interesting, satisfying or fun?</p></li>
+<li><p>Were any assignments particularly long or difficult to complete in a reasonable time?</p></li>
+<li><p>For each of months 1, 2, 3, how did the course feel in terms of balance of theoretical versus applied, relevance, and inspiration?</p></li>
+</ul>
+</li>
+</ul>
+<p>We anticipate that the course will be able to tackle more advanced material when students taking the course have gained more programmig experience. This is anticipated to occure within the next year or two as all relevant first and second year courses begin to be taught using Python.</p>
 </section>
 </section>
 
