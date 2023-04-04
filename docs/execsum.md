@@ -54,14 +54,14 @@ Each _product or contribution_ generated during the OCESE project can be classif
 OCESE work has generated over 100 products to date. Of these, over 30 should become Open Education Resources, either individually or as collections. The main types of products or items are:
 
 * **Data** gathered from or about students in 6 courses for feedback on dashboards or JNBs. Other data include discussion threads (TAs, instructors & developers), midterm course feedback, and surveys about prior knowledge & needs during COVID.
-* **Consulting**
+* **Support with EOAS**
   * The work of improving all 25 courses included consulting with corresponding instructors and teaching assistants about content, activities, and/or assessments.
   * Additional consulting on pedagogy, logistics, data gathering or tutorials & guidelines was carried out with instructors or teaching assistants for 16 of these 25 courses.
+  * Owing to COVID, workshops and training sessions were not carried out, except in 1-on-1 meetings. However, 3 events were run mostly to introduce OCESE activities, and further workshops and training events will be conducted during the 6 months following the official end of funding.
 * **Resources** produced for 8 courses include teaching materials adapted for Python, and instructions on use of JNBs, installing & managing Python, GitHub, and use of dashboards & JNBs for teaching. Although developed initially for specific courses, most are generally applicable.
 * **Dashboards** used (or planned) in 10 courses, 5 each core and service. Assignments rely on dashboards in 5 courses, others are used for demonstration, class activities or optional.
-* **Scholarly contributions**: progress reports and lessons learned have been shared at 5 UBC teaching and learning events, and at 4 conferences or workshops beyond UBC. More contributions are planned before end of 2023.
+* **Dissemination**: progress reports and lessons learned have been shared at 5 UBC teaching and learning events, and at 4 conferences or workshops beyond UBC. More contributions are planned before end of 2023.
 * **Python Jupyter Notebooks** were introduced for 8 courses; 6 core EOAS courses plus EOSC442 and DSCI100.
-* **Faculty professional development** was originally intended to involve workshops and group training sessions. Owing to COVID, this aspect was carried out mostly 1-on-1 during the project. However, 3 events were run mostly to introduce OCESE activities, and further workshops and training events will be conducted during the 6 months following the official end of funding.
 
 ---
 Individual courses benefitted from products or contributions as follows:
@@ -73,14 +73,13 @@ Individual courses benefitted from products or contributions as follows:
 
 Key to column labels:
 
-* consult = Consulting regarding assignment design or pedagogy
 * dashb = One or more dashboards introduced
 * data = Data gathered to inform instructors about impacts.
 * dissem = Dissemination for department, institution or external settings.
-* FProD = Supporting faculty professional development (learning new tactics, etc.)
 * jnb = One or more Jupyter notebooks introduced.
-* pedag = Support for developing pedagogic initiatives
+* na = planned but not started.
 * resource = Resources for teaching or content for learning
+* support = pedagogic consulting, activity or content development, feedback & project evaluation, etc.
 
 ---
 Courses using dashboards or Jupyter Notebooks on local (own) computers or cloud-based hubs (notebooks) or servers (dashboards).
@@ -103,7 +102,7 @@ Each _poduct or contribution_ can also be classified as targeting one of the the
 
 <BR>
 
-Items produced for each course are summarized here by project goals. See more notes about this table below.
+Items produced for each course are summarized here by project goals. Numbered goals in columns are the same as those at the top of this page. See more notes about this table below.
 
 ```{image} images/outcomes-goals-courses.png
 :alt: ocese outcomes by type
