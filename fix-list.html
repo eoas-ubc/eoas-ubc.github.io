@@ -387,10 +387,22 @@ const thebe_selector_output = ".output, .cell_output"
    Servers and hubs
   </a>
  </li>
- <li class="toctree-l1">
+ <li class="toctree-l1 has-children">
   <a class="reference internal" href="python-startup.html">
-   Python startup
+   Python startup &gt;&gt;
   </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/>
+  <label for="toctree-checkbox-6">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="SkillsCheck-solns.html">
+     Check your Python skills
+    </a>
+   </li>
+  </ul>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="jupyterbooks.html">
@@ -416,12 +428,12 @@ const thebe_selector_output = ".output, .cell_output"
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="tut-conda_environs.html">
-   Environments: Conda, Mamba, and all that
+   Environments; Conda, Mamba, etc.
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="tut-programming-environs.html">
-   Using 'environments'
+   Using environments
   </a>
  </li>
  <li class="toctree-l1">
@@ -619,13 +631,13 @@ title="Print to PDF"
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#specific-courses">
-   Specific courses
+  <a class="reference internal nav-link" href="#additions">
+   Additions
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#additions">
-   Additions
+  <a class="reference internal nav-link" href="#specific-courses">
+   Specific courses
   </a>
  </li>
 </ul>
@@ -653,13 +665,13 @@ title="Print to PDF"
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#specific-courses">
-   Specific courses
+  <a class="reference internal nav-link" href="#additions">
+   Additions
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#additions">
-   Additions
+  <a class="reference internal nav-link" href="#specific-courses">
+   Specific courses
   </a>
  </li>
 </ul>
@@ -679,7 +691,7 @@ title="Print to PDF"
 <h2>Improvements<a class="headerlink" href="#improvements" title="Permalink to this headline">#</a></h2>
 <ul class="simple">
 <li><p>Jupyter / Python install based on EOSC 211 (and maybe EOSC 354). Does this include use of condalock?</p></li>
-<li><p>github and workflows to be rewritten as summaries, perhaps based on (or simply pointing to?) the <a class="reference external" href="https://www.atlassian.com/git/tutorials/comparing-workflows">Atlasian tutorials</a>. Maybe also refer to <a class="reference external" href="https://python.datasciencebook.ca/version-control.html">Ch.12 of the DSCI100 text</a> (still wiht R as context, but updates in progress).</p></li>
+<li><p>Merge two github pages. They could be rewritten as summaries, perhaps based on (or simply pointing to?) the <a class="reference external" href="https://www.atlassian.com/git/tutorials/comparing-workflows">Atlasian tutorials</a>. Maybe also refer to <a class="reference external" href="https://python.datasciencebook.ca/version-control.html">Ch.12 of the DSCI100 text</a> (still wiht R as context, but updates in progress).</p></li>
 <li><p>Jupyter NB pages</p>
 <ul>
 <li><p>The <a class="reference internal" href="tut-jhubs.html"><span class="doc std std-doc">Jupyterhub Tutorial</span></a> is mis-named. Consolidate this with <a class="reference internal" href="jnotebooks-startup.html"><span class="doc std std-doc">Jupyter NB startup</span></a> and possibly some of <a class="reference internal" href="tut-teachwith-jnbs.html"><span class="doc std std-doc">teaching with Jupyter NBs</span></a>.</p></li>
@@ -691,8 +703,18 @@ title="Print to PDF"
 <li><p><em>Conda &amp; environments</em> and <em>Using environments</em> need rationalizing and updating.</p></li>
 </ul>
 </li>
+<li><p>Merge two environment pages</p></li>
 <li><p>Tools page: clarify what’s needed, maybe make sub-pages.</p></li>
-<li><p>Add jupytext to pages about setting up J-notebooks, using notebooks for teaching, and likely others.</p></li>
+<li><p>Add jupytext to pages about setting up J-notebooks, using notebooks for teaching, how J-Books uses it, and likely others.</p></li>
+<li><p>Refine the inclusion of Jupyter Notebooks. Python Skills check is included but I’m not sure if it’s done the best way possible. And there may be other notebooks for tutorials or guidelines. But get one right first.</p></li>
+</ul>
+</section>
+<section id="additions">
+<h2>Additions<a class="headerlink" href="#additions" title="Permalink to this headline">#</a></h2>
+<ul class="simple">
+<li><p>where to house repositories? Those with PA, FJ, students, EOAS-</p></li>
+<li><p><a class="reference internal" href="refs-citations.html"><span class="doc std std-doc">Cited references</span></a> should be added throughout, as needed. This could be done using BibTex reference files - see the <a class="reference external" href="https://jupyterbook.org/en/stable/tutorials/references.html">Jupyter Books citation tutorial</a>.</p></li>
+<li><p>More about open-source, with examples, esepcially w.r.t. earth sciences. Eg: pangeo, SimpEG, Fatiango, geosci.xyz, (find ocgy and atsc examples), Jupyter books (again, referring to UBC’s examples <a class="reference external" href="http://open.ubc.ca">open.ubc.ca</a>. <a class="reference external" href="https://rhwhite.github.io/numeric_2022/">Numerical Techniques for AOE scientists</a>, R. White and S. Allen, DSCI100 <a class="reference external" href="https://python.datasciencebook.ca/intro.html">python text</a>  &amp; <a class="reference external" href="https://github.com/UBC-DSCI/introduction-to-datascience-python">repo</a></p></li>
 </ul>
 </section>
 <section id="specific-courses">
@@ -717,14 +739,6 @@ title="Print to PDF"
 <li><p>eosc471</p></li>
 <li><p>eosc373 (describe actions and outcomes with Hal’s JNB)</p></li>
 <li><p>others?</p></li>
-</ul>
-</section>
-<section id="additions">
-<h2>Additions<a class="headerlink" href="#additions" title="Permalink to this headline">#</a></h2>
-<ul class="simple">
-<li><p>Add an executive summary.</p></li>
-<li><p><a class="reference internal" href="refs-citations.html"><span class="doc std std-doc">Cited references</span></a> should be added throughout, as needed. This could be done using BibTex reference files - see the <a class="reference external" href="https://jupyterbook.org/en/stable/tutorials/references.html">Jupyter Books citation tutorial</a>.</p></li>
-<li><p>More about open-source, with examples, esepcially w.r.t. earth sciences. Eg: pangeo, SimpEG, Fatiango, geosci.xyz, (find ocgy and atsc examples), Jupyter books (again, referring to UBC’s examples <a class="reference external" href="http://open.ubc.ca">open.ubc.ca</a>. <a class="reference external" href="https://rhwhite.github.io/numeric_2022/">Numerical Techniques for AOE scientists</a>, R. White and S. Allen, DSCI100 <a class="reference external" href="https://python.datasciencebook.ca/intro.html">python text</a>  &amp; <a class="reference external" href="https://github.com/UBC-DSCI/introduction-to-datascience-python">repo</a></p></li>
 </ul>
 </section>
 </section>

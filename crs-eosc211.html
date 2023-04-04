@@ -388,10 +388,22 @@ const thebe_selector_output = ".output, .cell_output"
    Servers and hubs
   </a>
  </li>
- <li class="toctree-l1">
+ <li class="toctree-l1 has-children">
   <a class="reference internal" href="python-startup.html">
-   Python startup
+   Python startup &gt;&gt;
   </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/>
+  <label for="toctree-checkbox-6">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="SkillsCheck-solns.html">
+     Check your Python skills
+    </a>
+   </li>
+  </ul>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="jupyterbooks.html">
@@ -417,12 +429,12 @@ const thebe_selector_output = ".output, .cell_output"
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="tut-conda_environs.html">
-   Environments: Conda, Mamba, and all that
+   Environments; Conda, Mamba, etc.
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="tut-programming-environs.html">
-   Using 'environments'
+   Using environments
   </a>
  </li>
  <li class="toctree-l1">
@@ -620,13 +632,8 @@ title="Print to PDF"
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#ocese-project-goals-for-eosc-211">
-   OCESE project goals for EOSC 211
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#actions-taken">
-   Actions taken
+  <a class="reference internal nav-link" href="#ocese-project-goals-for-eosc-211-corresponding-actions">
+   OCESE project goals for EOSC 211 &amp; Corresponding Actions
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
@@ -703,13 +710,8 @@ title="Print to PDF"
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#ocese-project-goals-for-eosc-211">
-   OCESE project goals for EOSC 211
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#actions-taken">
-   Actions taken
+  <a class="reference internal nav-link" href="#ocese-project-goals-for-eosc-211-corresponding-actions">
+   OCESE project goals for EOSC 211 &amp; Corresponding Actions
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
@@ -782,34 +784,41 @@ title="Print to PDF"
 &gt;<a class="reference external" href="https://ubcexplorer.io/course/EOSC/211">ubcexplore</a>,
 &gt;<a class="reference external" href="https://www.eoas.ubc.ca/~quest/eoas-only.html">EOAS curriculum map</a>.</p>
 </section>
-<section id="ocese-project-goals-for-eosc-211">
-<h2>OCESE project goals for EOSC 211<a class="headerlink" href="#ocese-project-goals-for-eosc-211" title="Permalink to this headline">#</a></h2>
+<section id="ocese-project-goals-for-eosc-211-corresponding-actions">
+<h2>OCESE project goals for EOSC 211 &amp; Corresponding Actions<a class="headerlink" href="#ocese-project-goals-for-eosc-211-corresponding-actions" title="Permalink to this headline">#</a></h2>
+<p>Five project goals are listed with summaries of actions taken for each.</p>
+<ol class="simple">
+<li><p><strong>Python conversion</strong>: Convert classroom, lab and homework teaching and learning materials from MatLab to Python, deployed as Jupyter Notebooks.</p>
 <ul class="simple">
-<li><p>Convert all MatLab teaching and learning materials to Python</p></li>
-<li><p>Convert all MatLab classroom and homework exercises to Python</p></li>
-<li><p>Implement the course website using Jupyter Books.</p></li>
-<li><p>Include weekly instructions and labs/assignments as Jupyter Notebooks. (See resources below).</p></li>
-<li><p>Implement automatic grading practices using the Jupyter Notebook plugin <a class="reference external" href="https://github.com/jupyter/nbgrader">nbgrader</a>.</p></li>
-<li><p>Adapt open source materials to make a suitable text book for programming (and Python) beginners.</p></li>
-<li><p>Establish stable, sustainable Jupyter Hub facilities at UBC for with reliable tech-support for instructors and teaching assistants.</p></li>
-</ul>
-</section>
-<section id="actions-taken">
-<h2>Actions taken<a class="headerlink" href="#actions-taken" title="Permalink to this headline">#</a></h2>
-<ul class="simple">
-<li><p><a class="reference external" href="https://phaustin.github.io/eosc211_students/announcements.html">EOSC211 course website</a>, a <strong>Jupyter Book</strong> including calendar of topics, links into relevant sections of the text book, and assignments &amp; labs provided as <strong>Jupyter Notebooks</strong>.</p></li>
-<li><p><a class="reference external" href="https://phaustin.github.io/Problem-Solving-with-Python/">Text book</a>, mainly python programming for beginners. Adapted from <a class="reference external" href="https://github.com/professorkazarinoff/Problem-Solving-with-Python-37-Edition">Problem Solving with Python-37</a> by Dr. Peter Kazarinof.</p></li>
-<li><p>Jupyter Notebooks with Python code exercises and activities for classwork.</p></li>
-<li><p>Getting-started instructions for students to install Python and Jupyter Notebooks on Windows or Mac laptops. This was done with 90 students in one  1.5-hour lecture session.</p></li>
-<li><p>A <a class="reference internal" href="tut-jhubs.html"><span class="doc std std-doc">Jupyter Hub tutorial</span></a> for EOSC211 students, but easily generalized. This also serves as the first introduction to coding with Python.</p></li>
-<li><p>Grading is accomplished using nbgrader.</p></li>
-<li><p>Restricted <strong>Canvas</strong> site for delivery and submission of assignments, assignment data sets, and other course content.</p></li>
-<li><p>UBC open Jupyter hub piloted (fall 2022).</p>
-<ul>
-<li><p><em>Refer to hub feedback in file (221209-HubFeedback.xlsx)</em>.</p></li>
+<li><p>Completed largely by one graduate student employed part time, who then served as teaching assistant during the first deployment of the course’s new Python version.</p></li>
 </ul>
 </li>
+<li><p><strong>Jupyter Hubs</strong>: Establish which cloud-based approaches for serving Jupyter Notebooks will be the most stable, sustainable, scaleable.</p>
+<ul class="simple">
+<li><p>First hub was deployed on Departmental server as UBC did not yet have a dedicated hub for undergraduate learning.</p></li>
+<li><p>UBC open Jupyter hub piloted (fall 2022). <em>Refer to hub feedback in file (221209-HubFeedback.xlsx)</em>.</p></li>
 </ul>
+</li>
+<li><p><strong>Grading</strong>: Introduce automatic (or semiautomatic) grading practices, probably using the Jupyter Notebook plugin <a class="reference external" href="https://github.com/jupyter/nbgrader">nbgrader</a>.</p>
+<ul class="simple">
+<li><p>Grading using nbgrader was attempted in fall 2021 but results were dissapointing.</p></li>
+<li><p>Fall 2022 saw a more add-hoc approach developed, improving efficienty and removing dependance on irregularly mantained 3rd party software (nbgrader).</p></li>
+</ul>
+</li>
+<li><p><strong>Textbook &amp; resources</strong>: Introduce an <a class="reference external" href="https://phaustin.github.io/Problem-Solving-with-Python/Preface/Motivation.html">opensource textbook</a>, and deliver course content with similar open source technology.</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://phaustin.github.io/Problem-Solving-with-Python/">Text book</a>, mainly python programming for beginners. Adapted from <a class="reference external" href="https://github.com/professorkazarinoff/Problem-Solving-with-Python-37-Edition">Problem Solving with Python-37</a> by Dr. Peter Kazarinof.</p></li>
+<li><p>A Jupyter Book was built for delivering content such as syllabus, calendar of topics, links into relevant sections of the text book, and the Jupyter Notebooks for assignments &amp; labs provided. This proved inefficient.</p></li>
+<li><p>The second iteration reverted to use of UBC’s <a class="reference external" href="https://about.canvas.ubc.ca/">canvas</a> Learning management system for delivery and submission of lecture materials, assignments, assessments, and other course content.</p></li>
+</ul>
+</li>
+<li><p><strong>Documentation</strong>: Prepare documentation for procedures that teachers and students need for using open source resources, Jupyter hubs, installing Python, and preparing assessments for sem-automated grading.</p>
+<ul class="simple">
+<li><p>Getting-started instructions for students to install Python and Jupyter Notebooks on Windows or Mac laptops. This was done with 90 students in one  1.5-hour lecture session.</p></li>
+<li><p>Also a <a class="reference internal" href="tut-jhubs.html"><span class="doc std std-doc">Jupyter Hub tutorial</span></a> for EOSC211 students, but easily generalized. This also serves as the first introduction to coding with Python.</p></li>
+</ul>
+</li>
+</ol>
 </section>
 <section id="instructors-experiences">
 <h2>Instructors’ experiences<a class="headerlink" href="#instructors-experiences" title="Permalink to this headline">#</a></h2>
