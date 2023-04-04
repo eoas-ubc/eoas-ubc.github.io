@@ -13,7 +13,7 @@
 
 1. Implement an exercise that uses the [Global Temperature](dashboards.md) dashboard app to explore anthropogenic aspects of climate change to facilitate comparison between present and past climate patterns.
 
-2. Build a versatile dashboard to emulate sketch-based learning activities that will allow instructors to specify a background image upon which students can sketch or add annotations. Initial activities are to be based on precedent from activities developed with older software that has become awkward to deploy. Examples are (or were) live at [example 1](https://www.eoas.ubc.ca/~quest/Lab3-sketch.html) and [example 2](https://www.eoas.ubc.ca/~quest/Lab1-2sketches.html) PDF versions of the lab exercises can be seen at <a href="files/Lab3-sketch.pdf">PDF eg1</a> and <a href="ffiles/Lab1-2sketches.pdf">PDF eg2</a>.
+2. Build a versatile dashboard to emulate sketch-based learning activities that will allow instructors to specify a background image upon which students can sketch or add annotations. Initial activities are to be based on precedent from activities developed with older software that has become awkward to deploy. Examples are (or were) live at [eg 1](https://www.eoas.ubc.ca/~quest/Lab3-sketch.html), [eg 2](https://www.eoas.ubc.ca/~quest/Lab1-2sketches.html) and [eg 3](https://www.eoas.ubc.ca/~quest/Sketch-NorthAm.html). PDF versions of the lab exercises can be seen at <a href="files/Lab3-sketch.pdf">PDF eg1</a> and <a href="files/Lab1-2sketches.pdf">PDF eg2</a>.
 
 ## Resources produced
 

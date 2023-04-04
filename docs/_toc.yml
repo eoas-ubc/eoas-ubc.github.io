@@ -77,7 +77,10 @@ parts:
       title: Mac OS
   - file: cloud-servers.md
   - file: python-startup
-    title: Python startup
+    title: Python startup >>
+    sections:
+    - file: SkillsCheck-solns.ipynb
+      title: Check your Python skills
   - file: jupyterbooks
   - file: tools
     title: Other software tools
@@ -85,8 +88,9 @@ parts:
   chapters:
   - file: tut-commandline
   - file: tut-conda_environs
+    title: Environments; Conda, Mamba, etc.
   - file: tut-programming-environs
-    title: Using 'environments'
+    title: Using environments
   - file: tut-git-intro
   - file: tut-pullrequest
     title: Pull Request Workflow

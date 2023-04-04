@@ -1,6 +1,6 @@
 # OCESE project outcomes summary
 
-## OCESE PROJECT GOALS
+## 1. OCESE PROJECT GOALS
 **Two primary goals**: Develop open-source computational tools and techniques that will …
 
 1. …increase exposure to quantitative aspects of Earth Science in EOAS core and service courses,
@@ -8,19 +8,44 @@
 
 **Five goals in support of the top two:**
 
-3. Support / train new and existing faculty
-4. Document resources, guidelines, tutorials
-5. Develop & test affordable, sustainable cloud computing facilities
+3. Teaching and learning support for instructors and TAs.
+4. Document resources, guidelines, tutorials,
+5. Test affordable, sustainable cloud computing options,
 6. Support the FoS minor in Data Science and DSCI 100
 7. Introduce resulting materials and practices as Open Education Resources
 
-## Tables summarizing project output by _type_
+
+## 2. Summary of courses and other impacts
+The following table summarizes specific courses that were in the project proposal, those that were impacted, and corresponding enrollments (giving number of students affected).
+
+```{image} images/enrols.png
+:alt: ocese outcomes by type
+:align: center
+```
+
+<BR>
+
+Project outcomes or 'products' that are not directly related to specific courses include:
+
+* **Jupyter hubs**: Lessons learned about options;
+* **Dashboards**:
+  * web server requirements;
+  * Design guidelines (technical and pedagogic)
+* **Guidelines & procedures** for students,
+  * eg: Python / J-Notebooks installation specific to our courses, Dep’t & and UBC.
+  * Skills check to confirm prior knowledge
+* **Instructors / TAs**:
+  * Documentation,
+  * guidelines and tutorials,
+  * procedures and strategies,
+  * pedagogy and feedback.
+
+## 3. Summary of project output by _type_
 
 Each _product or contribution_ generated during the OCESE project can be classified as one of eight types of outcomes, with counts summarized as:
 
 ```{image} images/outcomes-type.png
 :alt: ocese outcomes by type
-:width: 500px
 :align: center
 ```
 <BR>
@@ -43,7 +68,6 @@ Individual courses benefitted from products or contributions as follows:
 
 ```{image} images/outcomes-type-courses.png
 :alt: ocese outcomes by type
-:width: 330px
 :align: center
 ```
 
@@ -63,29 +87,26 @@ Courses using dashboards or Jupyter Notebooks on local (own) computers or cloud-
 
 ```{image} images/outcomes-compute.png
 :alt: ocese outcomes by type
-:width: 320px
 :align: center
 ```
 
 ---
 
-## Tables summarizing project output by _goals_
+## 4. Summary of project output by _goals_
 
 Each _poduct or contribution_ can also be classified as targeting one of the the seven principle project goals:
 
 ```{image} images/outcomes-goals.png
 :alt: ocese outcomes by goals
-:width: 500px
 :align: center
 ```
 
 <BR>
 
-Items produced for each course are summarized here by project goals. See more notes about this table below it.
+Items produced for each course are summarized here by project goals. See more notes about this table below.
 
 ```{image} images/outcomes-goals-courses.png
 :alt: ocese outcomes by type
-:width: 350px
 :align: center
 ```
 <BR>
@@ -141,13 +162,13 @@ DSCI100 is taught in the UBC Department of Statistics, but this new Python secti
 
 **7. Open Source Resources (OERs) and pedagogies**
 
-All dashboards, course content (such as texts) and project tutorials or documentation emerging from the OCESE project are expected to be designated as OERs, assuming permission from stake holders is obtained.
+All dashboards, course content (such as texts) and tutorials, guidelines or other documentation emerging from the OCESE project are expected to be designated as OERs, assuming permission from stake holders is obtained.
 
 Resources that are NOT expected to be designated as OERs include those that have solutions to student work or activities.
 
 ---
 
-## Summary of courses impacted by OCESE
+## 5. Summary of courses impacted by OCESE
 
 Courses that were supported by OCESE project components.
 
@@ -171,4 +192,4 @@ Courses that were supported by OCESE project components.
 | EOSC442 | Climate Measurement and Analysis                                | 44   | Convert MatLab labs to Python & JNBs                     | All four computing labs. |
 | EOSC471 | Waves, Currents and Ocean Mixing                                | 18   | Convert MatLab assignments to Python with JNBs           | In progress 2023. |
 
-**Total numbers of students impacted over 3 years** = **3635**
+**Estimated total number of students impacted over 3 years** = **3635**
