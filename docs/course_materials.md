@@ -31,7 +31,7 @@ Courses that were supported by OCESE project components.
 | EOSC310 | The Earth and the Solar System                                  | Dashboard                                                | 2021W, online section only. |
 | EOSC325 | Principles of Physical Hydrogeology                             | 3 dashboards & consulting                                | New course, 2021W. |
 | EOSC340 | Global Climate Change:                                          | Dashboard(s) & question management                       | 2021W: prairielearn. 2022W: prairielearn + CMIP6 dashboard. |
-| EOSC350 | Environmental, Geotechnical, and Exploration Geophysics I       | Online conversion; Hubs                                  | Pre-existing suite of dashboardapps. 2020W: online "field" labs. 2021W: hub only. 2022W: hub only. |
+| EOSC350 | Environmental, Geotechnical, and Exploration Geophysics I       | Online conversion; Hubs                                  | Pre-existing suite of Jupyter Notebooks used as 'apps' with no student programming. 2020W: online "field" labs. 2021W: hub only. 2022W: hub only. |
 | EOSC354 | Analysis of Time Series and Inverse Theory for Earth Scientists | Convert from MatLab to Python & JNBs                     | 10 assigs: JNBs + workflow for delivery and assessment. |
 | EOSC372 | Introductory Oceanography: Circulation and Plankton             | One dashboard                                            | Properties of ocean column. |
 | EOSC425 | Palaeontology                                                   | Dashboard                                                | One only. |

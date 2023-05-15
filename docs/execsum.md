@@ -1,4 +1,4 @@
-# OCESE project outcomes summary
+# OCESE project Executive Summary
 
 ## 1. OCESE PROJECT GOALS
 
@@ -17,27 +17,29 @@
 6. Support the FoS minor in Data Science and DSCI 100
 7. Introduce resulting materials and practices as Open Education Resources
 
-### 1.2 Primary goals explained
+### 1.2 Primary goals
 
-**1. Quantitative Earth Science for all EOAS students**
+#### 1.2.1 Quantitative Earth Science for all EOAS students
 
-Courses aiming to enhance students' engagement with **quantitative concepts** or **datasets** are mostly accessible to students from Departments other than EOAS.
+Courses aiming to enhance students' engagement with **quantitative Earth science concepts** or **datasets** are mostly elective courses that are accessible to students from departments other than EOAS.
 
-**2. Computational & numerical capabilities of students pursuing EOAS degrees**
+#### 1.2.2 Computational & numerical capabilities of students pursuing EOAS degrees
 
-Courses aiming to increase computational and numerical capabilities of EOAS students are considered "core" courses. OCESE contributed towards these courses mostly by supporting introduction of **Python** and **Jupyter Notebooks** into student learning.
+Courses aiming to increase computational and numerical capabilities of EOAS students are considered "core" courses. OCESE contributed towards these courses mostly by supporting introduction of **Python** and **Jupyter Notebooks** into student learning. The OCESE project has improved the following courses:
 
-* Courses in which students install Python and Jupyter on their own computers:
+**Students install Python and Jupyter on their own computers** in these courses:
 
   >ATSC301, EOSC211 (optional), EOSC354, EOSC410/510.
 
-* Courses in which students run notebooks on cloud-based Jupyter hubs (either UBC or 2i2c hubs):
+**Students' notebooks run on cloud-based Jupyter hubs** (either UBC or 2i2c hubs):
 
   >DSCI100, EOSC211, EOSC213 (using CoLab), EOSC212 (OCESE not involved), EOSC350, EOSC442, EOSC471 (starting 2024).
 
-Courses in which students use (or will likely use) **coding** as part of learning. Not all had OCESE support. (Based on the Dep't computing needs [s](https://docs.google.com/spreadsheets/d/1Lg9wLZYwIHSVyXzFPO3096d8eLvL6oLn9lShOosBBok/edit#gid=0)preadsheet as of March 2023.)
+**Students use coding** as part of learning in the following courses. (Based on the Dep't computing needs [s](https://docs.google.com/spreadsheets/d/1Lg9wLZYwIHSVyXzFPO3096d8eLvL6oLn9lShOosBBok/edit#gid=0)preadsheet as of March 2023.)
 
->ATSC301, ATSC409, ENVR420, EOSC211, EOSC212, EOSC213, EOSC353, EOSC354, EOSC410/510, EOSC450, EOSC453, EOSC471, EOSC4xx (climate physics, new 2023/4).
+>Recieved OCESE support: EOSC211, EOSC354, EOSC410/510, EOSC471, ATSC301.
+
+>No OCESE support: ATSC409, ENVR420, EOSC212, EOSC213, EOSC353, EOSC450, EOSC453, EOSC4xx (climate physics, new 2023/4).
 
 **Assessment or question management**: the following courses have integrated some aspects of managing, automating or "semi-automating" assessments or develeopment / deployment of question sets.
 
@@ -45,7 +47,7 @@ Courses in which students use (or will likely use) **coding** as part of learnin
 
 ---
 
-### 1.3 Further details about the five supporting goals
+### 1.3 Five supporting goals
 
 **3. Teaching and learning support for instructors and TAs**
 
@@ -67,7 +69,7 @@ Project outcomes associated with implenting cloud computing facilities to host s
 
 DSCI100 is taught in the UBC Department of Statistics, but this new Python section was first taught by Prof. L. Heagy of the Dep't of EOAS in winter 2023. This major course adapation involved the following activities carried out between 2021 and 2023.
 
-* Adapting the R-based textbook to Python.
+* Adapting the R-based textbook to Python. The result is [online](https://python.datasciencebook.ca/intro.html), and the [source is on GitHub](https://github.com/UBC-DSCI/introduction-to-datascience-python).
 * Adapting all learning worksheets from R to Python.
 * Adapting teaching materials (slide decks, classroom materials, etc.) from R to Python.
 * Teaching the first "Python cohort" of this course.
@@ -104,13 +106,13 @@ Seven types of contributions emerged from OCESE project work:
 3. Data gathered about students’ and instructors’ experiences.
 4. Consulting regarding content, learning, pedagogy, or logistics.
 5. Resources: Guidelines for Python, JNBs, GitHub, dashboards, etc.
-6. Faculty professional development: COVID  mainly 1-on-1 consulting.
-7. Dissemination: 6 UBC events and 5 events beyond UBC.
+6. Faculty professional development: COVID caused this to be delived mainly as 1-on-1 consulting.
+7. Dissemination: Six UBC events and 5 events beyond UBC.
 
 **Further details**
 
 1. **Python Jupyter Notebooks** were introduced for 8 courses; 6 core EOAS courses plus EOSC442 and DSCI100.
-2. **Dashboards** used (or planned) in 10 courses, 5 each core and service. Assignments rely on dashboards in 5 courses, others are used for demonstration, class activities or optional.
+2. **Dashboards** are used (or planned) in 10 courses, 5 each core EOAS courses and service (or elective) courses. Assignments rely on dashboards in 5 courses, others use dashboards for demonstration, class activities or as optional enrichment resources. [Fifteen apps were designed and built](dashboards.md). Eleven are live to view. Code will be made publically accessible on GitHub. Much was learned about techniques for designing, building, deploying and teaching or learning. Corresponding guidelines have been included; see "Guides" and "Tutorials" sections of the left-hand menu.
 3. **Data** gathered from or about students in 6 courses for feedback on dashboards or JNBs. Other data include discussion threads (TAs, instructors & developers), midterm course feedback, and surveys about prior knowledge & needs during COVID.
 4. **Consulting, or support for EOAS faculty**
    * The work of improving all 25 courses included consulting with corresponding instructors and teaching assistants about content, activities, and/or assessments.
@@ -135,6 +137,15 @@ The seven types of contributions addressed our project goals 1 and 2 in targeted
 :align: center
 ```
 <BR>
+
+Converting courses to Python involved the following aspects:
+
+```{image} images/table-courseconversions.png
+:alt: ocese outcomes by type
+:align: center
+```
+<BR>
+
 
 The seven types of project outcomes contributed in ways not related to specific coures as follows:
 
