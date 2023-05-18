@@ -27,6 +27,13 @@ Note that this documentation package is NOT about the EOAS Department's **QuEST 
 
 **OCESE Project <a href="files/timeline.pdf"> Timeline</a>** as of spring 2022.
 
+## Acknowledgements
+
+Many thanks for financial support provided by UBC Vancouver students via the [Teaching and Learning Enhancement Fund](https://tlef.ubc.ca/), and the UBC Work Learn Program for helping employ student contributors. (For details about UBC's work learn program, see the [page for students](https://students.ubc.ca/career/ubc-experiences/work-learn-program) or the [page for faculty](https://facultystaff.students.ubc.ca/student-affairs/ubc-career-centre/work-learn).)
+
+Also much appreciated are the dedication & professionalism of the EOAS Department's computing staff, as well as support related to (a) teaching and learning and (b) development of [open Jupyter Hubs](https://lthub.ubc.ca/guides/jupyterhub-instructor-guide/), both from the [Centre for Teaching and Learning Technology](https://ctlt.ubc.ca/).
+
+
 ---
 
 This book is powered by [JupyterBook](https://jupyterbook.org) and aims to be . . .
