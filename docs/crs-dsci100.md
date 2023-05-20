@@ -1,4 +1,4 @@
-# DSCI 100 OCESE project progress
+# DSCI 100
 
 ## Official description
 
@@ -12,33 +12,40 @@ and [ubcexplore](https://ubcexplorer.io/course/DSCI/100).
 
 ## OCESE project objectives
 
-Basically to generate a Python-based version of the course with an Earth, Ocean and Atmospheric sciences context for all exercises.
+Generate a Python-based version of the course with an Earth, Ocean and Atmospheric sciences context for all exercises.
 
-1. Convert all "R" classroom and homework exercises and materials to Python
-   * Adapt the existing course website to suit the Python and EOAS contexts.
-   * Adapt existing "R"-based [nbgrader](https://github.com/jupyter/nbgrader)grading tactics to work with the Python exercises.
-   * Adapt existing text book for the Python context.
-2. Establish Earth science context so one section addresses the same learning objectives but using settings that relate to Earth sciences.
-3. Ensure there are stable, sustainable Jupyter Hub facilities at UBC for with reliable tech-support for instructors and teaching assistants.
+1. Convert all "R"-based materials to Python. Includes teaching materials (e.g. slide decks), in-class worksheets for students, assignments & projects, and all assessment materials.
+2. Adapt existing text book to Python. The R version is published by CRC Press, but licensed under CC BY-NC-SA 4.0 license.
+3. Establish Earth science context so one section addresses the same learning objectives but using settings that relate to Earth sciences.
 
-## Resources produced
+## Actions Taken
 
-These open education resources HAVE YET TO BE PRODUCED but are in progress as of March 2022.
+The Python section of this course was first taught to 68 students in winter 2023 by Prof. Lindsey Heagy.
 
-* Python version of the textbook
-* Python versions of standard DSCI 100 class activities
-* Python versions of DSCI 100 assignments
-* Earth science versions of activities and assignments
-* Python versions of questions for assessments.
+* First version of the Python [textbook](https://python.datasciencebook.ca/index.html) is complete. (R version is [here](https://datasciencebook.ca/).)
+* Python versions of standard DSCI 100 class activities. The course's GitHub websites for students are at: [R version](https://github.com/UBC-DSCI/dsci-100-student) or [Python version](https://github.com/UBC-DSCI/dsci-100-student-python).
+* Earth science versions of activities and assignments were not developed for this first teaching term as it was thought wise to change learning contexts (examples, settings, assignments, etc.) only after the "Pythonization" steps were completed and tested with students.
 
-## Pedagogy
+## Instructors' experiences
 
-Anticipated to be essentially identical to the "R" version developed for the original version of the course.
+After the meticulous preparation and testing (with significant help from student workers), the pilot version of this section of DSCI 100, taught Jan. - April, 2023 by Prof. Lindsey Heagy, went unexpectedly "smoothly". L.H. quote: _"Overall, I was pleased with how it went. I had geared myself up for a lot more chaos than I think we experienced ... "_.
 
-* Question preparation
-* Question types
-* Grading
+The main challenges revolved around autograding, and some inconsistencies found between components like the textbook, worksheets, and lecture notes. Minor adjustments before the next session are all that's needed to rectify this minor issues.
 
-## Project evaluation
+## Students' experiences
 
-Essentially "success" at project goal #1 will be achieved once a section of the course is taught in Python, and success at goal #2 will be achieved once there is a section of the course taught with Earth science contexts for the sections.
+The actual course content, and the assignments, datasets and worksheets were all essentially identical to the well-established "R" version of the course. The only difference was that all computing was carried out using Python instead of "R". Therefore student learning experiences will have been consistent with previous versions of the course, with the expection of logistics and programming details.
+
+The instructor "_... was pleased that the student evaluations were generally positive"_. Also "_I was grateful that the students rolled with issues as they came up. It was a good group this year!"_.
+
+## Costs
+
+Converting everything from "R" to Python was extraordinarily labour intensive. In addition to significan time devoted to the project by professors Timbers, Campbell and Heagy, at least four students were employed for summer work terms to carry out translations of textbook, learning activities and teaching materials. Coordination was relatively complex, requiring project management and Slack-channels to communicate and coordinate details of all new materials with specific instructional intentions of the DSCI 100 teaching team.
+
+Hubs for students to run all Jupyter Notebooks are provided and managed by the UBC Statistics Department. The open UBC resources are not (yet) used by this course's
+
+## Lessons Learned
+
+Complete translations of a course from one language to another are labour intensive. It takes careful coordination, and a team of workers (many of them graduate or undergraduate students) to organize and implenet new versions of all teaching & learning materials, learning activities, assignments and assessments. Also, converting the nbgrader auto-grading procedures required appropriate expertise.
+
+Using Slack to for rapid communication with the whole team during the first teaching term for this course section was a key to addressing the problems efficiently. Also, all materials are managed with GitHub making versioning, updating, and flagging "issues" straight forward.

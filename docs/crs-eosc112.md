@@ -11,13 +11,13 @@
 
 ## OCESE project objectives
 
-* Support development, implementation and evaluation of new activities funded by UBC's climate science initiative.
+* Support development, implementation and evaluation of new activities related to incorporating climate datasets and climate change science into the course. These initiative were partly funded by UBC [Climate and Wellbeing Education](https://sustain.ubc.ca/teaching-applied-learning/climate-and-wellbeing-education-grants) grants.
 
 ## Resources produced
 
-* Grad students hired for this project develop ideas and OCESE considered options for implementation.
-* Completed the [Global Temperature Anomaly](dashboards.md) dashboard used in eosc112 and several other courses.
-* A second dashboard ([climate-mind-map](dashboards.md)) was concieved and prototyped, but implementation was put off for a later time.
+* Grad students hired for this project developed ideas and then discussed options for implementation with OCESE team members.
+* Completed the [Global Temperature](dashboards.md) dashboard used in eosc112 and several other courses.
+* A second dashboard ([climate-mind-map](dashboards.md)) was concieved and prototyped (in HTML5, not Python), but implementation was put off for a later time.
 * Supported development, observed implementation, and coordianted evaulation of an activity based on the IPCC Climate Atlas for EOSC 112 (147 students).
 
 ## Pedagogy
