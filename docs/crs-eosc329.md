@@ -14,10 +14,16 @@
 
 Original intentions were to introduce Jupyter notebooks and/or interactive dashboard apps. Both options would facilitate exploration of concepts and data sets.
 
-## Progress
+## Actions taken
 
 EOSC329 has not yet (as of end of May 2023) benefitted from the planned improvements. The main reason is that instructors have been either over-extended (during COVID years) or temporary sessional instructors filling in while EOAS faculty were on sabbatical leave.
 
 **Dashboards** built for [eoas325](crs-eosc325.md) could be incorporated into classroom work or assignments with very little effort on part of instructors. These dashboard apps (see the "Geology and hydrogeology section of our [Dashboards page](dashboards.md)) are designed for a beginner's course on hydrogeology.
 
-**Jupyter notebooks** are probably less than ideal for this course since there is no presumption of programming skills in required prerequisites, and the Course Learning Outcomes do not include any expectations of gaining programming skills or experiences.
+**Jupyter notebooks** should be ideal for this course because enrolment is limited to engineering or geophysics students who will have gained some programming skills in prior years.
+
+## Lessons learned
+
+This could be considered an ideal course to gain opensource computing resources and learning activities. However incorporating appropariate learning goals, resources, learning activities and assessments requires an instructing team that can commit to making appropriate and sustainable changes. During the three years of OCESE, the priniciple instructor was either on sabbatical, COVID resulted in all teaching energy being devoted to pivoting to online learning, or a sessional instructor was teaching the course for only one term.
+
+Incorporating Jupyter notebooks, and using some dashboards such as those used in [EOSC325](crs-eosc325.md) is highly recommended, particularly since this hydrogeology course represents an ideal opportunity for engineering students to apply computing skills learned in their second year.

@@ -22,6 +22,8 @@ Using open source, cloud-based computing we aim to integrate computational and q
 
 This proposed curriculum transformation will happen alongside the [QuEST project](https://blogs.ubc.ca/eoasquest/) which is re-evaluating quantitative EOAS course offerings across disciplines. The end result will reposition the UBC Earth Science specializations as opportunities for quantitative and computational learning in a highly interdisciplinary domain.
 
+Regarding precedent, courses that introduced opensource resources and practices prior to beginning the OCESE project (mainly ATSC 301 & EOSC 213 by introducing python & Jupyter notebooks and EOSC 350 by using interactive modelling and simulations in most of their learning activities) were improved largely by efforts of individual instructors and their teaching teams (especially TAs). These early initiatives provided important insights regarding what to expect when adapting or enhancing courses as planned by the OCESE original proposal.
+
 ## Caveat
 This project's proposal was developed during 2018-19, and funded between May 2020 - April 2023. That is a 5-year time span. We began work 2 months after the COVID pandemic dramatically changed the way teaching was delivered. Throughout the first 2 years, instructors and students were all working overtime to adapt their teaching and learning practices to the unexpected online learning environment. There was little time and energy to devote to transformative developments - UNLESS they directed supported online teaching and learning. Therefore, priorities changed and delivered outcomes reflect this shift in context from project concept to project execution.
 

@@ -1,8 +1,14 @@
 # Data about project progress
 
-The [project accomplishments spreadsheet](https://docs.google.com/spreadsheets/d/1BUk1_FHItUgzuyg2aJ-dX6XpMABmFSPe/edit#gid=979565415) provides a listing of data, data types, the courses and people involved, and some notes on todos or comments. 
+Summaries of "products" delivered (as of Fall 2022) are in Tables 1 and 2. Keep in mind the following notes:
 
-Summaries from that listing (as of Fall 2022) are in Tables 1 and 2. Bare in mind the [notes below](#notes).
+* Transformed courses (major changes): DSCI100, EOSC211, EOSC354, EOSC442
+* Courses implementing smaller-scale changes: ENVR300, EOSC112, EOSC116, EOSC310, EOSC325, EOSC326, EOSC340, EOSC372.
+* "Accomplishments" or "products" are loosely defined. Each "product" will have a wide range of scope.
+* For example, "Faculty directly involved" may have put in a huge amount of time and energy to upgrade their course or some aspect of infrastructure, while others may have incorporated a single resource into one lesson of their course.
+* Other examples: "products" may be small (e.g. a single midterm survey used as data) or relatively involved (e.g. establishing how to efficiently deploy and maintain a cloud computing hub) - or anywhere in between.
+* All accomplishments are valuable, but characterizing "significance" is impossible in single rows of a table.
+* Details of accomplishments are presented throughout this website. There is a page for each course affected, several pages related to dashboards (building, using, deploying, etc.) and numerous pages of guidelines, tutorials and other "products" generated during the project.
 
 ----
 
@@ -51,15 +57,3 @@ _\* "Faculty professional development events or items" do NOT include all the 1-
 :width: 750 px
 :align: center
 ```
-
-<br>
-
-### <a name="notes"></a>Notes
-
-* Transformed courses (major changes): DSCI100, EOSC211, EOSC354, EOSC442
-* Courses implementing smaller-scale changes: ENVR300, EOSC112, EOSC116, EOSC310, EOSC325, EOSC326, EOSC340, EOSC372.
-* "Accomplishments" or "products" are loosely defined. Each "product" will have a wide range of scope.
-* For example, "Faculty directly involved" may have put in a huge amount of time and energy to upgrade their course or some aspect of infrastructure, while others may have incorporated a single resource into one lesson of their course.
-* Other examples: "products" may be small (e.g. a single midterm survey used as data) or relatively involved (e.g. establishing how to efficiently deploy and maintain a cloud computing hub) - or anywhere in between.
-* All accomplishments are valuable, but characterizing "significance" is impossible in single rows of a table.
-* Details of accomplishments are presented throughout this website. There is a page for each course affected, several pages related to dashboards (building, using, deploying, etc.) and numerous pages of guidelines, tutorials and other "products" generated during the project.
