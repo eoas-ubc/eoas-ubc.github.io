@@ -43,3 +43,21 @@
 * [MyST syntax cheat sheet](https://jupyterbook.org/reference/cheatsheet.html).
 * Jupyter Notebooks
 * Docker containers and running dashboard servers
+
+## UBC pre-OCESE python timeline
+2005 - python adopted in ATSC 301/ATSC 405/ATSC 409/ATSC 500/EOSC 511/EOSC 582  
+2014 - launch of [Project Jupyter](https://blog.jupyter.org/jupyter-receives-the-acm-software-system-award-d433b0dfe3a2)  
+2015 - Berkeley introduces 1st year jupyter-based course: [data8](http://www.data8.org/)  
+2016 - python adopted in majors CPSC first year curriculum  
+2017 - PIMS launches [syzygy](https://www.pims.math.ca/scientific/syzygy) on compute canada hardware  
+2019 – Sara Harris convenes the data science discussion group, which yields [Bringing Accessible Data Science Training to Undergraduates](https://tlef.ubc.ca/funded-proposals/entry/713/).  
+2020 - 2023: Open-source Computing for Earth Science Education, T. Ivanchko as principle investigator.
+
+## Open source python software
+
+* Earth science big data ([pangeo](https://pangeo.io/architecture.html))
+* NASA [open science initiative](https://science.nasa.gov/open-science-overview)
+* Climate data analysis:  [xcdat](https://xcdat.readthedocs.io/en/latest/) (US DOE)
+* Weather data - [Metpy](https://unidata.github.io/MetPy/latest/index.html) (NCAR), [Scitools](https://scitools.org.uk/organisation.html#organisation-top) (UK met office)
+* GIS – proprietary ([arcinfo](https://pro.arcgis.com/en/pro-app/latest/arcpy/get-started/installing-python-for-arcgis-pro.htm)) and open source ([qgis](https://www.qgistutorials.com/en/docs/3/getting_started_with_pyqgis.html))
+* Machine learning: [tensorflow](https://www.tensorflow.org/) (google), [pytorch](https://pytorch.org/) (facebook), [rapids](https://rapids.ai/) (nvidia)

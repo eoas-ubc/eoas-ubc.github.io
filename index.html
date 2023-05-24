@@ -52,7 +52,7 @@ const thebe_selector_output = ".output, .cell_output"
     <script async="async" src="_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="OCESE project outcomes summary" href="execsum.html" />
+    <link rel="next" title="OCESE project Executive Summary" href="execsum.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -112,7 +112,7 @@ const thebe_selector_output = ".output, .cell_output"
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="execsum.html">
-   Project outcomes summary
+   Executive Summary
   </a>
  </li>
  <li class="toctree-l1">
@@ -169,12 +169,7 @@ const thebe_selector_output = ".output, .cell_output"
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="crs-dsci100.html">
-     DSCI 100 ocese progress
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="crs-dsci100-details.html">
-     DSCI 100 course outline
+     DSCI 100
     </a>
    </li>
    <li class="toctree-l2">
@@ -362,7 +357,7 @@ const thebe_selector_output = ".output, .cell_output"
  </li>
  <li class="toctree-l1 has-children">
   <a class="reference internal" href="jnotebooks-startup.html">
-   Jupyter NB startup
+   Jupyter NB startup &gt;&gt;
   </a>
   <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
   <label for="toctree-checkbox-5">
@@ -378,6 +373,11 @@ const thebe_selector_output = ".output, .cell_output"
    <li class="toctree-l2">
     <a class="reference internal" href="jnb-startup-macos.html">
      Mac OS
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="jupyter-open-quickstart.html">
+     UBC's Open Jupyter
     </a>
    </li>
   </ul>
@@ -603,12 +603,36 @@ title="Print to PDF"
     </ul>
   </div>
 </div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
 
     </div>
 </div>
 
 <!-- Table of contents -->
 <div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#acknowledgements">
+   Acknowledgements
+  </a>
+ </li>
+</ul>
+
+    </nav>
 </div>
     </div>
     <div class="article row">
@@ -620,6 +644,19 @@ title="Print to PDF"
                 <div id="print-main-content">
                     <div id="jb-print-toc">
                         
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#acknowledgements">
+   Acknowledgements
+  </a>
+ </li>
+</ul>
+
+                        </nav>
                     </div>
                 </div>
             </div>
@@ -629,7 +666,7 @@ title="Print to PDF"
                 
   <section class="tex2jax_ignore mathjax_ignore" id="ocese-open-source-computing-for-earth-science-education">
 <h1>OCESE - Open-source Computing for Earth Science Education<a class="headerlink" href="#ocese-open-source-computing-for-earth-science-education" title="Permalink to this headline">#</a></h1>
-<p>The OCESE project (May 2020 through Apr 2023) aims to transform undergraduate teaching and learning in UBC’s <a class="reference external" href="https://www.eoas.ubc.ca">Department of Earth, Ocean and Atmospheric Science</a> (EOAS) to use - and learn to use - open source tools including:</p>
+<p>The OCESE project (May 2020 through Apr 2023) aims to transform undergraduate quantitative teaching and learning in UBC’s <a class="reference external" href="https://www.eoas.ubc.ca">Department of Earth, Ocean and Atmospheric Science</a> (EOAS) using open source tools including:</p>
 <ul class="simple">
 <li><p>Python as the principal and persistant programing language for students;</p></li>
 <li><p><a class="reference external" href="https://www.jupyter.org">Jupyter notebooks</a> for entry-level or advanced courses requiring writing or modifying code;</p></li>
@@ -638,7 +675,7 @@ title="Print to PDF"
 <li><p>use of emerging automatic assessment practices (nbgrader, a Jupyter Notebook plugin, Prairielearn, and others);</p></li>
 <li><p>use of GitHub as a collaborative means of collaborating on development of Open Source content, tools and logistics.</p></li>
 </ul>
-<p><strong>Project <a href="files/timeline.pdf"> Timeline</a></strong> as of spring 2022.</p>
+<p>Note that this documentation package is NOT about the EOAS Department’s <strong>QuEST Project</strong> (Quantitative Earth Sciences Transformation). See <a class="reference external" href="https://blogs.ubc.ca/eoasquest/">https://blogs.ubc.ca/eoasquest/</a> for those details.</p>
 <p><strong>Formal title:</strong> Embedding Open-source Computational Tools into the Quantitative Earth Science Specializations</p>
 <p><strong>Project funding:</strong> <a class="reference external" href="https://tlef.ubc.ca/funded-proposals/entry/714/">The UBC Teaching and Learning Enhancement Fund</a>, and internal support from the Department - EOAS.</p>
 <p><strong>Source:</strong> This website’s <a class="reference external" href="https://github.com/eoas-ubc/eoas-ubc.github.io">repository</a> contains Markdown content that is converted to HTML by <a class="reference external" href="https://jupyterbook.org/intro.html">Jupyter Books</a> and pushed for online display using <a class="reference external" href="https://pypi.org/project/ghp-import/">ghp-import</a>.</p>
@@ -649,6 +686,11 @@ title="Print to PDF"
 <li><p>“TUTORIALS” contain more thorough learning resources for students or instructors.</p></li>
 <li><p>“REFERENCES” are lists of pointers, links and key sources.</p></li>
 </ul>
+<p><strong>OCESE Project <a href="files/timeline.pdf"> Timeline</a></strong> as of spring 2022.</p>
+<section id="acknowledgements">
+<h2>Acknowledgements<a class="headerlink" href="#acknowledgements" title="Permalink to this headline">#</a></h2>
+<p>Many thanks for financial support provided by UBC Vancouver students via the <a class="reference external" href="https://tlef.ubc.ca/">Teaching and Learning Enhancement Fund</a>, and the UBC Work Learn Program for helping employ student contributors. (For details about UBC’s work learn program, see the <a class="reference external" href="https://students.ubc.ca/career/ubc-experiences/work-learn-program">page for students</a> or the <a class="reference external" href="https://facultystaff.students.ubc.ca/student-affairs/ubc-career-centre/work-learn">page for faculty</a>.)</p>
+<p>Also much appreciated are the dedication &amp; professionalism of the EOAS Department’s computing staff, as well as support related to (a) teaching and learning and (b) development of <a class="reference external" href="https://lthub.ubc.ca/guides/jupyterhub-instructor-guide/">open Jupyter Hubs</a>, both from the <a class="reference external" href="https://ctlt.ubc.ca/">Centre for Teaching and Learning Technology</a>.</p>
 <hr class="docutils" />
 <p>This book is powered by <a class="reference external" href="https://jupyterbook.org">JupyterBook</a> and aims to be …</p>
 <ul class="simple">
@@ -657,7 +699,8 @@ title="Print to PDF"
 <li><p>a living document during the OCESE project; i.e.content will continue to evolve, and collaboration is welcome.</p></li>
 </ul>
 <hr class="docutils" />
-<p>Website update 2023/04/03.</p>
+<p>Website update 2023/05/24.</p>
+</section>
 <div class="toctree-wrapper compound">
 </div>
 <div class="toctree-wrapper compound">
@@ -698,7 +741,7 @@ title="Print to PDF"
     <a class='right-next' id="next-link" href="execsum.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">OCESE project outcomes summary</p>
+        <p class="prev-next-title">OCESE project Executive Summary</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>
