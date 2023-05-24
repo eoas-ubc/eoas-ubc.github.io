@@ -38,7 +38,7 @@ Student feedback regarding dashboard use was limited as completing the short sur
 
 ## Instructors’ experiences
 
-No explicit feedback on isntructors' experiences was obtained at the time.
+No explicit feedback on instructors' experiences was obtained.
 
 ## Costs
 

@@ -32,11 +32,23 @@ After the meticulous preparation and testing (with significant help from student
 
 The main challenges revolved around autograding, and some inconsistencies found between components like the textbook, worksheets, and lecture notes. Minor adjustments before the next session are all that's needed to rectify this minor issues.
 
+The instructor "_... was pleased that the student evaluations were generally positive"_. Also "_I was grateful that the students rolled with issues as they came up. It was a good group this year!"_.
+
+Also, "_Especially when speaking with some of the more senior students I got the impression that Python connected well with other courses and what they can see using in their future careers._"
+
+As another point of evidence, the waitlist was maxed-out for this section, illustrating that students were quite interested in learning Python.
+
 ## Students' experiences
 
 The actual course content, and the assignments, datasets and worksheets were all essentially identical to the well-established "R" version of the course. The only difference was that all computing was carried out using Python instead of "R". Therefore student learning experiences will have been consistent with previous versions of the course, with the expection of logistics and programming details.
 
-The instructor "_... was pleased that the student evaluations were generally positive"_. Also "_I was grateful that the students rolled with issues as they came up. It was a good group this year!"_.
+In course evaluations, when asked: "_Please identify what you consider to be the strengths of this course_", some responses were:
+
+* "_The content is really interesting and useful._"
+* "_It helps me to have an understanding about some common question and algorithms in data analysis, and how to use python to perform the analysis._"
+* "_The structure of the course is very clear and organized._"
+* "_Very applicable material for future courses and careers_"
+* "_Learning the python language_"
 
 ## Costs
 

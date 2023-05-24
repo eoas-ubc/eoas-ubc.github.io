@@ -12,12 +12,12 @@
 
 ## OCESE project objectives
 
+Build interactive resources that allow students to apply skills and knowledge gained in EOSC 372
+
 ## Actions taken
 
-## Students’ experiences
-
-## Instructors’ experiences
-
-## Costs
+Discussions were had with instructors of EOSC 373, and after careful consideration it was decided that now was not the best time to work on adjustments to this course.
 
 ## Lessons learned
+
+This is an example of a normal aspect of TLEF projects. A proposed task was considered, but eventually dropped for several reasons, including readiness of instructors at the time (especially given the challenges associated with the COVID pandemic) and consideration of other OCESE project priorities.

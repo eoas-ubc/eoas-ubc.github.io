@@ -10,7 +10,7 @@
 \>[ubcexplore](https://ubcexplorer.io/course/EOSC/211),
 \>[EOAS curriculum map](https://www.eoas.ubc.ca/~quest/eoas-only.html).
 
-## OCESE project goals for EOSC 211 & Corresponding Actions
+## OCESE project goals and Corresponding Actions
 
 Five project goals are listed with summaries of actions taken for each.
 
