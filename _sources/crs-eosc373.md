@@ -12,24 +12,12 @@
 
 ## OCESE project objectives
 
-<span style="color:red">To be completed.</span>
+Build interactive resources that allow students to apply skills and knowledge gained in EOSC 372
 
-## Resources produced
+## Actions taken
 
-These are open education resources (OER) unless indicated otherwise.
+Discussions were had with instructors of EOSC 373, and after careful consideration it was decided that now was not the best time to work on adjustments to this course.
 
-<span style="color:red">To be completed.</span>
+## Lessons learned
 
-## Pedagogy
-
-<span style="color:red">To be completed.</span>
-
-## Project evaluation
-
-<span style="color:red">To be completed.</span>
-
-Questions, data, results, risks and recommendations.
-
-Benefits: projected and observed. Focus on students and learning.
-
-Costs: to instructors, departments & institutions.
+This is an example of a normal aspect of TLEF projects. A proposed task was considered, but eventually dropped for several reasons, including readiness of instructors at the time (especially given the challenges associated with the COVID pandemic) and consideration of other OCESE project priorities.

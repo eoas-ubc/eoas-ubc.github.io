@@ -16,9 +16,9 @@
 * Convert question sets for efficient upload to the new course's [Canvas](https://about.canvas.ubc.ca/) website.
 * Provide geoscience education feedback on lessons for this brand new course.
 
-## Resources produced
+## Actions taken
 
-These are open education resources (OER) unless indicated otherwise.
+### Dashboard design
 
 * **[Storativity](https://dashboard.eoas.ubc.ca/store)**: compares hydrological storativity of various geologic materials. Github repository is the "store" folder [here](https://github.com/phaustin/addon_containers).
 
@@ -32,7 +32,7 @@ These are open education resources (OER) unless indicated otherwise.
 
 * **[Drawdown for confined and unconfined acquifers](https://dashboard.eoas.ubc.ca/drawdown)** plots 2D drawdown curves for a well in a uniform acquifer with adjustable properties. Github repository is the "drawdown" folder [here](https://github.com/phaustin/addon_containers).
 
-## Pedagogy
+### Pedagogy
 
 **Storativity app**: first used by posing three questions to be addressed using the interactive dashboard app (slide 56 of section 7).
 
@@ -56,23 +56,9 @@ By exploring visuals for these conditions consider these 2 questions:
 
 **Transfering question sets from prior use**: questions were first converted from various formats (PDF, MS-Word, text files, etc.) to Markdown text, then [text2qti](https://github.com/gpoore/text2qti) was used to upload to the courses's [Canvas](https://about.canvas.ubc.ca/) site. See our [tools page](tools.md) for tips.
 
-## Project evaluation
+## Students' experiences
 
-Questions, data, results, risks and recommendations.
-
-Benefits: projected and observed. Focus on students and learning
-
-Costs: to instructors, departments & institutions
-
-## Benefits, costs and recommendations
-
-**Benefits**: Students were observed to be fully engaged during an activity that involves exploring a concept or physical process by adjusting parameters with "instant" response in graphical form.
-
-**Costs**:
-
-See comments on costs of development in our [Developing Dashboards](dashboards-howto.md) page.
-
-### Recommendations
+Students were observed to be fully engaged during an activity that involves exploring a concept or physical process by adjusting parameters with "instant" response in graphical form.
 
 Quotes from feedback based on a 3rd party (online) class observation:
 
@@ -92,3 +78,21 @@ Quotes from feedback based on a 3rd party (online) class observation:
   * "Under what conditions will water table become higher than ground thus contributing to flooding?" Or - if you ask "what happens to range of Q values?",
 * Then follow up by asking something concrete about the consequences for influx of groundwater at the two sides of the scenario - eg. which waterway will have to handle the larger input of water?
 * These are just ideas about connecting concepts to reality. It is fair to say that these ideas may not be compatible with an instructor's priorities.
+
+## Instructors' experiences
+
+Developing this new course from scratch was of course time consuming. Introduction of interactive dashboards was not an initial priority. However OCESE support did include reviewing the lessons, and supporting use of opensource techniques for transferring questions and question banks from text or PDF documents to the Canvas learning management system.
+
+Dashboards were planned for use quite late in the course. Consquently, when the first iteration of the course took longer than expected, dashboards were reduced to relatively perfunctory use as in-class group activities. See lessons learned below.
+
+The second time the course was offered, dashboards were used more carefully without being rushed.
+
+## Costs
+
+Time spent supporting this course was uniquely related to it being a brand new course. Addressing specific OCESE project goals could not be done without providing course development support more broadly. This was entirely reasonable and feasible given that OCESE team included geoscience teaching and learning specialist. The instructor's interest in such support and willingness to spend time discussing, and reacting to feedback, was instrumental in the successfull development of the course and the specific OCESE contributions.
+
+## Lessons learned
+
+Students do need time for familiarization with new tools. This is best done by using "simple" apps early in the course, then applying those skills later in the course with the same, or similar dashboards.
+
+Instructors do need time to establish an efficient and effective workflow of learning tasks to guide students and ensure they get as much out of the experiences as possible.

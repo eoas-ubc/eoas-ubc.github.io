@@ -112,7 +112,7 @@ const thebe_selector_output = ".output, .cell_output"
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="execsum.html">
-   Project outcomes summary
+   Executive Summary
   </a>
  </li>
  <li class="toctree-l1">
@@ -169,12 +169,7 @@ const thebe_selector_output = ".output, .cell_output"
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="crs-dsci100.html">
-     DSCI 100 ocese progress
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="crs-dsci100-details.html">
-     DSCI 100 course outline
+     DSCI 100
     </a>
    </li>
    <li class="toctree-l2">
@@ -362,7 +357,7 @@ const thebe_selector_output = ".output, .cell_output"
  </li>
  <li class="toctree-l1 has-children">
   <a class="reference internal" href="jnotebooks-startup.html">
-   Jupyter NB startup
+   Jupyter NB startup &gt;&gt;
   </a>
   <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
   <label for="toctree-checkbox-5">
@@ -378,6 +373,11 @@ const thebe_selector_output = ".output, .cell_output"
    <li class="toctree-l2">
     <a class="reference internal" href="jnb-startup-macos.html">
      Mac OS
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="jupyter-open-quickstart.html">
+     UBC's Open Jupyter
     </a>
    </li>
   </ul>
@@ -690,31 +690,48 @@ title="Print to PDF"
 <section id="improvements">
 <h2>Improvements<a class="headerlink" href="#improvements" title="Permalink to this headline">#</a></h2>
 <ul class="simple">
-<li><p>Jupyter / Python install based on EOSC 211 (and maybe EOSC 354). Does this include use of condalock?</p></li>
-<li><p>Merge two github pages. They could be rewritten as summaries, perhaps based on (or simply pointing to?) the <a class="reference external" href="https://www.atlassian.com/git/tutorials/comparing-workflows">Atlasian tutorials</a>. Maybe also refer to <a class="reference external" href="https://python.datasciencebook.ca/version-control.html">Ch.12 of the DSCI100 text</a> (still wiht R as context, but updates in progress).</p></li>
-<li><p>Jupyter NB pages</p>
+<li><p>Consolidate ocese reporting threads:</p>
 <ul>
-<li><p>The <a class="reference internal" href="tut-jhubs.html"><span class="doc std std-doc">Jupyterhub Tutorial</span></a> is mis-named. Consolidate this with <a class="reference internal" href="jnotebooks-startup.html"><span class="doc std std-doc">Jupyter NB startup</span></a> and possibly some of <a class="reference internal" href="tut-teachwith-jnbs.html"><span class="doc std std-doc">teaching with Jupyter NBs</span></a>.</p></li>
-<li><p>Consolidate parts of <em>Jupyterhub Tutorial</em> into <em>Servers and hubs</em>.</p></li>
-<li><p>Jupyter startup page needs updating to use material from eosc442 and dsci100 material. How does this compare to docs used in EOSC 211? Should <a class="reference external" href="https://foundations.projectpythia.org/landing-page.html">Project Pythia’s foundations book</a> be used instead?</p></li>
-<li><p>Jupyter Hubs: what options? Needs PA’s input. Refer to 2i2c’s documentation.</p></li>
-<li><p>Jupyter notebook vs emerging Jupyter lab? This might need no more than a mention of this evolution as an example of the “moving target” for instructors. Notebook has been “sunset” - being replaced with a one-page version of lab.</p></li>
-<li><p><em>GitHub &amp; Git workflows</em> and <em>Git introduction</em> pages need rationalizing.</p></li>
-<li><p><em>Conda &amp; environments</em> and <em>Using environments</em> need rationalizing and updating.</p></li>
+<li><p>website,</p></li>
+<li><p>Dep’t showcase,</p></li>
+<li><p>TLEF poster,</p></li>
+<li><p>EER poster</p></li>
 </ul>
 </li>
+<li><p>Courses top page: Change tables from “goals” to “delivered”. Use “actions” listed in file <code class="docutils literal notranslate"><span class="pre">showcase</span> <span class="pre">notes</span> <span class="pre">230215.docx</span></code>.</p></li>
+<li><p>Jupyter / Python install based on EOSC 211 (and maybe EOSC 354). Does this include use of condalock?</p></li>
+<li><p>Do tutorials need to be more like precedent, i.e. modular such as <a class="reference external" href="https://autogis-site.readthedocs.io/en/latest/index.html">Helsinki “short course”</a>, <a class="reference external" href="https://projectpythia.org/">Project Pythia</a>, or Atlasian tutorials, etc.? In fact, some may best be referenced to these types of existing ones tutorials?</p></li>
+<li><p>Merge two github pages. They could be rewritten as summaries, perhaps based on (or simply pointing to?) the <a class="reference external" href="https://www.atlassian.com/git/tutorials/comparing-workflows">Atlasian tutorials</a>. Maybe also refer to <a class="reference external" href="https://python.datasciencebook.ca/version-control.html">Ch.12 of the DSCI100 text</a> (still wiht R as context, but updates in progress).</p></li>
 <li><p>Merge two environment pages</p></li>
-<li><p>Tools page: clarify what’s needed, maybe make sub-pages.</p></li>
-<li><p>Add jupytext to pages about setting up J-notebooks, using notebooks for teaching, how J-Books uses it, and likely others.</p></li>
+<li><p>Merge “dashboard deployment” onto “Developing dashboards”.</p></li>
+<li><p>Merging Jupyter NB pages:</p>
+<ul>
+<li><p>The <a class="reference internal" href="tut-jhubs.html"><span class="doc std std-doc">Jupyterhub Tutorial</span></a> is mis-named. Combine this with <a class="reference internal" href="jnotebooks-startup.html"><span class="doc std std-doc">Jupyter NB startup</span></a> and possibly some of <a class="reference internal" href="tut-teachwith-jnbs.html"><span class="doc std std-doc">teaching with Jupyter NBs</span></a>.</p></li>
+<li><p>Combine parts of <em>Jupyterhub Tutorial</em> into <em>Servers and hubs</em>.</p></li>
+<li><p>Jupyter startup page needs updating to use material from eosc442 and dsci100 material. How does this compare to docs used in EOSC 211? Should <a class="reference external" href="https://foundations.projectpythia.org/landing-page.html">Project Pythia’s foundations book</a> be used instead?</p></li>
+<li><p>Jupyter Hubs: what options? Needs PA’s input. Refer to 2i2c’s documentation.</p></li>
+<li><p>Jupyter notebook vs emerging Jupyter lab? This might need no more than a mention of this evolution as an example of the “moving target” for instructors. Notebook is being “sunset” - replaced with a one-page version of lab.</p></li>
+<li><p><em>GitHub &amp; Git workflows</em> and <em>Git introduction</em> pages need rationalizing.</p></li>
+<li><p><em>Conda &amp; environments</em> and <em>Using environments</em> need rationalizing and updating.</p></li>
 <li><p>Refine the inclusion of Jupyter Notebooks. Python Skills check is included but I’m not sure if it’s done the best way possible. And there may be other notebooks for tutorials or guidelines. But get one right first.</p></li>
+</ul>
+</li>
+<li><p>Add jupytext to pages about setting up J-notebooks, using notebooks for teaching, how J-Books uses it, and likely others.</p></li>
+<li><p>Project outcomes summary (Executive summary) needs reconfiguring more like the poster and showcase outline. Priorities are not efficient, and the whole thing is long winded.</p></li>
+<li><p>Servers and hubs: move, rename &amp; rewrite; it’s not really a how-to since we &amp; others are still iterating towards optimal choices. It needs to be more like “lessons learned”.</p></li>
+<li><p>Other software tools - add quiz management for Canvas, PrairieLearn, support for JupyterBooks - others on the EOAS-UBC project board and elsewhere?</p></li>
+<li><p>fine tune the new “Course enhancements” page.</p></li>
 </ul>
 </section>
 <section id="additions">
 <h2>Additions<a class="headerlink" href="#additions" title="Permalink to this headline">#</a></h2>
 <ul class="simple">
-<li><p>where to house repositories? Those with PA, FJ, students, EOAS-</p></li>
+<li><p>Gather repositories with PA, FJ, JB, IS and collect at eoas-ubc.</p></li>
 <li><p><a class="reference internal" href="refs-citations.html"><span class="doc std std-doc">Cited references</span></a> should be added throughout, as needed. This could be done using BibTex reference files - see the <a class="reference external" href="https://jupyterbook.org/en/stable/tutorials/references.html">Jupyter Books citation tutorial</a>.</p></li>
-<li><p>More about open-source, with examples, esepcially w.r.t. earth sciences. Eg: pangeo, SimpEG, Fatiango, geosci.xyz, (find ocgy and atsc examples), Jupyter books (again, referring to UBC’s examples <a class="reference external" href="http://open.ubc.ca">open.ubc.ca</a>. <a class="reference external" href="https://rhwhite.github.io/numeric_2022/">Numerical Techniques for AOE scientists</a>, R. White and S. Allen, DSCI100 <a class="reference external" href="https://python.datasciencebook.ca/intro.html">python text</a>  &amp; <a class="reference external" href="https://github.com/UBC-DSCI/introduction-to-datascience-python">repo</a></p></li>
+<li><p>More about open-source, with examples, esepcially w.r.t. earth sciences. Eg: pangeo, SimpEG, Fatiango, geosci.xyz, (find ocgy and atsc examples), Jupyter books (again, referring to UBC’s examples <a class="reference external" href="http://open.ubc.ca">open.ubc.ca</a>. <a class="reference external" href="https://rhwhite.github.io/numeric_2022/">Numerical Techniques for AOE scientists</a>, R. White and S. Allen, DSCI100 <a class="reference external" href="https://python.datasciencebook.ca/intro.html">python text</a>  &amp; <a class="reference external" href="https://github.com/UBC-DSCI/introduction-to-datascience-python">repo</a>.</p></li>
+<li><p>Review Andrew L.’s two tutorials in “not used”. They may have good content but are perhaps a bit “long-winded”.</p></li>
+<li><p>Revisit first-year accomplishments, including <a class="reference external" href="https://github.com/eoas-ubc/md2canvas">md2canvas</a>, AL’s tutorials, and others. The <a class="reference external" href="https://github.com/orgs/eoas-ubc/projects/1">projects page</a>, and list of repositories may reveal items that need including or summarizing. Needs a walk-through with Phil.</p></li>
+<li><p>List courses that could leverage lessons we learned to align with students’ needs, efficiency, and departmental/curricular norms.</p></li>
 </ul>
 </section>
 <section id="specific-courses">
@@ -725,6 +742,7 @@ title="Print to PDF"
 <li><p>notes from Lindsey</p></li>
 <li><p>capture the slack thread. Done to Jan 6, 2023, file “dsci100-slack-230106.xlsx”.</p></li>
 <li><p>new <a class="reference external" href="https://python.datasciencebook.ca/intro.html">text book</a> &amp; <a class="reference external" href="https://github.com/UBC-DSCI/introduction-to-datascience-python">repo</a>.</p></li>
+<li><p><a class="reference external" href="https://github.com/UBC-DSCI/dsci-100-student-python">Student’s course repo</a>.</p></li>
 </ul>
 </li>
 <li><p>eosc442,</p></li>

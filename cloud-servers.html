@@ -53,7 +53,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="Getting started with Python" href="python-startup.html" />
-    <link rel="prev" title="Jupyter Notebook setup: MacOS" href="jnb-startup-macos.html" />
+    <link rel="prev" title="Getting started with UBC Jupyter Open Hub" href="jupyter-open-quickstart.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -113,7 +113,7 @@ const thebe_selector_output = ".output, .cell_output"
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="execsum.html">
-   Project outcomes summary
+   Executive Summary
   </a>
  </li>
  <li class="toctree-l1">
@@ -170,12 +170,7 @@ const thebe_selector_output = ".output, .cell_output"
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="crs-dsci100.html">
-     DSCI 100 ocese progress
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="crs-dsci100-details.html">
-     DSCI 100 course outline
+     DSCI 100
     </a>
    </li>
    <li class="toctree-l2">
@@ -363,7 +358,7 @@ const thebe_selector_output = ".output, .cell_output"
  </li>
  <li class="toctree-l1 has-children">
   <a class="reference internal" href="jnotebooks-startup.html">
-   Jupyter NB startup
+   Jupyter NB startup &gt;&gt;
   </a>
   <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
   <label for="toctree-checkbox-5">
@@ -379,6 +374,11 @@ const thebe_selector_output = ".output, .cell_output"
    <li class="toctree-l2">
     <a class="reference internal" href="jnb-startup-macos.html">
      Mac OS
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="jupyter-open-quickstart.html">
+     UBC's Open Jupyter
     </a>
    </li>
   </ul>
@@ -701,8 +701,17 @@ title="Print to PDF"
                 
   <section class="tex2jax_ignore mathjax_ignore" id="servers-and-hubs">
 <h1>Servers and hubs<a class="headerlink" href="#servers-and-hubs" title="Permalink to this headline">#</a></h1>
-<p>This page to discuss options for Jupyter hubs on local, institutional or cloud servers.</p>
-<p>For deploying dashboards, see the <a class="reference internal" href="dashboards-deploy.html"><span class="doc std std-doc">Dashboard deployment</span></a> pages.</p>
+<p>This page to discuss options for Jupyter hubs and dashboard servers on local, institutional or cloud servers. For deploying dashboards, see the <a class="reference internal" href="dashboards-deploy.html"><span class="doc std std-doc">Dashboard deployment</span></a> pages. For using Jupyter hubs see <a class="reference external" href="https://eoas-ubc.github.io/tut-jhubs.html">Jupyter hub tutorials</a>.</p>
+<p>Four targets for cloud computing services are:</p>
+<ol class="simple">
+<li><p>Reliable, zero-maintenance scaleable jupyter hubs for codes with “standard” libraries used in corses with large numbers of students - typically 1st and 2nd year introductory courses. (2i2c until UBC can provide stable hubs)</p></li>
+<li><p>Jupyter hub that can have custom environments, scalable to 50+ students. Must be able to rapidly update code and libraries (instant, or at least over night). (eg for EOSC350, ATSC301, EOSC471). (2i2c)</p></li>
+<li><p>Research capable hub - as per #2 but usually expecting larger datasets, more custom environments, one or two users.</p></li>
+<li><p>Server (not Juupyter hub) for delivering dashboards; scaleble for 150+ students. (Server managed by Dep’t staff.)</p></li>
+</ol>
+<p>Some courses will have learnign goals that sound like “<em>Become profficient at developing Python and managing corresponding environments, libraries and version control on you own computer.</em>” These may not need managed cloud computing facilities.</p>
+<p>Also not needing cloud computing are courses for which instructors use GitHub for managing code or materials (eg Jupyter Books), but who do not require students to run code on cloud-based Jupyter hubs or other types of servers.</p>
+<p>OCESE project priorities reliable solutions for target #1 &amp; #4, with #2 desirable for 1 or 2 courses (EOAS350, ATSC301). Target #3 was beyond the scope of OCESE.</p>
 <section id="options">
 <h2>Options<a class="headerlink" href="#options" title="Permalink to this headline">#</a></h2>
 <section id="colab">
@@ -761,11 +770,11 @@ title="Print to PDF"
                 
     <!-- Previous / next buttons -->
 <div class='prev-next-area'>
-    <a class='left-prev' id="prev-link" href="jnb-startup-macos.html" title="previous page">
+    <a class='left-prev' id="prev-link" href="jupyter-open-quickstart.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">Jupyter Notebook setup: MacOS</p>
+            <p class="prev-next-title">Getting started with UBC Jupyter Open Hub</p>
         </div>
     </a>
     <a class='right-next' id="next-link" href="python-startup.html" title="next page">

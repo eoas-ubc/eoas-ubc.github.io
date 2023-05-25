@@ -14,22 +14,12 @@
 
 Introduce interactive dashboard apps to classroom and assignment activities to explore specific climate science concepts, models, modelling and data sets.
 
-## Resources produced
+## Actions taken
 
-These are open education resources (OER) unless indicated otherwise.
+## Students’ experiences
 
-<span style="color:red">To be completed.</span>
+## Instructors’ experiences
 
-## Pedagogy
+## Costs
 
-<span style="color:red">To be completed.</span>
-
-## Project evaluation
-
-<span style="color:red">To be completed.</span>
-
-Questions, data, results, risks and recommendations.
-
-Benefits: projected and observed. Focus on students and learning.
-
-Costs: to instructors, departments & institutions.
+## Lessons learned

@@ -12,16 +12,18 @@
 
 ## OCESE project objectives
 
-Support the increased use of quantitative Earth science concepts and data, in this case climate modeling, to support discussion about paleoclimate in this senior paleontology course. 
+Support the increased use of quantitative Earth science concepts and data, in this case climate modeling, to support discussion about paleoclimate in this senior paleontology course.
 
-## Resources used
+## Actions taken
 
-Global Temperature factors dashboard in an in-class activity, with clicker questions. 
+Global Temperature factors dashboard in an in-class activity, with clicker questions. <a href="files/eosc425-Anthropocene-App.pdf">This PDF</a> shows the 5-slide clicker question sequence that was used in class.
 
-## Pedagogy
+## Students’ experiences
 
-<a href="files/eosc425-Anthropocene-App.pdf">This PDF</a> shows the 5-slide clicker question sequence that was used in class.
-
-## Project evaluation
+## Instructors’ experiences
 
 <span style="color:red">Ask Stuart (a) if still used, and (b) for both student and instructor reactions. eg. will you continue to use it? Are there improvements? Any ideas for further dasboards? </span>
+
+## Costs
+
+## Lessons learned

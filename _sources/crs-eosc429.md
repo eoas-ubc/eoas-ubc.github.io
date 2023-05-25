@@ -12,24 +12,12 @@
 
 ## OCESE project objectives
 
-<span style="color:red">To be completed.</span>
+## Actions taken
 
-## Resources produced
+## Students’ experiences
 
-These are open education resources (OER) unless indicated otherwise.
+## Instructors’ experiences
 
-<span style="color:red">To be completed.</span>
+## Costs
 
-## Pedagogy
-
-<span style="color:red">To be completed.</span>
-
-## Project evaluation
-
-<span style="color:red">To be completed.</span>
-
-Questions, data, results, risks and recommendations.
-
-Benefits: projected and observed. Focus on students and learning.
-
-Costs: to instructors, departments & institutions.
+## Lessons learned

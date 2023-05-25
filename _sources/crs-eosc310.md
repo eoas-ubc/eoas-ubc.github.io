@@ -11,11 +11,9 @@
 
 ## OCESE project objectives
 
-Enable students to "play" with the "daisy world" model and explore 
+Enable students to "play" with the "daisy world" model and explore associated concepts.
 
-## Resources produced
-
-These are open education resources (OER) unless indicated otherwise.
+## Actions taken
 
 Dashboard app [Daisyworld](dashboards.md) was developed by Teaching Assistant F. Rossmann and deployed during the Fall 2021 term. It's description is:
 
@@ -36,24 +34,18 @@ The app looks like this:
 ```
 <br>
 
-## Pedagogy
+## Students' experiences
 
-<span style="color:red">Ask Kirsten for instructor's perspective.</span>
+Feedback from students included comments such as:
 
-**Student comments**
+* "I enjoyed having the ability to directly customize different settings and parameters for the planet, allowing us to visualize the effects different amounts of sunlight can have on its albedo and habitation."
+* "As a hands-on learner, it helped me understand the concepts more, as opposed to just reading about the different effects of sunlight on habitability in a textbook or paper."
+* "If it’s possible to implement, it would be great to have a visualization of the planet with the various percentages of daisy coverages for the future, besides having just the graph lines.”
 
-"I enjoyed having the ability to directly customize different settings and parameters for the planet, allowing us to visualize the effects different amounts of sunlight can have on its albedo and habitation."
+## Costs
 
-"As a hands-on learner, it helped me understand the concepts more, as opposed to just reading about the different effects of sunlight on habitability in a textbook or paper."
+The dashboard was developed by a keen teaching assistant. This should take only a week or so of time since all OCESE dashboards are in the public domain and repositories can be viewed for inspiration and programming tactics.
 
-"If it’s possible to implement, it would be great to have a visualization of the planet with the various percentages of daisy coverages for the future, besides having just the graph lines.”
+## Lessons Learned
 
-## Project evaluation
-
-<span style="color:red">Ask Kirsten.</span>
-
-Questions, data, results, risks and recommendations.
-
-Benefits: projected and observed. Focus on students and learning.
-
-Costs: to instructors, departments & institutions.
+The initial interest in producing this dashboard app came from a Teaching Assistant who was keen to learn how to make these. Subsequent instructors did not all employ the dashboard in their teaching. However, a new version of the course is being developed and it is expected that this rennovation will incorporate many more opportunities for students to explore and "play" with concepts using interactive resources of various types.

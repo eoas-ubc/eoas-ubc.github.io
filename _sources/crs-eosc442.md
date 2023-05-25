@@ -17,23 +17,15 @@ EOSC 442 is a 1-credit required lab course for [Combined Majors in Science](http
 1. convert the 4 computing labs from MatLab activities to Jupyter Notebook-based Python, and
 2. introduce new data sets for the course's final project.
 
-## Resources produced
+## OCESE project objectives
 
-These are open education resources (OER) unless indicated otherwise.
+## Actions taken
 
-## Pedagogy
+## Students’ experiences
 
-<span style="color:red">NOTE - refer to Ben's email, Oct 13. There should also be followup debriefing in Dec. to learn more details.</span>
+## Instructors’ experiences
 
-## Project evaluation
-
-<span style="color:red">To be completed.</span>
-
-Questions, data, results, risks and recommendations.
-
-Benefits: projected and observed. Focus on students and learning.
-
-Costs: to instructors, departments & institutions.
+NOTE - refer to Ben's email, Oct 13. There should also be followup debriefing in Dec. to learn more details.
 
 From Term 2 TA, Claire Parrott email, 23015:
 
@@ -46,5 +38,9 @@ I don't think there are too many major changes that need to be done to the noteb
 
 Grading requires a rubric/answer key I don't have, but I've been making one as I go through the lab pre-class.
 
-Student are doing generally well! Many are able to finish most of the work at the end of the session and the students who are really familiar can get the entire lab done. 
+Student are doing generally well! Many are able to finish most of the work at the end of the session and the students who are really familiar can get the entire lab done.
 ```
+
+## Costs
+
+## Lessons learned

@@ -113,7 +113,7 @@ const thebe_selector_output = ".output, .cell_output"
 <ul class="current nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="execsum.html">
-   Project outcomes summary
+   Executive Summary
   </a>
  </li>
  <li class="toctree-l1">
@@ -170,12 +170,7 @@ const thebe_selector_output = ".output, .cell_output"
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="crs-dsci100.html">
-     DSCI 100 ocese progress
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="crs-dsci100-details.html">
-     DSCI 100 course outline
+     DSCI 100
     </a>
    </li>
    <li class="toctree-l2">
@@ -363,7 +358,7 @@ const thebe_selector_output = ".output, .cell_output"
  </li>
  <li class="toctree-l1 has-children">
   <a class="reference internal" href="jnotebooks-startup.html">
-   Jupyter NB startup
+   Jupyter NB startup &gt;&gt;
   </a>
   <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
   <label for="toctree-checkbox-5">
@@ -379,6 +374,11 @@ const thebe_selector_output = ".output, .cell_output"
    <li class="toctree-l2">
     <a class="reference internal" href="jnb-startup-macos.html">
      Mac OS
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="jupyter-open-quickstart.html">
+     UBC's Open Jupyter
     </a>
    </li>
   </ul>
@@ -604,41 +604,12 @@ title="Print to PDF"
     </ul>
   </div>
 </div>
-<label for="__page-toc"
-  class="headerbtn headerbtn-page-toc"
-  
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-list"></i>
-  </span>
-
-</label>
 
     </div>
 </div>
 
 <!-- Table of contents -->
 <div class="col-md-3 bd-toc show noprint">
-    <div class="tocsection onthispage pt-5 pb-3">
-        <i class="fas fa-list"></i> Contents
-    </div>
-    <nav id="bd-toc-nav" aria-label="Page">
-        <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#increasing-students-exposure-to-quantitative-aspects-of-earth-science">
-   1. Increasing students’ exposure to quantitative aspects of Earth science
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#enhancing-computational-numerical-literacy-of-eoas-graduates">
-   2. Enhancing computational &amp; numerical literacy of EOAS graduates
-  </a>
- </li>
-</ul>
-
-    </nav>
 </div>
     </div>
     <div class="article row">
@@ -650,24 +621,6 @@ title="Print to PDF"
                 <div id="print-main-content">
                     <div id="jb-print-toc">
                         
-                        <div>
-                            <h2> Contents </h2>
-                        </div>
-                        <nav aria-label="Page">
-                            <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#increasing-students-exposure-to-quantitative-aspects-of-earth-science">
-   1. Increasing students’ exposure to quantitative aspects of Earth science
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#enhancing-computational-numerical-literacy-of-eoas-graduates">
-   2. Enhancing computational &amp; numerical literacy of EOAS graduates
-  </a>
- </li>
-</ul>
-
-                        </nav>
                     </div>
                 </div>
             </div>
@@ -679,7 +632,7 @@ title="Print to PDF"
 <h1>Courses<a class="headerlink" href="#courses" title="Permalink to this headline">#</a></h1>
 <p>These sections outline the intentions and outcomes for each course affected by the OCESE project.</p>
 <p>Some courses were significantly transformed in terms of pedagogy, resources, and/or content.</p>
-<p>Other courses were impacted on smaller scales by introducing one or more interactive dashboard apps, helping instructors introduce new learning activities, coordinating computing hubs (e.g. for running Jupyter Notebooks), evaluating impacts of innovations, or by generating guidelines for installing Python, Jupyter, or other opensource computing facilities.</p>
+<p>Other courses were impacted on smaller scales by introducing one or more interactive dashboard apps, helping instructors introduce new learning activities, coordinating computing hubs or servers for running Jupyter Notebooks or dashboards, evaluating impacts of innovations, and/or by generating guidelines for installing Python, Jupyter, and other opensource computing facilities.</p>
 <p>Where feasible the course impact summaries include comments on these aspects:</p>
 <ol class="simple">
 <li><p>Goals: intended improvements, and why;</p></li>
@@ -689,93 +642,123 @@ title="Print to PDF"
 <li><p>Costs: time taken &amp; steps to design, build, test, deploy, &amp; evaluate;</p></li>
 <li><p>Lessons learned and next steps if any.</p></li>
 </ol>
-<p>Courses and goals are summarized in the following two tables, one for each primary project objective.</p>
-<section id="increasing-students-exposure-to-quantitative-aspects-of-earth-science">
-<h2>1. Increasing students’ exposure to quantitative aspects of Earth science<a class="headerlink" href="#increasing-students-exposure-to-quantitative-aspects-of-earth-science" title="Permalink to this headline">#</a></h2>
+<p>Courses and essential contributions made by OCESE are summarized in the following table.</p>
 <table class="colwidths-auto table">
 <thead>
 <tr class="row-odd"><th class="text-align:left head"><p>Course</p></th>
-<th class="text-align:left head"><p>OCESE goals</p></th>
+<th class="text-align:left head"><p>Title</p></th>
+<th class="text-align:left head"><p>Contributions</p></th>
+<th class="text-align:left head"><p>Comments</p></th>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td class="text-align:left"><p>**<strong>ENVR300</strong></p></td>
-<td class="text-align:left"><p>1) Make in-class exploration of the “modeling process” interactive.<BR>2) Provide a self-directed interactive resource to explore “signals, noise, trends &amp; smoothing”.</p></td>
+<tr class="row-even"><td class="text-align:left"><p>ATSC301</p></td>
+<td class="text-align:left"><p>Atmospheric Radiation and Remote Sensing</p></td>
+<td class="text-align:left"><p>Python, JNB, Jbooks, GitHub</p></td>
+<td class="text-align:left"><p>All aspects implemented prior to OCESE, so this course served as precedent for OCESE decisions and actions.</p></td>
 </tr>
-<tr class="row-odd"><td class="text-align:left"><p><strong>DSCI100</strong></p></td>
-<td class="text-align:left"><p>Support development of a Python version of this “R” course, including use of an EOAS context.</p></td>
+<tr class="row-odd"><td class="text-align:left"><p>DSCI100</p></td>
+<td class="text-align:left"><p>Introduction to Data Science</p></td>
+<td class="text-align:left"><p>Build a Python version of this R-based course</p></td>
+<td class="text-align:left"><p>Python version of the textbook, worksheets, assignments and assessments. First taught Jan-Apr, 2023.</p></td>
 </tr>
-<tr class="row-even"><td class="text-align:left"><p><strong>EOSC112</strong></p></td>
-<td class="text-align:left"><p>1) Consult regarding climate science initiative by helping choose, implement &amp; evaluate 2 activities.<BR>2) Support implementation &amp; evaluation of an activity that uses the IPCC’s online Climate Atlas dashboard.<BR>3) Develop a dashboard based on a web resource about factors contributing to global temperature.</p></td>
+<tr class="row-even"><td class="text-align:left"><p>ENVR300</p></td>
+<td class="text-align:left"><p>Introduction to Research in Environmental Science</p></td>
+<td class="text-align:left"><p>Dashboard(s)</p></td>
+<td class="text-align:left"><p>3 made, 2 used.</p></td>
 </tr>
-<tr class="row-odd"><td class="text-align:left"><p><strong>EOSC116, 326</strong></p></td>
-<td class="text-align:left"><p>1) Incorporate some aspect of climate science into the courses. <BR>2) Build a versatile, Python-based sketching activity dashboard.</p></td>
+<tr class="row-odd"><td class="text-align:left"><p>ENVR420</p></td>
+<td class="text-align:left"><p>Ecohydrology of Watersheds and Water Systems</p></td>
+<td class="text-align:left"><p>Planned: R to Python &amp; Jupyter notebooks (JNBs)</p></td>
+<td class="text-align:left"><p>Not started for various logistical reasons.</p></td>
 </tr>
-<tr class="row-even"><td class="text-align:left"><p><strong>EOSC116</strong></p></td>
-<td class="text-align:left"><p>Complete an opensource online learning resource and assignment.</p></td>
+<tr class="row-even"><td class="text-align:left"><p>EOSC112</p></td>
+<td class="text-align:left"><p>The Fluid Earth: Atmosphere and Ocean</p></td>
+<td class="text-align:left"><p>Dashboard(s) &amp; class activity consulting</p></td>
+<td class="text-align:left"><p>Section 101 only; not yet implemented in sectionn 201.</p></td>
 </tr>
-<tr class="row-odd"><td class="text-align:left"><p><strong>EOSC310</strong></p></td>
-<td class="text-align:left"><p>Build a dashboard characterizing a daisyworld behavior as timeseries.</p></td>
+<tr class="row-odd"><td class="text-align:left"><p>EOSC116</p></td>
+<td class="text-align:left"><p>Mesozoic Earth: Time of the Dinosaurs</p></td>
+<td class="text-align:left"><p>Dashboards</p></td>
+<td class="text-align:left"><p>Used in online and in-person versions.</p></td>
 </tr>
-<tr class="row-even"><td class="text-align:left"><p><strong>EOSC323</strong></p></td>
-<td class="text-align:left"><p>Incorporate a new interactive Mohr’s circle dashboard into students’ learning.</p></td>
+<tr class="row-even"><td class="text-align:left"><p>EOSC211</p></td>
+<td class="text-align:left"><p>Computer Methods in Earth, Ocean and Atmospheric Sciences</p></td>
+<td class="text-align:left"><p>Convert MatLab to Python; JNBs; Jbooks tried but dropped as inefficient, autograding</p></td>
+<td class="text-align:left"><p>Major transformation; significant contributions from teaching assistants.</p></td>
 </tr>
-<tr class="row-odd"><td class="text-align:left"><p><strong>EOSC325</strong></p></td>
-<td class="text-align:left"><p>Design and implement 3 dashboards for a new 3rd yr hydrogeology course.</p></td>
+<tr class="row-odd"><td class="text-align:left"><p>EOSC310</p></td>
+<td class="text-align:left"><p>The Earth and the Solar System</p></td>
+<td class="text-align:left"><p>Dashboard “Daisyworld”</p></td>
+<td class="text-align:left"><p>Online section only.</p></td>
 </tr>
-<tr class="row-even"><td class="text-align:left"><p><strong>EOSC340</strong></p></td>
-<td class="text-align:left"><p>1) Compare trends in fractional low cloud cover for a range of  CMIP6 models and scenarios. <BR>2) Compare differences between CMIP6 models &amp; scenarios for different climate variables.<BR>3) Implement  PrairieLearn; not an OCESE project but consistent with OCESE objectives.</p></td>
+<tr class="row-even"><td class="text-align:left"><p>EOSC323</p></td>
+<td class="text-align:left"><p>Structural Geology I</p></td>
+<td class="text-align:left"><p>dashboard</p></td>
+<td class="text-align:left"><p>piloted as an optional resource for students.</p></td>
 </tr>
-<tr class="row-odd"><td class="text-align:left"><p>**<strong>EOSC372</strong></p></td>
-<td class="text-align:left"><p>Design &amp; build a data-exploration dashboard for an assignment requiring students to observe &amp; compare trace element &amp; physical properties in water column at selected locations in 3 oceans.</p></td>
+<tr class="row-odd"><td class="text-align:left"><p>EOSC325</p></td>
+<td class="text-align:left"><p>Principles of Physical Hydrogeology</p></td>
+<td class="text-align:left"><p>3 dashboards, question management and consulting</p></td>
+<td class="text-align:left"><p>New course in 2021W.</p></td>
 </tr>
-<tr class="row-even"><td class="text-align:left"><p><strong>EOSC373</strong></p></td>
-<td class="text-align:left"><p>Explore options for introducing data- or concept-exploration dashboards.</p></td>
+<tr class="row-even"><td class="text-align:left"><p>EOSC326</p></td>
+<td class="text-align:left"><p>Earth and Life Through Time</p></td>
+<td class="text-align:left"><p>dashboards</p></td>
+<td class="text-align:left"><p>climate and image annotation apps tested.</p></td>
 </tr>
-<tr class="row-odd"><td class="text-align:left"><p><strong>EOSC429</strong></p></td>
-<td class="text-align:left"><p>Design &amp; build a dashboard for exploring 1D diffusion/advection of groundwater contamination.</p></td>
+<tr class="row-odd"><td class="text-align:left"><p>EOSC329</p></td>
+<td class="text-align:left"><p>Quantitative Groundwater Hydrology</p></td>
+<td class="text-align:left"><p>dashboards (as per EOSC 325) planned but not implemented</p></td>
+<td class="text-align:left"><p>Not completed for various logistical reasons.</p></td>
 </tr>
-<tr class="row-even"><td class="text-align:left"><p><strong>EOSC442</strong></p></td>
-<td class="text-align:left"><p>Convert four MatLab exercises to Python Jupyter notebooks.</p></td>
+<tr class="row-even"><td class="text-align:left"><p>EOSC340</p></td>
+<td class="text-align:left"><p>Global Climate Change:</p></td>
+<td class="text-align:left"><p>Dashboards developed, question management and autograding</p></td>
+<td class="text-align:left"><p>2021W: prairielearn introduced. 2022W: CMIP6 dashboards completed.</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p>EOSC350</p></td>
+<td class="text-align:left"><p>Environmental, Geotechnical, and Exploration Geophysics I</p></td>
+<td class="text-align:left"><p>Support for online delivery; J-Hubs</p></td>
+<td class="text-align:left"><p>Pre-existing suite of Jupyter Notebooks used as ‘apps’ with no student programming. 2020W: online “field” labs. 2021W: hub only. 2022W: hub only.</p></td>
+</tr>
+<tr class="row-even"><td class="text-align:left"><p>EOSC354</p></td>
+<td class="text-align:left"><p>Analysis of Time Series and Inverse Theory for Earth Scientists</p></td>
+<td class="text-align:left"><p>Convert MatLab to Python &amp; JNBs</p></td>
+<td class="text-align:left"><p>11 assigs: JNBs + workflow for delivery and assessment.</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p>EOSC372</p></td>
+<td class="text-align:left"><p>Introductory Oceanography: Circulation and Plankton</p></td>
+<td class="text-align:left"><p>dashboard</p></td>
+<td class="text-align:left"><p>Explore data about global ocean water properties.</p></td>
+</tr>
+<tr class="row-even"><td class="text-align:left"><p>EOSC373</p></td>
+<td class="text-align:left"><p>Introductory Oceanography: Climate and Ecosystems</p></td>
+<td class="text-align:left"><p>dashboards proposed</p></td>
+<td class="text-align:left"><p>Not completed for logistical reasons.</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p>EOSC425</p></td>
+<td class="text-align:left"><p>Palaeontology</p></td>
+<td class="text-align:left"><p>Dashboard</p></td>
+<td class="text-align:left"><p>global temperature factors</p></td>
+</tr>
+<tr class="row-even"><td class="text-align:left"><p>EOSC429</p></td>
+<td class="text-align:left"><p>Groundwater Contamination</p></td>
+<td class="text-align:left"><p>Dashboard</p></td>
+<td class="text-align:left"><p>In progress 2023.</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p>EOSC442</p></td>
+<td class="text-align:left"><p>Climate Measurement and Analysis</p></td>
+<td class="text-align:left"><p>Convert 4 MatLab labs to Python &amp; JNBs</p></td>
+<td class="text-align:left"><p>All four computing labs.</p></td>
+</tr>
+<tr class="row-even"><td class="text-align:left"><p>EOSC471</p></td>
+<td class="text-align:left"><p>Waves, Currents and Ocean Mixing</p></td>
+<td class="text-align:left"><p>Convert MatLab assignments to Python with JNBs</p></td>
+<td class="text-align:left"><p>In progress 2023.</p></td>
 </tr>
 </tbody>
 </table>
-<BR>
-</section>
-<section id="enhancing-computational-numerical-literacy-of-eoas-graduates">
-<h2>2. Enhancing computational &amp; numerical literacy of EOAS graduates<a class="headerlink" href="#enhancing-computational-numerical-literacy-of-eoas-graduates" title="Permalink to this headline">#</a></h2>
-<table class="colwidths-auto table">
-<thead>
-<tr class="row-odd"><th class="text-align:left head"><p>Course</p></th>
-<th class="text-align:left head"><p>OCESE goals</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td class="text-align:left"><p><strong>ATSC301</strong></p></td>
-<td class="text-align:left"><p>Serve as precedent for use of opensource resources and tactics in senior quantitative EOAS courses. Students develop Python skills, use opensource resources, and apply GitHub version control and collaboration practices. Automated grading is also used.</p></td>
-</tr>
-<tr class="row-odd"><td class="text-align:left"><p>**<strong>EOSC211</strong></p></td>
-<td class="text-align:left"><p>Full courses transformation of this introductory course on computing for Earth sciences.  <BR>1) convert all classroom activities, assignments and labs from MatLab to Python,<BR> 2) implement cloud based Jupyter hub technology for all computing, <BR> 3) automate (or semi-automate) grading of students’ work, <BR> 4) use an opensource textbook and deliver course content with similar open source technology,<BR> 5) build open source documentation for guidelines, tutorials and course content.</p></td>
-</tr>
-<tr class="row-even"><td class="text-align:left"><p>**<strong>EOSC354</strong></p></td>
-<td class="text-align:left"><p>Convert 11 labs from MatLab to Python and establish efficient workflow for students who use their own computers but submit their code for manual grading.</p></td>
-</tr>
-<tr class="row-odd"><td class="text-align:left"><p><strong>EOSC350</strong></p></td>
-<td class="text-align:left"><p>1) Serve as precedent for use of Jupyter Notebooks as interactive learning resources for students with no programing skills.<BR>2) Help develop efficient procedures for using scalable Jupyter Hubs with custom environments.</p></td>
-</tr>
-<tr class="row-even"><td class="text-align:left"><p><strong>EOSC410/510</strong></p></td>
-<td class="text-align:left"><p>Convert activities &amp; assignments to Python. Completed by one graduate student while taking the course as part of their own learning strategy, but without OCESE official support.</p></td>
-</tr>
-<tr class="row-odd"><td class="text-align:left"><p><strong>EOSC425</strong></p></td>
-<td class="text-align:left"><p>Incorporate interactive dashboards to support learning about paleoclimate concepts.</p></td>
-</tr>
-<tr class="row-even"><td class="text-align:left"><p><strong>EOSC471</strong></p></td>
-<td class="text-align:left"><p>Convert all labs (including custom MatLab code) to Python-based Jupyter Notebooks. Students will make minor adjustments to explore oceanography concepts but will write their own code.</p></td>
-</tr>
-</tbody>
-</table>
-<p>Three courses were identified in proposals but were not involved for various reasons: ENVR 420 and EOSC 329.</p>
-</section>
 <div class="toctree-wrapper compound">
 </div>
 </section>
