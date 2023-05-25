@@ -22,10 +22,8 @@
 
 * **[Daisyworld](https://dashboard.eoas.ubc.ca/daisy)** displays inhabited area as a function of time when daisyworld parameters are varied. Both constant and varying solar flux situations are modeled. Github repository is the "daisy" folder [here](https://github.com/phaustin/addon_containers). Initially used in [EOSC 310](https://www.eoas.ubc.ca/academics/courses/eosc310) in Fall term, 2021.
 
-### In Development
-Planned for first use in [EOSC 340](https://www.eoas.ubc.ca/academics/courses/eosc340), Jan. 2023.
-* **[cmip6-lowcloud](https://dashboard.eoas.ubc.ca/cmip6-lowcloud)** compares the trend in fractional low cloud cover in the eastern Pacific for a range of CMIP6 models and scenarios. [Source: cmip6-lowcloud](https://github.com/phaustin/addon_containers/blob/pemfiles/cmip6_lowcloud)
-* **[cmip6-dash](https://dashboard.eoas.ubc.ca/cmip6dash)**. General tool for comparing regional changes between CMIP6 models and scenarios for different climae variables. [Source: cmip6dash](https://github.com/phaustin/cmip6_dash).
+* **[cmip6-lowcloud](https://dashboard.eoas.ubc.ca/cmip6-lowcloud)** compares the trend in fractional low cloud cover in the eastern Pacific for a range of CMIP6 models and scenarios. [Source: cmip6-lowcloud](https://github.com/phaustin/addon_containers/blob/pemfiles/cmip6_lowcloud). To be incorporated into [EOSC 340](https://www.eoas.ubc.ca/academics/courses/eosc340) in 2023.
+* **[cmip6-dash](https://dashboard.eoas.ubc.ca/cmip6dash)**. General tool for comparing regional changes between CMIP6 models and scenarios for different climae variables. [Source: cmip6dash](https://github.com/phaustin/cmip6_dash). To be incorporated into [EOSC 340](https://www.eoas.ubc.ca/academics/courses/eosc340) in 2023.
 
 ## Geology and hydrogeology
 
@@ -39,12 +37,12 @@ Planned for first use in [EOSC 340](https://www.eoas.ubc.ca/academics/courses/eo
 
 * **[Mohr's circles](https://dashboard.eoas.ubc.ca/mohrs)**; plots Mohr's circles and failure envelopes by interactively adjusting stress. Github [repo](https://github.com/fhmjones/mohrs). Initially used in [EOSC 323](https://www.eoas.ubc.ca/academics/courses/eosc323) in Fall term, 2022.
 
+* **interactive images** is an initial experiment exploring how to interact with figures for future dashboards planned for paleontology and other disciplines. Github repo and active app will be listed here when ready (~Dec, 2022). (_Temporarily at [onrender](https://sketch-annotation.onrender.com), 23/03/08. Input a figure via URL, for example try "https://www.eoas.ubc.ca/~quest/sketching/NorthAm-blank-sm.jpg". It works, but is a little awkward, and a bit slow. Plans include trying an image annotation library other than Plotly._)
+
 ## Geophysics or "signals"
 
 * **[timeseries-3signals](https://dashboard.eoas.ubc.ca/timeseries)** adjustable parameters illustrating noise and trend on a sinewave, with smoothing. Github repository is the "timeseries" folder [here](https://github.com/phaustin/addon_containers). Initially used in [ENVR 300](https://www.eoas.ubc.ca/academics/courses/envr300) in Winter term 2021, then updated for Winter term 2022.
 
 * **timeseries-FFT** (not online). On github at [repo](https://github.com/fhmjones/timeseries-fft); works, but incomplete.
 
-* **interactive images** is an initial experiment exploring how to interact with figures for future dashboards planned for paleontology and other disciplines. Github repo and active app will be listed here when ready (~Dec, 2022). (_Temporarily at [onrender](https://sketch-annotation.onrender.com), 23/03/08. Input a figure via URL "https://www.eoas.ubc.ca/~quest/sketching/NorthAm-blank-sm.jpg". It works, but is a little awkward, and a bit slow. Plans include trying an image annotation library other than Plotly._)
-
-* **[gpglabs](https://gpg.geosci.xyz/content/appendix/apps.html)** Developed by the UBC Geophysical Inversion Facility ([UBC_GIF](https://gif.eos.ubc.ca/)) several years ago, this collection served as inspiration for OCESE dashboard devleopment. It is an extensive collection of interactive Jupyter Notebooks illustrating concepts in applied geophysics including forward & inverse modeling and physics. See the [GPG applied geophysics textbook](https://gpg.geosci.xyz/) or the interactive NoteBooks collection [repository](https://github.com/geoscixyz/gpgLabs), both with links for running NoteBooks using Binder, Azure Notebooks, or locally on your own computer. The hub for running is currently restricted to students registered in EOSC 350 and faculty/TAs involved in teaching the course. 
+* **[gpglabs](https://gpg.geosci.xyz/content/appendix/apps.html)** Developed by the UBC Geophysical Inversion Facility ([UBC_GIF](https://gif.eos.ubc.ca/)) several years ago, this collection served as inspiration for OCESE dashboard devleopment. It is an extensive collection of interactive Jupyter Notebooks illustrating concepts in applied geophysics including forward & inverse modeling and physics. See the [GPG applied geophysics textbook](https://gpg.geosci.xyz/) or the interactive NoteBooks collection [repository](https://github.com/geoscixyz/gpgLabs), both with links for running NoteBooks using Binder, Azure Notebooks, or locally on your own computer. The hub for running is currently restricted to students registered in EOSC 350 and faculty/TAs involved in teaching the course.

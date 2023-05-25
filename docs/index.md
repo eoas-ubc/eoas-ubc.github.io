@@ -1,7 +1,7 @@
 
 # OCESE - Open-source Computing for Earth Science Education
 
-The OCESE project (May 2020 through Apr 2023) aims to transform undergraduate teaching and learning in UBC's [Department of Earth, Ocean and Atmospheric Science](https://www.eoas.ubc.ca) (EOAS) to use - and learn to use - open source tools including:
+The OCESE project (May 2020 through Apr 2023) aims to transform undergraduate quantitative teaching and learning in UBC's [Department of Earth, Ocean and Atmospheric Science](https://www.eoas.ubc.ca) (EOAS) using open source tools including:
 
 * Python as the principal and persistant programing language for students;
 * [Jupyter notebooks](https://www.jupyter.org) for entry-level or advanced courses requiring writing or modifying code;
@@ -10,7 +10,7 @@ The OCESE project (May 2020 through Apr 2023) aims to transform undergraduate te
 * use of emerging automatic assessment practices (nbgrader, a Jupyter Notebook plugin, Prairielearn, and others);
 * use of GitHub as a collaborative means of collaborating on development of Open Source content, tools and logistics.
 
-**Project <a href="files/timeline.pdf"> Timeline</a>** as of spring 2022.
+Note that this documentation package is NOT about the EOAS Department's **QuEST Project** (Quantitative Earth Sciences Transformation). See [https://blogs.ubc.ca/eoasquest/](https://blogs.ubc.ca/eoasquest/) for those details.
 
 **Formal title:** Embedding Open-source Computational Tools into the Quantitative Earth Science Specializations
 
@@ -25,6 +25,15 @@ The OCESE project (May 2020 through Apr 2023) aims to transform undergraduate te
 * "TUTORIALS" contain more thorough learning resources for students or instructors.
 * "REFERENCES" are lists of pointers, links and key sources.
 
+**OCESE Project <a href="files/timeline.pdf"> Timeline</a>** as of spring 2022.
+
+## Acknowledgements
+
+Many thanks for financial support provided by UBC Vancouver students via the [Teaching and Learning Enhancement Fund](https://tlef.ubc.ca/), and the UBC Work Learn Program for helping employ student contributors. (For details about UBC's work learn program, see the [page for students](https://students.ubc.ca/career/ubc-experiences/work-learn-program) or the [page for faculty](https://facultystaff.students.ubc.ca/student-affairs/ubc-career-centre/work-learn).)
+
+Also much appreciated are the dedication & professionalism of the EOAS Department's computing staff, as well as support related to (a) teaching and learning and (b) development of [open Jupyter Hubs](https://lthub.ubc.ca/guides/jupyterhub-instructor-guide/), both from the [Centre for Teaching and Learning Technology](https://ctlt.ubc.ca/).
+
+
 ---
 
 This book is powered by [JupyterBook](https://jupyterbook.org) and aims to be . . .
@@ -35,4 +44,4 @@ This book is powered by [JupyterBook](https://jupyterbook.org) and aims to be . 
 
 ---
 
-Website update 2023/03/17.
+Website update 2023/05/24.

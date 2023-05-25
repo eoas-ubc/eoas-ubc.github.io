@@ -24,7 +24,6 @@ Many organizations are producing excellent interactive resources for modeling, s
 | [National virtual ocean data system](https://data.pmel.noaa.gov/nvods/las/UI.vm) | oceanography | access to, and plotting of ocgy & topog/bathym data |
 | [eGeotraces: biogeochemical ocgy](https://www.egeotraces.org/) | oceanography | access to, and plotting of tracer and other ocean data |
 | [AR5 Climate Model Mapper (U. Chicago)](http://climatemodels.uchicago.edu/maps/) | climate | maybe somewhat old - ask Phil A.  |
-| [Daisy world](https://www.novamodeler.com/model-library/daisyworld/) | climate |  |
 | [Canadian climate information source](https://climateatlas.ca/) | climate | Stories and explanations about climate change, and local climate data that can be explored using maps and graphs. |
 | [Canadian climate data portal](https://climatedata.ca/) | climate | High-resolution climate data to help decision makers build a more resilient Canada. |
 | [PAVICS](https://pavics.ouranos.ca/index.html) | climate | Advanced tools for academia, climate scenario developers, and other expert users. |

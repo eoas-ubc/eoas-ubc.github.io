@@ -4,7 +4,7 @@ parts:
 - caption: Project & Outcomes
   chapters:
   - file: execsum
-    title: Project outcomes summary
+    title: Executive Summary
   - file: project-outline
   - file: progress
     title: Progress Reports >>
@@ -18,9 +18,6 @@ parts:
     sections:
     - file: crs-atsc301
     - file: crs-dsci100
-      title: DSCI 100 ocese progress
-    - file: crs-dsci100-details
-      title: DSCI 100 course outline
     - file: crs-envr300
     - file: crs-envr420
     - file: crs-eosc112
@@ -69,15 +66,20 @@ parts:
     - file: dashboards-server
       title: Deploying to a scalable server
   - file: jnotebooks-startup
-    title: Jupyter NB startup
+    title: Jupyter NB startup >>
     sections:
     - file: jnb-startup-win.md
       title: Windows 10/11
     - file: jnb-startup-macos.md
       title: Mac OS
+    - file: jupyter-open-quickstart.md
+      title: UBC's Open Jupyter
   - file: cloud-servers.md
   - file: python-startup
-    title: Python startup
+    title: Python startup >>
+    sections:
+    - file: SkillsCheck-solns.ipynb
+      title: Check your Python skills
   - file: jupyterbooks
   - file: tools
     title: Other software tools
@@ -85,8 +87,9 @@ parts:
   chapters:
   - file: tut-commandline
   - file: tut-conda_environs
+    title: Environments; Conda, Mamba, etc.
   - file: tut-programming-environs
-    title: Using 'environments'
+    title: Using environments
   - file: tut-git-intro
   - file: tut-pullrequest
     title: Pull Request Workflow

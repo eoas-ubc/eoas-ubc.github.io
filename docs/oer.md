@@ -7,6 +7,8 @@
 
 * Jupyter books - refer elsewhere
 * considerations regarding use or reuse of third party resources.
+* procedures for searching - UBC library guidelines.
+* procedures for submitting - UBC library contacts.
 * other stuff?
 
 ## Licensing and establishing OER status

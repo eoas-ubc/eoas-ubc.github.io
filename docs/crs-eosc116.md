@@ -13,24 +13,18 @@
 
 1. Implement an exercise that uses the [Global Temperature](dashboards.md) dashboard app to explore anthropogenic aspects of climate change to facilitate comparison between present and past climate patterns.
 
-2. Build a versatile dashboard to emulate sketch-based learning activities that will allow instructors to specify a background image upon which students can sketch or add annotations. Initial activities are to be based on precedent from activities developed with older software that has become awkward to deploy. Examples are (or were) live at [example 1](https://www.eoas.ubc.ca/~quest/Lab3-sketch.html) and [example 2](https://www.eoas.ubc.ca/~quest/Lab1-2sketches.html) PDF versions of the lab exercises can be seen at <a href="files/Lab3-sketch.pdf">PDF eg1</a> and <a href="ffiles/Lab1-2sketches.pdf">PDF eg2</a>.
+2. Build a versatile dashboard to emulate sketch-based learning activities that will allow instructors to specify a background image upon which students can sketch or add annotations. Initial activities are to be based on precedent from activities developed with older software that has become awkward to deploy. Examples are (or were) live at [eg 1](https://www.eoas.ubc.ca/~quest/Lab3-sketch.html), [eg 2](https://www.eoas.ubc.ca/~quest/Lab1-2sketches.html) and [eg 3](https://www.eoas.ubc.ca/~quest/Sketch-NorthAm.html). PDF versions of the lab exercises can be seen at <a href="files/Lab3-sketch.pdf">PDF eg1</a> and <a href="files/Lab1-2sketches.pdf">PDF eg2</a>.
 
-## Resources produced
+## Actions taken
 
-1. The [Global Temperature](dashboards.md) dashboard app has been discussed elsewhere.
+1. The [Global Temperature](dashboards.md) dashboard app was use.
 
-2. The sketching app is under development (summer 2022).
+2. A dashboard app that will enable students to answer questions by sketching or annotating a given figure is under development - see the "interactive images" app on the [Dashboards page](dashboards.md). This app replaces an older facility with an app built using the same code library as other OCESE dashboard apps, and increases the versatility by allowing students to specify the figure they will annotate.
 
-## Pedagogy
+## Students’ experiences
 
-<span style="color:red">Ask Louise or Stuart if/how dashboards were used.</span>
+## Instructors’ experiences
 
-## Project evaluation
+## Costs
 
-<span style="color:red">To be completed.</span>
-
-Questions, data, results, risks and recommendations.
-
-Benefits: projected and observed. Focus on students and learning.
-
-Costs: to instructors, departments & institutions.
+## Lessons learned

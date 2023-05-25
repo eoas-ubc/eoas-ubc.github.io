@@ -1,120 +1,55 @@
-# OCESE project outcomes summary
+# OCESE project Executive Summary
 
-## OCESE PROJECT GOALS
-**Two primary goals**: Develop open-source computational tools and techniques that will …
+## 1. OCESE PROJECT GOALS
 
-1. …increase exposure to quantitative aspects of Earth Science in EOAS core and service courses,
-2. …enhance computational & numerical capabilities of EOAS students in core EOAS courses.
+### 1.1 List of goals
+
+**Two primary goals**: Develop open-source computational tools and techniques that will ...
+
+1. ... increase exposure to quantitative aspects of Earth Science in EOAS core and service courses,
+2. ... enhance computational & numerical capabilities of EOAS students in core EOAS courses.
 
 **Five goals in support of the top two:**
 
-3. Support / train new and existing faculty
-4. Document resources, guidelines, tutorials
-5. Develop & test affordable, sustainable cloud computing facilities
+3. Teaching and learning support for instructors and TAs.
+4. Document resources, guidelines, tutorials,
+5. Test affordable, sustainable cloud computing options,
 6. Support the FoS minor in Data Science and DSCI 100
 7. Introduce resulting materials and practices as Open Education Resources
 
-## Tables summarizing project output by _type_
+### 1.2 Primary goals
 
-Each _product or contribution_ generated during the OCESE project can be classified as one of eight types of outcomes, with counts summarized as:
+#### 1.2.1 Quantitative Earth Science for all EOAS students
 
-```{image} images/outcomes-type.png
-:alt: ocese outcomes by type
-:width: 500px
-:align: center
-```
-<BR>
+Courses aiming to enhance students' engagement with **quantitative Earth science concepts** or **datasets** are mostly elective courses that are accessible to students from departments other than EOAS.
 
-### Explaining "outcome types"
-OCESE work has generated over 100 products to date. Of these, over 30 should become Open Education Resources, either individually or as collections. The main types of products or items are:
+#### 1.2.2 Computational & numerical capabilities of students pursuing EOAS degrees
 
-* **Data** gathered from or about students in 6 courses for feedback on dashboards or JNBs. Other data include discussion threads (TAs, instructors & developers), midterm course feedback, and surveys about prior knowledge & needs during COVID.
-* **Consulting**
-  * The work of improving all 25 courses included consulting with corresponding instructors and teaching assistants about content, activities, and/or assessments.
-  * Additional consulting on pedagogy, logistics, data gathering or tutorials & guidelines was carried out with instructors or teaching assistants for 16 of these 25 courses.
-* **Resources** produced for 8 courses include teaching materials adapted for Python, and instructions on use of JNBs, installing & managing Python, GitHub, and use of dashboards & JNBs for teaching. Although developed initially for specific courses, most are generally applicable.
-* **Dashboards** used (or planned) in 10 courses, 5 each core and service. Assignments rely on dashboards in 5 courses, others are used for demonstration, class activities or optional.
-* **Scholarly contributions**: progress reports and lessons learned have been shared at 5 UBC teaching and learning events, and at 4 conferences or workshops beyond UBC. More contributions are planned before end of 2023.
-* **Python Jupyter Notebooks** were introduced for 8 courses; 6 core EOAS courses plus EOSC442 and DSCI100.
-* **Faculty professional development** was originally intended to involve workshops and group training sessions. Owing to COVID, this aspect was carried out mostly 1-on-1 during the project. However, 3 events were run mostly to introduce OCESE activities, and further workshops and training events will be conducted during the 6 months following the official end of funding.
+Courses aiming to increase computational and numerical capabilities of EOAS students are considered "core" courses. OCESE contributed towards these courses mostly by supporting introduction of **Python** and **Jupyter Notebooks** into student learning. The OCESE project has improved the following courses:
 
----
-Individual courses benefitted from products or contributions as follows:
-
-```{image} images/outcomes-type-courses.png
-:alt: ocese outcomes by type
-:width: 330px
-:align: center
-```
-
-Key to column labels:
-
-* consult = Consulting regarding assignment design or pedagogy
-* dashb = One or more dashboards introduced
-* data = Data gathered to inform instructors about impacts.
-* dissem = Dissemination for department, institution or external settings.
-* FProD = Supporting faculty professional development (learning new tactics, etc.)
-* jnb = One or more Jupyter notebooks introduced.
-* pedag = Support for developing pedagogic initiatives
-* resource = Resources for teaching or content for learning
-
----
-Courses using dashboards or Jupyter Notebooks on local (own) computers or cloud-based hubs (notebooks) or servers (dashboards).
-
-```{image} images/outcomes-compute.png
-:alt: ocese outcomes by type
-:width: 320px
-:align: center
-```
-
----
-
-## Tables summarizing project output by _goals_
-
-Each _poduct or contribution_ can also be classified as targeting one of the the seven principle project goals:
-
-```{image} images/outcomes-goals.png
-:alt: ocese outcomes by goals
-:width: 500px
-:align: center
-```
-
-<BR>
-
-Items produced for each course are summarized here by project goals. See more notes about this table below it.
-
-```{image} images/outcomes-goals-courses.png
-:alt: ocese outcomes by type
-:width: 350px
-:align: center
-```
-<BR>
-
-**1. Quantitative Earth Science for all EOAS students**
-
-Courses aiming to enhance students' engagement with **quantitative concepts** or **datasets** are mostly accessible to students from Departments other than EOAS.
-
-**2. Computing for students pursuing EOAS degrees**
-
-Courses aiming to increase computational and numerical capabilities of EOAS students are considered "core" courses. OCESE contributed towards these courses mostly by supporting introduction of **Python** and **Jupyter Notebooks** into student learning.
-
-* Courses in which students install Python and Jupyter on their own computers:
+**Students install Python and Jupyter on their own computers** in these courses:
 
   >ATSC301, EOSC211 (optional), EOSC354, EOSC410/510.
 
-* Courses in which students run notebooks on cloud-based Jupyter hubs (either UBC or 2i2c hubs):
+**Students' notebooks run on cloud-based Jupyter hubs** (either UBC or 2i2c hubs):
 
   >DSCI100, EOSC211, EOSC213 (using CoLab), EOSC212 (OCESE not involved), EOSC350, EOSC442, EOSC471 (starting 2024).
 
-Courses in which students use (or will likely use) **coding** as part of learning. Not all had OCESE support. (Based on the Dep't computing needs [s](https://docs.google.com/spreadsheets/d/1Lg9wLZYwIHSVyXzFPO3096d8eLvL6oLn9lShOosBBok/edit#gid=0)preadsheet as of March 2023.)
+**Students use coding** as part of learning in the following courses. (Based on the Dep't computing needs [s](https://docs.google.com/spreadsheets/d/1Lg9wLZYwIHSVyXzFPO3096d8eLvL6oLn9lShOosBBok/edit#gid=0)preadsheet as of March 2023.)
 
->ATSC301, ATSC409, ENVR420, EOSC211, EOSC212, EOSC213, EOSC353, EOSC354, EOSC410/510, EOSC450, EOSC453, EOSC471, EOSC4xx (climate physics, new 2023/4).
+>Recieved OCESE support: EOSC211, EOSC354, EOSC410/510, EOSC471, ATSC301.
 
-**Aassessments or question management**: the following courses have integrated some aspects of managing, automating or "semi-automating" assessments or develeopment / deployment of question sets.
+>No OCESE support: ATSC409, ENVR420, EOSC212, EOSC213, EOSC353, EOSC450, EOSC453, EOSC4xx (climate physics, new 2023/4).
+
+**Assessment or question management**: the following courses have integrated some aspects of managing, automating or "semi-automating" assessments or develeopment / deployment of question sets.
 
 >ATSC301, DSCI100, EOSC211, EOSC325, EOSC340
 
-**3. Faculty development**
+---
+
+### 1.3 Five supporting goals
+
+**3. Teaching and learning support for instructors and TAs**
 
 The original project proposal anticipated carrying out facultly professional development with workshops and tutorials. Instead, during COVID, the only information sessions were short online presentations at Department meetings.
 
@@ -122,7 +57,7 @@ However, instructors teaching courses involved in the project received more or l
 
 Now, with the project tasks essentially completed, we anticipate that training for groups of faculty can be expected to occur between May and December 2023.
 
-**4. Training materials and documentation**
+**4. Document resources, guidelines, tutorials**
 
 Some resources are targeted towards students, some for instructors or teaching assistants and some for all three. All are being accumulated at the website you are viewing now. See also Faculty Development below.
 
@@ -134,41 +69,92 @@ Project outcomes associated with implenting cloud computing facilities to host s
 
 DSCI100 is taught in the UBC Department of Statistics, but this new Python section was first taught by Prof. L. Heagy of the Dep't of EOAS in winter 2023. This major course adapation involved the following activities carried out between 2021 and 2023.
 
-* Adapting the R-based textbook to Python.
+* Adapting the R-based textbook to Python. The result is [online](https://python.datasciencebook.ca/intro.html), and the [source is on GitHub](https://github.com/UBC-DSCI/introduction-to-datascience-python).
 * Adapting all learning worksheets from R to Python.
 * Adapting teaching materials (slide decks, classroom materials, etc.) from R to Python.
 * Teaching the first "Python cohort" of this course.
 
 **7. Open Source Resources (OERs) and pedagogies**
 
-All dashboards, course content (such as texts) and project tutorials or documentation emerging from the OCESE project are expected to be designated as OERs, assuming permission from stake holders is obtained.
+All dashboards, course content (such as texts) and tutorials, guidelines or other documentation emerging from the OCESE project are expected to be designated as OERs, assuming permission from stake holders is obtained.
 
 Resources that are NOT expected to be designated as OERs include those that have solutions to student work or activities.
 
 ---
 
-## Summary of courses impacted by OCESE
+## 2. Summary of results: courses and other impacts
 
-Courses that were supported by OCESE project components.
+For detailed impacts, results and evaluation information see summaries for each course under the "Course enhancements" heading (left-hand menu).
 
-|Course|Title|Students; 3yrs|Contributions|Comments|
-|:---|:---|:---:|:---|:---|
-| ATSC301 | Atmospheric Radiation and Remote Sensing                        | 37   | Python, JNB, Jbooks, GitHub                              | Essentially done prior to OCESE; served as precedent. |
-| DSCI100 | Introduction to Data Science                                    | 69   | Adapt R-based course to Python                           | Major adaptation: "R" to Python, complete textbook, worksheets, assignments and assessments. First taught Jan-Apr, 2023. |
-| ENVR300 | Introduction to Research in Environmental Science               | 174  | Dashboard(s)                                             | 3 made, 2 used. |
-| ENVR420 | Ecohydrology of Watersheds and Water Systems                    | 0    | R to Python & Jupyter notebooks (JNBs)                   | Not started after discussion with instructor. |
-| EOSC112 | The Fluid Earth: Atmosphere and Ocean                           | 258  | Dashboard(s) & class activity consulting                 | Section 101 only, secn 201 not affected. |
-| EOSC116 | Mesozoic Earth: Time of the Dinosaurs                           | 1436 | Dashboard(s)                                             | 2021W: DE only. 2022W: online and face to face versions. |
-| EOSC211 | Computer Methods in Earth, Ocean and Atmospheric Sciences       | 297  | Convert from MatLab to Python, JNBs, Jbooks, autograding | Major transformation: MatLab to Python, autograding, worksheets, assignments, labs, assessments. Significant contribution from teaching assistants. |
-| EOSC310 | The Earth and the Solar System                                  | 341  | Dashboard                                                | 2021W, online section only. |
-| EOSC325 | Principles of Physical Hydrogeology                             | 118  | 3 dashboards & consulting                                | New course, 2021W. |
-| EOSC340 | Global Climate Change:                                          | 310  | Dashboard(s) & question management                       | 2021W: prairielearn. 2022W: prairielearn + CMIP6 dashboard. |
-| EOSC350 | Environmental, Geotechnical, and Exploration Geophysics I       | 119  | Online conversion; Hubs                                  | Pre-existing suite of dashboardapps. 2020W: online "field" labs. 2021W: hub only. 2022W: hub only. |
-| EOSC354 | Analysis of Time Series and Inverse Theory for Earth Scientists | 20   | Convert from MatLab to Python & JNBs                     | 10 assigs: JNBs + workflow for delivery and assessment. |
-| EOSC372 | Introductory Oceanography: Circulation and Plankton             | 289  | One dashboard                                            | Properties of ocean column. |
-| EOSC425 | Palaeontology                                                   | 30   | Dashboard                                                | One only. |
-| EOSC429 | Groundwater Contamination                                       | 75   | Dashboard                                                | In progress 2023. |
-| EOSC442 | Climate Measurement and Analysis                                | 44   | Convert MatLab labs to Python & JNBs                     | All four computing labs. |
-| EOSC471 | Waves, Currents and Ocean Mixing                                | 18   | Convert MatLab assignments to Python with JNBs           | In progress 2023. |
+### 2.1 Courses affected
 
-**Total numbers of students impacted over 3 years** = **3635**
+The following table summarizes courses in the project proposal, those that were impacted, and corresponding enrollments (giving number of students affected).
+
+```{image} images/enrols.png
+:alt: ocese outcomes by type
+:align: center
+```
+
+<BR>
+
+### 2.2 Project contributions
+
+Seven types of contributions emerged from OCESE project work:
+
+1. Python & Jupyter Notebooks (JNBs), either new or replacing MatLab or "R".
+2. Dashboards: Build and incorporate interactive apps for learning or demonstrations.
+3. Data gathered about students’ and instructors’ experiences.
+4. Consulting regarding content, learning, pedagogy, or logistics.
+5. Resources: Guidelines for Python, JNBs, GitHub, dashboards, etc.
+6. Faculty professional development: COVID caused this to be delived mainly as 1-on-1 consulting.
+7. Dissemination: Six UBC events and 5 events beyond UBC.
+
+**Further details**
+
+1. **Python Jupyter Notebooks** were introduced for 8 courses; 6 core EOAS courses plus EOSC442 and DSCI100.
+2. **Dashboards** are used (or planned) in 10 courses, 5 each core EOAS courses and service (or elective) courses. Assignments rely on dashboards in 5 courses, others use dashboards for demonstration, class activities or as optional enrichment resources. [Fifteen apps were designed and built](dashboards.md). Eleven are live to view. Code will be made publically accessible on GitHub. Much was learned about techniques for designing, building, deploying and teaching or learning. Corresponding guidelines have been included; see "Guides" and "Tutorials" sections of the left-hand menu.
+3. **Data** gathered from or about students in 6 courses for feedback on dashboards or JNBs. Other data include discussion threads (TAs, instructors & developers), midterm course feedback, and surveys about prior knowledge & needs during COVID.
+4. **Consulting, or support for EOAS faculty**
+   * The work of improving all 25 courses included consulting with corresponding instructors and teaching assistants about content, activities, and/or assessments.
+   * Additional consulting on pedagogy, logistics, data gathering or tutorials & guidelines was carried out with instructors or teaching assistants for 16 of these 25 courses.
+   * Owing to COVID, workshops and training sessions were not carried out, except in 1-on-1 meetings. However, 3 events were run mostly to introduce OCESE activities, and further workshops and training events will be conducted during the 6 months following the official end of funding.
+5. **Resources** produced for 8 courses include teaching materials adapted for Python, and instructions on use of JNBs, installing & managing Python, GitHub, and use of dashboards & JNBs for teaching. Although developed initially for specific courses, most are generally applicable.
+6. **Faculty Professional Development**: Workshops, training sessions and other group oriented support events were originally planed, however COVID caused most such support to become mainly 1-on-1 interactions between OCESE project members (including graduate students) and EOAS faculty.
+7. **Dissemination**: progress reports and lessons learned have been shared at 5 UBC teaching and learning events, and at 4 conferences or workshops beyond UBC. More contributions are planned before end of 2023.
+
+### 2.3 Contributions summarized by courses
+
+The seven types of contributions addressed our project goals 1 and 2 in targeted courses as follows:
+
+```{image} images/table-expose-to-qes.png
+:alt: ocese outcomes by type
+:align: center
+```
+<BR>
+
+```{image} images/table-enhance-cns.png
+:alt: ocese outcomes by type
+:align: center
+```
+<BR>
+
+Converting courses to Python involved the following aspects:
+
+```{image} images/table-courseconversions.png
+:alt: ocese outcomes by type
+:align: center
+```
+<BR>
+
+
+The seven types of project outcomes contributed in ways not related to specific coures as follows:
+
+```{image} images/table-notcourses.png
+:alt: ocese outcomes by type
+:align: center
+```
+<BR>
+
+Finally, OCESE work has generated over 100 products to date. Of these, over 30 should become Open Education Resources, either individually or as collections.
+
+---

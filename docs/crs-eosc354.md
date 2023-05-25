@@ -27,21 +27,22 @@ COURSE OUTLINE
 ## Actions taken
 
 * **Circumstances**
-  * The first core (not elective) upper level course that the OCESE project converted to Python. Two other courses in the Dep't were already using Python (ATSC 301 and EOSC 213), and at least two were permitting students to use either MatLab or Python (EOSC 354 and EOSC 410).
+  * This was the first core (not elective) upper level course that the OCESE project converted to Python. Two other courses in the Dep't were already using Python ([ATSC 301](https://www.eoas.ubc.ca/academics/courses/atsc301) and [EOSC 213](https://www.eoas.ubc.ca/academics/courses/eosc213)), and at least two were permitting students to use either MatLab or Python (this course (EOSC 354) and [EOSC 410](crs-eosc410.md)).
   * COVID: Fall 2021 was “in person” but with mandatory masks, and still “not normal”.
-  * This is a small class of 10-15 students each year. Also, students learn to install the necessary software on their own computers. Therefore, logistics of deliverying Python-based Jupyter Notebooks is not burdened by the need for Jupyter hubs that (a) need special environments or (b) need to scale resources up and down according to demand of large numbers of studetns.
+  * Enrollmenet: 10-15 students each year. Students learn to install the necessary software on their own computers. Therefore, logistics of deliverying Python-based Jupyter Notebooks is not burdened by the need for Jupyter hubs that (a) need special environments or (b) need to scale resources up and down according to demand of large numbers of studetns.
 * **Assignments or "labs"**: The first 8 were in place for start of course, while assignments 9-11 were completed in time for use in Oct-Nov.
-* **Skills check assessment** (Assignment 0): Nine specific skills are defined, tasks to check if the student can demonstrate these skills are posed, and pointers to documentation are provide for further details about each skill.
+* **Skills check exercise** (Assignment 0): Nine specific skills are defined, tasks to check if the student can demonstrate these skills are posed, and pointers to documentation are provide for further details about each skill. See exercise [here](SkillsCheck-solns.ipynb).
 * **Installation guidelines** were developed in parallel with those for EOSC 211, and based on experiences in ATSC 301.
 * **Jupyter hubs** are not needed for this course since one learning goal is for students to gain skills related to installing, managing and using Python on their own computers.
+* **Dashboards**: Use of dashboards for illustrating or exploring concepts was discussed, and one prototype for demonstrating Fourier Transform reconstruction of periodic signals was prepared. It was not used but is in the OCESE [dashboard list](dashboards.md). One reason for not pursuing this development was that the instructor produced short notebooks himeselve for demonstrating concepts in class. There are also many such resources in the public domain that can be found online.
 
 ## Instructors' experiences
 
-The instructor was a first-time teacher (PhD student) filling in while the normal instructor was on leave. He had been teaching assistant for the course in pervious terms and new the content well.
+The instructor was a first-time teacher (PhD student) filling in while the normal instructor was on leave. He had been teaching assistant (TA) for the course in pervious terms and knew the content well.
 
 Some key comments from a debriefing interview with this instructor 2 months after the course was completed:
 
-* It went quite smoothly - content and pacing was kept as close to prior terms as possible.
+* The course proceeded smoothly with few surprises or difficulties. Content and pacing were kept as close to prior terms as possible.
 * The switch to Python was simple - no big issues.
 * Lab time, and marking load, were much as before.
 * Logistics worked well for this small course. Students fetch notebook files (*.ipynb) from the LMS (Canavas), work on their own laptops, and deliver completed work as a completed notebook file to the LMS. Teaching assistant fetches file, runs it and applies the marking rubric.
@@ -78,14 +79,14 @@ Five point Likert-sclae (agree/disagree) questions provide information about wha
 **Evidently** ...
 
 * All students agreed that learning Python was beneficial and that Jupyter Notebooks worked well for deliverying and working on assignments.
-* The early "skills check" Jupyter Notebook was definitly approved of.
+* The early "[skills check](SkillsCheck-solns.ipynb)" Jupyter Notebook was definitly approved of.
 * The text book seems to be NOT useful. This could be improved. The lecture material and assignment steps might need a new timeseries text book that uses a current programming context for discussing concepts and applications.
 * The midterm exam may be too "theoretical" given that students spend most of their time practice the application of coding to address problems.
 * The instructing and the learning experiences were all good.
 
 **Selected responses to open-ended feedback questions**:
 
-Clearly a thoughtful and insightful set of students. Adjustments suggested seem mostly about supporting development the "maturity" associated with translating a problem into code. The theory is one thing, the coding skills are another, and bringing the two together is particularly challenging when both are being developed simultaneously. But the course was generally appreciated. 
+These were clearly a thoughtful and insightful set of students. Adjustments suggested seem mostly about supporting development the "maturity" associated with translating a problem into code. The theory is one thing, the coding skills are another, and bringing the two together is particularly challenging when both are being developed simultaneously. But the course was generally appreciated.
 
 * What has been most helpful for your learning in this course so far?
   * _I really like how fast the instructor responds to his emails. He always answers my questions in detail and it helps a lot_.
@@ -106,16 +107,16 @@ Clearly a thoughtful and insightful set of students. Adjustments suggested seem 
   * _The assignments are way too long and I know that other students feel the same way. They can take up to 13 hours to complete. It would be nice if some of the questions could be taken out and turned into optional practice_.
   * _I guess I don't find the coding useful for learning material_.
   * _Midterm was really challenging. Felt it was much more conceptual that I expected, and the conceptual problems were difficult to solve, ie could have used some more practice. Also, there were no problems similar to the assignments_.
-  * _Insntructor and TA are great teachers :)_.
 
+One insightful comment from the instructor (who had taken the course 5 years previously) is: "_The comment about the assignments sometimes being long/arduous I think is shared among all these students. [But] I would have given similar feedback when I was taking the course in 2017._”
 
-One insightful comment from the instructor (who had taken the course 5 years previousl) is: "_The comment about the assignments sometimes being long/arduous I think is shared among all these students. [But] I would have given similar feedback when I was taking the course in 2017._”
+Feedback was also obtained from one student who found the course particularly inpsiring about workloads, challenges, and experiences considered to be paritcularly rewarding or inspiring. These are useful for sharing with prospective students (eg as part of the [QuEST project](https://blogs.ubc.ca/eoasquest/)), but are out-of-scope for the OCESE project.
 
 ## Costs
 
 Resources used to accomplish this course transformation (from MatLab to Python, using Jupyter notebooks) included:
 
-* One half-time undergraduate student with exceptional programming skills who had also taken the course only 7 mths prior to carrying out the conversion.
+* One half-time undergraduate student with exceptional programming skills who had also taken the course only 7 mths prior to carrying out the conversion. Programming & testing new Python versions of each of the 11 labs took averaged roughly 8 hrs each. Generating, testing and iterating the "skills-check" Jupyter Notebook took roughly 40 hrs.
 * Project coordinator who also had some experience with course content (perhaps ~10% f.t.e. on this component of the OCESE project) to supervise that student and liaise with project management and the faculty members involved in teaching the course.
 * The first deployment of this well-established course in it's new form required some attention to detail in the month prior to day1, including "test driving" the logistics of delivery, completing, submitting, grading and returning assignments with feedback.
 
