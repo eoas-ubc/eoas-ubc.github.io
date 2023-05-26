@@ -1,8 +1,6 @@
 # OCESE project Executive Summary
 
-## 1. OCESE PROJECT GOALS
-
-### 1.1 List of goals
+## OCESE PROJECT GOALS
 
 **Two primary goals**: Develop open-source computational tools and techniques that will ...
 
@@ -17,37 +15,21 @@
 6. Support the FoS minor in Data Science and DSCI 100
 7. Introduce resulting materials and practices as Open Education Resources
 
-### 1.2 Primary goals
+---
 
-#### 1.2.1 Quantitative Earth Science for all EOAS students
+## Further details; primary goals
 
-Courses aiming to enhance students' engagement with **quantitative Earth science concepts** or **datasets** are mostly elective courses that are accessible to students from departments other than EOAS.
+### 1. Quantitative Earth Science for all EOAS students
 
-#### 1.2.2 Computational & numerical capabilities of students pursuing EOAS degrees
+Courses aiming to enhance students' engagement with **quantitative Earth science concepts** or **datasets** are mostly elective courses that are accessible to students from departments other than EOAS. Table 1 below summarizes courses impacted by OCESE.
 
-Courses aiming to increase computational and numerical capabilities of EOAS students are considered "core" courses. OCESE contributed towards these courses mostly by supporting introduction of **Python** and **Jupyter Notebooks** into student learning. The OCESE project has improved the following courses:
+### 2. Computational & numerical capabilities of students pursuing EOAS degrees
 
-**Students install Python and Jupyter on their own computers** in these courses:
-
-  >ATSC301, EOSC211 (optional), EOSC354, EOSC410/510.
-
-**Students' notebooks run on cloud-based Jupyter hubs** (either UBC or 2i2c hubs):
-
-  >DSCI100, EOSC211, EOSC213 (using CoLab), EOSC212 (OCESE not involved), EOSC350, EOSC442, EOSC471 (starting 2024).
-
-**Students use coding** as part of learning in the following courses. (Based on the Dep't computing needs [s](https://docs.google.com/spreadsheets/d/1Lg9wLZYwIHSVyXzFPO3096d8eLvL6oLn9lShOosBBok/edit#gid=0)preadsheet as of March 2023.)
-
->Recieved OCESE support: EOSC211, EOSC354, EOSC410/510, EOSC471, ATSC301.
-
->No OCESE support: ATSC409, ENVR420, EOSC212, EOSC213, EOSC353, EOSC450, EOSC453, EOSC4xx (climate physics, new 2023/4).
-
-**Assessment or question management**: the following courses have integrated some aspects of managing, automating or "semi-automating" assessments or develeopment / deployment of question sets.
-
->ATSC301, DSCI100, EOSC211, EOSC325, EOSC340
+Courses aiming to increase computational and numerical capabilities of EOAS students are "core" courses in EOAS degree specializations including atmospheric sciences, geophysics, and oceanography. OCESE contributed towards these courses mostly by supporting introduction of **Python** and **Jupyter Notebooks** into student learning. Tables 2 and 3 below summarize courses and the aspects that were adjusted during the OCESE project.
 
 ---
 
-### 1.3 Five supporting goals
+## Further details; five supporting goals
 
 **3. Teaching and learning support for instructors and TAs**
 
@@ -56,6 +38,10 @@ The original project proposal anticipated carrying out facultly professional dev
 However, instructors teaching courses involved in the project received more or less extensive support from project team and teaching assistants while adjustments or resources were being developed.
 
 Now, with the project tasks essentially completed, we anticipate that training for groups of faculty can be expected to occur between May and December 2023.
+
+In addition, five courses have integrated some aspects of managing, automating or "semi-automating" assessments or develeopment / deployment of question sets.
+
+>ATSC301, DSCI100, EOSC211, EOSC325, EOSC340
 
 **4. Document resources, guidelines, tutorials**
 
@@ -82,11 +68,11 @@ Resources that are NOT expected to be designated as OERs include those that have
 
 ---
 
-## 2. Summary of results: courses and other impacts
+## Summary of results: courses and other impacts
 
 For detailed impacts, results and evaluation information see summaries for each course under the "Course enhancements" heading (left-hand menu).
 
-### 2.1 Courses affected
+### Courses affected
 
 The following table summarizes courses in the project proposal, those that were impacted, and corresponding enrollments (giving number of students affected).
 
@@ -97,7 +83,7 @@ The following table summarizes courses in the project proposal, those that were 
 
 <BR>
 
-### 2.2 Project contributions
+### Project contributions
 
 Seven types of contributions emerged from OCESE project work:
 
@@ -109,7 +95,7 @@ Seven types of contributions emerged from OCESE project work:
 6. Faculty professional development: COVID caused this to be delived mainly as 1-on-1 consulting.
 7. Dissemination: Six UBC events and 5 events beyond UBC.
 
-**Further details**
+#### Further details
 
 1. **Python Jupyter Notebooks** were introduced for 8 courses; 6 core EOAS courses plus EOSC442 and DSCI100.
 2. **Dashboards** are used (or planned) in 10 courses, 5 each core EOAS courses and service (or elective) courses. Assignments rely on dashboards in 5 courses, others use dashboards for demonstration, class activities or as optional enrichment resources. [Fifteen apps were designed and built](dashboards.md). Eleven are live to view. Code will be made publically accessible on GitHub. Much was learned about techniques for designing, building, deploying and teaching or learning. Corresponding guidelines have been included; see "Guides" and "Tutorials" sections of the left-hand menu.
@@ -122,7 +108,7 @@ Seven types of contributions emerged from OCESE project work:
 6. **Faculty Professional Development**: Workshops, training sessions and other group oriented support events were originally planed, however COVID caused most such support to become mainly 1-on-1 interactions between OCESE project members (including graduate students) and EOAS faculty.
 7. **Dissemination**: progress reports and lessons learned have been shared at 5 UBC teaching and learning events, and at 4 conferences or workshops beyond UBC. More contributions are planned before end of 2023.
 
-### 2.3 Contributions summarized by courses
+### Contributions summarized by courses
 
 The seven types of contributions addressed our project goals 1 and 2 in targeted courses as follows:
 
@@ -130,12 +116,14 @@ The seven types of contributions addressed our project goals 1 and 2 in targeted
 :alt: ocese outcomes by type
 :align: center
 ```
+
 <BR>
 
 ```{image} images/table-enhance-cns.png
 :alt: ocese outcomes by type
 :align: center
 ```
+
 <BR>
 
 Converting courses to Python involved the following aspects:
@@ -144,8 +132,8 @@ Converting courses to Python involved the following aspects:
 :alt: ocese outcomes by type
 :align: center
 ```
-<BR>
 
+<BR>
 
 The seven types of project outcomes contributed in ways not related to specific coures as follows:
 
@@ -153,8 +141,9 @@ The seven types of project outcomes contributed in ways not related to specific 
 :alt: ocese outcomes by type
 :align: center
 ```
+
 <BR>
 
-Finally, OCESE work has generated over 100 products to date. Of these, over 30 should become Open Education Resources, either individually or as collections.
-
 ---
+
+Finally, OCESE work has generated over 100 products to date. Of these, over 30 should become Open Education Resources, either individually or as collections.

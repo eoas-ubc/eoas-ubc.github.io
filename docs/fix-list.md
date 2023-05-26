@@ -33,7 +33,7 @@ See also **[issues](https://github.com/eoas-ubc/eoas-ubc.github.io/issues)** at 
 ## Additions
 
 * Gather repositories with PA, FJ, JB, IS and collect at eoas-ubc.
-* [Cited references](refs-citations.md) should be added throughout, as needed. This could be done using BibTex reference files - see the [Jupyter Books citation tutorial](https://jupyterbook.org/en/stable/tutorials/references.html).
+* [Cited references](refs-citations.md) should be added throughout, as needed, based on QuEST project and FJ's Zotero collection. Or, a bibliography might be adequate unless an official publication is prpduced. This could be done using BibTex reference files - see the [Jupyter Books citation tutorial](https://jupyterbook.org/en/stable/tutorials/references.html).
 * More about open-source, with examples, esepcially w.r.t. earth sciences. Eg: pangeo, SimpEG, Fatiango, geosci.xyz, (find ocgy and atsc examples), Jupyter books (again, referring to UBC's examples open.ubc.ca. [Numerical Techniques for AOE scientists](https://rhwhite.github.io/numeric_2022/), R. White and S. Allen, DSCI100 [python text](https://python.datasciencebook.ca/intro.html)  & [repo](https://github.com/UBC-DSCI/introduction-to-datascience-python).
 * Review Andrew L.'s two tutorials in "not used". They may have good content but are perhaps a bit "long-winded".
 * Revisit first-year accomplishments, including [md2canvas](https://github.com/eoas-ubc/md2canvas), AL's tutorials, and others. The [projects page](https://github.com/orgs/eoas-ubc/projects/1), and list of repositories may reveal items that need including or summarizing. Needs a walk-through with Phil.
