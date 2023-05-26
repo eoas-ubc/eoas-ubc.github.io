@@ -41,6 +41,7 @@ parts:
   - file: dashboards
     title: Dashboards
   - file: facultydev
+    title: Training faculty & students
   - file: eval-wisdom
     title: Project evaluation
     sections:
