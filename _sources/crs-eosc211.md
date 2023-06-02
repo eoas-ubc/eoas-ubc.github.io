@@ -61,6 +61,20 @@ Five project goals are listed with summaries of actions taken for each.
   * midterm survey with ~100% response rate: MC and open questions. Summarized.
   * Standard UBC end of term "Student Experience of Instruction" survey.
 
+### b) Discussion board activity
+
+Piazza discussion board topics from the first and second year after transforming eosc211 are illustrated in the figure here. Apparently, student concerns raised on the Piazza platform were relatively similar in both terms.
+
+```{image} images/eosc211-piazzadata.png
+:alt: eosc211 Piazza data
+:align: right
+```
+
+* Most discussions were related to “code”. The course is all about programming for beginners and this is reflected in the consistent, high proportion of posts for both years.
+* A major challenge of deploying Python with Jupyter notebooks for 100 students was providing stable Jupyter Hubs. However, if counting the types of posts on Piazza is any indication, the relatively few posts about hubs in both 2021 and 2022 suggests that students may have been less concerned about these difficulties than instructors.
+* The main challenge for teachers in 2021 related to difficulties with the autograding software. This explains why there were more than twice as many posts about quizzes or exams in 2021 compared to 2022.
+
+
 ## Costs, Risks, and Recommendations
 
 * Auto-grading is essential. Prior to Python (i.e. before 2021) MatLab was the language and grading involved custom MatLab parsing code by R. Pawlowicz.

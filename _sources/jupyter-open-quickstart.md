@@ -94,7 +94,7 @@ You can execute code cells by pressing [▸ Run], or `[Ctrl]/[Command] + [Enter]
 In [1]: 1 print("Hello World!")
 ```
 
-```textd
+```text
         Hello World!
 ```
 

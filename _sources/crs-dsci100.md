@@ -8,7 +8,6 @@
 * [UBC Calendar](https://courses.students.ubc.ca/cs/courseschedule?pname=subjarea&tname=subj-course&dept=DSCI&course=100),
 and [ubcexplore](https://ubcexplorer.io/course/DSCI/100).
 * Student-facing [GitHub repository](https://github.com/ubc-dsci/dsci-100-student) for the existing "R" version of the course.
-* Summary of [selected details](crs-dsci100-details.md) about the Course's Learning Outcomes (CLO's), topics and tools.
 
 ## OCESE project objectives
 

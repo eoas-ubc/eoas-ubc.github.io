@@ -44,4 +44,4 @@ This book is powered by [JupyterBook](https://jupyterbook.org) and aims to be . 
 
 ---
 
-Website update 2023/05/24.
+Website update 2023/06/02.

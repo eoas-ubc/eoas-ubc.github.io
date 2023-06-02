@@ -79,7 +79,7 @@ Most students were hired with support from the UBC WorkLearn program:
 |Jamie Byer|undergrad|programming dashboards|
 |Danil Platonov|undergrad|programming early versions of server software|
 |Benjamin Chang|undergrad|programming related to question sets & Canvas interface|
-|Mara Colclough|undergrad|programming early versions of python resources|
+|Mara Colclough|undergrad|programming early versions of python resources including building and managing Canvas quizzes from Juypter.|
 |Iddo Sadeh|undergrad|programming dashboards, Python conversion of EOSC 442, DSCI 100|
 |Navya Dahiya|grad|supported DSCI 100 Python conversion|
 |Wanying Ye|grad|supported DSCI 100 Python conversion|

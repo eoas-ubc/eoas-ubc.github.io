@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Getting started with Python &#8212; OCESE Documentation</title>
+    <title>Getting started with Python and Jupyter &#8212; OCESE Documentation</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -53,7 +53,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="Python Skills Check" href="SkillsCheck-solns.html" />
-    <link rel="prev" title="Servers and hubs" href="cloud-servers.html" />
+    <link rel="prev" title="Developing dashboards" href="dashboards-howto.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -277,7 +277,7 @@ const thebe_selector_output = ".output, .cell_output"
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="facultydev.html">
-   Training for Faculty
+   Training faculty &amp; students
   </a>
  </li>
  <li class="toctree-l1 has-children">
@@ -325,85 +325,24 @@ const thebe_selector_output = ".output, .cell_output"
 </p>
 <ul class="current nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference internal" href="git-workflows.html">
-   GitHub and Git Workflows
-  </a>
- </li>
- <li class="toctree-l1">
   <a class="reference internal" href="dashboards-howto.html">
    Developing dashboards
   </a>
  </li>
- <li class="toctree-l1 has-children">
-  <a class="reference internal" href="dashboards-deploy.html">
-   Dashboard deployment &gt;&gt;
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Python/Jupyter startup
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
-  <label for="toctree-checkbox-4">
-   <i class="fas fa-chevron-down">
-   </i>
-  </label>
-  <ul>
-   <li class="toctree-l2">
-    <a class="reference internal" href="dashboards-local.html">
-     Deploying locally
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="dashboards-server.html">
-     Deploying to a scalable server
-    </a>
-   </li>
-  </ul>
  </li>
- <li class="toctree-l1 has-children">
-  <a class="reference internal" href="jnotebooks-startup.html">
-   Jupyter NB startup &gt;&gt;
+ <li class="toctree-l1">
+  <a class="reference internal" href="SkillsCheck-solns.html">
+   Python Skills Check
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
-  <label for="toctree-checkbox-5">
-   <i class="fas fa-chevron-down">
-   </i>
-  </label>
-  <ul>
-   <li class="toctree-l2">
-    <a class="reference internal" href="jnb-startup-win.html">
-     Windows 10/11
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="jnb-startup-macos.html">
-     Mac OS
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="jupyter-open-quickstart.html">
-     UBC's Open Jupyter
-    </a>
-   </li>
-  </ul>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="cloud-servers.html">
    Servers and hubs
   </a>
- </li>
- <li class="toctree-l1 current active has-children">
-  <a class="current reference internal" href="#">
-   Python startup &gt;&gt;
-  </a>
-  <input checked="" class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/>
-  <label for="toctree-checkbox-6">
-   <i class="fas fa-chevron-down">
-   </i>
-  </label>
-  <ul>
-   <li class="toctree-l2">
-    <a class="reference internal" href="SkillsCheck-solns.html">
-     Check your Python skills
-    </a>
-   </li>
-  </ul>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="jupyterbooks.html">
@@ -443,13 +382,13 @@ const thebe_selector_output = ".output, .cell_output"
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="tut-pullrequest.html">
-   Pull Request Workflow
+  <a class="reference internal" href="git-workflows.html">
+   GitHub and Git Workflows
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="tut-jhubs.html">
-   Jupyterhub Tutorial
+  <a class="reference internal" href="tut-pullrequest.html">
+   Pull Request Workflow
   </a>
  </li>
  <li class="toctree-l1">
@@ -604,23 +543,108 @@ title="Print to PDF"
     </ul>
   </div>
 </div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
 
     </div>
 </div>
 
 <!-- Table of contents -->
 <div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#why-python">
+   Why Python
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#learning-python">
+     Learning Python
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#what-is-a-jupyter-notebook">
+   What is a Jupyter Notebook
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#if-you-are-using-notebooks-via-a-jupyter-hub">
+     If you are using notebooks via a Jupyter Hub
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#installing-jupyter-notebooks-on-a-personal-computer">
+     Installing Jupyter Notebooks on a personal computer
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+    </nav>
 </div>
     </div>
     <div class="article row">
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Getting started with Python</h1>
+                <h1>Getting started with Python and Jupyter</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
                         
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#why-python">
+   Why Python
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#learning-python">
+     Learning Python
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#what-is-a-jupyter-notebook">
+   What is a Jupyter Notebook
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#if-you-are-using-notebooks-via-a-jupyter-hub">
+     If you are using notebooks via a Jupyter Hub
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#installing-jupyter-notebooks-on-a-personal-computer">
+     Installing Jupyter Notebooks on a personal computer
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+                        </nav>
                     </div>
                 </div>
             </div>
@@ -628,18 +652,56 @@ title="Print to PDF"
                 
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="getting-started-with-python">
-<h1>Getting started with Python<a class="headerlink" href="#getting-started-with-python" title="Permalink to this headline">#</a></h1>
-<p>This will include</p>
+  <section class="tex2jax_ignore mathjax_ignore" id="getting-started-with-python-and-jupyter">
+<h1>Getting started with Python and Jupyter<a class="headerlink" href="#getting-started-with-python-and-jupyter" title="Permalink to this headline">#</a></h1>
+<section id="why-python">
+<h2>Why Python<a class="headerlink" href="#why-python" title="Permalink to this headline">#</a></h2>
+<p><strong>Python</strong> is a <em>high level programming language,</em> meaning it is comparatively easy for humans to read. Python programs are executed by a <em>python interpreter,</em> which takes python code, reads it into a processor (the CPU on your computer, or via an internet connection on a suitable server) and returns a result. This process is repeated over and over for each line of code, often taking the result of one line and feeding it into the next.</p>
+<p>Python is also <em>open source</em>, meaning there are no fees to download/use python, and anyone is free to add to the Python code base. This is a major reason for Python’s growing popularity in the scientific community, there are many add ons (called <em>packages</em>) developed by other scientists specifically for the type of programming we want to do in this course, with more being added every day!</p>
+<p>Python programs can be made to run as stand-alone programs, or - more commonly for educational purposes - a <strong>Jupyter Notebook</strong> can be used as an evironment for writing, debugging and running Python codes.</p>
+<section id="learning-python">
+<h3>Learning Python<a class="headerlink" href="#learning-python" title="Permalink to this headline">#</a></h3>
+<p>There are numerous tutorials, courses or articles about learnign Python. It is beyond the scope of these documents to teach Python.</p>
+<p><strong>Project Pythia’s</strong> <a class="reference external" href="https://foundations.projectpythia.org/landing-page.html">foundations page</a> includes getting started pages for Python, Jupyter and GitHub. Also tutorials on seven key Python scientific packages: NumPy, Matplotlib, Cartopy, Datetime, Pandas, Data Formats, and Xarray. Other sources include:</p>
 <ul class="simple">
-<li><p>installation we have found to work in eosc211 and eosc354</p></li>
-<li><p>first steps to prove that you are ready to begin</p></li>
-<li><p>summary of where and how Python is being used in EOAS courses.</p></li>
-<li><p>A pointer to the Python section of our references page</p></li>
+<li><p>DSCI 100 (some sections use Pyton, some use “R”), Introduction to Data Science (in the Statistics Department)</p></li>
+<li><p>EOSC 211, Computer Methods in Earth, Ocean and Atmospheric Sciences (in the Dep’t of Earth Ocean and Atmospheric Sciences)</p></li>
+<li><p>An opensource textbook, adapted for  UBC coures EOSC 211 and ATSC 301, is <a class="reference external" href="https://problemsolvingwithpython.com/">Problem Solving with Python</a> by by Dr. <a class="reference external" href="https://github.com/ProfessorKazarinoff">Peter Kazarinof</a>.</p></li>
+<li><p>Another free texbook worth considering is <a class="reference external" href="https://greenteapress.com/wp/think-python-2e/">Think Python, 2nd edition</a>.</p></li>
+<li><p>If you have learned some (even a little) Python and want to check those skills, see our <a class="reference internal" href="SkillsCheck-solns.html"><span class="doc std std-doc">Python Skills Check</span></a> page.</p></li>
+<li><p>The <a class="reference external" href="https://www.w3schools.com/">W3schools tutorials</a> (especially the <a class="reference external" href="https://www.w3schools.com/python/default.asp">Learn Python</a> tutorial) are an effective way to learn from scratch or to remind yourself of details easily forgotten.</p></li>
+<li><p>And many more … the variety and quality of Python learning materials is huge.</p></li>
 </ul>
-<p><span style="color:red">Details to be completed.</span></p>
-<div class="toctree-wrapper compound">
-</div>
+</section>
+</section>
+<section id="what-is-a-jupyter-notebook">
+<h2>What is a Jupyter Notebook<a class="headerlink" href="#what-is-a-jupyter-notebook" title="Permalink to this headline">#</a></h2>
+<p><strong>Jupyter Notebooks</strong> is an IDE, or integrated development environment which have gained popularity amoung the science and educational communities for processing data, creating scientific figures, solving numerical equations, and learning or sharing code. In a <a class="reference external" href="https://www.jupyter.org/">Jupyter Notebook</a>, code is created in “cells”, each of which can be edited and run independently. Later cells in a Notebook normally depend on results of earlier cells, but each cell can be modified and run so long as cells above have been successfully run first. Rich documentation (including equations) is commonly included as independent cells written in a standard MarkDown text-based language.</p>
+<section id="if-you-are-using-notebooks-via-a-jupyter-hub">
+<h3>If you are using notebooks via a Jupyter Hub<a class="headerlink" href="#if-you-are-using-notebooks-via-a-jupyter-hub" title="Permalink to this headline">#</a></h3>
+<p>What is a Jupyter Hub? It is a computer serving or delivering Jupyter Notebooks to you via an internet connection. This way you can use Jupyter Notebooks without installing any software on your on computer.</p>
+<p>Information about the UBC Open JupyterHub can be found [here}(<a class="reference external" href="https://lthub.ubc.ca/guides/jupyterhub-instructor-guide/">https://lthub.ubc.ca/guides/jupyterhub-instructor-guide/</a>). That page mainly targets instructors wanting to incorporate Jupyter Notebooks into courses they teach or their research projects, but the information is public.</p>
+<blockquote>
+<div><p>For an introduction to actually using the open UBC Jupyter hub see this PDF page called <strong><a href="files\jupyter_open_quickstart.pdf">UBC’s Open Jupyter</a></strong>.</p>
+</div></blockquote>
+</section>
+<section id="installing-jupyter-notebooks-on-a-personal-computer">
+<h3>Installing Jupyter Notebooks on a personal computer<a class="headerlink" href="#installing-jupyter-notebooks-on-a-personal-computer" title="Permalink to this headline">#</a></h3>
+<p>This is the sequence only; details are given on pages linked after step 4.</p>
+<ol class="simple">
+<li><p>Be sure you can navigate your computer’s folders using PowerShell (on <strong>Windows</strong>) or Bash (on <strong>Mac</strong>).</p></li>
+<li><p>Install the open-source package-management system and environment-management system called <code class="docutils literal notranslate"><span class="pre">miniconda</span></code>.</p></li>
+<li><p>Install the Jupyter software.</p></li>
+<li><p>Run the Jupyter Notebook program to edit and execute “Jupter Notebooks” in your default browser.</p></li>
+</ol>
+<blockquote>
+<div><p>If you work on a <strong>Windows</strong> computer, use <a href="files\python-setup_windows_short_2022.pdf">this PDF sheet of instructions</a>. When asked to fetch “lock” file, download using this link: <a href="files\conda-win-64.lock">conda-win-64.lock</a>.</p>
+</div></blockquote>
+<blockquote>
+<div><p>If you work on a <strong>Macintosh (Apple)</strong> computer, <a href="files\python-setup_macos_short_2022.pdf">this PDF sheet of instructions</a>. When asked to fetch a “lock” file, download using one of these links: <a href="files\conda-osx-64.lock">conda-osx-64.lock</a> or <a href="files\conda-osx-arms64.lock">conda-osx-arms64.lock</a>.</p>
+</div></blockquote>
+</section>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -669,11 +731,11 @@ title="Print to PDF"
                 
     <!-- Previous / next buttons -->
 <div class='prev-next-area'>
-    <a class='left-prev' id="prev-link" href="cloud-servers.html" title="previous page">
+    <a class='left-prev' id="prev-link" href="dashboards-howto.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">Servers and hubs</p>
+            <p class="prev-next-title">Developing dashboards</p>
         </div>
     </a>
     <a class='right-next' id="next-link" href="SkillsCheck-solns.html" title="next page">

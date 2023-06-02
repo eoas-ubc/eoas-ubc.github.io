@@ -4,7 +4,7 @@
 
 ## Dashboards developed as part of OCESE
 
-There is a [separate [list of dashboards](dashboards.md) generated during the OCESE project.
+There is a separate [list of dashboards](dashboards.md) generated during the OCESE project.
 
 ## Environment for develpment
 
@@ -31,11 +31,15 @@ Ideally these kinds of learning resources should include "think aloud" sessions 
 
 ### To run only on your own computer
 
-This choice makes sense when you are experimenting with the dashboard or planning (if only temporarily) on using it for presentations for a class or presentation.
+This choice makes sense when you are experimenting with the dashboard or planning (if only temporarily) to use it for presentations in a class or presentation.
 
-### Deploying to a suitable Hub
+TO BE COMPLETED
 
-This will be required if more than 5-10 people might use the dashboard at once. This is non-trivial, and details will be documented later, hopefully during summer 2022. For now, if you need to see the repository used for deploying our collection, see scripts and Docker files at the [addon_containers](https://github.com/phaustin/addon_containers) repo.
+### Deploying to a suitable Server
+
+This will be required if more than 5-10 people might use the dashboard at once. This is non-trivial, and details will be documented later, hopefully during summer 2022. For now, if you need to see the repository used for deploying our collection, see scripts and Docker files at the [addon_containers](https://github.com/phaustin/addon_containers) repo. 
+
+DO BE COMPLETED
 
 ## Some "costs" of developing dashboard for teaching/learning
 

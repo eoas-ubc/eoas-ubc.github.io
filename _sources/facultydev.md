@@ -1,4 +1,6 @@
-# Training for Faculty
+# Training for Faculty and students
+
+This section discussed opportunities, challenges and successes related to providing training for faculty and student project contributors. Aspects addressed include programming, designing teaching materials, pedagogy, developing "soft" or work-related skills, adapting existing expertise for a new setting, incorporating opensource resources and practices into teaching and research, and others. 
 
 ## 1. Introduction
 
@@ -40,7 +42,7 @@ All other courses could conceivably benefit from interactive concept simulations
 
 ## 3. Lessons to be conveyed
 
-Faculty Pro-D in the form of docs, guidelines, tutorials are emerging from all project threads, including DSCI100, EOSC211, upper level courses (ATSC301, EOSC354, EOSC410, & others), and dashboard use in courses that do not have students writing code.
+Faculty and student Pro-D in the form of docs, guidelines, tutorials are emerging from all project threads, including DSCI100, EOSC211, upper level courses (ATSC301, EOSC354, EOSC410, & others), and dashboard use in courses that do not have students writing code.
 
 Which procedures, resources or teaching tactics are more appropriate for workshops? Which for one-on-one support? Who is most appropriate for carrying out that kind of support?
 
