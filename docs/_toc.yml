@@ -41,6 +41,7 @@ parts:
   - file: dashboards
     title: Dashboards
   - file: facultydev
+    title: Training faculty & students
   - file: eval-wisdom
     title: Project evaluation
     sections:
@@ -56,30 +57,12 @@ parts:
     title: Open Ed. Resources
 - caption: How-to Guides
   chapters:
-  - file: git-workflows
   - file: dashboards-howto
-  - file: dashboards-deploy
-    title: Dashboard deployment >>
-    sections:
-    - file: dashboards-local
-      title: Deploying locally
-    - file: dashboards-server
-      title: Deploying to a scalable server
-  - file: jnotebooks-startup
-    title: Jupyter NB startup >>
-    sections:
-    - file: jnb-startup-win.md
-      title: Windows 10/11
-    - file: jnb-startup-macos.md
-      title: Mac OS
-    - file: jupyter-open-quickstart.md
-      title: UBC's Open Jupyter
-  - file: cloud-servers.md
   - file: python-startup
-    title: Python startup >>
-    sections:
-    - file: SkillsCheck-solns.ipynb
-      title: Check your Python skills
+    title: Python/Jupyter startup
+  - file: SkillsCheck-solns.ipynb
+    title: Python Skills Check
+  - file: cloud-servers.md
   - file: jupyterbooks
   - file: tools
     title: Other software tools
@@ -91,9 +74,9 @@ parts:
   - file: tut-programming-environs
     title: Using environments
   - file: tut-git-intro
+  - file: git-workflows
   - file: tut-pullrequest
     title: Pull Request Workflow
-  - file: tut-jhubs
   - file: tut-teachwith-jnbs
     title: Teaching with Jupyter NBs
   - file: tut-teachwith-dashboards

@@ -14,6 +14,8 @@ kernelspec:
   name: python3
 ---
 
+Depricated - see "not used" folder.
+
 # Jupyterhub Tutorial
 
 ## Learning Objectives
