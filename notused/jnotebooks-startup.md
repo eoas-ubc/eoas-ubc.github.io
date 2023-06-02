@@ -3,14 +3,16 @@
 These guidelines will help you to set up your local computer from scratch, so that you can start **Jupyter Notebooks** from the command line, then run or edit code or comments in any `*.ipynb` file.
 
 ## What are Jupyter Notebooks
-**Jupyter Notebooks** are an IDE, or integrated development environment which have gained popularity amoung the science and educational communities for processing data, creating scientific figures, solving numerical equations, and learning or sharing code. In a Jupyter Notebook, code is created in "cells", each of which can be edited and run independently. Later cells in a Notebook normally depend on results of earlier cells, but each cell can be modified and run so long as cells above have been successfully run first. Rich documentation (including equations) is commonly included as independent cells written in a standard MarkDown text-based language.
+**Jupyter Notebooks** is an IDE, or integrated development environment which have gained popularity amoung the science and educational communities for processing data, creating scientific figures, solving numerical equations, and learning or sharing code. In a [Jupyter Notebook](https://www.jupyter.org/), code is created in "cells", each of which can be edited and run independently. Later cells in a Notebook normally depend on results of earlier cells, but each cell can be modified and run so long as cells above have been successfully run first. Rich documentation (including equations) is commonly included as independent cells written in a standard MarkDown text-based language.
 
-## If you are using notebooks via a Jupyter Hub
+### If you are using notebooks via a Jupyter Hub
 What is a Jupyter Hub? It is a computer serving or delivering Jupyter Notebooks to you via an internet connection. This way you can use Jupyter Notebooks without installing any software on your on computer.
 
-> See this PDF page called **<a href="files\jupyter_open_quickstart.pdf">UBC's Open Jupyter</a>** for an introduction to UBC's Jupyter hub, accessible to anyone with a UBC Campus Wide Login or CWL account.
+Information about the UBC Open JupyterHub can be found [here}(https://lthub.ubc.ca/guides/jupyterhub-instructor-guide/). That page mainly targets instructors wanting to incorporate Jupyter Notebooks into courses they teach or their research projects, but the information is public.
 
-## Installing Jupyter Notebooks on a personal computer
+> For an introduction to actually using the open UBC Jupyter hub see this PDF page called **<a href="files\jupyter_open_quickstart.pdf">UBC's Open Jupyter</a>**.
+
+### Installing Jupyter Notebooks on a personal computer
 
 This is the sequence only; details are given on pages linked after step 4.
 

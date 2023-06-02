@@ -58,13 +58,10 @@ parts:
 - caption: How-to Guides
   chapters:
   - file: dashboards-howto
-  - file: jnotebooks-startup
-    title: Jupyter NB startup
   - file: python-startup
-    title: Python startup >>
-    sections:
-    - file: SkillsCheck-solns.ipynb
-      title: Check your Python skills
+    title: Python/Jupyter startup
+  - file: SkillsCheck-solns.ipynb
+    title: Python Skills Check
   - file: cloud-servers.md
   - file: jupyterbooks
   - file: tools
