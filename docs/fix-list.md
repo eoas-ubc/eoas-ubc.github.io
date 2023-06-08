@@ -10,8 +10,7 @@ See also **[issues](https://github.com/eoas-ubc/eoas-ubc.github.io/issues)** at 
    * TLEF poster,
    * EER poster
 * Do tutorials need to be more like precedent, i.e. modular such as [Helsinki "short course"](https://autogis-site.readthedocs.io/en/latest/index.html), [Project Pythia](https://projectpythia.org/), or Atlasian tutorials, etc.? In fact, some may best be referenced to these types of existing ones tutorials?
-* Merge *two github pages*. They could be rewritten as summaries, perhaps based on (or simply pointing to?) the [Atlasian tutorials](https://www.atlassian.com/git/tutorials/comparing-workflows). Maybe also refer to [Ch.12 of the DSCI100 text](https://python.datasciencebook.ca/version-control.html) (still wiht R as context, but updates in progress).
-* Merge two environments pages.
+* Merge *three github pages*. They could be rewritten as summaries, perhaps based on (or simply pointing to?) the [Atlasian tutorials](https://www.atlassian.com/git/tutorials/comparing-workflows). Maybe also refer to [Ch.12 of the DSCI100 text](https://python.datasciencebook.ca/version-control.html) (still wiht R as context, but updates in progress).
 * Review and update of [teaching with Jupyter NBs](tut-teachwith-jnbs.md).
 * Jupyter startup: consider material from eosc442 and dsci100? How does this compare to docs used in EOSC 211? Should [Project Pythia's foundations book](https://foundations.projectpythia.org/landing-page.html) be used instead?
 * *Conda & environments* and *Using environments* need rationalizing and updating.
@@ -55,3 +54,4 @@ See also **[issues](https://github.com/eoas-ubc/eoas-ubc.github.io/issues)** at 
 * Project outcomes summary (Executive summary) needs reconfiguring more like the poster and showcase outline. Priorities are not efficient, and the whole thing is long winded.
 * Merge "dashboard deployment" onto "Developing dashboards".
 * merged Python startup and jupyternotebook startup. Python needs no "startup" but it can reference a few courses and resources.
+* Upgrade and 'rationalize' the two environments pages.

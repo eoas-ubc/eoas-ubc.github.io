@@ -70,9 +70,10 @@ parts:
   chapters:
   - file: tut-commandline
   - file: tut-conda_environs
-    title: Environments; Conda, Mamba, etc.
-  - file: tut-programming-environs
-    title: Using environments
+    title: Environments
+    sections:
+    - file: tut-programming-environs
+      title: Using environs; an e.g.
   - file: tut-git-intro
   - file: git-workflows
   - file: tut-pullrequest

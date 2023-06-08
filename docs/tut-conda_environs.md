@@ -1,23 +1,18 @@
 # Environments: Conda, Mamba, and all that
 
-Need to add:
-
-* information about conda-lock files: why, when, how.
-* mention other management tools - especially Mamba, including pros/cons/why
-* Note from PA (23/03/07): re. mamba -- the original mamba author (great name: Wolf Volprecht) is leading  a new startup that calculates conda-lock files and makes them available over the web.  So our workflow in the future might be something like (see [see https://prefix.dev](https://prefix.dev)):
-  1) install mamba from mambaforge
-  2) create a new environment by typing "mamba env create windows_url"  or macos_url
-* combine this and the other [environment page](tut-programming-environs.md).
+>**Note:** If working in a shell (i.e. at the command line) is new or confusing, check out the [Command line & Shells" tutorial](tut-commandline.md).
 
 ## What are environments and why do we need them?
 
-Scientific programming / data science profits greatly from the vast array of Python libraries. This complexity (or "the deep tree of dependencies") requires management. Virtual environments, of which conda environments are one implementation, make this possible. In other words, (Conda) environments enable the easy definition of a complete software environment to run a certain project or application.
+(Adapted from a [short video lecture](https://vxuni.com/lectures/conda-environments/).)
+
+Scientific programming & data science profit greatly from the vast array of Python libraries. But libraries are not usually independent; they depend upon other libraries, creating a sometimes complex "the deep tree of dependencies". Therefore, libraries require management. Virtual environments, of which conda environments are one implementation, make this possible. In other words, (Conda) environments enable the easy definition of a complete software environment with all the libraries and their interdepnedencies, necessary for running a certain project or application.
 
 In practice, we use "environments" to keep software development and applications reproducible and usable across platforms and between different engineering and client teams. Environments (i.e. environment specifications) define all the pieces or packages that are needed for a program or set of programs to function properly.
 
-(Adapted from a [short video lecture](https://vxuni.com/lectures/conda-environments/). Also, [here](https://protostar.space/why-you-need-python-environments-and-how-to-manage-them-with-conda) is an easy-to-read reference about "why" environments.)
+For a little more detail, see this oldish (2018) but still relevant and easy-to-read explanation: [Why you need Python environments and how to manage them with Conda](https://protostar.space/why-you-need-python-environments-and-how-to-manage-them-with-conda).
 
-## Pip vs Conda
+## Pip vs Conda vs Mamba
 
 Adapted from a short article at [Medium](https://medium.com/analytics-vidhya/understand-conda-and-pip-9e5c67da47cc).
 
@@ -33,6 +28,14 @@ Conda is an open source package management system and environment management sys
 
 * [Conda documentation](https://docs.conda.io/projects/conda/en/4.6.1/index.html) version 4.6.1 (Oct 2020).
 * [Conda Cheat sheet](https://docs.conda.io/projects/conda/en/4.6.0/_downloads/52a95608c49671267e40c689e0bc00ca/conda-cheatsheet.pdf) (PDF).
+
+### Mamba
+
+Mamba is a package manager that is fully compatible with Conda but is supposed to be significantly faster. All commands and actions are the same as conda, so learning one will mean you can use the other easily. See [Mamba documentation](https://mamba.readthedocs.io) for more details. A sort of "superset" of Mamba that is often mentioned is "[Mamba-forge](https://github.com/conda-forge/miniforge#mambaforge)", which is really just an easily installed package containing the Mamba Package Manager along with some pre-configured components. Yes it's all a bit confusing; the article [Managing Scientific Python environments using Conda, Mamba and friends](https://focalplane.biologists.com/2022/12/08/managing-scientific-python-environments-using-conda-mamba-and-friends/) (Dec 2022) is a well-written introduction with guidelines, plus a few notes about how things can go wrong.
+
+>**Note:** Any set of instructions referring to Conda will be essentially identical if Mamba is used as the package manager instead of Conda.
+
+>**Also Note:** The pace of change (usually = improvement) is so rapid that best practices are already out of date as soon as documentation is produced. For example, there is an emerging effort to simplify package management that can be explored (as of June 2023) starting at the [Prefix-dev](https://prefix.devp) website and their [documentation pages](https://prefix.devp).
 
 ### Installing Conda
 
@@ -54,13 +57,20 @@ Verify successful installation by typeing `conda info` at the prompt.
 
 From a [short set of notes](https://vxuni.com/lectures/conda-environments/) with accompanying video (which is a bit "quick", but is cmd line focused and explains where environments are built).
 
-* Usually, a file called environment.yml is built by hand to specify packages needed for an environment. 
+* Usually, a file called environment.yml is built by hand to specify packages needed for an environment.
 * Alternatively, command "conda env export" will build a list with precise packages and their versions. This is very exact.
-* If there is an environment.yml  file in your pwd <em><span style="color:green">I found the "in your pwd" a bit confusing since pwd is a command, but I understand that's it's trying to check if there's an environment.yml file in the project directory. Maybe it would be more clear to replace "pwd" with "directory" or "project"?</span></em>, then command `conda create` generates that environment <em><span style="color:green">I also had troubles understanding this because I interpreted it as being able to create a conda environment just be typing `conda create` by itself if there was an conda environment file called environment.yml in your project. However, typing `conda create` with an environment.yml file in the current directory returns a `CondaValueError: The target prefix is the base prefix. Aborting.` error</span></em>. 
-  * The .yml file could have a different name, in which case these commands must specify that name using the `-f` parameter for "file". i.e.: `conda env create -f envname.yml`. 
-* After it is ready, `conda activate` will set the environment ready to use (or add the "name.yml" file's name if it is not environment.yml). <em><span style="color:green">For me, `conda activate` only activates the base conda environment that was initialized when miniconda was installed for me. To activate the environment, I do one of three things. (1) I use the command specified in the installation log in the shell window from when conda was creating the environment. (2) Open the environment file, I find the environment name by looking for the the "name" key in the file. (3) Type `conda info --envs` in my shell to list out all my conda environments.</span></em>
-* Alterantive to create: use `conda env update`. This automatically updates the environment specified in that file if one already exists, or creates it if it doesn't. <em><span style="color:green">Precondition for this command is that the environment file name is "environment.yml". If the environment file name isn't "environment.yml", use `conda env update --file envname.yml.</span></em>
+* Conda's (or mamba's) `create` command is used to generate a new environment.
+* The "activate" commmand is used to make an existing environment the "current" environment so code you want to run now will have all the necessary libraries and dependencies in place.
+* It is common to have these necessary components of an environment specified in an environment file. This is often called `environment.yml` but could have any name.
+* To make a new environment based on such a file, the command line instruction is `conda env create -f anyname.yml`.
+* To apply the correct parameters with the `create` command, see the documentation, or a cheat sheet of conda instructions like [this one here](https://docs.conda.io/projects/conda/en/4.6.0/_downloads/52a95608c49671267e40c689e0bc00ca/conda-cheatsheet.pdf).
+* Then, to make use of this enviornment, the conda command `activate` will set the environment ready to use. Again, to apply the correct parameters with the `activate` command, see the documentation, or a cheat sheet of conda instructions like [this one here](https://docs.conda.io/projects/conda/en/4.6.0/_downloads/52a95608c49671267e40c689e0bc00ca/conda-cheatsheet.pdf).
+* Your environment can be updated with latest libraries using the command `conda env update --file envname.yml` (or if the environment file is called "*environment.yml*", you can leave off the `--file ...` parameter).
 
-```bash
+## Conda Lock files
 
-```
+Use of so-called [Conda lock files](https://pythonspeed.com/articles/conda-dependency-management/) enables installations that are more reliable and that don't require much understanding of command lines, packages, environments and so on.
+
+Details are not included here (yet) but conda-lock files are used for installations referenced on our [Python/Jupyter Startup page](python-startup.md).
+
+*(Note from PA (23/03/07): re. mamba -- the original mamba author is leading  a new startup that calculates conda-lock files and makes them available over the web.  So an optimal workflow in the future might look something like what is shown at [https://prefix.dev](https://prefix.dev))*
