@@ -44,13 +44,6 @@ parts:
     title: Training faculty & students
   - file: eval-wisdom
     title: Project evaluation
-    sections:
-    - file: eval-coursetransforms
-      title: Course transformations
-    - file: eval-dashbds
-      title: Dashboards
-    - file: project-data
-      title: Project Data
   - file: presentations
     title: Presentations
   - file: oer
@@ -62,7 +55,7 @@ parts:
     title: Python/Jupyter startup
   - file: SkillsCheck-solns.ipynb
     title: Python Skills Check
-  - file: cloud-servers.md
+  - file: cloud-servers
   - file: jupyterbooks
   - file: tools
     title: Other software tools
@@ -70,13 +63,19 @@ parts:
   chapters:
   - file: tut-commandline
   - file: tut-conda_environs
-    title: Environments; Conda, Mamba, etc.
-  - file: tut-programming-environs
-    title: Using environments
-  - file: tut-git-intro
-  - file: git-workflows
-  - file: tut-pullrequest
-    title: Pull Request Workflow
+    title: Environments
+    sections:
+    - file: tut-programming-environs
+      title: Using environs; an e.g.
+  - file: tut-git-github
+    title: Git and Github
+    sections:
+    - file: tut-git-intro
+      title: Intro. to Git
+    - file: tut-github
+      title: GitHub workflows
+    - file: tut-gitrefs
+      title: Git/Github resources
   - file: tut-teachwith-jnbs
     title: Teaching with Jupyter NBs
   - file: tut-teachwith-dashboards
