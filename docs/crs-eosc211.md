@@ -28,7 +28,6 @@ Five project goals are listed with summaries of actions taken for each.
    * The second iteration reverted to use of UBC's [canvas](https://about.canvas.ubc.ca/) Learning management system for delivery and submission of lecture materials, assignments, assessments, and other course content.
 5. **Documentation**: Prepare documentation for procedures that teachers and students need for using open source resources, Jupyter hubs, installing Python, and preparing assessments for sem-automated grading.
    * Getting-started instructions for students to install Python and Jupyter Notebooks on Windows or Mac laptops. This was done with 90 students in one  1.5-hour lecture session.
-   * Also a [Jupyter Hub tutorial](tut-jhubs.md) for EOSC211 students, but easily generalized. This also serves as the first introduction to coding with Python.
 
 ## Instructors' experiences
 

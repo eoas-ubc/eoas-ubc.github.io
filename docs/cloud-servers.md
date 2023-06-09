@@ -1,6 +1,6 @@
 # Servers and hubs
 
-This page to discuss options for Jupyter hubs and dashboard servers on local, institutional or cloud servers. For deploying dashboards, see the [Dashboard deployment](dashboards-deploy.md) pages. For using Jupyter hubs see [Jupyter hub tutorials](https://eoas-ubc.github.io/tut-jhubs.html). 
+This page to discuss options for Jupyter hubs and dashboard servers on local, institutional or cloud servers. For deploying dashboards, see the [Dashboard HowTo](dashboards-howto.md) pages. For using Jupyter hubs see [Jupyter hub tutorials](https://eoas-ubc.github.io/tut-jhubs.html). 
 
 Four targets for cloud computing services are:
 

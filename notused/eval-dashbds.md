@@ -22,8 +22,8 @@ Feedback data are included on individual pages summarizing OCESE results for eac
 ## Lessons learned
 
 1. Instructors need time to explore, play, and iterate on learning activities.
-1. Assignments need to establish expectations or purposes. Add a single learning goal (or two if it’s a longer assignment) to the assignment (not directly on the dashboard.
-1. See separate pages with guidelines for [dashboard development](dashboards-howto.md) and [dashboard deployment](dashboards-deploy.md).
+1. Assignments need to establish expectations or purposes. Add a single learning goal (or two if it’s a longer assignment) to the assignment, but not directly on the dashboard.
+1. See guidelines for dashboard development and deployment on our [dashboards](dashboards-howto.md) page.
 1. Involve instructors in the design cycle as early as possible.
 1. If they are not prepared to run code themselves, mount and demo early versions for them to run so they can be involved and provide feedback.
 1. Agree to specific milestones with short (a week or two) small-scale deliverables and corresponding meetings. Otherwise the new ideas quickly end up on the back burner.

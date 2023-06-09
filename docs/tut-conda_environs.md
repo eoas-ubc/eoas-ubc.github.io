@@ -39,9 +39,9 @@ Mamba is a package manager that is fully compatible with Conda but is supposed t
 
 ### Installing Conda
 
-* Anaconda is large and very "complete". Miniconda is small and usually adequate. 
+* Anaconda is large and very "complete". Miniconda is small and usually adequate.
   * Install [miniconda via conda installation docs](https://docs.conda.io/projects/conda/en/latest/user-guide/install/index.html).
-  * Alsterantive installation instructions from P. Austin's [Numerical methods course](https://phaustin.github.io/numeric/doc_notebooks/course_bootstrap/installing_jupytext.html).
+  * Alternative installation instructions from P. Austin's [Numerical methods course](https://phaustin.github.io/numeric/doc_notebooks/course_bootstrap/installing_jupytext.html).
 * For the environment, a reasonable starting point is `numeric.yml` from P. Austin's course.
   * Here is a [direct link to the yml file](https://github.com/phaustin/numeric_students/blob/downloads/utils/numeric.yml).
   * Put it somewhere (eg. A repos folder), cd to that folder then run:
@@ -51,7 +51,11 @@ Mamba is a package manager that is fully compatible with Conda but is supposed t
     conda activate numeric
 ```
 
-Verify successful installation by typeing `conda info` at the prompt.
+Verify successful installation by typing `conda info` at the prompt.
+
+### Installing Mamba
+
+Basically - follow directions at the Mamba documentation's [install page](https://mamba.readthedocs.io/en/latest/installation.html).
 
 ## Specifying the environment: the `*.yml` file
 
