@@ -280,32 +280,10 @@ const thebe_selector_output = ".output, .cell_output"
    Training faculty &amp; students
   </a>
  </li>
- <li class="toctree-l1 has-children">
+ <li class="toctree-l1">
   <a class="reference internal" href="eval-wisdom.html">
    Project evaluation
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
-  <label for="toctree-checkbox-3">
-   <i class="fas fa-chevron-down">
-   </i>
-  </label>
-  <ul>
-   <li class="toctree-l2">
-    <a class="reference internal" href="eval-coursetransforms.html">
-     Course transformations
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="eval-dashbds.html">
-     Dashboards
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="project-data.html">
-     Project Data
-    </a>
-   </li>
-  </ul>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="presentations.html">
@@ -366,30 +344,49 @@ const thebe_selector_output = ".output, .cell_output"
    Command line &amp; Shells
   </a>
  </li>
- <li class="toctree-l1">
+ <li class="toctree-l1 has-children">
   <a class="reference internal" href="tut-conda_environs.html">
-   Environments; Conda, Mamba, etc.
+   Environments
   </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="tut-programming-environs.html">
+     Using environs; an e.g.
+    </a>
+   </li>
+  </ul>
  </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="tut-programming-environs.html">
-   Using environments
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="tut-git-github.html">
+   Git and Github
   </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="tut-git-intro.html">
-   Git Introduction
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="git-workflows.html">
-   GitHub and Git Workflows
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="tut-pullrequest.html">
-   Pull Request Workflow
-  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+  <label for="toctree-checkbox-4">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="tut-git-intro.html">
+     Intro. to Git
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="tut-github.html">
+     GitHub workflows
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="tut-gitrefs.html">
+     Git/Github resources
+    </a>
+   </li>
+  </ul>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="tut-teachwith-jnbs.html">
@@ -581,16 +578,6 @@ title="Print to PDF"
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#instructors-experiences">
-   Instructors’ experiences
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#students-experiences">
-   Students’ experiences
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#costs">
    Costs
   </a>
@@ -635,16 +622,6 @@ title="Print to PDF"
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#instructors-experiences">
-   Instructors’ experiences
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#students-experiences">
-   Students’ experiences
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#costs">
    Costs
   </a>
@@ -677,35 +654,29 @@ title="Print to PDF"
 </section>
 <section id="ocese-project-objectives">
 <h2>OCESE project objectives<a class="headerlink" href="#ocese-project-objectives" title="Permalink to this headline">#</a></h2>
-<p>Apply lessons learned prior to start of OCESE by the instructor P. Austin, who is also lead and principle developer for OCESE.</p>
+<p>Apply lessons learned prior to start of OCESE by the instructor Prof. Phil Austin, who is also principle developer for OCESE.</p>
 </section>
 <section id="actions-taken">
 <h2>Actions taken<a class="headerlink" href="#actions-taken" title="Permalink to this headline">#</a></h2>
-<p>All resources and teaching tactics listed here were introduced by Dr. P. Austin prior to OCESE project as his “normal” approach to teaching this course. Experiences preparing for, and teaching this course have served as precedent for actions and decisions throughout the OCESE project. All resources are open education resources (OER) unless indicated otherwise.</p>
+<p>All resources and teaching tactics were introduced by Prof. Austin prior to the OCESE project as his “normal” approach to teaching this course and preparing its materials. These practices have served as precedent for actions and decisions throughout the OCESE project. All resources are open education resources (OER) unless indicated otherwise.</p>
 <ul class="simple">
-<li><p>JNBs and Python programming are integral to learning throughout.</p></li>
-<li><p>Jupyter books about Python, programming and course content. Some are used or adapted from open sources, others built by the instructor.</p></li>
-<li><p>Students gain initial experiences with opensource practices (GitHub).</p></li>
+<li><p>Python programming and Jupyter Notebooks are integral to learning throughout.</p></li>
+<li><p>Principle resources include Jupyter books about Python, programming and course content. Some are used or adapted from open sources, others built by the instructor.</p></li>
+<li><p>Students gain initial experiences with opensource version control practices (GitHub).</p></li>
 <li><p>Questions or question sets are managed via the Canavas API.</p></li>
-<li><p>Address challenges related to having students use opensource - and sometimes very large - datasets (eg satellite imagery).</p></li>
+<li><p>The challenges related to having students use opensource - and sometimes very large - datasets (eg satellite imagery) are being explored.</p></li>
 </ul>
-</section>
-<section id="instructors-experiences">
-<h2>Instructors’ experiences<a class="headerlink" href="#instructors-experiences" title="Permalink to this headline">#</a></h2>
-</section>
-<section id="students-experiences">
-<h2>Students’ experiences<a class="headerlink" href="#students-experiences" title="Permalink to this headline">#</a></h2>
 </section>
 <section id="costs">
 <h2>Costs<a class="headerlink" href="#costs" title="Permalink to this headline">#</a></h2>
-<p>Running this course assumes significant experience with Python, Jupyter notebooks, Jupyter Books and opensource (GitHub) practices.</p>
+<p>Running this course assumes the instructor has significant experience with Python, Jupyter notebooks, Jupyter Books and GitHub practices.</p>
 <p>The OCESE project did not explicitly improve aspects of ATSC301 but it has served an important role as precedent for many resources and teaching or learning tactics introduced in other courses.</p>
-<p>The “costs” have all been instructor time to maintain the existing resources and learning activities, and to document them sufficiently to transfer the course to a new instructor in the future.</p>
-<p>A custom Jupyter hub is currently required because “standard” hubs provided at open.jupyter.ubc are not flexible enough to define and update environments regularly during the course, and they are unable to handle large remote sensing datasets reqauired by course.</p>
+<p>The “costs” have mostly been instructor time to maintain the existing resources and learning activities, and to document them sufficiently to transfer the course to a new instructor in the future. Some hired student time has been spent exploring ways of managing Canvas questions and question banks from Markdown files, via the Canvas API.</p>
+<p>A custom Jupyter hub is still (2023) required because “standard” hubs provided at open.jupyter.ubc are not flexible enough to define and update environments regularly during the course, and they are unable to handle large remote sensing datasets reqauired by course.</p>
 </section>
 <section id="lessons-learned">
 <h2>Lessons Learned<a class="headerlink" href="#lessons-learned" title="Permalink to this headline">#</a></h2>
-<p>It is beneficial to including explicit learning goals associated with the practicalities of programing and working in the open source domain.</p>
+<p>While the course is about remote sensing, a significant expectation is that students will develop their programing skills. Therefore, it is important to including explicit learning goals associated with the practicalities of programing and working in the open source domain.</p>
 <p>Optimal solutions are still being established for a Jupyter hub that can efficiently sustain the requirements for flexibility, and manage access to large data sets.</p>
 </section>
 </section>

@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>A Pull Request Workflow tutorial &#8212; OCESE Documentation</title>
+    <title>Version control and collaboration; Git &amp; GitHub &#8212; OCESE Documentation</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -52,8 +52,8 @@ const thebe_selector_output = ".output, .cell_output"
     <script async="async" src="_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Teaching and learning with Jupyter Notebooks" href="tut-teachwith-jnbs.html" />
-    <link rel="prev" title="GitHub and Git Workflows" href="git-workflows.html" />
+    <link rel="next" title="Version control and Git" href="tut-git-intro.html" />
+    <link rel="prev" title="Using environments; an example" href="tut-programming-environs.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -280,32 +280,10 @@ const thebe_selector_output = ".output, .cell_output"
    Training faculty &amp; students
   </a>
  </li>
- <li class="toctree-l1 has-children">
+ <li class="toctree-l1">
   <a class="reference internal" href="eval-wisdom.html">
    Project evaluation
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
-  <label for="toctree-checkbox-3">
-   <i class="fas fa-chevron-down">
-   </i>
-  </label>
-  <ul>
-   <li class="toctree-l2">
-    <a class="reference internal" href="eval-coursetransforms.html">
-     Course transformations
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="eval-dashbds.html">
-     Dashboards
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="project-data.html">
-     Project Data
-    </a>
-   </li>
-  </ul>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="presentations.html">
@@ -366,30 +344,49 @@ const thebe_selector_output = ".output, .cell_output"
    Command line &amp; Shells
   </a>
  </li>
- <li class="toctree-l1">
+ <li class="toctree-l1 has-children">
   <a class="reference internal" href="tut-conda_environs.html">
-   Environments; Conda, Mamba, etc.
+   Environments
   </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="tut-programming-environs.html">
+     Using environs; an e.g.
+    </a>
+   </li>
+  </ul>
  </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="tut-programming-environs.html">
-   Using environments
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="tut-git-intro.html">
-   Git Introduction
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="git-workflows.html">
-   GitHub and Git Workflows
-  </a>
- </li>
- <li class="toctree-l1 current active">
+ <li class="toctree-l1 current active has-children">
   <a class="current reference internal" href="#">
-   Pull Request Workflow
+   Git and Github
   </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+  <label for="toctree-checkbox-4">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="tut-git-intro.html">
+     Intro. to Git
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="tut-github.html">
+     GitHub workflows
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="tut-gitrefs.html">
+     Git/Github resources
+    </a>
+   </li>
+  </ul>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="tut-teachwith-jnbs.html">
@@ -506,7 +503,7 @@ title="Fullscreen mode"
   <div class="menu-dropdown__content">
     <ul>
       <li>
-        <a href="_sources/tut-pullrequest.md"
+        <a href="_sources/tut-git-github.md"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -566,71 +563,19 @@ title="Print to PDF"
     <nav id="bd-toc-nav" aria-label="Page">
         <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#creating-a-fork">
-   Creating a Fork
+  <a class="reference internal nav-link" href="#why-git">
+   Why Git
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#keeping-your-fork-up-to-date">
-   Keeping Your Fork Up to Date
+  <a class="reference internal nav-link" href="#why-github">
+   Why GitHub
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#doing-your-work">
-   Doing Your Work
+  <a class="reference internal nav-link" href="#introductory-pages-about-git-and-github">
+   Introductory pages about Git and Github
   </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#create-a-branch">
-     Create a Branch
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#submitting-a-pull-request">
-   Submitting a Pull Request
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#cleaning-up-your-work">
-     Cleaning Up Your Work
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#submitting">
-     Submitting
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#managing-upstream-repos-accepting-merging-pull-requests">
-   Managing upstream repos: accepting / merging pull requests
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#copyright">
-     <strong>
-      Copyright
-     </strong>
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#additional-reading">
-     <strong>
-      Additional Reading
-     </strong>
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#sources">
-     <strong>
-      Sources
-     </strong>
-    </a>
-   </li>
-  </ul>
  </li>
 </ul>
 
@@ -641,7 +586,7 @@ title="Print to PDF"
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>A Pull Request Workflow tutorial</h1>
+                <h1>Version control and collaboration; Git & GitHub</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -652,71 +597,19 @@ title="Print to PDF"
                         <nav aria-label="Page">
                             <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#creating-a-fork">
-   Creating a Fork
+  <a class="reference internal nav-link" href="#why-git">
+   Why Git
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#keeping-your-fork-up-to-date">
-   Keeping Your Fork Up to Date
+  <a class="reference internal nav-link" href="#why-github">
+   Why GitHub
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#doing-your-work">
-   Doing Your Work
+  <a class="reference internal nav-link" href="#introductory-pages-about-git-and-github">
+   Introductory pages about Git and Github
   </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#create-a-branch">
-     Create a Branch
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#submitting-a-pull-request">
-   Submitting a Pull Request
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#cleaning-up-your-work">
-     Cleaning Up Your Work
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#submitting">
-     Submitting
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#managing-upstream-repos-accepting-merging-pull-requests">
-   Managing upstream repos: accepting / merging pull requests
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#copyright">
-     <strong>
-      Copyright
-     </strong>
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#additional-reading">
-     <strong>
-      Additional Reading
-     </strong>
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#sources">
-     <strong>
-      Sources
-     </strong>
-    </a>
-   </li>
-  </ul>
  </li>
 </ul>
 
@@ -728,125 +621,32 @@ title="Print to PDF"
                 
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="a-pull-request-workflow-tutorial">
-<h1>A Pull Request Workflow tutorial<a class="headerlink" href="#a-pull-request-workflow-tutorial" title="Permalink to this headline">#</a></h1>
-<p>Knowing how to properly fork and generate pull requests is essential for working on open source projects or collaborating with peers. Unfortunately, it is easy to make mistakes or not know what you should do when you’re initially learning the process.</p>
-<p>This short tutorial, adapted from Chase Pettit’s <a class="reference external" href="https://gist.github.com/Chaser324/ce0505fbed06b947d962">original</a>, covers a fairly standard procedure for creating a fork, doing your work locally, and issuing a pull request. The workflow assumes you are NOT the “owner” of the original repository, although how the owner will accept and merge a pull request is discussed last.</p>
-<p>Some questions we would eventually like addressed in this document:</p>
-<ol class="simple">
-<li><p>Why we don’t recommend that you use the default git pull</p></li>
-<li><p>If we don’t recommend you use it, why is it the default?</p></li>
-<li><p>What should you do instead?</p></li>
-<li><p>What problems does that avoid?</p></li>
-</ol>
-<section id="creating-a-fork">
-<h2>Creating a Fork<a class="headerlink" href="#creating-a-fork" title="Permalink to this headline">#</a></h2>
-<p>Just head over to the GitHub page and click the “Fork” button. It’s just that simple. Once you’ve done that, you can use your favorite git client to clone your repo or just head straight to the command line:</p>
-<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span><span class="c1"># Clone your fork to your local machine</span>
-git clone git@github.com:USERNAME/FORKED-PROJECT.git
-</pre></div>
+  <section class="tex2jax_ignore mathjax_ignore" id="version-control-and-collaboration-git-github">
+<h1>Version control and collaboration; Git &amp; GitHub<a class="headerlink" href="#version-control-and-collaboration-git-github" title="Permalink to this headline">#</a></h1>
+<section id="why-git">
+<h2>Why Git<a class="headerlink" href="#why-git" title="Permalink to this headline">#</a></h2>
+<p>Writing code, reports, articles, presentations or any form of documentation usually involves trial and error, so it makes sense to retain earlier versions of the project so you can recall or revert to older work as needed. However, manually keeping track of versions is messy and prone to making mistakes.</p>
+<p><a class="reference external" href="https://git-scm.com/book/en/v2/Getting-Started-What-is-Git%3F"><strong>Git</strong></a> is a facility that was developed to address this “version control” challenge. It is a file management and version control system whith which you can periodically save your work (called making a <code class="docutils literal notranslate"><span class="pre">commit</span></code>) with notes, names, dates, or other information. With <strong>Git</strong>, you can then either revert to previous versions or join (i.e. <code class="docutils literal notranslate"><span class="pre">merge</span></code>) your efforts with work contributed by colleagues in an organized, reversible, secure and convenient manner.</p>
+<p>All serious programmers and many writers of technical documentation use version control, and many use <strong>Git</strong> as the tool to both track their own work and collaborate with others. <strong>Git</strong> is a tool with a wide range of capabilities so it makes sense to start with a simple workflow, then progress to more sophisticated usage depending on your or your team’s needs.</p>
+</section>
+<section id="why-github">
+<h2>Why GitHub<a class="headerlink" href="#why-github" title="Permalink to this headline">#</a></h2>
+<p>Github is an online repository management and collaboration system used for backing up and (if relevant) sharing code or documents with collaborators. Repositories are copies of your files saved in the cloud, and can be either <strong>public</strong> (visible/accessible by anyone with the URL) or <strong>private</strong> (only accessible to specific users but subject to a subscription fee).</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>It is important to recognize that version control - <em>and therefore both Git and GitHub</em> - works most effectively with text-based files and documents. “Binary” documents such as MSWord or PDF documents, spreadsheets (eg. Excel), presentations (e.g. Powerpoint), images, etc. can all be included BUT version control fails to work well on such files because it is difficult to compare versions of “binary” files.</p>
 </div>
 </section>
-<section id="keeping-your-fork-up-to-date">
-<h2>Keeping Your Fork Up to Date<a class="headerlink" href="#keeping-your-fork-up-to-date" title="Permalink to this headline">#</a></h2>
-<p>Make sure you keep your fork up to date by tracking the original “upstream” repo that you forked. To do this, you’ll need to add a remote:</p>
-<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span><span class="c1"># Add &#39;upstream&#39; repo to list of remotes</span>
-git remote add upstream https://github.com/UPSTREAM-USER/ORIGINAL-PROJECT.git
-
-<span class="c1"># Verify the new remote named &#39;upstream&#39;</span>
-git remote -v
-</pre></div>
-</div>
-<p>Whenever you want to update your fork with the latest upstream changes, you’ll need to first fetch the upstream repo’s branches and latest commits to bring them into your repository:</p>
-<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span><span class="c1"># Fetch from upstream remote</span>
-git fetch upstream
-
-<span class="c1"># View all branches, including those from upstream</span>
-git branch -va
-</pre></div>
-</div>
-<p>Now, checkout your own master branch and merge the upstream repo’s master branch:</p>
-<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span><span class="c1"># Checkout your master branch and merge upstream</span>
-git checkout master
-git merge upstream/master
-</pre></div>
-</div>
-<p>If there are no unique commits on the local master branch, git will simply perform a fast-forward. However, if you have been making changes on master (in the vast majority of cases you probably shouldn’t be - <a class="reference external" href="#doing-your-work">see the next section</a>, you may have to deal with conflicts. When doing so, be careful to respect the changes made upstream.</p>
-<p>Now, your local master branch is up-to-date with everything modified upstream.</p>
-</section>
-<section id="doing-your-work">
-<h2>Doing Your Work<a class="headerlink" href="#doing-your-work" title="Permalink to this headline">#</a></h2>
-<section id="create-a-branch">
-<h3>Create a Branch<a class="headerlink" href="#create-a-branch" title="Permalink to this headline">#</a></h3>
-<p>Whenever you begin work on a new feature or bugfix, it’s important that you create a new branch. Not only is it proper git workflow, but it also keeps your changes organized and separated from the master branch so that you can easily submit and manage multiple pull requests for every task you complete.</p>
-<p>To create a new branch and start working on it:</p>
-<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span><span class="c1"># Checkout the master branch - you want your new branch to come from master</span>
-git checkout master
-
-<span class="c1"># Create a new branch named newfeature (give your branch its own simple informative name)</span>
-git branch newfeature
-
-<span class="c1"># Switch to your new branch</span>
-git checkout newfeature
-</pre></div>
-</div>
-<p>Now, go to town hacking away and making whatever changes you want to.</p>
-</section>
-</section>
-<section id="submitting-a-pull-request">
-<h2>Submitting a Pull Request<a class="headerlink" href="#submitting-a-pull-request" title="Permalink to this headline">#</a></h2>
-<section id="cleaning-up-your-work">
-<h3>Cleaning Up Your Work<a class="headerlink" href="#cleaning-up-your-work" title="Permalink to this headline">#</a></h3>
-<p>Prior to submitting your pull request, you might want to do a few things to clean up your branch and make it as simple as possible for the original repo’s maintainer to test, accept, and merge your work.</p>
-<p>If any commits have been made to the upstream master branch, you should rebase your development branch so that merging it will be a simple fast-forward that won’t require any conflict resolution work.</p>
-<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span><span class="c1"># Fetch upstream master and merge with your repo&#39;s master branch</span>
-git fetch upstream
-git checkout master
-git merge upstream/master
-
-<span class="c1"># If there were any new commits, rebase your development branch</span>
-git checkout newfeature
-git rebase master
-</pre></div>
-</div>
-<p>Now, it may be desirable to squash some of your smaller commits down into a small number of larger more cohesive commits. You can do this with an interactive rebase:</p>
-<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span><span class="c1"># Rebase all commits on your development branch</span>
-git checkout 
-git rebase -i master
-</pre></div>
-</div>
-<p>This will open up a text editor where you can specify which commits to squash.</p>
-</section>
-<section id="submitting">
-<h3>Submitting<a class="headerlink" href="#submitting" title="Permalink to this headline">#</a></h3>
-<p>Once you’ve committed and pushed all of your changes to GitHub, go to the page for your fork on GitHub, select your development branch, and click the pull request button. If you need to make any adjustments to your pull request, just push the updates to GitHub. Your pull request will automatically track the changes on your development branch and update.</p>
-</section>
-</section>
-<section id="managing-upstream-repos-accepting-merging-pull-requests">
-<h2>Managing upstream repos: accepting / merging pull requests<a class="headerlink" href="#managing-upstream-repos-accepting-merging-pull-requests" title="Permalink to this headline">#</a></h2>
-<p><strong>Note that</strong> sections above were written from the perspective of someone that created a fork and generated a pull request. This section is written from the perspective of the <strong>original</strong> repository owner who handles incoming pull requests.</p>
-<p>Thus, where the “forker” was referring to the original repository as <code class="docutils literal notranslate"><span class="pre">upstream</span></code>, we’re now looking at it as the owner of that original repository and the standard <code class="docutils literal notranslate"><span class="pre">origin</span></code> remote.</p>
-<p>If you are interested in details please see Chase Pettit’s <a class="reference external" href="https://gist.github.com/Chaser324/ce0505fbed06b947d962">original</a> tutorial.</p>
-<section id="copyright">
-<h3><strong>Copyright</strong><a class="headerlink" href="#copyright" title="Permalink to this headline">#</a></h3>
-<p>Copyright 2017, Chase Pettit</p>
-<p>MIT License, <a class="reference external" href="http://www.opensource.org/licenses/mit-license.php">http://www.opensource.org/licenses/mit-license.php</a></p>
-</section>
-<section id="additional-reading">
-<h3><strong>Additional Reading</strong><a class="headerlink" href="#additional-reading" title="Permalink to this headline">#</a></h3>
+<section id="introductory-pages-about-git-and-github">
+<h2>Introductory pages about Git and Github<a class="headerlink" href="#introductory-pages-about-git-and-github" title="Permalink to this headline">#</a></h2>
 <ul class="simple">
-<li><p><a class="reference external" href="https://www.atlassian.com/git/tutorials/merging-vs-rebasing">Atlassian - Merging vs. Rebasing</a></p></li>
+<li><p><a class="reference internal" href="tut-git-intro.html"><span class="doc std std-doc">Introduction to version control and Git</span></a>.</p></li>
+<li><p><a class="reference internal" href="tut-github.html"><span class="doc std std-doc">Introduction to GitHub</span></a>.</p></li>
+<li><p><a class="reference internal" href="tut-gitrefs.html"><span class="doc std std-doc">Pointers to selected third party resources</span></a>.</p></li>
 </ul>
 </section>
-<section id="sources">
-<h3><strong>Sources</strong><a class="headerlink" href="#sources" title="Permalink to this headline">#</a></h3>
-<ul class="simple">
-<li><p><a class="reference external" href="https://help.github.com/articles/fork-a-repo">GitHub - Fork a Repo</a></p></li>
-<li><p><a class="reference external" href="https://help.github.com/articles/syncing-a-fork">GitHub - Syncing a Fork</a></p></li>
-<li><p><a class="reference external" href="https://help.github.com/articles/checking-out-pull-requests-locally">GitHub - Checking Out a Pull Request</a></p></li>
-</ul>
-</section>
-</section>
+<div class="toctree-wrapper compound">
+</div>
 </section>
 
     <script type="text/x-thebe-config">
@@ -876,17 +676,17 @@ git rebase -i master
                 
     <!-- Previous / next buttons -->
 <div class='prev-next-area'>
-    <a class='left-prev' id="prev-link" href="git-workflows.html" title="previous page">
+    <a class='left-prev' id="prev-link" href="tut-programming-environs.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">GitHub and Git Workflows</p>
+            <p class="prev-next-title">Using environments; an example</p>
         </div>
     </a>
-    <a class='right-next' id="next-link" href="tut-teachwith-jnbs.html" title="next page">
+    <a class='right-next' id="next-link" href="tut-git-intro.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Teaching and learning with Jupyter Notebooks</p>
+        <p class="prev-next-title">Version control and Git</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>

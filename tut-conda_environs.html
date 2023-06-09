@@ -52,7 +52,7 @@ const thebe_selector_output = ".output, .cell_output"
     <script async="async" src="_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Working with environments for running code or programming" href="tut-programming-environs.html" />
+    <link rel="next" title="Using environments; an example" href="tut-programming-environs.html" />
     <link rel="prev" title="Command line &amp; Shells" href="tut-commandline.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
@@ -280,32 +280,10 @@ const thebe_selector_output = ".output, .cell_output"
    Training faculty &amp; students
   </a>
  </li>
- <li class="toctree-l1 has-children">
+ <li class="toctree-l1">
   <a class="reference internal" href="eval-wisdom.html">
    Project evaluation
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
-  <label for="toctree-checkbox-3">
-   <i class="fas fa-chevron-down">
-   </i>
-  </label>
-  <ul>
-   <li class="toctree-l2">
-    <a class="reference internal" href="eval-coursetransforms.html">
-     Course transformations
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="eval-dashbds.html">
-     Dashboards
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="project-data.html">
-     Project Data
-    </a>
-   </li>
-  </ul>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="presentations.html">
@@ -366,30 +344,49 @@ const thebe_selector_output = ".output, .cell_output"
    Command line &amp; Shells
   </a>
  </li>
- <li class="toctree-l1 current active">
+ <li class="toctree-l1 current active has-children">
   <a class="current reference internal" href="#">
-   Environments; Conda, Mamba, etc.
+   Environments
   </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="tut-programming-environs.html">
+     Using environs; an e.g.
+    </a>
+   </li>
+  </ul>
  </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="tut-programming-environs.html">
-   Using environments
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="tut-git-github.html">
+   Git and Github
   </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="tut-git-intro.html">
-   Git Introduction
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="git-workflows.html">
-   GitHub and Git Workflows
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="tut-pullrequest.html">
-   Pull Request Workflow
-  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+  <label for="toctree-checkbox-4">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="tut-git-intro.html">
+     Intro. to Git
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="tut-github.html">
+     GitHub workflows
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="tut-gitrefs.html">
+     Git/Github resources
+    </a>
+   </li>
+  </ul>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="tut-teachwith-jnbs.html">
@@ -571,8 +568,8 @@ title="Print to PDF"
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#pip-vs-conda">
-   Pip vs Conda
+  <a class="reference internal nav-link" href="#pip-vs-conda-vs-mamba">
+   Pip vs Conda vs Mamba
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
@@ -586,8 +583,23 @@ title="Print to PDF"
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#mamba">
+     Mamba
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#installing-conda">
      Installing Conda
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#installing-mamba">
+     Installing Mamba
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#setting-the-enviornment">
+     “Setting” the enviornment
     </a>
    </li>
   </ul>
@@ -601,6 +613,11 @@ title="Print to PDF"
     </span>
    </code>
    file
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#conda-lock-files">
+   Conda Lock files
   </a>
  </li>
 </ul>
@@ -628,8 +645,8 @@ title="Print to PDF"
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#pip-vs-conda">
-   Pip vs Conda
+  <a class="reference internal nav-link" href="#pip-vs-conda-vs-mamba">
+   Pip vs Conda vs Mamba
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
@@ -643,8 +660,23 @@ title="Print to PDF"
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#mamba">
+     Mamba
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#installing-conda">
      Installing Conda
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#installing-mamba">
+     Installing Mamba
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#setting-the-enviornment">
+     “Setting” the enviornment
     </a>
    </li>
   </ul>
@@ -660,6 +692,11 @@ title="Print to PDF"
    file
   </a>
  </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#conda-lock-files">
+   Conda Lock files
+  </a>
+ </li>
 </ul>
 
                         </nav>
@@ -672,26 +709,19 @@ title="Print to PDF"
                 
   <section class="tex2jax_ignore mathjax_ignore" id="environments-conda-mamba-and-all-that">
 <h1>Environments: Conda, Mamba, and all that<a class="headerlink" href="#environments-conda-mamba-and-all-that" title="Permalink to this headline">#</a></h1>
-<p>Need to add:</p>
-<ul class="simple">
-<li><p>information about conda-lock files: why, when, how.</p></li>
-<li><p>mention other management tools - especially Mamba, including pros/cons/why</p></li>
-<li><p>Note from PA (23/03/07): re. mamba – the original mamba author (great name: Wolf Volprecht) is leading  a new startup that calculates conda-lock files and makes them available over the web.  So our workflow in the future might be something like (see <a class="reference external" href="https://prefix.dev">see https://prefix.dev</a>):</p>
-<ol class="simple">
-<li><p>install mamba from mambaforge</p></li>
-<li><p>create a new environment by typing “mamba env create windows_url”  or macos_url</p></li>
-</ol>
-</li>
-<li><p>combine this and the other <a class="reference internal" href="tut-programming-environs.html"><span class="doc std std-doc">environment page</span></a>.</p></li>
-</ul>
+<blockquote>
+<div><p><strong>Note:</strong> If working in a shell (i.e. at the command line) is new or confusing, check out the <a class="reference internal" href="tut-commandline.html"><span class="doc std std-doc">Command line &amp; Shells” tutorial</span></a>.</p>
+</div></blockquote>
 <section id="what-are-environments-and-why-do-we-need-them">
 <h2>What are environments and why do we need them?<a class="headerlink" href="#what-are-environments-and-why-do-we-need-them" title="Permalink to this headline">#</a></h2>
-<p>Scientific programming / data science profits greatly from the vast array of Python libraries. This complexity (or “the deep tree of dependencies”) requires management. Virtual environments, of which conda environments are one implementation, make this possible. In other words, (Conda) environments enable the easy definition of a complete software environment to run a certain project or application.</p>
-<p>In practice, we use “environments” to keep software development and applications reproducible and usable across platforms and between different engineering and client teams. Environments (i.e. environment specifications) define all the pieces or packages that are needed for a program or set of programs to function properly.</p>
-<p>(Adapted from a <a class="reference external" href="https://vxuni.com/lectures/conda-environments/">short video lecture</a>. Also, <a class="reference external" href="https://protostar.space/why-you-need-python-environments-and-how-to-manage-them-with-conda">here</a> is an easy-to-read reference about “why” environments.)</p>
+<p>(Adapted from a <a class="reference external" href="https://vxuni.com/lectures/conda-environments/">short video lecture</a>.)</p>
+<p>Scientific programming &amp; data science profit greatly from the vast array of Python libraries. But libraries are not usually independent; they depend upon other libraries, creating a sometimes complex “the deep tree of dependencies”. Therefore, libraries require management. Virtual environments, of which conda environments are one implementation, make this possible. In other words, (Conda) environments enable the easy definition of a complete software environment with all the libraries and their interdepnedencies, necessary for running a certain project or application.</p>
+<p>Using environments also helps ensure that software development and applications are reproducible, usable across platforms, and between different engineering or client teams. Environments (i.e. environment specifications) define all the pieces or packages that are needed for a program or set of programs to function properly.</p>
+<p>“Setting the environment” means telling your computer which libraries or packages must be accessible for the work you are about to carry out. It might be a set of python libraries necessary for the code you will write. Or you may be running code that needs to know how to find the components (libraries of code) it uses to work. For example, many scientific or data science programs use a common Python library of routines for plotting data called “matplotlib”. Setting the environment essentially establishes the list of needed libraries for work you are about to do.</p>
+<p>For a little more detail, see this oldish (2018) but still relevant and easy-to-read explanation: <a class="reference external" href="https://protostar.space/why-you-need-python-environments-and-how-to-manage-them-with-conda">Why you need Python environments and how to manage them with Conda</a>.</p>
 </section>
-<section id="pip-vs-conda">
-<h2>Pip vs Conda<a class="headerlink" href="#pip-vs-conda" title="Permalink to this headline">#</a></h2>
+<section id="pip-vs-conda-vs-mamba">
+<h2>Pip vs Conda vs Mamba<a class="headerlink" href="#pip-vs-conda-vs-mamba" title="Permalink to this headline">#</a></h2>
 <p>Adapted from a short article at <a class="reference external" href="https://medium.com/analytics-vidhya/understand-conda-and-pip-9e5c67da47cc">Medium</a>.</p>
 <section id="pip-comes-built-in-to-python">
 <h3>Pip (comes built-in to Python)<a class="headerlink" href="#pip-comes-built-in-to-python" title="Permalink to this headline">#</a></h3>
@@ -706,27 +736,61 @@ title="Print to PDF"
 <li><p><a class="reference external" href="https://docs.conda.io/projects/conda/en/4.6.0/_downloads/52a95608c49671267e40c689e0bc00ca/conda-cheatsheet.pdf">Conda Cheat sheet</a> (PDF).</p></li>
 </ul>
 </section>
+<section id="mamba">
+<h3>Mamba<a class="headerlink" href="#mamba" title="Permalink to this headline">#</a></h3>
+<p>Mamba is a package manager that is fully compatible with Conda but is supposed to be significantly faster. All commands and actions are the same as conda, so learning one will mean you can use the other easily. See <a class="reference external" href="https://mamba.readthedocs.io">Mamba documentation</a> for more details. A sort of “superset” of Mamba that is often mentioned is “<a class="reference external" href="https://github.com/conda-forge/miniforge#mambaforge">Mamba-forge</a>”, which is really just an easily installed package containing the Mamba Package Manager along with some pre-configured components. Yes it’s all a bit confusing; the article <a class="reference external" href="https://focalplane.biologists.com/2022/12/08/managing-scientific-python-environments-using-conda-mamba-and-friends/">Managing Scientific Python environments using Conda, Mamba and friends</a> (Dec 2022) is a well-written introduction with guidelines, plus a few notes about how things can go wrong.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Any set of instructions referring to Conda will be essentially identical if Mamba is used as the package manager instead of Conda.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The pace of change (usually implying improvement) is so rapid that best practices are already out of date as soon as documentation is produced. For example, there is an emerging effort to simplify package management that can be explored (as of June 2023) starting at the <a class="reference external" href="https://prefix.devp">Prefix-dev</a> website and their <a class="reference external" href="https://prefix.devp">documentation pages</a>.</p>
+</div>
+</section>
 <section id="installing-conda">
 <h3>Installing Conda<a class="headerlink" href="#installing-conda" title="Permalink to this headline">#</a></h3>
 <ul class="simple">
 <li><p>Anaconda is large and very “complete”. Miniconda is small and usually adequate.</p>
 <ul>
 <li><p>Install <a class="reference external" href="https://docs.conda.io/projects/conda/en/latest/user-guide/install/index.html">miniconda via conda installation docs</a>.</p></li>
-<li><p>Alsterantive installation instructions from P. Austin’s <a class="reference external" href="https://phaustin.github.io/numeric/doc_notebooks/course_bootstrap/installing_jupytext.html">Numerical methods course</a>.</p></li>
+<li><p>Alternative installation instructions from P. Austin’s <a class="reference external" href="https://phaustin.github.io/numeric/doc_notebooks/course_bootstrap/installing_jupytext.html">Numerical methods course</a>.</p></li>
 </ul>
 </li>
-<li><p>For the environment, a reasonable starting point is <code class="docutils literal notranslate"><span class="pre">numeric.yml</span></code> from P. Austin’s course.</p>
-<ul>
-<li><p>Here is a <a class="reference external" href="https://github.com/phaustin/numeric_students/blob/downloads/utils/numeric.yml">direct link to the yml file</a>.</p></li>
-<li><p>Put it somewhere (eg. A repos folder), cd to that folder then run:</p></li>
 </ul>
-</li>
+</section>
+<section id="installing-mamba">
+<h3>Installing Mamba<a class="headerlink" href="#installing-mamba" title="Permalink to this headline">#</a></h3>
+<p>Follow directions at the Mamba documentation’s <a class="reference external" href="https://mamba.readthedocs.io/en/latest/installation.html">install page</a>.</p>
+</section>
+<section id="setting-the-enviornment">
+<h3>“Setting” the enviornment<a class="headerlink" href="#setting-the-enviornment" title="Permalink to this headline">#</a></h3>
+<p>Once a package management system is installed (Conda, Mamba, etc.),</p>
+<ul class="simple">
+<li><p>For scientific computing, a starting environment could be as simple as the following text file:</p></li>
+</ul>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>name: anyname
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - <span class="nv">python</span><span class="o">=</span><span class="m">3</span>.9.*
+  - pandas
+  - numpy
+  - matplotlib
+  - <span class="nv">jupyter</span><span class="o">=</span><span class="m">1</span>.*
+  - pip
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>An example of an enviornment requiring more packages is P. Austin’s  <code class="docutils literal notranslate"><span class="pre">numeric.yml</span></code> environment, used in UBC’s ATSC409 numerical methods course. Here is a <a class="reference external" href="https://github.com/phaustin/numeric_students/blob/downloads/utils/numeric.yml">direct link to the yml file</a>.</p></li>
+<li><p>To “set” the environment, put the enviornment file somewhere (eg. in a repository folder), change to that folder (the command line <code class="docutils literal notranslate"><span class="pre">cd</span></code> command) then run:</p></li>
 </ul>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>    conda env create -f numeric.yml
     conda activate numeric
 </pre></div>
 </div>
-<p>Verify successful installation by typeing <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">info</span></code> at the prompt.</p>
+<p>Verify successful installation by typing <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">info</span></code> at the prompt.</p>
 </section>
 </section>
 <section id="specifying-the-environment-the-yml-file">
@@ -735,18 +799,23 @@ title="Print to PDF"
 <ul class="simple">
 <li><p>Usually, a file called environment.yml is built by hand to specify packages needed for an environment.</p></li>
 <li><p>Alternatively, command “conda env export” will build a list with precise packages and their versions. This is very exact.</p></li>
-<li><p>If there is an environment.yml  file in your pwd <em><span style="color:green">I found the “in your pwd” a bit confusing since pwd is a command, but I understand that’s it’s trying to check if there’s an environment.yml file in the project directory. Maybe it would be more clear to replace “pwd” with “directory” or “project”?</span></em>, then command <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">create</span></code> generates that environment <em><span style="color:green">I also had troubles understanding this because I interpreted it as being able to create a conda environment just be typing <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">create</span></code> by itself if there was an conda environment file called environment.yml in your project. However, typing <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">create</span></code> with an environment.yml file in the current directory returns a <code class="docutils literal notranslate"><span class="pre">CondaValueError:</span> <span class="pre">The</span> <span class="pre">target</span> <span class="pre">prefix</span> <span class="pre">is</span> <span class="pre">the</span> <span class="pre">base</span> <span class="pre">prefix.</span> <span class="pre">Aborting.</span></code> error</span></em>.</p>
-<ul>
-<li><p>The .yml file could have a different name, in which case these commands must specify that name using the <code class="docutils literal notranslate"><span class="pre">-f</span></code> parameter for “file”. i.e.: <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">env</span> <span class="pre">create</span> <span class="pre">-f</span> <span class="pre">envname.yml</span></code>.</p></li>
+<li><p>Conda’s (or mamba’s) <code class="docutils literal notranslate"><span class="pre">create</span></code> command is used to generate a new environment.</p></li>
+<li><p>The “activate” commmand is used to make an existing environment the “current” environment so code you want to run now will have all the necessary libraries and dependencies in place.</p></li>
+<li><p>It is common to have these necessary components of an environment specified in an environment file. This is often called <code class="docutils literal notranslate"><span class="pre">environment.yml</span></code> but could have any name.</p></li>
+<li><p>To make a new environment based on such a file, the command line instruction is <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">env</span> <span class="pre">create</span> <span class="pre">-f</span> <span class="pre">anyname.yml</span></code>.</p></li>
+<li><p>To apply the correct parameters with the <code class="docutils literal notranslate"><span class="pre">create</span></code> command, see the documentation, or a cheat sheet of conda instructions like <a class="reference external" href="https://docs.conda.io/projects/conda/en/4.6.0/_downloads/52a95608c49671267e40c689e0bc00ca/conda-cheatsheet.pdf">this one here</a>.</p></li>
+<li><p>Then, to make use of this enviornment, the conda command <code class="docutils literal notranslate"><span class="pre">activate</span></code> will set the environment ready to use. Again, to apply the correct parameters with the <code class="docutils literal notranslate"><span class="pre">activate</span></code> command, see the documentation, or a cheat sheet of conda instructions like <a class="reference external" href="https://docs.conda.io/projects/conda/en/4.6.0/_downloads/52a95608c49671267e40c689e0bc00ca/conda-cheatsheet.pdf">this one here</a>.</p></li>
+<li><p>Your environment can be updated with latest libraries using the command <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">env</span> <span class="pre">update</span> <span class="pre">--file</span> <span class="pre">envname.yml</span></code> (or if the environment file is called “<em>environment.yml</em>”, you can leave off the <code class="docutils literal notranslate"><span class="pre">--file</span> <span class="pre">...</span></code> parameter).</p></li>
 </ul>
-</li>
-<li><p>After it is ready, <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">activate</span></code> will set the environment ready to use (or add the “name.yml” file’s name if it is not environment.yml). <em><span style="color:green">For me, <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">activate</span></code> only activates the base conda environment that was initialized when miniconda was installed for me. To activate the environment, I do one of three things. (1) I use the command specified in the installation log in the shell window from when conda was creating the environment. (2) Open the environment file, I find the environment name by looking for the the “name” key in the file. (3) Type <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">info</span> <span class="pre">--envs</span></code> in my shell to list out all my conda environments.</span></em></p></li>
-<li><p>Alterantive to create: use <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">env</span> <span class="pre">update</span></code>. This automatically updates the environment specified in that file if one already exists, or creates it if it doesn’t. <em><span style="color:green">Precondition for this command is that the environment file name is “environment.yml”. If the environment file name isn’t “environment.yml”, use `conda env update –file envname.yml.</span></em></p></li>
-</ul>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>
-</pre></div>
-</div>
 </section>
+<section id="conda-lock-files">
+<h2>Conda Lock files<a class="headerlink" href="#conda-lock-files" title="Permalink to this headline">#</a></h2>
+<p>Use of so-called <a class="reference external" href="https://pythonspeed.com/articles/conda-dependency-management/">Conda lock files</a> enables installations that are more reliable and that don’t require much understanding of command lines, packages, environments and so on.</p>
+<p>Details are not included here (yet) but conda-lock files are used for installations referenced on our <a class="reference internal" href="python-startup.html"><span class="doc std std-doc">Python/Jupyter Startup page</span></a>.</p>
+<p><em>(Note from PA (23/03/07): re. mamba – the original mamba author is leading  a new startup that calculates conda-lock files and makes them available over the web.  So an optimal workflow in the future might look something like what is shown at <a class="reference external" href="https://prefix.dev">https://prefix.dev</a>)</em></p>
+</section>
+<div class="toctree-wrapper compound">
+</div>
 </section>
 
     <script type="text/x-thebe-config">
@@ -786,7 +855,7 @@ title="Print to PDF"
     <a class='right-next' id="next-link" href="tut-programming-environs.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Working with environments for running code or programming</p>
+        <p class="prev-next-title">Using environments; an example</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>

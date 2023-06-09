@@ -280,32 +280,10 @@ const thebe_selector_output = ".output, .cell_output"
    Training faculty &amp; students
   </a>
  </li>
- <li class="toctree-l1 has-children">
+ <li class="toctree-l1">
   <a class="reference internal" href="eval-wisdom.html">
    Project evaluation
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
-  <label for="toctree-checkbox-3">
-   <i class="fas fa-chevron-down">
-   </i>
-  </label>
-  <ul>
-   <li class="toctree-l2">
-    <a class="reference internal" href="eval-coursetransforms.html">
-     Course transformations
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="eval-dashbds.html">
-     Dashboards
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="project-data.html">
-     Project Data
-    </a>
-   </li>
-  </ul>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="presentations.html">
@@ -366,30 +344,49 @@ const thebe_selector_output = ".output, .cell_output"
    Command line &amp; Shells
   </a>
  </li>
- <li class="toctree-l1">
+ <li class="toctree-l1 has-children">
   <a class="reference internal" href="tut-conda_environs.html">
-   Environments; Conda, Mamba, etc.
+   Environments
   </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="tut-programming-environs.html">
+     Using environs; an e.g.
+    </a>
+   </li>
+  </ul>
  </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="tut-programming-environs.html">
-   Using environments
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="tut-git-github.html">
+   Git and Github
   </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="tut-git-intro.html">
-   Git Introduction
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="git-workflows.html">
-   GitHub and Git Workflows
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="tut-pullrequest.html">
-   Pull Request Workflow
-  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+  <label for="toctree-checkbox-4">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="tut-git-intro.html">
+     Intro. to Git
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="tut-github.html">
+     GitHub workflows
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="tut-gitrefs.html">
+     Git/Github resources
+    </a>
+   </li>
+  </ul>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="tut-teachwith-jnbs.html">
@@ -678,7 +675,7 @@ and <a class="reference external" href="https://ubcexplorer.io/course/DSCI/100">
 </section>
 <section id="ocese-project-objectives">
 <h2>OCESE project objectives<a class="headerlink" href="#ocese-project-objectives" title="Permalink to this headline">#</a></h2>
-<p>Generate a Python-based version of the course with an Earth, Ocean and Atmospheric sciences context for all exercises.</p>
+<p>DSCI 100 is a statistics course and Stats faculty are in charge of running and maintaining the course. The OCESE project goal was to support the adaptation from R to a Python-based version of the course with an Earth, Ocean and Atmospheric sciences context for all exercises.</p>
 <ol class="simple">
 <li><p>Convert all “R”-based materials to Python. Includes teaching materials (e.g. slide decks), in-class worksheets for students, assignments &amp; projects, and all assessment materials.</p></li>
 <li><p>Adapt existing text book to Python. The R version is published by CRC Press, but licensed under CC BY-NC-SA 4.0 license.</p></li>
@@ -687,20 +684,21 @@ and <a class="reference external" href="https://ubcexplorer.io/course/DSCI/100">
 </section>
 <section id="actions-taken">
 <h2>Actions Taken<a class="headerlink" href="#actions-taken" title="Permalink to this headline">#</a></h2>
-<p>The Python section of this course was first taught to 68 students in winter 2023 by Prof. Lindsey Heagy.</p>
+<p>The OCESE project’s contributions included financial and supervisory support for students working on materials, the textbook, assignments, etc. More specifically:</p>
 <ul class="simple">
 <li><p>First version of the Python <a class="reference external" href="https://python.datasciencebook.ca/index.html">textbook</a> is complete. (R version is <a class="reference external" href="https://datasciencebook.ca/">here</a>.)</p></li>
-<li><p>Python versions of standard DSCI 100 class activities. The course’s GitHub websites for students are at: <a class="reference external" href="https://github.com/UBC-DSCI/dsci-100-student">R version</a> or <a class="reference external" href="https://github.com/UBC-DSCI/dsci-100-student-python">Python version</a>.</p></li>
+<li><p>Python versions of all standard DSCI 100 class activities. The course’s GitHub websites for students are at: <a class="reference external" href="https://github.com/UBC-DSCI/dsci-100-student-python">Python version</a>, or the original <a class="reference external" href="https://github.com/UBC-DSCI/dsci-100-student">R version</a>.</p></li>
 <li><p>Earth science versions of activities and assignments were not developed for this first teaching term as it was thought wise to change learning contexts (examples, settings, assignments, etc.) only after the “Pythonization” steps were completed and tested with students.</p></li>
 </ul>
+<p>The Python section of this course was first taught to 68 students in winter 2023 by Prof. Lindsey Heagy.</p>
 </section>
 <section id="instructors-experiences">
 <h2>Instructors’ experiences<a class="headerlink" href="#instructors-experiences" title="Permalink to this headline">#</a></h2>
-<p>After the meticulous preparation and testing (with significant help from student workers), the pilot version of this section of DSCI 100, taught Jan. - April, 2023 by Prof. Lindsey Heagy, went unexpectedly “smoothly”. L.H. quote: <em>“Overall, I was pleased with how it went. I had geared myself up for a lot more chaos than I think we experienced … “</em>.</p>
-<p>The main challenges revolved around autograding, and some inconsistencies found between components like the textbook, worksheets, and lecture notes. Minor adjustments before the next session are all that’s needed to rectify this minor issues.</p>
-<p>The instructor “<em>… was pleased that the student evaluations were generally positive”</em>. Also “<em>I was grateful that the students rolled with issues as they came up. It was a good group this year!”</em>.</p>
-<p>Also, “<em>Especially when speaking with some of the more senior students I got the impression that Python connected well with other courses and what they can see using in their future careers.</em>”</p>
-<p>As another point of evidence, the waitlist was maxed-out for this section, illustrating that students were quite interested in learning Python.</p>
+<p>After the meticulous preparation and testing (with significant help from <a class="reference internal" href="project-outline.html"><span class="doc std std-doc">student workers</span></a>), the pilot version of this section of DSCI 100, taught Jan. - April, 2023 by Prof. Lindsey Heagy, went unexpectedly “smoothly”. L.H. quote: <em>“Overall, I was pleased with how it went. I had geared myself up for a lot more chaos than I think we experienced … “</em>.</p>
+<p>The main challenges revolved around autograding, and some inconsistencies found between components like the textbook, worksheets, and lecture notes. Minor adjustments before the next session are all that’s needed to rectify these minor issues.</p>
+<p>The instructor “<em>… was pleased that the student evaluations were generally positive”</em>. Also “<em>I was grateful that the students rolled with issues as they came up. It was a good group this year!”</em>. And, “<em>Especially when speaking with some of the more senior students I got the impression that Python connected well with other courses and what they can see using in their future careers.</em>”</p>
+<p>As another point of evidence, the waitlist was fully booked for this section, illustrating that students were quite interested in learning Python.</p>
+<p>This project has enabled new and productive opportunities for faculty in EOAS and the Statistics departments to collaborate and share teaching strategies and technical know-how.</p>
 </section>
 <section id="students-experiences">
 <h2>Students’ experiences<a class="headerlink" href="#students-experiences" title="Permalink to this headline">#</a></h2>
@@ -717,12 +715,13 @@ and <a class="reference external" href="https://ubcexplorer.io/course/DSCI/100">
 <section id="costs">
 <h2>Costs<a class="headerlink" href="#costs" title="Permalink to this headline">#</a></h2>
 <p>Converting everything from “R” to Python was extraordinarily labour intensive. In addition to significan time devoted to the project by professors Timbers, Campbell and Heagy, at least four students were employed for summer work terms to carry out translations of textbook, learning activities and teaching materials. Coordination was relatively complex, requiring project management and Slack-channels to communicate and coordinate details of all new materials with specific instructional intentions of the DSCI 100 teaching team.</p>
-<p>Hubs for students to run all Jupyter Notebooks are provided and managed by the UBC Statistics Department. The open UBC resources are not (yet) used by this course’s</p>
+<p>Hubs for students to run all Jupyter Notebooks are provided and managed by the UBC Statistics Department. The open UBC resources are not (yet) used by this course.</p>
 </section>
 <section id="lessons-learned">
 <h2>Lessons Learned<a class="headerlink" href="#lessons-learned" title="Permalink to this headline">#</a></h2>
 <p>Complete translations of a course from one language to another are labour intensive. It takes careful coordination, and a team of workers (many of them graduate or undergraduate students) to organize and implenet new versions of all teaching &amp; learning materials, learning activities, assignments and assessments. Also, converting the nbgrader auto-grading procedures required appropriate expertise.</p>
 <p>Using Slack to for rapid communication with the whole team during the first teaching term for this course section was a key to addressing the problems efficiently. Also, all materials are managed with GitHub making versioning, updating, and flagging “issues” straight forward.</p>
+<p>The course relies on <a class="reference external" href="https://blog.jupyter.org/upgrading-nbgrader-99c56ae56c47">nbgrader</a>. This Jupyter plugin is used for creating and grading assignments within Jupyter notebooks. It is technically challenging to use and relies on the special skills of the teaching team (Timbers, Campbell, Heagy and others).</p>
 </section>
 </section>
 

@@ -1,20 +1,13 @@
-# Working with environments for running code or programming
+# Using environments; an example
 
 ## Prior Assumptions
 
-* you are using a conda distribution of Python (mine is miniconda 3.9 for reference)
-
-* you are moderately comfortable managing files with a shell (im using powershell)
-  
-## Core Principles
-
-* keep things as simple as possible but not simpler; your code will run faster and be less confusing to debug
-
-* make your project/dependencies exactly reproducible, so any machine can run your code with the same results
+* you are using a conda distribution of Python (mine is miniconda 3.9 for reference).
+* you are moderately comfortable managing files with a shell (see our [command line page](tut-commandline.md)).
 
 ## Case Study
 
-You are a researcher recently assigned to a project studying permafrost. It is evident that it is necessary to write some code to process some field data; you volunteer, having just completed a course in python programming using jupyter notebooks in the cloud. You downloaded your own python distribution on your machine with jupyter notebooks (*insert link to another tutorial*) and are ready to get started with your project.
+You are a researcher newly assigned to a project studying permafrost. You will be writing code to process some field data. You volunteer, having just completed a course in Python using Jupyter notebooks. You have already set up your own Python installation on your machine with Yupyter notebooks and are ready to get started with your project. 
 
 ### I. Starting a Project
 
@@ -30,7 +23,7 @@ You are a researcher recently assigned to a project studying permafrost. It is e
     $ conda activate base
     ```
 
-3) Create a new environment for your project that will inherit all the dependencies installed in `base`.         
+3) Create a new environment for your project that will inherit all the dependencies installed in `base`.
    * Notes: the `-n` is a tag meaning "name". Call your environment something sensible and not too long to type
 
     ```
@@ -129,10 +122,7 @@ $ conda env remove -n permafrost
 
 ## Helpful Tips
 
-* Make a new environment for every "project," whatever that means to you... I usually create one per course or research topic, sometimes start a fresh one for a complicated sub-project
-
-* Don't install anything on your `base` environment, and dont actually do any work from base (if you leave base totally clean, most code will immediately break and remind you to activate the proper environment for your project)
-
+* Make a new environment for every "project," whatever that means to you... I usually create one per course or research topic, sometimes start a fresh one for a complicated sub-project.
+* Don't install anything on your `base` environment, and dont actually do any work from base (if you leave base totally clean, most code will immediately break and remind you to activate the proper environment for your project).
 * Avoid using pip wherever possible (for this workflow). Pip and Conda don't always play nicely together and this can create conflicts.
-
 * Only download one python distribtion on your machine, unless you really know what you're doing and have a good reason for wanting another one.

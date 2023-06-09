@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Git Introduction &#8212; OCESE Documentation</title>
+    <title>Version control and Git &#8212; OCESE Documentation</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -52,8 +52,8 @@ const thebe_selector_output = ".output, .cell_output"
     <script async="async" src="_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="GitHub and Git Workflows" href="git-workflows.html" />
-    <link rel="prev" title="Working with environments for running code or programming" href="tut-programming-environs.html" />
+    <link rel="next" title="GitHub and Git Workflows" href="tut-github.html" />
+    <link rel="prev" title="Version control and collaboration; Git &amp; GitHub" href="tut-git-github.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -280,32 +280,10 @@ const thebe_selector_output = ".output, .cell_output"
    Training faculty &amp; students
   </a>
  </li>
- <li class="toctree-l1 has-children">
+ <li class="toctree-l1">
   <a class="reference internal" href="eval-wisdom.html">
    Project evaluation
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
-  <label for="toctree-checkbox-3">
-   <i class="fas fa-chevron-down">
-   </i>
-  </label>
-  <ul>
-   <li class="toctree-l2">
-    <a class="reference internal" href="eval-coursetransforms.html">
-     Course transformations
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="eval-dashbds.html">
-     Dashboards
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="project-data.html">
-     Project Data
-    </a>
-   </li>
-  </ul>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="presentations.html">
@@ -366,30 +344,49 @@ const thebe_selector_output = ".output, .cell_output"
    Command line &amp; Shells
   </a>
  </li>
- <li class="toctree-l1">
+ <li class="toctree-l1 has-children">
   <a class="reference internal" href="tut-conda_environs.html">
-   Environments; Conda, Mamba, etc.
+   Environments
   </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="tut-programming-environs.html">
+     Using environs; an e.g.
+    </a>
+   </li>
+  </ul>
  </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="tut-programming-environs.html">
-   Using environments
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="tut-git-github.html">
+   Git and Github
   </a>
- </li>
- <li class="toctree-l1 current active">
-  <a class="current reference internal" href="#">
-   Git Introduction
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="git-workflows.html">
-   GitHub and Git Workflows
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="tut-pullrequest.html">
-   Pull Request Workflow
-  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+  <label for="toctree-checkbox-4">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="current">
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     Intro. to Git
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="tut-github.html">
+     GitHub workflows
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="tut-gitrefs.html">
+     Git/Github resources
+    </a>
+   </li>
+  </ul>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="tut-teachwith-jnbs.html">
@@ -566,13 +563,18 @@ title="Print to PDF"
     <nav id="bd-toc-nav" aria-label="Page">
         <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#introductory-remarks">
-   Introductory remarks
+  <a class="reference internal nav-link" href="#why-git">
+   Why Git
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#using-git-for-local-version-control">
+   Using Git for local version control
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#an-aside">
-     An Aside
+    <a class="reference internal nav-link" href="#setting-up">
+     Setting up
     </a>
    </li>
   </ul>
@@ -583,13 +585,8 @@ title="Print to PDF"
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#backing-up-files-on-github">
-   Backing Up Files On Github
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#alternative-learning-resources">
-   Alternative learning resources
+  <a class="reference internal nav-link" href="#git-commands-used-on-this-page">
+   Git commands used on this page
   </a>
  </li>
 </ul>
@@ -601,7 +598,7 @@ title="Print to PDF"
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Git Introduction</h1>
+                <h1>Version control and Git</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -612,13 +609,18 @@ title="Print to PDF"
                         <nav aria-label="Page">
                             <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#introductory-remarks">
-   Introductory remarks
+  <a class="reference internal nav-link" href="#why-git">
+   Why Git
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#using-git-for-local-version-control">
+   Using Git for local version control
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#an-aside">
-     An Aside
+    <a class="reference internal nav-link" href="#setting-up">
+     Setting up
     </a>
    </li>
   </ul>
@@ -629,13 +631,8 @@ title="Print to PDF"
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#backing-up-files-on-github">
-   Backing Up Files On Github
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#alternative-learning-resources">
-   Alternative learning resources
+  <a class="reference internal nav-link" href="#git-commands-used-on-this-page">
+   Git commands used on this page
   </a>
  </li>
 </ul>
@@ -648,19 +645,27 @@ title="Print to PDF"
                 
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="git-introduction">
-<h1>Git Introduction<a class="headerlink" href="#git-introduction" title="Permalink to this headline">#</a></h1>
-<section id="introductory-remarks">
-<h2>Introductory remarks<a class="headerlink" href="#introductory-remarks" title="Permalink to this headline">#</a></h2>
-<p>(Derived from a conversational “coding crash course” <a class="reference external" href="https://github.com/AndrewLoeppky/crash_course/blob/master/coding_crash_course.md">here</a>.)</p>
-<p>Writing and debugging code or documentation usually involves a lot of trial and error, so it makes sense to retain earlier versions of your project so you can revert to the old version to try again. Trying to manually keep track of versions is messy and prone to making mistakes. <a class="reference external" href="https://git-scm.com/book/en/v2/Getting-Started-What-is-Git%3F"><strong>Git</strong></a> was developed to address this challenge. It is a file management and version control system that allows you to periodically save your work (called making a <code class="docutils literal notranslate"><span class="pre">commit</span></code>) with notes and names, dates, etc.. Then it allows you to easily revert to previous versions, and also to join (or <code class="docutils literal notranslate"><span class="pre">merge</span></code>) work contributed by colleagues in an organized, reversible, secure and convenient manner.</p>
-<p>All professional programmers carry out these steps, and most use Git to keep track of their work and collaborate with others. There is a huge range of capabilities so it is best to start with the simplest possible workflow, then progress from there depending on your (or your team’s) specific needs.</p>
-<p>The instructions below will set up a <em>code repository</em> on your computer which backs up your work each time you make a change (<em>making commits</em>). Once you gain some familiarity with <em>committing</em> and <em>pushing</em> using Git, you will be ready to tackle the full <em>pull request workflow</em> (meant for collaborating on projects with larger groups).</p>
-<p>Installing Git software on your own computer can be done many ways. We recommend doing this <strong>after</strong> installing the Conda package management system using our instructions <a class="reference internal" href="tut-conda_environs.html"><span class="doc std std-doc">eleswhere</span></a>. A succinct sequence of steps can be found in P. Austin’s <a class="reference external" href="https://phaustin.github.io/numeric/doc_notebooks/course_bootstrap/installing_jupytext.html">Numerical Methods course manual</a>.</p>
-<hr class="docutils" />
-<section id="an-aside">
-<h3>An Aside<a class="headerlink" href="#an-aside" title="Permalink to this headline">#</a></h3>
-<p>It is also possible to install Git all by itself by following these <a class="reference external" href="https://git-scm.com/book/en/v2/Getting-Started-Installing-Git">instructions here</a>. If you do it this way you must associate a username and email address with your git installation by opening a shell and typing:</p>
+  <section class="tex2jax_ignore mathjax_ignore" id="version-control-and-git">
+<h1>Version control and Git<a class="headerlink" href="#version-control-and-git" title="Permalink to this headline">#</a></h1>
+<section id="why-git">
+<h2>Why Git<a class="headerlink" href="#why-git" title="Permalink to this headline">#</a></h2>
+<p>Writing code, reports, articles, presentations or any form of documentation usually involves trial and error, so it makes sense to retain earlier versions of the project so you can recall or revert to older work as needed. However, manually keeping track of versions is messy and prone to making mistakes.</p>
+<p><a class="reference external" href="https://git-scm.com/book/en/v2/Getting-Started-What-is-Git%3F"><strong>Git</strong></a> is a facility that was developed to address this “version control” challenge. It is a file management and version control system whith which you can periodically save your work (called making a <code class="docutils literal notranslate"><span class="pre">commit</span></code>) with notes, names, dates, or other information. With <strong>Git</strong>, you can then either revert to previous versions or join (i.e. <code class="docutils literal notranslate"><span class="pre">merge</span></code>) your efforts with work contributed by colleagues in an organized, reversible, secure and convenient manner.</p>
+<p>All serious programmers and many writers of technical documentation use version control, and many use <strong>Git</strong> as the tool to both track their own work and collaborate with others. <strong>Git</strong> is a tool with a wide range of capabilities so it makes sense to start with a simple workflow, then progress to more sophisticated usage depending on your or your team’s needs.</p>
+</section>
+<section id="using-git-for-local-version-control">
+<h2>Using Git for local version control<a class="headerlink" href="#using-git-for-local-version-control" title="Permalink to this headline">#</a></h2>
+<p>“<em>Local version control</em>” means keeping track of work you are doing alone (i.e. without sharing the effort with collaborators) and on your own computer without relying on an separate place or <em>repository</em> for storing and managing your work and all its versions.</p>
+<p>The remainder of this page explains how to set up a <em>repository</em> (for code or any other text-based work) on your computer which backs up your work each time you make a change (<em>making commits</em>).</p>
+<section id="setting-up">
+<h3>Setting up<a class="headerlink" href="#setting-up" title="Permalink to this headline">#</a></h3>
+<p>Using Git for version control (either alone or with an online <em>repository</em> manager like GitHub) assumes the following:</p>
+<ul class="simple">
+<li><p>You are familiar with using a terminal or shell interface on your computer - i.e. working “at the command line”. See the <a class="reference internal" href="tut-commandline.html"><span class="doc std std-doc">Command line and shells</span></a> page for more details.</p></li>
+<li><p>It is common (but not essential) to be using <em>environments</em> on your computer and a package or environment manager like Conda or Mamba. See our <a class="reference internal" href="tut-conda_environs.html"><span class="doc std std-doc">environments</span></a> page for more details.</p></li>
+</ul>
+<p>Installing Git software is easiest <strong>after</strong> installing a package management system such as Conda or Mamba. Simply type <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">install</span> <span class="pre">git</span></code> at the commandline, and the Git software will be installed. (By the way, a succinct sequence for installing Conda then Git on either MacOS or Windows computers can be seen in P. Austin’s <a class="reference external" href="https://phaustin.github.io/numeric/doc_notebooks/course_bootstrap/installing_jupytext.html">Numerical Methods course manual</a>.)</p>
+<p>If you are not using environment manager like Conda, install Git using these <a class="reference external" href="https://git-scm.com/book/en/v2/Getting-Started-Installing-Git">instructions here</a>. If you do it this way you must associate a username and email address with your git installation by opening a shell and typing:</p>
 <div class="highlight-powershell notranslate"><div class="highlight"><pre><span></span><span class="p">$</span> <span class="n">git</span> <span class="n">config</span> <span class="p">-</span><span class="n">-global</span> <span class="n">user</span><span class="p">.</span><span class="n">name</span> <span class="s2">&quot;Max Planck&quot;</span>
 <span class="p">$</span> <span class="n">git</span> <span class="n">config</span> <span class="p">-</span><span class="n">-global</span> <span class="n">user</span><span class="p">.</span><span class="n">email</span> <span class="n">mplanck</span><span class="nv">@example</span><span class="p">.</span><span class="n">com</span>
 </pre></div>
@@ -668,10 +673,9 @@ title="Print to PDF"
 <p>The name and email you enter will be attached to each commit you make to your projects or ones you collaborate on.</p>
 </section>
 </section>
-<hr class="docutils" />
 <section id="local-version-control-or-tracking-work-on-your-own-computer">
 <h2>Local version control, or tracking work on your own computer<a class="headerlink" href="#local-version-control-or-tracking-work-on-your-own-computer" title="Permalink to this headline">#</a></h2>
-<p>To track work using Git you must first <em>initialize a repository</em> for our project. Open a shell and navigate (change directory using <code class="docutils literal notranslate"><span class="pre">cd</span></code>) to your working folder (called <code class="docutils literal notranslate"><span class="pre">my_folder</span></code> for now), or make a new folder and navigate to it. Then type <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">init</span></code> to create the repository. For example:</p>
+<p>Once Git is installed on your own computer it can be used to manage versions as you work on your project. To use Git you must first <em>initialize a repository</em> for our project. Open a shell and navigate (change directory using <code class="docutils literal notranslate"><span class="pre">cd</span></code>) to your working folder (called <code class="docutils literal notranslate"><span class="pre">my_folder</span></code> for now), or make a new folder and navigate to it. Then type <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">init</span></code> to create the repository. For example:</p>
 <div class="highlight-powershell notranslate"><div class="highlight"><pre><span></span><span class="p">$</span> <span class="nb">cd </span><span class="n">my_folder</span>
 <span class="p">$</span> <span class="n">git</span> <span class="n">init</span>
 </pre></div>
@@ -739,9 +743,14 @@ title="Print to PDF"
 <span class="n">nothing</span> <span class="n">to</span> <span class="n">commit</span><span class="p">,</span> <span class="n">working</span> <span class="n">tree</span> <span class="n">clean</span>
 </pre></div>
 </div>
+<p><strong>One last point:</strong> If you want, you can combine several repos into one big repo as Git sub-repositories, perhaps for organizational purposes. See <a class="reference external" href="https://github.com/EmaroLab/docs/wiki/GitHub-Tutorial-to-Manage-Project-with-SubRepositories">the tutorial here</a>.</p>
+<p>That is all we’ll cover here. For more comprehensive introductions and tutorials see the table of recommendations below.</p>
+</section>
 <hr class="docutils" />
-<p>That is all we’ll cover here. For more comprehensive introductions and tutorials see the table of recommendations below. For reference, here are all of the git commands used in this tutorial.</p>
-<p><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">config</span> <span class="pre">--global</span> <span class="pre">user.name</span> <span class="pre">&quot;Max</span> <span class="pre">Planck&quot;</span> </code> =  assign your name to your git repository (only do this once when you install git)</p>
+<section id="git-commands-used-on-this-page">
+<h2>Git commands used on this page<a class="headerlink" href="#git-commands-used-on-this-page" title="Permalink to this headline">#</a></h2>
+<p>For reference, here are all of the git commands used in this tutorial.</p>
+<p><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">config</span> <span class="pre">--global</span> <span class="pre">user.name</span> <span class="pre">&quot;Max</span> <span class="pre">Planck&quot;</span></code> =  assign your name to your git repository (only do this once when you install git)</p>
 <p><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">config</span> <span class="pre">--global</span> <span class="pre">user.email</span> <span class="pre">mplanck&#64;example.com</span></code>  =  assign your email address to your git repository (only do this once when you install git)</p>
 <p><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">init</span></code>  =  create a new repository in the working directory</p>
 <p><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">status</span></code>  =  show the status of the repository, which files are tracked and which have uncommitted changes</p>
@@ -750,70 +759,6 @@ title="Print to PDF"
 <p><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">rm</span> <span class="pre">--cached</span> <span class="pre">&lt;file&gt;</span></code>  =  remove <code class="docutils literal notranslate"><span class="pre">&lt;file&gt;</span></code> from the staging area</p>
 <p><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">commit</span> <span class="pre">-m</span> <span class="pre">'my</span> <span class="pre">commit</span> <span class="pre">message'</span></code>  =  commit files in the staging area, and include a commit message</p>
 <p><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">log</span> <span class="pre">-1</span></code>  =  show the previous commit hash, author, and time</p>
-<hr class="docutils" />
-<p><strong>One last point:</strong> If you want, you can combine several repos into one big repo as git sub-repositories, perhaps for organizational purposes. See <a class="reference external" href="https://github.com/EmaroLab/docs/wiki/GitHub-Tutorial-to-Manage-Project-with-SubRepositories">the tutorial here</a>.</p>
-</section>
-<hr class="docutils" />
-<section id="backing-up-files-on-github">
-<h2>Backing Up Files On Github<a class="headerlink" href="#backing-up-files-on-github" title="Permalink to this headline">#</a></h2>
-<p>Github is an online <em>repository</em> which is used for backing up and sharing code/documents with collaborators. Repositories are copies of your files saved in the cloud, and can be either <strong>public</strong> (visible/accessible by anyone with the URL) or <strong>private</strong> (only accessible to specific users but subject to a subscription fee).</p>
-<p>An introduction to using GitHub is provided <a class="reference internal" href="git-workflows.html"><span class="doc std std-doc">on a separate page</span></a>.</p>
-</section>
-<hr class="docutils" />
-<section id="alternative-learning-resources">
-<h2>Alternative learning resources<a class="headerlink" href="#alternative-learning-resources" title="Permalink to this headline">#</a></h2>
-<p>There are a great many open-source and commercial tutorials, how-to’s and manuals including written pages, tutorials (with exercises, examples etc.), and videos. This table provides some recommendations.</p>
-<table class="colwidths-auto table">
-<thead>
-<tr class="row-odd"><th class="head"><p></p></th>
-<th class="head"><p>Description</p></th>
-<th class="head"><p>Type</p></th>
-<th class="head"><p>Comments</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p>1</p></td>
-<td><p><strong><a class="reference external" href="https://www.neonscience.org/version-control-git-series">7-part intro. to Git</a></strong> from NEON (National Ecological Observatory Network).</p></td>
-<td><p>written tutorial website</p></td>
-<td><p>Succinct, no extra words, includes objectives; very nice. Somewhat derived from Software Carpentry (next item). Includes updating repos via “remote”.</p></td>
-</tr>
-<tr class="row-odd"><td><p>2</p></td>
-<td><p><strong><a class="reference external" href="https://www.youtube.com/watch?v=WBg9mlpzEYU">Git 101 basics</a></strong></p></td>
-<td><p>Youtube video (33 mins but play at 1.75 time)</p></td>
-<td><p>I learned more from this than most other sources, and have watched it several times.</p></td>
-</tr>
-<tr class="row-even"><td><p>3</p></td>
-<td><p><strong><a class="reference external" href="https://swcarpentry.github.io/git-novice/">Software carpentry’s resources</a></strong> for their hands on workshops.</p></td>
-<td><p>Well organized website</p></td>
-<td><p>Includes a workshop schedule, pages for each section &amp; exercises. A bit more wordy than NEON’s introduction, but well designed and tested.</p></td>
-</tr>
-<tr class="row-odd"><td><p>4</p></td>
-<td><p><strong><a class="reference external" href="https://git-scm.com/doc">Git manual</a></strong> and others, from Git.</p></td>
-<td><p>Manual; book; videos</p></td>
-<td><p>Detailed documentation and the comprehensive Pro Git book. Four short videos are good introductions.</p></td>
-</tr>
-<tr class="row-even"><td><p>5</p></td>
-<td><p><strong><a class="reference external" href="https://www.jrebel.com/system/files/git-cheat-sheet.pdf">“Best practices” &amp; Git cheat sheet</a></strong></p></td>
-<td><p>PDF page</p></td>
-<td><p>From a nice (although oldish, 2016) summary by <em>Rebellabs</em> called <a class="reference external" href="https://www.jrebel.com/blog/git-cheat-sheet">Git Cheat Sheet: Commands and Best Practices</a>.</p></td>
-</tr>
-<tr class="row-odd"><td><p>6</p></td>
-<td><p><strong><a class="reference external" href="https://gist.github.com/Chaser324/ce0505fbed06b947d962">GitHub Forking</a></strong></p></td>
-<td><p>MD page</p></td>
-<td><p>“Fairly standard” procedure: Create a fork; Do your work; Issue a pull request; Merge back into the original project.</p></td>
-</tr>
-<tr class="row-even"><td><p>7</p></td>
-<td><p><strong><a class="reference external" href="https://www.atlassian.com/git/tutorials/merging-vs-rebasing">Merging vs. Rebasing</a></strong></p></td>
-<td><p>Git tutorial page</p></td>
-<td><p>One of many pages in a comprehensive <a class="reference external" href="https://www.atlassian.com/git/tutorials">Git tutorial</a> from <a class="reference external" href="http://Atlassian.com">Atlassian.com</a>. Their context is Bitbucket (not GitHub) but Git concepts are the same.</p></td>
-</tr>
-<tr class="row-odd"><td><p>8</p></td>
-<td><p><strong><a class="reference external" href="https://linkedinlearning.ubc.ca">LinkedIn Learning “courses”</a></strong> for UBC faculty and staff</p></td>
-<td><p>Video courses</p></td>
-<td><p>Log in using your CWL and search for Git, or GitHub, etc. There are many, but at least they are not quite as random as the unfiltered internet.</p></td>
-</tr>
-</tbody>
-</table>
 </section>
 </section>
 
@@ -844,14 +789,14 @@ title="Print to PDF"
                 
     <!-- Previous / next buttons -->
 <div class='prev-next-area'>
-    <a class='left-prev' id="prev-link" href="tut-programming-environs.html" title="previous page">
+    <a class='left-prev' id="prev-link" href="tut-git-github.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">Working with environments for running code or programming</p>
+            <p class="prev-next-title">Version control and collaboration; Git &amp; GitHub</p>
         </div>
     </a>
-    <a class='right-next' id="next-link" href="git-workflows.html" title="next page">
+    <a class='right-next' id="next-link" href="tut-github.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
         <p class="prev-next-title">GitHub and Git Workflows</p>

@@ -279,32 +279,10 @@ const thebe_selector_output = ".output, .cell_output"
    Training faculty &amp; students
   </a>
  </li>
- <li class="toctree-l1 has-children">
+ <li class="toctree-l1">
   <a class="reference internal" href="eval-wisdom.html">
    Project evaluation
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
-  <label for="toctree-checkbox-3">
-   <i class="fas fa-chevron-down">
-   </i>
-  </label>
-  <ul>
-   <li class="toctree-l2">
-    <a class="reference internal" href="eval-coursetransforms.html">
-     Course transformations
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="eval-dashbds.html">
-     Dashboards
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="project-data.html">
-     Project Data
-    </a>
-   </li>
-  </ul>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="presentations.html">
@@ -365,30 +343,49 @@ const thebe_selector_output = ".output, .cell_output"
    Command line &amp; Shells
   </a>
  </li>
- <li class="toctree-l1">
+ <li class="toctree-l1 has-children">
   <a class="reference internal" href="tut-conda_environs.html">
-   Environments; Conda, Mamba, etc.
+   Environments
   </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="tut-programming-environs.html">
+     Using environs; an e.g.
+    </a>
+   </li>
+  </ul>
  </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="tut-programming-environs.html">
-   Using environments
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="tut-git-github.html">
+   Git and Github
   </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="tut-git-intro.html">
-   Git Introduction
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="git-workflows.html">
-   GitHub and Git Workflows
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="tut-pullrequest.html">
-   Pull Request Workflow
-  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+  <label for="toctree-checkbox-4">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="tut-git-intro.html">
+     Intro. to Git
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="tut-github.html">
+     GitHub workflows
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="tut-gitrefs.html">
+     Git/Github resources
+    </a>
+   </li>
+  </ul>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="tut-teachwith-jnbs.html">
@@ -648,16 +645,20 @@ title="Print to PDF"
 </ul>
 </li>
 <li><p>Do tutorials need to be more like precedent, i.e. modular such as <a class="reference external" href="https://autogis-site.readthedocs.io/en/latest/index.html">Helsinki “short course”</a>, <a class="reference external" href="https://projectpythia.org/">Project Pythia</a>, or Atlasian tutorials, etc.? In fact, some may best be referenced to these types of existing ones tutorials?</p></li>
-<li><p>Merge <em>two github pages</em>. They could be rewritten as summaries, perhaps based on (or simply pointing to?) the <a class="reference external" href="https://www.atlassian.com/git/tutorials/comparing-workflows">Atlasian tutorials</a>. Maybe also refer to <a class="reference external" href="https://python.datasciencebook.ca/version-control.html">Ch.12 of the DSCI100 text</a> (still wiht R as context, but updates in progress).</p></li>
-<li><p>Merge two environments pages.</p></li>
+<li><p>Merge <em>three github pages</em>. They could be rewritten as summaries, perhaps based on (or simply pointing to?) the <a class="reference external" href="https://www.atlassian.com/git/tutorials/comparing-workflows">Atlasian tutorials</a>. Maybe also refer to <a class="reference external" href="https://python.datasciencebook.ca/version-control.html">Ch.12 of the DSCI100 text</a>.</p></li>
 <li><p>Review and update of <a class="reference internal" href="tut-teachwith-jnbs.html"><span class="doc std std-doc">teaching with Jupyter NBs</span></a>.</p></li>
 <li><p>Jupyter startup: consider material from eosc442 and dsci100? How does this compare to docs used in EOSC 211? Should <a class="reference external" href="https://foundations.projectpythia.org/landing-page.html">Project Pythia’s foundations book</a> be used instead?</p></li>
 <li><p><em>Conda &amp; environments</em> and <em>Using environments</em> need rationalizing and updating.</p></li>
 <li><p>Add jupytext to pages about setting up J-notebooks, using notebooks for teaching, how J-Books uses it, and likely others.</p></li>
 <li><p>Servers and hubs: move, rename &amp; rewrite; it’s not really a how-to since we &amp; others are still iterating towards optimal choices. It needs to be more like “lessons learned”.</p></li>
 <li><p>Other software tools - add quiz management for Canvas, PrairieLearn, support for JupyterBooks - others on the EOAS-UBC project board and elsewhere?</p></li>
-<li><p>“Rationalize” project evaluation pages.</p></li>
 <li><p>The faculty training page needs to incorporate “student training”, including feedback and reflections from students. It has been renamed in the ToC, but needs reworking. The perspective is training as a project outcome.</p></li>
+<li><p>Add report (without budget) to progress reports section.</p></li>
+<li><p>ToD for PA:</p>
+<ul>
+<li><p>add to ATSC301 page?</p></li>
+</ul>
+</li>
 </ul>
 </section>
 <section id="additions">
@@ -676,16 +677,7 @@ title="Print to PDF"
 <section id="specific-courses">
 <h2>Specific courses<a class="headerlink" href="#specific-courses" title="Permalink to this headline">#</a></h2>
 <ul class="simple">
-<li><p>DSCI 100:</p>
-<ul>
-<li><p>notes from Lindsey</p></li>
-<li><p>capture the slack thread. Done to Jan 6, 2023, file “dsci100-slack-230106.xlsx”.</p></li>
-<li><p>new <a class="reference external" href="https://python.datasciencebook.ca/intro.html">text book</a> &amp; <a class="reference external" href="https://github.com/UBC-DSCI/introduction-to-datascience-python">repo</a>.</p></li>
-<li><p><a class="reference external" href="https://github.com/UBC-DSCI/dsci-100-student-python">Student’s course repo</a>.</p></li>
-</ul>
-</li>
 <li><p>eosc442,</p></li>
-<li><p>atsc301,</p></li>
 <li><p>eosc211,</p>
 <ul>
 <li><p>Add piazza data to eosc211</p></li>
@@ -702,10 +694,13 @@ title="Print to PDF"
 <h2>Done<a class="headerlink" href="#done" title="Permalink to this headline">#</a></h2>
 <ul class="simple">
 <li><p>Courses top page: Change tables from “goals” to “delivered”. Use “actions” listed in file <code class="docutils literal notranslate"><span class="pre">showcase</span> <span class="pre">notes</span> <span class="pre">230215.docx</span></code>.</p></li>
-<li><p>Jupyter / Python install based on EOSC 211 (and maybe EOSC 354). Does this include use of condalock? - see <a class="reference internal" href="jnb-startup-win.html"><span class="doc std std-doc">Jupyer NB Startup</span></a>.</p></li>
+<li><p>Jupyter / Python install based on EOSC 211 (and maybe EOSC 354). Does this include use of condalock?.</p></li>
 <li><p>Project outcomes summary (Executive summary) needs reconfiguring more like the poster and showcase outline. Priorities are not efficient, and the whole thing is long winded.</p></li>
 <li><p>Merge “dashboard deployment” onto “Developing dashboards”.</p></li>
 <li><p>merged Python startup and jupyternotebook startup. Python needs no “startup” but it can reference a few courses and resources.</p></li>
+<li><p>Upgrade and ‘rationalize’ the two environments pages.</p></li>
+<li><p>“Rationalize” project evaluation pages.</p></li>
+<li><p>DSCI 100 page udpated.</p></li>
 </ul>
 </section>
 </section>

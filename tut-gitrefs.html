@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>GitHub and Git Workflows &#8212; OCESE Documentation</title>
+    <title>Git &amp; GitHub learning resources &#8212; OCESE Documentation</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -52,8 +52,8 @@ const thebe_selector_output = ".output, .cell_output"
     <script async="async" src="_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="A Pull Request Workflow tutorial" href="tut-pullrequest.html" />
-    <link rel="prev" title="Git Introduction" href="tut-git-intro.html" />
+    <link rel="next" title="Teaching and learning with Jupyter Notebooks" href="tut-teachwith-jnbs.html" />
+    <link rel="prev" title="GitHub and Git Workflows" href="tut-github.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -280,32 +280,10 @@ const thebe_selector_output = ".output, .cell_output"
    Training faculty &amp; students
   </a>
  </li>
- <li class="toctree-l1 has-children">
+ <li class="toctree-l1">
   <a class="reference internal" href="eval-wisdom.html">
    Project evaluation
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
-  <label for="toctree-checkbox-3">
-   <i class="fas fa-chevron-down">
-   </i>
-  </label>
-  <ul>
-   <li class="toctree-l2">
-    <a class="reference internal" href="eval-coursetransforms.html">
-     Course transformations
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="eval-dashbds.html">
-     Dashboards
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="project-data.html">
-     Project Data
-    </a>
-   </li>
-  </ul>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="presentations.html">
@@ -366,30 +344,49 @@ const thebe_selector_output = ".output, .cell_output"
    Command line &amp; Shells
   </a>
  </li>
- <li class="toctree-l1">
+ <li class="toctree-l1 has-children">
   <a class="reference internal" href="tut-conda_environs.html">
-   Environments; Conda, Mamba, etc.
+   Environments
   </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="tut-programming-environs.html">
+     Using environs; an e.g.
+    </a>
+   </li>
+  </ul>
  </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="tut-programming-environs.html">
-   Using environments
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="tut-git-github.html">
+   Git and Github
   </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="tut-git-intro.html">
-   Git Introduction
-  </a>
- </li>
- <li class="toctree-l1 current active">
-  <a class="current reference internal" href="#">
-   GitHub and Git Workflows
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="tut-pullrequest.html">
-   Pull Request Workflow
-  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+  <label for="toctree-checkbox-4">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="current">
+   <li class="toctree-l2">
+    <a class="reference internal" href="tut-git-intro.html">
+     Intro. to Git
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="tut-github.html">
+     GitHub workflows
+    </a>
+   </li>
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     Git/Github resources
+    </a>
+   </li>
+  </ul>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="tut-teachwith-jnbs.html">
@@ -506,7 +503,7 @@ title="Fullscreen mode"
   <div class="menu-dropdown__content">
     <ul>
       <li>
-        <a href="_sources/git-workflows.md"
+        <a href="_sources/tut-gitrefs.md"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -543,128 +540,23 @@ title="Print to PDF"
     </ul>
   </div>
 </div>
-<label for="__page-toc"
-  class="headerbtn headerbtn-page-toc"
-  
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-list"></i>
-  </span>
-
-</label>
 
     </div>
 </div>
 
 <!-- Table of contents -->
 <div class="col-md-3 bd-toc show noprint">
-    <div class="tocsection onthispage pt-5 pb-3">
-        <i class="fas fa-list"></i> Contents
-    </div>
-    <nav id="bd-toc-nav" aria-label="Page">
-        <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#solo-no-branching-workflow">
-   1. Solo no branching workflow
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#solo-with-branch-and-merge">
-   2. Solo with branch and merge
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#upon-using-git-push-all-existing-branches-will-get-pushed-to-github">
-   Upon using
-   <code class="docutils literal notranslate">
-    <span class="pre">
-     git
-    </span>
-    <span class="pre">
-     push
-    </span>
-   </code>
-   all existing branches will get pushed to GitHub.
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#sharing-but-with-no-branching-not-ideal">
-   3. Sharing but with no branching (not ideal)
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#fork-pull-workflow">
-   4. Fork &amp; Pull Workflow
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#pointers-references">
-   Pointers &amp; References
-  </a>
- </li>
-</ul>
-
-    </nav>
 </div>
     </div>
     <div class="article row">
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>GitHub and Git Workflows</h1>
+                <h1>Git & GitHub learning resources</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
                         
-                        <div>
-                            <h2> Contents </h2>
-                        </div>
-                        <nav aria-label="Page">
-                            <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#solo-no-branching-workflow">
-   1. Solo no branching workflow
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#solo-with-branch-and-merge">
-   2. Solo with branch and merge
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#upon-using-git-push-all-existing-branches-will-get-pushed-to-github">
-   Upon using
-   <code class="docutils literal notranslate">
-    <span class="pre">
-     git
-    </span>
-    <span class="pre">
-     push
-    </span>
-   </code>
-   all existing branches will get pushed to GitHub.
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#sharing-but-with-no-branching-not-ideal">
-   3. Sharing but with no branching (not ideal)
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#fork-pull-workflow">
-   4. Fork &amp; Pull Workflow
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#pointers-references">
-   Pointers &amp; References
-  </a>
- </li>
-</ul>
-
-                        </nav>
                     </div>
                 </div>
             </div>
@@ -672,131 +564,60 @@ title="Print to PDF"
                 
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="github-and-git-workflows">
-<h1>GitHub and Git Workflows<a class="headerlink" href="#github-and-git-workflows" title="Permalink to this headline">#</a></h1>
-<p>For an introduction to Git and version control, see the page <a class="reference internal" href="tut-git-intro.html"><span class="doc std std-doc">Git Intro</span></a>. This page outlines four levels of workflow complexity:</p>
-<ol class="simple">
-<li><p>Solo no branching workflow; the simplest use of GitHub as a repository for your own work only.</p></li>
-<li><p>Solo with branch and merge to manage your own development of features.</p></li>
-<li><p>Sharing but with no branching (not ideal).</p></li>
-<li><p>Fork &amp; Pull Workflow.</p></li>
-</ol>
-<p>Details follow.</p>
-<section id="solo-no-branching-workflow">
-<h2>1. Solo no branching workflow<a class="headerlink" href="#solo-no-branching-workflow" title="Permalink to this headline">#</a></h2>
-<p>The simplest use of GitHub as a repository for your own work only, with local editing.</p>
-<ol>
-<li><p>In your GitHub account, use the big green <strong>New</strong> button to make a new blank repository.</p>
-<ul class="simple">
-<li><p>It will ask you to name it, describe it briefly, declare it as public or private</p></li>
-<li><p>Also you should answer the “initialize this repository” by adding README and license files. (The “BSD 3-Clause License” is OK.) These two should be included as a matter of good practice.</p></li>
-<li><p>a <code class="docutils literal notranslate"><span class="pre">.gitignore</span></code> file is not needed yet, but may be added later.</p></li>
-</ul>
-</li>
-<li><p>Update the <a class="reference external" href="http://README.md">README.md</a> file</p>
-<ul class="simple">
-<li><p>Click the <a class="reference external" href="http://README.md">README.md</a> file</p></li>
-<li><p>Click the edit pencil icon</p></li>
-<li><p>Add a line or two</p></li>
-<li><p>Below the edit box you will see “<strong>Commit changes</strong>” information. Describe the change in the top one-line box, add optional info if you like, check email, be sure you pick “<strong>Commit directly to the master branch</strong>” and click the <strong>Commit changes</strong> button.</p></li>
-</ul>
-</li>
-<li><p>That’s all that is necessary. Work can be carried out within the GitHub environment. Add new or upload files, edit text files (MarkDown or .md files or code, etc.), commit for version control, and so on.</p>
-<p>However, normally work will be done on your local computer so the next step is to clone this repo to your local computer.</p>
-</li>
-<li><p>If not already done, install Git version control system on your own computer. See the <a class="reference internal" href="tut-git-intro.html"><span class="doc std std-doc">git intro page</span></a>.</p></li>
-<li><p>There are GUIs for all platforms, but it is “safer” to start using the command line, and move to a graphical user interface once you are able to work from the command line.</p></li>
-</ol>
-</section>
-<hr class="docutils" />
-<section id="solo-with-branch-and-merge">
-<h2>2. Solo with branch and merge<a class="headerlink" href="#solo-with-branch-and-merge" title="Permalink to this headline">#</a></h2>
-<p>No collaboration but use of branches to “contain” your own development of features. Here’s a typical workflow:</p>
-<ul>
-<li><p>List all local branches: <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">branch</span></code>. Or list all branches, local and remote: <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">branch</span> <span class="pre">-av</span></code></p></li>
-<li><p>Create a new branch called <em>new-branch</em>: <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">branch</span> <span class="pre">new-branch</span></code></p></li>
-<li><p>Switch to the branch <em>new-branch</em> and update the working directory: <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">checkout</span> <span class="pre">new-branch</span></code></p></li>
-<li><p>Do all your work in this new branch. Files in working directories will reflect this work while files remaining in the other branch will not be visible but are not lost. You can revert to the other branch simply by using <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">checkout</span> <span class="pre">branchname</span></code> again. All branches will remain available this way until they are deleted, as below.</p></li>
-<li><p>Merge <em>branch-a</em> into <em>branch-b</em>. Do this when the stuff you were figuring out in the “b” branch is ready to become part of the code or product in the “a” branch.</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">checkout</span> <span class="n">branch</span><span class="o">-</span><span class="n">b</span>
-<span class="n">git</span> <span class="n">merge</span> <span class="n">branch</span><span class="o">-</span><span class="n">a</span>
-</pre></div>
-</div>
-</li>
-<li><p>Delete a branch called <em>my-branch</em>: <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">branch</span> <span class="pre">-d</span> <span class="pre">my-branch</span></code></p></li>
-</ul>
-</section>
-<section id="upon-using-git-push-all-existing-branches-will-get-pushed-to-github">
-<h2>Upon using <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">push</span></code> all existing branches will get pushed to GitHub.<a class="headerlink" href="#upon-using-git-push-all-existing-branches-will-get-pushed-to-github" title="Permalink to this headline">#</a></h2>
-</section>
-<section id="sharing-but-with-no-branching-not-ideal">
-<h2>3. Sharing but with no branching (not ideal)<a class="headerlink" href="#sharing-but-with-no-branching-not-ideal" title="Permalink to this headline">#</a></h2>
-<ul class="simple">
-<li><p>Could be derived from the tutorial at NSF’s <a class="reference external" href="https://www.neonscience.org/git-setup-remote">National Ecological Observatory Network</a>. This is part 7 from a succinct 7-part beginner’s Git tutorial. See also “Pointers &amp; References” below.</p></li>
-</ul>
-<p>NEED TO CHECK and integrate “<a class="reference external" href="https://github.com/eoas-ubc/eoas_tlef/blob/master/docs/Git_workflow.md">A Pull Request Workflow Tutorial</a>”.</p>
-</section>
-<hr class="docutils" />
-<section id="fork-pull-workflow">
-<h2>4. Fork &amp; Pull Workflow<a class="headerlink" href="#fork-pull-workflow" title="Permalink to this headline">#</a></h2>
-<p>Collaboration using a Fork from someone else’s repository, develop in a branch, maintain synchronicity with the originator’s master, and request addition of your work using pull request.</p>
-<ol>
-<li><p>Fork to your own repository</p></li>
-<li><p>Clone to your local</p>
-<ol class="simple">
-<li><p>In your local folder under which the new repo should reside: <code class="docutils literal notranslate"><span class="pre">Git</span> <span class="pre">clone</span> <span class="pre">…URL…</span></code></p></li>
-<li><p>Track the original upstream version: <code class="docutils literal notranslate"><span class="pre">Git</span> <span class="pre">remote</span> <span class="pre">add</span> <span class="pre">upstream</span></code></p></li>
-<li><p>(Verify the new remote with <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">remote</span> <span class="pre">-v</span></code> .)</p></li>
-</ol>
-</li>
-<li><p>At start of each editing session:</p>
-<ol>
-<li><p>Bring upstream’s branches (with edits) into the local repo.: <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">fetch</span> <span class="pre">upstream</span></code></p></li>
-<li><p>(View all branches, including those from upstream with <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">branch</span> <span class="pre">-va</span></code> .)</p></li>
-<li><p>Checkout your master branch and merge with upstream’s master:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git checkout master
-git merge upstream/master
-</pre></div>
-</div>
-</li>
-<li><p>If there were any new commits on upstream’s master, rebase your work branch:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git checkout newfeature
-git rebase master
-</pre></div>
-</div>
-<p>This means “rebase the <em>newfeature</em> branch onto the <em>master</em> branch.”</p>
-<ul class="simple">
-<li><p><strong>Golden rule of git rebase</strong>: never use it on public branches. For example never, never do <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">checkout</span> <span class="pre">master</span></code> then <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">rebase</span> <span class="pre">newfeature</span></code>. From <a class="reference external" href="https://www.atlassian.com/git/tutorials/merging-vs-rebasing#the-golden-rule-of-rebasing">this reference</a>.</p></li>
-</ul>
-</li>
-<li><p>OR, IF desired, at the same time as rebasing, clear up by squashing (some) smaller commits down into larger commits using interactive rebase:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git checkout newfeature
-git rebase -i master
-</pre></div>
-</div>
-</li>
-</ol>
-</li>
-<li><p>Do all editing on a branch, not <code class="docutils literal notranslate"><span class="pre">master</span></code>. Either <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">checkout</span> <span class="pre">newfeature</span></code> or create a new branch by first checking out the master branch (the new branch should come from master) then create a new branch; <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">checkout</span> <span class="pre">master</span></code> then <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">branch</span> <span class="pre">newfeature</span></code>.</p></li>
-<li><p>When ready, push to your GitHub repo and ask to merge with original</p>
-<ol class="simple">
-<li><p>Send to your repo: <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">push</span></code></p></li>
-<li><p>Ask to contribute your work to owner of upstream.</p>
-<ul class="simple">
-<li><p><em>NOTE: At your GitHub repo be sure to select your development branch (eg. <code class="docutils literal notranslate"><span class="pre">newbranch</span></code>)!</em></p></li>
-<li><p>Click <strong>pull request</strong>.</p></li>
-</ul>
-</li>
-</ol>
-<p>(NOTE: Subsequent changes to that branch will be tracked until pull request is accepted or rejected. )</p>
-</li>
-</ol>
-</section>
-<hr class="docutils" />
-<section id="pointers-references">
-<h2>Pointers &amp; References<a class="headerlink" href="#pointers-references" title="Permalink to this headline">#</a></h2>
-<p>See the end of the page <a class="reference internal" href="tut-git-intro.html"><span class="doc std std-doc">Git Intro</span></a>.</p>
-</section>
+  <section class="tex2jax_ignore mathjax_ignore" id="git-github-learning-resources">
+<h1>Git &amp; GitHub learning resources<a class="headerlink" href="#git-github-learning-resources" title="Permalink to this headline">#</a></h1>
+<p>There are a great many open-source and commercial tutorials, how-to’s and manuals including written pages, tutorials (with exercises, examples etc.), and videos. This table provides some recommendations.</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p></p></th>
+<th class="head"><p>Description</p></th>
+<th class="head"><p>Type</p></th>
+<th class="head"><p>Comments</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>1</p></td>
+<td><p><strong><a class="reference external" href="https://www.neonscience.org/version-control-git-series">7-part intro. to Git</a></strong> from NEON (National Ecological Observatory Network).</p></td>
+<td><p>written tutorial website</p></td>
+<td><p>Succinct, no extra words, includes objectives; very nice. Somewhat derived from Software Carpentry (next item). Includes updating repos via “remote”.</p></td>
+</tr>
+<tr class="row-odd"><td><p>2</p></td>
+<td><p><strong><a class="reference external" href="https://www.youtube.com/watch?v=WBg9mlpzEYU">Git 101 basics</a></strong></p></td>
+<td><p>Youtube video (33 mins but play at 1.75 time)</p></td>
+<td><p>I learned more from this than most other sources, and have watched it several times.</p></td>
+</tr>
+<tr class="row-even"><td><p>3</p></td>
+<td><p><strong><a class="reference external" href="https://swcarpentry.github.io/git-novice/">Software carpentry’s resources</a></strong> for their hands on workshops.</p></td>
+<td><p>Well organized website</p></td>
+<td><p>Includes a workshop schedule, pages for each section &amp; exercises. A bit more wordy than NEON’s introduction, but well designed and tested.</p></td>
+</tr>
+<tr class="row-odd"><td><p>4</p></td>
+<td><p><strong><a class="reference external" href="https://git-scm.com/doc">Git manual</a></strong> and others, from Git.</p></td>
+<td><p>Manual; book; videos</p></td>
+<td><p>Detailed documentation and the comprehensive Pro Git book. Four short videos are good introductions.</p></td>
+</tr>
+<tr class="row-even"><td><p>5</p></td>
+<td><p><strong><a class="reference external" href="https://www.jrebel.com/system/files/git-cheat-sheet.pdf">“Best practices” &amp; Git cheat sheet</a></strong></p></td>
+<td><p>PDF page</p></td>
+<td><p>From a nice (although oldish, 2016) summary by <em>Rebellabs</em> called <a class="reference external" href="https://www.jrebel.com/blog/git-cheat-sheet">Git Cheat Sheet: Commands and Best Practices</a>.</p></td>
+</tr>
+<tr class="row-odd"><td><p>6</p></td>
+<td><p><strong><a class="reference external" href="https://gist.github.com/Chaser324/ce0505fbed06b947d962">GitHub Forking</a></strong></p></td>
+<td><p>MD page</p></td>
+<td><p>“Fairly standard” procedure: Create a fork; Do your work; Issue a pull request; Merge back into the original project.</p></td>
+</tr>
+<tr class="row-even"><td><p>7</p></td>
+<td><p><strong><a class="reference external" href="https://www.atlassian.com/git/tutorials/merging-vs-rebasing">Merging vs. Rebasing</a></strong></p></td>
+<td><p>Git tutorial page</p></td>
+<td><p>One of many pages in a comprehensive <a class="reference external" href="https://www.atlassian.com/git/tutorials">Git tutorial</a> from <a class="reference external" href="http://Atlassian.com">Atlassian.com</a>. Their context is Bitbucket (not GitHub) but Git concepts are the same.</p></td>
+</tr>
+<tr class="row-odd"><td><p>8</p></td>
+<td><p><strong><a class="reference external" href="https://linkedinlearning.ubc.ca">LinkedIn Learning “courses”</a></strong> for UBC faculty and staff</p></td>
+<td><p>Video courses</p></td>
+<td><p>Log in using your CWL and search for Git, or GitHub, etc. There are many, but at least they are not quite as random as the unfiltered internet.</p></td>
+</tr>
+</tbody>
+</table>
 </section>
 
     <script type="text/x-thebe-config">
@@ -826,17 +647,17 @@ git rebase -i master
                 
     <!-- Previous / next buttons -->
 <div class='prev-next-area'>
-    <a class='left-prev' id="prev-link" href="tut-git-intro.html" title="previous page">
+    <a class='left-prev' id="prev-link" href="tut-github.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">Git Introduction</p>
+            <p class="prev-next-title">GitHub and Git Workflows</p>
         </div>
     </a>
-    <a class='right-next' id="next-link" href="tut-pullrequest.html" title="next page">
+    <a class='right-next' id="next-link" href="tut-teachwith-jnbs.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">A Pull Request Workflow tutorial</p>
+        <p class="prev-next-title">Teaching and learning with Jupyter Notebooks</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>
