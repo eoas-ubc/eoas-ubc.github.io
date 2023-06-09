@@ -55,7 +55,7 @@ parts:
     title: Python/Jupyter startup
   - file: SkillsCheck-solns.ipynb
     title: Python Skills Check
-  - file: cloud-servers.md
+  - file: cloud-servers
   - file: jupyterbooks
   - file: tools
     title: Other software tools
@@ -67,10 +67,15 @@ parts:
     sections:
     - file: tut-programming-environs
       title: Using environs; an e.g.
-  - file: tut-git-intro
-  - file: git-workflows
-  - file: tut-pullrequest
-    title: Pull Request Workflow
+  - file: tut-git-github
+    title: Git and Github
+    sections:
+    - file: tut-git-intro
+      title: Intro. to Git
+    - file: tut-github
+      title: GitHub workflows
+    - file: tut-gitrefs
+      title: Git/Github resources
   - file: tut-teachwith-jnbs
     title: Teaching with Jupyter NBs
   - file: tut-teachwith-dashboards

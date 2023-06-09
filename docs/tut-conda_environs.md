@@ -8,7 +8,9 @@
 
 Scientific programming & data science profit greatly from the vast array of Python libraries. But libraries are not usually independent; they depend upon other libraries, creating a sometimes complex "the deep tree of dependencies". Therefore, libraries require management. Virtual environments, of which conda environments are one implementation, make this possible. In other words, (Conda) environments enable the easy definition of a complete software environment with all the libraries and their interdepnedencies, necessary for running a certain project or application.
 
-In practice, we use "environments" to keep software development and applications reproducible and usable across platforms and between different engineering and client teams. Environments (i.e. environment specifications) define all the pieces or packages that are needed for a program or set of programs to function properly.
+Using environments also helps ensure that software development and applications are reproducible, usable across platforms, and between different engineering or client teams. Environments (i.e. environment specifications) define all the pieces or packages that are needed for a program or set of programs to function properly.
+
+"Setting the environment" means telling your computer which libraries or packages must be accessible for the work you are about to carry out. It might be a set of python libraries necessary for the code you will write. Or you may be running code that needs to know how to find the components (libraries of code) it uses to work. For example, many scientific or data science programs use a common Python library of routines for plotting data called "matplotlib". Setting the environment essentially establishes the list of needed libraries for work you are about to do.
 
 For a little more detail, see this oldish (2018) but still relevant and easy-to-read explanation: [Why you need Python environments and how to manage them with Conda](https://protostar.space/why-you-need-python-environments-and-how-to-manage-them-with-conda).
 
@@ -33,18 +35,46 @@ Conda is an open source package management system and environment management sys
 
 Mamba is a package manager that is fully compatible with Conda but is supposed to be significantly faster. All commands and actions are the same as conda, so learning one will mean you can use the other easily. See [Mamba documentation](https://mamba.readthedocs.io) for more details. A sort of "superset" of Mamba that is often mentioned is "[Mamba-forge](https://github.com/conda-forge/miniforge#mambaforge)", which is really just an easily installed package containing the Mamba Package Manager along with some pre-configured components. Yes it's all a bit confusing; the article [Managing Scientific Python environments using Conda, Mamba and friends](https://focalplane.biologists.com/2022/12/08/managing-scientific-python-environments-using-conda-mamba-and-friends/) (Dec 2022) is a well-written introduction with guidelines, plus a few notes about how things can go wrong.
 
->**Note:** Any set of instructions referring to Conda will be essentially identical if Mamba is used as the package manager instead of Conda.
+```{note}
+Any set of instructions referring to Conda will be essentially identical if Mamba is used as the package manager instead of Conda.
+```
 
->**Also Note:** The pace of change (usually = improvement) is so rapid that best practices are already out of date as soon as documentation is produced. For example, there is an emerging effort to simplify package management that can be explored (as of June 2023) starting at the [Prefix-dev](https://prefix.devp) website and their [documentation pages](https://prefix.devp).
+```{note}
+The pace of change (usually implying improvement) is so rapid that best practices are already out of date as soon as documentation is produced. For example, there is an emerging effort to simplify package management that can be explored (as of June 2023) starting at the [Prefix-dev](https://prefix.devp) website and their [documentation pages](https://prefix.devp).
+```
 
 ### Installing Conda
 
 * Anaconda is large and very "complete". Miniconda is small and usually adequate.
   * Install [miniconda via conda installation docs](https://docs.conda.io/projects/conda/en/latest/user-guide/install/index.html).
   * Alternative installation instructions from P. Austin's [Numerical methods course](https://phaustin.github.io/numeric/doc_notebooks/course_bootstrap/installing_jupytext.html).
-* For the environment, a reasonable starting point is `numeric.yml` from P. Austin's course.
-  * Here is a [direct link to the yml file](https://github.com/phaustin/numeric_students/blob/downloads/utils/numeric.yml).
-  * Put it somewhere (eg. A repos folder), cd to that folder then run:
+
+### Installing Mamba
+
+Follow directions at the Mamba documentation's [install page](https://mamba.readthedocs.io/en/latest/installation.html).
+
+### "Setting" the enviornment
+
+Once a package management system is installed (Conda, Mamba, etc.), 
+
+* For scientific computing, a starting environment could be as simple as the following text file:
+
+```bash
+name: anyname
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.9.*
+  - pandas
+  - numpy
+  - matplotlib
+  - jupyter=1.*
+  - pip
+```
+
+* An example of an enviornment requiring more packages is P. Austin's  `numeric.yml` environment, used in UBC's ATSC409 numerical methods course. Here is a [direct link to the yml file](https://github.com/phaustin/numeric_students/blob/downloads/utils/numeric.yml).
+* To "set" the environment, put the enviornment file somewhere (eg. in a repository folder), change to that folder (the command line `cd` command) then run:
 
 ```bash
     conda env create -f numeric.yml
@@ -52,10 +82,6 @@ Mamba is a package manager that is fully compatible with Conda but is supposed t
 ```
 
 Verify successful installation by typing `conda info` at the prompt.
-
-### Installing Mamba
-
-Basically - follow directions at the Mamba documentation's [install page](https://mamba.readthedocs.io/en/latest/installation.html).
 
 ## Specifying the environment: the `*.yml` file
 
