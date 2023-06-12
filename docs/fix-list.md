@@ -18,7 +18,6 @@ See also **[issues](https://github.com/eoas-ubc/eoas-ubc.github.io/issues)** at 
 * Servers and hubs: move, rename & rewrite; it's not really a how-to since we & others are still iterating towards optimal choices. It needs to be more like "lessons learned".
 * Other software tools - add quiz management for Canvas, PrairieLearn, support for JupyterBooks - others on the EOAS-UBC project board and elsewhere?
 * The faculty training page needs to incorporate "student training", including feedback and reflections from students. It has been renamed in the ToC, but needs reworking. The perspective is training as a project outcome.
-* Add report (without budget) to progress reports section.
 * ToD for PA:
    * add to ATSC301 page?
 
@@ -52,4 +51,5 @@ See also **[issues](https://github.com/eoas-ubc/eoas-ubc.github.io/issues)** at 
 * merged Python startup and jupyternotebook startup. Python needs no "startup" but it can reference a few courses and resources.
 * Upgrade and 'rationalize' the two environments pages.
 * "Rationalize" project evaluation pages.
-* DSCI 100 page udpated.
+* DSCI 100 page updated.
+* Add report (without budget) to progress reports section.
