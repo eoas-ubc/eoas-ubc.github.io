@@ -17,7 +17,6 @@ See also **[issues](https://github.com/eoas-ubc/eoas-ubc.github.io/issues)** at 
 * Servers and hubs: move, rename & rewrite; it's not really a how-to since we & others are still iterating towards optimal choices. It needs to be more like "lessons learned".
 * Other software tools - add quiz management for Canvas, PrairieLearn, support for JupyterBooks - others on the EOAS-UBC project board and elsewhere?
 * The faculty training page needs to incorporate "student training", including feedback and reflections from students. It has been renamed in the ToC, but needs reworking. The perspective is training as a project outcome.
-* Add report (without budget) to progress reports section.
 * Check that the [Atlasian tutorials](https://www.atlassian.com/git/tutorials/comparing-workflows) & [Ch.12 of the DSCI100 text](https://python.datasciencebook.ca/version-control.html) are referenced.
 * is Andrew's [crash course](https://github.com/AndrewLoeppky/crash_course/blob/master/coding_crash_course.md) used adequately?
 * ToD for PA:
@@ -53,5 +52,6 @@ See also **[issues](https://github.com/eoas-ubc/eoas-ubc.github.io/issues)** at 
 * merged Python startup and jupyternotebook startup. Python needs no "startup" but it can reference a few courses and resources.
 * Upgrade and 'rationalize' the two environments pages.
 * "Rationalize" project evaluation pages.
-* DSCI 100 page udpated.
+* DSCI 100 page updated.
 * reorganize *three github pages*.
+* Add report (without budget) to progress reports section.
