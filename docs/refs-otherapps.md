@@ -16,11 +16,9 @@ Many organizations are producing excellent interactive resources for modeling, s
 | [Open Global Glacier Models](https://edu.oggm.org/en/latest/index.html) | glaciology | Gallery, global glaciers, simulation model |
 | [PhET: glaciers](https://phet.colorado.edu/en/simulations/glaciers) | glaciology |  |
 | [PhET: green house gasses](https://phet.colorado.edu/en/simulations/greenhouse) | climate |  |
-| [PhET: Under pressure](https://phet.colorado.edu/en/simulations/under-pressure) | hydrogeology | hydrogeology |
-| [PhET: Fluid Pressure and Flow](https://phet.colorado.edu/en/simulations/fluid-pressure-and-flow) | hydrogeology | hydrogeology |
+| - [PhET: Under pressure](https://phet.colorado.edu/en/simulations/under-pressure) <BR>- [PhET: Fluid Pressure & Flow](https://phet.colorado.edu/en/simulations/fluid-pressure-and-flow)| hydrogeology | hydrogeology |
+| - [PhET: plate tectonics ](https://phet.colorado.edu/en/simulations/plate-tectonics)<BR>- [PhET: radiometric dating](https://phet.colorado.edu/en/simulations/radioactive-dating-game) | geology | tectonics & dating concepts |
 | [PhET: other hydro, gravity, etc concepts](https://phet.colorado.edu/en/simulations/filter?subjects=earth-science) | physics, math, chem | 25 apps more or less related to Earth sciences |
-| [PhET: plate tectonics ](https://phet.colorado.edu/en/simulations/plate-tectonics) | geology | tectonics concepts |
-| [PhET: radiometric dating](https://phet.colorado.edu/en/simulations/radioactive-dating-game) | geology | relative and absolute deep time |
 | [National virtual ocean data system](https://data.pmel.noaa.gov/nvods/las/UI.vm) | oceanography | access to, and plotting of ocgy & topog/bathym data |
 | [eGeotraces: biogeochemical ocgy](https://www.egeotraces.org/) | oceanography | access to, and plotting of tracer and other ocean data |
 | [AR5 Climate Model Mapper (U. Chicago)](http://climatemodels.uchicago.edu/maps/) | climate | maybe somewhat old - ask Phil A.  |

@@ -10,7 +10,6 @@ See also **[issues](https://github.com/eoas-ubc/eoas-ubc.github.io/issues)** at 
    * TLEF poster,
    * EER poster
 * Do tutorials need to be more like precedent, i.e. modular such as [Helsinki "short course"](https://autogis-site.readthedocs.io/en/latest/index.html), [Project Pythia](https://projectpythia.org/), or Atlasian tutorials, etc.? In fact, some may best be referenced to these types of existing ones tutorials?
-* Merge *three github pages*. They could be rewritten as summaries, perhaps based on (or simply pointing to?) the [Atlasian tutorials](https://www.atlassian.com/git/tutorials/comparing-workflows). Maybe also refer to [Ch.12 of the DSCI100 text](https://python.datasciencebook.ca/version-control.html).
 * Review and update of [teaching with Jupyter NBs](tut-teachwith-jnbs.md).
 * Jupyter startup: consider material from eosc442 and dsci100? How does this compare to docs used in EOSC 211? Should [Project Pythia's foundations book](https://foundations.projectpythia.org/landing-page.html) be used instead?
 * *Conda & environments* and *Using environments* need rationalizing and updating.
@@ -19,6 +18,8 @@ See also **[issues](https://github.com/eoas-ubc/eoas-ubc.github.io/issues)** at 
 * Other software tools - add quiz management for Canvas, PrairieLearn, support for JupyterBooks - others on the EOAS-UBC project board and elsewhere?
 * The faculty training page needs to incorporate "student training", including feedback and reflections from students. It has been renamed in the ToC, but needs reworking. The perspective is training as a project outcome.
 * Add report (without budget) to progress reports section.
+* Check that the [Atlasian tutorials](https://www.atlassian.com/git/tutorials/comparing-workflows) & [Ch.12 of the DSCI100 text](https://python.datasciencebook.ca/version-control.html) are referenced.
+* is Andrew's [crash course](https://github.com/AndrewLoeppky/crash_course/blob/master/coding_crash_course.md) used adequately?
 * ToD for PA:
    * add to ATSC301 page?
 
@@ -53,3 +54,4 @@ See also **[issues](https://github.com/eoas-ubc/eoas-ubc.github.io/issues)** at 
 * Upgrade and 'rationalize' the two environments pages.
 * "Rationalize" project evaluation pages.
 * DSCI 100 page udpated.
+* reorganize *three github pages*.
