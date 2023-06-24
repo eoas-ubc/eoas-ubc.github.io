@@ -19,5 +19,9 @@ To be discussed: several pathways or workflows that enable constructing question
 2. nbgrader
 3. PrairieLearn
 4. gradscope
+5. Berkeley's [OK](https://okpy.org/)
+6. LMS (Canvas)
+7. Berkeley (again) [OtterGrader](https://otter-grader.readthedocs.io/en/latest/)
+8. Microsoft's [PyBryt](https://microsoft.github.io/pybryt/html/index.html)
 
 Some notes on pros, cons, costs, benefits, and security, including consideration of sustainability and maintenance requirements.

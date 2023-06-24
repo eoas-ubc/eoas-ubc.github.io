@@ -1,20 +1,20 @@
 # Course development tools
 
+For **assessment** management and **autograding**, see the [assessment page](openassessment.md).
+
 * [paged_html_theme](https://github.com/eoas-ubc/paged_html_theme)
   A sphinx theme for pdf formatting of notebooks
 * [jb_tools](https://github.com/eoas-ubc/jb_tools):
   utiliities for using watchdog and subprocess builds with jupyter-book and myst_nb
 * [jb_windows](https://github.com/eoas-ubc/jb_windows)
   utilities for setting the environment variable PYTHONUTF8=1 on windows
-* trio_chrome:  A python driver for headless chrome printing
-* convert_docs:  move docx, pptx and latex files into markdown
-  * Start [here](https://github.com/eoas-ubc/convert_docs/blob/master/Readme_convert.md) for converting docx, tex and pptx to Markdown.  
+* ??trio_chrome:  A python driver for headless chrome printing
 * generate quizzes for the Canvas Learning Management System
 * Jupyter Hubs
 * Docker containers
 * nbgrader
 * [PrairieLearn](https://prairielearn.readthedocs.io/en/latest/)
-* [PanDoc](https://pandoc.org/) for converting between a wide range of formats (eg MS-Word to Markdown, etc.)
+* [PanDoc](https://pandoc.org/) for converting document formats (eg MS-Word to Markdown, etc.). A brief intro to using a local install of pandoc is [here](https://github.com/eoas-ubc/convert_docs/blob/master/Readme_convert.md).
 * Excel spreadsheet to markdown table: search online. [Tabletomarkdown.com](https://tabletomarkdown.com/convert-spreadsheet-to-markdown/) seems to work well.
 
 ## Text to QTI
