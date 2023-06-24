@@ -1,12 +1,6 @@
-# Version control and Git
+# Introduction to version control and Git
 
-## Why Git
-
-Writing code, reports, articles, presentations or any form of documentation usually involves trial and error, so it makes sense to retain earlier versions of the project so you can recall or revert to older work as needed. However, manually keeping track of versions is messy and prone to making mistakes.
-
-[**Git**](https://git-scm.com/book/en/v2/Getting-Started-What-is-Git%3F) is a facility that was developed to address this "version control" challenge. It is a file management and version control system whith which you can periodically save your work (called making a `commit`) with notes, names, dates, or other information. With **Git**, you can then either revert to previous versions or join (i.e. `merge`) your efforts with work contributed by colleagues in an organized, reversible, secure and convenient manner.
-
-All serious programmers and many writers of technical documentation use version control, and many use **Git** as the tool to both track their own work and collaborate with others. **Git** is a tool with a wide range of capabilities so it makes sense to start with a simple workflow, then progress to more sophisticated usage depending on your or your team's needs.
+See our [short discussion](tut-git-github.md) of why it is important to learn how to manage your workflow with collaboration and version control using Git and GitHub.
 
 ## Using Git for local version control
 

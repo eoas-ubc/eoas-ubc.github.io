@@ -99,7 +99,6 @@ Collaboration using a Fork from someone else's repository, develop in a branch, 
       - _NOTE: At your GitHub repo be sure to select your development branch (eg. `newbranch`)!_
       - Click **pull request**.
 
-   (NOTE: Subsequent changes to that branch will be tracked until pull request is accepted or rejected. )
+   (NOTE: Subsequent changes to that branch will be tracked until pull request is accepted or rejected.)
 
 ---
-

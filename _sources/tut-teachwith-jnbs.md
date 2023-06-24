@@ -2,6 +2,10 @@
 
 ## Introduction
 
+<div style="color:red">Maybe we should adapt, or simply point to this 2019 DOC. It is CC-BY 4.0:</div>
+
+[Teaching and Learning with Jupyter](https://jupyter4edu.github.io/jupyter-edu-book/), which also has a [repo](https://github.com/jupyter4edu/jupyter-edu-book). It is very long and could likely be reduced to "point form", with current demos (eosc442, eosec352 etc.)
+
 This page summarizes ways that Jupyter notebooks have been introduced to EOAS faculty and students for teaching and learning purposes. Detailed guidelines, and examples of uses from various courses, will be provided in separate pages.
 
 **Getting started:** Guidelines for setting up you local computer to run Jupyter Notebooks are in our [Python / Jupyter Notebooks startup](python-startup.md) page.
