@@ -1,9 +1,9 @@
 format: jb-book
 root: index
 parts:
+- file: execsum
 - caption: Project & Outcomes
   chapters:
-  - file: execsum
     title: Executive Summary
   - file: project-outline
   - file: progress
@@ -87,6 +87,6 @@ parts:
   - file: refs-otherapps
     title: Third-party dashboards
   - file: refs-oer
-    title: Open Education Resources
+    title: Third-party OERs
   - file: fix-list
     title: Documentation ToDo's

@@ -45,4 +45,23 @@
 
 * **timeseries-FFT** (not online). On github at [repo](https://github.com/fhmjones/timeseries-fft); works, but incomplete.
 
-* **[gpglabs](https://gpg.geosci.xyz/content/appendix/apps.html)** Developed by the UBC Geophysical Inversion Facility ([UBC_GIF](https://gif.eos.ubc.ca/)) several years ago, this collection served as inspiration for OCESE dashboard devleopment. It is an extensive collection of interactive Jupyter Notebooks illustrating concepts in applied geophysics including forward & inverse modeling and physics. See the [GPG applied geophysics textbook](https://gpg.geosci.xyz/) or the interactive NoteBooks collection [repository](https://github.com/geoscixyz/gpgLabs), both with links for running NoteBooks using Binder, Azure Notebooks, or locally on your own computer. The hub for running is currently restricted to students registered in EOSC 350 and faculty/TAs involved in teaching the course.
+* **[gpglabs](https://gpg.geosci.xyz/content/appendix/apps.html)** Developed by the UBC Geophysical Inversion Facility ([UBC_GIF](https://gif.eos.ubc.ca/)) several years ago, this collection served as inspiration for OCESE dashboard devleopment. It is an extensive collection of interactive Jupyter Notebooks illustrating concepts in applied geophysics including forward & inverse modeling and physics. See the [GPG applied geophysics textbook](https://gpg.geosci.xyz/) or the interactive NoteBooks collection [repository](https://github.com/geoscixyz/gpgLabs).
+
+## Other dashboard ideas
+
+This is just a list of possible new dashboards. Each would require a sales pitch to relevant instructors (and or PME).
+
+* Augment any EOSC 111 activities with dashboards or JNBs.
+* Engineers: phenomenon behaviors (eg Mohr's circles)
+* Darcy's Law?
+* seismology?
+* complex numbers: relating 3 forms, Euler's. Explore Kahn Academy for visualization ideas.
+* are apps at brilliant.org inspirational?
+* are lessons on Khan Academy inspirational?
+* are there ideas at [SERC](https://serc.carleton.edu/eddie/teaching_materials/index.html).
+* Re. the FFT dashboard:
+  * search for precedent. Khan academy? FFT or iFFT demos/apps?
+  * first pass at reconstructing signal with chosen number of F-series terms
+  * what to explore for signal deconstruction? Find first N coefficients - i.e. generate a spectrum or power spectrum?
+  * effect of sampling approaching Nyquist?
+  * filters?

@@ -31,6 +31,7 @@
 
 * [Pangeo education/training](https://discourse.pangeo.io/t/poets-core-pangeo-education-needs-you/355).
 * [2i2c](https://2i2c.org/): design, development and operation of JupyterHubs for research and education.
+* [Project Pythia](https://projectpythia.org/): An education and training hub for the geoscientific Python community.
 * What's missing? Send suggestions for this spot to fjones@eoas.ubc.ca.
 
 ## Summary-style documentation we have found useful
@@ -55,7 +56,7 @@
 
 ## Open source python software
 
-* Earth science big data ([pangeo](https://pangeo.io/architecture.html))
+* Earth science big data ([pangeo](https://pangeo.io/index.html))
 * NASA [open science initiative](https://science.nasa.gov/open-science-overview)
 * Climate data analysis:  [xcdat](https://xcdat.readthedocs.io/en/latest/) (US DOE)
 * Weather data - [Metpy](https://unidata.github.io/MetPy/latest/index.html) (NCAR), [Scitools](https://scitools.org.uk/organisation.html#organisation-top) (UK met office)
