@@ -1,9 +1,9 @@
 format: jb-book
 root: index
 parts:
-- file: execsum
 - caption: Project & Outcomes
   chapters:
+  - file: execsum
     title: Executive Summary
   - file: project-outline
   - file: progress
