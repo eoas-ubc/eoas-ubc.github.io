@@ -18,6 +18,7 @@
 * [DSCI 100 repository](https://github.com/UBC-DSCI)
 * [STAT 201 repository](https://github.com/UBC-DSCI/stat-201)
 * A <a href="files/strategic_planning.pdf">strategic planning</a> "how to" info-graphic.
+* UBC's [June 2023 Edubytes](https://mailchi.mp/ubc/edubytes-newsletter-june2023?e=f1df481e69) about open scholarship.
 
 ## Data Science programs at UBC-Vancouver and UBC-Okanagan
 
