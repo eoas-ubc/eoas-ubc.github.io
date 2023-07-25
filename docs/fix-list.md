@@ -6,7 +6,16 @@ See also **[issues](https://github.com/eoas-ubc/eoas-ubc.github.io/issues)** at 
 
 * Do tutorials need to be more like precedent, i.e. modular such as [Helsinki "short course"](https://autogis-site.readthedocs.io/en/latest/index.html), [Project Pythia](https://projectpythia.org/), or Atlasian tutorials, etc.? In fact, some may best be referenced to these types of existing ones tutorials?
 * Review and update of [teaching with Jupyter NBs](tut-teachwith-jnbs.md).
-* dashboards: Build use-cases for each relevant course? explore [JB's cmip6 book?](https://github.com/fhmjones/cmip6_book), review project notes about dashboards (FJ's OneNote).
+* Review and update of [Third party dashboards ...](refs-otherapps.md), including reference to the spreadsheet indicated on the top of that page.
+* dashboards:
+   * Build use-cases for each relevant course?
+   * Explore [JB's cmip6 book?](https://github.com/fhmjones/cmip6_book),
+   * review project notes about dashboards (FJ's OneNote).
+   * The [teaching with ...](tut-teachwith-dashboards.md) page needs updating. Include a framework (maybe a template) for use. E.g. activity components such as "fosters questioning", "provides meaningful context", include anticipated time to complete, game-ify? etc.
+   * Add licensing info to each (CC with details).
+   * build SERC resources? See ENVR 300 below.
+   * Do SERC resources (eg EDDIE) inspire other dashboards?
+   * How to solicit dashboard requests from instructors?
 * Jupyter startup: consider material from eosc442 and dsci100? How does this compare to docs used in EOSC 211? Should [Project Pythia's foundations book](https://foundations.projectpythia.org/landing-page.html) be used instead?
 * *Conda & environments* and *Using environments* need rationalizing and updating.
 * Add jupytext to pages about setting up J-notebooks, using notebooks for teaching, how J-Books uses it, and likely others.
@@ -29,6 +38,7 @@ See also **[issues](https://github.com/eoas-ubc/eoas-ubc.github.io/issues)** at 
 * List courses that could leverage lessons we learned to align with students' needs, efficiency, and departmental/curricular norms.
 * Gather quotes from workers (AL, BJ, IS) then place them in corresponding course pages, or in project evaluation pages. (Project eval pages may need consolidating.
 * Convert “Project evaluation” into “lessons learned”? Or add a lessons learned page?
+* List candidates for OER, especially via SERC. Note they review but it takes time.
 
 ## Specific courses
 
@@ -37,6 +47,10 @@ See also **[issues](https://github.com/eoas-ubc/eoas-ubc.github.io/issues)** at 
   * e211's startup docs, lock files and how-tos or tutorials.
 * eosc429
 * eosc373 (describe actions and outcomes with Hal's JNB)
+* eosc442:
+  * are climate datasets an OCESE outcome? Not really, except that upgrading the course's project activity was a separately funded project carried out at the same time as OCESE, and with a little support from OCESE staff (FJ).
+  * Do they want more climate data sets? Are EDDIE modules a source? Is the climate emergency committee still addressing data sets?
+* envr 300: adapting the CO2 activity to become an "Eddie Module" would serve as "completion" step for dashboard development. Needs permission. Submission as an Eddie module is done by completing the form [here](https://serc.carleton.edu/eddie/participate/contribute_activity.html), then editing resulting webpage at SERC. Early effort was carried out on day 5 of EER.
 
 ## Done
 
