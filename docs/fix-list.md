@@ -5,6 +5,17 @@ See also **[issues](https://github.com/eoas-ubc/eoas-ubc.github.io/issues)** at 
 ## Ideas
 
 * Do tutorials need to be more like precedent, i.e. modular such as [Helsinki "short course"](https://autogis-site.readthedocs.io/en/latest/index.html), [Project Pythia](https://projectpythia.org/), or Atlasian tutorials, etc.? In fact, some may best be referenced to these types of existing ones tutorials?
+* Review and update of [teaching with Jupyter NBs](tut-teachwith-jnbs.md).
+* Review and update of [Third party dashboards ...](refs-otherapps.md), including reference to the spreadsheet indicated on the top of that page.
+* dashboards:
+   * Build use-cases for each relevant course?
+   * Explore [JB's cmip6 book?](https://github.com/fhmjones/cmip6_book),
+   * review project notes about dashboards (FJ's OneNote).
+   * The [teaching with ...](tut-teachwith-dashboards.md) page needs updating. Include a framework (maybe a template) for use. E.g. activity components such as "fosters questioning", "provides meaningful context", include anticipated time to complete, game-ify? etc.
+   * Add licensing info to each (CC with details).
+   * build SERC resources? See ENVR 300 below.
+   * Do SERC resources (eg EDDIE) inspire other dashboards?
+   * How to solicit dashboard requests from instructors?
 * Jupyter startup: consider material from eosc442 and dsci100? How does this compare to docs used in EOSC 211? Should [Project Pythia's foundations book](https://foundations.projectpythia.org/landing-page.html) be used instead?
 
 ## Improvements
