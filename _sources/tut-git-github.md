@@ -1,5 +1,9 @@
 # Version control and collaboration; Git & GitHub
 
+There are **many Git and Github tutorials** out there, and it is best to find a current tutorial to ensure that you learn about the most recent tools and techniques. **See the [Git & GitHub learning resources](tut-gitrefs.md) page.**
+
+This section of OCESE docuemntation (4 pages) was relevant in 2022.
+
 ## Why Git
 
 Writing code, reports, articles, presentations or any form of documentation usually involves trial and error, so it makes sense to retain earlier versions of the project so you can recall or revert to older work as needed. However, manually keeping track of versions is messy and prone to making mistakes.

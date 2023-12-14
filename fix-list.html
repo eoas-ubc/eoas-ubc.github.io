@@ -338,17 +338,29 @@ const thebe_selector_output = ".output, .cell_output"
  </span>
 </p>
 <ul class="nav bd-sidenav">
- <li class="toctree-l1">
+ <li class="toctree-l1 has-children">
   <a class="reference internal" href="tut-commandline.html">
    Command line &amp; Shells
   </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="crash_course-shells.html">
+     Andrew's Crash Course on Shells
+    </a>
+   </li>
+  </ul>
  </li>
  <li class="toctree-l1 has-children">
   <a class="reference internal" href="tut-conda_environs.html">
    Environments
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
-  <label for="toctree-checkbox-3">
+  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+  <label for="toctree-checkbox-4">
    <i class="fas fa-chevron-down">
    </i>
   </label>
@@ -364,8 +376,8 @@ const thebe_selector_output = ".output, .cell_output"
   <a class="reference internal" href="tut-git-github.html">
    Git and Github
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
-  <label for="toctree-checkbox-4">
+  <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
+  <label for="toctree-checkbox-5">
    <i class="fas fa-chevron-down">
    </i>
   </label>
@@ -378,6 +390,11 @@ const thebe_selector_output = ".output, .cell_output"
    <li class="toctree-l2">
     <a class="reference internal" href="tut-github.html">
      GitHub workflows
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="crash_course-git.html">
+     Andrew's GIT crash course
     </a>
    </li>
    <li class="toctree-l2">
@@ -562,6 +579,11 @@ title="Print to PDF"
     <nav id="bd-toc-nav" aria-label="Page">
         <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#ideas">
+   Ideas
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#improvements">
    Improvements
   </a>
@@ -601,6 +623,11 @@ title="Print to PDF"
                         <nav aria-label="Page">
                             <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#ideas">
+   Ideas
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#improvements">
    Improvements
   </a>
@@ -633,24 +660,25 @@ title="Print to PDF"
   <section class="tex2jax_ignore mathjax_ignore" id="fixes-to-documentation">
 <h1>Fixes to documentation<a class="headerlink" href="#fixes-to-documentation" title="Permalink to this headline">#</a></h1>
 <p>See also <strong><a class="reference external" href="https://github.com/eoas-ubc/eoas-ubc.github.io/issues">issues</a></strong> at the host repository, <strong><a class="reference external" href="https://docs.google.com/spreadsheets/d/1DL2YDthzEbZijx35nVyveSstU5frQdzA/edit#gid=173746334">requirements</a></strong> (Google sheet) for each project component, and <strong><a class="reference external" href="https://docs.google.com/spreadsheets/d/1BUk1_FHItUgzuyg2aJ-dX6XpMABmFSPe/edit#gid=979565415">accomplishments &amp; data</a></strong> (Google sheet) for project outcomes.</p>
+<section id="ideas">
+<h2>Ideas<a class="headerlink" href="#ideas" title="Permalink to this headline">#</a></h2>
+<ul class="simple">
+<li><p>Do tutorials need to be more like precedent, i.e. modular such as <a class="reference external" href="https://autogis-site.readthedocs.io/en/latest/index.html">Helsinki “short course”</a>, <a class="reference external" href="https://projectpythia.org/">Project Pythia</a>, or Atlasian tutorials, etc.? In fact, some may best be referenced to these types of existing ones tutorials?</p></li>
+<li><p>Jupyter startup: consider material from eosc442 and dsci100? How does this compare to docs used in EOSC 211? Should <a class="reference external" href="https://foundations.projectpythia.org/landing-page.html">Project Pythia’s foundations book</a> be used instead?</p></li>
+</ul>
+</section>
 <section id="improvements">
 <h2>Improvements<a class="headerlink" href="#improvements" title="Permalink to this headline">#</a></h2>
 <ul class="simple">
-<li><p>Do tutorials need to be more like precedent, i.e. modular such as <a class="reference external" href="https://autogis-site.readthedocs.io/en/latest/index.html">Helsinki “short course”</a>, <a class="reference external" href="https://projectpythia.org/">Project Pythia</a>, or Atlasian tutorials, etc.? In fact, some may best be referenced to these types of existing ones tutorials?</p></li>
 <li><p>Review and update of <a class="reference internal" href="tut-teachwith-jnbs.html"><span class="doc std std-doc">teaching with Jupyter NBs</span></a>.</p></li>
 <li><p>dashboards: Build use-cases for each relevant course? explore <a class="reference external" href="https://github.com/fhmjones/cmip6_book">JB’s cmip6 book?</a>, review project notes about dashboards (FJ’s OneNote).</p></li>
-<li><p>Jupyter startup: consider material from eosc442 and dsci100? How does this compare to docs used in EOSC 211? Should <a class="reference external" href="https://foundations.projectpythia.org/landing-page.html">Project Pythia’s foundations book</a> be used instead?</p></li>
-<li><p><em>Conda &amp; environments</em> and <em>Using environments</em> need rationalizing and updating.</p></li>
-<li><p>Add jupytext to pages about setting up J-notebooks, using notebooks for teaching, how J-Books uses it, and likely others.</p></li>
 <li><p>Servers and hubs: move, rename &amp; rewrite; it’s not really a how-to since we &amp; others are still iterating towards optimal choices. It needs to be more like “lessons learned”.</p></li>
-<li><p>Other software tools - refer to the automating assessments page; support for JupyterBooks - others on the EOAS-UBC project board and elsewhere?</p></li>
-<li><p>automating assessments: short intros for quiz management options, including Canvas API, PrairieLearn, &amp; others</p></li>
-<li><p>The faculty training page needs to incorporate “student training”, including feedback and reflections from students. It has been renamed in the ToC, but needs reworking. The perspective is training as a project outcome.</p></li>
-<li><p>Check that the <a class="reference external" href="https://www.atlassian.com/git/tutorials/comparing-workflows">Atlasian tutorials</a> &amp; <a class="reference external" href="https://python.datasciencebook.ca/version-control.html">Ch.12 of the DSCI100 text</a> are referenced.</p></li>
-<li><p>is Andrew’s <a class="reference external" href="https://github.com/AndrewLoeppky/crash_course/blob/master/coding_crash_course.md">crash course</a> used adequately?</p></li>
-<li><p>ToDo for PA:</p>
+<li><p><a class="reference internal" href="openassessment.html"><span class="doc std std-doc">automating assessments</span></a>: not yet complete</p></li>
+<li><p>The <a class="reference internal" href="facultydev.html"><span class="doc std std-doc">faculty training</span></a> page needs work. The perspective is training as a project outcome.</p></li>
+<li><p>ToDo for PA?</p>
 <ul>
 <li><p>add to ATSC301 page?</p></li>
+<li><p>update status on two CMIP dashboards</p></li>
 </ul>
 </li>
 </ul>
@@ -697,6 +725,10 @@ title="Print to PDF"
 <li><p>Add report (without budget) to progress reports section.</p></li>
 <li><p>dashboards: other ideas added. Needs augmenting.</p></li>
 <li><p>EER poster done.</p></li>
+<li><p>This “improvememnt” was simply dropped: <em>Conda &amp; environments</em> and <em>Using environments</em> need rationalizing and updating.</p></li>
+<li><p>Jupytext added to the Other Software Tools page.</p></li>
+<li><p>The <a class="reference external" href="https://www.atlassian.com/git/tutorials/comparing-workflows">Atlasian tutorials</a> &amp; <a class="reference external" href="https://python.datasciencebook.ca/version-control.html">Ch.12 of the DSCI100 text</a> were referenced on the Git tutorial <a class="reference internal" href="tut-git-github.html"><span class="doc std std-doc">top page</span></a> and the <a class="reference internal" href="tut-gitrefs.html"><span class="doc std std-doc">Git/GitHub resources</span></a> page.</p></li>
+<li><p>Andrew’s crash course content added from <a class="reference external" href="https://github.com/AndrewLoeppky/crash_course/blob/master/coding_crash_course.md">here</a> (dated ~2020).</p></li>
 </ul>
 </section>
 </section>

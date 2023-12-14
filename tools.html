@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Course development tools &#8212; OCESE Documentation</title>
+    <title>Development tools &#8212; OCESE Documentation</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -339,17 +339,29 @@ const thebe_selector_output = ".output, .cell_output"
  </span>
 </p>
 <ul class="nav bd-sidenav">
- <li class="toctree-l1">
+ <li class="toctree-l1 has-children">
   <a class="reference internal" href="tut-commandline.html">
    Command line &amp; Shells
   </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="crash_course-shells.html">
+     Andrew's Crash Course on Shells
+    </a>
+   </li>
+  </ul>
  </li>
  <li class="toctree-l1 has-children">
   <a class="reference internal" href="tut-conda_environs.html">
    Environments
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
-  <label for="toctree-checkbox-3">
+  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+  <label for="toctree-checkbox-4">
    <i class="fas fa-chevron-down">
    </i>
   </label>
@@ -365,8 +377,8 @@ const thebe_selector_output = ".output, .cell_output"
   <a class="reference internal" href="tut-git-github.html">
    Git and Github
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
-  <label for="toctree-checkbox-4">
+  <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
+  <label for="toctree-checkbox-5">
    <i class="fas fa-chevron-down">
    </i>
   </label>
@@ -379,6 +391,11 @@ const thebe_selector_output = ".output, .cell_output"
    <li class="toctree-l2">
     <a class="reference internal" href="tut-github.html">
      GitHub workflows
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="crash_course-git.html">
+     Andrew's GIT crash course
     </a>
    </li>
    <li class="toctree-l2">
@@ -563,6 +580,11 @@ title="Print to PDF"
     <nav id="bd-toc-nav" aria-label="Page">
         <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#jupytext">
+   Jupytext
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#text-to-qti">
    Text to QTI
   </a>
@@ -581,7 +603,7 @@ title="Print to PDF"
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Course development tools</h1>
+                <h1>Development tools</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -591,6 +613,11 @@ title="Print to PDF"
                         </div>
                         <nav aria-label="Page">
                             <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#jupytext">
+   Jupytext
+  </a>
+ </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#text-to-qti">
    Text to QTI
@@ -611,25 +638,18 @@ title="Print to PDF"
                 
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="course-development-tools">
-<h1>Course development tools<a class="headerlink" href="#course-development-tools" title="Permalink to this headline">#</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="development-tools">
+<h1>Development tools<a class="headerlink" href="#development-tools" title="Permalink to this headline">#</a></h1>
 <p>For <strong>assessment</strong> management and <strong>autograding</strong>, see the <a class="reference internal" href="openassessment.html"><span class="doc std std-doc">assessment page</span></a>.</p>
 <ul class="simple">
-<li><p><a class="reference external" href="https://github.com/eoas-ubc/paged_html_theme">paged_html_theme</a>
-A sphinx theme for pdf formatting of notebooks</p></li>
-<li><p><a class="reference external" href="https://github.com/eoas-ubc/jb_tools">jb_tools</a>:
-utiliities for using watchdog and subprocess builds with jupyter-book and myst_nb</p></li>
-<li><p><a class="reference external" href="https://github.com/eoas-ubc/jb_windows">jb_windows</a>
-utilities for setting the environment variable PYTHONUTF8=1 on windows</p></li>
-<li><p>??trio_chrome:  A python driver for headless chrome printing</p></li>
-<li><p>generate quizzes for the Canvas Learning Management System</p></li>
-<li><p>Jupyter Hubs</p></li>
-<li><p>Docker containers</p></li>
-<li><p>nbgrader</p></li>
-<li><p><a class="reference external" href="https://prairielearn.readthedocs.io/en/latest/">PrairieLearn</a></p></li>
 <li><p><a class="reference external" href="https://pandoc.org/">PanDoc</a> for converting document formats (eg MS-Word to Markdown, etc.). A brief intro to using a local install of pandoc is <a class="reference external" href="https://github.com/eoas-ubc/convert_docs/blob/master/Readme_convert.md">here</a>.</p></li>
 <li><p>Excel spreadsheet to markdown table: search online. <a class="reference external" href="https://tabletomarkdown.com/convert-spreadsheet-to-markdown/">Tabletomarkdown.com</a> seems to work well.</p></li>
 </ul>
+<section id="jupytext">
+<h2>Jupytext<a class="headerlink" href="#jupytext" title="Permalink to this headline">#</a></h2>
+<p>Jupyter notebooks are traditionally saved as files with an <code class="docutils literal notranslate"><span class="pre">ipynb</span></code> extension which stands for “Interactive Python Notebook”. It is a file format used by Jupyter Notebook to store and share documents that contain live code, equations, visualizations, and narrative text.</p>
+<p>However, this file format is not appropriate for version control. <a class="reference external" href="https://jupytext.readthedocs.io/en/latest/">Jupytext</a> is a Notebook plugin that causes any file save action to generate more than one version of the file being saved. A common example is to save both an <code class="docutils literal notranslate"><span class="pre">ipynb</span></code> file and a markdown <code class="docutils literal notranslate"><span class="pre">mp</span></code> or <code class="docutils literal notranslate"><span class="pre">py:percent</span></code> version. How this is used and how Jupyter notebooks or Jupyter Labs uses these versions is explained in the <a class="reference external" href="https://jupytext.readthedocs.io/en/latest/">Jupytext documentation</a>.</p>
+</section>
 <section id="text-to-qti">
 <h2>Text to QTI<a class="headerlink" href="#text-to-qti" title="Permalink to this headline">#</a></h2>
 <p>The text2qti command line tool converts questions written in a modified markdown format into the QTI format recognized by Canvas’s API. The repository of this tool is <a class="reference external" href="https://github.com/gpoore/text2qti">text2qti</a>.</p>

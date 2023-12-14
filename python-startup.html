@@ -339,17 +339,29 @@ const thebe_selector_output = ".output, .cell_output"
  </span>
 </p>
 <ul class="nav bd-sidenav">
- <li class="toctree-l1">
+ <li class="toctree-l1 has-children">
   <a class="reference internal" href="tut-commandline.html">
    Command line &amp; Shells
   </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="crash_course-shells.html">
+     Andrew's Crash Course on Shells
+    </a>
+   </li>
+  </ul>
  </li>
  <li class="toctree-l1 has-children">
   <a class="reference internal" href="tut-conda_environs.html">
    Environments
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
-  <label for="toctree-checkbox-3">
+  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+  <label for="toctree-checkbox-4">
    <i class="fas fa-chevron-down">
    </i>
   </label>
@@ -365,8 +377,8 @@ const thebe_selector_output = ".output, .cell_output"
   <a class="reference internal" href="tut-git-github.html">
    Git and Github
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
-  <label for="toctree-checkbox-4">
+  <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
+  <label for="toctree-checkbox-5">
    <i class="fas fa-chevron-down">
    </i>
   </label>
@@ -379,6 +391,11 @@ const thebe_selector_output = ".output, .cell_output"
    <li class="toctree-l2">
     <a class="reference internal" href="tut-github.html">
      GitHub workflows
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="crash_course-git.html">
+     Andrew's GIT crash course
     </a>
    </li>
    <li class="toctree-l2">
@@ -658,11 +675,12 @@ title="Print to PDF"
 <p>Python programs can be made to run as stand-alone programs, or - more commonly for educational purposes - a <strong>Jupyter Notebook</strong> can be used as an evironment for writing, debugging and running Python codes.</p>
 <section id="learning-python">
 <h3>Learning Python<a class="headerlink" href="#learning-python" title="Permalink to this headline">#</a></h3>
-<p>There are numerous tutorials, courses or articles about learnign Python. It is beyond the scope of these documents to teach Python.</p>
-<p><strong>Project Pythia’s</strong> <a class="reference external" href="https://foundations.projectpythia.org/landing-page.html">foundations page</a> includes getting started pages for Python, Jupyter and GitHub. Also tutorials on seven key Python scientific packages: NumPy, Matplotlib, Cartopy, Datetime, Pandas, Data Formats, and Xarray. Other sources include:</p>
+<p>There are numerous tutorials, courses or articles about learnign Python. It is beyond the scope of these documents to teach Python. Some examples:</p>
 <ul class="simple">
-<li><p>DSCI 100 (some sections use Pyton, some use “R”), Introduction to Data Science (in the Statistics Department)</p></li>
-<li><p>EOSC 211, Computer Methods in Earth, Ocean and Atmospheric Sciences (in the Dep’t of Earth Ocean and Atmospheric Sciences)</p></li>
+<li><p><strong>Project Pythia’s</strong> <a class="reference external" href="https://foundations.projectpythia.org/landing-page.html">foundations page</a> includes getting started pages for Python, Jupyter and GitHub. Also tutorials on seven key Python scientific packages: NumPy, Matplotlib, Cartopy, Datetime, Pandas, Data Formats, and Xarray.</p></li>
+<li><p>The <a class="reference external" href="https://ncar.github.io/python-tutorial/index.html">NCAR Python Tutorial</a> is designed for stientists who have programming experience but not in Python.</p></li>
+<li><p><a class="reference external" href="https://www.stat.ubc.ca/course-lookup?field_course_subject_value=dsci&amp;field_course_code_value=&amp;field_course_detail_code_value=&amp;field_course_category_tid=All">DSCI 100</a> (some sections use Pyton, some use “R”), Introduction to Data Science (in the Statistics Department)</p></li>
+<li><p><a class="reference external" href="https://www.eoas.ubc.ca/academics/courses/eosc211">EOSC 211</a>, Computer Methods in Earth, Ocean and Atmospheric Sciences (in the Dep’t of Earth Ocean and Atmospheric Sciences)</p></li>
 <li><p>An opensource textbook, adapted for  UBC coures EOSC 211 and ATSC 301, is <a class="reference external" href="https://problemsolvingwithpython.com/">Problem Solving with Python</a> by by Dr. <a class="reference external" href="https://github.com/ProfessorKazarinoff">Peter Kazarinof</a>.</p></li>
 <li><p>Another free texbook worth considering is <a class="reference external" href="https://greenteapress.com/wp/think-python-2e/">Think Python, 2nd edition</a>.</p></li>
 <li><p>If you have learned some (even a little) Python and want to check those skills, see our <a class="reference internal" href="SkillsCheck-solns.html"><span class="doc std std-doc">Python Skills Check</span></a> page.</p></li>

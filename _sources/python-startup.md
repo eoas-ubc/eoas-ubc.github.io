@@ -10,12 +10,12 @@ Python programs can be made to run as stand-alone programs, or - more commonly f
 
 ### Learning Python
 
-There are numerous tutorials, courses or articles about learnign Python. It is beyond the scope of these documents to teach Python.
+There are numerous tutorials, courses or articles about learnign Python. It is beyond the scope of these documents to teach Python. Some examples:
 
-**Project Pythia's** [foundations page](https://foundations.projectpythia.org/landing-page.html) includes getting started pages for Python, Jupyter and GitHub. Also tutorials on seven key Python scientific packages: NumPy, Matplotlib, Cartopy, Datetime, Pandas, Data Formats, and Xarray. Other sources include:
-
-* DSCI 100 (some sections use Pyton, some use "R"), Introduction to Data Science (in the Statistics Department)
-* EOSC 211, Computer Methods in Earth, Ocean and Atmospheric Sciences (in the Dep't of Earth Ocean and Atmospheric Sciences)
+* **Project Pythia's** [foundations page](https://foundations.projectpythia.org/landing-page.html) includes getting started pages for Python, Jupyter and GitHub. Also tutorials on seven key Python scientific packages: NumPy, Matplotlib, Cartopy, Datetime, Pandas, Data Formats, and Xarray.
+* The [NCAR Python Tutorial](https://ncar.github.io/python-tutorial/index.html) is designed for stientists who have programming experience but not in Python.
+* [DSCI 100](https://www.stat.ubc.ca/course-lookup?field_course_subject_value=dsci&field_course_code_value=&field_course_detail_code_value=&field_course_category_tid=All) (some sections use Pyton, some use "R"), Introduction to Data Science (in the Statistics Department)
+* [EOSC 211](https://www.eoas.ubc.ca/academics/courses/eosc211), Computer Methods in Earth, Ocean and Atmospheric Sciences (in the Dep't of Earth Ocean and Atmospheric Sciences)
 * An opensource textbook, adapted for  UBC coures EOSC 211 and ATSC 301, is [Problem Solving with Python](https://problemsolvingwithpython.com/) by by Dr. [Peter Kazarinof](https://github.com/ProfessorKazarinoff).
 * Another free texbook worth considering is [Think Python, 2nd edition](https://greenteapress.com/wp/think-python-2e/).
 * If you have learned some (even a little) Python and want to check those skills, see our [Python Skills Check](SkillsCheck-solns.ipynb) page.

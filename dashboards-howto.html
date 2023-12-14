@@ -339,17 +339,29 @@ const thebe_selector_output = ".output, .cell_output"
  </span>
 </p>
 <ul class="nav bd-sidenav">
- <li class="toctree-l1">
+ <li class="toctree-l1 has-children">
   <a class="reference internal" href="tut-commandline.html">
    Command line &amp; Shells
   </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="crash_course-shells.html">
+     Andrew's Crash Course on Shells
+    </a>
+   </li>
+  </ul>
  </li>
  <li class="toctree-l1 has-children">
   <a class="reference internal" href="tut-conda_environs.html">
    Environments
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
-  <label for="toctree-checkbox-3">
+  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+  <label for="toctree-checkbox-4">
    <i class="fas fa-chevron-down">
    </i>
   </label>
@@ -365,8 +377,8 @@ const thebe_selector_output = ".output, .cell_output"
   <a class="reference internal" href="tut-git-github.html">
    Git and Github
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
-  <label for="toctree-checkbox-4">
+  <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
+  <label for="toctree-checkbox-5">
    <i class="fas fa-chevron-down">
    </i>
   </label>
@@ -379,6 +391,11 @@ const thebe_selector_output = ".output, .cell_output"
    <li class="toctree-l2">
     <a class="reference internal" href="tut-github.html">
      GitHub workflows
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="crash_course-git.html">
+     Andrew's GIT crash course
     </a>
    </li>
    <li class="toctree-l2">
@@ -588,8 +605,13 @@ title="Print to PDF"
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#deploying-to-a-suitable-server">
-     Deploying to a suitable Server
+    <a class="reference internal nav-link" href="#free-server">
+     Free server
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#deploying-for-permanent-use-by-students">
+     Deploying for permanent use by students
     </a>
    </li>
   </ul>
@@ -649,8 +671,13 @@ title="Print to PDF"
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#deploying-to-a-suitable-server">
-     Deploying to a suitable Server
+    <a class="reference internal nav-link" href="#free-server">
+     Free server
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#deploying-for-permanent-use-by-students">
+     Deploying for permanent use by students
     </a>
    </li>
   </ul>
@@ -707,12 +734,19 @@ title="Print to PDF"
 <section id="to-run-only-on-your-own-computer">
 <h3>To run only on your own computer<a class="headerlink" href="#to-run-only-on-your-own-computer" title="Permalink to this headline">#</a></h3>
 <p>This choice makes sense when you are experimenting with the dashboard or planning (if only temporarily) to use it for presentations in a class or presentation.</p>
-<p>TO BE COMPLETED</p>
 </section>
-<section id="deploying-to-a-suitable-server">
-<h3>Deploying to a suitable Server<a class="headerlink" href="#deploying-to-a-suitable-server" title="Permalink to this headline">#</a></h3>
-<p>This will be required if more than 5-10 people might use the dashboard at once. This is non-trivial, and details will be documented later, hopefully during summer 2022. For now, if you need to see the repository used for deploying our collection, see scripts and Docker files at the <a class="reference external" href="https://github.com/phaustin/addon_containers">addon_containers</a> repo.</p>
-<p>DO BE COMPLETED</p>
+<section id="free-server">
+<h3>Free server<a class="headerlink" href="#free-server" title="Permalink to this headline">#</a></h3>
+<p>We have used <a class="reference external" href="https://render.com/">render.com</a> to share intermediate versions with instructors, developers, teaching assistants and other stakeholders, during the design, test, iterate cycle. There is a free version of this service, but it has limited space and bandwidth and is relatively slow to spin up the server each time the app is called. There are likely alternative approaches for temporary sharing or demonstrating, but this has worked for us during the OCESE project.</p>
+</section>
+<section id="deploying-for-permanent-use-by-students">
+<h3>Deploying for permanent use by students<a class="headerlink" href="#deploying-for-permanent-use-by-students" title="Permalink to this headline">#</a></h3>
+<p>As of June 2023, the repository we are using for deploying our collection, see scripts and Docker files at the <a class="reference external" href="https://github.com/phaustin/addon_containers">addon_containers</a> GitHub repository.</p>
+<ul class="simple">
+<li><p><strong>Hardware</strong>: server with 24 cores, 132 Gbytes of RAM. This has worked well during the 2022-23 academic season. Ideally there would also be a twin available, to be used as a hot spare if needed.</p></li>
+<li><p><strong>Administration</strong>:  Someone needs to be able to monitor the processes, respond to “help” calls, restart the server if necessary, fetch updates from github and launch those, etc. “Costs” have not been assessed carefully, but this may involve something like 5 hours per month for 10-15 apps.</p></li>
+<li><p><strong>Software</strong>: serving the dashboards involves creating docker containers, building them and pushing to the docker repository. This currently involves adding folders to <a class="reference external" href="https://github.com/phaustin/addon_containers">https://github.com/phaustin/addon_containers</a>. It is currently done “manually”, but could be templated using github actions to make this essentially automatic. As of June 2023, we have not refined this procedure.</p></li>
+</ul>
 </section>
 </section>
 <section id="some-costs-of-developing-dashboard-for-teaching-learning">

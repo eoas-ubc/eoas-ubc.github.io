@@ -1,0 +1,899 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Powershell and Command Line Crash Course &#8212; OCESE Documentation</title>
+    
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
+    
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Environments: Conda, Mamba, and all that" href="tut-conda_environs.html" />
+    <link rel="prev" title="Command line &amp; Shells" href="tut-commandline.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint"></div>
+<div class="header header-item noprint"></div>
+
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="_static/logo-04smsm.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">OCESE Documentation</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Project &amp; Outcomes
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="execsum.html">
+   Executive Summary
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="project-outline.html">
+   Goals and Contributors
+  </a>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="progress.html">
+   Progress Reports &gt;&gt;
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="progress-nov2020.html">
+     Progress at November 2020
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="progress-nov2021.html">
+     Progress at November 2021
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="progress-nov2022.html">
+     Progress at November 2022
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="progress-may2023.html">
+     Progress at May 2023
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="course_materials.html">
+   Course enhancements &gt;&gt;
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="crs-atsc301.html">
+     ATSC 301
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="crs-dsci100.html">
+     DSCI 100
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="crs-envr300.html">
+     ENVR 300
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="crs-envr420.html">
+     ENVR 420
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="crs-eosc112.html">
+     EOSC 112
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="crs-eosc116.html">
+     EOSC 116
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="crs-eosc211.html">
+     EOSC 211
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="crs-eosc310.html">
+     EOSC 310
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="crs-eosc325.html">
+     EOSC 325
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="crs-eosc329.html">
+     EOSC 329
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="crs-eosc340.html">
+     EOSC 340
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="crs-eosc350.html">
+     EOSC 350
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="crs-eosc354.html">
+     EOSC 354
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="crs-eosc372.html">
+     EOSC 372
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="crs-eosc373.html">
+     EOSC 373
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="crs-eosc410.html">
+     EOSC 410
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="crs-eosc425.html">
+     EOSC 425
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="crs-eosc429.html">
+     EOSC 429
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="crs-eosc442.html">
+     EOSC 442
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="crs-eosc471.html">
+     EOSC 471
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="openassessment.html">
+   Automating assessments
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="dashboards.html">
+   Dashboards
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="facultydev.html">
+   Training faculty &amp; students
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="eval-wisdom.html">
+   Project evaluation
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="presentations.html">
+   Presentations
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="oer.html">
+   Open Ed. Resources
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  How-to Guides
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="dashboards-howto.html">
+   Developing dashboards
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="python-startup.html">
+   Python/Jupyter startup
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="SkillsCheck-solns.html">
+   Python Skills Check
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="cloud-servers.html">
+   Servers and hubs
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="jupyterbooks.html">
+   Jupyter Books
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="tools.html">
+   Other software tools
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Tutorials
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="tut-commandline.html">
+   Command line &amp; Shells
+  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="current">
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     Andrew's Crash Course on Shells
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="tut-conda_environs.html">
+   Environments
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+  <label for="toctree-checkbox-4">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="tut-programming-environs.html">
+     Using environs; an e.g.
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="tut-git-github.html">
+   Git and Github
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
+  <label for="toctree-checkbox-5">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="tut-git-intro.html">
+     Intro. to Git
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="tut-github.html">
+     GitHub workflows
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="crash_course-git.html">
+     Andrew's GIT crash course
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="tut-gitrefs.html">
+     Git/Github resources
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="tut-teachwith-jnbs.html">
+   Teaching with Jupyter NBs
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="tut-teachwith-dashboards.html">
+   Teaching with dashboards
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  References
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="refs-citations.html">
+   Cited References
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="refs.html">
+   Links &amp; pointers
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="refs-otherapps.html">
+   Third-party dashboards
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="refs-oer.html">
+   Third-party OERs
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="fix-list.html">
+   Documentation ToDo's
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
+            
+            <div class="navbar_extra_footer">
+            Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+            </div>
+            
+        </div>
+    </div>
+    <div id="rtd-footer-container"></div>
+</div>
+
+
+          
+
+
+          
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
+    
+    <div class="header-article row sticky-top noprint">
+        
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="_sources/crash_course-shells.md"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.md</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
+
+    </div>
+</div>
+
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#using-a-shell">
+   Using a Shell
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#what-is-a-shell">
+     What is a Shell?
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#using-a-command-line-interface">
+     Using a Command Line Interface
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#exercise">
+   Exercise
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#part-1-file-explorer">
+     Part 1: File Explorer
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#part-2-powershell">
+     Part 2: Powershell
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#running-programs-from-a-shell">
+     Running Programs From a Shell
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+    </nav>
+</div>
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Powershell and Command Line Crash Course</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#using-a-shell">
+   Using a Shell
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#what-is-a-shell">
+     What is a Shell?
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#using-a-command-line-interface">
+     Using a Command Line Interface
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#exercise">
+   Exercise
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#part-1-file-explorer">
+     Part 1: File Explorer
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#part-2-powershell">
+     Part 2: Powershell
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#running-programs-from-a-shell">
+     Running Programs From a Shell
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <main id="main-content" role="main">
+                
+              <div>
+                
+  <section class="tex2jax_ignore mathjax_ignore" id="powershell-and-command-line-crash-course">
+<h1>Powershell and Command Line Crash Course<a class="headerlink" href="#powershell-and-command-line-crash-course" title="Permalink to this headline">#</a></h1>
+<p>By A. Loeppky, Teaching Assistant and OCESE project supporter.</p>
+<p>The purpose of this tutorial is to help students or instructors who lack formal background in computer science by introducing several extremely helpful tools used for developing code keeping files organized.</p>
+<p>On this page we will learn how to navigate your computer via a command line interface like <strong>Windows Powershell</strong> or <strong>Bash</strong>. This is a useful skill for any programmer to have, and is essential for installing and using many computational tools available to scientists for data analysis.</p>
+<p>A second “crash course” - <a class="reference internal" href="crash_course-git.html"><span class="doc std std-doc">Using Git</span></a> -  covers use of <strong>Git</strong> to track changes to files and <strong>Github</strong> as a remote file backup system, to prevent the dreaded “computer crashes the week before a thesis defense, leaving you with nothing” scenario.</p>
+<section id="using-a-shell">
+<h2>Using a Shell<a class="headerlink" href="#using-a-shell" title="Permalink to this headline">#</a></h2>
+<p>Using a shell is a great skill for aspiring scientific programmers to develop. In the past, a shell with a <em>command line interface</em> was the only way to interact with a computer, entering commands line by line into a <em>prompt</em>. Nowadays, operating systems and most production-grade programs/applications include a <em>graphical user interface (GUI),</em> which is the collection of mouse buttons, pull down menus, text boxes, etc. that users use to interact with a program. As scientists, oftentimes the tools we need to access (or write ourselves) for analyzing data are limited to fairly rudimentary inputs and outputs on the command line, as GUIs are rather labour intensive to develop. Since we would rather focus on solving scientific problems instead of learning the complicated art of “front end programming” (i.e. developing graphical user interfaces), a small investment in time learning to use a shell for running programs will pay huge dividends, and grant us easier access to a huge array of computational tools for doing science.</p>
+<section id="what-is-a-shell">
+<h3>What is a Shell?<a class="headerlink" href="#what-is-a-shell" title="Permalink to this headline">#</a></h3>
+<p>A shell is just a program that has access to your operating system’s services. Shells can run other programs, open and save files, or install programs on your machine. Often we can accomplish the same tasks by clicking around the start menu/file explorer (windows) or dashboard/finder (mac), but as we progress as scientific programmers, we will find increasingly that we can do things more efficiently typing commands into a shell versus using the GUI. Some tasks can only be accomplished via the command line in a shell. Mac and Linux computers typically use BASH as the default shell, and Windows computers typically use Windows Terminal or Windows Powershell. Many other shell programs exist for various operating systems, and can be installed to suit individual preference. Many commands work across most shells, but there are several things that work in BASH that will not work in Powershell and vice-versa.</p>
+</section>
+<section id="using-a-command-line-interface">
+<h3>Using a Command Line Interface<a class="headerlink" href="#using-a-command-line-interface" title="Permalink to this headline">#</a></h3>
+<p>Begin by opening your shell program of choice (Powershell/Bash/whatever). You should see some preliminary text, followed by a blinking cursor waiting for input. Depending on your choice of shell and the exact configuration, the prompt may look something like:</p>
+<div class="highlight-powershell notranslate"><div class="highlight"><pre><span></span><span class="p">$</span>
+</pre></div>
+</div>
+<p>or</p>
+<div class="highlight-powershell notranslate"><div class="highlight"><pre><span></span><span class="p">&gt;</span>
+</pre></div>
+</div>
+<p>or</p>
+<div class="highlight-powershell notranslate"><div class="highlight"><pre><span></span><span class="n">C</span><span class="p">:\</span><span class="n">folder1</span><span class="p">\</span><span class="n">folder2</span><span class="p">&gt;</span>
+</pre></div>
+</div>
+<p>For the purposes of most tutorials and documentation involving shell commands, the <code class="docutils literal notranslate"><span class="pre">$</span></code> command prompt is assumed, regardless of what yours actually looks like. Do not type the “$” sign as part of your input.</p>
+<p>First, let’s orient ourselves within our computer’s folder tree. Type the following into the prompt and press <code class="docutils literal notranslate"><span class="pre">enter</span></code></p>
+<div class="highlight-powershell notranslate"><div class="highlight"><pre><span></span><span class="p">$</span> <span class="nb">pwd</span>
+</pre></div>
+</div>
+<p><code class="docutils literal notranslate"><span class="pre">pwd</span></code> stands for “print working directory,” which is the directory you are currently in. If you were to create or save a file right now, it would be saved in the working directory, unless otherwise specified. You should now see something like:</p>
+<div class="highlight-powershell notranslate"><div class="highlight"><pre><span></span><span class="p">$</span> <span class="nb">pwd</span>
+
+<span class="n">Path</span>
+<span class="p">----</span>
+<span class="n">C</span><span class="p">:\</span><span class="n">Users</span><span class="p">\</span><span class="n">Owner</span><span class="p">\</span><span class="n">Shell_Tutorial</span>
+
+<span class="p">$</span>
+</pre></div>
+</div>
+<p>Your working directory is printed to the screen and the prompt re-appears, ready for more input. You can move around your computer’s folder tree using <code class="docutils literal notranslate"><span class="pre">cd</span></code> (change directory) followed by:</p>
+<p><code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">cd</span> <span class="pre">my_folder</span></code> <span class="math notranslate nohighlight">\(\rightarrow\)</span> change into sub-directory named “my_folder”</p>
+<p><code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">cd</span> <span class="pre">..</span></code> <span class="math notranslate nohighlight">\(\rightarrow\)</span> go up one folder level (to the <em>parent directory</em> relative to your current folder)</p>
+<p><code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">cd</span> <span class="pre">~</span></code>  <span class="math notranslate nohighlight">\(\rightarrow\)</span> go to the home directory</p>
+<p><code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">mkdir</span> <span class="pre">my_folder</span></code> <span class="math notranslate nohighlight">\(\rightarrow\)</span> make a new directory called “my_folder” inside the current directory</p>
+<p>you can also use <code class="docutils literal notranslate"><span class="pre">ls</span></code> to list all files contained within the current working directory and print them to the screen. The results will look something like this:</p>
+<div class="highlight-powershell notranslate"><div class="highlight"><pre><span></span><span class="p">$</span> <span class="nb">ls</span>
+
+    <span class="n">Directory</span><span class="p">:</span> <span class="n">C</span><span class="p">:\</span><span class="n">Users</span><span class="p">\</span><span class="n">Owner</span><span class="p">\</span><span class="n">my_folder</span>
+
+
+<span class="n">Mode</span>                 <span class="n">LastWriteTime</span>         <span class="n">Length</span> <span class="n">Name</span>
+<span class="p">----</span>                 <span class="p">-------------</span>         <span class="p">------</span> <span class="p">----</span>
+<span class="n">d</span><span class="p">-----</span>        <span class="n">2020</span><span class="p">-</span><span class="n">06</span><span class="p">-</span><span class="n">03</span>   <span class="n">3</span><span class="p">:</span><span class="n">22</span> <span class="n">PM</span>                <span class="n">file_1</span>
+<span class="n">d</span><span class="p">-----</span>        <span class="n">2020</span><span class="p">-</span><span class="n">06</span><span class="p">-</span><span class="n">11</span>   <span class="n">9</span><span class="p">:</span><span class="n">26</span> <span class="n">AM</span>                <span class="n">file_2</span>
+<span class="n">d</span><span class="p">-----</span>        <span class="n">2020</span><span class="p">-</span><span class="n">07</span><span class="p">-</span><span class="n">31</span>  <span class="n">10</span><span class="p">:</span><span class="n">21</span> <span class="n">AM</span>          <span class="n">sub_folder_1</span>
+</pre></div>
+</div>
+</section>
+</section>
+<section id="exercise">
+<h2>Exercise<a class="headerlink" href="#exercise" title="Permalink to this headline">#</a></h2>
+<p>Your task is to create a directory in which we will store all files, labs, assignments, etc. for the course you are taking, using both file explorer and powershell. We will use this directory when we demonstrate how to set up version control in the <a class="reference internal" href="crash_course-git.html"><span class="doc std std-doc">Git crash course</span></a>.</p>
+<section id="part-1-file-explorer">
+<h3>Part 1: File Explorer<a class="headerlink" href="#part-1-file-explorer" title="Permalink to this headline">#</a></h3>
+<ol class="simple">
+<li><p>Open file explorer via <strong>Start</strong> <span class="math notranslate nohighlight">\(\rightarrow\)</span> <strong>File Explorer</strong></p></li>
+<li><p>On the left hand side, select <strong>Windows (C:)</strong>, then <strong>Users</strong>, then <strong>Owner</strong></p></li>
+<li><p>Use the <strong>New Folder</strong> button to create a new folder and give it a name - for example “EOAS500”.</p></li>
+<li><p>Double click on the folder to look inside it. Right now, it should be empty.</p></li>
+<li><p>Click the <span class="math notranslate nohighlight">\(\uparrow\)</span> button to navigate to the <em>parent directory</em> one level above the current working directory.</p></li>
+</ol>
+<img alt="explorer up" class="align-right" src="_images/explorer_up.png" />
+<ol class="simple">
+<li><p>Now select the folder you just created and delete it. We will re-make it again shortly using powershell.</p></li>
+</ol>
+<BR>
+</section>
+<section id="part-2-powershell">
+<h3>Part 2: Powershell<a class="headerlink" href="#part-2-powershell" title="Permalink to this headline">#</a></h3>
+<p>Let’s perform the exact same operation using command line inputs from a shell. After each step, check file explorer to see the results displayed in the GUI.</p>
+<ol>
+<li><p>Open powershell via <strong>Start</strong> <span class="math notranslate nohighlight">\(\rightarrow\)</span> <strong>Powershell</strong></p></li>
+<li><p>Type:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ cd ~
+$ pwd
+</pre></div>
+</div>
+</li>
+<li><p>This will show you your working directory (some shell configurations will also show the working directory at each line as part of the prompt). Use <code class="docutils literal notranslate"><span class="pre">cd</span> <span class="pre">..</span></code> and <code class="docutils literal notranslate"><span class="pre">cd</span> <span class="pre">foldername</span></code> (replace <code class="docutils literal notranslate"><span class="pre">foldername</span></code> with the folder you want to move into) to navigate to <code class="docutils literal notranslate"><span class="pre">C:\Users\Owner</span></code>. Bonus: try using the <code class="docutils literal notranslate"><span class="pre">tab</span></code> key to autocomplete commands</p></li>
+<li><p>Create a new directory called “EOAS500” and change into it by typing:</p>
+<div class="highlight-powershell notranslate"><div class="highlight"><pre><span></span><span class="p">$</span> <span class="n">mkdir</span> <span class="n">EOAS500</span>
+<span class="p">$</span> <span class="nb">cd </span><span class="n">EOAS500</span>
+</pre></div>
+</div>
+</li>
+<li><p>Verify you have created the folder by navigating to it again in  file explorer. Should you wish to delete your new folder and try again, you can use:</p>
+<div class="highlight-powershell notranslate"><div class="highlight"><pre><span></span><span class="p">$</span> <span class="nb">cd </span><span class="p">..</span>
+<span class="p">$</span> <span class="nb">del </span><span class="n">EOAS500</span>
+</pre></div>
+</div>
+<p>Note you cannot delete the current working directory, you must <code class="docutils literal notranslate"><span class="pre">cd</span></code> one level up first.</p>
+</li>
+</ol>
+<p>Voila! We have successfully used a shell to navigate our computer’s file system and create/delete folders, producing the exact same result as with the graphical interface. At first the shell method may seem unintuitive, as you cannot see the results immediately displayed in front of you, but as we progress to more complex operations, the utility of using a shell over a GUI will become more clear. Many programs intended for scientists are much easier to install/use via a shell, and some are <em>only</em> accessible this way as they completely lack a GUI.</p>
+<hr class="docutils" />
+<p>For reference, here is the list of commands common to Powershell and Bash we have used so far:</p>
+<p><code class="docutils literal notranslate"><span class="pre">pwd</span></code> <span class="math notranslate nohighlight">\(\rightarrow\)</span> print working directory</p>
+<p><code class="docutils literal notranslate"><span class="pre">ls</span></code> <span class="math notranslate nohighlight">\(\rightarrow\)</span> list all files and sub-folders in the current working directory</p>
+<p><code class="docutils literal notranslate"><span class="pre">cd</span> <span class="pre">..</span></code> <span class="math notranslate nohighlight">\(\rightarrow\)</span> go to parent directory</p>
+<p><code class="docutils literal notranslate"><span class="pre">cd</span> <span class="pre">~</span></code> <span class="math notranslate nohighlight">\(\rightarrow\)</span> go to home directory</p>
+<p><code class="docutils literal notranslate"><span class="pre">mkdir</span> <span class="pre">foldername</span></code> <span class="math notranslate nohighlight">\(\rightarrow\)</span> make a new directory called “foldername” (replace with whatever name you wish)</p>
+<p><code class="docutils literal notranslate"><span class="pre">del</span> <span class="pre">filename</span></code> <span class="math notranslate nohighlight">\(\rightarrow\)</span> delete the folder or file in the current working directory called “filename”</p>
+<p><strong>Additional tip</strong>: the <span class="math notranslate nohighlight">\(\uparrow\)</span> and <span class="math notranslate nohighlight">\(\downarrow\)</span> keys scroll through previous commands you have entered. <em>TAB</em> autocompletes commands.</p>
+</section>
+<section id="running-programs-from-a-shell">
+<h3>Running Programs From a Shell<a class="headerlink" href="#running-programs-from-a-shell" title="Permalink to this headline">#</a></h3>
+<p>Having successfully navigated to a directory, we now wish to run programs from our working directory using command line inputs. We will review the basic syntax here, then practice it for real in Part 2 by installing and running <strong>Git</strong> via a shell.</p>
+<p>In the simplest case, you can run a program by typing its name into the prompt and pressing <code class="docutils literal notranslate"><span class="pre">enter</span></code>. This works for programs that can be directly read by your operating system, such as those with the extension <code class="docutils literal notranslate"><span class="pre">.exe</span></code> (executable file).</p>
+<div class="highlight-powershell notranslate"><div class="highlight"><pre><span></span><span class="p">$</span> <span class="n">my_program</span><span class="p">.</span><span class="n">exe</span>
+</pre></div>
+</div>
+<p>This isn’t always the case. Most programs require additional programs/dependencies installed in order to be run by your machine. Provided you have installed the necessary dependencies in a place accessible from the current working directory (more on this later), you can run the program by first specifying the dependency, then the program you wish to run. For example, say we have a python program called <code class="docutils literal notranslate"><span class="pre">data_analysis.py</span></code>. In order to run this from a shell, we need to specify that this program should be run via the <em>python interpreter</em> by typing:</p>
+<div class="highlight-powershell notranslate"><div class="highlight"><pre><span></span><span class="p">$</span> <span class="n">python</span> <span class="n">data_analysis</span><span class="p">.</span><span class="n">py</span>
+</pre></div>
+</div>
+<p>Similarly, if you have a program called <code class="docutils literal notranslate"><span class="pre">data_analysis.R</span></code>, and you have R installed on your machine, you can run it using:</p>
+<div class="highlight-powershell notranslate"><div class="highlight"><pre><span></span><span class="p">$</span> <span class="n">Rscript</span> <span class="n">data_analysis</span><span class="p">.</span><span class="nb">R</span>
+</pre></div>
+</div>
+<p>Or if you want to use the program <code class="docutils literal notranslate"><span class="pre">jupyter</span></code> to run a <em>jupyter notebook</em>:</p>
+<div class="highlight-powershell notranslate"><div class="highlight"><pre><span></span><span class="p">$</span> <span class="n">jupyter</span> <span class="n">notebook</span>
+</pre></div>
+</div>
+<p>will open a <em>notebook</em> in the current working directory.</p>
+<p>Take some additional practice navigating your computer’s file system and running programs from your chosen shell. Most computer users are very familiar with their operating system’s built in GUI, and it takes time to get used to performing operations without the same visual cues. With practice, using a shell becomes much easier, and often helps with broadening one’s understanding of how their computer works “under the hood” of the GUI.</p>
+</section>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+    <a class='left-prev' id="prev-link" href="tut-commandline.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Command line &amp; Shells</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="tut-conda_environs.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Environments: Conda, Mamba, and all that</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            </footer>
+        </div>
+    </div>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    By everyone<br/>
+  
+      &copy; Copyright 2023.<br/>
+</p>
+        </footer>
+    </div>
+    
+</div>
+
+
+      </div>
+    </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
+
+  </body>
+</html>
