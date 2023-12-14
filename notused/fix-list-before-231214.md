@@ -2,16 +2,12 @@
 
 See also **[issues](https://github.com/eoas-ubc/eoas-ubc.github.io/issues)** at the host repository, **[requirements](https://docs.google.com/spreadsheets/d/1DL2YDthzEbZijx35nVyveSstU5frQdzA/edit#gid=173746334)** (Google sheet) for each project component, and **[accomplishments & data](https://docs.google.com/spreadsheets/d/1BUk1_FHItUgzuyg2aJ-dX6XpMABmFSPe/edit#gid=979565415)** (Google sheet) for project outcomes.
 
-## Ideas
-
-* Do tutorials need to be more like precedent, i.e. modular such as [Helsinki "short course"](https://autogis-site.readthedocs.io/en/latest/index.html), [Project Pythia](https://projectpythia.org/), or Atlasian tutorials, etc.? In fact, some may best be referenced to these types of existing ones tutorials?
-* Jupyter startup: consider material from eosc442 and dsci100? How does this compare to docs used in EOSC 211? Should [Project Pythia's foundations book](https://foundations.projectpythia.org/landing-page.html) be used instead?
-
 ## Improvements
 
+* Do tutorials need to be more like precedent, i.e. modular such as [Helsinki "short course"](https://autogis-site.readthedocs.io/en/latest/index.html), [Project Pythia](https://projectpythia.org/), or Atlasian tutorials, etc.? In fact, some may best be referenced to these types of existing ones tutorials?
 * Review and update of [teaching with Jupyter NBs](tut-teachwith-jnbs.md).
+* Review and update of [Third party dashboards ...](refs-otherapps.md), including reference to the spreadsheet indicated on the top of that page.
 * dashboards:
-  * Review and update of [Third party dashboards ...](refs-otherapps.md), including reference to the spreadsheet indicated on the top of that page.
    * Build use-cases for each relevant course?
    * Explore [JB's cmip6 book?](https://github.com/fhmjones/cmip6_book),
    * review project notes about dashboards (FJ's OneNote).
@@ -20,12 +16,17 @@ See also **[issues](https://github.com/eoas-ubc/eoas-ubc.github.io/issues)** at 
    * build SERC resources? See ENVR 300 below.
    * Do SERC resources (eg EDDIE) inspire other dashboards?
    * How to solicit dashboard requests from instructors?
+* Jupyter startup: consider material from eosc442 and dsci100? How does this compare to docs used in EOSC 211? Should [Project Pythia's foundations book](https://foundations.projectpythia.org/landing-page.html) be used instead?
+* *Conda & environments* and *Using environments* need rationalizing and updating.
+* Add jupytext to pages about setting up J-notebooks, using notebooks for teaching, how J-Books uses it, and likely others.
 * Servers and hubs: move, rename & rewrite; it's not really a how-to since we & others are still iterating towards optimal choices. It needs to be more like "lessons learned".
-* [automating assessments](openassessment.md): not yet complete
-* The [faculty training](facultydev.md) page needs work. The perspective is training as a project outcome.
-* ToDo for PA? 
-  * add to ATSC301 page?
-  * update status on two CMIP dashboards
+* Other software tools - refer to the automating assessments page; support for JupyterBooks - others on the EOAS-UBC project board and elsewhere?
+* automating assessments: short intros for quiz management options, including Canvas API, PrairieLearn, & others
+* The faculty training page needs to incorporate "student training", including feedback and reflections from students. It has been renamed in the ToC, but needs reworking. The perspective is training as a project outcome.
+* Check that the [Atlasian tutorials](https://www.atlassian.com/git/tutorials/comparing-workflows) & [Ch.12 of the DSCI100 text](https://python.datasciencebook.ca/version-control.html) are referenced.
+* is Andrew's [crash course](https://github.com/AndrewLoeppky/crash_course/blob/master/coding_crash_course.md) used adequately?
+* ToDo for PA:
+   * add to ATSC301 page?
 
 ## Additions
 
@@ -66,7 +67,3 @@ See also **[issues](https://github.com/eoas-ubc/eoas-ubc.github.io/issues)** at 
 * Add report (without budget) to progress reports section.
 * dashboards: other ideas added. Needs augmenting.
 * EER poster done.
-* This "improvememnt" was simply dropped: *Conda & environments* and *Using environments* need rationalizing and updating.
-* Jupytext added to the Other Software Tools page.
-* The [Atlasian tutorials](https://www.atlassian.com/git/tutorials/comparing-workflows) & [Ch.12 of the DSCI100 text](https://python.datasciencebook.ca/version-control.html) were referenced on the Git tutorial [top page](tut-git-github.md) and the [Git/GitHub resources](tut-gitrefs.md) page.
-* Andrew's crash course content added from [here](https://github.com/AndrewLoeppky/crash_course/blob/master/coding_crash_course.md) (dated ~2020).
