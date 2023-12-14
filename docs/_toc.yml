@@ -62,6 +62,9 @@ parts:
 - caption: Tutorials
   chapters:
   - file: tut-commandline
+    sections:
+    - file: crash_course-shells
+      title: Andrew's Crash Course on Shells
   - file: tut-conda_environs
     title: Environments
     sections:
@@ -74,6 +77,8 @@ parts:
       title: Intro. to Git
     - file: tut-github
       title: GitHub workflows
+    - file: crash_course-git
+      title: Andrew's GIT crash course
     - file: tut-gitrefs
       title: Git/Github resources
   - file: tut-teachwith-jnbs

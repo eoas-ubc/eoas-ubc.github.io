@@ -1,21 +1,14 @@
-# Course development tools
+# Development tools
 
 For **assessment** management and **autograding**, see the [assessment page](openassessment.md).
 
-* [paged_html_theme](https://github.com/eoas-ubc/paged_html_theme)
-  A sphinx theme for pdf formatting of notebooks
-* [jb_tools](https://github.com/eoas-ubc/jb_tools):
-  utiliities for using watchdog and subprocess builds with jupyter-book and myst_nb
-* [jb_windows](https://github.com/eoas-ubc/jb_windows)
-  utilities for setting the environment variable PYTHONUTF8=1 on windows
-* ??trio_chrome:  A python driver for headless chrome printing
-* generate quizzes for the Canvas Learning Management System
-* Jupyter Hubs
-* Docker containers
-* nbgrader
-* [PrairieLearn](https://prairielearn.readthedocs.io/en/latest/)
 * [PanDoc](https://pandoc.org/) for converting document formats (eg MS-Word to Markdown, etc.). A brief intro to using a local install of pandoc is [here](https://github.com/eoas-ubc/convert_docs/blob/master/Readme_convert.md).
 * Excel spreadsheet to markdown table: search online. [Tabletomarkdown.com](https://tabletomarkdown.com/convert-spreadsheet-to-markdown/) seems to work well.
+
+## Jupytext
+Jupyter notebooks are traditionally saved as files with an `ipynb` extension which stands for “Interactive Python Notebook”. It is a file format used by Jupyter Notebook to store and share documents that contain live code, equations, visualizations, and narrative text.
+
+However, this file format is not appropriate for version control. [Jupytext](https://jupytext.readthedocs.io/en/latest/#) is a Notebook plugin that causes any file save action to generate more than one version of the file being saved. A common example is to save both an `ipynb` file and a markdown `mp` or `py:percent` version. How this is used and how Jupyter notebooks or Jupyter Labs uses these versions is explained in the [Jupytext documentation](https://jupytext.readthedocs.io/en/latest/#).
 
 ## Text to QTI
 

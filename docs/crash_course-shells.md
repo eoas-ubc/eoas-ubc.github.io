@@ -1,14 +1,14 @@
-# Powershell, Git and System Administration Crash Course
+# Powershell and Command Line Crash Course
 
----
+By A. Loeppky, Teaching Assistant and OCESE project supporter.
 
-## Intro
+The purpose of this tutorial is to help students or instructors who lack formal background in computer science by introducing several extremely helpful tools used for developing code keeping files organized.
 
-The purpose of this tutorial is to aid students who lack formal background in computer science by introducing several extremely helpful tools used for developing code keeping files organized.
+On this page we will learn how to navigate your computer via a command line interface like **Windows Powershell** or **Bash**. This is a useful skill for any programmer to have, and is essential for installing and using many computational tools available to scientists for data analysis.
 
-The focus of this page is on learning to navigate your computer via a command line interface like **Windows Powershell** or **Bash**. This is a useful skill for any programmer to have, and is essential for installing and using many computational tools available to scientists for data analysis.
+A second "crash course" - [Using Git](crash_course-git.md) -  covers use of **Git** to track changes to files and **Github** as a remote file backup system, to prevent the dreaded "computer crashes the week before a thesis defense, leaving you with nothing" scenario.
 
-## Part 1: Using a Shell
+## Using a Shell
 
 Using a shell is a great skill for aspiring scientific programmers to develop. In the past, a shell with a *command line interface* was the only way to interact with a computer, entering commands line by line into a *prompt*. Nowadays, operating systems and most production-grade programs/applications include a *graphical user interface (GUI),* which is the collection of mouse buttons, pull down menus, text boxes, etc. that users use to interact with a program. As scientists, oftentimes the tools we need to access (or write ourselves) for analyzing data are limited to fairly rudimentary inputs and outputs on the command line, as GUIs are rather labour intensive to develop. Since we would rather focus on solving scientific problems instead of learning the complicated art of "front end programming" (i.e. developing graphical user interfaces), a small investment in time learning to use a shell for running programs will pay huge dividends, and grant us easier access to a huge array of computational tools for doing science.
 
@@ -80,22 +80,28 @@ d-----        2020-06-03   3:22 PM                file_1
 d-----        2020-06-11   9:26 AM                file_2
 d-----        2020-07-31  10:21 AM          sub_folder_1
 ```
-### Exercise 1
 
-Your task is to create a directory in which we will store all files, labs, assignments, etc. for EOAS500, using both file explorer and powershell. We will use this directory later in Exercise 2, where we will set up version control using **Git**.
+## Exercise
 
-#### PART 1: File Explorer
+Your task is to create a directory in which we will store all files, labs, assignments, etc. for the course you are taking, using both file explorer and powershell. We will use this directory when we demonstrate how to set up version control in the [Git crash course](crash_course-git.md).
+
+### Part 1: File Explorer
 
 1) Open file explorer via **Start** $\rightarrow$ **File Explorer**
 2) On the left hand side, select **Windows (C:)**, then **Users**, then **Owner**
-3) Use the **New Folder** button to create a new folder and name it "EOAS500"
+3) Use the **New Folder** button to create a new folder and give it a name - for example "EOAS500". 
 4) Double click on the folder to look inside it. Right now, it should be empty.
 5) Click the $\uparrow$ button to navigate to the *parent directory* one level above the current working directory.
-<img src='explorer_up.png'>
-6) Now select the EOAS500 folder you just created and click the $\textcolor{red}{X}$ button to delete it. We will re-make it again shortly using powershell.
-<img src='explorer_del.png'>
+```{image} images/explorer_up.png
+:alt: explorer up
+:align: right
+```
 
-#### PART 2: Powershell
+6) Now select the folder you just created and delete it. We will re-make it again shortly using powershell.
+
+<BR>
+
+### Part 2: Powershell
 
 Let's perform the exact same operation using command line inputs from a shell. After each step, check file explorer to see the results displayed in the GUI.
 
@@ -175,6 +181,3 @@ $ jupyter notebook
 will open a *notebook* in the current working directory.
 
 Take some additional practice navigating your computer's file system and running programs from your chosen shell. Most computer users are very familiar with their operating system's built in GUI, and it takes time to get used to performing operations without the same visual cues. With practice, using a shell becomes much easier, and often helps with broadening one's understanding of how their computer works "under the hood" of the GUI.
-
-## Tutorial on Git and GitHub.
-For a similar tutorial page on using Git and GitHub see the accompanying page [here](git_crash_course.html). 
