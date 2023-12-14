@@ -11,11 +11,8 @@ See also **[issues](https://github.com/eoas-ubc/eoas-ubc.github.io/issues)** at 
    * Build use-cases for each relevant course?
    * Explore [JB's cmip6 book?](https://github.com/fhmjones/cmip6_book),
    * review project notes about dashboards (FJ's OneNote).
-   * The [teaching with ...](tut-teachwith-dashboards.md) page needs updating. Include a framework (maybe a template) for use. E.g. activity components such as "fosters questioning", "provides meaningful context", include anticipated time to complete, game-ify? etc.
-   * Add licensing info to each (CC with details).
    * build SERC resources? See ENVR 300 below.
    * Do SERC resources (eg EDDIE) inspire other dashboards?
-   * How to solicit dashboard requests from instructors?
 * Jupyter startup: consider material from eosc442 and dsci100? How does this compare to docs used in EOSC 211? Should [Project Pythia's foundations book](https://foundations.projectpythia.org/landing-page.html) be used instead?
 
 ## Improvements
@@ -23,14 +20,8 @@ See also **[issues](https://github.com/eoas-ubc/eoas-ubc.github.io/issues)** at 
 * Review and update of [teaching with Jupyter NBs](tut-teachwith-jnbs.md).
 * dashboards:
   * Review and update of [Third party dashboards ...](refs-otherapps.md), including reference to the spreadsheet indicated on the top of that page.
-   * Build use-cases for each relevant course?
-   * Explore [JB's cmip6 book?](https://github.com/fhmjones/cmip6_book),
-   * review project notes about dashboards (FJ's OneNote).
    * The [teaching with ...](tut-teachwith-dashboards.md) page needs updating. Include a framework (maybe a template) for use. E.g. activity components such as "fosters questioning", "provides meaningful context", include anticipated time to complete, game-ify? etc.
    * Add licensing info to each (CC with details).
-   * build SERC resources? See ENVR 300 below.
-   * Do SERC resources (eg EDDIE) inspire other dashboards?
-   * How to solicit dashboard requests from instructors?
 * Servers and hubs: move, rename & rewrite; it's not really a how-to since we & others are still iterating towards optimal choices. It needs to be more like "lessons learned".
 * [automating assessments](openassessment.md): not yet complete
 * The [faculty training](facultydev.md) page needs work. The perspective is training as a project outcome.
