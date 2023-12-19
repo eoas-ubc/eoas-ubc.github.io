@@ -87,7 +87,6 @@ parts:
     title: Teaching with dashboards
 - caption: References
   chapters:
-  - file: refs-citations
   - file: refs
   - file: refs-otherapps
     title: Third-party dashboards

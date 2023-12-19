@@ -83,6 +83,7 @@ Most students were hired with support from the UBC WorkLearn program:
 |Iddo Sadeh|undergrad|programming dashboards, Python conversion of EOSC 442, DSCI 100|
 |Navya Dahiya|grad|supported DSCI 100 Python conversion|
 |Wanying Ye|grad|supported DSCI 100 Python conversion|
+|Zhiyong Wang|grad|supported DSCI 100 Python conversion|
 |Andrew Loeppky|grad|supported EOSC 211 Python conversion|
 |Hariharan Umashankar|grad|various programming, including dashboards|
 |Jacob McFarlane|grad|work on advanced dashboard programming for EOSC 340|

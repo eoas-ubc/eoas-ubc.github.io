@@ -44,4 +44,13 @@ This book is powered by [JupyterBook](https://jupyterbook.org) and aims to be . 
 
 ---
 
+```{image} images/CC_BY-NC-SA-30.png
+:alt: ocese outcomes by type
+:align: right
+```
+
+**Licensing** for all pages in this site: Creative Commons License: [Attribution-NonCommercial-ShareAlike 3.0](https://creativecommons.org/licenses/by-nc-sa/3.0/us/) (CC BY-NC-SA 3.0 US)
+
+---
+
 Website update 2023/12/14.

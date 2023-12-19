@@ -1,8 +1,6 @@
 # Progress at May 2023
 
-Project funding ends this month. This complete Jupyter Book represents the collected project deliverables.
-
-See also the <a href="files/TLEF-Final-Report-OCESE-nobudg.pdf"> final report required by the TLEF funding source</a> (PDF). Sections in that report include:
+Project funding ends this month. This complete Jupyter Book represents the collected project deliverables. **See also the <a href="files/TLEF-Final-Report-OCESE-nobudg.pdf"> final report required by the TLEF funding source</a> (PDF)**. Sections in that report include:
 
 1. Project overview
    1. General information

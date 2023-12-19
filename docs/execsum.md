@@ -147,3 +147,14 @@ The seven types of project outcomes contributed in ways not related to specific 
 ---
 
 Finally, OCESE work has generated over 100 products to date. Of these, over 30 should become Open Education Resources, either individually or as collections.
+
+---
+
+```{image} images/CC_BY-NC-SA-30.png
+:alt: ocese outcomes by type
+:align: right
+```
+
+**Licensing** for all pages in this site: Creative Commons License: [Attribution-NonCommercial-ShareAlike 3.0](https://creativecommons.org/licenses/by-nc-sa/3.0/us/) (CC BY-NC-SA 3.0 US)
+
+---
