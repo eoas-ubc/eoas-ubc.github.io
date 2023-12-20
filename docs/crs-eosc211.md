@@ -18,37 +18,36 @@ Five project goals are listed with summaries of actions taken for each.
    * Completed largely by one graduate student employed part time, who then served as teaching assistant during the first deployment of the course's new Python version.
 2. **Jupyter Hubs**: Establish which cloud-based approaches for serving Jupyter Notebooks will be the most stable, sustainable, scaleable.
    * First hub was deployed on Departmental server as UBC did not yet have a dedicated hub for undergraduate learning.
-   * UBC open Jupyter hub piloted (fall 2022). _Refer to hub feedback in file (221209-HubFeedback.xlsx)_.
+   * UBC's [open Jupyter hub](https://lthub.ubc.ca/guides/jupyterhub-instructor-guide/) was piloted fall 2022. Students were given the option of loading Python and Jupyter on their own laptops or using the UBC hub. Roughly 50% of students chose each option. 
+   * **Experiences were mixed with student feedback about hubs obtained by survey, <a href="files/e211-feedback-221209.pdf">with results summarized on a 2-page PDF here</a>**.
 3. **Grading**: Introduce automatic (or semiautomatic) grading practices, probably using the Jupyter Notebook plugin [nbgrader](https://github.com/jupyter/nbgrader).
-   * Grading using nbgrader was attempted in fall 2021 but results were dissapointing.
+   * Grading using nbgrader was attempted in fall 2021 but results were disappointing as getting the plugin to work reliably proved challenging.
    * Fall 2022 saw a more add-hoc approach developed, improving efficienty and removing dependance on irregularly mantained 3rd party software (nbgrader).
 4. **Textbook & resources**: Introduce an [opensource textbook](https://phaustin.github.io/Problem-Solving-with-Python/Preface/Motivation.html), and deliver course content with similar open source technology.
    * [Text book](https://phaustin.github.io/Problem-Solving-with-Python/), mainly python programming for beginners. Adapted from [Problem Solving with Python-37](https://github.com/professorkazarinoff/Problem-Solving-with-Python-37-Edition) by Dr. Peter Kazarinof.
-   * A Jupyter Book was built for delivering content such as syllabus, calendar of topics, links into relevant sections of the text book, and the Jupyter Notebooks for assignments & labs provided. This proved inefficient.
-   * The second iteration reverted to use of UBC's [canvas](https://about.canvas.ubc.ca/) Learning management system for delivery and submission of lecture materials, assignments, assessments, and other course content.
+   * For fall 2021, a Jupyter Book was built for delivering content such as syllabus, calendar of topics, links into relevant sections of the text book, and the Jupyter Notebooks for assignments & labs provided. This proved inefficient, partly because maintaining a Jupyter Book requires significant expertise with opensource software development practices.
+   * The second iteration (Fall 2022) reverted to use of UBC's [Canvas](https://about.canvas.ubc.ca/) Learning management system for delivery and submission of lecture materials, assignments, assessments, and other course content.
 5. **Documentation**: Prepare documentation for procedures that teachers and students need for using open source resources, Jupyter hubs, installing Python, and preparing assessments for sem-automated grading.
    * Getting-started instructions for students to install Python and Jupyter Notebooks on Windows or Mac laptops. This was done with 90 students in one  1.5-hour lecture session.
+   * See the [Teaching with Jupyter NBs](tut-teachwith-jnbs.md) page.
+   * See also tutorials on commandline, environments, Git/Github in this website's tutorials section.
 
 ## Instructors' experiences
 
-### a) Necessary instructor and TA skills
+Outcomes and experiences are outlined above adjacent to corresponding OCSE project goals for transforming EOSC211.
+
+### Necessary instructor and TA skills
+
+Requirements include:
 
 * Maintain the text (Jupyter book).
 * Maintain Jupyter notebooks used for class, lab and homework.
 * Manage assignment update, delivery, collection, grading & feedback cycle.
 * Run labs and promote paired-programming.
 
-### b) Workflow for preparing and delivering lessons
-
-### c) Workflow for preparing and delivering labs & assignments
-
-### d) Assessment tactics
-
-* Question preparation including delivery to Canvas.
-* Question types
-* Grading: nbgrader used in Sept 2021. Will that be replaced by PrairieLearn?
-
 ## Students' experiences
+
+See notes above, including link to feedbac about Jupyter hubs.
 
 ### a) Questions, data, results
 
@@ -74,9 +73,13 @@ Piazza discussion board topics from the first and second year after transforming
 * The main challenge for teachers in 2021 related to difficulties with the autograding software. This explains why there were more than twice as many posts about quizzes or exams in 2021 compared to 2022.
 
 
-## Costs, Risks, and Recommendations
+## Costs & Risks
 
-* Auto-grading is essential. Prior to Python (i.e. before 2021) MatLab was the language and grading involved custom MatLab parsing code by R. Pawlowicz.
-* Two Jupyter books (course book and "text book") need a server and ability to maintain the markdown and the server.
+* Auto-grading is essential for a programing course with ~100+ students. Prior to Python (i.e. before 2021) MatLab was the language and grading involved custom MatLab parsing code by Prof. R. Pawlowicz.
+* The Jupyter book text book needs the ability to write in markdown and maintain the GitHub repository.
 
 ## Lessons learned
+
+Probably the biggest lesson was to avoid planning on deployment of Jupyter-based learning resources without a well-established Jupyter hub read to accept, deploy and maintain the materials.
+
+The issue or auto-grading is an ongoing challenge that many courses in many institutions are facing. It is being addressed, with solutions ranging from custom to broadly based open-source. The choice depends on abilities of instructors.

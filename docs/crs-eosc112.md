@@ -20,6 +20,12 @@
 * A second dashboard ([climate-mind-map](dashboards.md)) was concieved and prototyped (in HTML5, not Python), but implementation was put off for a later time.
 * Supported development, observed implementation, and coordianted evaulation of an activity based on the IPCC [Climate Atlas](https://interactive-atlas.ipcc.ch/) for EOSC 112 (147 students). This activity was worksheet-based. Begun in class, students could work in groups or alone. Getting-started instruction were provided by lecture and instructors & TAs then circulated to ensure students were making progress. The assignment was completed at home with responses delivered to the course's Canvas site for assessment as PDFs or scanned images.
 
+**Learning goals for the Climate Atlas in-class activity:**
+
+* Describe the difference between climate SSP scenarios.
+* Produce climate change graphs using the interactive climate atlas, and compare them quantitatively.
+* Describe some impacts of climate change within your expected lifetime for different SSP scenarios.
+
 ## Students’ experiences
 
 These **feedback questions** were posed to students as the last step in their assignment:
@@ -30,7 +36,7 @@ These **feedback questions** were posed to students as the last step in their as
 
 Open ended responses were analyzed to find commonalities and to identify particularly thoughtful or information statements from students.
 
-Results from student feedback about the IPCC Climate Atlas activity are summarized in a <a href="files/ClimateAtlas-reflections-summary.pdf">**separate PDF file**</a>.
+**Results from student feedback** about the IPCC Climate Atlas activity are summarized in a <a href="files/ClimateAtlas-reflections-summary.pdf">**separate PDF file**</a>.
 
 Student feedback regarding dashboard use was limited as completing the short survey was optional. Nevertheless, results in the figure below suggest the facility and its use were largely appreciated by students.
 
@@ -42,10 +48,8 @@ No explicit feedback on instructors' experiences was obtained.
 
 ## Costs
 
-Much of the innovation was due to energetic graduate students, keen instructors and the fact that some funding was obtained to suport development work above and beyond the time and funding of a normal teaching assistanship. OCESE contributed by consulting on learning activity design, implementation and evaluation tactics, and by building the dashboard app itself.
+Much of the innovation was due to energetic graduate students, keen instructors and the fact that some funding was obtained to support development work above and beyond the time and funding of a normal teaching assistanship. OCESE contributed by consulting on learning activity design, implementation and evaluation tactics, and by building the dashboard app itself.
 
 ## Lessons learned
 
 Leveraging the energy and enthusiasm of graduate students is always rewarding.
-
-Observations of the in-class IPCC [Climate Atlas}(https://interactive-atlas.ipcc.ch/) activity 

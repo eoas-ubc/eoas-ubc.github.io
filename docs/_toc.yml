@@ -21,6 +21,7 @@ parts:
     - file: crs-envr300
     - file: crs-envr420
     - file: crs-eosc112
+    - file: crs-eosc114
     - file: crs-eosc116
     - file: crs-eosc211
     - file: crs-eosc310

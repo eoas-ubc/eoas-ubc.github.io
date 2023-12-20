@@ -4,30 +4,28 @@ See also **[issues](https://github.com/eoas-ubc/eoas-ubc.github.io/issues)** at 
 
 ## Updates, additions & corrections
 
+* in "Goals", reference the data science recommendatiosn (see [edubyts piece](https://ctlt.ubc.ca/2023/11/30/edubytes-implementing-computational-tools-for-learning/)) and to Spectrum’s top programming languages charts.
 * Refs to add
   * Add [EDUCE](https://educe-ubc.github.io/about.html) to references somehow. How about other Jnotebook initiatives here and UBC-OK?
   * on "refs-oer" - Check and update from UBC’s [OER group](https://oer.open.ubc.ca/).
   * On "teaching with dashboards and JNBs" - reference "Fidelity of Implementation" when discussing dashboards, JNBs, questioning strategies (PrairieLearn, etc.), Open Ed. Resources, and so on. Google it for refs. [Here is one from 2017](https://www.lifescied.org/doi/10.1187/cbe.16-03-0113).
   * On "refs-oer" page, mention open-source earth sciences, eg: pangeo, SimpEG, Fatiango, geosci.xyz, (find ocgy and atsc examples), Jupyter books (again, referring to UBC's examples open.ubc.ca. [Numerical Techniques for AOE scientists](https://rhwhite.github.io/numeric_2022/), R. White and S. Allen, DSCI100 [python text](https://python.datasciencebook.ca/intro.html)  & [repo](https://github.com/UBC-DSCI/introduction-to-datascience-python).
 * Convert “Project evaluation” into “lessons learned” and add lists from the EER2023 poster.
-* Gather repositories with PA, FJ, JB, IS and collect at eoas-ubc. Maybe start by using tags (i.e. "topics") in FJ's GitHub account.
 * Revisit first-year accomplishments, including [md2canvas](https://github.com/eoas-ubc/md2canvas), AL's tutorials, and others. The [projects page](https://github.com/orgs/eoas-ubc/projects/1), and list of repositories may reveal items that need including or summarizing. Needs a walk-through with Phil.
-* Gather quotes from workers (AL, BJ, IS) then place them in corresponding course pages, or in project evaluation pages. (Project eval pages may need consolidating.
-* dashboards
+* new / updated dashboards
   * "ozone" dashboard to the collection. Maybe envr300 or others can use it?
   * image annotation app: needs a page, and explanation. Iddo's repo. This doesn't really address a specific OCESE goal, but it is an attempt to reproduce the LiterallyCanvas approach with is no longer supported. Although it does still work. See sketch examples on the EOAS website at 1, 2, 3, and 4.
-  * eosec429 - when ready.
+  * eosec429 - needs to be demo'd with Roger.
   * ocgy - Rich P had a suggestion: lines between dots to identify cruises. See email 231120. He suggests a student might be able to fix that up.
-* List candidates for OER, especially via SERC. Note they review but it takes time.
-* Refer to Spectrum’s top programming languages charts. 
-* Review and update of [teaching with Jupyter NBs](tut-teachwith-jnbs.md).
-* dashboards:
+  * Add licensing info to each (CC with details).
+  * remove dashboard feedback links (global temperatures, and maybe others).
+* Dashboard docs
   * Review and update of [Third party dashboards ...](refs-otherapps.md), including reference to the spreadsheet indicated on the top of that page.
   * The [teaching with ...](tut-teachwith-dashboards.md) page needs updating. Include a framework (maybe a template) for use. E.g. activity components such as "fosters questioning", "provides meaningful context", include anticipated time to complete, game-ify? etc.
-  * Add licensing info to each (CC with details).
-  * need a clear statement of responsibility - from Philippe? Compstaff? And where are documentation, and what permissions are needed? 
-  * remove dashboard feedback links (global temperatures, and maybe others).
+  * need a clear statement of responsibility - from Philippe? Compstaff? And where are documentation, and what permissions are needed?
   * maintenance commitment? add a note to dashboards page to contact help desk with problems?
+* List candidates for OER, especially via SERC. Note they review but it takes time.
+* Review and update of [teaching with Jupyter NBs](tut-teachwith-jnbs.md).
 * Servers and hubs: move, rename & rewrite; it's not really a how-to since we & others are still iterating towards optimal choices. It needs to be more like "lessons learned".
 * [automating assessments](openassessment.md): not yet complete
 * The [faculty training](facultydev.md) page needs work. The perspective is training as a project outcome.
@@ -37,9 +35,6 @@ See also **[issues](https://github.com/eoas-ubc/eoas-ubc.github.io/issues)** at 
 
 ## Specific courses
 
-* eosc211,
-  * Add piazza data?
-  * e211's startup docs, lock files and how-tos or tutorials.
 * eosc429
 * eosc373 (describe actions and outcomes with Hal's JNB)
 * eosc442:
@@ -65,7 +60,9 @@ See also **[issues](https://github.com/eoas-ubc/eoas-ubc.github.io/issues)** at 
 * Jupyter startup: consider material from eosc442 and dsci100? How does this compare to docs used in EOSC 211? Should [Project Pythia's foundations book](https://foundations.projectpythia.org/landing-page.html) be used instead?
 * explore stand-alone apps - via PyIinstaller? See for example [here](https://www.mssqltips.com/sqlservertip/7608/python-executable-standalone-application/).
 * professional development - offer workshops at CTLT on dashboard development and use?
-* Need a show and tell, emphasizing "implications for you and students". maybe split into "direct impacts" and "implied or potential impacts"
+* Need a show and tell, emphasizing "implications for you and students". maybe split into "direct impacts" and "implied or potential impacts".
+* Gather repositories with PA, FJ, JB, IS and collect at eoas-ubc. Maybe start by using tags (i.e. "topics") in FJ's GitHub account.
+* Gather quotes from workers (AL, BJ, IS) then place them in corresponding course pages, or in project evaluation pages. (Project eval pages may need consolidating.
 
 ---
 
@@ -92,3 +89,5 @@ See also **[issues](https://github.com/eoas-ubc/eoas-ubc.github.io/issues)** at 
 * Add Zhiyong Wang to list of student contributors.
 * Add the Nov 2023 [edubytes](https://mailchi.mp/ubc/edubytes-newsletter-november2023?e=f1df481e69) piece to presentations page.
 * Reference page removed - not needed. Should more refs be added throughout? QuEST project has many but OCESE zotero collection is short. Or, a bibliography might be adequate unless an official publication is produced. This could be done using BibTex reference files - see the [Jupyter Books citation tutorial](https://jupyterbook.org/en/stable/tutorials/references.html).
+eosc114 page generated and PPTX + PDF of the mind-map thinking was included.
+eosc211 page cleaned up, and survey data added.
