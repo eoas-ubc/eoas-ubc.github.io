@@ -50,6 +50,8 @@ This book is powered by [JupyterBook](https://jupyterbook.org) and aims to be . 
 ```
 
 **Licensing** for all pages in this site: Creative Commons License: [Attribution-NonCommercial-ShareAlike 3.0](https://creativecommons.org/licenses/by-nc-sa/3.0/us/) (CC BY-NC-SA 3.0 US)
+<br>
+© [Francis Jones](https://www.eoas.ubc.ca/people/francisjones), Dec. 2023, UBC Dep’t Earth, Ocean and Atmospheric Sciences.
 
 ---
 

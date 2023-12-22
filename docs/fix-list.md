@@ -4,8 +4,7 @@ See also **[issues](https://github.com/eoas-ubc/eoas-ubc.github.io/issues)** at 
 
 ## Updates, additions & corrections
 
-* in "Goals", reference the data science recommendatiosn (see [edubyts piece](https://ctlt.ubc.ca/2023/11/30/edubytes-implementing-computational-tools-for-learning/)) and to Spectrum’s top programming languages charts.
-* Refs to add
+* Refs to add - (OR drop references - OR change the refs.md page).
   * Add [EDUCE](https://educe-ubc.github.io/about.html) to references somehow. How about other Jnotebook initiatives here and UBC-OK?
   * on "refs-oer" - Check and update from UBC’s [OER group](https://oer.open.ubc.ca/).
   * On "teaching with dashboards and JNBs" - reference "Fidelity of Implementation" when discussing dashboards, JNBs, questioning strategies (PrairieLearn, etc.), Open Ed. Resources, and so on. Google it for refs. [Here is one from 2017](https://www.lifescied.org/doi/10.1187/cbe.16-03-0113).
@@ -85,9 +84,10 @@ See also **[issues](https://github.com/eoas-ubc/eoas-ubc.github.io/issues)** at 
 * Jupytext added to the Other Software Tools page.
 * The [Atlasian tutorials](https://www.atlassian.com/git/tutorials/comparing-workflows) & [Ch.12 of the DSCI100 text](https://python.datasciencebook.ca/version-control.html) were referenced on the Git tutorial [top page](tut-git-github.md) and the [Git/GitHub resources](tut-gitrefs.md) page.
 * Andrew's crash course content added from [here](https://github.com/AndrewLoeppky/crash_course/blob/master/coding_crash_course.md) (dated ~2020).
-* add creative commons to docs.
-* Add Zhiyong Wang to list of student contributors.
-* Add the Nov 2023 [edubytes](https://mailchi.mp/ubc/edubytes-newsletter-november2023?e=f1df481e69) piece to presentations page.
+* added creative commons to docs.
+* Added Zhiyong Wang to list of student contributors.
+* Added the Nov 2023 [edubytes](https://mailchi.mp/ubc/edubytes-newsletter-november2023?e=f1df481e69) piece to presentations page.
 * Reference page removed - not needed. Should more refs be added throughout? QuEST project has many but OCESE zotero collection is short. Or, a bibliography might be adequate unless an official publication is produced. This could be done using BibTex reference files - see the [Jupyter Books citation tutorial](https://jupyterbook.org/en/stable/tutorials/references.html).
 eosc114 page generated and PPTX + PDF of the mind-map thinking was included.
 eosc211 page cleaned up, and survey data added.
+* On the "project-outline.md" page, added a reference to the data science recommendatiosn (see [edubyts piece](https://ctlt.ubc.ca/2023/11/30/edubytes-implementing-computational-tools-for-learning/)) and to Spectrum’s top programming languages charts.

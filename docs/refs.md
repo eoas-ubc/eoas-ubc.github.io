@@ -2,6 +2,7 @@
 
 ## OCESE Project links
 
+* F. Jones, UBC Edubytes article “[Implementing computational tools for learning](https://ctlt.ubc.ca/2023/11/30/edubytes-implementing-computational-tools-for-learning/)”, November 2023. Sharing the Department’s project to implement open source computational tools and teaching tactics to facilitate hands-on interdisciplinary learning in data-driven scientific exploration.
 * Original <a href="files/ocese_proposal_2019.pdf">OCESE proposal</a>
 * <a href="files/timeline.pdf">3 year schedule</a> as of Jan 2022. (Priorities and deliverable scheduling have been changing as personnel, resources and COVID-19 evolve.)
 * [Project repository](https://github.com/eoas-ubc/eoas_tlef)
