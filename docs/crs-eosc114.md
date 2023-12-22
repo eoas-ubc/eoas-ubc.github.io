@@ -11,9 +11,7 @@
 
 ## OCESE project objectives
 
-1. Develop and implement an interactive exercise that engages students in the complexity of the relationship between Earth's processes and human activity.
-
-2. Build a versatile dashboard to emulate sketch-based learning activities that will allow instructors to specify a background image upon which students can sketch or add annotations. Initial activities are to be based on precedent from activities developed with older software that has become awkward to deploy. Examples are (or were) live at [eg 1](https://www.eoas.ubc.ca/~quest/Lab3-sketch.html), [eg 2](https://www.eoas.ubc.ca/~quest/Lab1-2sketches.html) and [eg 3](https://www.eoas.ubc.ca/~quest/Sketch-NorthAm.html). PDF versions of the lab exercises can be seen at <a href="files/Lab3-sketch.pdf">PDF eg1</a> and <a href="files/Lab1-2sketches.pdf">PDF eg2</a>.
+1. Develop and implement an interactive exercise that engages students in the complexity of the relationship between Earth's processes, its climate, human activity and impacts on society.
 
 ## Actions taken
 

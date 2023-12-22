@@ -48,7 +48,7 @@ $ git init
 
 <BR>
 
-Open a file explorer/finder window and navigate to EOAS500. You may see a ```.git``` folder has appeared there. We are now able to track all changes that occur to files within this folder using git. If we wish to track files from another folder, we could navigate there and type ```git init``` to initialize another separate repository. If you cannot see the ```.git``` folder, try following the instructions [here](myurl.com) for windows, or [here](myurl.com) on a mac to show hidden folders.
+Open a `file explorer` or `finder` window and navigate to EOAS500. You may see a ```.git``` folder has appeared there. We are now able to track all changes that occur to files within this folder using git. If we wish to track files from another folder, we could navigate there and type ```git init``` to initialize another separate repository. If you cannot see the ```.git``` folder you may have to figure out how to show "hidden folders" in your file navigator.
 
 Now let's add some content to our folder, as if we were working on a real project. For this example, create a file called ```my_example.txt``` using a text editor and save it in your EOAS500 folder. Git will tolerate almost any file type (.txt, .csv, docx, .py, .R, .m, etc).
 
@@ -215,7 +215,7 @@ where ```408c...``` is the *commit hash* of whichever commit you wish to reset t
 ```{admonition} Additional Tips
 :class: tip
 * Try to make a new commit each time you make a *meaningful change* to your project. You don't have to commit every time you save it to your hard drive
-* Make your commit messages short and descriptive, preferably only to do with one change at a time. For more on writing good commit messages, click this [link](mylink.com)
+* Make your commit messages short and descriptive, preferably only to do with one change at a time. For more on writing good commit messages, click this [link](https://www.freecodecamp.org/news/how-to-write-better-git-commit-messages/)
 * There is usually more than one way to accomplish a given task with git. Start with commands you know and develop a workflow that you totally understand. Then slowly add features and commands to your "git vocabulary."
 ```
 

@@ -16,7 +16,6 @@ All serious programmers and many writers of technical documentation use version 
 
 [**Github**](https://github.com/) is an online repository management and collaboration system used for backing up and (if relevant) sharing code or documents with collaborators. Repositories are copies of your files saved in the cloud, and can be either **public** (visible/accessible by anyone with the URL) or **private** (only accessible to specific users but subject to a subscription fee).
 
-
 ```{note}
 It is important to recognize that version control - *and therefore both Git and GitHub* - works most effectively with text-based files and documents. "Binary" documents such as MSWord or PDF documents, spreadsheets (eg. Excel), presentations (e.g. Powerpoint), images, etc. can all be included BUT version control fails to work well on such files because it is difficult to compare versions of "binary" files.
 ```
@@ -24,7 +23,5 @@ It is important to recognize that version control - *and therefore both Git and 
 ## Our introductory pages about Git and Github
 
 * [Introduction to version control and Git](tut-git-intro.md).
-
 * [Introduction to GitHub](tut-github.md).
-
 * [Pointers to selected third party resources](tut-gitrefs.md).
