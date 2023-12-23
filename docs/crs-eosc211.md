@@ -18,7 +18,7 @@ Five project goals are listed with summaries of actions taken for each.
    * Completed largely by one graduate student employed part time, who then served as teaching assistant during the first deployment of the course's new Python version.
 2. **Jupyter Hubs**: Establish which cloud-based approaches for serving Jupyter Notebooks will be the most stable, sustainable, scaleable.
    * First hub was deployed on Departmental server as UBC did not yet have a dedicated hub for undergraduate learning.
-   * UBC's [open Jupyter hub](https://lthub.ubc.ca/guides/jupyterhub-instructor-guide/) was piloted fall 2022. Students were given the option of loading Python and Jupyter on their own laptops or using the UBC hub. Roughly 50% of students chose each option. 
+   * UBC's [open Jupyter hub](https://lthub.ubc.ca/guides/jupyterhub-instructor-guide/) was piloted fall 2022. Students were given the option of loading Python and Jupyter on their own laptops or using the UBC hub. Roughly 50% of students chose each option.
    * **Experiences were mixed with student feedback about hubs obtained by survey, <a href="files/e211-feedback-221209.pdf">with results summarized on a 2-page PDF here</a>**.
 3. **Grading**: Introduce automatic (or semiautomatic) grading practices, probably using the Jupyter Notebook plugin [nbgrader](https://github.com/jupyter/nbgrader).
    * Grading using nbgrader was attempted in fall 2021 but results were disappointing as getting the plugin to work reliably proved challenging.
@@ -36,32 +36,13 @@ Five project goals are listed with summaries of actions taken for each.
 
 Outcomes and experiences are outlined above adjacent to corresponding OCSE project goals for transforming EOSC211.
 
-### Necessary instructor and TA skills
-
-Requirements include:
-
-* Maintain the text (Jupyter book).
-* Maintain Jupyter notebooks used for class, lab and homework.
-* Manage assignment update, delivery, collection, grading & feedback cycle.
-* Run labs and promote paired-programming.
-
 ## Students' experiences
 
-See notes above, including link to feedbac about Jupyter hubs.
+See notes above, including <a href="files/e211-feedback-221209.pdf">feedback about Jupyter hubs</a>.
 
-### a) Questions, data, results
+### Discussion board activity
 
-* Compare student success using Python to earlier using similar questions in assignments, labs and exams.
-* Instructor interview: eg, what is working well? What are 'pain points'? What needs fixing or improving?
-  * notes from "installfest feedback"
-* TA interview: same questions as instructors.
-* What student feedback is available? What do they say?
-  * midterm survey with ~100% response rate: MC and open questions. Summarized.
-  * Standard UBC end of term "Student Experience of Instruction" survey.
-
-### b) Discussion board activity
-
-Piazza discussion board topics from the first and second year after transforming eosc211 are illustrated in the figure here. Apparently, student concerns raised on the Piazza platform were relatively similar in both terms.
+Piazza [discussion board](https://lthub.ubc.ca/guides/piazza-instructor-guide/) topics from the first and second year after transforming eosc211 are illustrated in the figure here. Apparently, student concerns raised on the Piazza platform were relatively similar in both terms.
 
 ```{image} images/eosc211-piazzadata.png
 :alt: eosc211 Piazza data
@@ -72,14 +53,46 @@ Piazza discussion board topics from the first and second year after transforming
 * A major challenge of deploying Python with Jupyter notebooks for 100 students was providing stable Jupyter Hubs. However, if counting the types of posts on Piazza is any indication, the relatively few posts about hubs in both 2021 and 2022 suggests that students may have been less concerned about these difficulties than instructors.
 * The main challenge for teachers in 2021 related to difficulties with the autograding software. This explains why there were more than twice as many posts about quizzes or exams in 2021 compared to 2022.
 
-
-## Costs & Risks
-
-* Auto-grading is essential for a programing course with ~100+ students. Prior to Python (i.e. before 2021) MatLab was the language and grading involved custom MatLab parsing code by Prof. R. Pawlowicz.
-* The Jupyter book text book needs the ability to write in markdown and maintain the GitHub repository.
-
 ## Lessons learned
+
+From the [poster](https://serc.carleton.edu/earth_rendezvous/2023/program/posters/friday/263242.html) prepared for Earth Educator's Rendezvous, [EER 2023](https://serc.carleton.edu/earth_rendezvous/2023/index.html), "_Lessons Learned While Implementing Opensource Computational Tools, Resources and Practices for Learning Quantitative Earth Sciences_":
+
+For larger courses involving a first exposure to computing:
+
+* Critical support: Geoscie. Ed. + excellent TAs.
+* Jupyter hubs must be reliable, scalable & “well managed”.
+Refer to open source community experience (eg. https://2i2c.org/ )
+* For students on laptops (~33%): install using conda lockfiles.
+* Assessment management (a new, emerging priority):
+* Auto-grading: non-trivial but essential for 100+ students. E.g. PrairieLearn, nbgrader, ottergrader, gradescope, LMS, etc.
+* Improve LMS efficiency: Manage questions via its API.
+
+**Costs**: larger intro. courses need complete rebuilds. E.g. _Adapting a first year statistics course_ (DSCI 100) from “R” ==> Python involved:
+
+* 9 months, 4 students, 3 profs.
+* Rewrite original opensource text.
+* Adapt & test all lessons, learning activities, assessments & resources.
+* Stay compatible with original “R” version of the course.
+
+_Adapting a second year Earth science computing course_ (EOSC 211) from MatLab ==> Python involved:
+
+* 12 months, 2 students, 2 profs.
+* Adopt an opensource text.
+* Adapt all lessons, learning activities and assessments.
+* Pilot use of Jupyter hubs (twice).
+* Re-work the autograding workflow.
 
 Probably the biggest lesson was to avoid planning on deployment of Jupyter-based learning resources without a well-established Jupyter hub read to accept, deploy and maintain the materials.
 
 The issue or auto-grading is an ongoing challenge that many courses in many institutions are facing. It is being addressed, with solutions ranging from custom to broadly based open-source. The choice depends on abilities of instructors.
+
+Finally some general observations re. course transformation
+
+* “Pythonization” was easier on students than instructors.
+* Opensource textbooks are efficient & sustainable.
+* Students want to learn Python (based on feedback surveys).
+* It takes 2-3 years to shift from MatLab to Python across curriculum.
+* TA & student-worker support was critical!
+* A Geoscience education coordinatork was critical for efficiency & to help keep the focus on learning and student's needs.
+
+---

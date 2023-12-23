@@ -38,13 +38,15 @@ The app looks like this:
 
 Feedback from students included comments such as:
 
-* "I enjoyed having the ability to directly customize different settings and parameters for the planet, allowing us to visualize the effects different amounts of sunlight can have on its albedo and habitation."
-* "As a hands-on learner, it helped me understand the concepts more, as opposed to just reading about the different effects of sunlight on habitability in a textbook or paper."
-* "If it’s possible to implement, it would be great to have a visualization of the planet with the various percentages of daisy coverages for the future, besides having just the graph lines.”
+>_"I enjoyed having the ability to directly customize different settings and parameters for the planet, allowing us to visualize the effects different amounts of sunlight can have on its albedo and habitation."_
+
+>_"As a hands-on learner, it helped me understand the concepts more, as opposed to just reading about the different effects of sunlight on habitability in a textbook or paper."_
+
+>_"If it’s possible to implement, it would be great to have a visualization of the planet with the various percentages of daisy coverages for the future, besides having just the graph lines.”_
 
 ## Costs
 
-The dashboard was developed by a keen teaching assistant. This should take only a week or so of time since all OCESE dashboards are in the public domain and repositories can be viewed for inspiration and programming tactics.
+The dashboard was developed by a keen teaching assistant TA. This should take only a week or so of time is the TA has reasonably Python coding skills. All OCESE dashboards are in the public domain and repositories can be viewed for inspiration and programming tactics.
 
 ## Lessons Learned
 

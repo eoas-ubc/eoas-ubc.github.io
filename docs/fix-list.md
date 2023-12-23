@@ -28,7 +28,7 @@ See also **[issues](https://github.com/eoas-ubc/eoas-ubc.github.io/issues)** at 
 * Servers and hubs: move, rename & rewrite; it's not really a how-to since we & others are still iterating towards optimal choices. It needs to be more like "lessons learned".
 * [automating assessments](openassessment.md): not yet complete
 * The [faculty training](facultydev.md) page needs work. The perspective is training as a project outcome.
-* ToDo for PA? 
+* ToDo for PA?
   * add to ATSC301 page?
   * update status on two CMIP dashboards
 
@@ -44,6 +44,7 @@ See also **[issues](https://github.com/eoas-ubc/eoas-ubc.github.io/issues)** at 
     * ...\courses\eosc442\projects\Sample Datasets and Analysis Questions_ EOSC 442 101 2022W1 Climate Measur...alysis.pdf
     * Climate data sets: Becca's datasets list online here, or FJ's version: ...\courses\climate\Climate datasets - Rebecca 230310.docx.
 * envr 300: adapting the CO2 activity to become an "Eddie Module" would serve as "completion" step for dashboard development. Needs permission. Submission as an Eddie module is done by completing the form [here](https://serc.carleton.edu/eddie/participate/contribute_activity.html), then editing resulting webpage at SERC. Early effort was carried out on day 5 of EER.
+* courses to "pester" about use of OCESE outcomes & resources? eosc310, eosc329, eosc340, eosc350 (standalone apps - maybe magnetics dipole?), eosc373?
 
 ## Ideas
 
