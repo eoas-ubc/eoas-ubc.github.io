@@ -4,11 +4,7 @@ See also **[issues](https://github.com/eoas-ubc/eoas-ubc.github.io/issues)** at 
 
 ## Updates, additions & corrections
 
-* Refs to add - (OR drop references - OR change the refs.md page).
-  * Add [EDUCE](https://educe-ubc.github.io/about.html) to references somehow. How about other Jnotebook initiatives here and UBC-OK?
-  * on "refs-oer" - Check and update from UBC’s [OER group](https://oer.open.ubc.ca/).
-  * On "teaching with dashboards and JNBs" - reference "Fidelity of Implementation" when discussing dashboards, JNBs, questioning strategies (PrairieLearn, etc.), Open Ed. Resources, and so on. Google it for refs. [Here is one from 2017](https://www.lifescied.org/doi/10.1187/cbe.16-03-0113).
-  * On "refs-oer" page, mention open-source earth sciences, eg: pangeo, SimpEG, Fatiango, geosci.xyz, (find ocgy and atsc examples), Jupyter books (again, referring to UBC's examples open.ubc.ca. [Numerical Techniques for AOE scientists](https://rhwhite.github.io/numeric_2022/), R. White and S. Allen, DSCI100 [python text](https://python.datasciencebook.ca/intro.html)  & [repo](https://github.com/UBC-DSCI/introduction-to-datascience-python).
+* How about other Jnotebook initiatives here and UBC-OK?
 * Convert “Project evaluation” into “lessons learned” and add lists from the EER2023 poster.
 * Revisit first-year accomplishments, including [md2canvas](https://github.com/eoas-ubc/md2canvas), AL's tutorials, and others. The [projects page](https://github.com/orgs/eoas-ubc/projects/1), and list of repositories may reveal items that need including or summarizing. Needs a walk-through with Phil.
 * new / updated dashboards
@@ -20,11 +16,12 @@ See also **[issues](https://github.com/eoas-ubc/eoas-ubc.github.io/issues)** at 
   * remove dashboard feedback links (global temperatures, and maybe others).
 * Dashboard docs
   * Review and update of [Third party dashboards ...](refs-otherapps.md), including reference to the spreadsheet indicated on the top of that page.
-  * The [teaching with ...](tut-teachwith-dashboards.md) page needs updating. Include a framework (maybe a template) for use. E.g. activity components such as "fosters questioning", "provides meaningful context", include anticipated time to complete, game-ify? etc.
+  * The [teaching with ...](tut-teachwith-dashboards.md) page needs updating. 
+    * Include a framework (maybe a template) for use. E.g. activity components such as "fosters questioning", "provides meaningful context", include anticipated time to complete, game-ify? etc.
+    * reference "Fidelity of Implementation" when discussing dashboards, JNBs, questioning strategies (PrairieLearn, etc.), Open Ed. Resources, and so on. Google it for refs. [Here is one from 2017](https://www.lifescied.org/doi/10.1187/cbe.16-03-0113).
   * need a clear statement of responsibility - from Philippe? Compstaff? And where are documentation, and what permissions are needed?
   * maintenance commitment? add a note to dashboards page to contact help desk with problems?
-* List candidates for OER, especially via SERC. Note they review but it takes time.
-* Review and update of [teaching with Jupyter NBs](tut-teachwith-jnbs.md).
+* List candidates for OER, especially via SERC. Note they review but it takes time. First review https://oer.open.ubc.ca/ for ways this collection can be used.
 * Servers and hubs: move, rename & rewrite; it's not really a how-to since we & others are still iterating towards optimal choices. It needs to be more like "lessons learned".
 * [automating assessments](openassessment.md): not yet complete
 * The [faculty training](facultydev.md) page needs work. The perspective is training as a project outcome.
@@ -48,8 +45,8 @@ See also **[issues](https://github.com/eoas-ubc/eoas-ubc.github.io/issues)** at 
 
 ## Ideas
 
+* Should we be using a ubc-based Github organization for OCESE repositories [UBC GitHub instructor guide](https://lthub.ubc.ca/guides/github-instructor-guide/)?
 * Do tutorials need to be more like precedent, i.e. modular such as [Helsinki "short course"](https://autogis-site.readthedocs.io/en/latest/index.html), [Project Pythia](https://projectpythia.org/), or Atlasian tutorials, etc.? In fact, some may best be referenced to these types of existing ones tutorials?
-* Review and update of [teaching with Jupyter NBs](tut-teachwith-jnbs.md).
 * Review and update of [Third party dashboards ...](refs-otherapps.md), including reference to the spreadsheet indicated on the top of that page.
 * dashboards:
   * Build use-cases for each relevant course?
@@ -89,6 +86,6 @@ See also **[issues](https://github.com/eoas-ubc/eoas-ubc.github.io/issues)** at 
 * Added Zhiyong Wang to list of student contributors.
 * Added the Nov 2023 [edubytes](https://mailchi.mp/ubc/edubytes-newsletter-november2023?e=f1df481e69) piece to presentations page.
 * Reference page removed - not needed. Should more refs be added throughout? QuEST project has many but OCESE zotero collection is short. Or, a bibliography might be adequate unless an official publication is produced. This could be done using BibTex reference files - see the [Jupyter Books citation tutorial](https://jupyterbook.org/en/stable/tutorials/references.html).
-eosc114 page generated and PPTX + PDF of the mind-map thinking was included.
-eosc211 page cleaned up, and survey data added.
-* On the "project-outline.md" page, added a reference to the data science recommendatiosn (see [edubyts piece](https://ctlt.ubc.ca/2023/11/30/edubytes-implementing-computational-tools-for-learning/)) and to Spectrum’s top programming languages charts.
+* eosc114 page generated and PPTX + PDF of the mind-map thinking was included.
+* eosc211 page cleaned up, and survey data added.
+* On the "project-outline.md" page, added a reference to the data science recommendations from 2019 (mentioned at the start of the [edubyts piece](https://ctlt.ubc.ca/2023/11/30/edubytes-implementing-computational-tools-for-learning/)) and to Spectrum’s top programming languages charts.

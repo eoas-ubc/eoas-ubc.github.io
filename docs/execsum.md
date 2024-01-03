@@ -15,6 +15,8 @@
 6. Support the FoS minor in Data Science and DSCI 100
 7. Introduce resulting materials and practices as Open Education Resources
 
+Using and contributing open source or open education resources has been a primary aspect of addressing each of these goals. This is in keeping with UBC's commitement to supporting the use and production of open research and open education practices and resources. See https://open.ubc.ca/ .
+
 ---
 
 ## Further details; primary goals

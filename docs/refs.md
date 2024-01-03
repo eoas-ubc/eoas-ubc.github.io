@@ -11,6 +11,9 @@
 
 ## Related projects & programs at UBC
 
+* The _Experiential Data science for Undergraduate Cross-disciplinary Education_ or [EDUCE](https://educe-ubc.github.io/about.html) project.
+* Started in 2022 with "large TLEF" funding, the [UBC COMET project](https://comet.arts.ubc.ca/) is all about **Jupyter Notebook** resources for learning statistical methods in economics.
+* UBC’s [Open Education Resources - OER](https://oer.open.ubc.ca/) site.
 * UBC Faculty of Science's <a href="files/Data_Science_Report_Sept2019.pdf">Data Science Report</a>, Sep. 2019.
 * DSCI 100 [initial implementation report](https://ubc-dsci.github.io/dsci-100-a-report/dsci-100-a-report.html#1), Nov. 2019.
 * UBC's [Data Science Minor](https://datascience.ubc.ca/minor); description and how to apply.
@@ -20,6 +23,10 @@
 * [STAT 201 repository](https://github.com/UBC-DSCI/stat-201)
 * A <a href="files/strategic_planning.pdf">strategic planning</a> "how to" info-graphic.
 * UBC's [June 2023 Edubytes](https://mailchi.mp/ubc/edubytes-newsletter-june2023?e=f1df481e69) about open scholarship.
+* open-source earth sciences: [SimpEG](https://simpeg.xyz/), [Fatiando a Terra](https://www.fatiando.org/), [geosci.xyz](https://geosci.xyz/), 
+  * Jupyter books: [Numerical Techniques for AOE scientists](https://rhwhite.github.io/numeric_2022/), R. White and S. Allen, 
+  * DSCI100 [python text](https://python.datasciencebook.ca/intro.html)  & [repo](https://github.com/UBC-DSCI/introduction-to-datascience-python).
+  * Need to find ocgy and atsc examples. Consider searching for software capentry. Ask S. Allen. 
 
 ## Data Science programs at UBC-Vancouver and UBC-Okanagan
 

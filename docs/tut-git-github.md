@@ -2,7 +2,9 @@
 
 There are **many Git and Github tutorials** out there, and it is best to find a current tutorial to ensure that you learn about the most recent tools and techniques. **See the [Git & GitHub learning resources](tut-gitrefs.md) page.**
 
-This section of OCESE docuemntation (4 pages) was relevant in 2022.
+UBC provides a secure Git repository-hosting service for academic use at UBC that students can access using their CWL. Instructor guidelines as of 2023 are [here](https://lthub.ubc.ca/guides/github-instructor-guide/).
+
+The reminder of this section of OCESE docuemntation (4 pages) was relevant in 2022.
 
 ## Why Git
 
