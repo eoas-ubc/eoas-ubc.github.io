@@ -10,7 +10,7 @@
 \>[ubcexplore](https://ubcexplorer.io/course/EOSC/410),
 \> [EOAS curriculum map](https://www.eoas.ubc.ca/~quest/eoas-only.html).
 
-NOTE: EOSC410 and EOPSC510 are undergraduate and graduate versions of the this course respectively. They are taught jointly with grads and undergrads meeting different expectations during grading of assignments and projects.
+NOTE: EOSC410 and EOSC510 are undergraduate and graduate versions of the this course respectively. They are taught jointly with grads and undergrads meeting different expectations during grading of assignments and projects.
 
 ## OCESE project objectives
 
