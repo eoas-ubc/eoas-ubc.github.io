@@ -2,7 +2,7 @@
 
 ## Official course description
 
-**he Catastrophic Earth: Natural Disasters**: Introduction to causes and physical characteristics of disasters such as volcanic eruptions, earthquakes, tsunamis, hurricanes, storm surge, thunderstorms, tornadoes, landslides, wind waves, meteor impacts, mass extinctions. [3-0-0] Corequisite: EOSC 111 is recommended.
+**The Catastrophic Earth: Natural Disasters**: Introduction to causes and physical characteristics of disasters such as volcanic eruptions, earthquakes, tsunamis, hurricanes, storm surge, thunderstorms, tornadoes, landslides, wind waves, meteor impacts, mass extinctions. [3-0-0] Corequisite: EOSC 111 is recommended.
 
 **Links:**
 \>[Home](https://www.eoas.ubc.ca/academics/courses/eosc114),

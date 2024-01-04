@@ -12,7 +12,7 @@
 
 ## OCESE project objectives
 
-The Jupyter Notebook-based dashboard apps for learning about [applied geophysics](https://gpg.geosci.xyz/content/appendix/apps.html) were produced by the UBC Geophysical Inversion Facility (GIF) around 2016/17. These have served as inspiration for other OCESE projects. There was talk of converting at least a few of these to stand-alone dashboard apps rather than deploying them as Jupyter Notebooks, but this notion never became a top priority.
+The Jupyter Notebook-based dashboard apps for learning about [applied geophysics](https://gpg.geosci.xyz/content/appendix/apps.html) were produced by the UBC Geophysical Inversion Facility ([GIF](https://gif.eos.ubc.ca/)) around 2016/17. These have served as inspiration for other OCESE projects. There was talk of converting at least a few of these to stand-alone dashboard apps rather than deploying them as Jupyter Notebooks, but this notion never became a top priority.
 
 These notebooks require specialized Python libraries and therefore require custom Jupyter Hubs. The UBC open Jupyter hub was been ready for custom configurations, so the most recent deployment has been on a Department-supported third party hub by [2i2c.org](https://2i2c.org/).
 

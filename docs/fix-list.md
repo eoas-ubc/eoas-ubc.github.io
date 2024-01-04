@@ -7,6 +7,19 @@ See also **[issues](https://github.com/eoas-ubc/eoas-ubc.github.io/issues)** at 
 * How about other Jnotebook initiatives here and UBC-OK?
 * Convert “Project evaluation” into “lessons learned” and add lists from the EER2023 poster.
 * Revisit first-year accomplishments, including [md2canvas](https://github.com/eoas-ubc/md2canvas), AL's tutorials, and others. The [projects page](https://github.com/orgs/eoas-ubc/projects/1), and list of repositories may reveal items that need including or summarizing. Needs a walk-through with Phil.
+* Servers and hubs: move, rename & rewrite; it's not really a how-to since we & others are still iterating towards optimal choices. It needs to be more like "lessons learned".
+* [automating assessments](openassessment.md): not yet complete
+* The [faculty training](facultydev.md) page needs work. The perspective is training as a project outcome.
+* ToDo for PA?
+  * add to ATSC301 page?
+  * update status on two CMIP dashboards
+* Review and update of [Third party dashboards ...](refs-otherapps.md), including reference to the spreadsheet indicated on the top of that page.
+* The [teaching with dashboards ...](tut-teachwith-dashboards.md) page needs updating. 
+  * Include a framework (maybe a template) for use. E.g. activity components such as "fosters questioning", "provides meaningful context", include anticipated time to complete, game-ify? etc.
+  * reference "Fidelity of Implementation" when discussing dashboards, JNBs, questioning strategies (PrairieLearn, etc.), Open Ed. Resources, and so on. Google it for refs. [Here is one from 2017](https://www.lifescied.org/doi/10.1187/cbe.16-03-0113).
+
+## Dealing with dasboards
+
 * new / updated dashboards
   * "ozone" dashboard to the collection. Maybe envr300 or others can use it?
   * image annotation app: needs a page, and explanation. Iddo's repo. This doesn't really address a specific OCESE goal, but it is an attempt to reproduce the LiterallyCanvas approach with is no longer supported. Although it does still work. See sketch examples on the EOAS website at 1, 2, 3, and 4.
@@ -14,24 +27,12 @@ See also **[issues](https://github.com/eoas-ubc/eoas-ubc.github.io/issues)** at 
   * ocgy - Rich P had a suggestion: lines between dots to identify cruises. See email 231120. He suggests a student might be able to fix that up.
   * Add licensing info to each (CC with details).
   * remove dashboard feedback links (global temperatures, and maybe others).
-* Dashboard docs
-  * Review and update of [Third party dashboards ...](refs-otherapps.md), including reference to the spreadsheet indicated on the top of that page.
-  * The [teaching with ...](tut-teachwith-dashboards.md) page needs updating. 
-    * Include a framework (maybe a template) for use. E.g. activity components such as "fosters questioning", "provides meaningful context", include anticipated time to complete, game-ify? etc.
-    * reference "Fidelity of Implementation" when discussing dashboards, JNBs, questioning strategies (PrairieLearn, etc.), Open Ed. Resources, and so on. Google it for refs. [Here is one from 2017](https://www.lifescied.org/doi/10.1187/cbe.16-03-0113).
-  * need a clear statement of responsibility - from Philippe? Compstaff? And where are documentation, and what permissions are needed?
-  * maintenance commitment? add a note to dashboards page to contact help desk with problems?
+* need a clear statement of responsibility - from Philippe? Compstaff? And where are documentation, and what permissions are needed?
+* maintenance commitment? add a note to dashboards page to contact help desk with problems?
 * List candidates for OER, especially via SERC. Note they review but it takes time. First review https://oer.open.ubc.ca/ for ways this collection can be used.
-* Servers and hubs: move, rename & rewrite; it's not really a how-to since we & others are still iterating towards optimal choices. It needs to be more like "lessons learned".
-* [automating assessments](openassessment.md): not yet complete
-* The [faculty training](facultydev.md) page needs work. The perspective is training as a project outcome.
-* ToDo for PA?
-  * add to ATSC301 page?
-  * update status on two CMIP dashboards
 
 ## Specific courses
 
-* eosc429
 * eosc373 (describe actions and outcomes with Hal's JNB)
 * eosc442:
   * are climate datasets an OCESE outcome? Not really, except that upgrading the course's project activity was a separately funded project carried out at the same time as OCESE, and with a little support from OCESE staff (FJ).

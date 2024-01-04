@@ -16,8 +16,14 @@ Build interactive resources that allow students to apply skills and knowledge ga
 
 ## Actions taken
 
-Discussions were had with instructors of EOSC 373, and after careful consideration it was decided that now was not the best time to work on adjustments to this course.
+An existing in-class exercise that uses spreadsheets was discussed. Is the spreadsheet version sufficient? Could the physical phenomenon be modelled with an interactive dashboard? Would this exercise be more appropriatly run using a Jupyter Notebook for students to explore the concepts?
+
+These questions were considered rather quickly towards the end of OCESE project. The exercise was run in class with students using either a given spreadsheet or a Jupyter notebook that carries out the same calculations, and delivered via [Google's colab.research](https://colab.google/) platform. Both worked fine. **Of the 52 students in the course, 40 used the spreadsheet and 12 used the Jupyter Notebook**.
+
+As this worked well, no further action was taken and no dashboard was built.
 
 ## Lessons learned
 
-This is an example of a normal aspect of TLEF projects. A proposed task was considered, but eventually dropped for several reasons, including readiness of instructors at the time (especially given the challenges associated with the COVID pandemic) and consideration of other OCESE project priorities.
+This is an example of a normal aspect of TLEF projects. A proposed task was considered, but eventually dropped for several reasons.
+
+Students taking EOSC 373 are relatively diverse in terms of background, yet many do seem ready to enagage with Jupyter Notebooks (JNBs) without special preparation. This lesson learned is that JNBs are viable alternative, even when delivered using open access deployment platforms such as Google's [CoLab](https://colab.google/) facility. Of course instructors do need to be sure that personal student information, grades, or other restricted information is not "managed on" or delievered to such public cloud-based facilities, but for purposes such as this on (deploying a calculating tool), the option is appropriate and efficient.

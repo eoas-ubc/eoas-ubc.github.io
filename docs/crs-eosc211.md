@@ -40,6 +40,13 @@ Outcomes and experiences are outlined above adjacent to corresponding OCSE proje
 
 See notes above, including <a href="files/e211-feedback-221209.pdf">feedback about Jupyter hubs</a>.
 
+Courses were all being taught fully online during the first months of OCESE work (fall 2020). Students in most courses in our Department were asked about access to computing and online learning resources. This was particularly important in courses involving computing and programming, and knowing the diversity of access and students' opinions & expectations was important for instructors since they were not meeting students in class. The following is an example of data gathered with results obtained from the 90 students enrolled in EOSC 211 in fall 2020.
+
+```{image} images/211-survey2020.png
+:alt: eosc211 Piazza data
+:align: center
+```
+
 ### Discussion board activity
 
 Piazza [discussion board](https://lthub.ubc.ca/guides/piazza-instructor-guide/) topics from the first and second year after transforming eosc211 are illustrated in the figure here. Apparently, student concerns raised on the Piazza platform were relatively similar in both terms.
