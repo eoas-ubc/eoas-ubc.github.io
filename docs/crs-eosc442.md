@@ -26,18 +26,17 @@ EOSC 442 is a 1-credit required lab course for [Combined Majors in Science](http
 
 From Term 1 TA, Ben O'Oconnor email, 221014, regarding the "growing pains" exhibited by the (then) new open.jupyter.ubc hubs:
 
-> We are also finding that the kernels permanently disconnect on a fairly regular basis (normally if they are left idle for more than a few minutes). By permanently disconnect, I mean that the entire instance of Jupyter Hub needs to be closed and relaunched (restarting/reconnecting to the kernel within the Hub does not accomplish anything). These  two points above are generally 'manageable', but annoying.
+> _We are also finding that the kernels permanently disconnect on a fairly regular basis (normally if they are left idle for more than a few minutes). By permanently disconnect, I mean that the entire instance of Jupyter Hub needs to be closed and relaunched (restarting/reconnecting to the kernel within the Hub does not accomplish anything). These  two points above are generally 'manageable', but annoying._
 
 From Term 2 TA, Claire Parrott email, 230215, the hubs appeared to have been more stable in term 2:
 
->Using Jupyter open is usually fine. During class time the server can be slow, and I would say ~3 students per lab have issues with kernels timing out. I've found the best way to trouble shoot is by closing the browser window and re-opening Jupyter open, however this only works when it's re-opened using the link on the canvas page (it seems to make a difference vs looking up browser history).
+> _Using Jupyter open is usually fine. During class time the server can be slow, and I would say ~3 students per lab have issues with kernels timing out. I've found the best way to trouble shoot is by closing the browser window and re-opening Jupyter open, however this only works when it's re-opened using the link on the canvas page (it seems to make a difference vs looking up browser history)._
 
 ## Instructors’ experiences
 
-During the first term that labs were offered in Python using Jupyter notebooks, the teaching assistant (TA) runnign these labs was instrumental in addressing difficulties and supporting students. Some of his comments: 
+During the first term that labs were offered in Python using Jupyter notebooks, the teaching assistant (TA) running these labs was instrumental in addressing difficulties and supporting students. Some of his comments: 
 
-**When asked** "*have you any comments on the workflow you are use to deliver and assess their work? For example, are you able to carry out your job as TA
-without working "overtime"?*
+**When asked** "*have you any comments on the workflow you are use to deliver and assess their work? For example, are you able to carry out your job as TA without working "overtime"?*
 
 **Response**: 
 
@@ -50,15 +49,17 @@ without working "overtime"?*
 
 Then, after Jupyter Hub performance was somewhat improved, the term 2 TA, Claire Parrott said:
 
->Helping students is fine, I think some of the biggest things I've noticed is that often students won't read the whole text and will go directly to asking for help. I've been taking notes and adding the the beginning of class intro some of the key items within the lab, and I *think* that's helping the second group however it's hard to gauge how well it resonates with students.
+>_Helping students is fine, I think some of the biggest things I've noticed is that often students won't read the whole text and will go directly to asking for help. I've been taking notes and adding the the beginning of class intro some of the key items within the lab, and I *think* that's helping the second group however it's hard to gauge how well it resonates with students._
 
->I don't think there are too many major changes that need to be done to the notebooks thus far, I have some notes on what small changes (i.e. typos and re-naming or re-wording) that might help but they don't greatly affect teaching.
+>_I don't think there are too many major changes that need to be done to the notebooks thus far, I have some notes on what small changes (i.e. typos and re-naming or re-wording) that might help but they don't greatly affect teaching._
 
->Grading requires a rubric/answer key I don't have, but I've been making one as I go through the lab pre-class.
+>_Grading requires a rubric/answer key I don't have, but I've been making one as I go through the lab pre-class._
 
->Student are doing generally well! Many are able to finish most of the work at the end of the session and the students who are really familiar can get the entire lab done.
+>_Student are doing generally well! Many are able to finish most of the work at the end of the session and the students who are really familiar can get the entire lab done._
 
-**Regarding projects**: From the instructor, the new datasets provided apparently helped focus students' reseach on climate-related data sets. Quote: "*Students definitely finish this course being better able to consider climate emergency issues from a more data-informed perspective than when they begin*" (paraphrased).
+**Regarding projects**: From the instructor, the new datasets provided apparently helped focus students' reseach on climate-related data sets. Quote: 
+
+>_Students definitely finish this course being better able to consider climate emergency issues from a more data-informed perspective than when they begin_ (paraphrased).
 
 ## Costs
 
@@ -66,22 +67,24 @@ This OCESE project component was completed because of the dedication and commite
 
 Initial deployment of new Jupyter notebooks can involve challenges that are only discovered when students start using them. Therefore an experienced teaching assistant is an invaluable asset. For example, from Term 1 TA, Ben O'Oconnor email, 221014:
 
-> "... reading data with pandas.read_csv resulted in dataframe structures with up to 3 significantly different formats for different students. This was actually really quite frustrating during the past two weeks. After a bit of searching it seems like there is a known issue with the read_csv() function being a bit 'flaky'. I have since updated the labs to ensure consistency."
+> _... reading data with pandas.read_csv resulted in dataframe structures with up to 3 significantly different formats for different students. This was actually really quite frustrating during the past two weeks. After a bit of searching it seems like there is a known issue with the read_csv() function being a bit 'flaky'. I have since updated the labs to ensure consistency._
 
 ## Lessons learned
+
+**NOTE: This project is another example of the importance of a collaborative arrangement between instructor and developer. The instructor can not simply expect the "product" to be delivered without engaging in the iterative cycle of development. In this case it was the teaching assistant in charge of running labs for this course who liaised efficiently and effectively with the student carrying out conversions.** (Thank you Ben for your diligence and enthusiasm!)
 
 **Question to TA**: Is the Jupyter notebook environment working for them (and you)?
 
 **Answer**:
 
->"From a programming perspective, it is not my favorite working environment, although I admittedly have not taken the time to learn the "ins and outs" of JNB and customize it to my preferences. That's possibly just my grumpy MATLAB-user voice speaking."
+>_From a programming perspective, it is not my favorite working environment, although I admittedly have not taken the time to learn the "ins and outs" of JNB and customize it to my preferences. That's possibly just my grumpy MATLAB-user voice speaking._
 
->"From a teaching/learning perspective however, I think it is really quite good. A large majority of the students are completing the assignments (more or less) within the allotted lab time. This was far from the case last year and was a major goal in the assignment conversion/updates. Part of this is because the students seem more generally engaged this term, but a large part of it is (I think) due to the increased number of examples, hints, and general "hand-holding" that is now contained within the notebooks."
+>_From a teaching/learning perspective however, I think it is really quite good. A large majority of the students are completing the assignments (more or less) within the allotted lab time. This was far from the case last year and was a major goal in the assignment conversion/updates. Part of this is because the students seem more generally engaged this term, but a large part of it is (I think) due to the increased number of examples, hints, and general "hand-holding" that is now contained within the notebooks._
 
 **TA's comment about learnign Python**:
 
->It seems that students are having a harder time finding solutions and coding approaches for themselves online - this is true both in terms of "*what function(s) do I need to use to accomplish this task?*" and "*How does this function work? What are the input parameters and how can they be used?*" type queries. I think this is just the nature of Python. There are more ways to accomplish the same thing compared to Matlab and the documentation is not as helpful (less example code being a key part of this). Not a big deal, but it has resulted in me being even more "hand-holdy' with my hints.
+>_It seems that students are having a harder time finding solutions and coding approaches for themselves online - this is true both in terms of "*what function(s) do I need to use to accomplish this task?*" and "*How does this function work? What are the input parameters and how can they be used?*" type queries. I think this is just the nature of Python. There are more ways to accomplish the same thing compared to Matlab and the documentation is not as helpful (less example code being a key part of this). Not a big deal, but it has resulted in me being even more "hand-holdy' with my hints._
 
 **TA's comment about student satisfaction**:
 
->The course is recognized as way too much work for a single credit, but this is well known and being considered at the curriculum level. That said, I do think that the course is appreciated by students that genuinely care about developing their programming skills. "*I learned SO much from Lab 1A*" was something that I **overheard as a group of students** were leaving class several weeks ago. Even though the workload/credit balance is off, I think students do feel like they walk away with a usefully-expanded skill set. I think it helps take them from 'kind of knowing Python' to feeling more confident that they can put it on their resume as a skill.
+>_The course is recognized as way too much work for a single credit, but this is well known and being considered at the curriculum level. That said, I do think that the course is appreciated by students that genuinely care about developing their programming skills. "*I learned SO much from Lab 1A*" was something that I **overheard as a group of students** were leaving class several weeks ago. Even though the workload/credit balance is off, I think students do feel like they walk away with a usefully-expanded skill set. I think it helps take them from 'kind of knowing Python' to feeling more confident that they can put it on their resume as a skill._
