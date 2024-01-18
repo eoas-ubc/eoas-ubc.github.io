@@ -21,6 +21,8 @@ EOSC 442 is a 1-credit required lab course for [Combined Majors in Science](http
 1. Four notebooks were converted - no changes to the exercieses, just do the same ones usign Python, with notebooks.
 2. The (then) new [UBC open Jupyter hub](https://lthub.ubc.ca/guides/jupyterhub-instructor-guide/) was used to serve these to students.
 3. Some consulting was provided regarding new climate-related data sets to be used for projects. Students will carry out the same project but with provided data sets rather than open-ended. Also student are to apply skills learned in the 4 computing labs for their projects.
+    * <a href="files/EOSC442-ProjectInstructions-2022W1.pdf">Project instructions</a>.
+    * <a href="files/EOSC442-SampleDatasets-and-Analysis Questions-2022W1.pdf">Sample data sets and questions to address</a>.
 
 ## Students’ experiences
 

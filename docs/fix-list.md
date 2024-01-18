@@ -4,19 +4,14 @@ See also **[issues](https://github.com/eoas-ubc/eoas-ubc.github.io/issues)** at 
 
 ## Updates, additions & corrections
 
-* How about other Jnotebook initiatives here and UBC-OK?
-* Convert “Project evaluation” into “lessons learned” and add lists from the EER2023 poster.
-* Revisit first-year accomplishments, including [md2canvas](https://github.com/eoas-ubc/md2canvas), AL's tutorials, and others. The [projects page](https://github.com/orgs/eoas-ubc/projects/1), and list of repositories may reveal items that need including or summarizing. Needs a walk-through with Phil.
-* Servers and hubs: move, rename & rewrite; it's not really a how-to since we & others are still iterating towards optimal choices. It needs to be more like "lessons learned".
-* [automating assessments](openassessment.md): not yet complete
 * The [faculty training](facultydev.md) page needs work. The perspective is training as a project outcome.
-* ToDo for PA?
-  * add to ATSC301 page?
-  * update status on two CMIP dashboards
-* Review and update of [Third party dashboards ...](refs-otherapps.md), including reference to the spreadsheet indicated on the top of that page.
-* The [teaching with dashboards ...](tut-teachwith-dashboards.md) page needs updating. 
+* The [teaching with dashboards ...](tut-teachwith-dashboards.md) page needs updating.
   * Include a framework (maybe a template) for use. E.g. activity components such as "fosters questioning", "provides meaningful context", include anticipated time to complete, game-ify? etc.
   * reference "Fidelity of Implementation" when discussing dashboards, JNBs, questioning strategies (PrairieLearn, etc.), Open Ed. Resources, and so on. Google it for refs. [Here is one from 2017](https://www.lifescied.org/doi/10.1187/cbe.16-03-0113).
+* ToDo for PA?
+  * Revisit first-year accomplishments, including [md2canvas](https://github.com/eoas-ubc/md2canvas), AL's tutorials, and others. The [projects page](https://github.com/orgs/eoas-ubc/projects/1), and list of repositories may reveal items that need including or summarizing. Needs a walk-through with Phil.
+  * add to ATSC301 page?
+  * update status on two CMIP dashboards
 
 ## Dealing with dasboards
 
@@ -30,19 +25,6 @@ See also **[issues](https://github.com/eoas-ubc/eoas-ubc.github.io/issues)** at 
 * need a clear statement of responsibility - from Philippe? Compstaff? And where are documentation, and what permissions are needed?
 * maintenance commitment? add a note to dashboards page to contact help desk with problems?
 * List candidates for OER, especially via SERC. Note they review but it takes time. First review https://oer.open.ubc.ca/ for ways this collection can be used.
-
-## Specific courses
-
-* eosc373 (describe actions and outcomes with Hal's JNB)
-* eosc442:
-  * are climate datasets an OCESE outcome? Not really, except that upgrading the course's project activity was a separately funded project carried out at the same time as OCESE, and with a little support from OCESE staff (FJ).
-  * Do they want more climate data sets? Are EDDIE modules a source? Is the climate emergency committee still addressing data sets?
-  * Mention labs. Not OCESE work, other than consulting a few times with Becca and Michael. However, labs were re-written to account for students Python skills. See FJ files:
-    * ...\courses\eosc442\projects\Final Project Course Page_ EOSC 442 101 2022W1 Climate Measurement and Analysis.pdf
-    * ...\courses\eosc442\projects\Sample Datasets and Analysis Questions_ EOSC 442 101 2022W1 Climate Measur...alysis.pdf
-    * Climate data sets: Becca's datasets list online here, or FJ's version: ...\courses\climate\Climate datasets - Rebecca 230310.docx.
-* envr 300: adapting the CO2 activity to become an "Eddie Module" would serve as "completion" step for dashboard development. Needs permission. Submission as an Eddie module is done by completing the form [here](https://serc.carleton.edu/eddie/participate/contribute_activity.html), then editing resulting webpage at SERC. Early effort was carried out on day 5 of EER.
-* courses to "pester" about use of OCESE outcomes & resources? eosc310, eosc329, eosc340, eosc350 (standalone apps - maybe magnetics dipole?), eosc373?
 
 ## Ideas
 
@@ -61,6 +43,7 @@ See also **[issues](https://github.com/eoas-ubc/eoas-ubc.github.io/issues)** at 
 * Need a show and tell, emphasizing "implications for you and students". maybe split into "direct impacts" and "implied or potential impacts".
 * Gather repositories with PA, FJ, JB, IS and collect at eoas-ubc. Maybe start by using tags (i.e. "topics") in FJ's GitHub account.
 * Gather quotes from workers (AL, BJ, IS) then place them in corresponding course pages, or in project evaluation pages. (Project eval pages may need consolidating.
+* courses to "pester" about use of OCESE outcomes & resources? eosc310, eosc329, eosc340, eosc350 (standalone apps - maybe magnetics dipole?), eosc373?
 
 ---
 
@@ -90,3 +73,7 @@ See also **[issues](https://github.com/eoas-ubc/eoas-ubc.github.io/issues)** at 
 * eosc114 page generated and PPTX + PDF of the mind-map thinking was included.
 * eosc211 page cleaned up, and survey data added.
 * On the "project-outline.md" page, added a reference to the data science recommendations from 2019 (mentioned at the start of the [edubyts piece](https://ctlt.ubc.ca/2023/11/30/edubytes-implementing-computational-tools-for-learning/)) and to Spectrum’s top programming languages charts.
+* Courses finished: 442 (including reference to climate data sets for projects) & 471.
+* Servers and hubs shortened to Jupyter Hubs.
+* [automating assessments](openassessment.md): finished - not optimal, but at least not "notes".
+* The "Other software tools" page has been redistributed to other pages with sensible contexts.

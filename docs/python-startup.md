@@ -45,3 +45,8 @@ This is the sequence only; details are given on pages linked after step 4.
 >If you work on a **Windows** computer, use <a href="files\python-setup_windows_short_2022.pdf">this PDF sheet of instructions</a>. When asked to fetch "lock" file, download using this link: <a href="files\conda-win-64.lock">conda-win-64.lock</a>.
 
 >If you work on a **Macintosh (Apple)** computer, <a href="files\python-setup_macos_short_2022.pdf">this PDF sheet of instructions</a>. When asked to fetch a "lock" file, download using one of these links: <a href="files\conda-osx-64.lock">conda-osx-64.lock</a> or <a href="files\conda-osx-arms64.lock">conda-osx-arms64.lock</a>.
+
+## Jupytext enables GitHub version control on `ipynb` code
+Jupyter notebooks are traditionally saved as files with an `ipynb` extension which stands for “Interactive Python Notebook”. It is a file format used by Jupyter Notebook to store and share documents that contain live code, equations, visualizations, and narrative text.
+
+However, this file format is not appropriate for version control. [Jupytext](https://jupytext.readthedocs.io/en/latest/#) is a Notebook plugin that causes any file save action to generate more than one version of the file being saved. A common example is to save both an `ipynb` file and a markdown `mp` or `py:percent` version. How this is used and how Jupyter notebooks or Jupyter Labs uses these versions is explained in the [Jupytext documentation](https://jupytext.readthedocs.io/en/latest/#).

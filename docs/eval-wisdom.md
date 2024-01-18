@@ -59,6 +59,20 @@ EOSC 112 classes were observed to provide advise on a new in-class activity that
 
 Comments below are representative of some of the lessons learned during this project, partly from specific evaluation work, but also from experiences carrying out project tasks. More details about “lessons learned” at various stages during the project can be found on presentations and reports; see [Progress Reports](progress.md), as well as [poster presentations](presentations.md) from May 2023, 2022, 2021, and Dec 2021.
 
+The **<a href="files/EER2023-poster.pdf">poster presentation for Earth Educators' Rendezvous 2023</a>** is all about lessons learned. Sections include:
+
+* Lessons learned: Engaging with data & concepts
+  * Build, deploy, sustain
+  * Learning
+* Lessons learned: Computing for EOAS students
+  * When course conversion is straightforward
+  * When course conversion is complex & costly
+  * General observations re. course transformation
+* Lessons learned: Dep’t / Institution
+  * Supporting instructors & TAs (pedagogy & logistics)
+  * Infrastructure & servers / hubs
+  * Open source and Open Education Resources (OERs)
+
 ### From student work and survey-based feedback
 
 Most students appreciate opportunities to interact with concepts and datasets. Here is a sampling of open-ended feedback:
