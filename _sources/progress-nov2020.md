@@ -1,4 +1,4 @@
-# Progress as of November 2020
+# Progress at November 2020
 
 Year one priorities include infrastructure and tools development because these are prerequisite to implementing educational initiatives in courses and professional development activities for instructors. Track progress at the project's [github repo project board](https://github.com/eoas-ubc/eoas_tlef/projects/2).
 
@@ -28,65 +28,65 @@ Year one priorities include infrastructure and tools development because these a
 
 These are listed in terms of goals from the original proposal.
 
-#### Literature review
+### Literature review
 
 1. There is a growing Zotero reference list of sources about teaching and learning computing, programming, datascience and quantitative Earth sciences.
 2. We learn much by working in the GitHub community because many academics and institutions are conducting parallel opensource projects. 
 3. Project progress and links to local and opensource contributions and collaborations are being summarized [here](https://hackmd.io/iKHYFs8-QK22jW-iybvrrQ).
 
-#### EOSC211 (97 students this year)
+### EOSC211 (97 students this year)
 
 1. Converting materials to markdown is nearly complete. These resources are being used in term 2020W1.
 2. The course textbook has been converted from LaTeX to markdown and is running in its own Jupyterhub.
 3. Converting from MatLab to Python will be largely completed by spring 2021.
 4. Instructors are starting to use GitHub, eg for [EOSC 211](https://phaustin.github.io/eosc211/info_and_announcements.html).
 
-#### ENVR300 (54 students)
+### ENVR300 (54 students)
 
-1. Several Dashboards are under development based on discussions with instructors. For details see [the development repository](https://github.com/fhmjones/dashboards-envr300).
+1. Several Dashboards are under development based on discussions with instructors. These discussions resulted in two dashboards being generated and eventually piloted in the course in January 2021. See the [dashboards page](dashboards.md) for current state of the two dashboards: "Global temperature" and "timeseries-3signals". 
 2. We will deploy and evaluate their use and value with an instructor new to these techniques in term 2020W2.
 
-#### EOSC410/510 (35 students)
+### EOSC410/510 (35 students)
 
 1. Materials for EOSC510 are being adapted to Jupyter-book format by a graduate student volunteer. This represents a pilot within EOAS for efficient generation and maintenance of course content.
 
-#### ATSC301 (13 students)
+### ATSC301 (13 students)
 
 1. This course is prototyping Jupyter book-making techniques and Jupyterhub strategies in term 2020W1.
 
-#### Quantitative core courses
+### Quantitative core courses
 
 1. Curriculum level work is proceeding as an internal EOAS project headed by Christian Schoof. Details available upon request.
 
-#### Community of practice
+### Community of practice
 
 1. First CoP meeting will be mid-November with a second in mid-February.  
 2. This term, the EOSC211 instructor, C. Johnson, is being supported via a two-instructor teaching partnership. Johnson has taught the course many times while P. Austin is spearheading the OCESE project.
 3. The EOSC350 instructor, M. Bostock, is receiving support to pilot the delivery of labs using a Jupyterhub.
 4. Initial meetings with EOSC410 instructor, V. Radic, have outlined plans for both EOSC410 and ENVR300. We are establishing priorities for adapting the course to use Jupyter notebooks, incorporate Python, and align the course as an elective for the emerging Data Science program.
 
-#### Training for faculty & others
+### Training for faculty & others
 
-1. Materials for Python and Jupyter notebook training sessions are being developed, targeting EOAS Faculty, Postdocs and Graduate students. This is our evolving [documentation site](https://fhmjones.github.io/).
+1. Materials for Python and Jupyter notebook training sessions are being developed, targeting EOAS Faculty, Postdocs and Graduate students. The website you are viewing contains current versions of all of these materials.
 
-#### Evaluation
+### Evaluation
 
 1. All deliverables and faculty interactions constitute input for evaluation purposes. This progress summary is one result, halfway into our first year.
 2. A computing-oriented attitudes and expectations pre-post survey is being implemented in EOSC211, 301, 410.
 3. Students will be asked for feedback about EOSC300 dashboards, EOSC350 dashboards, and about perceptions of learning, experiences and workloads.
 
-#### Students in courses: concrete impacts
+### Students in courses: concrete impacts
 
 1. EOSC211: students are gaining exposure to GitHub as the source of information.
 2. ENVR300: students will be using several Dashboards.
 3. ATSC301: students will be using updated GitHub, Jupyter Notebooks and Python programming.
 4. EOSC350: students are running all labs (Jupyter notebooks developed in EOAS) in a Jupyterhub.
 
-#### Student contributions
+### Student contributions
 
 1. By May 2021, five Work Learn students and one volunteer will have gained education-oriented collaboration and software skills, especially in use of GitHub. They are currently making significant contributions to our objectives, which will reflect well on their CV's.
 
-#### Additional progress beyond original plans
+### Additional progress beyond original plans
 
 Eosc350
 

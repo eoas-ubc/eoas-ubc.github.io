@@ -1,0 +1,1395 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Python Skills Check &#8212; OCESE Documentation</title>
+    
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
+    
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Servers and hubs" href="cloud-servers.html" />
+    <link rel="prev" title="Getting started with Python and Jupyter" href="python-startup.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint"></div>
+<div class="header header-item noprint"></div>
+
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="_static/logo-04smsm.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">OCESE Documentation</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Project &amp; Outcomes
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="execsum.html">
+   Executive Summary
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="project-outline.html">
+   Goals and Contributors
+  </a>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="progress.html">
+   Progress Reports &gt;&gt;
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="progress-nov2020.html">
+     Progress at November 2020
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="progress-nov2021.html">
+     Progress at November 2021
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="progress-nov2022.html">
+     Progress at November 2022
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="progress-may2023.html">
+     Progress at May 2023
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="course_materials.html">
+   Course enhancements &gt;&gt;
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="crs-atsc301.html">
+     ATSC 301
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="crs-dsci100.html">
+     DSCI 100
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="crs-envr300.html">
+     ENVR 300
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="crs-envr420.html">
+     ENVR 420
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="crs-eosc112.html">
+     EOSC 112
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="crs-eosc114.html">
+     EOSC 114
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="crs-eosc116.html">
+     EOSC 116
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="crs-eosc211.html">
+     EOSC 211
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="crs-eosc310.html">
+     EOSC 310
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="crs-eosc325.html">
+     EOSC 325
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="crs-eosc329.html">
+     EOSC 329
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="crs-eosc340.html">
+     EOSC 340
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="crs-eosc350.html">
+     EOSC 350
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="crs-eosc354.html">
+     EOSC 354
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="crs-eosc372.html">
+     EOSC 372
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="crs-eosc373.html">
+     EOSC 373
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="crs-eosc410.html">
+     EOSC 410/510
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="crs-eosc425.html">
+     EOSC 425
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="crs-eosc429.html">
+     EOSC 429
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="crs-eosc442.html">
+     EOSC 442
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="crs-eosc471.html">
+     EOSC 471
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="openassessment.html">
+   Automating assessments
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="dashboards.html">
+   Dashboards
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="facultydev.html">
+   Training faculty &amp; students
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="eval-wisdom.html">
+   Evaluation &amp; lessons learned
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="presentations.html">
+   Presentations
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="oer.html">
+   Open Ed. Resources
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  How-to Guides
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="dashboards-howto.html">
+   Developing dashboards
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="python-startup.html">
+   Python/Jupyter startup
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Python Skills Check
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="cloud-servers.html">
+   Servers and hubs
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="jupyterbooks.html">
+   Jupyter Books
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Tutorials
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="tut-commandline.html">
+   Command line &amp; Shells
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="crash_course-shells.html">
+     Andrew's Crash Course on Shells
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="tut-conda_environs.html">
+   Environments
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+  <label for="toctree-checkbox-4">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="tut-programming-environs.html">
+     Using environs; an e.g.
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="tut-git-github.html">
+   Git and Github
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
+  <label for="toctree-checkbox-5">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="tut-git-intro.html">
+     Intro. to Git
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="tut-github.html">
+     GitHub workflows
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="crash_course-git.html">
+     Andrew's GIT crash course
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="tut-gitrefs.html">
+     Git/Github resources
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="tut-teachwith-jnbs.html">
+   Teaching with Jupyter NBs
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="tut-teachwith-dashboards.html">
+   Teaching with dashboards
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  References
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="refs.html">
+   Links &amp; pointers
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="refs-otherapps.html">
+   Third-party dashboards
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="refs-oer.html">
+   Third-party OERs
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="fix-list.html">
+   Documentation ToDo's
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
+            
+            <div class="navbar_extra_footer">
+            Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+            </div>
+            
+        </div>
+    </div>
+    <div id="rtd-footer-container"></div>
+</div>
+
+
+          
+
+
+          
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
+    
+    <div class="header-article row sticky-top noprint">
+        
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<div class="menu-dropdown menu-dropdown-launch-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Launch interactive content">
+      <i class="fas fa-rocket"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://mybinder.org/v2/gh/executablebooks/jupyter-book/master?urlpath=tree/SkillsCheck-solns.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Launch on Binder"
+>
+  
+
+<span class="headerbtn__icon-container">
+  
+    <img src="_static/images/logo_binder.svg">
+  </span>
+<span class="headerbtn__text-container">Binder</span>
+</a>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="_sources/SkillsCheck-solns.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.ipynb</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
+
+    </div>
+</div>
+
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#variables-and-if-statements">
+   Variables and
+   <code class="docutils literal notranslate">
+    <span class="pre">
+     if
+    </span>
+   </code>
+   statements
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#libraries-arrays-and-plotting">
+   Libraries, arrays and plotting
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#skill-5-plotting-and-modifying-plot-properties">
+   <strong>
+    Skill 5: Plotting and modifying plot properties
+   </strong>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#skill-6-functions">
+   Skill 6, Functions
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#skill-7-for-loops">
+   Skill 7, for loops
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#skill-8-finally-let-s-briefly-practice-entering-written-answers-into-a-jupyter-notebook-cell-using-markdown">
+   Skill 8: Finally - let’s briefly practice entering written answers into a Jupyter Notebook cell, using Markdown.
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#skill-9-debugging">
+     Skill 9: Debugging
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#suggested-resources-tutorials">
+     <em>
+      Suggested resources &amp; tutorials
+     </em>
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#challenge-component">
+   Challenge component
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#putting-it-all-together">
+     Putting it all together
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#continue-the-challenge-task">
+     Continue the challenge task …
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+    </nav>
+</div>
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Python Skills Check</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#variables-and-if-statements">
+   Variables and
+   <code class="docutils literal notranslate">
+    <span class="pre">
+     if
+    </span>
+   </code>
+   statements
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#libraries-arrays-and-plotting">
+   Libraries, arrays and plotting
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#skill-5-plotting-and-modifying-plot-properties">
+   <strong>
+    Skill 5: Plotting and modifying plot properties
+   </strong>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#skill-6-functions">
+   Skill 6, Functions
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#skill-7-for-loops">
+   Skill 7, for loops
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#skill-8-finally-let-s-briefly-practice-entering-written-answers-into-a-jupyter-notebook-cell-using-markdown">
+   Skill 8: Finally - let’s briefly practice entering written answers into a Jupyter Notebook cell, using Markdown.
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#skill-9-debugging">
+     Skill 9: Debugging
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#suggested-resources-tutorials">
+     <em>
+      Suggested resources &amp; tutorials
+     </em>
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#challenge-component">
+   Challenge component
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#putting-it-all-together">
+     Putting it all together
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#continue-the-challenge-task">
+     Continue the challenge task …
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <main id="main-content" role="main">
+                
+              <div>
+                
+  <section class="tex2jax_ignore mathjax_ignore" id="python-skills-check">
+<h1>Python Skills Check<a class="headerlink" href="#python-skills-check" title="Permalink to this headline">#</a></h1>
+<p>This page provides a useful way to determine whether you have sufficient Python coding skills to succeed in a third or fourth year undergraduate course that assumes you have already taken an introductory course on programing in Python (or have gained those skills some other way). You should be able to carry out these 9 types of tasks:</p>
+<p>First some basics:</p>
+<ol class="simple">
+<li><p>Distinguish between variable types (integers, floats, strings, lists, etc.).</p></li>
+<li><p>Include conditional statements using <code class="docutils literal notranslate"><span class="pre">if</span></code>, <code class="docutils literal notranslate"><span class="pre">elif</span></code> and <code class="docutils literal notranslate"><span class="pre">else</span></code> statements with common “comparison” operatores (like <code class="docutils literal notranslate"><span class="pre">==</span></code>, <code class="docutils literal notranslate"><span class="pre">&gt;=</span></code> and so on).</p></li>
+<li><p>Import and use libraries, particularly the <code class="docutils literal notranslate"><span class="pre">numpy</span></code> and <code class="docutils literal notranslate"><span class="pre">matplotlib</span></code> libraries.</p></li>
+<li><p>Working with Arrays</p></li>
+<li><p>Plot a function, multiple functions on the same graph, and multiple functions using subplots.</p></li>
+</ol>
+<p>Then some more coding practices:</p>
+<ol class="simple">
+<li><p>Define a function that takes in parameters and returns a value.</p></li>
+<li><p>Use <code class="docutils literal notranslate"><span class="pre">for</span></code> loops to iterate over a range of numbers or a list / array.</p></li>
+<li><p>Practice entering “written” answers into a markdown cell</p></li>
+<li><p>Debug your code effectively (by printing to the screen, using comments, or using the Python debugger).</p></li>
+</ol>
+<p>Check your skills by performing the following tasks to determine which ones you need to learn or re-learn.</p>
+<section id="variables-and-if-statements">
+<h2>Variables and <code class="docutils literal notranslate"><span class="pre">if</span></code> statements<a class="headerlink" href="#variables-and-if-statements" title="Permalink to this headline">#</a></h2>
+<p><strong>Skill 1</strong><br />
+If you have trouble with any of these, <a class="reference external" href="https://www.w3schools.com/python/python_syntax.asp">these tutorial pages</a> are simple for getting started, or quick reminders.</p>
+<ol class="simple">
+<li><p>Define an integer as 5, a float as 3.4, a complex number as 100 + 3j (use “1e2” to define the 100), a string with 3-4 words, and a list with at least 5 items of any type.</p></li>
+<li><p>Print all 5 items on one line.</p></li>
+<li><p>Print the complex number squared.</p></li>
+<li><p>Print only the second word of your string, with none of the adjacent spaces.</p></li>
+<li><p>Print only the second and third items in your list (NOT the third and fourth items).</p></li>
+</ol>
+<p><strong>Skill 2</strong><br />
+6. Write exactly 4 lines of code to print your intenger ONLY if it is greater than 10, OTHERWISE print the float. Test this by adjusting the value of your integer.
+7. Add an extra conditional statement to check whether the float is equal to 3.4; print it if true, but print the complex if not.</p>
+<p>Some sources for succinct instructions are:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://www.w3schools.com/python/python_variables.asp">Defining variables in Python</a></p></li>
+<li><p><a class="reference external" href="https://www.w3schools.com/python/python_conditions.asp">Making if statements in Python</a></p></li>
+<li><p>Defining a function in Python: at <a class="reference external" href="https://www.w3schools.com/python/python_functions.asp">W3schools</a>, or a somewhat more comprehensive tutorial <a class="reference external" href="https://swcarpentry.github.io/python-novice-inflammation/08-func/index.html">here</a>.</p></li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># code for skills 1 and 2 go here.</span>
+
+<span class="n">a</span> <span class="o">=</span> <span class="mi">5</span>
+<span class="n">b</span> <span class="o">=</span> <span class="mf">3.4</span>
+<span class="n">c</span> <span class="o">=</span> <span class="mf">1e2</span> <span class="o">+</span> <span class="mi">3</span><span class="n">j</span>
+<span class="n">d</span> <span class="o">=</span> <span class="s2">&quot;this is a string&quot;</span>
+<span class="n">e</span> <span class="o">=</span> <span class="p">[</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">c</span><span class="p">,</span> <span class="n">d</span><span class="p">]</span>
+
+<span class="c1">#print(a, b, c, d, e)</span>
+<span class="c1">#print(c**2)</span>
+<span class="c1">#print(d[5:7])</span>
+<span class="c1">#print(e[1:3])</span>
+
+<span class="k">if</span> <span class="n">a</span> <span class="o">&gt;=</span> <span class="mi">10</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+<span class="k">elif</span> <span class="n">b</span> <span class="o">==</span> <span class="mf">3.4</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">b</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span> 
+    <span class="nb">print</span><span class="p">(</span><span class="n">c</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>3.4
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="libraries-arrays-and-plotting">
+<h2>Libraries, arrays and plotting<a class="headerlink" href="#libraries-arrays-and-plotting" title="Permalink to this headline">#</a></h2>
+<p><strong>Skill 3: Libraries</strong><br />
+The two key libraries we need are <code class="docutils literal notranslate"><span class="pre">numpy</span></code> and <code class="docutils literal notranslate"><span class="pre">matplotlib</span></code>. Excellent introductions and practice exercises can be found for both <a class="reference external" href="https://www.w3schools.com/python/numpy/default.asp">numpy</a> and <a class="reference external" href="https://www.w3schools.com/python/matplotlib_intro.asp">matplotlip</a> at W3schools.</p>
+<p>Write the two <code class="docutils literal notranslate"><span class="pre">import</span></code> lines here to import numpy as <code class="docutils literal notranslate"><span class="pre">np</span></code> and matplotlib as <code class="docutils literal notranslate"><span class="pre">plt</span></code></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># two import lines here</span>
+
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Now you are ready to make arrays using <code class="docutils literal notranslate"><span class="pre">np</span></code>, use them to build some time series, and plot them with <code class="docutils literal notranslate"><span class="pre">plt</span></code>.</p>
+<p><strong>Skill 4: Arrays</strong><br />
+Arrays in Python are basically “lists” of numbers (int, real or imaginary). Accessing elements in an array, and working with arrays, is done using <a class="reference external" href="https://www.w3schools.com/python/python_lists.asp">rules of working with lists</a>.</p>
+<p>Two useful functions for making an np.array are <a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.arange.html"><code class="docutils literal notranslate"><span class="pre">np.arange</span></code></a> and <a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.linspace.html"><code class="docutils literal notranslate"><span class="pre">np.linspace</span></code></a>. Use the first if you know the spacing between each value in your array. Use the second if you know the number of points in your array.</p>
+<p>Now, use both to make two identical arrays that goe from 0 to 1 with spacing of 0.1.<br />
+Print both versions of this list.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># a = an array made using np.arange</span>
+<span class="c1"># b = an array made using np.linspace</span>
+
+<span class="n">a</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mf">1.1</span><span class="p">,</span> <span class="mf">0.1</span><span class="p">)</span>
+<span class="n">b</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">11</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">b</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[0.  0.1 0.2 0.3 0.4 0.5 0.6 0.7 0.8 0.9 1. ]
+[0.  0.1 0.2 0.3 0.4 0.5 0.6 0.7 0.8 0.9 1. ]
+</pre></div>
+</div>
+</div>
+</div>
+<p><strong>Work with arrays and lists:</strong></p>
+<ol class="simple">
+<li><p>If <code class="docutils literal notranslate"><span class="pre">list</span> <span class="pre">=</span> <span class="pre">['first',</span> <span class="pre">'second',</span> <span class="pre">'third']</span></code> carry out these steps for both array “a” (above) and list “list”.</p></li>
+<li><p>Find out which of these steps is “legal” in Python and which is not (i.e. throws an error).</p></li>
+<li><p>Explain in one sentence why the error occurs.</p></li>
+</ol>
+<ul class="simple">
+<li><p>Print the complete array or list</p></li>
+<li><p>Print the first element of the array or list</p></li>
+<li><p>Print the elements starting from 2nd till 4th</p></li>
+<li><p>Print the elements starting from 3rd element</p></li>
+<li><p>Demonstrate multiplication of arrays &amp; lists by integer (i.e. <code class="docutils literal notranslate"><span class="pre">a</span> <span class="pre">*</span> <span class="pre">2</span></code> and <code class="docutils literal notranslate"><span class="pre">list</span> <span class="pre">*</span> <span class="pre">2</span></code>) and print result</p></li>
+<li><p>Demonstrate addition in arrays &amp; lists (i.e. <code class="docutils literal notranslate"><span class="pre">a</span> <span class="pre">+</span> <span class="pre">2</span></code> and <code class="docutils literal notranslate"><span class="pre">list</span> <span class="pre">+</span> <span class="pre">2</span></code>) and print result</p></li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># working with arrays and lists</span>
+
+<span class="nb">list</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;first&#39;</span><span class="p">,</span> <span class="s1">&#39;second&#39;</span><span class="p">,</span> <span class="s1">&#39;third&#39;</span><span class="p">]</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>          <span class="c1"># Prints complete list</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>       <span class="c1"># Prints first element of the list</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">[</span><span class="mi">1</span><span class="p">:</span><span class="mi">4</span><span class="p">])</span>     <span class="c1"># Prints elements starting from 2nd till 4th </span>
+<span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">[</span><span class="mi">2</span><span class="p">:])</span>      <span class="c1"># Prints elements starting from 3rd element</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">a</span> <span class="o">*</span> <span class="mi">2</span><span class="p">)</span>      <span class="c1"># math in arrays</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">a</span> <span class="o">+</span> <span class="mi">3</span><span class="p">)</span>      <span class="c1"># math in arrays</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">list</span><span class="p">)</span>       <span class="c1"># Prints complete list</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">list</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>    <span class="c1"># Prints first element of the list</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">list</span><span class="p">[</span><span class="mi">1</span><span class="p">:</span><span class="mi">4</span><span class="p">])</span>  <span class="c1"># Prints elements starting from 2nd till 4th </span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">list</span><span class="p">[</span><span class="mi">2</span><span class="p">:])</span>   <span class="c1"># Prints elements starting from 3rd element</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">list</span> <span class="o">*</span> <span class="mi">2</span><span class="p">)</span>   <span class="c1"># math in lists</span>
+<span class="c1">#print(list + 2)   # math in lists</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[0.  0.1 0.2 0.3 0.4 0.5 0.6 0.7 0.8 0.9 1. ]
+0.0
+[0.1 0.2 0.3]
+[0.2 0.3 0.4 0.5 0.6 0.7 0.8 0.9 1. ]
+[0.  0.2 0.4 0.6 0.8 1.  1.2 1.4 1.6 1.8 2. ]
+[3.  3.1 3.2 3.3 3.4 3.5 3.6 3.7 3.8 3.9 4. ]
+[&#39;first&#39;, &#39;second&#39;, &#39;third&#39;]
+first
+[&#39;second&#39;, &#39;third&#39;]
+[&#39;third&#39;]
+[&#39;first&#39;, &#39;second&#39;, &#39;third&#39;, &#39;first&#39;, &#39;second&#39;, &#39;third&#39;]
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="skill-5-plotting-and-modifying-plot-properties">
+<h2><strong>Skill 5: Plotting and modifying plot properties</strong><a class="headerlink" href="#skill-5-plotting-and-modifying-plot-properties" title="Permalink to this headline">#</a></h2>
+<p>Here are several steps for practicing use of arrays to make series, and plotting results with matplotlib. Carry out these steps one by one. Easy-to-understand references are on the W3schools <a class="reference external" href="https://www.w3schools.com/python/matplotlib_intro.asp">matplotlib pages</a> of their Python tutorial website.</p>
+<ol class="simple">
+<li><p>Use arrays to make a sinusoid <span class="math notranslate nohighlight">\(y=sin(x)\)</span>. Then plot it using plt.plot(x, y).</p></li>
+</ol>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(x\)</span> is to be the x-axis, going from <span class="math notranslate nohighlight">\(0\)</span> to <span class="math notranslate nohighlight">\(4 \pi\)</span> with points at a spacing of <span class="math notranslate nohighlight">\(0.25\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(y\)</span> is to be <span class="math notranslate nohighlight">\(sin(x)\)</span></p></li>
+</ul>
+<ol class="simple">
+<li><p>Next, make a second sinusoid <span class="math notranslate nohighlight">\(z=cos(x)\)</span>, and plot them both on the same graph.</p></li>
+<li><p>When you have that looking right, add a legend to the plot. An example of one way to do this is <a class="reference external" href="https://www.w3schools.com/python/python_lists.asp">here</a>.</p></li>
+<li><p>Change the colour of the lines to red and blue (hints <a class="reference external" href="https://www.w3schools.com/python/matplotlib_line.asp">here</a>).</p></li>
+<li><p>Use <code class="docutils literal notranslate"><span class="pre">plt.xlim</span></code> and <code class="docutils literal notranslate"><span class="pre">plt.ylim</span></code> to zoom in and show the parts of the graph between <span class="math notranslate nohighlight">\(x=(2,8)\)</span> and <span class="math notranslate nohighlight">\(y=(-0.5,1.5)\)</span>.</p></li>
+<li><p>Add a plot title “Practice Plots” and axis titles: the x-axis should say “time” and the y=axis should say “value”.</p></li>
+<li><p>Now, let’s change the z series to be <span class="math notranslate nohighlight">\(z=(sinx^2)\)</span>.</p></li>
+<li><p>When point spacing is 0.25, why does this look not very “nice” or “smooth”?</p></li>
+<li><p>Change the timeseries interval (x spacing) until the <span class="math notranslate nohighlight">\(z\)</span> function looks more reasonable. What value of spacing did you use to get the <span class="math notranslate nohighlight">\(z=sin(x^2)\)</span> series to have a smooth look with all maxima nicely flat at <span class="math notranslate nohighlight">\(1.00\)</span>?</p></li>
+</ol>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Skil 5, code for parts 1 - 9 here.</span>
+
+<span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">4</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="p">,</span> <span class="mf">.01</span><span class="p">)</span>
+
+<span class="n">y</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+<span class="c1">#z = np.cos(x)</span>
+<span class="n">z</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">x</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="s2">&quot;b&quot;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;sin&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">z</span><span class="p">,</span> <span class="s2">&quot;r&quot;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;sin(x^2)&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Practice Plots&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">&quot;time&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s2">&quot;value&quot;</span><span class="p">)</span>
+<span class="c1">#plt.xlim(2,8)</span>
+<span class="c1">#plt.ylim(-0.5,1.5)</span>
+
+<span class="c1"># &quot;When point spacing is 0.25, hy does z=sin(x**2) look not very nice or smooth?&quot; </span>
+<span class="c1"># Answer this question in comments here:</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Text(0, 0.5, &#39;value&#39;)
+</pre></div>
+</div>
+<img alt="_images/SkillsCheck-solns_10_1.png" src="_images/SkillsCheck-solns_10_1.png" />
+</div>
+</div>
+<p><strong>Subplots</strong></p>
+<ol class="simple">
+<li><p>In this next cell, replot these two as separate graphs side by side using plot.subplot. Nice, efficent instructions for subplots are <a class="reference external" href="https://www.w3schools.com/python/matplotlib_subplots.asp">here</a>. No need for titles or labels, just do this as simply as possible.</p></li>
+<li><p>Finally, explore all permutations of the 3 parameters in <code class="docutils literal notranslate"><span class="pre">plot.subplot()</span></code>. In <code class="docutils literal notranslate"><span class="pre">plt.subplot(r,</span> <span class="pre">s,</span> <span class="pre">t)</span></code> the integers define r = # No. rows, s = No. cols, and t = where will next plot go.</p></li>
+</ol>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># replot the two series in separate plots side-by-side using `plt.subplot`</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">subplot</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">subplot</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">z</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&lt;matplotlib.lines.Line2D at 0x2b1b70bf280&gt;]
+</pre></div>
+</div>
+<img alt="_images/SkillsCheck-solns_12_1.png" src="_images/SkillsCheck-solns_12_1.png" />
+</div>
+</div>
+<p><strong>Optional:</strong></p>
+<p>Take a look at the <a class="reference external" href="https://numpy.org/doc/stable/reference/routines.math.html">numpy mathematical functions</a> and use something from the list to plot a function of your choice in a new cell below. The W3schools <a class="reference external" href="https://www.w3schools.com/python/numpy/default.asp">numpy tutorial</a> is also good.</p>
+</section>
+<hr class="docutils" />
+<section id="skill-6-functions">
+<h2>Skill 6, Functions<a class="headerlink" href="#skill-6-functions" title="Permalink to this headline">#</a></h2>
+<p>A “ricker wavelet” is a signal that looks like this:<br />
+<img alt="text" src="_images/ricker.png" /></p>
+<p>The equation for a ricker wavelet as a function of time (t) is:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>values = A(1 - t^2/w^2) exp(-t^2/w^2)
+  where A = 2/sqrt(3w)pi^1/4
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>Here, <code class="docutils literal notranslate"><span class="pre">values</span></code> is the array or series of values as a function of t; i.e. a timeseries if you think of “t” as time.</p></li>
+<li><p>Write a function that returns an array with the wavelet, when it is called with two parameters: a time array and a width parameter “w” which will be some value between roughly 1 and 20.</p></li>
+<li><p>Add a few lines after the function to make the time array, then call the function and plot the result. <strong>Hint</strong>: initially, use a time array “t” that goes from -50 to +50 with intervals of 1. You can play with this once the function and calling &amp; plotting code works.</p></li>
+<li><p>To make your plot look like the image above, use a separate time axis for the plot that goes from 0 to 100 instead of -50 to +50.</p></li>
+<li><p>Describe the two main differences between wavelets with smaller versus larger values of ‘w’.</p></li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Skill 6, functions (Ricker wavelets)</span>
+<span class="c1"># based on ricker from https://docs.scipy.org/doc/scipy-0.13.0/reference/signal.html</span>
+
+<span class="k">def</span> <span class="nf">ricker</span><span class="p">(</span><span class="n">t</span><span class="p">,</span> <span class="n">w</span><span class="p">):</span>
+    <span class="n">B</span> <span class="o">=</span> <span class="mi">2</span><span class="o">/</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="mi">3</span><span class="o">*</span><span class="n">w</span><span class="p">)</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="o">**</span><span class="p">(</span><span class="mi">1</span><span class="o">/</span><span class="mi">4</span><span class="p">))</span>
+    <span class="n">r</span> <span class="o">=</span> <span class="n">B</span><span class="o">*</span><span class="p">(</span><span class="mi">1</span> <span class="o">-</span> <span class="n">t</span><span class="o">**</span><span class="mi">2</span><span class="o">/</span><span class="n">w</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="o">-</span><span class="n">t</span><span class="o">**</span><span class="mi">2</span><span class="o">/</span><span class="p">(</span><span class="n">w</span><span class="o">**</span><span class="mi">2</span><span class="p">))</span>
+    <span class="k">return</span> <span class="n">r</span>
+    
+<span class="n">rt</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="o">-</span><span class="mi">50</span><span class="p">,</span> <span class="mi">50</span><span class="p">,</span> <span class="mi">100</span><span class="p">)</span>
+<span class="n">time</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">100</span><span class="p">)</span>
+
+<span class="n">wavelet</span> <span class="o">=</span> <span class="n">ricker</span><span class="p">(</span><span class="n">rt</span><span class="p">,</span> <span class="mi">15</span><span class="p">)</span>
+<span class="n">wavelet</span> <span class="o">=</span> <span class="n">ricker</span><span class="p">(</span><span class="n">rt</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">time</span><span class="p">,</span><span class="n">wavelet</span><span class="p">)</span>
+
+<span class="c1">#Describe the to main differences between wavelets with smaller versus larger values of &#39;w&#39;. </span>
+<span class="c1"># Answer: smaller &#39;w&#39; yields narrower and higher amplitude wavelets. </span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&lt;matplotlib.lines.Line2D at 0x2b1b7144a00&gt;]
+</pre></div>
+</div>
+<img alt="_images/SkillsCheck-solns_15_1.png" src="_images/SkillsCheck-solns_15_1.png" />
+</div>
+</div>
+</section>
+<hr class="docutils" />
+<section id="skill-7-for-loops">
+<h2>Skill 7, for loops<a class="headerlink" href="#skill-7-for-loops" title="Permalink to this headline">#</a></h2>
+<p>Make a 4-item array containing <code class="docutils literal notranslate"><span class="pre">2</span></code>, <code class="docutils literal notranslate"><span class="pre">17</span></code>, <code class="docutils literal notranslate"><span class="pre">3</span></code>, and <code class="docutils literal notranslate"><span class="pre">5</span></code>. Write a for loop to print all items in the array. See <a class="reference external" href="https://www.w3schools.com/python/python_for_loops.asp">this reference</a> for help.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># a 4-item array containing 2, 17, 3, and 5</span>
+
+<span class="n">x</span> <span class="o">=</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">17</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">]</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">x</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2
+17
+3
+5
+</pre></div>
+</div>
+</div>
+</div>
+<p>Next, use the <code class="docutils literal notranslate"><span class="pre">range</span></code> and <code class="docutils literal notranslate"><span class="pre">len</span></code> functions to achieve exactly the same result. The <code class="docutils literal notranslate"><span class="pre">len</span></code> will provide the length of the array, the <code class="docutils literal notranslate"><span class="pre">range</span></code> will use that value, and the <code class="docutils literal notranslate"><span class="pre">print</span></code> function will print the i’th element. (The same reference as above explains use of <code class="docutils literal notranslate"><span class="pre">range</span></code> in for loops.)</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># use the range and len functions to achieve exactly the same result.</span>
+
+<span class="n">x</span> <span class="o">=</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">17</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">]</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">x</span><span class="p">)):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2
+17
+3
+5
+</pre></div>
+</div>
+</div>
+</div>
+<p>Finally, practice by rewriting the following code using a for loop. Take care as several parameters are changing. And you will want to start by initializing a counter to <code class="docutils literal notranslate"><span class="pre">1</span></code> for the subplot’s 3rd parameter.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># code to be converted to for loops. </span>
+<span class="c1"># RUN THIS CELL, BUT DO NOT CHANGE IT&#39;S CODE.</span>
+<span class="c1"># imports needed if not already done above.</span>
+
+<span class="c1"># import numpy as np</span>
+<span class="c1"># import matplotlib.pyplot as plt</span>
+
+<span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1000</span><span class="p">,</span> <span class="mi">1000</span><span class="p">)</span>
+<span class="n">y</span> <span class="o">=</span> <span class="p">(</span><span class="n">x</span><span class="o">**</span><span class="mi">3</span><span class="p">)</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">subplot</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
+
+<span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">1000</span><span class="p">)</span>
+<span class="n">y</span> <span class="o">=</span> <span class="p">(</span><span class="n">x</span><span class="o">**</span><span class="mi">3</span><span class="p">)</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">subplot</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
+
+<span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">1000</span><span class="p">)</span>
+<span class="n">y</span> <span class="o">=</span> <span class="p">(</span><span class="n">x</span><span class="o">**</span><span class="mi">3</span><span class="p">)</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">subplot</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
+
+<span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1000</span><span class="p">)</span>
+<span class="n">y</span> <span class="o">=</span> <span class="p">(</span><span class="n">x</span><span class="o">**</span><span class="mi">3</span><span class="p">)</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">subplot</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">4</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&lt;matplotlib.lines.Line2D at 0x1f623eafa60&gt;]
+</pre></div>
+</div>
+<img alt="_images/SkillsCheck-solns_21_1.png" src="_images/SkillsCheck-solns_21_1.png" />
+</div>
+</div>
+<p><strong>Your solution in the next cell:</strong></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># your solution</span>
+<span class="n">counter</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="p">[</span><span class="mi">1000</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">1</span><span class="p">]:</span>    
+    <span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">i</span><span class="p">,</span> <span class="mi">1000</span><span class="p">)</span>
+    <span class="n">y</span> <span class="o">=</span> <span class="p">(</span><span class="n">x</span><span class="o">**</span><span class="mi">3</span><span class="p">)</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">subplot</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="n">counter</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
+    <span class="n">counter</span> <span class="o">+=</span> <span class="mi">1</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/SkillsCheck-solns_23_0.png" src="_images/SkillsCheck-solns_23_0.png" />
+</div>
+</div>
+</section>
+<section id="skill-8-finally-let-s-briefly-practice-entering-written-answers-into-a-jupyter-notebook-cell-using-markdown">
+<h2>Skill 8: Finally - let’s briefly practice entering written answers into a Jupyter Notebook cell, using Markdown.<a class="headerlink" href="#skill-8-finally-let-s-briefly-practice-entering-written-answers-into-a-jupyter-notebook-cell-using-markdown" title="Permalink to this headline">#</a></h2>
+<p>In the next cell, write some notes that include:</p>
+<ul class="simple">
+<li><p>A main heading and two subheadings</p></li>
+<li><p>Two very short pargraphs, including some words that are bold, some that are italics and some that are “code”.</p></li>
+<li><p>A short separate section of using code formatting. This could be a short piece coiped from work above.</p></li>
+<li><p>A numbered list and a bullet list of at least 3 items each.</p></li>
+</ul>
+<p>Be as brief as you like, but include each component. You can get hints from markdown cells above by double clicking those cells, seeing how they are written. As for code cells, the “shift-enter” key combination renders the markdown cell and takes you out of edit mode.</p>
+<section id="skill-9-debugging">
+<h3>Skill 9: Debugging<a class="headerlink" href="#skill-9-debugging" title="Permalink to this headline">#</a></h3>
+<p>You should be able to effectively debug your code. A simple method of debugging is printing out variables at various points in your code and checking if those values match what you expect. You can also try commenting out parts of your code to see how this affects your results. Those methods are probably good enough for this course, but you can also look into using the <a class="reference external" href="https://docs.python.org/3/library/pdb.html">Python debugger</a> if you want. (Using %debug)</p>
+</section>
+<hr class="docutils" />
+<section id="suggested-resources-tutorials">
+<h3><em>Suggested resources &amp; tutorials</em><a class="headerlink" href="#suggested-resources-tutorials" title="Permalink to this headline">#</a></h3>
+<ul class="simple">
+<li><p><a class="reference external" href="https://earth-env-data-science.github.io/intro:">https://earth-env-data-science.github.io/intro:</a> a Jupyter book for a beginner’s course about Jupyter, Python, Git and data science. Creative commons license. Python intro starting at ch. 7 is succinct.</p></li>
+<li><p><a class="reference external" href="https://www.w3schools.com/python/default.asp:">https://www.w3schools.com/python/default.asp:</a> Nice because it’s very granular. Also has “try it out” buttons to test how things work in a live window. Really helpful!</p></li>
+<li><p>Same place has a pandas tutorial (<a class="reference external" href="https://www.w3schools.com/python/pandas">https://www.w3schools.com/python/pandas</a>), and others for numpy, scipy and matplotlib.</p></li>
+<li><p><a class="reference external" href="https://phaustin.github.io/pyman/">https://phaustin.github.io/pyman/</a> Probably more than needed - it’s pretty comprehensive.</p></li>
+<li><p>This is a <a class="reference external" href="https://www.tutorialspoint.com/matlab/matlab_plotting.htm">tutorial</a> on plotting with <code class="docutils literal notranslate"><span class="pre">matplotlib</span></code>.</p></li>
+<li><p>Here is the <a class="reference external" href="https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.html">matplotlib documentation</a> where you can find plotting functions.</p></li>
+<li><p>This is the <a class="reference external" href="https://numpy.org/doc/stable/reference/routines.math.html">numpy documentation</a> which contains math functions like <code class="docutils literal notranslate"><span class="pre">np.sin</span></code>, <code class="docutils literal notranslate"><span class="pre">np.cos</span></code>, and <code class="docutils literal notranslate"><span class="pre">np.exp</span></code>.</p></li>
+<li><p>Here is an <a class="reference external" href="https://www.delftstack.com/howto/python/imaginary-number-python/">introduction to imaginary numbers in Python</a></p></li>
+</ul>
+</section>
+</section>
+<section id="challenge-component">
+<h2>Challenge component<a class="headerlink" href="#challenge-component" title="Permalink to this headline">#</a></h2>
+<p>This is optional for those who feel confident.</p>
+<section id="putting-it-all-together">
+<h3>Putting it all together<a class="headerlink" href="#putting-it-all-together" title="Permalink to this headline">#</a></h3>
+<p>Here is a task that incorporates:</p>
+<ul class="simple">
+<li><p>integers, floats, strings, and arrays.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">if</span></code> statements and <code class="docutils literal notranslate"><span class="pre">for</span></code> loops.</p></li>
+<li><p>libraries <code class="docutils literal notranslate"><span class="pre">numpy</span></code> and <code class="docutils literal notranslate"><span class="pre">matplotlib</span></code>.</p></li>
+<li><p>plots with labels.</p></li>
+<li><p>a function.</p></li>
+</ul>
+<p>Use the ricker function you created above.</p>
+<ol class="simple">
+<li><p>Make 4 wavelets with 4 different widths (eg, 5, 10, 15, 20).</p></li>
+<li><p>Plot these four wavelents on the same graph including labels for a legend saying “w=5”, “w=10”, etc.</p></li>
+<li><p>Then plot them as four little plts in a 2 x 2 set of subplots (no labels).</p></li>
+</ol>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Optional challenge component, sections 1, 2 and 3. </span>
+<span class="c1"># use the ricker function generated above</span>
+
+<span class="n">npoints</span> <span class="o">=</span> <span class="mi">100</span>
+
+<span class="n">ricker_t</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="o">-</span><span class="n">npoints</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span> <span class="n">npoints</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span> <span class="n">npoints</span><span class="p">)</span>
+
+<span class="n">signal1</span> <span class="o">=</span> <span class="n">ricker</span><span class="p">(</span><span class="n">ricker_t</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span>
+<span class="n">signal2</span> <span class="o">=</span> <span class="n">ricker</span><span class="p">(</span><span class="n">ricker_t</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span>
+<span class="n">signal3</span> <span class="o">=</span> <span class="n">ricker</span><span class="p">(</span><span class="n">ricker_t</span><span class="p">,</span> <span class="mi">15</span><span class="p">)</span>
+<span class="n">signal4</span> <span class="o">=</span> <span class="n">ricker</span><span class="p">(</span><span class="n">ricker_t</span><span class="p">,</span> <span class="mi">20</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">ricker_t</span><span class="p">,</span> <span class="n">signal1</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;w=5&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">ricker_t</span><span class="p">,</span> <span class="n">signal2</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;w=10&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">ricker_t</span><span class="p">,</span> <span class="n">signal3</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;w=15&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">ricker_t</span><span class="p">,</span> <span class="n">signal4</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;w=20&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0x2b1b9fad040&gt;
+</pre></div>
+</div>
+<img alt="_images/SkillsCheck-solns_27_1.png" src="_images/SkillsCheck-solns_27_1.png" />
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Plot this as four little plts in a 2 x 2 set of subplots (no labels).</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">subplot</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">ricker_t</span><span class="p">,</span> <span class="n">signal1</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;w = 5&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">subplot</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">ricker_t</span><span class="p">,</span> <span class="n">signal2</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">subplot</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">ricker_t</span><span class="p">,</span> <span class="n">signal3</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">subplot</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">ricker_t</span><span class="p">,</span> <span class="n">signal4</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&lt;matplotlib.lines.Line2D at 0x2b1ba233130&gt;]
+</pre></div>
+</div>
+<img alt="_images/SkillsCheck-solns_28_1.png" src="_images/SkillsCheck-solns_28_1.png" />
+</div>
+</div>
+</section>
+<section id="continue-the-challenge-task">
+<h3>Continue the challenge task …<a class="headerlink" href="#continue-the-challenge-task" title="Permalink to this headline">#</a></h3>
+<ol class="simple">
+<li><p>Use a for loop and if statements to find the max value of each wavelet, then print these 4 values.</p></li>
+<li><p>Make a 500-points long timeseries of zeros (use <a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.zeros.html">np.zeros</a>), then add these 4 wavelets to it one after another so the final timeseries with all 4 wavelets can be plotted.</p></li>
+<li><p>Add x and y axis labels.</p></li>
+<li><p>Try making a “formated” title that looks like <code class="docutils literal notranslate"><span class="pre">When</span> <span class="pre">w</span> <span class="pre">=</span> <span class="pre">5,</span> <span class="pre">10,</span> <span class="pre">15,</span> <span class="pre">20,</span> <span class="pre">peaks</span> <span class="pre">are</span> <span class="pre">0.33,</span> <span class="pre">0.22,</span> <span class="pre">0.11,</span> <span class="pre">0.05</span></code>. Use <a class="reference external" href="https://www.w3schools.com/python/python_string_formatting.asp">string formatting</a> to make a string with the text which incorporates max values you found. then use the completed string for the plot title.</p></li>
+</ol>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Challenge task items 4 - 7. </span>
+
+<span class="n">time</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">500</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+<span class="nb">sum</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="mi">500</span><span class="p">)</span>
+
+<span class="n">max1</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">max2</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">max3</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">max4</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">99</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">signal1</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">&gt;</span> <span class="n">max1</span><span class="p">:</span>
+        <span class="n">max1</span> <span class="o">=</span> <span class="n">signal1</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+    <span class="k">if</span> <span class="n">signal2</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">&gt;</span> <span class="n">max2</span><span class="p">:</span>
+        <span class="n">max2</span> <span class="o">=</span> <span class="n">signal2</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+    <span class="k">if</span> <span class="n">signal3</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">&gt;</span> <span class="n">max3</span><span class="p">:</span>
+        <span class="n">max3</span> <span class="o">=</span> <span class="n">signal3</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+    <span class="k">if</span> <span class="n">signal4</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">&gt;</span> <span class="n">max4</span><span class="p">:</span>
+        <span class="n">max4</span> <span class="o">=</span> <span class="n">signal4</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+        
+<span class="c1">#print(max1, max2, max3, max4)</span>
+
+<span class="nb">sum</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="n">npoints</span><span class="p">]</span> <span class="o">+=</span> <span class="n">signal1</span>
+<span class="nb">sum</span><span class="p">[</span><span class="n">npoints</span><span class="p">:</span><span class="mi">2</span><span class="o">*</span><span class="n">npoints</span><span class="p">]</span> <span class="o">+=</span> <span class="n">signal2</span>
+<span class="nb">sum</span><span class="p">[</span><span class="mi">2</span><span class="o">*</span><span class="n">npoints</span><span class="p">:</span><span class="mi">3</span><span class="o">*</span><span class="n">npoints</span><span class="p">]</span> <span class="o">+=</span> <span class="n">signal3</span>
+<span class="nb">sum</span><span class="p">[</span><span class="mi">3</span><span class="o">*</span><span class="n">npoints</span><span class="p">:</span><span class="mi">4</span><span class="o">*</span><span class="n">npoints</span><span class="p">]</span> <span class="o">+=</span> <span class="n">signal4</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">time</span><span class="p">,</span><span class="nb">sum</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">&quot;Time&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s2">&quot;Value&quot;</span><span class="p">)</span>
+<span class="n">title</span> <span class="o">=</span> <span class="s2">&quot;When w = 5, 10, 15, 20, peaks are </span><span class="si">{:.2f}</span><span class="s2">, </span><span class="si">{:.2f}</span><span class="s2">, </span><span class="si">{:.2f}</span><span class="s2">, </span><span class="si">{:.2f}</span><span class="s2">.&quot;</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="n">title</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">max1</span><span class="p">,</span> <span class="n">max2</span><span class="p">,</span> <span class="n">max3</span><span class="p">,</span> <span class="n">max4</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Text(0.5, 1.0, &#39;When w = 5, 10, 15, 20, peaks are 0.38, 0.27, 0.22, 0.19.&#39;)
+</pre></div>
+</div>
+<img alt="_images/SkillsCheck-solns_30_1.png" src="_images/SkillsCheck-solns_30_1.png" />
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Practice writing markdown</span>
+<span class="c1"># Convert this cell to markdown, remove these two lines, and follow instructions above. </span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+    <a class='left-prev' id="prev-link" href="python-startup.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Getting started with Python and Jupyter</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="cloud-servers.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Servers and hubs</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            </footer>
+        </div>
+    </div>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    By F. Jones & others with the OCESE project<br/>
+  
+      &copy; Copyright 2024.<br/>
+</p>
+        </footer>
+    </div>
+    
+</div>
+
+
+      </div>
+    </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
+
+  </body>
+</html>

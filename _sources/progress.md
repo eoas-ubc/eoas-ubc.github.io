@@ -1,3 +1,3 @@
 # Progress
 
-Progress reports as they become available; probably at roughly six-month intervals.
+Content in these pages is derived from progress reports to funding sources and other stakeholders.

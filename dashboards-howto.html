@@ -1,0 +1,836 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Developing dashboards &#8212; OCESE Documentation</title>
+    
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
+    
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Getting started with Python and Jupyter" href="python-startup.html" />
+    <link rel="prev" title="Open Education Resources" href="oer.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint"></div>
+<div class="header header-item noprint"></div>
+
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="_static/logo-04smsm.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">OCESE Documentation</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Project &amp; Outcomes
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="execsum.html">
+   Executive Summary
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="project-outline.html">
+   Goals and Contributors
+  </a>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="progress.html">
+   Progress Reports &gt;&gt;
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="progress-nov2020.html">
+     Progress at November 2020
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="progress-nov2021.html">
+     Progress at November 2021
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="progress-nov2022.html">
+     Progress at November 2022
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="progress-may2023.html">
+     Progress at May 2023
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="course_materials.html">
+   Course enhancements &gt;&gt;
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="crs-atsc301.html">
+     ATSC 301
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="crs-dsci100.html">
+     DSCI 100
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="crs-envr300.html">
+     ENVR 300
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="crs-envr420.html">
+     ENVR 420
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="crs-eosc112.html">
+     EOSC 112
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="crs-eosc114.html">
+     EOSC 114
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="crs-eosc116.html">
+     EOSC 116
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="crs-eosc211.html">
+     EOSC 211
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="crs-eosc310.html">
+     EOSC 310
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="crs-eosc325.html">
+     EOSC 325
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="crs-eosc329.html">
+     EOSC 329
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="crs-eosc340.html">
+     EOSC 340
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="crs-eosc350.html">
+     EOSC 350
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="crs-eosc354.html">
+     EOSC 354
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="crs-eosc372.html">
+     EOSC 372
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="crs-eosc373.html">
+     EOSC 373
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="crs-eosc410.html">
+     EOSC 410/510
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="crs-eosc425.html">
+     EOSC 425
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="crs-eosc429.html">
+     EOSC 429
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="crs-eosc442.html">
+     EOSC 442
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="crs-eosc471.html">
+     EOSC 471
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="openassessment.html">
+   Automating assessments
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="dashboards.html">
+   Dashboards
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="facultydev.html">
+   Training faculty &amp; students
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="eval-wisdom.html">
+   Evaluation &amp; lessons learned
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="presentations.html">
+   Presentations
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="oer.html">
+   Open Ed. Resources
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  How-to Guides
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Developing dashboards
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="python-startup.html">
+   Python/Jupyter startup
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="SkillsCheck-solns.html">
+   Python Skills Check
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="cloud-servers.html">
+   Servers and hubs
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="jupyterbooks.html">
+   Jupyter Books
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Tutorials
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="tut-commandline.html">
+   Command line &amp; Shells
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="crash_course-shells.html">
+     Andrew's Crash Course on Shells
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="tut-conda_environs.html">
+   Environments
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+  <label for="toctree-checkbox-4">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="tut-programming-environs.html">
+     Using environs; an e.g.
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="tut-git-github.html">
+   Git and Github
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
+  <label for="toctree-checkbox-5">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="tut-git-intro.html">
+     Intro. to Git
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="tut-github.html">
+     GitHub workflows
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="crash_course-git.html">
+     Andrew's GIT crash course
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="tut-gitrefs.html">
+     Git/Github resources
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="tut-teachwith-jnbs.html">
+   Teaching with Jupyter NBs
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="tut-teachwith-dashboards.html">
+   Teaching with dashboards
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  References
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="refs.html">
+   Links &amp; pointers
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="refs-otherapps.html">
+   Third-party dashboards
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="refs-oer.html">
+   Third-party OERs
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="fix-list.html">
+   Documentation ToDo's
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
+            
+            <div class="navbar_extra_footer">
+            Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+            </div>
+            
+        </div>
+    </div>
+    <div id="rtd-footer-container"></div>
+</div>
+
+
+          
+
+
+          
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
+    
+    <div class="header-article row sticky-top noprint">
+        
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="_sources/dashboards-howto.md"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.md</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
+
+    </div>
+</div>
+
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#dashboards-developed-as-part-of-ocese">
+   Dashboards developed as part of OCESE
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#environment-for-develpment">
+   Environment for develpment
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#design-criteria">
+   Design criteria
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#deploying-dashboards">
+   Deploying dashboards
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#to-run-only-on-your-own-computer">
+     To run only on your own computer
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#free-server">
+     Free server
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#deploying-for-permanent-use-by-students">
+     Deploying for permanent use by students
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#some-costs-of-developing-dashboard-for-teaching-learning">
+   Some “costs” of developing dashboard for teaching/learning
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#references-and-resources">
+   References and resources
+  </a>
+ </li>
+</ul>
+
+    </nav>
+</div>
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Developing dashboards</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#dashboards-developed-as-part-of-ocese">
+   Dashboards developed as part of OCESE
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#environment-for-develpment">
+   Environment for develpment
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#design-criteria">
+   Design criteria
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#deploying-dashboards">
+   Deploying dashboards
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#to-run-only-on-your-own-computer">
+     To run only on your own computer
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#free-server">
+     Free server
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#deploying-for-permanent-use-by-students">
+     Deploying for permanent use by students
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#some-costs-of-developing-dashboard-for-teaching-learning">
+   Some “costs” of developing dashboard for teaching/learning
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#references-and-resources">
+   References and resources
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <main id="main-content" role="main">
+                
+              <div>
+                
+  <section class="tex2jax_ignore mathjax_ignore" id="developing-dashboards">
+<h1>Developing dashboards<a class="headerlink" href="#developing-dashboards" title="Permalink to this headline">#</a></h1>
+<p><strong>What are “dashboards”</strong>? These are interactive mathematical or data exploration applications hosted online and used in any standard browser. They are used by instructors and students or other learners to explore complex data sets, address problems or assignments, or experiment with challenging concepts.</p>
+<section id="dashboards-developed-as-part-of-ocese">
+<h2>Dashboards developed as part of OCESE<a class="headerlink" href="#dashboards-developed-as-part-of-ocese" title="Permalink to this headline">#</a></h2>
+<p>There is a separate <a class="reference internal" href="dashboards.html"><span class="doc std std-doc">list of dashboards</span></a> generated during the OCESE project.</p>
+</section>
+<section id="environment-for-develpment">
+<h2>Environment for develpment<a class="headerlink" href="#environment-for-develpment" title="Permalink to this headline">#</a></h2>
+<p>Any python development environment, using the <a class="reference external" href="https://dash.plotly.com/">Dash Plotly</a> environment and <a class="reference external" href="https://plotly.com/python/">Plotly graphing</a> libraries. Alternatively design using Jupyter Notebooks with the <a class="reference external" href="https://ipywidgets.readthedocs.io/en/latest/">ipywidgets library</a> for interactivity.</p>
+<p>These two options are not always easily translated one into the other. So choose the preferred deployment environment thoughtfully.</p>
+</section>
+<section id="design-criteria">
+<h2>Design criteria<a class="headerlink" href="#design-criteria" title="Permalink to this headline">#</a></h2>
+<p>Our key design criteria are based on keeping the focus on efficient, effective learning first, and clarity for sustainable maintainance second.</p>
+<ol class="simple">
+<li><p>Keep apps simple and focused on one concept or dataset. Making tools too versatile or complex increases the learning curve which reduces the likelihood of the resource being readily incorporated into teaching or learning.</p></li>
+<li><p>Do not include teaching or learning “tasks” like specific questions or assignments. Deliver those to students separately. This will ensure that apps do not have to be re-built for different courses, assignments or use-cases.</p></li>
+<li><p>If using Jupyter Notebooks, the ipywidgets library is used instead of Plotly graphics.</p></li>
+<li><p>To hide code when writing for Jupyter Notebooks, write the interactive app as a *.py file and call it in the Notebook.</p></li>
+<li><p>Ensure that graphs and controls can be seen on a single screen that is 1920 x 1080 pixels. If there are two interactive sections of the dashboard, that might mean putting instructions for both together above or below the interactive sections of the page.</p></li>
+<li><p>Ensure code is properly documented with pointers to sources of inspiration or coding techniques. Someone other than the original developer will very likely be the next person to update the dashboard app.</p></li>
+<li><p>A second iteration following first real use by students can be expected because feedback from students often includes good suggestions, and instructors think of improvements only after seening students use the resource.</p></li>
+<li><p>Deploying on a public “slow” server helps with the design cycle when there is no in-house sever, but this will hopefully not be necessary with an EOAS-managed dashboard server.</p></li>
+</ol>
+<p>Ideally these kinds of learning resources should include “think aloud” sessions with student users to determine what aspects of the interface need improving, and whether there are misconceptions that are poorly addressed by the tool. However these are small-scale resources and time is rarely available for this step.</p>
+</section>
+<section id="deploying-dashboards">
+<h2>Deploying dashboards<a class="headerlink" href="#deploying-dashboards" title="Permalink to this headline">#</a></h2>
+<section id="to-run-only-on-your-own-computer">
+<h3>To run only on your own computer<a class="headerlink" href="#to-run-only-on-your-own-computer" title="Permalink to this headline">#</a></h3>
+<p>This choice makes sense when you are experimenting with the dashboard or planning (if only temporarily) to use it for presentations in a class or presentation.</p>
+</section>
+<section id="free-server">
+<h3>Free server<a class="headerlink" href="#free-server" title="Permalink to this headline">#</a></h3>
+<p>We have used <a class="reference external" href="https://render.com/">render.com</a> to share intermediate versions with instructors, developers, teaching assistants and other stakeholders, during the design, test, iterate cycle. There is a free version of this service, but it has limited space and bandwidth and is relatively slow to spin up the server each time the app is called. There are likely alternative approaches for temporary sharing or demonstrating, but this has worked for us during the OCESE project.</p>
+</section>
+<section id="deploying-for-permanent-use-by-students">
+<h3>Deploying for permanent use by students<a class="headerlink" href="#deploying-for-permanent-use-by-students" title="Permalink to this headline">#</a></h3>
+<p>As of June 2023, the repository we are using for deploying our collection, see scripts and Docker files at the <a class="reference external" href="https://github.com/phaustin/addon_containers">addon_containers</a> GitHub repository.</p>
+<ul class="simple">
+<li><p><strong>Hardware</strong>: server with 24 cores, 132 Gbytes of RAM. This has worked well during the 2022-23 academic season. Ideally there would also be a twin available, to be used as a hot spare if needed.</p></li>
+<li><p><strong>Administration</strong>:  Someone needs to be able to monitor the processes, respond to “help” calls, restart the server if necessary, fetch updates from github and launch those, etc. “Costs” have not been assessed carefully, but this may involve something like 5 hours per month for 10-15 apps.</p></li>
+<li><p><strong>Software</strong>: serving the dashboards involves creating docker containers, building them and pushing to the docker repository. This currently involves adding folders to <a class="reference external" href="https://github.com/phaustin/addon_containers">https://github.com/phaustin/addon_containers</a>. It is currently done “manually”, but could be templated using github actions to make this essentially automatic. As of June 2023, we have not refined this procedure.</p></li>
+</ul>
+</section>
+</section>
+<section id="some-costs-of-developing-dashboard-for-teaching-learning">
+<h2>Some “costs” of developing dashboard for teaching/learning<a class="headerlink" href="#some-costs-of-developing-dashboard-for-teaching-learning" title="Permalink to this headline">#</a></h2>
+<ul class="simple">
+<li><p>The design cycle involved numerous iterations so working code can be developed then the instructor can explore how initial designs will work in their planned setting, adjust, revisit, and iterate until satisfied.</p></li>
+<li><p>There may also be a second round of adjustments after first deployment in a real course.</p></li>
+<li><p>Implementing as a class assignment requires the dashboard be hosted on a reasonably fast server that can handle multiple logins. Instructors also need to explore the dashboard to identify opportunities and limitations so that meaningful tasks can be set for students to apply concepts being learned in the class.</p></li>
+<li><p>The question of longer term maintenance, deployment and sustainability of these tools is still a question. Instructors can not be expected to handle all the coding and server technology as well as incorporate excellent, evidence-base, student-centric pedagogy.</p></li>
+</ul>
+</section>
+<section id="references-and-resources">
+<h2>References and resources<a class="headerlink" href="#references-and-resources" title="Permalink to this headline">#</a></h2>
+<ul class="simple">
+<li><p><a class="reference external" href="https://towardsdatascience.com/bring-your-jupyter-notebook-to-life-with-interactive-widgets-bc12e03f0916">Here is a</a> reasonably complete, succinct introduction to <code class="docutils literal notranslate"><span class="pre">ipywidgets</span></code> dated May 3, 2019. This article is at “<a class="reference external" href="http://towardsdatascience.com">towardsdatascience.com</a>” which is delivered as part of a subscription to the <a class="reference external" href="https://medium.com/">Medium</a> digital publishing group. (But you can see this using an incognito browser window as often as you like … )</p></li>
+<li><p>ipywidgets <a class="reference external" href="https://ipywidgets.readthedocs.io/en/latest/">documentation</a> although, like many docs, it is a technical reference, not a tutorial.</p>
+<ul>
+<li><p>See in particular the <a class="reference external" href="https://ipywidgets.readthedocs.io/en/latest/examples/Using%20Interact.html">using interact</a> page.</p></li>
+</ul>
+</li>
+<li><p>others?</p></li>
+</ul>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+    <a class='left-prev' id="prev-link" href="oer.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Open Education Resources</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="python-startup.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Getting started with Python and Jupyter</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            </footer>
+        </div>
+    </div>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    By F. Jones & others with the OCESE project<br/>
+  
+      &copy; Copyright 2024.<br/>
+</p>
+        </footer>
+    </div>
+    
+</div>
+
+
+      </div>
+    </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
+
+  </body>
+</html>

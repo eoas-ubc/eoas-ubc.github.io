@@ -1,0 +1,885 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>EOSC 354 &#8212; OCESE Documentation</title>
+    
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
+    
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="EOSC 372" href="crs-eosc372.html" />
+    <link rel="prev" title="EOSC 350" href="crs-eosc350.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint"></div>
+<div class="header header-item noprint"></div>
+
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="_static/logo-04smsm.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">OCESE Documentation</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Project &amp; Outcomes
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="execsum.html">
+   Executive Summary
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="project-outline.html">
+   Goals and Contributors
+  </a>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="progress.html">
+   Progress Reports &gt;&gt;
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="progress-nov2020.html">
+     Progress at November 2020
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="progress-nov2021.html">
+     Progress at November 2021
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="progress-nov2022.html">
+     Progress at November 2022
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="progress-may2023.html">
+     Progress at May 2023
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="course_materials.html">
+   Course enhancements &gt;&gt;
+  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="current">
+   <li class="toctree-l2">
+    <a class="reference internal" href="crs-atsc301.html">
+     ATSC 301
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="crs-dsci100.html">
+     DSCI 100
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="crs-envr300.html">
+     ENVR 300
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="crs-envr420.html">
+     ENVR 420
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="crs-eosc112.html">
+     EOSC 112
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="crs-eosc114.html">
+     EOSC 114
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="crs-eosc116.html">
+     EOSC 116
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="crs-eosc211.html">
+     EOSC 211
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="crs-eosc310.html">
+     EOSC 310
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="crs-eosc325.html">
+     EOSC 325
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="crs-eosc329.html">
+     EOSC 329
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="crs-eosc340.html">
+     EOSC 340
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="crs-eosc350.html">
+     EOSC 350
+    </a>
+   </li>
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     EOSC 354
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="crs-eosc372.html">
+     EOSC 372
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="crs-eosc373.html">
+     EOSC 373
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="crs-eosc410.html">
+     EOSC 410/510
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="crs-eosc425.html">
+     EOSC 425
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="crs-eosc429.html">
+     EOSC 429
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="crs-eosc442.html">
+     EOSC 442
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="crs-eosc471.html">
+     EOSC 471
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="openassessment.html">
+   Automating assessments
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="dashboards.html">
+   Dashboards
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="facultydev.html">
+   Training faculty &amp; students
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="eval-wisdom.html">
+   Evaluation &amp; lessons learned
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="presentations.html">
+   Presentations
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="oer.html">
+   Open Ed. Resources
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  How-to Guides
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="dashboards-howto.html">
+   Developing dashboards
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="python-startup.html">
+   Python/Jupyter startup
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="SkillsCheck-solns.html">
+   Python Skills Check
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="cloud-servers.html">
+   Servers and hubs
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="jupyterbooks.html">
+   Jupyter Books
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Tutorials
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="tut-commandline.html">
+   Command line &amp; Shells
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="crash_course-shells.html">
+     Andrew's Crash Course on Shells
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="tut-conda_environs.html">
+   Environments
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+  <label for="toctree-checkbox-4">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="tut-programming-environs.html">
+     Using environs; an e.g.
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="tut-git-github.html">
+   Git and Github
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
+  <label for="toctree-checkbox-5">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="tut-git-intro.html">
+     Intro. to Git
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="tut-github.html">
+     GitHub workflows
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="crash_course-git.html">
+     Andrew's GIT crash course
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="tut-gitrefs.html">
+     Git/Github resources
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="tut-teachwith-jnbs.html">
+   Teaching with Jupyter NBs
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="tut-teachwith-dashboards.html">
+   Teaching with dashboards
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  References
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="refs.html">
+   Links &amp; pointers
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="refs-otherapps.html">
+   Third-party dashboards
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="refs-oer.html">
+   Third-party OERs
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="fix-list.html">
+   Documentation ToDo's
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
+            
+            <div class="navbar_extra_footer">
+            Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+            </div>
+            
+        </div>
+    </div>
+    <div id="rtd-footer-container"></div>
+</div>
+
+
+          
+
+
+          
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
+    
+    <div class="header-article row sticky-top noprint">
+        
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="_sources/crs-eosc354.md"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.md</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
+
+    </div>
+</div>
+
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#official-course-description">
+   Official course description
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#ocese-project-objectives">
+   OCESE project objectives
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#actions-taken">
+   Actions taken
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#instructors-experiences">
+   Instructors’ experiences
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#students-experiences">
+   Students’ experiences
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#costs">
+   Costs
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#lessons-learned">
+   Lessons Learned
+  </a>
+ </li>
+</ul>
+
+    </nav>
+</div>
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>EOSC 354</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#official-course-description">
+   Official course description
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#ocese-project-objectives">
+   OCESE project objectives
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#actions-taken">
+   Actions taken
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#instructors-experiences">
+   Instructors’ experiences
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#students-experiences">
+   Students’ experiences
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#costs">
+   Costs
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#lessons-learned">
+   Lessons Learned
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <main id="main-content" role="main">
+                
+              <div>
+                
+  <section class="tex2jax_ignore mathjax_ignore" id="eosc-354">
+<h1>EOSC 354<a class="headerlink" href="#eosc-354" title="Permalink to this headline">#</a></h1>
+<section id="official-course-description">
+<h2>Official course description<a class="headerlink" href="#official-course-description" title="Permalink to this headline">#</a></h2>
+<p><strong>Analysis of Time Series and Inverse Theory for Earth Scientists</strong>: Continuous and discrete Fourier transforms, correlation and convolution, spectral estimates, optimum least-squares filters, deconvolution and prediction, frequency-wave number filtering. A practical course on computer techniques applied to the analysis of a wide range of geophysical phenomena.</p>
+<p><strong>Links:</strong>
+&gt;<a class="reference external" href="https://www.eoas.ubc.ca/academics/courses/eosc354">Home</a>,
+&gt;<a class="reference external" href="https://courses.students.ubc.ca/cs/courseschedule?pname=subjarea&amp;tname=subj-course&amp;dept=EOSC&amp;course=354">UBC Calendar</a>,
+&gt;<a class="reference external" href="https://ubcexplorer.io/course/EOSC/354">ubcexplore</a>,
+&gt; <a class="reference external" href="https://www.eoas.ubc.ca/~quest/eoas-only.html">EOAS curriculum map</a>.</p>
+<p>COURSE OUTLINE</p>
+<ol class="simple">
+<li><p>Introduction and review of complex numbers</p></li>
+<li><p>Discrete Fourier and z-transforms</p></li>
+<li><p>Spectral estimation</p></li>
+<li><p>Filtering, correlation and deconvolution</p></li>
+<li><p>Linear parameter estimation</p></li>
+<li><p>Underdetermined problems</p></li>
+</ol>
+</section>
+<section id="ocese-project-objectives">
+<h2>OCESE project objectives<a class="headerlink" href="#ocese-project-objectives" title="Permalink to this headline">#</a></h2>
+<ul class="simple">
+<li><p>Convert all 11 MatLab assignments to Python-based Jupyter Notebooks. Build two versions for each; one for students and one including solutions.</p></li>
+<li><p>Design and pilot a “skills check assignment” to help students identify the extent to which they are ready to begin solving assignment problems.</p></li>
+<li><p>Implement a students’ installation procedure so that all students can install Python and Jupyter Notebooks onto their own computers with as little difficulty as possible.</p></li>
+</ul>
+</section>
+<section id="actions-taken">
+<h2>Actions taken<a class="headerlink" href="#actions-taken" title="Permalink to this headline">#</a></h2>
+<ul class="simple">
+<li><p><strong>Circumstances</strong></p>
+<ul>
+<li><p>This was the first core (not elective) upper level course that the OCESE project converted to Python. Two other courses in the Dep’t were already using Python (<a class="reference external" href="https://www.eoas.ubc.ca/academics/courses/atsc301">ATSC 301</a> and <a class="reference external" href="https://www.eoas.ubc.ca/academics/courses/eosc213">EOSC 213</a>), and at least two were permitting students to use either MatLab or Python (this course (EOSC 354) and <a class="reference internal" href="crs-eosc410.html"><span class="doc std std-doc">EOSC 410</span></a>).</p></li>
+<li><p>COVID: Fall 2021 was “in person” but with mandatory masks, and still “not normal”.</p></li>
+<li><p>Enrollmenet: 10-15 students each year. Students learn to install the necessary software on their own computers. Therefore, logistics of deliverying Python-based Jupyter Notebooks is not burdened by the need for Jupyter hubs that (a) need special environments or (b) need to scale resources up and down according to demand of large numbers of studetns.</p></li>
+</ul>
+</li>
+<li><p><strong>Assignments or “labs”</strong>: The first 8 were in place for start of course, while assignments 9-11 were completed in time for use in Oct-Nov.</p></li>
+<li><p><strong>Skills check exercise</strong> (Assignment 0): Nine specific skills are defined, tasks to check if the student can demonstrate these skills are posed, and pointers to documentation are provide for further details about each skill. See exercise <a class="reference internal" href="SkillsCheck-solns.html"><span class="doc std std-doc">here</span></a>.</p></li>
+<li><p><strong>Installation guidelines</strong> were developed in parallel with those for EOSC 211, and based on experiences in ATSC 301.</p></li>
+<li><p><strong>Jupyter hubs</strong> are not needed for this course since one learning goal is for students to gain skills related to installing, managing and using Python on their own computers.</p></li>
+<li><p><strong>Dashboards</strong>: Use of dashboards for illustrating or exploring concepts was discussed, and one prototype for demonstrating Fourier Transform reconstruction of periodic signals was prepared. It was not used but is in the OCESE <a class="reference internal" href="dashboards.html"><span class="doc std std-doc">dashboard list</span></a>. One reason for not pursuing this development was that the instructor produced short notebooks himeselve for demonstrating concepts in class. There are also many such resources in the public domain that can be found online.</p></li>
+</ul>
+</section>
+<section id="instructors-experiences">
+<h2>Instructors’ experiences<a class="headerlink" href="#instructors-experiences" title="Permalink to this headline">#</a></h2>
+<p>The instructor was a first-time teacher (PhD student) filling in while the normal instructor was on leave. He had been teaching assistant (TA) for the course in pervious terms and knew the content well.</p>
+<p>Some key comments from a debriefing interview with this instructor 2 months after the course was completed:</p>
+<ul class="simple">
+<li><p>The course proceeded smoothly with few surprises or difficulties. Content and pacing were kept as close to prior terms as possible.</p></li>
+<li><p>The switch to Python was simple - no big issues.</p></li>
+<li><p>Lab time, and marking load, were much as before.</p></li>
+<li><p>Logistics worked well for this small course. Students fetch notebook files (*.ipynb) from the LMS (Canavas), work on their own laptops, and deliver completed work as a completed notebook file to the LMS. Teaching assistant fetches file, runs it and applies the marking rubric.</p></li>
+<li><p>Any particular difficulties? Assignment 4 seems very long. Not challenging but labour intensive. Other than that, difficulties were quite variable for different students. But with small class and experienced TA, these are managed during weekly lab sesions (2hrs each).</p></li>
+<li><p>Were resources adequate (text, labs, etc.)? Yes. Instructor did write a few short notebooks to illustrate specific concepts during lectures (eg. Fourier Transforms).</p></li>
+</ul>
+</section>
+<section id="students-experiences">
+<h2>Students’ experiences<a class="headerlink" href="#students-experiences" title="Permalink to this headline">#</a></h2>
+<p>A midterm feedback survey was used to gauge students’ experiences and perceptions in time to make adjustments. Results are summarized in figures below, with a few observations in blue text under each table. Number of students is small but results suggest there were few complaints or concerns.</p>
+<a class="reference internal image-reference" href="_images/eosc354feedback.png"><img alt="ocese outcomes by type" class="align-center" src="_images/eosc354feedback.png" style="width: 600px;" /></a>
+<BR>
+Five point Likert-sclae (agree/disagree) questions provide information about what seemed to work well, and what didn't. 
+<a class="reference internal image-reference" href="_images/eosc354-content.png"><img alt="ocese outcomes by type" class="align-center" src="_images/eosc354-content.png" style="width: 600px;" /></a>
+<BR>
+<a class="reference internal image-reference" href="_images/eosc354-teaching.png"><img alt="ocese outcomes by type" class="align-center" src="_images/eosc354-teaching.png" style="width: 600px;" /></a>
+<BR>
+<p><strong>Evidently</strong> …</p>
+<ul class="simple">
+<li><p>All students agreed that learning Python was beneficial and that Jupyter Notebooks worked well for deliverying and working on assignments.</p></li>
+<li><p>The early “<a class="reference internal" href="SkillsCheck-solns.html"><span class="doc std std-doc">skills check</span></a>” Jupyter Notebook was definitly approved of.</p></li>
+<li><p>The text book seems to be NOT useful. This could be improved. The lecture material and assignment steps might need a new timeseries text book that uses a current programming context for discussing concepts and applications.</p></li>
+<li><p>The midterm exam may be too “theoretical” given that students spend most of their time practice the application of coding to address problems.</p></li>
+<li><p>The instructing and the learning experiences were all good.</p></li>
+</ul>
+<p><strong>Selected responses to open-ended feedback questions</strong>:</p>
+<p>These were clearly a thoughtful and insightful set of students. Adjustments suggested seem mostly about supporting development the “maturity” associated with translating a problem into code. The theory is one thing, the coding skills are another, and bringing the two together is particularly challenging when both are being developed simultaneously. But the course was generally appreciated.</p>
+<ul class="simple">
+<li><p>What has been most helpful for your learning in this course so far?</p>
+<ul>
+<li><p><em>I really like how fast the instructor responds to his emails. He always answers my questions in detail and it helps a lot</em>.</p></li>
+<li><p><em>The 5 minute review before every class is very helpful</em>.</p></li>
+<li><p><em>Reiterating the most important points/concepts in class</em>.</p></li>
+<li><p><em>Assignments and practice problems, dicussion with peers after class</em>.</p></li>
+</ul>
+</li>
+<li><p>What has been most challenging for you in this course so far?</p>
+<ul>
+<li><p>“<em>A LOT of maths derivations and applications, which can be very confusing at times.</em>”</p></li>
+<li><p>“<em>Actually applying what we’ve learnt in class to solving problems.</em>”</p></li>
+</ul>
+</li>
+<li><p>What is one thing you are doing that is helping you succeed in this course?</p>
+<ul>
+<li><p><em>Regularly attending class + asking for help + completing all assignments</em>.</p></li>
+<li><p><em>Reading over past lab solutions</em>.</p></li>
+</ul>
+</li>
+<li><p>How can we better support you to enhance your learning experience or success in this course?</p>
+<ul>
+<li><p><em>I think more in-class examples would help + exams that are a bit more similar to the assignments</em>.</p></li>
+<li><p><em>I feel like if we had more of a direct line of communication (e.g. discord or slack), it would make learning/asking questions so much easier (especially with such a small cohort)</em>.</p></li>
+<li><p><em>Explain more of what our code should look like at the start of labs so we have a better idea of how to approach the problems</em>.</p></li>
+</ul>
+</li>
+<li><p>Finally, have you any further comments about the course and/or the questions in this survey?</p>
+<ul>
+<li><p><em>The assignments are way too long and I know that other students feel the same way. They can take up to 13 hours to complete. It would be nice if some of the questions could be taken out and turned into optional practice</em>.</p></li>
+<li><p><em>I guess I don’t find the coding useful for learning material</em>.</p></li>
+<li><p><em>Midterm was really challenging. Felt it was much more conceptual that I expected, and the conceptual problems were difficult to solve, ie could have used some more practice. Also, there were no problems similar to the assignments</em>.</p></li>
+</ul>
+</li>
+</ul>
+<p>One insightful comment from the instructor (who had taken the course 5 years previously) is: “<em>The comment about the assignments sometimes being long/arduous I think is shared among all these students. [But] I would have given similar feedback when I was taking the course in 2017.</em>”</p>
+<p>Feedback was also obtained from one student who found the course particularly inpsiring about workloads, challenges, and experiences considered to be paritcularly rewarding or inspiring. These are useful for sharing with prospective students (eg as part of the <a class="reference external" href="https://blogs.ubc.ca/eoasquest/">QuEST project</a>), but are out-of-scope for the OCESE project.</p>
+</section>
+<section id="costs">
+<h2>Costs<a class="headerlink" href="#costs" title="Permalink to this headline">#</a></h2>
+<p>Resources used to accomplish this course transformation (from MatLab to Python, using Jupyter notebooks) included:</p>
+<ul class="simple">
+<li><p>One half-time undergraduate student with exceptional programming skills who had also taken the course only 7 mths prior to carrying out the conversion. Programming &amp; testing new Python versions of each of the 11 labs took averaged roughly 8 hrs each. Generating, testing and iterating the “skills-check” Jupyter Notebook took roughly 40 hrs.</p></li>
+<li><p>Project coordinator who also had some experience with course content (perhaps ~10% f.t.e. on this component of the OCESE project) to supervise that student and liaise with project management and the faculty members involved in teaching the course.</p></li>
+<li><p>The first deployment of this well-established course in it’s new form required some attention to detail in the month prior to day1, including “test driving” the logistics of delivery, completing, submitting, grading and returning assignments with feedback.</p></li>
+</ul>
+<p>Running this low-enrollment course in it’s new form takes no more effort than before. As expected, it benefits from the fact that students are in their 3rd of 4th year and therefore “committed” to the discipline.</p>
+</section>
+<section id="lessons-learned">
+<h2>Lessons Learned<a class="headerlink" href="#lessons-learned" title="Permalink to this headline">#</a></h2>
+<ul class="simple">
+<li><p>The student hired to carry out conversions had taken the course the year previously and was particularly keen on signals, programming and geophysics. This was a significant bonus (not planned) because the student had experienced all the challenges that were specific to completing the assignments in Python.</p></li>
+<li><p>To focus on pros, cons, challenges and opportunities regarding use of Python for this course the student hired to carry out the conversions was asked to reflect on experiences by respond to the following questions:</p>
+<ul>
+<li><p>Which portions of the course were most inspiring, interesting, satisfying or fun?</p></li>
+<li><p>Were any assignments particularly long or difficult to complete in a reasonable time?</p></li>
+<li><p>For each of months 1, 2, 3, how did the course feel in terms of balance of theoretical versus applied, relevance, and inspiration?</p></li>
+</ul>
+</li>
+</ul>
+<p>We anticipate that the course will be able to tackle more advanced material when students taking the course have gained more programmig experience. This is anticipated to occure within the next year or two as all relevant first and second year courses begin to be taught using Python.</p>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+    <a class='left-prev' id="prev-link" href="crs-eosc350.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">EOSC 350</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="crs-eosc372.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">EOSC 372</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            </footer>
+        </div>
+    </div>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    By F. Jones & others with the OCESE project<br/>
+  
+      &copy; Copyright 2024.<br/>
+</p>
+        </footer>
+    </div>
+    
+</div>
+
+
+      </div>
+    </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
+
+  </body>
+</html>

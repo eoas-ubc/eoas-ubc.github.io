@@ -1,0 +1,899 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Environments: Conda, Mamba, and all that &#8212; OCESE Documentation</title>
+    
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
+    
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Using environments; an example" href="tut-programming-environs.html" />
+    <link rel="prev" title="Powershell and Command Line Crash Course" href="crash_course-shells.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint"></div>
+<div class="header header-item noprint"></div>
+
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="_static/logo-04smsm.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">OCESE Documentation</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Project &amp; Outcomes
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="execsum.html">
+   Executive Summary
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="project-outline.html">
+   Goals and Contributors
+  </a>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="progress.html">
+   Progress Reports &gt;&gt;
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="progress-nov2020.html">
+     Progress at November 2020
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="progress-nov2021.html">
+     Progress at November 2021
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="progress-nov2022.html">
+     Progress at November 2022
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="progress-may2023.html">
+     Progress at May 2023
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="course_materials.html">
+   Course enhancements &gt;&gt;
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="crs-atsc301.html">
+     ATSC 301
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="crs-dsci100.html">
+     DSCI 100
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="crs-envr300.html">
+     ENVR 300
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="crs-envr420.html">
+     ENVR 420
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="crs-eosc112.html">
+     EOSC 112
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="crs-eosc114.html">
+     EOSC 114
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="crs-eosc116.html">
+     EOSC 116
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="crs-eosc211.html">
+     EOSC 211
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="crs-eosc310.html">
+     EOSC 310
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="crs-eosc325.html">
+     EOSC 325
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="crs-eosc329.html">
+     EOSC 329
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="crs-eosc340.html">
+     EOSC 340
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="crs-eosc350.html">
+     EOSC 350
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="crs-eosc354.html">
+     EOSC 354
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="crs-eosc372.html">
+     EOSC 372
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="crs-eosc373.html">
+     EOSC 373
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="crs-eosc410.html">
+     EOSC 410/510
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="crs-eosc425.html">
+     EOSC 425
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="crs-eosc429.html">
+     EOSC 429
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="crs-eosc442.html">
+     EOSC 442
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="crs-eosc471.html">
+     EOSC 471
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="openassessment.html">
+   Automating assessments
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="dashboards.html">
+   Dashboards
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="facultydev.html">
+   Training faculty &amp; students
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="eval-wisdom.html">
+   Evaluation &amp; lessons learned
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="presentations.html">
+   Presentations
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="oer.html">
+   Open Ed. Resources
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  How-to Guides
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="dashboards-howto.html">
+   Developing dashboards
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="python-startup.html">
+   Python/Jupyter startup
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="SkillsCheck-solns.html">
+   Python Skills Check
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="cloud-servers.html">
+   Servers and hubs
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="jupyterbooks.html">
+   Jupyter Books
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Tutorials
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="tut-commandline.html">
+   Command line &amp; Shells
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="crash_course-shells.html">
+     Andrew's Crash Course on Shells
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 current active has-children">
+  <a class="current reference internal" href="#">
+   Environments
+  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+  <label for="toctree-checkbox-4">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="tut-programming-environs.html">
+     Using environs; an e.g.
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="tut-git-github.html">
+   Git and Github
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
+  <label for="toctree-checkbox-5">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="tut-git-intro.html">
+     Intro. to Git
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="tut-github.html">
+     GitHub workflows
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="crash_course-git.html">
+     Andrew's GIT crash course
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="tut-gitrefs.html">
+     Git/Github resources
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="tut-teachwith-jnbs.html">
+   Teaching with Jupyter NBs
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="tut-teachwith-dashboards.html">
+   Teaching with dashboards
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  References
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="refs.html">
+   Links &amp; pointers
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="refs-otherapps.html">
+   Third-party dashboards
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="refs-oer.html">
+   Third-party OERs
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="fix-list.html">
+   Documentation ToDo's
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
+            
+            <div class="navbar_extra_footer">
+            Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+            </div>
+            
+        </div>
+    </div>
+    <div id="rtd-footer-container"></div>
+</div>
+
+
+          
+
+
+          
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
+    
+    <div class="header-article row sticky-top noprint">
+        
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="_sources/tut-conda_environs.md"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.md</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
+
+    </div>
+</div>
+
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#what-are-environments-and-why-do-we-need-them">
+   What are environments and why do we need them?
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#pip-vs-conda-vs-mamba">
+   Pip vs Conda vs Mamba
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#pip-comes-built-in-to-python">
+     Pip (comes built-in to Python)
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#conda">
+     Conda
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#mamba">
+     Mamba
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#installing-conda">
+     Installing Conda
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#installing-mamba">
+     Installing Mamba
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#setting-the-enviornment">
+     “Setting” the enviornment
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#specifying-the-environment-the-yml-file">
+   Specifying the environment: the
+   <code class="docutils literal notranslate">
+    <span class="pre">
+     *.yml
+    </span>
+   </code>
+   file
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#conda-lock-files">
+   Conda Lock files
+  </a>
+ </li>
+</ul>
+
+    </nav>
+</div>
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Environments: Conda, Mamba, and all that</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#what-are-environments-and-why-do-we-need-them">
+   What are environments and why do we need them?
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#pip-vs-conda-vs-mamba">
+   Pip vs Conda vs Mamba
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#pip-comes-built-in-to-python">
+     Pip (comes built-in to Python)
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#conda">
+     Conda
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#mamba">
+     Mamba
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#installing-conda">
+     Installing Conda
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#installing-mamba">
+     Installing Mamba
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#setting-the-enviornment">
+     “Setting” the enviornment
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#specifying-the-environment-the-yml-file">
+   Specifying the environment: the
+   <code class="docutils literal notranslate">
+    <span class="pre">
+     *.yml
+    </span>
+   </code>
+   file
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#conda-lock-files">
+   Conda Lock files
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <main id="main-content" role="main">
+                
+              <div>
+                
+  <section class="tex2jax_ignore mathjax_ignore" id="environments-conda-mamba-and-all-that">
+<h1>Environments: Conda, Mamba, and all that<a class="headerlink" href="#environments-conda-mamba-and-all-that" title="Permalink to this headline">#</a></h1>
+<blockquote>
+<div><p><strong>Note:</strong> If working in a shell (i.e. at the command line) is new or confusing, check out the <a class="reference internal" href="tut-commandline.html"><span class="doc std std-doc">Command line &amp; Shells” tutorial</span></a>.</p>
+</div></blockquote>
+<section id="what-are-environments-and-why-do-we-need-them">
+<h2>What are environments and why do we need them?<a class="headerlink" href="#what-are-environments-and-why-do-we-need-them" title="Permalink to this headline">#</a></h2>
+<p>(Adapted from a <a class="reference external" href="https://vxuni.com/lectures/conda-environments/">short video lecture</a>.)</p>
+<p>Scientific programming &amp; data science profit greatly from the vast array of Python libraries. But libraries are not usually independent; they depend upon other libraries, creating a sometimes complex “the deep tree of dependencies”. Therefore, libraries require management. Virtual environments, of which conda environments are one implementation, make this possible. In other words, (Conda) environments enable the easy definition of a complete software environment with all the libraries and their interdepnedencies, necessary for running a certain project or application.</p>
+<p>Using environments also helps ensure that software development and applications are reproducible, usable across platforms, and between different engineering or client teams. Environments (i.e. environment specifications) define all the pieces or packages that are needed for a program or set of programs to function properly.</p>
+<p>“Setting the environment” means telling your computer which libraries or packages must be accessible for the work you are about to carry out. It might be a set of python libraries necessary for the code you will write. Or you may be running code that needs to know how to find the components (libraries of code) it uses to work. For example, many scientific or data science programs use a common Python library of routines for plotting data called “matplotlib”. Setting the environment essentially establishes the list of needed libraries for work you are about to do.</p>
+<p>For a little more detail, see this oldish (2018) but still relevant and easy-to-read explanation: <a class="reference external" href="https://protostar.space/why-you-need-python-environments-and-how-to-manage-them-with-conda">Why you need Python environments and how to manage them with Conda</a>.</p>
+</section>
+<section id="pip-vs-conda-vs-mamba">
+<h2>Pip vs Conda vs Mamba<a class="headerlink" href="#pip-vs-conda-vs-mamba" title="Permalink to this headline">#</a></h2>
+<p>Adapted from a short article at <a class="reference external" href="https://medium.com/analytics-vidhya/understand-conda-and-pip-9e5c67da47cc">Medium</a>.</p>
+<section id="pip-comes-built-in-to-python">
+<h3>Pip (comes built-in to Python)<a class="headerlink" href="#pip-comes-built-in-to-python" title="Permalink to this headline">#</a></h3>
+<p>Pip is the Python Packaging Authority’s recommended tool for installing packages from the Python Package Index (PyPI). Pip installs packages like numpy, pandas, matplotlib etc. , along with their dependencies.</p>
+</section>
+<section id="conda">
+<h3>Conda<a class="headerlink" href="#conda" title="Permalink to this headline">#</a></h3>
+<p>Conda is an open source package management system and environment management system. It quickly installs, runs and updates packages and their dependencies. It was created for Python programs, but it can package and distribute software for any language. The Conda package and environment manager is included in all versions of Anaconda, Miniconda, and Anaconda Repository.</p>
+<p><a class="reference external" href="https://conda.io/projects/conda/en/latest/user-guide/getting-started.html">The Getting Started</a> page for Conda is great, however it is not necessarily a good first step. It assumes you are clear about what an environment is - why it exists, what is needed to manage it.</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://docs.conda.io/projects/conda/en/4.6.1/index.html">Conda documentation</a> version 4.6.1 (Oct 2020).</p></li>
+<li><p><a class="reference external" href="https://docs.conda.io/projects/conda/en/4.6.0/_downloads/52a95608c49671267e40c689e0bc00ca/conda-cheatsheet.pdf">Conda Cheat sheet</a> (PDF).</p></li>
+</ul>
+</section>
+<section id="mamba">
+<h3>Mamba<a class="headerlink" href="#mamba" title="Permalink to this headline">#</a></h3>
+<p>Mamba is a package manager that is fully compatible with Conda but is supposed to be significantly faster. All commands and actions are the same as conda, so learning one will mean you can use the other easily. See <a class="reference external" href="https://mamba.readthedocs.io">Mamba documentation</a> for more details. A sort of “superset” of Mamba that is often mentioned is “<a class="reference external" href="https://github.com/conda-forge/miniforge#mambaforge">Mamba-forge</a>”, which is really just an easily installed package containing the Mamba Package Manager along with some pre-configured components. Yes it’s all a bit confusing; the article <a class="reference external" href="https://focalplane.biologists.com/2022/12/08/managing-scientific-python-environments-using-conda-mamba-and-friends/">Managing Scientific Python environments using Conda, Mamba and friends</a> (Dec 2022) is a well-written introduction with guidelines, plus a few notes about how things can go wrong.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Any set of instructions referring to Conda will be essentially identical if Mamba is used as the package manager instead of Conda.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The pace of change (usually implying improvement) is so rapid that best practices are already out of date as soon as documentation is produced. For example, there is an emerging effort to simplify package management that can be explored (as of June 2023) starting at the <a class="reference external" href="https://prefix.devp">Prefix-dev</a> website and their <a class="reference external" href="https://prefix.devp">documentation pages</a>.</p>
+</div>
+</section>
+<section id="installing-conda">
+<h3>Installing Conda<a class="headerlink" href="#installing-conda" title="Permalink to this headline">#</a></h3>
+<ul class="simple">
+<li><p>Anaconda is large and very “complete”. Miniconda is small and usually adequate.</p>
+<ul>
+<li><p>Install <a class="reference external" href="https://docs.conda.io/projects/conda/en/latest/user-guide/install/index.html">miniconda via conda installation docs</a>.</p></li>
+<li><p>Alternative installation instructions from P. Austin’s <a class="reference external" href="https://phaustin.github.io/numeric/doc_notebooks/course_bootstrap/installing_jupytext.html">Numerical methods course</a>.</p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="installing-mamba">
+<h3>Installing Mamba<a class="headerlink" href="#installing-mamba" title="Permalink to this headline">#</a></h3>
+<p>Follow directions at the Mamba documentation’s <a class="reference external" href="https://mamba.readthedocs.io/en/latest/installation.html">install page</a>.</p>
+</section>
+<section id="setting-the-enviornment">
+<h3>“Setting” the enviornment<a class="headerlink" href="#setting-the-enviornment" title="Permalink to this headline">#</a></h3>
+<p>Once a package management system is installed (Conda, Mamba, etc.),</p>
+<ul class="simple">
+<li><p>For scientific computing, a starting environment could be as simple as the following text file:</p></li>
+</ul>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>name: anyname
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - <span class="nv">python</span><span class="o">=</span><span class="m">3</span>.9.*
+  - pandas
+  - numpy
+  - matplotlib
+  - <span class="nv">jupyter</span><span class="o">=</span><span class="m">1</span>.*
+  - pip
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>An example of an enviornment requiring more packages is P. Austin’s  <code class="docutils literal notranslate"><span class="pre">numeric.yml</span></code> environment, used in UBC’s ATSC409 numerical methods course. Here is a <a class="reference external" href="https://github.com/phaustin/numeric_students/blob/downloads/utils/numeric.yml">direct link to the yml file</a>.</p></li>
+<li><p>To “set” the environment, put the enviornment file somewhere (eg. in a repository folder), change to that folder (the command line <code class="docutils literal notranslate"><span class="pre">cd</span></code> command) then run:</p></li>
+</ul>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>    conda env create -f numeric.yml
+    conda activate numeric
+</pre></div>
+</div>
+<p>Verify successful installation by typing <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">info</span></code> at the prompt.</p>
+</section>
+</section>
+<section id="specifying-the-environment-the-yml-file">
+<h2>Specifying the environment: the <code class="docutils literal notranslate"><span class="pre">*.yml</span></code> file<a class="headerlink" href="#specifying-the-environment-the-yml-file" title="Permalink to this headline">#</a></h2>
+<p>From a <a class="reference external" href="https://vxuni.com/lectures/conda-environments/">short set of notes</a> with accompanying video (which is a bit “quick”, but is cmd line focused and explains where environments are built).</p>
+<ul class="simple">
+<li><p>Usually, a file called environment.yml is built by hand to specify packages needed for an environment.</p></li>
+<li><p>Alternatively, command “conda env export” will build a list with precise packages and their versions. This is very exact.</p></li>
+<li><p>Conda’s (or mamba’s) <code class="docutils literal notranslate"><span class="pre">create</span></code> command is used to generate a new environment.</p></li>
+<li><p>The “activate” commmand is used to make an existing environment the “current” environment so code you want to run now will have all the necessary libraries and dependencies in place.</p></li>
+<li><p>It is common to have these necessary components of an environment specified in an environment file. This is often called <code class="docutils literal notranslate"><span class="pre">environment.yml</span></code> but could have any name.</p></li>
+<li><p>To make a new environment based on such a file, the command line instruction is <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">env</span> <span class="pre">create</span> <span class="pre">-f</span> <span class="pre">anyname.yml</span></code>.</p></li>
+<li><p>To apply the correct parameters with the <code class="docutils literal notranslate"><span class="pre">create</span></code> command, see the documentation, or a cheat sheet of conda instructions like <a class="reference external" href="https://docs.conda.io/projects/conda/en/4.6.0/_downloads/52a95608c49671267e40c689e0bc00ca/conda-cheatsheet.pdf">this one here</a>.</p></li>
+<li><p>Then, to make use of this enviornment, the conda command <code class="docutils literal notranslate"><span class="pre">activate</span></code> will set the environment ready to use. Again, to apply the correct parameters with the <code class="docutils literal notranslate"><span class="pre">activate</span></code> command, see the documentation, or a cheat sheet of conda instructions like <a class="reference external" href="https://docs.conda.io/projects/conda/en/4.6.0/_downloads/52a95608c49671267e40c689e0bc00ca/conda-cheatsheet.pdf">this one here</a>.</p></li>
+<li><p>Your environment can be updated with latest libraries using the command <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">env</span> <span class="pre">update</span> <span class="pre">--file</span> <span class="pre">envname.yml</span></code> (or if the environment file is called “<em>environment.yml</em>”, you can leave off the <code class="docutils literal notranslate"><span class="pre">--file</span> <span class="pre">...</span></code> parameter).</p></li>
+</ul>
+</section>
+<section id="conda-lock-files">
+<h2>Conda Lock files<a class="headerlink" href="#conda-lock-files" title="Permalink to this headline">#</a></h2>
+<p>Use of so-called <a class="reference external" href="https://pythonspeed.com/articles/conda-dependency-management/">Conda lock files</a> enables installations that are more reliable and that don’t require much understanding of command lines, packages, environments and so on.</p>
+<p>Details are not included here (yet) but conda-lock files are used for installations referenced on our <a class="reference internal" href="python-startup.html"><span class="doc std std-doc">Python/Jupyter Startup page</span></a>.</p>
+<p><em>(Note from PA (23/03/07): re. mamba – the original mamba author is leading  a new startup that calculates conda-lock files and makes them available over the web.  So an optimal workflow in the future might look something like what is shown at <a class="reference external" href="https://prefix.dev">https://prefix.dev</a>)</em></p>
+</section>
+<div class="toctree-wrapper compound">
+</div>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+    <a class='left-prev' id="prev-link" href="crash_course-shells.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Powershell and Command Line Crash Course</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="tut-programming-environs.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Using environments; an example</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            </footer>
+        </div>
+    </div>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    By F. Jones & others with the OCESE project<br/>
+  
+      &copy; Copyright 2024.<br/>
+</p>
+        </footer>
+    </div>
+    
+</div>
+
+
+      </div>
+    </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
+
+  </body>
+</html>
