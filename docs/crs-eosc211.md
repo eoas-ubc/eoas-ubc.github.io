@@ -101,5 +101,3 @@ Finally some general observations re. course transformation
 * It takes 2-3 years to shift from MatLab to Python across curriculum.
 * TA & student-worker support was critical!
 * A Geoscience education coordinatork was critical for efficiency & to help keep the focus on learning and student's needs.
-
----

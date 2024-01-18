@@ -2,7 +2,7 @@
 
 ## Introduction
 
-In the spirit of open education resources, we will point to this 2019 DOC (which has a creative commons license, CC-BY 4.0) rather than writing our own: 
+In the spirit of open education resources, we will point to this 2019 DOC (which has a creative commons license, CC-BY 4.0) rather than writing our own:
 [Teaching and Learning with Jupyter](https://jupyter4edu.github.io/jupyter-edu-book/). It also has a [repository](https://github.com/jupyter4edu/jupyter-edu-book). It is rather long and could likely be reduced to "point form", with current demos (eosc442, eosec352 etc.)
 
 [Guidelines for using the UBC JupyterHub](https://lthub.ubc.ca/guides/jupyterhub-instructor-guide/) for teaching were introduced in 2023. These are likely to evolve as the facility improves.

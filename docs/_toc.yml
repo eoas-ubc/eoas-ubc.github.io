@@ -58,7 +58,6 @@ parts:
     title: Python Skills Check
   - file: cloud-servers
   - file: jupyterbooks
-  - file: tools
 - caption: Tutorials
   chapters:
   - file: tut-commandline

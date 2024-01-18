@@ -54,7 +54,7 @@ By exploring visuals for these conditions consider these 2 questions:
 
 **Drawdown app**: The concepts are addressed in the course, the app is desired by the instructor, and it is ready for use (links above). Unfortunately, the pacing of this brand new course, and continued challenge of running a new course in a temporary online form (due to COVID) meant time ran out this term.
 
-**Transfering question sets from prior use**: questions were first converted from various formats (PDF, MS-Word, text files, etc.) to Markdown text, then [text2qti](https://github.com/gpoore/text2qti) was used to upload to the courses's [Canvas](https://about.canvas.ubc.ca/) site. See our [tools page](tools.md) for tips.
+**Transfering question sets from prior use**: questions were first converted from various formats (PDF, MS-Word, text files, etc.) to Markdown text, then [text2qti](https://github.com/gpoore/text2qti) was used to upload to the courses's [Canvas](https://about.canvas.ubc.ca/) site. See our [assessment page](openassessment.md) for tips.
 
 ## Students' experiences
 
