@@ -33,13 +33,19 @@ Ideally these kinds of learning resources should include "think aloud" sessions 
 
 This choice makes sense when you are experimenting with the dashboard or planning (if only temporarily) to use it for presentations in a class or presentation.
 
-TO BE COMPLETED
+### Free server
 
-### Deploying to a suitable Server
+We have used [render.com](https://render.com/) to share intermediate versions with instructors, developers, teaching assistants and other stakeholders, during the design, test, iterate cycle. There is a free version of this service, but it has limited space and bandwidth and is relatively slow to spin up the server each time the app is called. There are likely alternative approaches for temporary sharing or demonstrating, but this has worked for us during the OCESE project.
 
-This will be required if more than 5-10 people might use the dashboard at once. This is non-trivial, and details will be documented later, hopefully during summer 2022. For now, if you need to see the repository used for deploying our collection, see scripts and Docker files at the [addon_containers](https://github.com/phaustin/addon_containers) repo. 
+### Deploying for permanent use by students
 
-DO BE COMPLETED
+As of June 2023, the repository we are using for deploying our collection, see scripts and Docker files at the [addon_containers](https://github.com/phaustin/addon_containers) GitHub repository.
+
+* **Hardware**: server with 24 cores, 132 Gbytes of RAM. This has worked well during the 2022-23 academic season. Ideally there would also be a twin available, to be used as a hot spare if needed.
+
+* **Administration**:  Someone needs to be able to monitor the processes, respond to "help" calls, restart the server if necessary, fetch updates from github and launch those, etc. "Costs" have not been assessed carefully, but this may involve something like 5 hours per month for 10-15 apps.
+
+* **Software**: serving the dashboards involves creating docker containers, building them and pushing to the docker repository. This currently involves adding folders to https://github.com/phaustin/addon_containers. It is currently done "manually", but could be templated using github actions to make this essentially automatic. As of June 2023, we have not refined this procedure.
 
 ## Some "costs" of developing dashboard for teaching/learning
 

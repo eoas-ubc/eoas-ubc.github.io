@@ -2,11 +2,12 @@
 
 ## Introduction
 
-<div style="color:red">Maybe we should adapt, or simply point to this 2019 DOC. It is CC-BY 4.0:</div>
+In the spirit of open education resources, we will point to this 2019 DOC (which has a creative commons license, CC-BY 4.0) rather than writing our own:
+[Teaching and Learning with Jupyter](https://jupyter4edu.github.io/jupyter-edu-book/). It also has a [repository](https://github.com/jupyter4edu/jupyter-edu-book). It is rather long and could likely be reduced to "point form", with current demos (eosc442, eosec352 etc.)
 
-[Teaching and Learning with Jupyter](https://jupyter4edu.github.io/jupyter-edu-book/), which also has a [repo](https://github.com/jupyter4edu/jupyter-edu-book). It is very long and could likely be reduced to "point form", with current demos (eosc442, eosec352 etc.)
+[Guidelines for using the UBC JupyterHub](https://lthub.ubc.ca/guides/jupyterhub-instructor-guide/) for teaching were introduced in 2023. These are likely to evolve as the facility improves.
 
-This page summarizes ways that Jupyter notebooks have been introduced to EOAS faculty and students for teaching and learning purposes. Detailed guidelines, and examples of uses from various courses, will be provided in separate pages.
+The rest of this page summarizes ways that Jupyter notebooks have been introduced to EOAS faculty and students for teaching and learning purposes. Detailed guidelines, and examples of uses from various courses, will be provided in separate pages.
 
 **Getting started:** Guidelines for setting up you local computer to run Jupyter Notebooks are in our [Python / Jupyter Notebooks startup](python-startup.md) page.
 

@@ -1,9 +1,9 @@
 format: jb-book
 root: index
 parts:
-- file: execsum
 - caption: Project & Outcomes
   chapters:
+  - file: execsum
     title: Executive Summary
   - file: project-outline
   - file: progress
@@ -21,6 +21,7 @@ parts:
     - file: crs-envr300
     - file: crs-envr420
     - file: crs-eosc112
+    - file: crs-eosc114
     - file: crs-eosc116
     - file: crs-eosc211
     - file: crs-eosc310
@@ -43,7 +44,7 @@ parts:
   - file: facultydev
     title: Training faculty & students
   - file: eval-wisdom
-    title: Project evaluation
+    title: Evaluation & lessons learned
   - file: presentations
     title: Presentations
   - file: oer
@@ -57,11 +58,12 @@ parts:
     title: Python Skills Check
   - file: cloud-servers
   - file: jupyterbooks
-  - file: tools
-    title: Other software tools
 - caption: Tutorials
   chapters:
   - file: tut-commandline
+    sections:
+    - file: crash_course-shells
+      title: Andrew's Crash Course on Shells
   - file: tut-conda_environs
     title: Environments
     sections:
@@ -74,6 +76,8 @@ parts:
       title: Intro. to Git
     - file: tut-github
       title: GitHub workflows
+    - file: crash_course-git
+      title: Andrew's GIT crash course
     - file: tut-gitrefs
       title: Git/Github resources
   - file: tut-teachwith-jnbs
@@ -82,7 +86,6 @@ parts:
     title: Teaching with dashboards
 - caption: References
   chapters:
-  - file: refs-citations
   - file: refs
   - file: refs-otherapps
     title: Third-party dashboards

@@ -1,5 +1,9 @@
 # OCESE project Executive Summary
 
+**The official final report to the TLEF funding source can be seen <a href="files/TLEF-Final-Report-OCESE-nobudg.pdf"> here</a>.**
+
+A "casual" summary for the public was written for UBC's EduBytes news letter in **November 2023**. See the article "[Implementing computational tools for learning](https://ctlt.ubc.ca/2023/11/30/edubytes-implementing-computational-tools-for-learning/)" about the Department’s project to implement open source computational tools and teaching tactics to facilitate hands-on interdisciplinary learning in data-driven scientific exploration.
+
 ## OCESE PROJECT GOALS
 
 **Two primary goals**: Develop open-source computational tools and techniques that will ...
@@ -15,7 +19,8 @@
 6. Support the FoS minor in Data Science and DSCI 100
 7. Introduce resulting materials and practices as Open Education Resources
 
----
+Using and contributing open source or open education resources has been a primary aspect of addressing each of these goals. This is in keeping with UBC's commitement to supporting the use and production of open research and open education practices and resources. See https://open.ubc.ca/ .
+
 
 ## Further details; primary goals
 
@@ -147,3 +152,12 @@ The seven types of project outcomes contributed in ways not related to specific 
 ---
 
 Finally, OCESE work has generated over 100 products to date. Of these, over 30 should become Open Education Resources, either individually or as collections.
+
+---
+
+```{image} images/CC_BY-NC-SA-30.png
+:alt: ocese outcomes by type
+:align: right
+```
+
+**Licensing** for all pages in this site: Creative Commons License: [Attribution-NonCommercial-ShareAlike 3.0](https://creativecommons.org/licenses/by-nc-sa/3.0/us/) (CC BY-NC-SA 3.0 US)

@@ -1,5 +1,11 @@
 # Version control and collaboration; Git & GitHub
 
+There are **many Git and Github tutorials** out there, and it is best to find a current tutorial to ensure that you learn about the most recent tools and techniques. **See the [Git & GitHub learning resources](tut-gitrefs.md) page.**
+
+UBC provides a secure Git repository-hosting service for academic use at UBC that students can access using their CWL. Instructor guidelines as of 2023 are [here](https://lthub.ubc.ca/guides/github-instructor-guide/).
+
+The reminder of this section of OCESE docuemntation (4 pages) was relevant in 2022.
+
 ## Why Git
 
 Writing code, reports, articles, presentations or any form of documentation usually involves trial and error, so it makes sense to retain earlier versions of the project so you can recall or revert to older work as needed. However, manually keeping track of versions is messy and prone to making mistakes.
@@ -12,7 +18,6 @@ All serious programmers and many writers of technical documentation use version 
 
 [**Github**](https://github.com/) is an online repository management and collaboration system used for backing up and (if relevant) sharing code or documents with collaborators. Repositories are copies of your files saved in the cloud, and can be either **public** (visible/accessible by anyone with the URL) or **private** (only accessible to specific users but subject to a subscription fee).
 
-
 ```{note}
 It is important to recognize that version control - *and therefore both Git and GitHub* - works most effectively with text-based files and documents. "Binary" documents such as MSWord or PDF documents, spreadsheets (eg. Excel), presentations (e.g. Powerpoint), images, etc. can all be included BUT version control fails to work well on such files because it is difficult to compare versions of "binary" files.
 ```
@@ -20,7 +25,5 @@ It is important to recognize that version control - *and therefore both Git and 
 ## Our introductory pages about Git and Github
 
 * [Introduction to version control and Git](tut-git-intro.md).
-
 * [Introduction to GitHub](tut-github.md).
-
 * [Pointers to selected third party resources](tut-gitrefs.md).

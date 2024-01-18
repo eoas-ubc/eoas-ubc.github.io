@@ -24,6 +24,7 @@ Courses and essential contributions made by OCESE are summarized in the followin
 | ENVR300 | Introduction to Research in Environmental Science | Dashboard(s) | 3 made, 2 used. |
 | ENVR420 | Ecohydrology of Watersheds and Water Systems  | Planned: R to Python & Jupyter notebooks (JNBs) | Not started for various logistical reasons. |
 | EOSC112 | The Fluid Earth: Atmosphere and Ocean | Dashboard(s) & class activity consulting | Section 101 only; not yet implemented in sectionn 201. |
+| EOSC114 |The Catastrophic Earth: Natural Disasters|Preliminary discussions about interactive learning exercises.|Use of mind-maps or flow-charts for learning about the “cause-and-effect” nature of natural processes were discussed and protypes build but not tested.|
 | EOSC116 | Mesozoic Earth: Time of the Dinosaurs | Dashboards | Used in online and in-person versions. |
 | EOSC211 | Computer Methods in Earth, Ocean and Atmospheric Sciences | Convert MatLab to Python; JNBs; Jbooks tried but dropped as inefficient, autograding | Major transformation; significant contributions from teaching assistants. |
 | EOSC310 | The Earth and the Solar System  | Dashboard "Daisyworld" | Online section only. |

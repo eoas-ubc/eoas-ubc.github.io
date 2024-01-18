@@ -18,6 +18,12 @@ This is the front page of an ongoing project to transform teaching in the [UBC D
 
 ### More generally ...
 
+The Earth, Ocean and Atmospheric Sciences represent excellent learning contexts for students to develop applied quantitative, computational and data skills. To quote a 2019 report to the Faculty of Science,
+
+>_“…current and future graduates need skills to organize, interact with, and extract meaning from data. [These skills] … are applicable to a wide and expanding range of career paths and will open future opportunities for UBC students, as well as contribute to a data-literate citizenry.”_
+
+This project (OCESE) is one of many initiatives responding to that report.
+
 Using open source, cloud-based computing we aim to integrate computational and quantitative skills more comprehensively and consitently across our Department's curriculum, incorporating real world examples and datasets into existing courses. New Jupyter notebook based modules and activities will be threaded throughout core courses in Geophysics, Atmospheric Sciences, Oceanography and Geological Engineering bridging traditional disciplinary boundaries.
 
 This proposed curriculum transformation will happen alongside the [QuEST project](https://blogs.ubc.ca/eoasquest/) which is re-evaluating quantitative EOAS course offerings across disciplines. The end result will reposition the UBC Earth Science specializations as opportunities for quantitative and computational learning in a highly interdisciplinary domain.
@@ -83,6 +89,7 @@ Most students were hired with support from the UBC WorkLearn program:
 |Iddo Sadeh|undergrad|programming dashboards, Python conversion of EOSC 442, DSCI 100|
 |Navya Dahiya|grad|supported DSCI 100 Python conversion|
 |Wanying Ye|grad|supported DSCI 100 Python conversion|
+|Zhiyong Wang|grad|supported DSCI 100 Python conversion|
 |Andrew Loeppky|grad|supported EOSC 211 Python conversion|
 |Hariharan Umashankar|grad|various programming, including dashboards|
 |Jacob McFarlane|grad|work on advanced dashboard programming for EOSC 340|

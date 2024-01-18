@@ -44,4 +44,15 @@ This book is powered by [JupyterBook](https://jupyterbook.org) and aims to be . 
 
 ---
 
-Website update 2023/06/23.
+```{image} images/CC_BY-NC-SA-30.png
+:alt: ocese outcomes by type
+:align: right
+```
+
+**Licensing** for all pages in this site: Creative Commons License: [Attribution-NonCommercial-ShareAlike 3.0](https://creativecommons.org/licenses/by-nc-sa/3.0/us/) (CC BY-NC-SA 3.0 US)
+<br>
+© [Francis Jones](https://www.eoas.ubc.ca/people/francisjones), Dec. 2023, UBC Dep’t Earth, Ocean and Atmospheric Sciences.
+
+---
+
+Website update 2024/01/17.

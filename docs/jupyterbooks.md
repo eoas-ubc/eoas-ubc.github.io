@@ -166,10 +166,12 @@ HOWEVER, to publish to an Organization's repository (such as `eoas-tlef`) the st
 
 6. Test results by pointing your browser to `username.github.io`. It may take a short time to update.
 
-### vi. Finally some basic references
+### vi. Some basic references
 
-- Jupyter Books documentation starts at [jupyterbook.org](https://jupyterbook.org/intro.html).
+- **Jupyter Books documentation** starts at [jupyterbook.org](https://jupyterbook.org/intro.html).
 - ghp-import documentation starts at [ghp-import](https://github.com/c-w/ghp-import).
-- Markdown 1: The "plainest" version of markdown that Jupyter Books understands is [CommonMark](https://commonmark.org/).
-- Markdown 2: Jupyter Book supports any Markdown syntx that is upported by Jupyter Notebooks. See details [here](https://jupyterbook.org/file-types/markdown.html).
-- Markdown 3: [MyST Markdown](https://jupyterbook.org/content/myst.html) is also understood, which is derived from RMarkdown language used in RStudio.
+- **Markdown 1**: The "plainest" version of markdown that Jupyter Books understands is [CommonMark](https://commonmark.org/).
+- **Markdown 2**: Jupyter Book supports any Markdown syntx that is upported by Jupyter Notebooks. See details [here](https://jupyterbook.org/file-types/markdown.html).
+- **Markdown 3**: [MyST Markdown](https://jupyterbook.org/content/myst.html) is also understood, which is derived from RMarkdown language used in RStudio.
+- A universal tool for **converting document formats** (eg MS-Word to Markdown, etc.) is [PanDoc](https://pandoc.org/). A brief intro to using a local install of pandoc is [here](https://github.com/eoas-ubc/convert_docs/blob/master/Readme_convert.md).
+- **Excel spreadsheet to markdown table**: search online. [Tabletomarkdown.com](https://tabletomarkdown.com/convert-spreadsheet-to-markdown/) seems to work well.

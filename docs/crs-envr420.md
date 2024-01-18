@@ -17,7 +17,7 @@ Original expectation for OCESE work was to pivot computing from use of "R" to al
 
 ## Actions taken
 
-Thius course was adapted for accelerated delivery in the shortened summer term of 2022. This was done by the instructor without OCESE support because only the pacing was changed. The course reverted to normal delivery in Spring 2023.
+This course was adapted for accelerated delivery in the shortened summer term of 2022. This was done by the instructor without OCESE support because only the pacing was changed. The course reverted to normal delivery in Spring 2023.
 
 There are no further plans for OCESE contributions, partly because the course may evolve as UBC's environmental sciences degree options evolve between 2022 - 2024 and beyond.
 

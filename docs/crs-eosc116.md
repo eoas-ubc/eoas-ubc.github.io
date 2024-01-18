@@ -21,10 +21,6 @@
 
 2. A dashboard app that will enable students to answer questions by sketching or annotating a given figure is under development - see the "interactive images" app on the [Dashboards page](dashboards.md). This app replaces an older facility with an app built using the same code library as other OCESE dashboard apps, and increases the versatility by allowing students to specify the figure they will annotate.
 
-## Students’ experiences
-
-## Instructors’ experiences
-
-## Costs
-
 ## Lessons learned
+
+Instructors had little time to be creative during COVID and only used the [Global Temperature](dashboards.md) dashboard because it was completed for other courses. That's OK - people can only apply energy when time and inclination permit. 
