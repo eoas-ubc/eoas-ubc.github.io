@@ -2,11 +2,11 @@
 
 See also **[issues](https://github.com/eoas-ubc/eoas-ubc.github.io/issues)** at the host repository, **[requirements](https://docs.google.com/spreadsheets/d/1DL2YDthzEbZijx35nVyveSstU5frQdzA/edit#gid=173746334)** (Google sheet) for each project component, and **[accomplishments & data](https://docs.google.com/spreadsheets/d/1BUk1_FHItUgzuyg2aJ-dX6XpMABmFSPe/edit#gid=979565415)** (Google sheet) for project outcomes.
 
-## Updates, additions & corrections
+## TODO
 
-* The [teaching with dashboards ...](tut-teachwith-dashboards.md) page needs updating.
-  * Include a framework (maybe a template) for use. E.g. activity components such as "fosters questioning", "provides meaningful context", include anticipated time to complete, game-ify? etc.
-  * reference "Fidelity of Implementation" when discussing dashboards, JNBs, questioning strategies (PrairieLearn, etc.), Open Ed. Resources, and so on. Google it for refs. [Here is one from 2017](https://www.lifescied.org/doi/10.1187/cbe.16-03-0113).
+* Are final 3 pgs (refs) OK?
+* review all other pages to see if any are unfinished
+* construct PDF via DOCX of the complete site.
 * ToDo for PA?
   * Revisit first-year accomplishments, including [md2canvas](https://github.com/eoas-ubc/md2canvas), AL's tutorials, and others. The [projects page](https://github.com/orgs/eoas-ubc/projects/1), and list of repositories may reveal items that need including or summarizing. Needs a walk-through with Phil.
   * add to ATSC301 page?
@@ -40,12 +40,12 @@ See also **[issues](https://github.com/eoas-ubc/eoas-ubc.github.io/issues)** at 
 * professional development: applie lessons learned during OCESE to offer workshops via CTLT on:
   * dashboard development;
   * incorporating dashboards and other interactive opensource resources into learning;
-  * opensource resources: building, contributing, using. 
+  * opensource resources: building, contributing, using.
 
 ## Done
 
 * Executive summary rebuilt
-* "Course Enhancements" top page: Change tables from "goals" to "delivered". Use "actions" listed in file `showcase notes 230215.docx`.
+* "Course Enhancements" top page: Change tables from "goals" to "delivered". Used "actions" listed in file `showcase notes 230215.docx`.
 * Jupyter / Python install based on EOSC 211 (and maybe EOSC 354). Does this include use of condalock?.
 * Project outcomes summary (Executive summary) needs reconfiguring more like the poster and showcase outline. Priorities are not efficient, and the whole thing is long winded.
 * Merge "dashboard deployment" onto "Developing dashboards".
@@ -74,3 +74,5 @@ See also **[issues](https://github.com/eoas-ubc/eoas-ubc.github.io/issues)** at 
 * The "Other software tools" page has been redistributed to other pages with sensible contexts.
 * [Third party dashboards ...](refs-otherapps.md) page brought up to date.
 * The [faculty training](facultydev.md) page finished; not ideal, buy done.
+* [Teaching with dashboards ...](tut-teachwith-dashboards.md) cleaned up. Certainly not an ideal version of this but at least it's not "unfinished".
+* [Teaching with Jupyter Notebooks ...](tut-teachwith-jnbs.md) page was updatied. Not extensive as other third parties have done this better than we could.
