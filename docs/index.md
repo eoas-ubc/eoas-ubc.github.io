@@ -55,4 +55,4 @@ This book is powered by [JupyterBook](https://jupyterbook.org) and aims to be . 
 
 ---
 
-Website update 2024/01/17.
+Website update 2024/01/22.

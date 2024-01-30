@@ -1,10 +1,15 @@
 # OCESE project Executive Summary
 
-**The official final report to the TLEF funding source can be seen <a href="files/TLEF-Final-Report-OCESE-nobudg.pdf"> here</a>.**
+## Final Reporting
 
-A "casual" summary for the public was written for UBC's EduBytes news letter in **November 2023**. See the article "[Implementing computational tools for learning](https://ctlt.ubc.ca/2023/11/30/edubytes-implementing-computational-tools-for-learning/)" about the Department’s project to implement open source computational tools and teaching tactics to facilitate hands-on interdisciplinary learning in data-driven scientific exploration.
+* **The official final report** to the TLEF funding source can be seen <a href="files/TLEF-Final-Report-OCESE-nobudg.pdf"> here</a>.
+* **A succinct list of lessons learned** during the OCESE project was prepared for presentation as a poster ([linked here](https://cdn.serc.carleton.edu/files/earth_rendezvous/2023/program/posters/friday/lessons_learned_while_implementing_opensource_computational_tools_resources.pdf)) at the Earth Educators' Rendezvous meeting Pasadena, CA, July 2024. The summary is organized under three headings:
+  * lessons learned about engaging with data and concepts,
+  * lessons learned regarding computing for EOAS students, and
+  * lessons learned related to departmental and institutional support and sustainment.
+* **A casual summary** for the public was written for UBC's EduBytes news letter in November 2023. See the article "[Implementing computational tools for learning](https://ctlt.ubc.ca/2023/11/30/edubytes-implementing-computational-tools-for-learning/)" about the Department’s project to implement open source computational tools and teaching tactics to facilitate hands-on interdisciplinary learning in data-driven scientific exploration.
 
-## OCESE PROJECT GOALS
+## OCESE Project Goals
 
 **Two primary goals**: Develop open-source computational tools and techniques that will ...
 
@@ -22,7 +27,7 @@ A "casual" summary for the public was written for UBC's EduBytes news letter in 
 Using and contributing open source or open education resources has been a primary aspect of addressing each of these goals. This is in keeping with UBC's commitement to supporting the use and production of open research and open education practices and resources. See https://open.ubc.ca/ .
 
 
-## Further details; primary goals
+## Further details; two primary goals
 
 ### 1. Quantitative Earth Science for all EOAS students
 
@@ -31,8 +36,6 @@ Courses aiming to enhance students' engagement with **quantitative Earth science
 ### 2. Computational & numerical capabilities of students pursuing EOAS degrees
 
 Courses aiming to increase computational and numerical capabilities of EOAS students are "core" courses in EOAS degree specializations including atmospheric sciences, geophysics, and oceanography. OCESE contributed towards these courses mostly by supporting introduction of **Python** and **Jupyter Notebooks** into student learning. Tables 2 and 3 below summarize courses and the aspects that were adjusted during the OCESE project.
-
----
 
 ## Further details; five supporting goals
 
@@ -70,8 +73,6 @@ DSCI100 is taught in the UBC Department of Statistics, but this new Python secti
 All dashboards, course content (such as texts) and tutorials, guidelines or other documentation emerging from the OCESE project are expected to be designated as OERs, assuming permission from stake holders is obtained.
 
 Resources that are NOT expected to be designated as OERs include those that have solutions to student work or activities.
-
----
 
 ## Summary of results: courses and other impacts
 
@@ -148,8 +149,6 @@ The seven types of project outcomes contributed in ways not related to specific 
 ```
 
 <BR>
-
----
 
 Finally, OCESE work has generated over 100 products to date. Of these, over 30 should become Open Education Resources, either individually or as collections.
 

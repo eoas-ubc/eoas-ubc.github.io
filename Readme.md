@@ -1,6 +1,6 @@
 # OCESE documentation website
 
-Goal is to accumulate in on eplace, all project outcomes and guidelines for instructors and students who use these outcomes.
+Goal is to accumulate in one place all project outcomes and guidelines for instructors and students who use these outcomes.
 
 ## Website Organization:
 
