@@ -92,4 +92,4 @@ parts:
   - file: refs-oer
     title: Third-party OERs
   - file: fix-list
-    title: Documentation ToDo's
+    title: Further Ideas

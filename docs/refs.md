@@ -1,5 +1,7 @@
 # Links & pointers
 
+These are of course only a small selection of resources and pointers. There is a huge amount of information in the public domain, easily found by applying some elementary internet searching strategies. The items below were relevant around mid-way of the OCESE project. Many others could be included, however it was considered "out of scope" to provide a more exhaustive bibliography.
+
 ## OCESE Project links
 
 * F. Jones, UBC Edubytes article “[Implementing computational tools for learning](https://ctlt.ubc.ca/2023/11/30/edubytes-implementing-computational-tools-for-learning/)”, November 2023. Sharing the Department’s project to implement open source computational tools and teaching tactics to facilitate hands-on interdisciplinary learning in data-driven scientific exploration.
@@ -45,14 +47,16 @@
 
 ## Summary-style documentation we have found useful
 
-* Working at the comand line
-* Git commands
-* Git workflows
-* Conda & environments
+* See other tutorial and How-To-Guides pages in this website for sources about:
+  * Working at the comand line
+  * Git commands
+  * Git workflows
+  * Conda & environments
+  * Jupyter Notebooks
+  * Docker containers and running dashboard servers
 * Markdown for Jupyter notebooks [cheatsheet](https://www.ibm.com/docs/en/db2-event-store/2.0.0?topic=notebooks-markdown-jupyter-cheatsheet).
 * [MyST syntax cheat sheet](https://jupyterbook.org/reference/cheatsheet.html).
-* Jupyter Notebooks
-* Docker containers and running dashboard servers
+
 
 ## UBC pre-OCESE python timeline
 2005 - python adopted in ATSC 301/ATSC 405/ATSC 409/ATSC 500/EOSC 511/EOSC 582  
@@ -61,7 +65,7 @@
 2016 - python adopted in majors CPSC first year curriculum  
 2017 - PIMS launches [syzygy](https://www.pims.math.ca/scientific/syzygy) on compute canada hardware  
 2019 – Sara Harris convenes the data science discussion group, which yields [Bringing Accessible Data Science Training to Undergraduates](https://tlef.ubc.ca/funded-proposals/entry/713/).  
-2020 - 2023: Open-source Computing for Earth Science Education, T. Ivanchko as principle investigator.
+2020 - 2023: OCESE - Open-source Computing for Earth Science Education, T. Ivanchko as principle investigator.
 
 ## Open source python software
 
