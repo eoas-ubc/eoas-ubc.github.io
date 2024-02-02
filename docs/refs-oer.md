@@ -1,6 +1,6 @@
 # Third-party Open Education Resources
 
-<span style="color:red">Check and update from UBC's [OER group](https://oer.open.ubc.ca/)</span>
+**See also UBC's [OER group](https://oer.open.ubc.ca/) for guidelines related to open education and open research resources and practices.**
 
 This is a representative list (not exaustive) of Open Ed. Resources at UBC for math, physics, compsci, EOAS, etc.
 

@@ -14,8 +14,8 @@ Many organizations are producing excellent interactive resources for modeling, s
 | [2D, SS gndwater flow: confined aquifer](https://www.youtube.com/watch?v=PvUWXQCEjpc) | hydrogeology | spreadsheets, and video (2021) |
 | [2D, SS gndwater flow: UNconfined aquifer](https://www.youtube.com/watch?v=9Wmkugy3XdQ) | hydrogeology | spreadsheets, and video (2021) |
 | [Open Global Glacier Models](https://edu.oggm.org/en/latest/index.html) | glaciology | Gallery, global glaciers, simulation model |
-| [PhET: glaciers](https://phet.colorado.edu/en/simulations/glaciers) | glaciology |  |
-| [PhET: green house gasses](https://phet.colorado.edu/en/simulations/greenhouse) | climate |  |
+| [PhET: glaciers](https://phet.colorado.edu/en/simulations/glaciers) | glaciology | Glacier behavior in response to varying parameters such as precipitation, temperature, bed and surface slope, etc. |
+| [PhET: green house gasses](https://phet.colorado.edu/en/simulations/greenhouse) | climate | Simulation enabling exploration of how various parameters affect accumulation of greenhouse gasses, and impacts on global temperature. |
 | - [PhET: Under pressure](https://phet.colorado.edu/en/simulations/under-pressure) <BR>- [PhET: Fluid Pressure & Flow](https://phet.colorado.edu/en/simulations/fluid-pressure-and-flow)| hydrogeology | hydrogeology |
 | - [PhET: plate tectonics ](https://phet.colorado.edu/en/simulations/plate-tectonics)<BR>- [PhET: radiometric dating](https://phet.colorado.edu/en/simulations/radioactive-dating-game) | geology | tectonics & dating concepts |
 | [PhET: other hydro, gravity, etc concepts](https://phet.colorado.edu/en/simulations/filter?subjects=earth-science) | physics, math, chem | 25 apps more or less related to Earth sciences |

@@ -32,7 +32,7 @@ Applications of Jupyter notebooks in which students use the notebooks but do not
 
 Jupyter Notebooks are ideal for teaching data visualization techniques such as legibility, visual hierarchy, and appropriate use of color. See precedent in [Hepworth et al., 2018](https://www.tandfonline.com/doi/full/10.1080/10899995.2019.1656022).
 
-## Deployiong Jupyter notebooks for students
+## Deploying Jupyter notebooks for students
 
 The [servers and hubs page](cloud-servers.md) offers a few insights gained during the OCESE project.
 
