@@ -439,7 +439,7 @@ const thebe_selector_output = ".output, .cell_output"
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="fix-list.html">
-   Documentation ToDo's
+   Further Ideas
   </a>
  </li>
 </ul>
@@ -681,17 +681,18 @@ title="Print to PDF"
 <section id="solo-with-branch-and-merge">
 <h2>2. Solo with branch and merge<a class="headerlink" href="#solo-with-branch-and-merge" title="Permalink to this headline">#</a></h2>
 <p>No collaboration but use of branches to “contain” your own development of features. Here’s a typical workflow:</p>
-<ul>
+<ul class="simple">
 <li><p>List all local branches: <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">branch</span></code>. Or list all branches, local and remote: <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">branch</span> <span class="pre">-av</span></code></p></li>
 <li><p>Create a new branch called <em>new-branch</em>: <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">branch</span> <span class="pre">new-branch</span></code></p></li>
 <li><p>Switch to the branch <em>new-branch</em> and update the working directory: <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">checkout</span> <span class="pre">new-branch</span></code></p></li>
 <li><p>Do all your work in this new branch. Files in working directories will reflect this work while files remaining in the other branch will not be visible but are not lost. You can revert to the other branch simply by using <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">checkout</span> <span class="pre">branchname</span></code> again. All branches will remain available this way until they are deleted, as below.</p></li>
-<li><p>Merge <em>branch-a</em> into <em>branch-b</em>. Do this when the stuff you were figuring out in the “b” branch is ready to become part of the code or product in the “a” branch.</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">checkout</span> <span class="n">branch</span><span class="o">-</span><span class="n">b</span>
-<span class="n">git</span> <span class="n">merge</span> <span class="n">branch</span><span class="o">-</span><span class="n">a</span>
+<li><p>Merge <em>branch-a</em> into <em>branch-b</em>. Do this when the stuff you were figuring out in the “b” branch is ready to become part of the code or product in the “a” branch.</p></li>
+</ul>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>   <span class="n">git</span> <span class="n">checkout</span> <span class="n">branch</span><span class="o">-</span><span class="n">b</span>
+   <span class="n">git</span> <span class="n">merge</span> <span class="n">branch</span><span class="o">-</span><span class="n">a</span>
 </pre></div>
 </div>
-</li>
+<ul class="simple">
 <li><p>Delete a branch called <em>my-branch</em>: <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">branch</span> <span class="pre">-d</span> <span class="pre">my-branch</span></code></p></li>
 </ul>
 <p>Upon using <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">push</span></code> all existing branches will get pushed to GitHub.s</p>
@@ -757,7 +758,6 @@ git rebase -i master
 <p>(NOTE: Subsequent changes to that branch will be tracked until pull request is accepted or rejected.)</p>
 </li>
 </ol>
-<hr class="docutils" />
 </section>
 </section>
 

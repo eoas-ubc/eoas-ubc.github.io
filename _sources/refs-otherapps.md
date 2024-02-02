@@ -1,21 +1,21 @@
 # Third-party dashboards or other interactive resources
 
-<span style="color:red">Check and update from FJ file "_.\Nextcloud\FJwork\01-OCESE-tlef\data & apps\appslists-ours&3rdparty.xlsx_". Also add "last checked" date column.</span>
-
-Many organizations are producing excellent interactive resources for modeling, simulating, exploring, or showcasing concepts or data sets. These are a few examples. We will eventually sort these into "types".
-
----
+Many organizations are producing excellent interactive resources for modeling, simulating, exploring, or showcasing concepts or data sets. These are just a few examples.
 
 | Linked Resource | Type | Comments |
 | ------- | ------- | ------- |
+| [the Nova model library for use with the Numerus Model Builder](https://www.numerusinc.com/model-library/) | wide rang of conceptual models | A whole environment for building simple or hierarchically-integrated system dynamics, spatial, and agent-based simulation models. Free or subscription.
+ |
 | [IPCC WGI Interactive Atlas](https://interactive-atlas.ipcc.ch/) | climate | extensive; needs "learning" (July 2021) |
 | [visible geology](https://app.visiblegeology.com/) | geology | 3D interactive structural geology models with stereonets. |
 | [visible geology's stereonet](https://app.visiblegeology.com/stereonet.html) | geology | interactive manipulation and use of steronets. |
+| [Earthviewer](https://www.biointeractive.org/classroom-resources/earthviewer) | geology | Interactive module to explore Earth's deep-time history. |
+| [Earthquake Data](https://www.openscied.org/earthquake-data/) | geology | "Middle school simulation": Places earthquakes have occurred over time in the world |
 | [2D, SS gndwater flow: confined aquifer](https://www.youtube.com/watch?v=PvUWXQCEjpc) | hydrogeology | spreadsheets, and video (2021) |
 | [2D, SS gndwater flow: UNconfined aquifer](https://www.youtube.com/watch?v=9Wmkugy3XdQ) | hydrogeology | spreadsheets, and video (2021) |
 | [Open Global Glacier Models](https://edu.oggm.org/en/latest/index.html) | glaciology | Gallery, global glaciers, simulation model |
-| [PhET: glaciers](https://phet.colorado.edu/en/simulations/glaciers) | glaciology |  |
-| [PhET: green house gasses](https://phet.colorado.edu/en/simulations/greenhouse) | climate |  |
+| [PhET: glaciers](https://phet.colorado.edu/en/simulations/glaciers) | glaciology | Glacier behavior in response to varying parameters such as precipitation, temperature, bed and surface slope, etc. |
+| [PhET: green house gasses](https://phet.colorado.edu/en/simulations/greenhouse) | climate | Simulation enabling exploration of how various parameters affect accumulation of greenhouse gasses, and impacts on global temperature. |
 | - [PhET: Under pressure](https://phet.colorado.edu/en/simulations/under-pressure) <BR>- [PhET: Fluid Pressure & Flow](https://phet.colorado.edu/en/simulations/fluid-pressure-and-flow)| hydrogeology | hydrogeology |
 | - [PhET: plate tectonics ](https://phet.colorado.edu/en/simulations/plate-tectonics)<BR>- [PhET: radiometric dating](https://phet.colorado.edu/en/simulations/radioactive-dating-game) | geology | tectonics & dating concepts |
 | [PhET: other hydro, gravity, etc concepts](https://phet.colorado.edu/en/simulations/filter?subjects=earth-science) | physics, math, chem | 25 apps more or less related to Earth sciences |
