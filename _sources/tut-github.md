@@ -37,10 +37,12 @@ No collaboration but use of branches to "contain" your own development of featur
 * Switch to the branch _new-branch_ and update the working directory: `git checkout new-branch`
 * Do all your work in this new branch. Files in working directories will reflect this work while files remaining in the other branch will not be visible but are not lost. You can revert to the other branch simply by using `git checkout branchname` again. All branches will remain available this way until they are deleted, as below.
 * Merge _branch-a_ into _branch-b_. Do this when the stuff you were figuring out in the "b" branch is ready to become part of the code or product in the "a" branch.
-   ```
+
+```
    git checkout branch-b
    git merge branch-a
-   ```
+```
+
 * Delete a branch called _my-branch_: `git branch -d my-branch`
 
 Upon using `git push` all existing branches will get pushed to GitHub.s
@@ -82,7 +84,7 @@ Collaboration using a Fork from someone else's repository, develop in a branch, 
       ```
 
       This means "rebase the _newfeature_ branch onto the _master_ branch."
-      - **Golden rule of git rebase**: never use it on public branches. For example never, never do `git checkout master` then `git rebase newfeature`. From [this reference](https://www.atlassian.com/git/tutorials/merging-vs-rebasing#the-golden-rule-of-rebasing).
+      * **Golden rule of git rebase**: never use it on public branches. For example never, never do `git checkout master` then `git rebase newfeature`. From [this reference](https://www.atlassian.com/git/tutorials/merging-vs-rebasing#the-golden-rule-of-rebasing).
 
    5. OR, IF desired, at the same time as rebasing, clear up by squashing (some) smaller commits down into larger commits using interactive rebase:
 
@@ -95,10 +97,8 @@ Collaboration using a Fork from someone else's repository, develop in a branch, 
 
 5. When ready, push to your GitHub repo and ask to merge with original
    1. Send to your repo: `git push`
-   1. Ask to contribute your work to owner of upstream.
-      - _NOTE: At your GitHub repo be sure to select your development branch (eg. `newbranch`)!_
-      - Click **pull request**.
+   2. Ask to contribute your work to owner of upstream.
+       * _NOTE: At your GitHub repo be sure to select your development branch (eg. `newbranch`)!_
+       * Click **pull request**.
 
    (NOTE: Subsequent changes to that branch will be tracked until pull request is accepted or rejected.)
-
----

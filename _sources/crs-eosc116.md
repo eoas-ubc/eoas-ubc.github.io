@@ -17,7 +17,7 @@
 
 ## Actions taken
 
-1. The [Global Temperature](dashboards.md) dashboard app was use.
+1. The [Global Temperature](dashboards.md) dashboard app was used.
 
 2. A dashboard app that will enable students to answer questions by sketching or annotating a given figure is under development - see the "interactive images" app on the [Dashboards page](dashboards.md). This app replaces an older facility with an app built using the same code library as other OCESE dashboard apps, and increases the versatility by allowing students to specify the figure they will annotate.
 

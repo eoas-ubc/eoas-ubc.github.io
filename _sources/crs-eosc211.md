@@ -74,7 +74,9 @@ Refer to open source community experience (eg. https://2i2c.org/ )
 * Auto-grading: non-trivial but essential for 100+ students. E.g. PrairieLearn, nbgrader, ottergrader, gradescope, LMS, etc.
 * Improve LMS efficiency: Manage questions via its API.
 
-**Costs**: larger intro. courses need complete rebuilds. E.g. _Adapting a first year statistics course_ (DSCI 100) from “R” ==> Python involved:
+### Regarding costs
+
+Larger intro. courses need complete rebuilds. E.g. _Adapting a first year statistics course_ (DSCI 100) from “R” ==> Python involved:
 
 * 9 months, 4 students, 3 profs.
 * Rewrite original opensource text.
